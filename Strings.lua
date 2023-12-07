@@ -112,7 +112,7 @@ MIDSUMMER_MC = 2;
 -- E.G -- wBListParent:SetText(GetString(_LANG.ERRORS.LOAD));
 _LANG = {
 
-    -- ["STRINGNAME"] = 	{["ENGLISH"] = "";	["FRENCH"] = "";	["GERMAN"] = ""; };
+    -- ["STRINGNAME"] = { ["ENGLISH"] = ""; ["FRENCH"] = ""; ["GERMAN"] = ""; };
 
     ["ERRORS"] = {
         ["LOAD"] = {
@@ -132,24 +132,24 @@ _LANG = {
     };
 
     ["FESTIVALS"] = {
-        [SPRING]       = {["ENGLISH"] = "Spring";			["FRENCH"] = "Printemps";			["GERMAN"] = "Frühling";		};
-        [SUMMER]       = {["ENGLISH"] = "Summer";			["FRENCH"] = "\195\137t\195\169";	["GERMAN"] = "Summer";			};
-        [HARVESTMATH]  = {["ENGLISH"] = "Harvestmath";		["FRENCH"] = "Moissines";			["GERMAN"] = "Ernte";			};
-        [YULE]         = {["ENGLISH"] = "Yule";				["FRENCH"] = "Yule";				["GERMAN"] = "Julfest";			};
-        [ANNIVERSARY]  = {["ENGLISH"] = "Anniversary";		["FRENCH"] = "Anniversaire";		["GERMAN"] = "Jubiläums";		};
-        [FARMERSFAIRE] = {["ENGLISH"] = "Farmers Faire";	["FRENCH"] = "Foire des fermiers";	["GERMAN"] = "Bauernfest";		};
-        [HOBNANIGANS]  = {["ENGLISH"] = "Hobnanigans";		["FRENCH"] = "Hobnanigans";			["GERMAN"] = "Hobnanigans";		};
-        [MIDSUMMER]    = {["ENGLISH"] = "Midsummer";        ["FRENCH"] = "Solstice d'été";      ["GERMAN"] = "Mittsommer";		};
+        [SPRING]       = {["ENGLISH"] = "Spring";           ["FRENCH"] = "Printemps";           ["GERMAN"] = "Frühling";    };
+        [SUMMER]       = {["ENGLISH"] = "Summer";           ["FRENCH"] = "\195\137t\195\169";   ["GERMAN"] = "Summer";      };
+        [HARVESTMATH]  = {["ENGLISH"] = "Harvestmath";      ["FRENCH"] = "Moissines";           ["GERMAN"] = "Ernte";       };
+        [YULE]         = {["ENGLISH"] = "Yule";             ["FRENCH"] = "Yule";                ["GERMAN"] = "Julfest";     };
+        [ANNIVERSARY]  = {["ENGLISH"] = "Anniversary";      ["FRENCH"] = "Anniversaire";        ["GERMAN"] = "Jubiläums";   };
+        [FARMERSFAIRE] = {["ENGLISH"] = "Farmers Faire";    ["FRENCH"] = "Foire des fermiers";  ["GERMAN"] = "Bauernfest";  };
+        [HOBNANIGANS]  = {["ENGLISH"] = "Hobnanigans";      ["FRENCH"] = "Hobnanigans";         ["GERMAN"] = "Hobnanigans"; };
+        [MIDSUMMER]    = {["ENGLISH"] = "Midsummer";        ["FRENCH"] = "Solstice d'été";      ["GERMAN"] = "Mittsommer";  };
     };
 
     ["OTHER"] = {
-        ["BARTER"] = 		{["ENGLISH"] = "Barter";		["FRENCH"] = "Troqueur";				["GERMAN"] = "Tausch";			};
-        ["BARTERITEMS"] = 	{["ENGLISH"] = "Barter Items";	["FRENCH"] = "Articles de troc";		["GERMAN"] = "Tauschobjekte";	};
-        ["SORT"] = 			{["ENGLISH"] = "Sort";			["FRENCH"] = "Trier";					["GERMAN"] = "Sortieren";		};
-        ["QUICK_GUIDE"] =   {["ENGLISH"] = "Quick Guide";                                           ["GERMAN"] = "Kurzanleitung";   };
-        ["ALTS"] = 			{["ENGLISH"] = "Alts";			["FRENCH"] = "Alts";					["GERMAN"] = "Twinks";			};
-        ["MAP"] = 			{["ENGLISH"] = "Map";			["FRENCH"] = "Map";				    	["GERMAN"] = "Karte";           };
-        ["RESETS"] =		{["ENGLISH"] = "Resets";		["FRENCH"] = "Remettre \195\160 0";		["GERMAN"] = "Rücksetzungen";	};
+        ["BARTER"]      = {["ENGLISH"] = "Barter";          ["FRENCH"] = "Troqueur";            ["GERMAN"] = "Tausch";          };
+        ["BARTERITEMS"] = {["ENGLISH"] = "Barter Items";    ["FRENCH"] = "Articles de troc";    ["GERMAN"] = "Tauschobjekte";   };
+        ["SORT"]        = {["ENGLISH"] = "Sort";            ["FRENCH"] = "Trier";               ["GERMAN"] = "Sortieren";       };
+        ["QUICK_GUIDE"] = {["ENGLISH"] = "Quick Guide";                                         ["GERMAN"] = "Kurzanleitung";   };
+        ["ALTS"]        = {["ENGLISH"] = "Alts";            ["FRENCH"] = "Alts";                ["GERMAN"] = "Twinks";          };
+        ["MAP"]         = {["ENGLISH"] = "Map";             ["FRENCH"] = "Map";                 ["GERMAN"] = "Karte";           };
+        ["RESETS"]      = {["ENGLISH"] = "Resets";          ["FRENCH"] = "Remettre \195\160 0"; ["GERMAN"] = "Rücksetzungen";   };
 
         ["NOALTS"] = {
             ["ENGLISH"] = "No alt data to display. To access this you will need to load this plugin from each of your alts.";
@@ -183,8 +183,8 @@ _LANG = {
 
 
         -- These must match the names given in-game
-        ["AUDIENCE"] =		{["ENGLISH"] = "The Audience";	["FRENCH"] = "Le Public";				["GERMAN"] = "Das Publikum"; }; -- Yule Frostbluff Theatre
-        ["NPC_FIREWORKANNOUNCER"] =		{["ENGLISH"] = "Fireworks Announcer";	["FRENCH"] = "Animateur du feu d'artifice";	["GERMAN"] = "Feuerwerksansager"; }; -- Anniversary Fireworks in Bree
+        ["AUDIENCE"]              = {["ENGLISH"] = "The Audience";          ["FRENCH"] = "Le Public";                   ["GERMAN"] = "Das Publikum";        }; -- Yule Frostbluff Theatre
+        ["NPC_FIREWORKANNOUNCER"] = {["ENGLISH"] = "Fireworks Announcer";   ["FRENCH"] = "Animateur du feu d'artifice"; ["GERMAN"] = "Feuerwerksansager";   }; -- Anniversary Fireworks in Bree
 
         ["FIREWORKS_ANNOUNCEMENTS"] = {
             ["ENGLISH"] = {
@@ -541,42 +541,41 @@ _LANG = {
 
 
     ["DANCES"] = {
-        ["DANCE1"] = { ["ENGLISH"] = "Look at me and dance step one";			["FRENCH"] = "Regardez-moi et ex\195\169cutez le premier pas !";						["GERMAN"] = "Schaut mich an und tanzt Schritt eins!";	};
-        ["DANCE2"] = { ["ENGLISH"] = "Now follow me in doing the second dance";	["FRENCH"] = "Suivez-moi \195\160 pr\195\169sent pour la deuxi\195\168me danse.";		["GERMAN"] = "Folgt mir jetzt beim zweiten Tanz.";		};
-        ["DANCE3"] = { ["ENGLISH"] = "Dance three is the step here";			["FRENCH"] = "Voici le pas de la troisi\195\168me danse.";								["GERMAN"] = "Tanz drei besteht aus diesem Schritt.";	};
+        ["DANCE1"] = { ["ENGLISH"] = "Look at me and dance step one";           ["FRENCH"] = "Regardez-moi et ex\195\169cutez le premier pas !";                    ["GERMAN"] = "Schaut mich an und tanzt Schritt eins!";  };
+        ["DANCE2"] = { ["ENGLISH"] = "Now follow me in doing the second dance"; ["FRENCH"] = "Suivez-moi \195\160 pr\195\169sent pour la deuxi\195\168me danse.";   ["GERMAN"] = "Folgt mir jetzt beim zweiten Tanz.";      };
+        ["DANCE3"] = { ["ENGLISH"] = "Dance three is the step here";            ["FRENCH"] = "Voici le pas de la troisi\195\168me danse.";                          ["GERMAN"] = "Tanz drei besteht aus diesem Schritt.";   };
 
         ["DANCE1_ALIAS"] = { ["ENGLISH"] = "/dance1"; ["FRENCH"] = "/danse1"; ["GERMAN"] = "/tanzen1"; };
-        ["DANCE2_ALIAS" ]= { ["ENGLISH"] = "/dance2"; ["FRENCH"] = "/danse2"; ["GERMAN"] = "/tanzen2"; };
+        ["DANCE2_ALIAS"] = { ["ENGLISH"] = "/dance2"; ["FRENCH"] = "/danse2"; ["GERMAN"] = "/tanzen2"; };
         ["DANCE3_ALIAS"] = { ["ENGLISH"] = "/dance3"; ["FRENCH"] = "/danse3"; ["GERMAN"] = "/tanzen3"; };
 
-        ["DANCE_INSTRUCTOR_HOBBIT"] = { ["ENGLISH"] = "Oger Brockhouse"; 	["GERMAN"] = "Oger Dachsbau"; 	["FRENCH"] = "Oger Trougrisard"; };
-        ["DANCE_INSTRUCTOR_ELF"]    = { ["ENGLISH"] = "Nedhrien";    		["GERMAN"] = "Nedhrien"; 		["FRENCH"] = "Nedhrien"; };
-        ["DANCE_INSTRUCTOR_DWARF"]  = { ["ENGLISH"] = "Galmi";   	    	["GERMAN"] = "Galmi";   		["FRENCH"] = "Galmi"; };
-        ["DANCE_INSTRUCTOR_MAN"]    = { ["ENGLISH"] = "Ada Musgrove";   	["GERMAN"] = "Ada Mushain"; 	["FRENCH"] = "Ada Boqueteau"; };
+        ["DANCE_INSTRUCTOR_HOBBIT"] = { ["ENGLISH"] = "Oger Brockhouse";    ["GERMAN"] = "Oger Dachsbau";   ["FRENCH"] = "Oger Trougrisard";    };
+        ["DANCE_INSTRUCTOR_ELF"]    = { ["ENGLISH"] = "Nedhrien";           ["GERMAN"] = "Nedhrien";        ["FRENCH"] = "Nedhrien";            };
+        ["DANCE_INSTRUCTOR_DWARF"]  = { ["ENGLISH"] = "Galmi";              ["GERMAN"] = "Galmi";           ["FRENCH"] = "Galmi";               };
+        ["DANCE_INSTRUCTOR_MAN"]    = { ["ENGLISH"] = "Ada Musgrove";       ["GERMAN"] = "Ada Mushain";     ["FRENCH"] = "Ada Boqueteau";       };
     };
 
 
-    ["DEBUFFS"] = {	-- Must match the names given in-game
+    ["DEBUFFS"] = {    -- Must match the names given in-game
         [SPRING] = {};
         [SUMMER] = {};
 
         [HARVESTMATH] = {
-            [1] = { key = "SCROLLSEARCHING";    name = 	{["ENGLISH"] = "Scroll Searching";					["FRENCH"] = "Pêche aux parchemins";			["GERMAN"] = "Schriftrollenziehen";				}; };
-            [2] = { key = "GEODEHUNTING";       name = 	{["ENGLISH"] = "Geode Hunting";						["FRENCH"] = "A la pêche aux géodes";			["GERMAN"] = "Geodensuche";						}; };
-            [3] = { key = "PUMPKINPICKING";     name = 	{["ENGLISH"] = "Pumpkin Picking";					["FRENCH"] = "La chasse aux citrouilles";		["GERMAN"] = "Kürbiswettstreit";				}; };
-            [4] = { key = "APPLEBOBBING";       name = 	{["ENGLISH"] = "Apple Bobbing";						["FRENCH"] = "Pêche aux pommes";				["GERMAN"] = "Apfeltauchen";					}; };
-            [5] = { key = "SECRETREASURECHEST"; name = 	{["ENGLISH"] = "Secret Treasure - Chest";			["FRENCH"] = "Chasse au trésor : Coffre";		["GERMAN"] = "Geheimer Schatz - Truhe";			}; };
-            [6] = { key = "THSTRONGBOX";        name = 	{["ENGLISH"] = "Treasure Hunting - Strongbox";		["FRENCH"] = "Chasse au trésor : Cassette";		["GERMAN"] = "Schatzsuche - robuste Kiste";		}; };
-            [7] = { key = "THLOCKBOX";          name = 	{["ENGLISH"] = "Treasure Hunting - Lockbox";		["FRENCH"] = "Chasse au trésor : Cassette";		["GERMAN"] = "Schatzsuche - Schatulle";			}; };
-            [8] = { key = "THCHEST";            name = 	{["ENGLISH"] = "Treasure Hunting - Chest";			["FRENCH"] = "Chasse au trésor : Coffre";		["GERMAN"] = "Schatzsuche - Truhe";				}; };
+            [1] = { key = "SCROLLSEARCHING";    name =     {["ENGLISH"] = "Scroll Searching";               ["FRENCH"] = "Pêche aux parchemins";        ["GERMAN"] = "Schriftrollenziehen";         }; };
+            [2] = { key = "GEODEHUNTING";       name =     {["ENGLISH"] = "Geode Hunting";                  ["FRENCH"] = "A la pêche aux géodes";       ["GERMAN"] = "Geodensuche";                 }; };
+            [3] = { key = "PUMPKINPICKING";     name =     {["ENGLISH"] = "Pumpkin Picking";                ["FRENCH"] = "La chasse aux citrouilles";   ["GERMAN"] = "Kürbiswettstreit";            }; };
+            [4] = { key = "APPLEBOBBING";       name =     {["ENGLISH"] = "Apple Bobbing";                  ["FRENCH"] = "Pêche aux pommes";            ["GERMAN"] = "Apfeltauchen";                }; };
+            [5] = { key = "SECRETREASURECHEST"; name =     {["ENGLISH"] = "Secret Treasure - Chest";        ["FRENCH"] = "Chasse au trésor : Coffre";   ["GERMAN"] = "Geheimer Schatz - Truhe";     }; };
+            [6] = { key = "THSTRONGBOX";        name =     {["ENGLISH"] = "Treasure Hunting - Strongbox";   ["FRENCH"] = "Chasse au trésor : Cassette"; ["GERMAN"] = "Schatzsuche - robuste Kiste"; }; };
+            [7] = { key = "THLOCKBOX";          name =     {["ENGLISH"] = "Treasure Hunting - Lockbox";     ["FRENCH"] = "Chasse au trésor : Cassette"; ["GERMAN"] = "Schatzsuche - Schatulle";     }; };
+            [8] = { key = "THCHEST";            name =     {["ENGLISH"] = "Treasure Hunting - Chest";       ["FRENCH"] = "Chasse au trésor : Coffre";   ["GERMAN"] = "Schatzsuche - Truhe";         }; };
         };
 
         [YULE] = {
-            [1] = { key = "VILLAIN";            name = 	{["ENGLISH"] = "Villain";		["FRENCH"] = "M\195\169chant";		["GERMAN"] = "Villain";			}; };
-            [3] = { key = "EXTRA";              name = 	{["ENGLISH"] = "Extra";			["FRENCH"] = "Figurant";			["GERMAN"] = "Extra";			}; };
-            [2] = { key = "PROTAGONIST";        name = 	{["ENGLISH"] = "Protagonist";	["FRENCH"] = "Protagoniste";		["GERMAN"] = "Protagonist";		}; };
-
-            [4] = { key = "THEATRE";            name = 	{["ENGLISH"] = "Frostbluff Theatre";	["FRENCH"] = "Th\195\169\195\162tre de Rivegel";		["GERMAN"] = "Frostbluff Theatre";		}; };
+            [1] = { key = "VILLAIN";            name =     {["ENGLISH"] = "Villain";            ["FRENCH"] = "M\195\169chant";                      ["GERMAN"] = "Villain";             }; };
+            [2] = { key = "PROTAGONIST";        name =     {["ENGLISH"] = "Protagonist";        ["FRENCH"] = "Protagoniste";                        ["GERMAN"] = "Protagonist";         }; };
+            [3] = { key = "EXTRA";              name =     {["ENGLISH"] = "Extra";              ["FRENCH"] = "Figurant";                            ["GERMAN"] = "Extra";               }; };
+            [4] = { key = "THEATRE";            name =     {["ENGLISH"] = "Frostbluff Theatre"; ["FRENCH"] = "Th\195\169\195\162tre de Rivegel";    ["GERMAN"] = "Frostbluff Theatre";  }; };
         };
 
         [ANNIVERSARY] = {};
@@ -587,164 +586,161 @@ _LANG = {
     };
 
 
-    ["QUESTS"] = {	-- Must match the quest names given in-game
+    ["QUESTS"] = {    -- Must match the quest names given in-game
         -- General
-        ["ELFDANCEQUEST"] = 	{["ENGLISH"] = "Dances with Elves";			["FRENCH"] = "Danse avec les Elfes";		["GERMAN"] = "Elben-Tänze";		};
-        ["DWARFDANCEQUEST"] = 	{["ENGLISH"] = "Dances with Dwarves";		["FRENCH"] = "Danse avec les Nains";		["GERMAN"] = "Tanz der Zwerge";		};
-        ["HOBBITDANCEQUEST"] = 	{["ENGLISH"] = "Dances with Hobbits";		["FRENCH"] = "Danse avec les Hobbits";		["GERMAN"] = "Tanz der Hobbits";		};
-        ["MENDANCEQUEST"] = 	{["ENGLISH"] = "Dances with Men";			["FRENCH"] = "Danse avec les Hommes";		["GERMAN"] = "Tanz der Menschen";			};
+        ["ELFDANCEQUEST"]    = {["ENGLISH"] = "Dances with Elves";      ["FRENCH"] = "Danse avec les Elfes";    ["GERMAN"] = "Elben-Tänze";         };
+        ["DWARFDANCEQUEST"]  = {["ENGLISH"] = "Dances with Dwarves";    ["FRENCH"] = "Danse avec les Nains";    ["GERMAN"] = "Tanz der Zwerge";     };
+        ["HOBBITDANCEQUEST"] = {["ENGLISH"] = "Dances with Hobbits";    ["FRENCH"] = "Danse avec les Hobbits";  ["GERMAN"] = "Tanz der Hobbits";    };
+        ["MENDANCEQUEST"]    = {["ENGLISH"] = "Dances with Men";        ["FRENCH"] = "Danse avec les Hommes";   ["GERMAN"] = "Tanz der Menschen";   };
 
-        ["START"] = { 	-- Must match the text given in-game
-            ["ENGLISH"] =	"The dance will begin now! Come, shall we dance"; -- Say channel
-            ["FRENCH"] =	"La danse va commencer. Suivez les pas demand\195\169s !";
-            ["GERMAN"] = 	"Der Tanz wird jetzt beginnen! Kommt, sollen wir tanzen?";
+        ["START"] = {     -- Must match the text given in-game
+            ["ENGLISH"] = "The dance will begin now! Come, shall we dance"; -- Say channel
+            ["FRENCH"]  = "La danse va commencer. Suivez les pas demand\195\169s !";
+            ["GERMAN"]  = "Der Tanz wird jetzt beginnen! Kommt, sollen wir tanzen?";
         };
 
         ["END"] = { -- Must match the text given in-game
-            ["ENGLISH"] = 	"Great job! Wonderful! You have all been part of the festival-dance! We will dance again in 20 minutes"; -- Say channel
-            ["FRENCH"] = 	"Tr\195\168s bien ! Formidable ! Vous avez tous particip\195\169 \195\160 la danse du festival ! Nous recommencerons dans 20 minutes.";
-            ["GERMAN"] = 	"Sehr gut gemacht! Wunderbar! Ihr wart alle beim Festtanz mit dabei! In zwanzig Minuten findet der nächste Tanz statt.";
+            ["ENGLISH"] = "Great job! Wonderful! You have all been part of the festival-dance! We will dance again in 20 minutes"; -- Say channel
+            ["FRENCH"]  = "Tr\195\168s bien ! Formidable ! Vous avez tous particip\195\169 \195\160 la danse du festival ! Nous recommencerons dans 20 minutes.";
+            ["GERMAN"]  = "Sehr gut gemacht! Wunderbar! Ihr wart alle beim Festtanz mit dabei! In zwanzig Minuten findet der nächste Tanz statt.";
         };
 
         -- Must match the text given in-game
-        ["NEWQUEST"] = 			{["ENGLISH"] = "New Quest:";	["FRENCH"] = "Nouvelle quête :";	["GERMAN"] = "Neue Aufgabe:"; };
-        ["COMPLETEDQUEST"] = 	{["ENGLISH"] = "Completed:";	["FRENCH"] = "Terminé :";	["GERMAN"] = "Abgeschlossen:"; };
-        ["FAILEDQUEST"] =		{["ENGLISH"] = "Failed:";		["FRENCH"] = "Failed\195\169";	["GERMAN"] = "Gescheitert:"; };
+        ["NEWQUEST"]       = {["ENGLISH"] = "New Quest:";   ["FRENCH"] = "Nouvelle quête :";    ["GERMAN"] = "Neue Aufgabe:";   };
+        ["COMPLETEDQUEST"] = {["ENGLISH"] = "Completed:";   ["FRENCH"] = "Terminé :";           ["GERMAN"] = "Abgeschlossen:";  };
+        ["FAILEDQUEST"]    = {["ENGLISH"] = "Failed:";      ["FRENCH"] = "Failed\195\169";      ["GERMAN"] = "Gescheitert:";    };
 
         -- Season specific -- Must match the text given in-game
         [SPRING] = {
-            ["SHREWLEISURELY"] =        {["ENGLISH"] = "Stomp-a-Shrew for the Leisurely Gardener";	["FRENCH"] = "Ecrase-musaraignes pour jardinier amateur";			["GERMAN"] = "Zerstampft-'ne-Spitzmaus für den geruhsamen Gärtner";			};
-            ["SHREWPRACTICED"] =        {["ENGLISH"] = "Stomp-a-Shrew for the Practised Gardener";	["FRENCH"] = "Ecrase-musaraignes pour jardinier confirm\195\169";	["GERMAN"] = "Zerstampft-'ne-Spitzmaus für den erfahrenen Gärtner";			};
-            ["SHREWELITE"] =	        {["ENGLISH"] = "The Stomp-a-Shrew Challenge";				["FRENCH"] = "Le d\195\169fi de l'\195\169crase-musaraigne";		["GERMAN"] = "Die \"Zerstampft-'ne-Spitzmaus\"-Herausforderung";			};
-            ["SHREWENORMOUS"] =	        {["ENGLISH"] = "Stomp-a-Shrew -- An Enormous Shrew";		["FRENCH"] = "Ecrase-musaraignes -- Une musaraigne gigantesque";	["GERMAN"] = "Zerstampft-'ne-Spitzmaus - Eine riesige Spitzmaus";			};
-            ["FISTFULFLOWERS"] =	    {["ENGLISH"] = "A Fistful of Flowers";					    ["FRENCH"] = "Une brassée de fleurs";						    	["GERMAN"] = "Eine Handvoll Blumen";								        };
-            ["DISORIENTATION"] =	    {["ENGLISH"] = "Disorientation";                            ["FRENCH"] = "Désorientation";                                      ["GERMAN"] = "Orientierungs- losigkeit";                                    };
-            ["THE_CHICKEN_DASH"] =	    {["ENGLISH"] = "The Chicken Dash";                          ["FRENCH"] = "La course au poulet";                                 ["GERMAN"] = "Der Hühnerlauf";                                              };
-            ["THE_GREEN_CHALLENGE"] =	{["ENGLISH"] = "The Green Challenge";                       ["FRENCH"] = "Le défi vert";                                        ["GERMAN"] = "Die grüne Herausforderung";                                   };
-            ["THE_CLOVEN_TRACK"] =	    {["ENGLISH"] = "The Cloven Track";                          ["FRENCH"] = "Le circuit verdoyant";                                ["GERMAN"] = "Der geteilte Weg";                                            };
-            ["A_SPEEDY_ERRAND"] =	    {["ENGLISH"] = "A Speedy Errand";                           ["FRENCH"] = "A toute vitesse";                                     ["GERMAN"] = "Ein eiliger Auftrag";                                         };
-            ["A_FOOLS_ERRAND"] =	    {["ENGLISH"] = "A Fool's Errand";                           ["FRENCH"] = "Mission impossible";                                  ["GERMAN"] = "Auftrag für einen Idioten";                                   };
-            ["MISPLACED_COMPANIONS"] =	{["ENGLISH"] = "Misplaced Companions";                      ["FRENCH"] = "Les compagnons égarés";                               ["GERMAN"] = "Am falschen Ort";                                             };
-            ["A_LAUGH_AT_THE_LOST"] =   {["ENGLISH"] = "A Laugh at the Lost";                       ["FRENCH"] = "Une farce aux perdus";                                ["GERMAN"] = "Ein Witz auf Kosten der Verirrten";                           };
-            ["TERRIBLE_TWEENS"] =       {["ENGLISH"] = "Terrible Tweens";                           ["FRENCH"] = "Terribles jeunes";                                    ["GERMAN"] = "Fürchterliche Zwanziger";                                     };
+            ["SHREWLEISURELY"]       = {["ENGLISH"] = "Stomp-a-Shrew for the Leisurely Gardener";   ["FRENCH"] = "Ecrase-musaraignes pour jardinier amateur";           ["GERMAN"] = "Zerstampft-'ne-Spitzmaus für den geruhsamen Gärtner"; };
+            ["SHREWPRACTICED"]       = {["ENGLISH"] = "Stomp-a-Shrew for the Practised Gardener";   ["FRENCH"] = "Ecrase-musaraignes pour jardinier confirm\195\169";   ["GERMAN"] = "Zerstampft-'ne-Spitzmaus für den erfahrenen Gärtner"; };
+            ["SHREWELITE"]           = {["ENGLISH"] = "The Stomp-a-Shrew Challenge";                ["FRENCH"] = "Le d\195\169fi de l'\195\169crase-musaraigne";        ["GERMAN"] = "Die \"Zerstampft-'ne-Spitzmaus\"-Herausforderung";    };
+            ["SHREWENORMOUS"]        = {["ENGLISH"] = "Stomp-a-Shrew -- An Enormous Shrew";         ["FRENCH"] = "Ecrase-musaraignes -- Une musaraigne gigantesque";    ["GERMAN"] = "Zerstampft-'ne-Spitzmaus - Eine riesige Spitzmaus";   };
+            ["FISTFULFLOWERS"]       = {["ENGLISH"] = "A Fistful of Flowers";                       ["FRENCH"] = "Une brassée de fleurs";                               ["GERMAN"] = "Eine Handvoll Blumen";                                };
+            ["DISORIENTATION"]       = {["ENGLISH"] = "Disorientation";                             ["FRENCH"] = "Désorientation";                                      ["GERMAN"] = "Orientierungs- losigkeit";                            };
+            ["THE_CHICKEN_DASH"]     = {["ENGLISH"] = "The Chicken Dash";                           ["FRENCH"] = "La course au poulet";                                 ["GERMAN"] = "Der Hühnerlauf";                                      };
+            ["THE_GREEN_CHALLENGE"]  = {["ENGLISH"] = "The Green Challenge";                        ["FRENCH"] = "Le défi vert";                                        ["GERMAN"] = "Die grüne Herausforderung";                           };
+            ["THE_CLOVEN_TRACK"]     = {["ENGLISH"] = "The Cloven Track";                           ["FRENCH"] = "Le circuit verdoyant";                                ["GERMAN"] = "Der geteilte Weg";                                    };
+            ["A_SPEEDY_ERRAND"]      = {["ENGLISH"] = "A Speedy Errand";                            ["FRENCH"] = "A toute vitesse";                                     ["GERMAN"] = "Ein eiliger Auftrag";                                 };
+            ["A_FOOLS_ERRAND"]       = {["ENGLISH"] = "A Fool's Errand";                            ["FRENCH"] = "Mission impossible";                                  ["GERMAN"] = "Auftrag für einen Idioten";                           };
+            ["MISPLACED_COMPANIONS"] = {["ENGLISH"] = "Misplaced Companions";                       ["FRENCH"] = "Les compagnons égarés";                               ["GERMAN"] = "Am falschen Ort";                                     };
+            ["A_LAUGH_AT_THE_LOST"]  = {["ENGLISH"] = "A Laugh at the Lost";                        ["FRENCH"] = "Une farce aux perdus";                                ["GERMAN"] = "Ein Witz auf Kosten der Verirrten";                   };
+            ["TERRIBLE_TWEENS"]      = {["ENGLISH"] = "Terrible Tweens";                            ["FRENCH"] = "Terribles jeunes";                                    ["GERMAN"] = "Fürchterliche Zwanziger";                             };
         };
 
         [SUMMER] = { -- Todo: Pick up translations here:
-            ["TOOMUCHFESTIVAL"] = 	{["ENGLISH"] = "Too Much Festival";			["FRENCH"] = "Trop de festivités";				    ["GERMAN"] = "Zu viel Feierei";			        };
-            ["GOINGHUNGRY"] = 		{["ENGLISH"] = "Going Hungry";				["FRENCH"] = "La faim qui vous tenaille";		    ["GERMAN"] = "Hunger schieben";				    };
-            ["BELONGINGS"] = 		{["ENGLISH"] = "Belongings Gone Fishing";	["FRENCH"] = "A la pêche aux effets personnels";    ["GERMAN"] = "Ins Wasser gefallen";		        };
-            ["STOCKINGPOND"] = 		{["ENGLISH"] = "Stocking the Pond";			["FRENCH"] = "Un étang à remplir";				    ["GERMAN"] = "Bestücken des Teichs";			};
-            ["FORGOTTENERRANDS"] = 	{["ENGLISH"] = "Forgotten Errands";			["FRENCH"] = "Les objets égarés";				    ["GERMAN"] = "Vergessene Besorgungen";			};
-            ["WAGER"] = 			{["ENGLISH"] = "Losing More Than a Wager";	["FRENCH"] = "Plus qu'un simple pari";		        ["GERMAN"] = "Nicht nur den Einsatz verloren";	};
-            ["MISSINGTHINGS"] =		{["ENGLISH"] = "Missing Things";			["FRENCH"] = "Les objets perdus";					["GERMAN"] = "Verlorene Dinge";				    };
+            ["TOOMUCHFESTIVAL"]  = {["ENGLISH"] = "Too Much Festival";          ["FRENCH"] = "Trop de festivités";                  ["GERMAN"] = "Zu viel Feierei";                 };
+            ["GOINGHUNGRY"]      = {["ENGLISH"] = "Going Hungry";               ["FRENCH"] = "La faim qui vous tenaille";           ["GERMAN"] = "Hunger schieben";                 };
+            ["BELONGINGS"]       = {["ENGLISH"] = "Belongings Gone Fishing";    ["FRENCH"] = "A la pêche aux effets personnels";    ["GERMAN"] = "Ins Wasser gefallen";             };
+            ["STOCKINGPOND"]     = {["ENGLISH"] = "Stocking the Pond";          ["FRENCH"] = "Un étang à remplir";                  ["GERMAN"] = "Bestücken des Teichs";            };
+            ["FORGOTTENERRANDS"] = {["ENGLISH"] = "Forgotten Errands";          ["FRENCH"] = "Les objets égarés";                   ["GERMAN"] = "Vergessene Besorgungen";          };
+            ["WAGER"]            = {["ENGLISH"] = "Losing More Than a Wager";   ["FRENCH"] = "Plus qu'un simple pari";              ["GERMAN"] = "Nicht nur den Einsatz verloren";  };
+            ["MISSINGTHINGS"]    = {["ENGLISH"] = "Missing Things";             ["FRENCH"] = "Les objets perdus";                   ["GERMAN"] = "Verlorene Dinge";                 };
         };
 
         [HARVESTMATH] = {
             -- New Quest: Troves and Trickery -- Thorin's Hall
             -- Completed:\n Troves and Trickery -- Thorin's Hall
-            ["TROVESDUILLOND"] = 	{["ENGLISH"] = "Troves and Trickery -- Duillond";		["FRENCH"] = "Tours et surprises - Duillond";			["GERMAN"] = "Schätze und Scherze - Duíllont";			};
-            ["TROVESTHORINS"] = 	{["ENGLISH"] = "Troves and Trickery -- Thorin's Hall";	["FRENCH"] = "Tours et surprises - Palais de Thorin";	["GERMAN"] = "Schätze und Scherze - Thorins Halle";	    };
-            ["TROVESSHIRE"] = 		{["ENGLISH"] = "Troves and Trickery -- the Shire";		["FRENCH"] = "Tours et surprises - la Comté";	        ["GERMAN"] = "Schätze und Scherze - Das Auenland";		};
-            ["TROVESBREE"] = 		{["ENGLISH"] = "Troves and Trickery -- Bree";			["FRENCH"] = "Tours et surprises - Bree";				["GERMAN"] = "Schätze und Scherze - Bree";				};
+            ["TROVESDUILLOND"] = {["ENGLISH"] = "Troves and Trickery -- Duillond";      ["FRENCH"] = "Tours et surprises - Duillond";           ["GERMAN"] = "Schätze und Scherze - Duíllont";      };
+            ["TROVESTHORINS"]  = {["ENGLISH"] = "Troves and Trickery -- Thorin's Hall"; ["FRENCH"] = "Tours et surprises - Palais de Thorin";   ["GERMAN"] = "Schätze und Scherze - Thorins Halle"; };
+            ["TROVESSHIRE"]    = {["ENGLISH"] = "Troves and Trickery -- the Shire";     ["FRENCH"] = "Tours et surprises - la Comté";           ["GERMAN"] = "Schätze und Scherze - Das Auenland";  };
+            ["TROVESBREE"]     = {["ENGLISH"] = "Troves and Trickery -- Bree";          ["FRENCH"] = "Tours et surprises - Bree";               ["GERMAN"] = "Schätze und Scherze - Bree";          };
 
             -- Wistemad:
             ["A_WINDY_WALK_THROUGH_WISTMEAD"] = {["ENGLISH"] = "A Windy Walk Through Wistmead"; ["FRENCH"] = "Une promenade venteuse à Wistmead";   ["GERMAN"] = "Ein windumwehter Spaziergang durch Wistmet";  }; -- 1879381497
-            ["CHALLENGING_WHEAT"] =             {["ENGLISH"] = "Challenging Wheat";     ["FRENCH"] = "Du blé qui donne du fil à retordre";          ["GERMAN"] = "Weizengewirr";                                }; -- 1879380267 or 1879380272?
-            ["CHEAT_OF_THE_WHEAT"] =            {["ENGLISH"] = "Cheat of the Wheat";    ["FRENCH"] = "Des blés changeants";                         ["GERMAN"] = "Der Weizentrick";                             }; -- 1879380270 or 1879380271?
-            ["GATHERING_GOURDS"] =              {["ENGLISH"] = "Gathering Gourds";      ["FRENCH"] = "La cueillette de calebasses";                 ["GERMAN"] = "Flaschenkürbisse sammeln ...";                }; -- 1879380265
-            ["PREVENTING_A_MURDER"] =           {["ENGLISH"] = "Preventing a Murder";   ["FRENCH"] = "Empêcher un carnage";                         ["GERMAN"] = "Ausgekrächzt";                                }; -- 1879380266
+            ["CHALLENGING_WHEAT"]             = {["ENGLISH"] = "Challenging Wheat";             ["FRENCH"] = "Du blé qui donne du fil à retordre";  ["GERMAN"] = "Weizengewirr";                                }; -- 1879380267 or 1879380272?
+            ["CHEAT_OF_THE_WHEAT"]            = {["ENGLISH"] = "Cheat of the Wheat";            ["FRENCH"] = "Des blés changeants";                 ["GERMAN"] = "Der Weizentrick";                             }; -- 1879380270 or 1879380271?
+            ["GATHERING_GOURDS"]              = {["ENGLISH"] = "Gathering Gourds";              ["FRENCH"] = "La cueillette de calebasses";         ["GERMAN"] = "Flaschenkürbisse sammeln ...";                }; -- 1879380265
+            ["PREVENTING_A_MURDER"]           = {["ENGLISH"] = "Preventing a Murder";           ["FRENCH"] = "Empêcher un carnage";                 ["GERMAN"] = "Ausgekrächzt";                                }; -- 1879380266
 
             -- Haunted Burrow:
             ["A_CELLAR_DOOR_APPEARS"] = {["ENGLISH"] = "A Cellar Door Appears"; ["FRENCH"] = "La porte d'une cave apparaît";    ["GERMAN"] = "Eine Kellertür erscheint";    }; -- 1879189183
-            ["BILBOS_LETTER"] =         {["ENGLISH"] = "Bilbo's Letter";        ["FRENCH"] = "La lettre de Bilbon";             ["GERMAN"] = "Bilbos Brief";                }; -- 1879189191
-            ["THE_HAUNTED_BURROW"] =    {["ENGLISH"] = "The Haunted Burrow";    ["FRENCH"] = "Le Trou de hobbit hanté";         ["GERMAN"] = "Die heimgesuchte Erdhöhle";   }; -- 1879189266
+            ["BILBOS_LETTER"]         = {["ENGLISH"] = "Bilbo's Letter";        ["FRENCH"] = "La lettre de Bilbon";             ["GERMAN"] = "Bilbos Brief";                }; -- 1879189191
+            ["THE_HAUNTED_BURROW"]    = {["ENGLISH"] = "The Haunted Burrow";    ["FRENCH"] = "Le Trou de hobbit hanté";         ["GERMAN"] = "Die heimgesuchte Erdhöhle";   }; -- 1879189266
 
-            ["RATTLING_IN_THE_HAUNTED_BURROW"] =    {["ENGLISH"] = "Rattling in the Haunted Burrow";    ["FRENCH"] = "Du bruit dans le Trou de hobbit hanté";       ["GERMAN"] = "Klappernde Knochen in der \"Heimgesuchten Erdhöhle\"";    }; -- 1879190510
+            ["RATTLING_IN_THE_HAUNTED_BURROW"]    = {["ENGLISH"] = "Rattling in the Haunted Burrow";    ["FRENCH"] = "Du bruit dans le Trou de hobbit hanté";       ["GERMAN"] = "Klappernde Knochen in der \"Heimgesuchten Erdhöhle\"";    }; -- 1879190510
             ["ROARING_MAW_IN_THE_HAUNTED_BURROW"] = {["ENGLISH"] = "Roaring Maw in the Haunted Burrow"; ["FRENCH"] = "Rugissement dans le Trou de hobbit hanté";    ["GERMAN"] = "Brüllender Rachen in der \"Heimgesuchten Erdhöhle\"";     }; -- 1879190509
-            ["WAILING_IN_THE_HAUNTED_BURROW"] =     {["ENGLISH"] = "Wailing in the Haunted Burrow";     ["FRENCH"] = "Gémissement dans le Trou de hobbit hanté";    ["GERMAN"] = "Gejammer in der \"Heimgesuchten Erdhöhle\"";              }; -- 1879190440
+            ["WAILING_IN_THE_HAUNTED_BURROW"]     = {["ENGLISH"] = "Wailing in the Haunted Burrow";     ["FRENCH"] = "Gémissement dans le Trou de hobbit hanté";    ["GERMAN"] = "Gejammer in der \"Heimgesuchten Erdhöhle\"";              }; -- 1879190440
 
-            ["A_RIDDLE_IN_A_BOTTLE"] =                  {["ENGLISH"] = "A Riddle in a Bottle";                  ["FRENCH"] = "Une énigme dans une bouteille";               ["GERMAN"] = "Ein Rätsel in einer Flasche";                         }; -- 1879190557
-            ["A_STROLL_THROUGH_THE_HAUNTED_BURROW"] =   {["ENGLISH"] = "A Stroll Through the Haunted Burrow";   ["FRENCH"] = "Une promenade dans le trou de hobbit hanté";  ["GERMAN"] = "Ein Spaziergang durch die \"Heimgesuchte Erdhöhle\""; }; -- 1879189345
-            ["A_RACE_THROUGH_THE_HAUNTED_BURROW"] =     {["ENGLISH"] = "A Race Through the Haunted Burrow";     ["FRENCH"] = "Une course dans le Trou de hobbit hanté";     ["GERMAN"] = "Ein Rennen durch die \"Heimgesuchte Erdhöhle\"";      }; -- 1879189346
+            ["A_RIDDLE_IN_A_BOTTLE"]                = {["ENGLISH"] = "A Riddle in a Bottle";                ["FRENCH"] = "Une énigme dans une bouteille";               ["GERMAN"] = "Ein Rätsel in einer Flasche";                         }; -- 1879190557
+            ["A_STROLL_THROUGH_THE_HAUNTED_BURROW"] = {["ENGLISH"] = "A Stroll Through the Haunted Burrow"; ["FRENCH"] = "Une promenade dans le trou de hobbit hanté";  ["GERMAN"] = "Ein Spaziergang durch die \"Heimgesuchte Erdhöhle\""; }; -- 1879189345
+            ["A_RACE_THROUGH_THE_HAUNTED_BURROW"]   = {["ENGLISH"] = "A Race Through the Haunted Burrow";   ["FRENCH"] = "Une course dans le Trou de hobbit hanté";     ["GERMAN"] = "Ein Rennen durch die \"Heimgesuchte Erdhöhle\"";      }; -- 1879189346
 
-            ["THE_GREAT_HOBBIT_RESCUE"] =   {["ENGLISH"] = "The Great Hobbit Rescue";   ["FRENCH"] = "Le grand sauvetage des hobbits";  ["GERMAN"] = "Die große Hobbitrettung"; }; -- 1879189326
-            ["VALUABLES_GONE_ASTRAY"] =     {["ENGLISH"] = "Valuables Gone Astray";     ["FRENCH"] = "Objets de valeur égarés";         ["GERMAN"] = "Verlorene Wertsachen";    }; -- 1879189325
+            ["THE_GREAT_HOBBIT_RESCUE"] = {["ENGLISH"] = "The Great Hobbit Rescue"; ["FRENCH"] = "Le grand sauvetage des hobbits";  ["GERMAN"] = "Die große Hobbitrettung"; }; -- 1879189326
+            ["VALUABLES_GONE_ASTRAY"]   = {["ENGLISH"] = "Valuables Gone Astray";   ["FRENCH"] = "Objets de valeur égarés";         ["GERMAN"] = "Verlorene Wertsachen";    }; -- 1879189325
 
             ["THE_ALE_ASSOCIATION_A_GAME_OF_HOBBIT_HARRYING"] = {["ENGLISH"] = "The Ale Association -- A Game of Hobbit-harrying";  ["FRENCH"] = "La Confrérie de la cervoise - Une partie de harcèlement de Hobbit";   ["GERMAN"] = "Die Bier-Genossenschaft - Hobbits ärgern";    }; -- 1879190353
-            ["THE_INN_LEAGUE_EXCAVATION"] =                     {["ENGLISH"] = "The Inn League Excavation";                         ["FRENCH"] = "La fouille de la Ligue des Tavernes";                                 ["GERMAN"] = "Die Baugrube der Gasthausliga";               }; -- 1879190305
-
-            -- [""] = {["ENGLISH"] = ""; ["FRENCH"] = ""; ["GERMAN"] = ""; }; -- 
-
+            ["THE_INN_LEAGUE_EXCAVATION"]                     = {["ENGLISH"] = "The Inn League Excavation";                         ["FRENCH"] = "La fouille de la Ligue des Tavernes";                                 ["GERMAN"] = "Die Baugrube der Gasthausliga";               }; -- 1879190305
         };
 
         [YULE] = {
-            ["SNOWBEASTS"] = 	    {["ENGLISH"] = "The Abominable Snow-beasts";		["FRENCH"] = "Les abominables b\195\170tes des neiges";				["GERMAN"] = "Die abscheulichen Schneekreaturen";		};
-            ["VILLAIN"] =		    {["ENGLISH"] = "Villain - Frostbluff Theatre";		["FRENCH"] = "M\195\169chant - Th\195\169\195\162tre de Rivegel";	["GERMAN"] = "Bösewicht - Frostfels-Theater";			};
-            ["EXTRA"] =			    {["ENGLISH"] = "Extra - Frostbluff Theatre";		["FRENCH"] = "Figurant - Th\195\169\195\162tre de Rivegel";			["GERMAN"] = "Statist - Frostfels-Theater";				};
-            ["PROTAGONIST"] =	    {["ENGLISH"] = "Protagonist - Frostbluff Theatre";	["FRENCH"] = "Protagoniste - Th\195\169\195\162tre de Rivegel";		["GERMAN"] = "Hauptdarsteller - Frostfels-Theater";		};
-            ["THEATRE"] =		    {["ENGLISH"] = "The Frostbluff Theatre";			["FRENCH"] = "Le Th\195\169\195\162tre de Rivegel";					["GERMAN"] = "Das Frostfels-Theater";					};
-            ["STUFFINGSTUFFED"] =   {["ENGLISH"] = "Stuffing the Stuffed";				["FRENCH"] = "Gaver les participants";								["GERMAN"] = "Volle Leute vollkommen vollstopfen";		};
-            ["EMPTYKEG"] =		    {["ENGLISH"] = "Empty Keg Emergency";				["FRENCH"] = "Des tonneaux presque vides";							["GERMAN"] = "Notfall: Trockenes Fass";					};
-            ["BIGGESTSTOMACH"] =    {["ENGLISH"] = "The Biggest Stomach of Them All";	["FRENCH"] = "Le plus gros estomac du monde";						["GERMAN"] = "Der allergrößte Magen";			        };
+            ["SNOWBEASTS"]      = {["ENGLISH"] = "The Abominable Snow-beasts";          ["FRENCH"] = "Les abominables b\195\170tes des neiges";             ["GERMAN"] = "Die abscheulichen Schneekreaturen";   };
+            ["VILLAIN"]         = {["ENGLISH"] = "Villain - Frostbluff Theatre";        ["FRENCH"] = "M\195\169chant - Th\195\169\195\162tre de Rivegel";   ["GERMAN"] = "Bösewicht - Frostfels-Theater";       };
+            ["EXTRA"]           = {["ENGLISH"] = "Extra - Frostbluff Theatre";          ["FRENCH"] = "Figurant - Th\195\169\195\162tre de Rivegel";         ["GERMAN"] = "Statist - Frostfels-Theater";         };
+            ["PROTAGONIST"]     = {["ENGLISH"] = "Protagonist - Frostbluff Theatre";    ["FRENCH"] = "Protagoniste - Th\195\169\195\162tre de Rivegel";     ["GERMAN"] = "Hauptdarsteller - Frostfels-Theater"; };
+            ["THEATRE"]         = {["ENGLISH"] = "The Frostbluff Theatre";              ["FRENCH"] = "Le Th\195\169\195\162tre de Rivegel";                 ["GERMAN"] = "Das Frostfels-Theater";               };
+            ["STUFFINGSTUFFED"] = {["ENGLISH"] = "Stuffing the Stuffed";                ["FRENCH"] = "Gaver les participants";                              ["GERMAN"] = "Volle Leute vollkommen vollstopfen";  };
+            ["EMPTYKEG"]        = {["ENGLISH"] = "Empty Keg Emergency";                 ["FRENCH"] = "Des tonneaux presque vides";                          ["GERMAN"] = "Notfall: Trockenes Fass";             };
+            ["BIGGESTSTOMACH"]  = {["ENGLISH"] = "The Biggest Stomach of Them All";     ["FRENCH"] = "Le plus gros estomac du monde";                       ["GERMAN"] = "Der allergrößte Magen";               };
         };
 
         [ANNIVERSARY] = {
-            ["MIGHTIESTBLOW_BASIC"] =	{["ENGLISH"] = "The Mightiest Blow (Basic)";		["FRENCH"] = "Le coup fatal (Basique)";					["GERMAN"] = "Der Mächtigste Schlag (Anfänger)";		};
-            ["MIGHTIESTBLOW_INT"] =		{["ENGLISH"] = "The Mightiest Blow (Intermediate)"; ["FRENCH"] = "Le coup fatal (Interm\195\169diaire)";    ["GERMAN"] = "Der Mächtigste Schlag (Fortgeschritten)"; };
-            ["MIGHTIESTBLOW_EXPERT"] =	{["ENGLISH"] = "The Mightiest Blow (Expert)";		["FRENCH"] = "Le coup fatal (Expert)";					["GERMAN"] = "Der Mächtigste Schlag (Experte)";			};
-            ["BREEFIREWORKS"] =			{["ENGLISH"] = "Fireworks in Bree";					["FRENCH"] = "Feux d'artifice \195\160 Bree";			["GERMAN"] = "Feuerwerk in Bree";						};
-            ["LOSTINVITES"] = 			{["ENGLISH"] = "Lost Invitations";					["FRENCH"] = "Invitations perdues";						["GERMAN"] = "Verlorene Einladungen";					};
+            ["MIGHTIESTBLOW_BASIC"]  = {["ENGLISH"] = "The Mightiest Blow (Basic)";         ["FRENCH"] = "Le coup fatal (Basique)";                 ["GERMAN"] = "Der Mächtigste Schlag (Anfänger)";        };
+            ["MIGHTIESTBLOW_INT"]    = {["ENGLISH"] = "The Mightiest Blow (Intermediate)";  ["FRENCH"] = "Le coup fatal (Interm\195\169diaire)";    ["GERMAN"] = "Der Mächtigste Schlag (Fortgeschritten)"; };
+            ["MIGHTIESTBLOW_EXPERT"] = {["ENGLISH"] = "The Mightiest Blow (Expert)";        ["FRENCH"] = "Le coup fatal (Expert)";                  ["GERMAN"] = "Der Mächtigste Schlag (Experte)";         };
+            ["BREEFIREWORKS"]        = {["ENGLISH"] = "Fireworks in Bree";                  ["FRENCH"] = "Feux d'artifice \195\160 Bree";           ["GERMAN"] = "Feuerwerk in Bree";                       };
+            ["LOSTINVITES"]          = {["ENGLISH"] = "Lost Invitations";                   ["FRENCH"] = "Invitations perdues";                     ["GERMAN"] = "Verlorene Einladungen";                   };
         };
 
         [FARMERSFAIRE] = {
-            ["FAT_MAYOR"] =         { ["ENGLISH"] = "Fat Mayor";        ["FRENCH"] = "Gros maire";                  ["GERMAN"] = "Ein dicker Bürgermeister";    };
-            ["BOUNDER_ROUNDS"] =    { ["ENGLISH"] = "Bounder Rounds";   ["FRENCH"] = "Les rondes du frontalier";    ["GERMAN"] = "Grenzerstreife";              };
+            ["FAT_MAYOR"]      = { ["ENGLISH"] = "Fat Mayor";       ["FRENCH"] = "Gros maire";                  ["GERMAN"] = "Ein dicker Bürgermeister";    };
+            ["BOUNDER_ROUNDS"] = { ["ENGLISH"] = "Bounder Rounds";  ["FRENCH"] = "Les rondes du frontalier";    ["GERMAN"] = "Grenzerstreife";              };
 
             -- Staffing the Market quests in Bywater with Daisy Sandyman, left-to-right:
-            ["APPLE_SHOPPING"] =                { ["ENGLISH"] = "Apple-shopping";               ["FRENCH"] = "Achat de pommes";                         ["GERMAN"] = "Apfelkauf";                           };
-            ["FRESH_SAVOURY_MUSHROOM_STEW"] =   { ["ENGLISH"] = "Fresh Savoury Mushroom Stew";  ["FRENCH"] = "Ragoût de champignons frais savoureux";   ["GERMAN"] = "Frischer schmackhafter Pilzeintopf";  };
-            ["A_NOSEY_REQUEST"] =               { ["ENGLISH"] = "A Nosey Request";              ["FRENCH"] = "Requête d'une fouineuse";                 ["GERMAN"] = "Eine naseweise Bitte";                };
-            ["A_SHOPPING_LIST"] =               { ["ENGLISH"] = "A Shopping List";              ["FRENCH"] = "Une liste de courses";                    ["GERMAN"] = "Eine Einkaufsliste";                  };
-            ["A_MARKET_LIST"] =                 { ["ENGLISH"] = "A Market List";                ["FRENCH"] = "Une liste de marchés";                    ["GERMAN"] = "Eine Marktliste";                     };
-            ["A_VENDOR_LIST"] =                 { ["ENGLISH"] = "A Vendor List";                ["FRENCH"] = "Une liste de marchands";                  ["GERMAN"] = "Eine Händlerliste";                   };
+            ["APPLE_SHOPPING"]              = { ["ENGLISH"] = "Apple-shopping";                 ["FRENCH"] = "Achat de pommes";                         ["GERMAN"] = "Apfelkauf";                           };
+            ["FRESH_SAVOURY_MUSHROOM_STEW"] = { ["ENGLISH"] = "Fresh Savoury Mushroom Stew";    ["FRENCH"] = "Ragoût de champignons frais savoureux";   ["GERMAN"] = "Frischer schmackhafter Pilzeintopf";  };
+            ["A_NOSEY_REQUEST"]             = { ["ENGLISH"] = "A Nosey Request";                ["FRENCH"] = "Requête d'une fouineuse";                 ["GERMAN"] = "Eine naseweise Bitte";                };
+            ["A_SHOPPING_LIST"]             = { ["ENGLISH"] = "A Shopping List";                ["FRENCH"] = "Une liste de courses";                    ["GERMAN"] = "Eine Einkaufsliste";                  };
+            ["A_MARKET_LIST"]               = { ["ENGLISH"] = "A Market List";                  ["FRENCH"] = "Une liste de marchés";                    ["GERMAN"] = "Eine Marktliste";                     };
+            ["A_VENDOR_LIST"]               = { ["ENGLISH"] = "A Vendor List";                  ["FRENCH"] = "Une liste de marchands";                  ["GERMAN"] = "Eine Händlerliste";                   };
         };
 
         [HOBNANIGANS] = {
         };
 
         [MIDSUMMER] = {
-            ["A_CURE_FOR_ALL_ILLS"] =           { ["ENGLISH"] = "A Cure For All Ills";                  ["FRENCH"] = "Un remède pour tous les maux";        ["GERMAN"] = "Ein Mittel gegen jedes Leid";     };
-            ["AIDING_THE_STABLE_HANDS"] =       { ["ENGLISH"] = "Aiding the Stable-hands";              ["FRENCH"] = "L'aide aux palefreniers";             ["GERMAN"] = "Hilfe für die Stallhelfer";       };
-            ["ARRANGING_ARRANGEMENTS"] =        { ["ENGLISH"] = "Arranging Arrangements";               ["FRENCH"] = "Dispositions d'arrangements";         ["GERMAN"] = "Schmuck für die Stadt";           };
-            ["ARTISTIC_DIRECTION"] =            { ["ENGLISH"] = "Artistic Direction";                   ["FRENCH"] = "Direction artistique";                ["GERMAN"] = "Richtungsweisende Kunst";         };
-            ["FLORAL_CROWNS"] =                 { ["ENGLISH"] = "Floral Crowns";                        ["FRENCH"] = "Couronnes florales";                  ["GERMAN"] = "Blumenkronen";                    };
-            ["GROWING_PAINS"] =                 { ["ENGLISH"] = "Growing Pains";                        ["FRENCH"] = "Jardinier en herbe";                  ["GERMAN"] = "Wachstumsschmerzen";              };
-            ["HONOURING_HEALERS"] =             { ["ENGLISH"] = "Honouring Healers";                    ["FRENCH"] = "L'hommage aux soignants";             ["GERMAN"] = "Ein Dank an die Heiler";          };
-            ["IN_CELEBRATION_OF_MIDSUMMER"] =   { ["ENGLISH"] = "In Celebration of Midsummer";          ["FRENCH"] = "En célébration du Solstice d'été";    ["GERMAN"] = "Zur Feier von Mittsommer";        };
-            ["LOVE_IS_IN_THE_AIR"] =            { ["ENGLISH"] = "Love Is In the Air";                   ["FRENCH"] = "Vraie romance";                       ["GERMAN"] = "Liebe liegt in der Luft";         };
-            ["SOMETHING_FLORAL"] =              { ["ENGLISH"] = "Something Floral";                     ["FRENCH"] = "Comme une fleur";                     ["GERMAN"] = "Etwas blumig";                    };
-            ["SWEET_TREATS"] =                  { ["ENGLISH"] = "Sweet Treats";                         ["FRENCH"] = "La fête pour tout le monde";          ["GERMAN"] = "Süße Grüße";                      };
-            ["TO_THE_LAST_DROP"] =              { ["ENGLISH"] = "To the Last Drop";                     ["FRENCH"] = "Jusqu'à la dernière goutte";          ["GERMAN"] = "Bis zum letzten Tropfen";         };
-            ["TOSS_A_COIN"] =                   { ["ENGLISH"] = "Toss a Coin";                          ["FRENCH"] = "Une petite pièce";                    ["GERMAN"] = "Münzwurf";                        };
-            ["UNHELPFUL_HOUNDS"] =              { ["ENGLISH"] = "Unhelpful Hounds";                     ["FRENCH"] = "Chiens peu dociles";                  ["GERMAN"] = "Unnütze Hunde";                   };
-            ["WEDDING_SUPPLIES"] =              { ["ENGLISH"] = "Wedding Supplies";                     ["FRENCH"] = "Fournitures de mariage";              ["GERMAN"] = "Hochzeitsmaterialien";            };
-            ["WHAT_ALES_YOU"] =                 { ["ENGLISH"] = "What Ales You";                        ["FRENCH"] = "Pas de la petite bière";              ["GERMAN"] = "Die Bier-Jahreszeiten";           };
-            ["TASTY_MORSELS"] =                 { ["ENGLISH"] = "Tasty Morsels";                        ["FRENCH"] = "Amuse-bouche savoureux";              ["GERMAN"] = "Köstliche Häppchen";              };
-            ["SOMETHING_MISPLACED"] =           { ["ENGLISH"] = "Something Misplaced, Something Blue";  ["FRENCH"] = "Panique au Théâtre Bleu";             ["GERMAN"] = "Etwas Verlegtes, etwas Blaues";   };
+            ["A_CURE_FOR_ALL_ILLS"]         = { ["ENGLISH"] = "A Cure For All Ills";                    ["FRENCH"] = "Un remède pour tous les maux";        ["GERMAN"] = "Ein Mittel gegen jedes Leid";             };
+            ["AIDING_THE_STABLE_HANDS"]     = { ["ENGLISH"] = "Aiding the Stable-hands";                ["FRENCH"] = "L'aide aux palefreniers";             ["GERMAN"] = "Hilfe für die Stallhelfer";               };
+            ["ARRANGING_ARRANGEMENTS"]      = { ["ENGLISH"] = "Arranging Arrangements";                 ["FRENCH"] = "Dispositions d'arrangements";         ["GERMAN"] = "Schmuck für die Stadt";                   };
+            ["ARTISTIC_DIRECTION"]          = { ["ENGLISH"] = "Artistic Direction";                     ["FRENCH"] = "Direction artistique";                ["GERMAN"] = "Richtungsweisende Kunst";                 };
+            ["FLORAL_CROWNS"]               = { ["ENGLISH"] = "Floral Crowns";                          ["FRENCH"] = "Couronnes florales";                  ["GERMAN"] = "Blumenkronen";                            };
+            ["GROWING_PAINS"]               = { ["ENGLISH"] = "Growing Pains";                          ["FRENCH"] = "Jardinier en herbe";                  ["GERMAN"] = "Wachstumsschmerzen";                      };
+            ["HONOURING_HEALERS"]           = { ["ENGLISH"] = "Honouring Healers";                      ["FRENCH"] = "L'hommage aux soignants";             ["GERMAN"] = "Ein Dank an die Heiler";                  };
+            ["IN_CELEBRATION_OF_MIDSUMMER"] = { ["ENGLISH"] = "In Celebration of Midsummer";            ["FRENCH"] = "En célébration du Solstice d'été";    ["GERMAN"] = "Zur Feier von Mittsommer";                };
+            ["LOVE_IS_IN_THE_AIR"]          = { ["ENGLISH"] = "Love Is In the Air";                     ["FRENCH"] = "Vraie romance";                       ["GERMAN"] = "Liebe liegt in der Luft";                 };
+            ["SOMETHING_FLORAL"]            = { ["ENGLISH"] = "Something Floral";                       ["FRENCH"] = "Comme une fleur";                     ["GERMAN"] = "Etwas blumig";                            };
+            ["SWEET_TREATS"]                = { ["ENGLISH"] = "Sweet Treats";                           ["FRENCH"] = "La fête pour tout le monde";          ["GERMAN"] = "Süße Grüße";                              };
+            ["TO_THE_LAST_DROP"]            = { ["ENGLISH"] = "To the Last Drop";                       ["FRENCH"] = "Jusqu'à la dernière goutte";          ["GERMAN"] = "Bis zum letzten Tropfen";                 };
+            ["TOSS_A_COIN"]                 = { ["ENGLISH"] = "Toss a Coin";                            ["FRENCH"] = "Une petite pièce";                    ["GERMAN"] = "Münzwurf";                                };
+            ["UNHELPFUL_HOUNDS"]            = { ["ENGLISH"] = "Unhelpful Hounds";                       ["FRENCH"] = "Chiens peu dociles";                  ["GERMAN"] = "Unnütze Hunde";                           };
+            ["WEDDING_SUPPLIES"]            = { ["ENGLISH"] = "Wedding Supplies";                       ["FRENCH"] = "Fournitures de mariage";              ["GERMAN"] = "Hochzeitsmaterialien";                    };
+            ["WHAT_ALES_YOU"]               = { ["ENGLISH"] = "What Ales You";                          ["FRENCH"] = "Pas de la petite bière";              ["GERMAN"] = "Die Bier-Jahreszeiten";                   };
+            ["TASTY_MORSELS"]               = { ["ENGLISH"] = "Tasty Morsels";                          ["FRENCH"] = "Amuse-bouche savoureux";              ["GERMAN"] = "Köstliche Häppchen";                      };
+            ["SOMETHING_MISPLACED"]         = { ["ENGLISH"] = "Something Misplaced, Something Blue";    ["FRENCH"] = "Panique au Théâtre Bleu";             ["GERMAN"] = "Etwas Verlegtes, etwas Blaues";           };
 
-            ["LIGHTNING_IN_A_BOTTLE"] =     { ["ENGLISH"] = "Lightning in a Bottle";        ["FRENCH"] = "Photophores";                     ["GERMAN"] = "Leuchtende Gläser";                       };
-            ["AMETHYST_FIREFLY_LANTERNS"] = { ["ENGLISH"] = "Amethyst Firefly Lanterns";    ["FRENCH"] = "Lanternes à libellule améthyste"; ["GERMAN"] = "Amethystfarbene Glühwürmchenlaternen";    };
-            ["EMERALD_FIREFLY_LANTERNS"] =  { ["ENGLISH"] = "Emerald Firefly Lanterns";     ["FRENCH"] = "Lanternes à libellule émeraude";  ["GERMAN"] = "Smaragdgrüne Glühwürmchenlaternen";       };
-            ["RUBY_FIREFLY_LANTERNS"] =     { ["ENGLISH"] = "Ruby Firefly Lanterns";        ["FRENCH"] = "Lanternes à libellule rubis";     ["GERMAN"] = "Rubinrote Glühwürmchenlaternen";          };
-            ["SAPPHIRE_FIREFLY_LANTERNS"] = { ["ENGLISH"] = "Sapphire Firefly Lanterns";    ["FRENCH"] = "Lanternes à libellule saphir";    ["GERMAN"] = "Saphirblaue Glühwürmchenlaternen";        };
+            ["LIGHTNING_IN_A_BOTTLE"]       = { ["ENGLISH"] = "Lightning in a Bottle";                  ["FRENCH"] = "Photophores";                         ["GERMAN"] = "Leuchtende Gläser";                       };
+            ["AMETHYST_FIREFLY_LANTERNS"]   = { ["ENGLISH"] = "Amethyst Firefly Lanterns";              ["FRENCH"] = "Lanternes à libellule améthyste";     ["GERMAN"] = "Amethystfarbene Glühwürmchenlaternen";    };
+            ["EMERALD_FIREFLY_LANTERNS"]    = { ["ENGLISH"] = "Emerald Firefly Lanterns";               ["FRENCH"] = "Lanternes à libellule émeraude";      ["GERMAN"] = "Smaragdgrüne Glühwürmchenlaternen";       };
+            ["RUBY_FIREFLY_LANTERNS"]       = { ["ENGLISH"] = "Ruby Firefly Lanterns";                  ["FRENCH"] = "Lanternes à libellule rubis";         ["GERMAN"] = "Rubinrote Glühwürmchenlaternen";          };
+            ["SAPPHIRE_FIREFLY_LANTERNS"]   = { ["ENGLISH"] = "Sapphire Firefly Lanterns";              ["FRENCH"] = "Lanternes à libellule saphir";        ["GERMAN"] = "Saphirblaue Glühwürmchenlaternen";        };
         };
 
     };
 
     ["BUTTONS"] = {
-        ["BACKGROUND"] =    {["ENGLISH"] = "Background";                            ["GERMAN"] = "Hintergrund"; };
-        ["AUTO_OPEN"] =     {["ENGLISH"] = "Auto open";                             ["GERMAN"] = "Autoöffnen";  };
-        ["DANCE"] =         {["ENGLISH"] = "Dance";	        ["FRENCH"] = "Danse";	["GERMAN"] = "Dance";       };
+        ["BACKGROUND"] = {["ENGLISH"] = "Background";                           ["GERMAN"] = "Hintergrund"; };
+        ["AUTO_OPEN"]  = {["ENGLISH"] = "Auto open";                            ["GERMAN"] = "Autoöffnen";  };
+        ["DANCE"]      = {["ENGLISH"] = "Dance";        ["FRENCH"] = "Danse";   ["GERMAN"] = "Dance";       };
     };
 
     ["TOKENS"] = { -- BARTER TOKENS USED AT THE FESTIVALS.
@@ -817,13 +813,13 @@ _LANG = {
         };
 
         [HOBNANIGANS] = {
-            [HOBNANIGANS_TOKEN] = 1879305455; -- HOBNANIGANS_TOKEN			-- Inventory
-            [HOBNANIGANS_WHITE_CHICKEN_TOKEN] = 1879305460; -- WHITE_CHICKEN_TOKEN		-- Inventory
-            [HOBNANIGANS_RED_CHICKEN_TOKEN] = 1879305459; -- RED_CHICKEN_TOKEN			-- Inventory
-            [HOBNANIGANS_DORKING_CHICKEN_TOKEN] = 1879305456; -- DORKING_CHICKEN_TOKEN		-- Inventory
-            [HOBNANIGANS_SCRAPPER_CHICKEN_TOKEN] = 1879305454; -- SCRAPPER_CHICKEN_TOKEN	-- Inventory
-            [HOBNANIGANS_BLACKFOOT_CHICKEN_TOKEN] = 1879305457; -- BLACKFOOT_CHICKEN_TOKEN	-- Inventory
-            [HOBNANIGANS_ORANGE_WYANDOTTE_TOKEN] = 1879305458; -- ORANGE_WYANDOTTE_TOKEN	-- Inventory
+            [HOBNANIGANS_TOKEN] = 1879305455; -- HOBNANIGANS_TOKEN            -- Inventory
+            [HOBNANIGANS_WHITE_CHICKEN_TOKEN] = 1879305460; -- WHITE_CHICKEN_TOKEN        -- Inventory
+            [HOBNANIGANS_RED_CHICKEN_TOKEN] = 1879305459; -- RED_CHICKEN_TOKEN            -- Inventory
+            [HOBNANIGANS_DORKING_CHICKEN_TOKEN] = 1879305456; -- DORKING_CHICKEN_TOKEN        -- Inventory
+            [HOBNANIGANS_SCRAPPER_CHICKEN_TOKEN] = 1879305454; -- SCRAPPER_CHICKEN_TOKEN    -- Inventory
+            [HOBNANIGANS_BLACKFOOT_CHICKEN_TOKEN] = 1879305457; -- BLACKFOOT_CHICKEN_TOKEN    -- Inventory
+            [HOBNANIGANS_ORANGE_WYANDOTTE_TOKEN] = 1879305458; -- ORANGE_WYANDOTTE_TOKEN    -- Inventory
             [HOBNANIGANS_MITHRIL] = 1879255991; -- MITHRIL
         };
 
@@ -835,9 +831,9 @@ _LANG = {
 
     ["OPTIONS"] = {
         --["OPTIONS_BUTTON_TOOLTIP"] = {["ENGLISH"] = "Open the Festival Buddy options."; ["GERMAN"] = "Öffnet Festival Buddy Optionen"; };
-        ["MAP_OPTIONS"] = {["ENGLISH"] = "Map Options: "; ["FRENCH"] = "Map Options: "; ["GERMAN"] = "Kartenoptionen: "; };
-        ["MAP_AUTO_OPEN"] = {["ENGLISH"] = "Auto-open Map"; ["FRENCH"] = "Auto-open Map"; ["GERMAN"] = "Karte automatisch öffnen"; };
-        ["MAP_ORIENTATION"] = {["ENGLISH"] = "Map Up Direction: "; ["FRENCH"] = "Map Up Direction: "; ["GERMAN"] = "Karten Orientierung: "; };
+        ["MAP_OPTIONS"]     = {["ENGLISH"] = "Map Options: ";       ["FRENCH"] = "Map Options: ";       ["GERMAN"] = "Kartenoptionen: ";            };
+        ["MAP_AUTO_OPEN"]   = {["ENGLISH"] = "Auto-open Map";       ["FRENCH"] = "Auto-open Map";       ["GERMAN"] = "Karte automatisch öffnen";    };
+        ["MAP_ORIENTATION"] = {["ENGLISH"] = "Map Up Direction: ";  ["FRENCH"] = "Map Up Direction: ";  ["GERMAN"] = "Karten Orientierung: ";       };
 
         ["MAP_ORIENTATION_DIRECTIONS"] = {
             ["ENGLISH"] = {
@@ -865,9 +861,9 @@ _LANG = {
 
         ["ESCAPE_KEY_CLOSES_WINDOWS"] = { ["ENGLISH"] = "Escape key closes Festival Buddy windows"; ["GERMAN"] = "ESC-Taste schließt Festival Buddy"; };
 
-        ["QUICK_GUIDE"] =                   { ["ENGLISH"] = "Quick Guide:";                                         ["GERMAN"] = "Schnell-Liste:";                                      };
-        ["QUICK_GUIDE_REMOVE_COMPLETED"] =  { ["ENGLISH"] = "Remove completed items from list";                     ["GERMAN"] = "Fertige Punkte aus der Liste entfernen";              };
-        ["QUICK_GUIDE_CLEAR_DELAY"] =       { ["ENGLISH"] = "Delay in seconds before completed items are removed:"; ["GERMAN"] = "Verzögerung in Sekunden bis Punkte entfernt werden";  };
+        ["QUICK_GUIDE"]                   = { ["ENGLISH"] = "Quick Guide:";                                         ["GERMAN"] = "Schnell-Liste:";                                      };
+        ["QUICK_GUIDE_REMOVE_COMPLETED"]  = { ["ENGLISH"] = "Remove completed items from list";                     ["GERMAN"] = "Fertige Punkte aus der Liste entfernen";              };
+        ["QUICK_GUIDE_CLEAR_DELAY"]       = { ["ENGLISH"] = "Delay in seconds before completed items are removed:"; ["GERMAN"] = "Verzögerung in Sekunden bis Punkte entfernt werden";  };
         ["QUICK_GUIDE_QUESTS_TO_INCLUED"] = { ["ENGLISH"] = "Quests to include in quick guide:";                    ["GERMAN"] = "Aufgaben, die in die Schnell-Liste sollen";           };
 
         ["HARVESTMATH_MAZE_ID_LABEL"] = {

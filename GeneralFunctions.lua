@@ -1,5 +1,5 @@
 
-function GetIDFromItem(item)	-- doesn't work because can't set shortcut from item
+function GetIDFromItem(item)    -- doesn't work because can't set shortcut from item
     if item==nil then return end;
 
     local cItemInspect = Turbine.UI.Lotro.Quickslot();
@@ -50,7 +50,7 @@ function GetItemFromID(itemID,IsHex)
     local cItemInspect = Turbine.UI.Lotro.Quickslot();
     cItemInspect:SetSize(1,1);
     cItemInspect:SetVisible(false);
-    local function SetItemShortcut() 	-- PCALL THIS incase item does not exist
+    local function SetItemShortcut()     -- PCALL THIS incase item does not exist
         cItemInspect:SetShortcut(Turbine.UI.Lotro.Shortcut(Turbine.UI.Lotro.ShortcutType.Item, "0x0,0x" .. itemHex));
     end
     if pcall(SetItemShortcut) then
@@ -335,18 +335,18 @@ function GetDaysInMonth(MONTH)
     if MONTH > 12 or MONTH < 1 then return nil end;
 
 
-    if MONTH == 1 then return 31 end; 	-- January
-    if MONTH == 2 then return 28 end; 	-- February
-    if MONTH == 3 then return 31 end; 	-- March
-    if MONTH == 4 then return 30 end;	-- April
-    if MONTH == 5 then return 31 end;	-- May
-    if MONTH == 6 then return 30 end;	-- June
-    if MONTH == 7 then return 31 end;	-- July
-    if MONTH == 8 then return 31 end;	-- August
-    if MONTH == 9 then return 30 end; 	-- September
-    if MONTH == 10 then return 31 end; 	-- October
-    if MONTH == 11 then return 30 end; 	-- November
-    if MONTH == 12 then return 31 end; 	-- December
+    if MONTH == 1 then return 31 end;   -- January
+    if MONTH == 2 then return 28 end;   -- February
+    if MONTH == 3 then return 31 end;   -- March
+    if MONTH == 4 then return 30 end;   -- April
+    if MONTH == 5 then return 31 end;   -- May
+    if MONTH == 6 then return 30 end;   -- June
+    if MONTH == 7 then return 31 end;   -- July
+    if MONTH == 8 then return 31 end;   -- August
+    if MONTH == 9 then return 30 end;   -- September
+    if MONTH == 10 then return 31 end;  -- October
+    if MONTH == 11 then return 30 end;  -- November
+    if MONTH == 12 then return 31 end;  -- December
 
 end
 

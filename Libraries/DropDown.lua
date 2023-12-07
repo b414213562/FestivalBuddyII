@@ -8,39 +8,39 @@ This class creates a LOTRO style drop-down menu
 This class uses the AddCallback() function by Garan for assigning events. Please make sure you use
 the same function if you need to assign any additional events.
 
-WARNING:	Plugins using version 1.x of this class will need a bit of recoding due to a number of changes to the
+WARNING:    Plugins using version 1.x of this class will need a bit of recoding due to a number of changes to the
             constructor and methods used.
 
 
 -- USAGE --
-someDropDown = DropDown(list,default)	-- list is the table of strings to include, default [optional] is the string to display on creation.
+someDropDown = DropDown(list,default)    -- list is the table of strings to include, default [optional] is the string to display on creation.
 
 -- METHODS --
-DropDown:Close();							-- Forces the dropdown list to close, needed for customised lists
-DropDown:GetAlignment();					-- Gets the alignment of the text
-DropDown:GetListBox();						-- Returns the listbox used in the dropdown for customised lists
-DropDown:GetMaxItems();						-- Gets the number of items displayed in the dropdown before a scrollbar is used
-DropDown:GetText();							-- Gets the text in the dropdown
+DropDown:Close();                           -- Forces the dropdown list to close, needed for customised lists
+DropDown:GetAlignment();                    -- Gets the alignment of the text
+DropDown:GetListBox();                      -- Returns the listbox used in the dropdown for customised lists
+DropDown:GetMaxItems();                     -- Gets the number of items displayed in the dropdown before a scrollbar is used
+DropDown:GetText();                         -- Gets the text in the dropdown
 DropDown:IsEnabled();
-DropDown:Reset();							-- Scrolls back to the top item in the list
-DropDown:SetAlignment(ContentAlignment);	-- Sets the text alignment for the labels in the dropdown
+DropDown:Reset();                           -- Scrolls back to the top item in the list
+DropDown:SetAlignment(ContentAlignment);    -- Sets the text alignment for the labels in the dropdown
 DropDown:SetEnabled(value);
 DropDown:SetParent(control);
 DropDown:SetPosition(left,top);
-DropDown:SetMaxItems(value);				-- Sets the number of items displayed in the dropdown before a scrollbar is used
-DropDown:SetText(string);					-- Sets the text of the dropdown
+DropDown:SetMaxItems(value);                -- Sets the number of items displayed in the dropdown before a scrollbar is used
+DropDown:SetText(string);                   -- Sets the text of the dropdown
 DropDown:SetVisible(value);
 DropDown:SetWidth(value);
 
 -- DISABLED METHODS --
-SetHeight(), SetSize()						-- Only width can be set using SetWidth(value)
+SetHeight(), SetSize()                      -- Only width can be set using SetWidth(value)
 
 -- EVENTS --
-DropDown.ItemChanged(Sender,Args)			-- Event sender, Event Args (Args.Index,Args.Text)
+DropDown.ItemChanged(Sender,Args)           -- Event sender, Event Args (Args.Index,Args.Text)
 
 
 -- EXAMPLE --
-local listTable = {"First Label","Second Label","Third Label"};	-- table of strings used to create the dropdown
+local listTable = {"First Label","Second Label","Third Label"}; -- table of strings used to create the dropdown
 someDropDown = DropDown(listTable);
 someDropDown:SetParent(control);
 someDropDown:SetPosition(20,50);

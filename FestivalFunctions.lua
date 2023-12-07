@@ -147,7 +147,7 @@ function CheckFestivalData(_TABLE)
 
         local _CDTABLE = _TABLE[e]["COOLDOWNS"];
 
-        for	k,v in ipairs (_LANG.DEBUFFS[e]) do
+        for k,v in ipairs (_LANG.DEBUFFS[e]) do
             if _CDTABLE[v.name[CLIENTLANG]] == nil then
                 _CDTABLE[v.name[CLIENTLANG]] = 0;
             end
@@ -157,7 +157,7 @@ function CheckFestivalData(_TABLE)
         -- TOKENS ---
         if _TABLE[e]["TOKENS"] == nil then _TABLE[e]["TOKENS"] = {} end;
 
-        for	k,v in pairs (_LANG.TOKENS[e]) do
+        for k,v in pairs (_LANG.TOKENS[e]) do
             if _TABLE[e]["TOKENS"][k] == nil then
                 _TABLE[e]["TOKENS"][k] = 0;
             end

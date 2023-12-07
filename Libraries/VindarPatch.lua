@@ -44,7 +44,7 @@ function convBack(obj)
             local res = ""
             if obj:byte(1,1) == 35 then obj = string.sub(obj,2,-1) end
             while string.len(obj)~=0 do
-                if 		obj:byte(1,1) ~= 35 then res = res .. string.char(obj:byte(1,1)); obj = string.sub(obj,2,-1)
+                if obj:byte(1,1) ~= 35 then res = res .. string.char(obj:byte(1,1)); obj = string.sub(obj,2,-1)
                 elseif obj:byte(2,2) == 35 then  res = res .. "#"; obj = string.sub(obj,3,-1)
                 else
                     obj = string.sub(obj,2,-1)

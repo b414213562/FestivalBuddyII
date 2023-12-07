@@ -87,12 +87,12 @@ Verdana12 = Turbine.UI.Lotro.Font.Verdana12;
 
 _QUALITYCOLORS =
 {
-    [0] = Turbine.UI.Color.White;			-- Undefined
-    [5] = Turbine.UI.Color.White;			-- Common
-    [4] = Turbine.UI.Color.Yellow;			-- Uncommon
-    [2] = Turbine.UI.Color.Magenta;			-- Rare
-    [3] = Turbine.UI.Color.Aqua;			-- Incomparable
-    [1] = Turbine.UI.Color.Orange;			-- Legendary
+    [0] = Turbine.UI.Color.White;       -- Undefined
+    [5] = Turbine.UI.Color.White;       -- Common
+    [4] = Turbine.UI.Color.Yellow;      -- Uncommon
+    [2] = Turbine.UI.Color.Magenta;     -- Rare
+    [3] = Turbine.UI.Color.Aqua;        -- Incomparable
+    [1] = Turbine.UI.Color.Orange;      -- Legendary
 };
 
 

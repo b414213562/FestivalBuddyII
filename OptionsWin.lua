@@ -34,8 +34,8 @@ function DrawGenericOptions(options, y)
 end
 
 function DrawMainWindowScaling(options, y)
-	-- Calculate size information:
-	local screenWidth = Turbine.UI.Display:GetWidth(); -- e.g. 1920
+    -- Calculate size information:
+    local screenWidth = Turbine.UI.Display:GetWidth(); -- e.g. 1920
     local screenHeight = Turbine.UI.Display:GetHeight(); -- e.g. 1080
 
     -- calculate the maximum the slider should be:
@@ -55,53 +55,53 @@ function DrawMainWindowScaling(options, y)
     local scrollbarMinimum = scalingFactor / 2;
     local scrollbarMaximum = maxScale * scalingFactor;
 
-	local mainWindowProportionalWidth = SETTINGS.MAINWIN.WIDTH; -- e.g. 0.026 (2.6%)
+    local mainWindowProportionalWidth = SETTINGS.MAINWIN.WIDTH; -- e.g. 0.026 (2.6%)
     if (mainWindowProportionalWidth == nil) then
         -- This save file doesn't have a Main Window Width, so calculate it up:
         mainWindowProportionalWidth = MainWindowWidth / screenWidth;
         SETTINGS.MAINWIN.WIDTH = mainWindowProportionalWidth;
     end
-	local mainWindowActualWidth = mainWindowProportionalWidth * screenWidth; -- e.g. 2.6% * 1920 = ~50 (49.92)
+    local mainWindowActualWidth = mainWindowProportionalWidth * screenWidth; -- e.g. 2.6% * 1920 = ~50 (49.92)
 
-	local mainWindowDefaultWidth = MainWindowWidth; -- e.g. 300
-	local mainWindowScaledWidth = mainWindowActualWidth / mainWindowDefaultWidth; -- e.g. 49.92 / 100 = 50%
-	-- scollbar is using integer values between 5 and 100 to represent 0.5 to 10.0.
-	-- Multiply here:
-	local mainScalingScrollbarValue = mainWindowScaledWidth * scalingFactor;
+    local mainWindowDefaultWidth = MainWindowWidth; -- e.g. 300
+    local mainWindowScaledWidth = mainWindowActualWidth / mainWindowDefaultWidth; -- e.g. 49.92 / 100 = 50%
+    -- scollbar is using integer values between 5 and 100 to represent 0.5 to 10.0.
+    -- Multiply here:
+    local mainScalingScrollbarValue = mainWindowScaledWidth * scalingFactor;
 
     -- Label for the Main Window scaling scrollbar 
-	options.mainScalingScrollbarLabel = Turbine.UI.Label();
-	options.mainScalingScrollbarLabel:SetParent(options);
-	options.mainScalingScrollbarLabel:SetSize(300, 25);
-	options.mainScalingScrollbarLabel:SetText(string.format(GetString(_LANG.OPTIONS.MAIN_WINDOW_SCALING), mainWindowScaledWidth));
-	options.mainScalingScrollbarLabel:SetPosition(10, y);
-	y = y + 20;
+    options.mainScalingScrollbarLabel = Turbine.UI.Label();
+    options.mainScalingScrollbarLabel:SetParent(options);
+    options.mainScalingScrollbarLabel:SetSize(300, 25);
+    options.mainScalingScrollbarLabel:SetText(string.format(GetString(_LANG.OPTIONS.MAIN_WINDOW_SCALING), mainWindowScaledWidth));
+    options.mainScalingScrollbarLabel:SetPosition(10, y);
+    y = y + 20;
 
-	-- Scrollbar to adjust the Main Window scaling
-	options.mainScalingScrollbar = Turbine.UI.Lotro.ScrollBar();
-	options.mainScalingScrollbar:SetParent(options);
-	options.mainScalingScrollbar:SetOrientation(Turbine.UI.Orientation.Horizontal);
-	options.mainScalingScrollbar:SetSize(250, 10);
-	options.mainScalingScrollbar:SetPosition(10, y);
-	options.mainScalingScrollbar:SetMinimum(scrollbarMinimum);
-	options.mainScalingScrollbar:SetMaximum(scrollbarMaximum);
+    -- Scrollbar to adjust the Main Window scaling
+    options.mainScalingScrollbar = Turbine.UI.Lotro.ScrollBar();
+    options.mainScalingScrollbar:SetParent(options);
+    options.mainScalingScrollbar:SetOrientation(Turbine.UI.Orientation.Horizontal);
+    options.mainScalingScrollbar:SetSize(250, 10);
+    options.mainScalingScrollbar:SetPosition(10, y);
+    options.mainScalingScrollbar:SetMinimum(scrollbarMinimum);
+    options.mainScalingScrollbar:SetMaximum(scrollbarMaximum);
     options.mainScalingScrollbar:SetSmallChange((scalingFactor / 10 > 1) and scalingFactor / 10 or 1);
     options.mainScalingScrollbar:SetLargeChange(scalingFactor / 2);
 
-	options.mainScalingScrollbar:SetValue(mainScalingScrollbarValue);
-	options.mainScalingScrollbar.ValueChanged = function(sender, args)
-		local currentValue = options.mainScalingScrollbar:GetValue(); -- e.g. 32
-		local scaledValue = currentValue / scalingFactor; -- 3.2x
+    options.mainScalingScrollbar:SetValue(mainScalingScrollbarValue);
+    options.mainScalingScrollbar.ValueChanged = function(sender, args)
+        local currentValue = options.mainScalingScrollbar:GetValue(); -- e.g. 32
+        local scaledValue = currentValue / scalingFactor; -- 3.2x
 
         options.mainScalingScrollbarLabel:SetText(string.format(GetString(_LANG.OPTIONS.MAIN_WINDOW_SCALING), scaledValue));
 
-		local screenWidth = Turbine.UI.Display:GetWidth();
-		local actualWidth = scaledValue * MainWindowWidth;
-		local proportinalWidth = actualWidth / screenWidth;
+        local screenWidth = Turbine.UI.Display:GetWidth();
+        local actualWidth = scaledValue * MainWindowWidth;
+        local proportinalWidth = actualWidth / screenWidth;
         SETTINGS.MAINWIN.WIDTH = proportinalWidth;
         MainWinRedraw();
-	end
-	y = y + 25;
+    end
+    y = y + 25;
 
     AddCallback(Turbine.UI.Display, "SizeChanged", function()
         -- TODO: Recalculate maxScale

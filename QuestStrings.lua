@@ -1,7 +1,7 @@
 
 -- Quest strings
 
--- ["STRINGNAME"] = {["ENGLISH"] = "";	["FRENCH"] = "";	["GERMAN"] = ""; };
+-- ["STRINGNAME"] = {["ENGLISH"] = ""; ["FRENCH"] = ""; ["GERMAN"] = ""; };
 -- \n = new line
 
 _QUESTSTRINGS = {

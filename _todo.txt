@@ -1,6 +1,4 @@
 Include Mandraval's German language fixes.
-    Remove unnecessary "Russian" strings
-    change tabs to spaces.
 
 Bugs:
     Need a central system to retrieve the Harvest Map that can trigger the ID window to show up.

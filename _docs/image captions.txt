@@ -1,8 +1,8 @@
 Festival Buddy v1.4.5.1-Image 1.png:
-	New UI for Anniversary: Fireworks in Bree quest.
+    New UI for Anniversary: Fireworks in Bree quest.
 
 Festival Buddy v1.4.5.1-Image 2.png:
-	New UI for Hobnanigans to track score and time.
+    New UI for Hobnanigans to track score and time.
 
 Festival Buddy v1.4.5.1-Image 3.png:
-	Farmers Faire quests added!
+    Farmers Faire quests added!

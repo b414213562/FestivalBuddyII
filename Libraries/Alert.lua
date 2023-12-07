@@ -1,12 +1,12 @@
 --------------------------------------------------------------------------------------------------------
 --
---	Alerts v1.0 by Galuhad
+--    Alerts v1.0 by Galuhad
 --
---	This class creates an alert window - a short message displayed
---	in the centre of the screen to inform the user of something.
+--    This class creates an alert window - a short message displayed
+--    in the centre of the screen to inform the user of something.
 --
---	Usage:
---	local tempMsg = Alert("MESSAGE STRING");
+--    Usage:
+--    local tempMsg = Alert("MESSAGE STRING");
 --
 --------------------------------------------------------------------------------------------------------
 
