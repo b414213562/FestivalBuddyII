@@ -1,0 +1,65 @@
+
+Festival Buddy Change Log
+
+v.1.4.5
+- Updated for Yule 2014
+
+v.1.4.4
+- Adjusted language detection code
+- Fixed tooltip error on alt window
+
+v.1.4.3
+- Updated for Harvestmath 2014
+- Fixed a problem with the tooltips bugging out
+
+v.1.4.2
+- Updated for Summer 2014.
+- Fixed a problem with alerts not showing during dance lessons.
+
+v.1.4.1
+- Updated for Spring 2014.
+
+v.1.4.0
+- Added Anniversary for 2014.
+- Converted displayed tokens from images to full item controls.
+- Converted barter item icons from quickslots to full item controls. This means cosmetics can now be tried on and items linked to chat.
+- Names for barter items should display in local language.
+- Barter window will now display in the same order as it does in-game, you can no longer sort A-Z or Z-A.
+- Changed command from /festivalbuddy to just /festival
+- Added tooltips to the dropdown menus, making it easier to see the full text for quest names.
+- Added some french translations, thanks to Gurndil for providing those. 
+
+v.1.3.1
+
+- Updated the barter items for Yule Festival 2013.
+
+v.1.3.0
+
+- Updated to include the Spring Festival - new quest guides, barter items, and item quickslots.
+
+v.1.2.1
+
+- Fixed a couple of bugs.
+
+v.1.2.1
+
+- Fixed a couple of bugs.
+
+v.1.2.0
+
+- Updated for the Yule festival - new quest guides, barter items etc. plus emote guidance when acting in the Frostbluff Theatre.
+- Added item quickslot assistance for Frostbluff Theatre - easy access to your rotten fruit for terrible acting.
+- Target assistance now pops up a message on the screen when the wrong target is selected for emoting.
+- Interface will now hide when pressing Esc/F12 keys.
+
+v.1.1.0
+
+- Added alt tracking to the plugin. This will enable you to see the cooldowns and tokens on each of your alts.
+- Added target assistance to the dance instructor - although this will not work until after RoR has launched.
+- Added emote quickslots which will pop up when you accept a quest that requires them.
+- Added tooltips to display the time a quest/debuff cooldown will expire.
+- Added support for Plugin Compendium.
+
+v.1.0.0
+
+- Initial Release

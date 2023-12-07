@@ -1,0 +1,6 @@
+v2.0.1:
+1. Main Window: The main window of Festival Buddy II
+2. Barter Window: A window showing what you can buy at a festival.
+3. Quick Guide Window: A series of steps to complete the Midsummer quests at Minas Tirith quickly.
+4. Alts Window: The state of your alts: currency and timers.
+

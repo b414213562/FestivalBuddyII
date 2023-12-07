@@ -1,0 +1,22 @@
+[SIZE="4"][COLOR="DeepSkyBlue"]Introduction[/COLOR][/SIZE]
+
+[URL="https://www.lotrointerface.com/downloads/info767-FestivalBuddy.html"]Festival Buddy[/URL] is a great interface for helping you complete festival quests. This patch adds in support for the Anniversary: Fireworks in Bree quest, Hobnanigans, and Farmers Faire quests.
+
+Note: Currently only English clients are supported.
+
+[SIZE="4"][COLOR="DeepSkyBlue"]Installation and Setup[/COLOR][/SIZE]
+
+To install:
+[LIST]
+[*]First, you need to install [URL="https://www.lotrointerface.com/downloads/info767-FestivalBuddy.html"]Festival Buddy[/URL] v1.4.5. This patch only includes the necessary changes to update that plugin. To install it, you can use [URL="https://www.lotrointerface.com/downloads/info663-LOTROPluginCompendium.html"]Plugin Compendium[/URL], or just unzip the archive and drag the "GaluhadPlugins" folder into your "Documents/The Lord of the Rings Online/Plugins" folder. (If you have not previously installed any plugins, you will have to first create the Plugins folder.)
+[*]Next, download this patch and unzip it. It also contains a "GaluhadPlugins" folder, which you should drag into the same place as before. You will be prompted to overwrite files. Answer yes.
+[/LIST]
+
+To load the plugin, use the game's built-in Plugin Manager. This can be found in the "^" menu, at the bottom of the screen, or by typing [B]/plugins manager[/B] into your chat window.
+
+When the Plugin Manager opens, find Festival Buddy in the list on the left side. Verify that the version is 1.4.5.1. (If it is 1.4.5, then you have not properly installed the patch.) Click "Load" to load the plugin. If you would like the plugin to load automatically each time you login, choose your character's name in the "Automatically Load For" pulldown menu.
+
+[SIZE="4"][COLOR="DeepSkyBlue"]History[/COLOR][/SIZE]
+[LIST]
+[*]2022-08-16 v1.4.5.1: Initial release: Added Fireworks in Bree, Hobnanigans, and Farmers Faire.
+[/LIST]

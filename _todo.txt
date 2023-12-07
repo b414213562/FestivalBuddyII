@@ -1,0 +1,159 @@
+Include Mandraval's German language fixes.
+    Remove unnecessary "Russian" strings
+    change tabs to spaces.
+
+Bugs:
+    Need a central system to retrieve the Harvest Map that can trigger the ID window to show up.
+    GetDayDifference can get called with a nil date because some paths assume the maze map is already selected.
+
+Features:
+    Detecting resolution change:
+        Options window value needs to update
+        
+    Rescaling:
+        Can we put our own hidden window on top of the bottom-right resize thumb and rescale the window proportionally?
+        Yes, but currently the logic assumes the wrong geometry for the initial size.
+        Also, the window can get too big for the screen.
+        We will remove this for the current release.
+        Also, options window value needs to update.
+
+
+    Maze Map:
+        Instead of always trying to load the title and image, check the calculated value with a stored value.
+        Need to time out the maze selection (don't trust values greater than 180 days) for now.
+
+    Use an overlay for names of basement rooms for Haunted Burrow
+        German:
+            Creeping Wing: Der Kriecherflügel
+            Basement: Der Keller
+            Main Cellar: Die heimgesuchte Erdhöhle
+            Cobwebbed Wing: Der Spinnwebenflügel
+            Attic: Der Dachboden
+
+            Candle: Kerze
+            Honey: Gefäss mit Honig
+            Chain: Kalte Ketten
+
+            Wird geplündert: Schlecht versteckte Truhe
+            Wird geplündert: Deplatzierte robuste Truhe
+            Wird geplündert: Deplatzierte robuste Schatulle
+            Wird geplündert: Deplatzierte robuste Kiste
+
+Do later:
+    Can we change the text color for the treasure chests? (Or otherwise differentiate between them and the others?)
+    Can we check off / hide an emote when it's used successfully?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[19:55] Talyrion1003: I tried to add german translation, but had a problem using the emotes (since the buttons showed the right emote, but if it contained a special character, clicking would not work...
+
+
+NotACat — Today at 5:39 PM
+is this a good place to ask whether the Festivity Token count could be displayed alongside the regular festival tokens?
+
+Record what time a quest is finished.
+Occasionally (on login? once a minute?) check if we're past 3 am server time.
+    If yes, mark each questline with a completion time of not-today undone and clear the finished time.
+
+bug: Sometimes see WEDDING_SUPPLIES_5 completing SWEET_TREATS_4 too.
+
+NotACat — 2023-07-02 at 5:55 PM
+    I had another mad thought for the Festival Buddy augmentation
+    Is it possible to track your Figments of Splendour against the cap, with a view to warning if you're about to go over said cap?
+    I'm running half a dozen alts through Minas Tirith and sometimes several of them complete a stage of the wrapper in quick succession and boost my Figments more than I was expecting
+    the plugin clearly knows how many alts I have to populate the "Alts" window, but can it track what stage each one is at with respect to the wrapper and thus predict when I'm about to bust the cap?
+
+Midsummer / Festival Buddy II release:
+    CHAIN_END + LOAD_QUEST (See SOMETHING_MISPLACED_END) isn't loading next quest.
+
+Festival Buddy II fixes for later:
+    Save files use quest names instead of quest keys.
+
+Add FR and DE fireworks strings to debug panel.
+
+Consider using a starts_with function instead of a pattern to find the announcer:
+    function string.starts_with(string_to_test,starting_text)
+        local length = string.len(starting_text);
+        local substring = string.sub(string_to_test, 1, length);
+        local are_equal = substring == starting_text;
+        Turbine.Shell.WriteLine("starting text: \"" .. starting_text .. "\", length: " .. length .. ", substring: \"" .. substring .. "\", equal: " .. dump(are_equal));
+        return are_equal;
+    end
+
+Hobnanigans: (2023-06-01)
+    Get French and German strings!
+
+Anniversary:
+
+    To test: Does the Fireworks frame hide when you turn in Fireworks in Bree?
+    Should pay attention to when the fireworks quest is completeable to hide the UI.
+        EN: Launched the correct firework (10/10)
+        DE: Ihr habt das richtige Feuerwerk gezündet (10/10)
+        FR: Bon feu d'artifice tiré (10/10)
+
+General:
+    Move announcement text down a bit, to dodge quest advancement?
+    Auto-detect any quest, not just the selected festival? It does on my machine... why didn't I see it working before?
+
+Maze map:
+
+Before doing release:
+    Most things with Maze in the name: Get rid of it.
+        Hedge-maze settings (use it, orientation) should stay.
+    Maze-specific things (like filenames): Modify to include festival name.
+    Localize title of Maze Map Window
+    Populate basic information in QuestStrings for each quest. Like: "Run through the maze!"
+
+Future ideas:
+    Allow for clicking on signs / elves to show they're done
+    Add Bee's Big Business Map
+    Add option for on-screen button to open Festival Buddy.
+
+    -- Note: Thurallor comments:
+    -- "Are you using a map tile from the game client? If so you can get the coordinates of the corners from Garan's data files (TerrainMap)"
+
+General: Need to fill in language strings where missing.
+
+General:
+    Allow for import of wardrobe contents from LOTRO Companion.
+    On barter window (or another window), support viewing only cosmetics that aren't in the wardrobe.
+
+Harvest Festival: Show how long for each timer?
+
+Add option to reset "quests in progress"?
+    Festival Buddy thinks you have the following quests in progress. Click the X to force Festival Buddy to think you do not have the quest active.
+
+Make alert window movable:
+    When repositioning the UI is toggled:
+        If there is not an Alert, make one with sample text.
+        If there is.
+
+        Either way, enable drag bars on it.
+        
+    When repositioning is toggled off,
+        disable drag bar and save position in settings.
+
+Add Farmers Faire barter items
+Incorporate French / German strings from Egarthur
+Find out if French / German session play also uses the tilde prefix convention.

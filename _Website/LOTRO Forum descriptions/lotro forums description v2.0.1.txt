@@ -1,0 +1,20 @@
+I just released the initial public version (v2.0.1) of Festival Buddy II, based on Galuhad's Festival Buddy, at [URL='https://www.lotrointerface.com/downloads/info1218-FestivalBuddyII.html']lotrointerface.com[/URL]. This plugin is designed to help you with festivities through-out Middle-earth.
+
+There have been numerous festival changes since Festival Buddy's last update in 2014, and the number of changes I've been making mean releasing them as a patch no longer makes sense.
+
+Festival Buddy II currently supports:
+[LIST]
+[*]Spring (March)
+[*]Anniversary (April/May)
+[*]Midsummer (June)
+[*]Summer / Farmers Faire (August/September)
+[*]Harvestmath (October)
+[*]Yule (December)
+[*]Hobnanigans (Various)
+[/LIST]
+
+The Hedge Maze during the Spring Festival can be difficulty to navigate. Festival Buddy II includes an in-game map that highlights the objectives of the various maze quests and responds to the /loc command to show you where you are.
+
+Midsummer is a complicated festival. Festival Buddy II includes a Quick Guide you can use to help complete the interwoven quests of Minas Tirith.
+
+Please let me know if you spot any errors, or if you have any requests.

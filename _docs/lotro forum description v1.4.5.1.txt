@@ -1,0 +1,19 @@
+My first patch for the Festival Buddy plugin, [url=https://www.lotrointerface.com/downloads/info1193-FestivalBuddyExtendedSupport.html]Festival Buddy Extended Support[/url] is now available at lotrointerface.com.
+
+This release includes several changes:
+
+A helper UI for the Anniversary Fireworks in Bree quest that shows the valid options.
+
+[IMG]https://www.lotrointerface.com/downloads/full3593.jpg[/IMG]
+
+A new UI for Hobnanigans that tracks the score for each team and the time remaining.
+
+[IMG]https://www.lotrointerface.com/downloads/full3594.jpg[/IMG]
+
+Added many  Bywater Farmers Faire quests
+
+[IMG]https://www.lotrointerface.com/downloads/full3595.jpg[/IMG]
+
+The release also includes a bug fix to the Festival Buddy tooltips.
+
+Download the [URL=https://www.lotrointerface.com/downloads/info767-FestivalBuddy.html]original plugin[/URL] and [URL=https://www.lotrointerface.com/downloads/info1193-FestivalBuddyExtendedSupport.html]the patch[/URL] at lotrointerface.com.

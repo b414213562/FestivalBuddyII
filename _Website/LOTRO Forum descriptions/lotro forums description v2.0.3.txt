@@ -1,0 +1,30 @@
+Festival Buddy II version v2.0.3 is now available at [URL='https://www.lotrointerface.com/downloads/info1218-FestivalBuddyII.html']lotrointerface.com[/URL].
+
+This adds Harvestmath quest guides for Tanglecorn and Haunted Burrow, the option to scale main window for readability, and numerous German and French translations.
+
+Version 2.0.3 release notes:
+
+Festivals:
+[list]
+[*]
+[*] Added Harvestmath quest guides for Tanglecorn and Haunted Burrow.
+    [list]
+    [*] Thanks to Dt for excellent maps of Tanglecorn!
+    [*] Haunted Burrow maps are based on the Haunted Burrow map by Brandie from the wiki.
+    [/list]
+[*] Midsummer:
+    [list]
+    [*] Corrected Something Misplaced, Something Blue map and quick guide entry.
+    [/list]
+[/list]
+
+UI:
+[list]
+[*] Added option to scale main window for readability.
+[/list]
+
+Language:
+[list]
+[*] Added in numerous German translations from Mandraval.
+[*] Updated some French translations.
+[/list]

@@ -1,0 +1,29 @@
+At start, and after each goal:
+Field 2 Referee says, ''The Game Hen has landed on the field. Begin play!''
+
+Field 2 Referee says, ''Flying Feathers Win!!!''
+Field 2 Referee says, ''Steel Beaks Win!!!''
+
+Field 3 Referee says, ''Flying Feathers score!!!''
+
+["HOBNANIGANS_QUEST_BEGIN_TEXT"] = "New Quest: A Game of Hobnanigans %-%- (.*) %- Field ([1-4])";
+["HOBNANIGANS_QUEST_END_TEXT"] = "Failed: A Game of Hobnanigans %-%- (.*) %- Field ([1-4])";
+["HOBNANIGANS_ACTIVE_PLAY_BEGIN"] = "Field ([1-4]) Referee says, ''The Game Hen has landed on the field%. Begin play!''";
+["HOBNANIGANS_POINT_SCORED"] = "Field ([1-4]) Referee says, ''(.*) score!!!''";
+["HOBNANIGANS_GAME_END"] = "Field ([1-4]) Referee says, ''(.*) Win!!!''";
+
+["QUEST_BEGIN_FIELD_1_FF"] = "New Quest: A Game of Hobnanigans -- Flying Feathers - Field 1";
+["QUEST_FAILED_FIELD_1_FF"] = "Failed: A Game of Hobnanigans -- Flying Feathers - Field 1";
+["QUEST_BEGIN_FIELD_1_SB"] = "New Quest: A Game of Hobnanigans -- Steel Beaks - Field 1";
+["QUEST_FAILED_FIELD_1_SB"] = "Failed: A Game of Hobnanigans -- Steel Beaks - Field 1";
+
+
+
+Field 2 Referee says, ''A new game will begin as soon as the players have taken their sticks.''
+Field 3 Referee says, ''A chicken, two full teams, and a glorious game of Hobnanigans begins.''
+Field 2 Referee says, ''Come one, come all. Come play Hobnanigans!''
+
+Timer:
+
+Make score text bigger. (Scaling?)
+Swap out KFC for CCLE?
