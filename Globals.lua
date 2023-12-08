@@ -276,4 +276,5 @@ BACKROUNDABLE_QUESTS = {
 
 QUICK_GUIDES = {
     [MIDSUMMER] = true;
+    [YULE] = true;
 }

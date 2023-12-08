@@ -1,4 +1,9 @@
-Include Mandraval's German language fixes.
+Yule:
+    Need better quest help:
+        Stolen Treats
+    Need quick guide for town quests.
+        QuickGuideWin hard-codes the Midsummer guide in many places.
+        Put these into a combined table and use SELECTEDFESTIVAL instead.
 
 Bugs:
     Need a central system to retrieve the Harvest Map that can trigger the ID window to show up.
