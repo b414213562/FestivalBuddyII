@@ -27,6 +27,9 @@ function DrawQuickGuideWin()
     treeView:SetPosition(20, 32);
     treeView:SetSize(tempWidth - 40, tempHeight - 50);
     treeView:SetFilter(function(treeNode)
+        -- Don't proceed if this festival doesn't have a quick guide:
+        if (not QUICK_GUIDES[SELECTEDFESTIVAL]) then return false; end
+
         local index = treeNode.index;
         local questChain = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAIN_LOOKUP[SELECTEDFESTIVAL][index];
 
