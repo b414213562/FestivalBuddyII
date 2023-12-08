@@ -105,8 +105,8 @@ relY = 0;
 CLIENTLANG = GetClientLanguage();
 
 -- Default Character Settings
-DEFAULT_SETTINGS =
-    {
+DEFAULT_SETTINGS = {
+
     ["MSGCOLOR"] = "FFFFFF";
     ["FESTIVAL"] = 1;
     ["QUEST"] = nil;
@@ -117,102 +117,87 @@ DEFAULT_SETTINGS =
     ["QUICK_GUIDE_REMOVE_COMPLETED"] = true;
     ["QUICK_GUIDE_CLEAR_DELAY"] = 5;
 
-    ["MAINWIN"] =
-        {
+    ["MAINWIN"] = {
         ["VISIBLE"] = true;
         ["X"] = (SCREENWIDTH/2)-225;
         ["Y"] = SCREENHEIGHT/3;
-        };
+    };
 
-    ["MINIMIZED_ICON"] =
-        {
+    ["MINIMIZED_ICON"] = {
         ["X"] = SCREENWIDTH/2;
         ["Y"] = SCREENHEIGHT/2;
-        };
+    };
 
-    ["DANCEWIN"] =
-        {
+    ["DANCEWIN"] = {
         ["VISIBLE"] = false;
         ["X"] = (SCREENWIDTH/2)-100;
         ["Y"] = SCREENHEIGHT/3;
-        };
+    };
 
-    ["BARTERWIN"] =
-        {
+    ["BARTERWIN"] = {
         ["VISIBLE"] = false;
         ["X"] = (SCREENWIDTH/2)-100;
         ["Y"] = SCREENHEIGHT/3;
-        };
+    };
 
-    ["ALTWIN"] =
-        {
+    ["ALTWIN"] = {
         ["VISIBLE"] = false;
         ["X"] = (SCREENWIDTH/2)-100;
         ["Y"] = SCREENHEIGHT/3;
-        };
+    };
 
-    ["MAZEMAPWIN"] =
-        {
+    ["MAZEMAPWIN"] = {
         ["VISIBLE"] = false;
         ["X"] = (SCREENWIDTH/2)-270;
         ["Y"] = SCREENHEIGHT/3;
         ["ORIENTATION"] = NORTH;
         ["AUTO_OPEN_MAP"] = true;
-        };
-    
-    ["HARVESTMATH_MAZE_ID_WIN"] =
-        {
+    };
+
+    ["HARVESTMATH_MAZE_ID_WIN"] = {
         ["X"] = (SCREENWIDTH/2)-190;
         ["Y"] = SCREENHEIGHT/3;
-        };
+    };
 
-    ["EMOTEWIN"] =
-        {
+    ["EMOTEWIN"] = {
         ["VISIBLE"] = false;
         ["X"] = SCREENWIDTH/2;
         ["Y"] = SCREENHEIGHT/3;
-        };
+    };
 
-    ["QUICK_GUIDE_WIN"] =
-        {
+    ["QUICK_GUIDE_WIN"] = {
         ["VISIBLE"] = false;
         ["X"] = SCREENWIDTH/2;
         ["Y"] = SCREENHEIGHT/3;
         ["HEIGHT"] = 320;
-        };
+    };
 
-    ["QSWIN"] =
-        {
+    ["QSWIN"] = {
         ["VISIBLE"] = false;
         ["X"] = SCREENWIDTH/2;
         ["Y"] = SCREENHEIGHT/3;
-        };
+    };
 
-    ["EVENT_QUICKSLOT"] =
-        {
+    ["EVENT_QUICKSLOT"] = {
         ["VISIBLE"] = false;
         ["X"] = SCREENWIDTH/2;
         ["Y"] = SCREENHEIGHT/3;
-        };
+    };
 
-    ["IN_PROGRESS_QUESTS"] =
-        {
+    ["IN_PROGRESS_QUESTS"] = {
         -- example:
         -- ["BOUNDER_ROUNDS"] = true
-        };
+    };
 
-    ["QUICK_GUIDE_PROGRESS"] =
-        {
+    ["QUICK_GUIDE_PROGRESS"] = {
         [MIDSUMMER] = {
         };
         [YULE] = {
         };
-        };
+    };
 
-    ["QUICK_GUIDE_QUESTS_TO_USE"] =
-        {
-        [MIDSUMMER] =
-            {
+    ["QUICK_GUIDE_QUESTS_TO_USE"] = {
+        [MIDSUMMER] = {
             ["A_CURE_FOR_ALL_ILLS"] = true;
             ["AIDING_THE_STABLE_HANDS"] = true;
             ["ARRANGING_ARRANGEMENTS"] = true;
@@ -231,9 +216,9 @@ DEFAULT_SETTINGS =
             ["UNHELPFUL_HOUNDS"] = true;
             ["WEDDING_SUPPLIES"] = true;
             ["WHAT_ALES_YOU"] = true;
-            };
         };
     };
+};
 
 DEFAULT_SETTINGS_SERVER = {
     ["HARVESTMATH_MAZE_ID"] = {
