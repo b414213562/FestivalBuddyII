@@ -205,6 +205,8 @@ DEFAULT_SETTINGS =
         {
         [MIDSUMMER] = {
         };
+        [YULE] = {
+        };
         };
 
     ["QUICK_GUIDE_QUESTS_TO_USE"] =
