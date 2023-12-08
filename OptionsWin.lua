@@ -174,7 +174,7 @@ function DrawQuickGuideOptions(options, y)
 
     local questNameToKey = {};
     local questNames = {};
-    for k,v in pairs(MIDSUMMER_CHAINS) do
+    for k,v in pairs(_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAINS[MIDSUMMER]) do
         local name = GetString(_LANG.QUESTS[MIDSUMMER][k]);
         questNameToKey[name] = k;
         table.insert(questNames, name);

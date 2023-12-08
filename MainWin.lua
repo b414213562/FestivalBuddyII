@@ -44,7 +44,7 @@ function DrawMainWin()
         RefreshTokenView();
         RefreshBarterList();
         CheckFestivalData(_CHARDATA[MYCHAR:GetName()]);
-        QuickGuideWinLoadFestival(SELECTEDFESTIVAL);
+        QuickGuideWinLoadFestival();
         if ddAltNames ~= nil then RefreshAltDisplay(ddAltNames:GetText()) end;
 
         -- Hide the UI elements that aren't useful for Hobnanigans:

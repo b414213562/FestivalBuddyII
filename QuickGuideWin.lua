@@ -28,9 +28,9 @@ function DrawQuickGuideWin()
     treeView:SetSize(tempWidth - 40, tempHeight - 50);
     treeView:SetFilter(function(treeNode)
         local index = treeNode.index;
-        local questChain = MIDSUMMER_CHAINLOOKUP[index];
+        local questChain = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAIN_LOOKUP[SELECTEDFESTIVAL][index];
 
-        local isChainUsed = SETTINGS.QUICK_GUIDE_QUESTS_TO_USE[MIDSUMMER][questChain];
+        local isChainUsed = SETTINGS.QUICK_GUIDE_QUESTS_TO_USE[SELECTEDFESTIVAL][questChain];
         local isEntryComplete = treeNode.complete;
         local isReset = treeNode.isReset;
 
@@ -86,7 +86,7 @@ function QuickGuideWinCreateNode(index)
     return treeNode;
 end
 
-function QuickGuideWinLoadFestival(festival)
+function QuickGuideWinLoadFestival()
     local treeView = wQuickGuideWinParent.treeView;
     treeView:GetNodes():Clear();
 
@@ -111,7 +111,7 @@ function QuickGuideWinLoadFestival(festival)
     treeView:GetNodes():Add(resetNode);
     resetItem.Click = function(sender, args)
         QuickGuideWinClearCompleted();
-        QuickGuideWinLoadFestival(SELECTEDFESTIVAL);
+        QuickGuideWinLoadFestival();
     end
 
     local creditNode = Turbine.UI.TreeNode();
@@ -120,7 +120,7 @@ function QuickGuideWinLoadFestival(festival)
 
     local creditLabel = Turbine.UI.Label();
     creditLabel:SetParent(creditNode);
-    creditLabel:SetText("\nThis guide is based on LilRedHead's excellent LOTRO Midsummer Festival - Quick Guide at https://lifebeyondtheshire.com/lotro-midsummer-festival-quick-guide/. Thank you LRH!");
+    creditLabel:SetText(_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[SELECTEDFESTIVAL]);
     creditLabel:SetSize(treeView:GetWidth(), 70);
     treeView:GetNodes():Add(creditNode);
 end
@@ -212,12 +212,12 @@ function QuickGuideWinMarkComplete(index)
             -- make sure this chain isn't already completed:
             local chainName = loadQuestDirective;
             local chainEndName = chainName .. "_END";
-            local chainEndIndex = QG_MIDSUMMER_INDEX[chainEndName];
+            local chainEndIndex = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_INDICIES[SELECTEDFESTIVAL][chainEndName];
             local checkBox = GetCheckbox(chainEndIndex);
             local isChainComplete = checkBox:IsChecked();
 
             -- make sure this chain is included:
-            local isChainUsed = SETTINGS.QUICK_GUIDE_QUESTS_TO_USE[MIDSUMMER][chainName];
+            local isChainUsed = SETTINGS.QUICK_GUIDE_QUESTS_TO_USE[SELECTEDFESTIVAL][chainName];
 
             if (isChainUsed and not isChainComplete) then
                 LoadQuest(loadQuestDirective);
@@ -256,8 +256,8 @@ function QuickGuideWinHandleQuestChainBeginOrEnd(index)
         if (isChainEnd) then state = true; end
 
         local chain = nil;
-        if (isChainBegin) then chain = MIDSUMMER_CHAINS[objective.CHAIN_BEGIN];
-        elseif (isChainEnd) then chain = MIDSUMMER_CHAINS[objective.CHAIN_END];
+        if (isChainBegin) then chain = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAINS[SELECTEDFESTIVAL][objective.CHAIN_BEGIN];
+        elseif (isChainEnd) then chain = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAINS[SELECTEDFESTIVAL][objective.CHAIN_END];
         end
         local treeView = wQuickGuideWinParent.treeView;
         local nodeChanged = false;

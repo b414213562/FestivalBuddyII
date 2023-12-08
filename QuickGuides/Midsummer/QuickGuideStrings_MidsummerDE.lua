@@ -1,4 +1,6 @@
 
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[MIDSUMMER] = "\nThis guide is based on LilRedHead's excellent LOTRO Midsummer Festival - Quick Guide at https://lifebeyondtheshire.com/lotro-midsummer-festival-quick-guide/. Thank you LRH!";
+
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[MIDSUMMER] = {
     [QG_MIDSUMMER_INDEX.IN_CELEBRATION_OF_MIDSUMMER_PICKUP] = { ["DISPLAY"] = "Take 'Zur Feier von Mittsommer' from Faeleth outside <rgb=#ffc000>City Stables</rgb>"; ["CHAIN_BEGIN"] = "IN_CELEBRATION_OF_MIDSUMMER"; };
     [QG_MIDSUMMER_INDEX.SOMETHING_FLORAL_PICKUP] = { ["DISPLAY"] = "Take 'Etwas blumig' from Merilien on the Citadel"; ["CHAIN_BEGIN"] = "SOMETHING_FLORAL"; };
