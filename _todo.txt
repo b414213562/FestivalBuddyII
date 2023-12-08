@@ -2,8 +2,6 @@ Yule:
     Need better quest help:
         Stolen Treats
     Need quick guide for town quests.
-        QuickGuideWin hard-codes the Midsummer guide in many places.
-        Put these into a combined table and use SELECTEDFESTIVAL instead.
         Need to add logic to options to populate multiple quick guides
             maybe a dropdown to select which one is being edited?
 
