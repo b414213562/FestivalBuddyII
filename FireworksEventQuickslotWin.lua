@@ -1,5 +1,6 @@
 
 function DrawFireworksEventQuickslotWin()
+    ---@class Window
     wQuickslot = Turbine.UI.Window();
     wQuickslot:SetBackground(_IMAGES.EVENT_QUICKSLOT_FIREWORKS_BREE);
     wQuickslot:SetSize(194, 41);
@@ -10,10 +11,10 @@ function DrawFireworksEventQuickslotWin()
     wQuickslot.isHudOn = true;
     wQuickslot.isWindowVisible = false;
 
-    wBorder1 = CreateBorder(1);
-    wBorder2 = CreateBorder(2);
-    wBorder3 = CreateBorder(3);
-    wBorder4 = CreateBorder(4);
+    wQuickslot.wBorder1 = CreateBorder(1);
+    wQuickslot.wBorder2 = CreateBorder(2);
+    wQuickslot.wBorder3 = CreateBorder(3);
+    wQuickslot.wBorder4 = CreateBorder(4);
 end
 
 local leftMargin = 28;
@@ -35,10 +36,10 @@ end
 
 function HighlightAllowedFireworks(allowedFireworks)
     local red, green, blue, yellow = GetBorderState(allowedFireworks);
-    wBorder1:SetVisible(red);
-    wBorder2:SetVisible(green);
-    wBorder3:SetVisible(blue);
-    wBorder4:SetVisible(yellow);
+    wQuickslot.wBorder1:SetVisible(red);
+    wQuickslot.wBorder2:SetVisible(green);
+    wQuickslot.wBorder3:SetVisible(blue);
+    wQuickslot.wBorder4:SetVisible(yellow);
 end
 
 function GetBorderState(allowedFireworks)
