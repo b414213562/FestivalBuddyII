@@ -4,7 +4,6 @@ Yule:
     Need quick guide for town quests.
         Need to add logic to options to populate multiple quick guides
             maybe a dropdown to select which one is being edited?
-        bug: if you hold down shift when an objective is detection-completed, it acts like a shift-click.
         biggest stomach especially: what happens if they fail?!?
 Bugs:
     Need a central system to retrieve the Harvest Map that can trigger the ID window to show up.

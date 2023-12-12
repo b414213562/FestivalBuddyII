@@ -12,6 +12,7 @@ function DrawQuickGuideWin()
     wQuickGuideWinParent:SetText("Quick Guide");
     wQuickGuideWinParent:SetVisible(SETTINGS.QUICK_GUIDE_WIN.VISIBLE);
     wQuickGuideWinParent:SetResizable(true);
+    wQuickGuideWinParent.IsFilterQuestHappening = false;
     wQuickGuideWinParent.PositionChanged = function(sender, args)
         SETTINGS.QUICK_GUIDE_WIN.X = wQuickGuideWinParent:GetLeft();
         SETTINGS.QUICK_GUIDE_WIN.Y = wQuickGuideWinParent:GetTop();
@@ -59,6 +60,14 @@ function DrawQuickGuideWin()
         treeView:SetHeight(newHeight);
         scrollbar:SetHeight(newHeight);
     end
+end
+
+function QuickGuideFilterQuestBegin()
+    wQuickGuideWinParent.IsFilterQuestHappening = true;
+end
+
+function QuickGuideFilterQuestEnd()
+    wQuickGuideWinParent.IsFilterQuestHappening = false;
 end
 
 function QuickGuideWinCreateNode(index)
@@ -130,7 +139,8 @@ end
 
 function QuickGuidWinHandleCheckedEntry(treeNode)
     local checkBox = treeNode.checkBox;
-    if (checkBox:IsShiftKeyDown()) then
+    if (not wQuickGuideWinParent.IsFilterQuestHappening and
+        checkBox:IsShiftKeyDown()) then
         for i=1, treeNode.index - 1 do
             local possibleCheckbox = GetCheckbox(i);
             if (possibleCheckbox) then
