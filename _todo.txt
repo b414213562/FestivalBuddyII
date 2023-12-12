@@ -5,6 +5,10 @@ Yule:
         Need to add logic to options to populate multiple quick guides
             maybe a dropdown to select which one is being edited?
         biggest stomach especially: what happens if they fail?!?
+        bug: hiding times for distinct checkboxes don't seem to be distinct.
+            Complete something. 3 seconds later, complete something else.
+            Notice: Both get hidden two seconds later.
+
 Bugs:
     Need a central system to retrieve the Harvest Map that can trigger the ID window to show up.
     GetDayDifference can get called with a nil date because some paths assume the maze map is already selected.
