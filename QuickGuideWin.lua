@@ -80,13 +80,18 @@ function QuickGuideWinCreateNode(index)
     treeNode.complete = isCompleted;
     treeNode.index = index;
 
+    local objective = _QUICK_GUIDE[SELECTEDFESTIVAL][index];
+
     local checkBox = Turbine.UI.Lotro.CheckBox();
     checkBox:SetParent(treeNode);
-    checkBox:SetText(_QUICK_GUIDE[SELECTEDFESTIVAL][index]["DISPLAY"]);
+    checkBox:SetText(objective.DISPLAY);
     checkBox:SetSize(treeView:GetWidth() - 8, 40);
     checkBox:SetMarkupEnabled(true);
     checkBox.CheckedChanged = function(sender, args)
         QuickGuidWinHandleCheckedEntry(treeNode);
+        if (checkBox:IsChecked() and objective.CHAIN_END ~= nil) then
+            QuickGuideWinHandleQuestChainBeginOrEnd(index);
+        end
     end
     checkBox.Update = function(sender, args)
         local time = Turbine.Engine.GetGameTime();
@@ -200,7 +205,6 @@ function GetCheckbox(index)
     return nil;
 end
 
--- TODO: How can we call this correctly when the user clicks a box manually?
 function QuickGuideWinMarkComplete(index)
     local checkbox = GetCheckbox(index);
     if (checkbox) then
