@@ -2,6 +2,8 @@ Yule:
     Need better quest help:
         Stolen Treats
     Need quick guide for town quests.
+        For each of the 5 beggers: Call out their location each time they are mentioned.
+        Delete extra biggest stomach bits (e.g. THE_BIGGEST_STOMACH_OF_THEM_ALL_PICKUP_2)
         Need to add logic to options to populate multiple quick guides
             maybe a dropdown to select which one is being edited?
         bug: if you hold down shift when an objective is detection-completed, it acts like a shift-click.
