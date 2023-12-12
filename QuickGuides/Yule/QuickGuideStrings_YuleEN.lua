@@ -1,21 +1,148 @@
 
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[YULE] = "\nThis guide created by Cube during the 2023 Yule.";
 
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[YULE] = {
-    [QG_YULE_INDEX.IN_THE_SPIRIT_OF_YULE_PICKUP] = { ["DISPLAY"] = "Take 'In the Spirit of Yule' from Mara Sandydowns in Winterhome"; ["CHAIN_BEGIN"] = "IN_THE_SPIRIT_OF_YULE"; };
-    [QG_YULE_INDEX.IN_THE_SPIRIT_OF_YULE_END] = { ["DISPLAY"] = "Turn in 'In the Spirit of Yule' to Mara Sandydowns."; ["CHAIN_END"] = "IN_THE_SPIRIT_OF_YULE"; };
-
-};
+QG_YULE = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[YULE];
+QG_YULE[QG_YULE_INDEX.IN_THE_SPIRIT_OF_YULE_PICKUP].DISPLAY = "Take 'In the Spirit of Yule' from Mara Sandydowns in Winterhome";
+QG_YULE[QG_YULE_INDEX.MOVING_THEM_OFF_PICKUP].DISPLAY = "Take 'Moving Them Off' from Guard Kember";
+QG_YULE[QG_YULE_INDEX.THE_ABOMINABLE_SNOW_BEASTS_PICKUP].DISPLAY = "Take 'The Abominable Snow-beasts' from Guard Kember";
+QG_YULE[QG_YULE_INDEX.MOVING_THEM_OFF_BARRETTNOWELL].DISPLAY = "Moving Them Off: Continue quest with Barrett Nowell";
+QG_YULE[QG_YULE_INDEX.MOVING_THEM_OFF_TEDIVES].DISPLAY = "Moving Them Off: Continue quest with Ted Ives";
+QG_YULE[QG_YULE_INDEX.COLD_AS_ICE_PICKUP].DISPLAY = "Take 'Cold as Ice' from Daley Utteridge";
+QG_YULE[QG_YULE_INDEX.MAKING_MISCHIEF_PICKUP].DISPLAY = "Take 'Making Mischief' from Gareth Rust";
+QG_YULE[QG_YULE_INDEX.MOVING_THEM_OFF_REGINAJUDSON].DISPLAY = "Moving Them Off: Continue quest with Regina Judson";
+QG_YULE[QG_YULE_INDEX.MOVING_THEM_OFF_JACKJUDSON].DISPLAY = "Moving Them Off: Continue quest with Jack Judson";
+QG_YULE[QG_YULE_INDEX.MOVING_THEM_OFF_BILLHYDE].DISPLAY = "Moving Them Off: Continue quest with Bill Hyde";
+QG_YULE[QG_YULE_INDEX.MAKING_MISCHIEF_FIREWORKS].DISPLAY = "Making Mischief: Set off fireworks";
+QG_YULE[QG_YULE_INDEX.MAKING_MISCHIEF_LOOT].DISPLAY = "Making Mischief: Loot 8 distracted patrons";
+QG_YULE[QG_YULE_INDEX.EMPTY_KEG_EMERGENCY_PICKUP].DISPLAY = "Take 'Empty Keg Emergency' from Basil Wyndham";
+QG_YULE[QG_YULE_INDEX.TIDYING_UP_PICKUP].DISPLAY = "Take 'Tidying Up' from Basil Wyndham";
+QG_YULE[QG_YULE_INDEX.STUFFING_THE_STUFFED_PICKUP].DISPLAY = "Take 'Stuffing the Stuffed' from Mabel Mitford";
+QG_YULE[QG_YULE_INDEX.UNWILLING_FIREWOOD_PICKUP].DISPLAY = "Take 'Unwilling Firewood' from Mabel Mitford";
+QG_YULE[QG_YULE_INDEX.TIDYING_UP_DISHES].DISPLAY = "Tidying Up: Pick up 10 dirty dishes";
+QG_YULE[QG_YULE_INDEX.TIDYING_UP_SPILLS].DISPLAY = "Tidying Up: Clean up 10 liquid spills";
+QG_YULE[QG_YULE_INDEX.TIDYING_UP_GARBAGE].DISPLAY = "Tidying Up: Clean up 10 reeking garbage";
+QG_YULE[QG_YULE_INDEX.MAKING_MISCHIEF_END].DISPLAY = "Turn in 'Making Mischief' to Gareth Rust";
+QG_YULE[QG_YULE_INDEX.STUFFING_THE_STUFFED_BREAD].DISPLAY = "Stuffing the Stuffed: Make 3 fresh breads";
+QG_YULE[QG_YULE_INDEX.EMPTY_KEG_EMERGENCY_AVERT].DISPLAY = "Empty Keg Emergency: Pick up one of the kegs and deliver the replacement keg"
+QG_YULE[QG_YULE_INDEX.EMPTY_KEG_EMERGENCY_END].DISPLAY = "Turn in 'Empty Keg Emergency' to Basil Wyndham";
+QG_YULE[QG_YULE_INDEX.TIDYING_UP_END].DISPLAY = "Turn in 'Tidying Up' to Basil Wyndham (if you already did 'The Biggest Stomach of Them All', this can be delayed)";
+QG_YULE[QG_YULE_INDEX.FILLING_THE_FIELD_PICKUP].DISPLAY = "Take 'Filling the Field' from Virgil Greenfield";
+QG_YULE[QG_YULE_INDEX.A_BROKEN_SNOWMAN_PICKUP].DISPLAY = "Take 'A Broken Snowman?' from Virgil's Broken Snowman";
+QG_YULE[QG_YULE_INDEX.A_BROKEN_SNOWMAN_STICK].DISPLAY = "A Broken Snowman?: Gather a stick";
+QG_YULE[QG_YULE_INDEX.STUFFING_THE_STUFFED_EGGS].DISPLAY = "Stuffing the Stuffed: Collect 5 eggs";
+QG_YULE[QG_YULE_INDEX.UNWILLING_FIREWOOD_COLLECT].DISPLAY = "Unwilling Firewood: Collect 9 firewood";
+QG_YULE[QG_YULE_INDEX.COLD_AS_ICE_DISPERSE].DISPLAY = "Cold as Ice: Disperse 4 Wintry Weather";
+QG_YULE[QG_YULE_INDEX.STUFFING_THE_STUFFED_BERRIES].DISPLAY = "Stuffing the Stuffed: Collect 5 fresh winterberries";
+QG_YULE[QG_YULE_INDEX.THE_ABOMINABLE_SNOW_BEASTS_CHEER].DISPLAY = "The Abominable Snow-beasts: cheer at snow-beasts 3 times";
+QG_YULE[QG_YULE_INDEX.STUFFING_THE_STUFFED_MUSHROOMS].DISPLAY = "Stuffing the Stuffed: Collect 5 pampered mushrooms";
+QG_YULE[QG_YULE_INDEX.YULE_FESTIVAL_DAILY_END].DISPLAY = "Turn in 'Yule Festival (Daily)' to Mara Sandydowns";
+QG_YULE[QG_YULE_INDEX.MOVING_THEM_OFF_END].DISPLAY = "Turn in 'Moving Them Off' to Guard Kember";
+QG_YULE[QG_YULE_INDEX.THE_ABOMINABLE_SNOW_BEASTS_END].DISPLAY = "Turn in 'The Abominable Snow-beasts' to Guard Kember";
+QG_YULE[QG_YULE_INDEX.STUFFING_THE_STUFFED_END].DISPLAY = "Turn in 'Stuffing the Stuffed' to Mabel Mitford";
+QG_YULE[QG_YULE_INDEX.UNWILLING_FIREWOOD_END].DISPLAY = "Turn in 'Unwilling Firewood' to Mabel Mitford";
+QG_YULE[QG_YULE_INDEX.A_BROKEN_SNOWMAN_COAL].DISPLAY = "A Broken Snowman?: Gather coal";
+QG_YULE[QG_YULE_INDEX.A_BROKEN_SNOWMAN_END].DISPLAY = "Turn in 'A Broken Snowman?' to Snowpile";
+QG_YULE[QG_YULE_INDEX.FILLING_THE_FIELD_END].DISPLAY = "Turn in 'Filling the Field' to Virgil Greenfield";
+QG_YULE[QG_YULE_INDEX.COLD_AS_ICE_END].DISPLAY = "Turn in Cold as Ice' to Daley Utteridge";
+QG_YULE[QG_YULE_INDEX.A_CHARITABLE_SPIRIT_PICKUP].DISPLAY = "Pick up 'A Charitable Spirit' from Daley Utteridge";
+QG_YULE[QG_YULE_INDEX.A_CHARITABLE_SPIRIT_REGINAJUDSON].DISPLAY = "A Charitable Spirit: Continue quest with Regina Judson";
+QG_YULE[QG_YULE_INDEX.A_CHARITABLE_SPIRIT_JACKJUDSON].DISPLAY = "A Charitable Spirit: Continue quest with Jack Judson";
+QG_YULE[QG_YULE_INDEX.A_CHARITABLE_SPIRIT_BILLHYDE].DISPLAY = "A Charitable Spirit: Continue quest with Bill Hyde";
+QG_YULE[QG_YULE_INDEX.A_CHARITABLE_SPIRIT_BARRETTNOWELL].DISPLAY = "A Charitable Spirit: Continue quest with Barrett Nowell";
+QG_YULE[QG_YULE_INDEX.IN_THE_SPIRIT_OF_YULE_END].DISPLAY = "Turn in 'In the Spirit of Yule' to Mara Sandydowns.";
+QG_YULE[QG_YULE_INDEX.A_CHARITABLE_SPIRIT_TEDIVES].DISPLAY = "A Charitable Spirit: Continue quest with Ted Ives";
+QG_YULE[QG_YULE_INDEX.A_CHARITABLE_SPIRIT_END].DISPLAY = "Turn in 'A Charitable Spirit' to Daley Utteridge";
+QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_PICKUP].DISPLAY = "Pick up 'The Biggest Stomach of Them All' from Ona Kay";
+QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_WAIT].DISPLAY = "Wait for the eating contest to begin. (Keep questing in Frostbluff)";
+QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION1].DISPLAY = "Eat food at the first station";
+QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END].DISPLAY = "Turn in 'The Biggest Stomach of Them All' to Ona Kay";
+--QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_PICKUP_2].DISPLAY = "Pick up 'The Biggest Stomach of Them All (Part II)' automatically";
+QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION2].DISPLAY = "Eat food at the second station";
+QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_2].DISPLAY = "Turn in 'The Biggest Stomach of Them All (Part II)' to Freddie Symonds";
+--QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_PICKUP_3].DISPLAY = "Pick up 'The Biggest Stomach of Them All (Part III)' automatically";
+QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION3].DISPLAY = "Eat food at the third station";
+QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_3].DISPLAY = "Turn in 'The Biggest Stomach of Them All (Part III)' to Jack Mitford";
+--QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_PICKUP_4].DISPLAY = "Pick up 'The Biggest Stomach of Them All (Part IV)' automatically";
+QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION4].DISPLAY = "Eat food at the fourth station";
+QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_4].DISPLAY = "Turn in 'The Biggest Stomach of Them All (Part IV)' to Nora Lewison";
+--QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_PICKUP_5].DISPLAY = "Pick up 'The Biggest Stomach of Them All (Part V)' automatically";
+QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION5].DISPLAY = "Eat food at the fifth station";
+QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_5].DISPLAY = "Turn in 'The Biggest Stomach of Them All (Part V)' to Ian Prudholm";
 
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[YULE] = {
     ["New Quest: In the Spirit of Yule"] = QG_YULE_INDEX.IN_THE_SPIRIT_OF_YULE_PICKUP;
-
+    ["New Quest: Moving Them Off"] = QG_YULE_INDEX.MOVING_THEM_OFF_PICKUP;
+    ["New Quest: The Abominable Snow-beasts"] = QG_YULE_INDEX.THE_ABOMINABLE_SNOW_BEASTS_PICKUP;
+    ["New Quest: Cold as Ice"] = QG_YULE_INDEX.COLD_AS_ICE_PICKUP;
+    ["New Quest: Making Mischief"] = QG_YULE_INDEX.MAKING_MISCHIEF_PICKUP;
+    ["New Quest: Empty Keg Emergency"] = QG_YULE_INDEX.EMPTY_KEG_EMERGENCY_PICKUP;
+    ["New Quest: Tidying Up"] = QG_YULE_INDEX.TIDYING_UP_PICKUP;
+    ["New Quest: Stuffing the Stuffed"] = QG_YULE_INDEX.STUFFING_THE_STUFFED_PICKUP;
+    ["New Quest: Unwilling Firewood"] = QG_YULE_INDEX.UNWILLING_FIREWOOD_PICKUP;
+    ["New Quest: Filling The Field"] = QG_YULE_INDEX.FILLING_THE_FIELD_PICKUP;
+    ["New Quest: A Broken Snowman?"] = QG_YULE_INDEX.A_BROKEN_SNOWMAN_PICKUP;
+    ["New Quest: A Charitable Spirit"] = QG_YULE_INDEX.A_CHARITABLE_SPIRIT_PICKUP;
+    ["New Quest: The Biggest Stomach of Them All"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_PICKUP;
+--    ["New Quest: The Biggest Stomach of Them All (Part II)"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_PICKUP_2;
+--    ["New Quest: The Biggest Stomach of Them All (Part III)"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_PICKUP_3;
+--    ["New Quest: The Biggest Stomach of Them All (Part IV)"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_PICKUP_4;
+--    ["New Quest: The Biggest Stomach of Them All (Part V)"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_PICKUP_5;
 };
 
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[YULE] = {
+    ["Completed:\nTidying Up\n"] = QG_YULE_INDEX.TIDYING_UP_END;
+    ["Completed:\nYule Festival (Daily)\n"] = QG_YULE_INDEX.YULE_FESTIVAL_DAILY_END;
+    ["Completed:\nMoving Them Off\n"] = QG_YULE_INDEX.MOVING_THEM_OFF_END;
+    ["Completed:\nThe Abominable Snow-beasts\n"] = QG_YULE_INDEX.THE_ABOMINABLE_SNOW_BEASTS_END;
+    ["Completed:\nEmpty Keg Emergency\n"] = QG_YULE_INDEX.EMPTY_KEG_EMERGENCY_END;
+    ["Completed:\nStuffing the Stuffed\n"] = QG_YULE_INDEX.STUFFING_THE_STUFFED_END;
+    ["Completed:\nUnwilling Firewood\n"] = QG_YULE_INDEX.UNWILLING_FIREWOOD_END;
+    ["Completed:\nA Broken Snowman?\n"] = QG_YULE_INDEX.A_BROKEN_SNOWMAN_END;
+    ["Completed:\nFilling The Field\n"] = QG_YULE_INDEX.FILLING_THE_FIELD_END;
+    ["Completed:\nCold as Ice\n"] = QG_YULE_INDEX.COLD_AS_ICE_END;
+    ["Completed:\nMaking Mischief\n"] = QG_YULE_INDEX.MAKING_MISCHIEF_END;
     ["Completed:\nIn the Spirit of Yule\n"] = QG_YULE_INDEX.IN_THE_SPIRIT_OF_YULE_END;
+    ["Completed:\nA Charitable Spirit\n"] = QG_YULE_INDEX.A_CHARITABLE_SPIRIT_END;
+    ["Completed:\nThe Biggest Stomach of Them All\n"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END;
+    ["Completed:\nThe Biggest Stomach of Them All (Part II)\n"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_2;
+    ["Completed:\nThe Biggest Stomach of Them All (Part III)\n"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_3;
+    ["Completed:\nThe Biggest Stomach of Them All (Part IV)\n"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_4;
+    ["Completed:\nThe Biggest Stomach of Them All (Part V)\n"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_5;
 };
 
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[YULE] = {
+    ["Barrett Nowell reluctantly moves along, unsure of where to go"] = QG_YULE_INDEX.MOVING_THEM_OFF_BARRETTNOWELL;
+    ["Ted Ives gives you a disappointed look, but moves along"] = QG_YULE_INDEX.MOVING_THEM_OFF_TEDIVES;
+    ["Regina Judson looks very sorrowful as she dashes away"] = QG_YULE_INDEX.MOVING_THEM_OFF_REGINAJUDSON;
+    ["Jack Judson hurries away, looking most appalled"] = QG_YULE_INDEX.MOVING_THEM_OFF_JACKJUDSON;
+    ["Bill Hyde's face is reddened by the cold, but he walks away from the fire sadly"] = QG_YULE_INDEX.MOVING_THEM_OFF_BILLHYDE;
 
+    ["You have set off some distracting fireworks"] = QG_YULE_INDEX.MAKING_MISCHIEF_FIREWORKS;
+    ["Looted a distracted patron (8/8)"] = QG_YULE_INDEX.MAKING_MISCHIEF_LOOT;
+
+    ["Picked up dirty dishes (10/10)"] = QG_YULE_INDEX.TIDYING_UP_DISHES;
+    ["Cleaned up liquid spills (10/10)"] = QG_YULE_INDEX.TIDYING_UP_SPILLS;
+    ["Cleaned up reeking garbage (10/10)"] = QG_YULE_INDEX.TIDYING_UP_GARBAGE;
+
+    ["Baked bread (3/3)"] = QG_YULE_INDEX.STUFFING_THE_STUFFED_BREAD;
+    ["You have averted the empty keg crisis"] = QG_YULE_INDEX.EMPTY_KEG_EMERGENCY_AVERT;
+    ["Gathered a stick from a nearby bush"] = QG_YULE_INDEX.A_BROKEN_SNOWMAN_STICK;
+    ["Collected eggs (5/5)"] = QG_YULE_INDEX.STUFFING_THE_STUFFED_EGGS;
+    ["Collected unwilling firewood (9/9)"] = QG_YULE_INDEX.UNWILLING_FIREWOOD_COLLECT;
+    ["Dispersed Wintry Weather (4/4)"] = QG_YULE_INDEX.COLD_AS_ICE_DISPERSE;
+    ["Collected berries (5/5)"] = QG_YULE_INDEX.STUFFING_THE_STUFFED_BERRIES;
+    ["Brought cheer to the snowbeasts (3/3)"] = QG_YULE_INDEX.THE_ABOMINABLE_SNOW_BEASTS_CHEER;
+    ["Collected mushrooms (5/5)"] = QG_YULE_INDEX.STUFFING_THE_STUFFED_MUSHROOMS;
+    ["Gathered coal near the servants' oven"] = QG_YULE_INDEX.A_BROKEN_SNOWMAN_COAL;
+    ["Regina Judson is moved by your generosity"] = QG_YULE_INDEX.A_CHARITABLE_SPIRIT_REGINAJUDSON;
+    ["Jack Judson is moved by your kindness"] = QG_YULE_INDEX.A_CHARITABLE_SPIRIT_JACKJUDSON;
+    ["Bill Hyde is moved by your good deed"] = QG_YULE_INDEX.A_CHARITABLE_SPIRIT_BILLHYDE;
+    ["Barrett Nowell is moved by your generous gift"] = QG_YULE_INDEX.A_CHARITABLE_SPIRIT_BARRETTNOWELL;
+    ["Ted Ives is moved by your gift"] = QG_YULE_INDEX.A_CHARITABLE_SPIRIT_TEDIVES;
+    ["Let the stuffing begin!"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_WAIT;
+    ["Ate food at the first station (5/5)"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION1;
+    ["Ate food at the second station (5/5)"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION2;
+    ["Ate food at the third station (5/5)"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION3;
+    ["Ate food at the fourth station (5/5)"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION4;
+    ["Ate food at the fifth station (5/5)"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION5;
 };

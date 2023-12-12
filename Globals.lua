@@ -217,6 +217,26 @@ DEFAULT_SETTINGS = {
             ["WEDDING_SUPPLIES"] = true;
             ["WHAT_ALES_YOU"] = true;
         };
+        [YULE] = {
+            ["A_BROKEN_SNOWMAN"] = true;
+            ["A_CHARITABLE_SPIRIT"] = true;
+            ["COLD_AS_ICE"] = true;
+            ["EMPTY_KEG_EMERGENCY"] = true;
+            ["FILLING_THE_FIELD"] = true;
+            ["IN_THE_SPIRIT_OF_YULE"] = true;
+            ["MAKING_MISCHIEF"] = true;
+            ["MOVING_THEM_OFF"] = true;
+            ["STUFFING_THE_STUFFED"] = true;
+            ["THE_ABOMINABLE_SNOW_BEASTS"] = true;
+            ["THE_BIGGEST_STOMACH_OF_THEM_ALL"] = true;
+            ["THE_BIGGEST_STOMACH_OF_THEM_ALL_2"] = true;
+            ["THE_BIGGEST_STOMACH_OF_THEM_ALL_3"] = true;
+            ["THE_BIGGEST_STOMACH_OF_THEM_ALL_4"] = true;
+            ["THE_BIGGEST_STOMACH_OF_THEM_ALL_5"] = true;
+            ["TIDYING_UP"] = true;
+            ["UNWILLING_FIREWOOD"] = true;
+            ["YULE_FESTIVAL_DAILY"] = true;
+        };
     };
 };
 
