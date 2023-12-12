@@ -131,38 +131,38 @@ function DrawQuickGuideOptions(options, y)
     end
     y = y + 30;
 
-    local clearDelayLabel = Turbine.UI.Label();
-    clearDelayLabel:SetParent(options);
-    clearDelayLabel:SetText(GetString(_LANG.OPTIONS.QUICK_GUIDE_CLEAR_DELAY));
-    clearDelayLabel:SetSize(200, 40);
-    clearDelayLabel:SetPosition(20, y);
-    clearDelayLabel.CheckedChanged = function (sender, args)
+    local delayInSecondsLabel = Turbine.UI.Label();
+    delayInSecondsLabel:SetParent(options);
+    delayInSecondsLabel:SetText(GetString(_LANG.OPTIONS.QUICK_GUIDE_CLEAR_DELAY));
+    delayInSecondsLabel:SetSize(200, 40);
+    delayInSecondsLabel:SetPosition(20, y);
+    delayInSecondsLabel.CheckedChanged = function (sender, args)
         SETTINGS.QUICK_GUIDE_CLEAR_DELAY = not SETTINGS.QUICK_GUIDE_CLEAR_DELAY;
         wQuickGuideWinParent.treeView:Refresh();
     end
 
-    local clearDelayTextBox = Turbine.UI.Lotro.TextBox();
-    clearDelayTextBox:SetParent(options);
-    clearDelayTextBox:SetText("" .. SETTINGS.QUICK_GUIDE_CLEAR_DELAY);
-    clearDelayTextBox:SetSize(100, 30);
-    clearDelayTextBox:SetPosition(235, y);
-    clearDelayTextBox.TextChanged = function(sender, args)
-        local newNumber = tonumber(clearDelayTextBox:GetText());
+    local delayInSecondsTextBox = Turbine.UI.Lotro.TextBox();
+    delayInSecondsTextBox:SetParent(options);
+    delayInSecondsTextBox:SetText("" .. SETTINGS.QUICK_GUIDE_CLEAR_DELAY);
+    delayInSecondsTextBox:SetSize(100, 30);
+    delayInSecondsTextBox:SetPosition(235, y);
+    delayInSecondsTextBox.TextChanged = function(sender, args)
+        local newNumber = tonumber(delayInSecondsTextBox:GetText());
         if (newNumber and newNumber >= 0) then
-            clearDelayTextBox:SetText("" .. newNumber);
+            delayInSecondsTextBox:SetText("" .. newNumber);
             SETTINGS.QUICK_GUIDE_CLEAR_DELAY = newNumber;
         else
-            clearDelayTextBox:SetText("" .. SETTINGS.QUICK_GUIDE_CLEAR_DELAY);
+            delayInSecondsTextBox:SetText("" .. SETTINGS.QUICK_GUIDE_CLEAR_DELAY);
         end
     end
     y = y + 40;
 
 
-    local quickGuideOptionsLabel = Turbine.UI.Label();
-    quickGuideOptionsLabel:SetParent(options);
-    quickGuideOptionsLabel:SetText(GetString(_LANG.OPTIONS.QUICK_GUIDE_QUESTS_TO_INCLUED));
-    quickGuideOptionsLabel:SetSize(400, 20);
-    quickGuideOptionsLabel:SetPosition(10, y);
+    local questsToIncludeLabel = Turbine.UI.Label();
+    questsToIncludeLabel:SetParent(options);
+    questsToIncludeLabel:SetText(GetString(_LANG.OPTIONS.QUICK_GUIDE_QUESTS_TO_INCLUED));
+    questsToIncludeLabel:SetSize(400, 20);
+    questsToIncludeLabel:SetPosition(10, y);
     y = y + 20;
 
     local quickGuideMidsummerOptionsLabel = Turbine.UI.Label();
