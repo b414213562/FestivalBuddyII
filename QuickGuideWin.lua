@@ -284,7 +284,6 @@ function QuickGuideWinHandleQuestChainBeginOrEnd(index)
             for i = 1, treeView:GetNodes():GetCount() do
                 local treeNode = treeView:GetNodes():Get(i);
                 if (chain[treeNode.index]) then
-                    treeNode.complete = state;
                     nodeChanged = true;
                     treeNode.checkBox:SetChecked(state);
                 end
