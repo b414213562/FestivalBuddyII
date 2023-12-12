@@ -682,6 +682,16 @@ _LANG = {
             ["STUFFING_THE_STUFFED"]            = {["ENGLISH"] = "Stuffing the Stuffed";                ["FRENCH"] = "Gaver les participants";                              ["GERMAN"] = "Volle Leute vollkommen vollstopfen";  };
             ["EMPTY_KEG_EMERGENCY"]             = {["ENGLISH"] = "Empty Keg Emergency";                 ["FRENCH"] = "Des tonneaux presque vides";                          ["GERMAN"] = "Notfall: Trockenes Fass";             };
             ["THE_BIGGEST_STOMACH_OF_THEM_ALL"] = {["ENGLISH"] = "The Biggest Stomach of Them All";     ["FRENCH"] = "Le plus gros estomac du monde";                       ["GERMAN"] = "Der allergrößte Magen";               };
+            -- "A_BROKEN_SNOWMAN"
+            -- "A_CHARITABLE_SPIRIT"
+            -- "COLD_AS_ICE"
+            -- "FILLING_THE_FIELD"
+            -- "IN_THE_SPIRIT_OF_YULE"
+            -- "MAKING_MISCHIEF"
+            -- "MOVING_THEM_OFF"
+            -- "TIDYING_UP"
+            -- "UNWILLING_FIREWOOD"
+            -- "YULE_FESTIVAL_DAILY"            
         };
 
         [ANNIVERSARY] = {

@@ -4,7 +4,6 @@ v2.0.4 changes:
     Bug Fixes:
         Fixed bug in quick guides that paid attention to shift key when it sometimes shouldn't.
 
-
 v2.0.3 changes:
     Festivals:
         Added Harvestmath quest guides for Tanglecorn and Haunted Burrow.

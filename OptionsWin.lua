@@ -165,6 +165,8 @@ function DrawQuickGuideOptions(options, y)
     questsToIncludeLabel:SetPosition(10, y);
     y = y + 20;
 
+    -- Festival-specific section:
+
     local quickGuideMidsummerOptionsLabel = Turbine.UI.Label();
     quickGuideMidsummerOptionsLabel:SetParent(options);
     quickGuideMidsummerOptionsLabel:SetText(GetString(_LANG.FESTIVALS[MIDSUMMER]) .. ":");
