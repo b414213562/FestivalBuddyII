@@ -27,20 +27,7 @@ function DrawQuickGuideWin()
     treeView:SetParent(wQuickGuideWinParent);
     treeView:SetPosition(20, 32);
     treeView:SetSize(tempWidth - 40, tempHeight - 50);
-    treeView:SetFilter(function(treeNode)
-        -- Don't proceed if this festival doesn't have a quick guide:
-        if (not QUICK_GUIDES[SELECTEDFESTIVAL]) then return false; end
-
-        local index = treeNode.index;
-        local questChain = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAIN_LOOKUP[SELECTEDFESTIVAL][index];
-
-        local isChainUsed = SETTINGS.QUICK_GUIDE_QUESTS_TO_USE[SELECTEDFESTIVAL][questChain];
-        local isEntryComplete = treeNode.complete;
-        local isReset = treeNode.isReset;
-
-        local isFiltered = not isReset and (isEntryComplete or not isChainUsed);
-        return isFiltered;
-    end);
+    treeView:SetFilter(QuickGuideTreeViewFilterFunction);
     wQuickGuideWinParent.treeView = treeView;
 
     local scrollbar = Turbine.UI.Lotro.ScrollBar();
@@ -60,6 +47,21 @@ function DrawQuickGuideWin()
         treeView:SetHeight(newHeight);
         scrollbar:SetHeight(newHeight);
     end
+end
+
+function QuickGuideTreeViewFilterFunction(treeNode)
+    -- Don't proceed if this festival doesn't have a quick guide:
+    if (not QUICK_GUIDES[SELECTEDFESTIVAL]) then return false; end
+
+    local index = treeNode.index;
+    local questChain = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAIN_LOOKUP[SELECTEDFESTIVAL][index];
+
+    local isChainUsed = SETTINGS.QUICK_GUIDE_QUESTS_TO_USE[SELECTEDFESTIVAL][questChain];
+    local isEntryComplete = treeNode.complete;
+    local isReset = treeNode.isReset;
+
+    local isFiltered = not isReset and (isEntryComplete or not isChainUsed);
+    return isFiltered;
 end
 
 function QuickGuideFilterQuestBegin()
