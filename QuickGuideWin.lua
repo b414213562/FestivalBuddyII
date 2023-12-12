@@ -274,18 +274,20 @@ function QuickGuideWinHandleQuestChainBeginOrEnd(index)
         if (isChainBegin) then chain = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAINS[SELECTEDFESTIVAL][objective.CHAIN_BEGIN];
         elseif (isChainEnd) then chain = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAINS[SELECTEDFESTIVAL][objective.CHAIN_END];
         end
-        local treeView = wQuickGuideWinParent.treeView;
-        local nodeChanged = false;
-        for i = 1, treeView:GetNodes():GetCount() do
-            local treeNode = treeView:GetNodes():Get(i);
-            if (chain[treeNode.index]) then
-                treeNode.complete = state;
-                nodeChanged = true;
-                treeNode.checkBox:SetChecked(state);
+        if (chain) then
+            local treeView = wQuickGuideWinParent.treeView;
+            local nodeChanged = false;
+            for i = 1, treeView:GetNodes():GetCount() do
+                local treeNode = treeView:GetNodes():Get(i);
+                if (chain[treeNode.index]) then
+                    treeNode.complete = state;
+                    nodeChanged = true;
+                    treeNode.checkBox:SetChecked(state);
+                end
             end
-        end
-        if (nodeChanged and isChainBegin) then
-            treeView:Refresh();
+            if (nodeChanged and isChainBegin) then
+                treeView:Refresh();
+            end
         end
     end
 
