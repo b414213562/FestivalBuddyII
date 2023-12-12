@@ -1,3 +1,10 @@
+v2.0.4 changes:
+    Festivals:
+        Added Yule quick guide
+    Bug Fixes:
+        Fixed bug in quick guides that paid attention to shift key when it sometimes shouldn't.
+
+
 v2.0.3 changes:
     Festivals:
         Added Harvestmath quest guides for Tanglecorn and Haunted Burrow.
@@ -10,8 +17,6 @@ v2.0.3 changes:
     Language:
         Added in numerous German translations from Mandraval.
         Updated some French translations.
-    Bug Fixes:
-        Fixed bug in quick guides that paid attention to shift key when it sometimes shouldn't.
 
 v2.0.2 changes:
     Bugs:

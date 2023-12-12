@@ -584,7 +584,7 @@ Return to Cora Brownlock.
 
     -- YULE --------------------------------------------------------------------------------------------------------
     [YULE] = {
-        ["SNOWBEASTS"] = {
+        ["THE_ABOMINABLE_SNOW_BEASTS"] = {
             ["STRING"] = {
                 ["ENGLISH"] = "<rgb=#FF0000>/cheer</rgb> at snowbeasts (select target).\n\nThe snowbeasts can be found in the lightly wooded area in the southeast corner of the map (12.2N, 93.6W). - casualstrolltomordor.com";
                 ["FRENCH"] = "<rgb=#FF0000>/bravo</rgb> aux b\195\170tes des neiges (s\195\169lectionner la cible).\n\nLes b\195\170tes des neiges se trouvent dans le petit bois dans le coin sud-est de la carte (12.2N, 93.6W). - casualstrolltomordor.com";
@@ -700,7 +700,7 @@ Return to Cora Brownlock.
             };
         };
 
-        ["STUFFINGSTUFFED"] = {
+        ["STUFFING_THE_STUFFED"] = {
             ["STRING"] = {
                 ["ENGLISH"] = "Gather ingredients for the feast\n\nCollect Fresh winterberries - near cabin 12.7N, 93.4W\ncollect eggs from pampered chickens - Cluckland 13.3N, 94.6W\ncollect pampered mushrooms - in greenhouse 11.8N, 94.3W\nmake fresh bread at the servants oven - 12.4N, 95.6W\n\nCo-ordinates from casualstrolltomordor.com";
                 ["FRENCH"] = "R\195\169cup\195\169rez les ingr\195\169dients pour la f\195\170te\n\nCueillez des baies - vers le fort 12.7N, 93.4W\nRamassez des \197\147ufs pr\195\168s des poules - Terre de Cotte 13.3N, 94.6W\nRamassez de beaux champignons - dans la serre 11.8N, 94.3W\nFaites du pain au four des domestiques - 12.4N, 95.6W\n\nCo-ordinates from casualstrolltomordor.com";
@@ -708,7 +708,7 @@ Return to Cora Brownlock.
             };
         };
 
-        ["EMPTYKEG"] = {
+        ["EMPTY_KEG_EMERGENCY"] = {
             ["STRING"] = {
                 ["ENGLISH"] = "Deliver a keg to the Thirsty Patron without a Watcher seeing you.\n\nKegs can be found next to the servants oven.\n\nWith the keg, take the path opposite Nora Lewison towards Jack Mitford (third table in the 'Biggest Stomach of Them All' quest - <rgb=#FF0000>be careful as you approach as a Watcher patrols this corner</rgb>).\n\nAt Jack Mitford jump over the wall behind the table to deliver the keg to the Thirsy Patron below.";
                 ["FRENCH"] = "Livrez le tonneau au Client Assoif\195\169 sans vous faire attraper par les gardes.\n\nLes tonneaux se trouvent \195\169 c\195\180t\195\169 du four de serviteur.\n\nAvec le tonneau, prendre le chemin face \195\160 Nora Lewison vers Jacques Passegu\195\169 (la troisi\195\168me table de la qu\195\170te 'Le plus gros estomac du monde' - <rgb=#FF0000>attention au garde qui patrouille dans le coin</rgb>).\n\nArriv\195\169 \195\160 Jacques Passegu\195\169 sauter le mur derri\195\168re les tables pour livrer le tonneau au Client Assoif\195\169 en dessous.";
@@ -716,7 +716,7 @@ Return to Cora Brownlock.
             };
         };
 
-        ["BIGGESTSTOMACH"] = {
+        ["THE_BIGGEST_STOMACH_OF_THEM_ALL"] = {
             ["STRING"] = {
                 ["ENGLISH"] = "This is an eating race where you need to eat 5 things at each table before you can continue. Try to avoid eating bread and pies as they have the biggest debuffs.\n\n- Berries: -1% run speed (4m)\n- Mushrooms: -3% run speed (4m)\n- Eggs: -5% run speed (4m)\n- Pie: -10% run speed (4m)\n- Bread: -15% run speed (4m)\n- Mystery Drink: Removes all debuffs OR -60% run speed (20s)";
                 ["FRENCH"] = "C'est une course de nourriture o\195\185 vous devez manger 5 choses par table avant de continuer. Essayez d'\195\169viter de manger du pain ou des tourtes car ils ont les plus gros debuffs.\n\n- Baies: -1% vitesse de course (4m)\n- Champignons: -3% vitesse de course (4m)\n- \197\146ufs: -5% vitesse de course (4m)\n- Tourte: -10% vitesse de course (4m)\n- Pain: -15% vitesse de course (4m)\n- Boisson Myst\195\168rieuse: Supprime tout les debuffs OU -60% vitesse de course (20s)";

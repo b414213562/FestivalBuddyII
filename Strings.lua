@@ -674,14 +674,14 @@ _LANG = {
         };
 
         [YULE] = {
-            ["SNOWBEASTS"]      = {["ENGLISH"] = "The Abominable Snow-beasts";          ["FRENCH"] = "Les abominables b\195\170tes des neiges";             ["GERMAN"] = "Die abscheulichen Schneekreaturen";   };
-            ["VILLAIN"]         = {["ENGLISH"] = "Villain - Frostbluff Theatre";        ["FRENCH"] = "M\195\169chant - Th\195\169\195\162tre de Rivegel";   ["GERMAN"] = "Bösewicht - Frostfels-Theater";       };
-            ["EXTRA"]           = {["ENGLISH"] = "Extra - Frostbluff Theatre";          ["FRENCH"] = "Figurant - Th\195\169\195\162tre de Rivegel";         ["GERMAN"] = "Statist - Frostfels-Theater";         };
-            ["PROTAGONIST"]     = {["ENGLISH"] = "Protagonist - Frostbluff Theatre";    ["FRENCH"] = "Protagoniste - Th\195\169\195\162tre de Rivegel";     ["GERMAN"] = "Hauptdarsteller - Frostfels-Theater"; };
-            ["THEATRE"]         = {["ENGLISH"] = "The Frostbluff Theatre";              ["FRENCH"] = "Le Th\195\169\195\162tre de Rivegel";                 ["GERMAN"] = "Das Frostfels-Theater";               };
-            ["STUFFINGSTUFFED"] = {["ENGLISH"] = "Stuffing the Stuffed";                ["FRENCH"] = "Gaver les participants";                              ["GERMAN"] = "Volle Leute vollkommen vollstopfen";  };
-            ["EMPTYKEG"]        = {["ENGLISH"] = "Empty Keg Emergency";                 ["FRENCH"] = "Des tonneaux presque vides";                          ["GERMAN"] = "Notfall: Trockenes Fass";             };
-            ["BIGGESTSTOMACH"]  = {["ENGLISH"] = "The Biggest Stomach of Them All";     ["FRENCH"] = "Le plus gros estomac du monde";                       ["GERMAN"] = "Der allergrößte Magen";               };
+            ["THE_ABOMINABLE_SNOW_BEASTS"]      = {["ENGLISH"] = "The Abominable Snow-beasts";          ["FRENCH"] = "Les abominables b\195\170tes des neiges";             ["GERMAN"] = "Die abscheulichen Schneekreaturen";   };
+            ["VILLAIN"]                         = {["ENGLISH"] = "Villain - Frostbluff Theatre";        ["FRENCH"] = "M\195\169chant - Th\195\169\195\162tre de Rivegel";   ["GERMAN"] = "Bösewicht - Frostfels-Theater";       };
+            ["EXTRA"]                           = {["ENGLISH"] = "Extra - Frostbluff Theatre";          ["FRENCH"] = "Figurant - Th\195\169\195\162tre de Rivegel";         ["GERMAN"] = "Statist - Frostfels-Theater";         };
+            ["PROTAGONIST"]                     = {["ENGLISH"] = "Protagonist - Frostbluff Theatre";    ["FRENCH"] = "Protagoniste - Th\195\169\195\162tre de Rivegel";     ["GERMAN"] = "Hauptdarsteller - Frostfels-Theater"; };
+            ["THEATRE"]                         = {["ENGLISH"] = "The Frostbluff Theatre";              ["FRENCH"] = "Le Th\195\169\195\162tre de Rivegel";                 ["GERMAN"] = "Das Frostfels-Theater";               };
+            ["STUFFING_THE_STUFFED"]            = {["ENGLISH"] = "Stuffing the Stuffed";                ["FRENCH"] = "Gaver les participants";                              ["GERMAN"] = "Volle Leute vollkommen vollstopfen";  };
+            ["EMPTY_KEG_EMERGENCY"]             = {["ENGLISH"] = "Empty Keg Emergency";                 ["FRENCH"] = "Des tonneaux presque vides";                          ["GERMAN"] = "Notfall: Trockenes Fass";             };
+            ["THE_BIGGEST_STOMACH_OF_THEM_ALL"] = {["ENGLISH"] = "The Biggest Stomach of Them All";     ["FRENCH"] = "Le plus gros estomac du monde";                       ["GERMAN"] = "Der allergrößte Magen";               };
         };
 
         [ANNIVERSARY] = {
