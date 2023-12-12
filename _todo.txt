@@ -2,11 +2,9 @@ Yule:
     Need better quest help:
         Stolen Treats
     Need quick guide for town quests.
-        Delete extra biggest stomach bits (e.g. THE_BIGGEST_STOMACH_OF_THEM_ALL_PICKUP_2)
         Need to add logic to options to populate multiple quick guides
             maybe a dropdown to select which one is being edited?
         bug: if you hold down shift when an objective is detection-completed, it acts like a shift-click.
-        probably get rid of the automatic stuffing quest pickups? (THE_BIGGEST_STOMACH_OF_THEM_ALL_PICKUP_2, etc.)
 Bugs:
     Need a central system to retrieve the Harvest Map that can trigger the ID window to show up.
     GetDayDifference can get called with a nil date because some paths assume the maze map is already selected.

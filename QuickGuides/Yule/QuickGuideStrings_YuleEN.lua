@@ -56,16 +56,12 @@ QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_PICKUP].DISPLAY = "Pick up
 QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_WAIT].DISPLAY = "Wait for the eating contest to begin. (Keep questing in Frostbluff)";
 QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION1].DISPLAY = "Eat food at the first station";
 QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END].DISPLAY = "Turn in 'The Biggest Stomach of Them All' to Ona Kay";
---QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_PICKUP_2].DISPLAY = "Pick up 'The Biggest Stomach of Them All (Part II)' automatically";
 QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION2].DISPLAY = "Eat food at the second station";
 QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_2].DISPLAY = "Turn in 'The Biggest Stomach of Them All (Part II)' to Freddie Symonds";
---QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_PICKUP_3].DISPLAY = "Pick up 'The Biggest Stomach of Them All (Part III)' automatically";
 QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION3].DISPLAY = "Eat food at the third station";
 QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_3].DISPLAY = "Turn in 'The Biggest Stomach of Them All (Part III)' to Jack Mitford";
---QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_PICKUP_4].DISPLAY = "Pick up 'The Biggest Stomach of Them All (Part IV)' automatically";
 QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION4].DISPLAY = "Eat food at the fourth station";
 QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_4].DISPLAY = "Turn in 'The Biggest Stomach of Them All (Part IV)' to Nora Lewison";
---QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_PICKUP_5].DISPLAY = "Pick up 'The Biggest Stomach of Them All (Part V)' automatically";
 QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION5].DISPLAY = "Eat food at the fifth station";
 QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_5].DISPLAY = "Turn in 'The Biggest Stomach of Them All (Part V)' to Ian Prudholm";
 
@@ -83,10 +79,6 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[YULE] = {
     ["New Quest: A Broken Snowman?"] = QG_YULE_INDEX.A_BROKEN_SNOWMAN_PICKUP;
     ["New Quest: A Charitable Spirit"] = QG_YULE_INDEX.A_CHARITABLE_SPIRIT_PICKUP;
     ["New Quest: The Biggest Stomach of Them All"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_PICKUP;
---    ["New Quest: The Biggest Stomach of Them All (Part II)"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_PICKUP_2;
---    ["New Quest: The Biggest Stomach of Them All (Part III)"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_PICKUP_3;
---    ["New Quest: The Biggest Stomach of Them All (Part IV)"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_PICKUP_4;
---    ["New Quest: The Biggest Stomach of Them All (Part V)"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_PICKUP_5;
 };
 
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[YULE] = {
