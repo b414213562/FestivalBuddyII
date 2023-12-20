@@ -9,7 +9,7 @@ function DrawQuickGuideWin()
     wQuickGuideWinParent:SetMinimumWidth(tempWidth);
     wQuickGuideWinParent:SetMaximumWidth(tempWidth);
     wQuickGuideWinParent:SetPosition(SETTINGS.QUICK_GUIDE_WIN.X, SETTINGS.QUICK_GUIDE_WIN.Y);
-    wQuickGuideWinParent:SetText("Quick Guide");
+    wQuickGuideWinParent:SetText(GetString(_LANG.OTHER.WINDOWS.QUICK_GUIDE.QUICK_GUIDE_TITLE));
     wQuickGuideWinParent:SetVisible(SETTINGS.QUICK_GUIDE_WIN.VISIBLE);
     wQuickGuideWinParent:SetResizable(true);
     wQuickGuideWinParent.IsFilterQuestHappening = false;
@@ -124,8 +124,8 @@ function QuickGuideWinLoadFestival()
 
     local resetItem = Turbine.UI.Lotro.Button();
     resetItem:SetParent(resetNode);
-    resetItem:SetText("Reset this quick guide");
-    resetItem:SetSize(175, 20);
+    resetItem:SetText(GetString(_LANG.OTHER.WINDOWS.QUICK_GUIDE.QUICK_GUIDE_RESET));
+    resetItem:SetSize(200, 20);
     resetItem:SetLeft((resetNode:GetWidth() / 2) - resetItem:GetWidth() / 2);
     treeView:GetNodes():Add(resetNode);
     resetItem.Click = function(sender, args)
