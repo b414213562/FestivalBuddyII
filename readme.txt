@@ -1,8 +1,15 @@
+v2.0.5 changes:
+    Festivals:
+        Added French translations for Yule Quick Guide.
+        Added German translations from Mandraval for UI and Quick Guide.
+
 v2.0.4 changes:
     Festivals:
         Added Yule quick guide
+
     Bug Fixes:
         Fixed bug in quick guides that paid attention to shift key when it sometimes shouldn't.
+        Emote shortcuts now work correctly with non-basic ASCII characters.
 
 v2.0.3 changes:
     Festivals:
