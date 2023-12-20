@@ -1,3 +1,11 @@
+Mandraval reports that special characters (e.g. with umlauts) aren't behaving for things like emotes. Replace with the backslash versions.
+    This is the same shortcut/special character bug that Deed Tracker had.
+    There is a fix!
+Expand Theater Emotes to add in at least one failure option.
+    Better to have three, so make two columns of three, with a lable for each: Good / Bad?
+Note: It might be that not all emotes that are not good are bad.
+    Purchased / earned emotes don't count either way. e.g. /trumpet
+
 Look at Mandraval's additional changes
 Yule:
     Need better quest help:
