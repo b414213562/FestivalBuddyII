@@ -588,7 +588,7 @@ Return to Cora Brownlock.
             ["STRING"] = {
                 ["ENGLISH"] = "<rgb=#FF0000>/cheer</rgb> at snowbeasts (select target).\n\nThe snowbeasts can be found in the lightly wooded area in the southeast corner of the map (12.2N, 93.6W). - casualstrolltomordor.com";
                 ["FRENCH"] = "<rgb=#FF0000>/bravo</rgb> aux b\195\170tes des neiges (s\195\169lectionner la cible).\n\nLes b\195\170tes des neiges se trouvent dans le petit bois dans le coin sud-est de la carte (12.2N, 93.6W). - casualstrolltomordor.com";
-                ["GERMAN"] = {"<rgb=#FF0000>/cheer</rgb> at snowbeasts (select target).\n\nThe snowbeasts can be found in the lightly wooded area in the southeast corner of the map (12.2N, 93.6W). - casualstrolltomordor.com"};
+                ["GERMAN"] = "Schneekreaturen zu-<rgb=#FF0000>/jubeln</rgb> (Auswählen!).\n\nDie Schneekreaturen befinden sich im lichten Gehölz in der Süd-Ost-Ecke, etwa bei (12.2N, 93.6W). - casualstrolltomordor.com";
             };
             ["EMOTES"] = {
                 ["ENGLISH"] = {"/cheer"};
@@ -601,7 +601,7 @@ Return to Cora Brownlock.
             ["STRING"] = {
                 ["ENGLISH"] = "Whilst in the theatre, why not enjoy a special performance of the Curious Disappearance of Mad Baggins.\n\nMake sure you stock up on rotten fruit and flower petals before the performance to use when the actors perform.";
                 ["FRENCH"] = "Pendant que vous \195\170tes au th\195\169\195\162tre, pourquoi ne pas essayez d'ex\195\169cuter une performance sp\195\169ciale dans L'\195\169trange disparition de Sacquet le fou.\n\nSoyez s\195\187r d'avoir fait votre stock de fruits et de p\195\169tales avant la performance pour les utilisez sur les acteurs.";
-                ["GERMAN"] = "Whilst in the theatre, why not enjoy a special performance of the Curious Disappearance of Mad Baggins.\n\nMake sure you stock up on rotten fruit and flower petals before the performance to use when the actors perform.";
+                ["GERMAN"] = "Warum nicht dem 'Seltsamen Verschwinden des verrückten Beutlin' beiwohnen, während des Theater-Besuchs?\n\nStelle sicher, dass du genügend Früchte und Blüten dabei hast (40), um sie während der Aufführung zu benutzen.";
             };
             ["QUICKSLOTS"] = {
                 ["ENGLISH"] = {
@@ -623,7 +623,7 @@ Return to Cora Brownlock.
             ["STRING"] = {
                 ["ENGLISH"] = "Perform emotes when prompted - note you must have selected <rgb=#FF0000>'The Audience'</rgb> as your target";
                 ["FRENCH"] = "Jouez les \195\169motes lorsque demand\195\169 - vous devez avoir s\195\169lectionn\195\169 <rgb=#FF0000>'Le Public'</rgb> en tant que cible";
-                ["GERMAN"] = "Perform emotes when prompted - note you must have selected <rgb=#FF0000>'The Audience'</rgb> as your target";
+                ["GERMAN"] = "Führe Emote auf Aufforderung aus - Du musst <rgb=#FF0000>'Das Publikum'</rgb> ausgewählt haben";
             };
             ["EMOTES"] = {
                 ["ENGLISH"] = {"/laugh","/shakefist","/rude"};
@@ -650,7 +650,7 @@ Return to Cora Brownlock.
             ["STRING"] = {
                 ["ENGLISH"] = "Perform emotes when prompted - note you must have selected <rgb=#FF0000>'The Audience'</rgb> as your target";
                 ["FRENCH"] = "Jouez les \195\169motes lorsque demand\195\169 - vous devez avoir s\195\169lectionn\195\169 <rgb=#FF0000>'Le Public'</rgb> en tant que cible";
-                ["GERMAN"] = "Perform emotes when prompted - note you must have selected <rgb=#FF0000>'The Audience'</rgb> as your target";
+                ["GERMAN"] = "Führe Emote auf Aufforderung aus - Du musst <rgb=#FF0000>'Das Publikum'</rgb> ausgewählt haben";
             };
             ["EMOTES"] = {
                 ["ENGLISH"] = {"/cheer","/dance","/clap"};
@@ -677,7 +677,7 @@ Return to Cora Brownlock.
             ["STRING"] = {
                 ["ENGLISH"] = "Perform emotes when prompted - note you must have selected <rgb=#FF0000>'The Audience'</rgb> as your target";
                 ["FRENCH"] = "Jouez les \195\169motes lorsque demand\195\169 - vous devez avoir s\195\169lectionn\195\169 <rgb=#FF0000>'Le Public'</rgb> en tant que cible";
-                ["GERMAN"] = "Perform emotes when prompted - note you must have selected <rgb=#FF0000>'The Audience'</rgb> as your target";
+                ["GERMAN"] = "Führe Emote auf Aufforderung aus - Du musst <rgb=#FF0000>'Das Publikum'</rgb> ausgewählt haben";
             };
             ["EMOTES"] = {
                 ["ENGLISH"] = {"/bow","/talk","/wave"};
@@ -704,7 +704,7 @@ Return to Cora Brownlock.
             ["STRING"] = {
                 ["ENGLISH"] = "Gather ingredients for the feast\n\nCollect Fresh winterberries - near cabin 12.7N, 93.4W\ncollect eggs from pampered chickens - Cluckland 13.3N, 94.6W\ncollect pampered mushrooms - in greenhouse 11.8N, 94.3W\nmake fresh bread at the servants oven - 12.4N, 95.6W\n\nCo-ordinates from casualstrolltomordor.com";
                 ["FRENCH"] = "R\195\169cup\195\169rez les ingr\195\169dients pour la f\195\170te\n\nCueillez des baies - vers le fort 12.7N, 93.4W\nRamassez des \197\147ufs pr\195\168s des poules - Terre de Cotte 13.3N, 94.6W\nRamassez de beaux champignons - dans la serre 11.8N, 94.3W\nFaites du pain au four des domestiques - 12.4N, 95.6W\n\nCo-ordinates from casualstrolltomordor.com";
-                ["GERMAN"] = "Gather ingredients for the feast\n\nCollect Fresh winterberries - near cabin 12.7N, 93.4W\ncollect eggs from pampered chickens - Cluckland 13.3N, 94.6W\ncollect pampered mushrooms - in greenhouse 11.8N, 94.3W\nmake fresh bread at the servants oven - 12.4N, 95.6W\n\nCo-ordinates from casualstrolltomordor.com";
+                ["GERMAN"] = "Sammle Zutaten für die Völlerei\n\nSammle frische Winterbeeren - nahe der Hütte 12.7N, 93.4W\nSammle Eier von verhätschelten Hühnern - Gackerland 13.3N, 94.6W\nSammle gut gepflegte Pilze - im Gewächshaus 11.8N, 94.3W\nBacke frisches Brot am Bediensteten-Ofen - 12.4N, 95.6W\n\nKoordinaten stammen von casualstrolltomordor.com";
             };
         };
 
@@ -712,7 +712,7 @@ Return to Cora Brownlock.
             ["STRING"] = {
                 ["ENGLISH"] = "Deliver a keg to the Thirsty Patron without a Watcher seeing you.\n\nKegs can be found next to the servants oven.\n\nWith the keg, take the path opposite Nora Lewison towards Jack Mitford (third table in the 'Biggest Stomach of Them All' quest - <rgb=#FF0000>be careful as you approach as a Watcher patrols this corner</rgb>).\n\nAt Jack Mitford jump over the wall behind the table to deliver the keg to the Thirsy Patron below.";
                 ["FRENCH"] = "Livrez le tonneau au Client Assoif\195\169 sans vous faire attraper par les gardes.\n\nLes tonneaux se trouvent \195\169 c\195\180t\195\169 du four de serviteur.\n\nAvec le tonneau, prendre le chemin face \195\160 Nora Lewison vers Jacques Passegu\195\169 (la troisi\195\168me table de la qu\195\170te 'Le plus gros estomac du monde' - <rgb=#FF0000>attention au garde qui patrouille dans le coin</rgb>).\n\nArriv\195\169 \195\160 Jacques Passegu\195\169 sauter le mur derri\195\168re les tables pour livrer le tonneau au Client Assoif\195\169 en dessous.";
-                ["GERMAN"] = "Deliver a keg to the Thirsty Patron without a Watcher seeing you.\n\nKegs can be found next to the servants oven.\n\nWith the keg, take the path opposite Nora Lewison towards Jack Mitford (third table in the 'Biggest Stomach of Them All' quest - <rgb=#FF0000>be careful as you approach as a Watcher patrols this corner</rgb>).\n\nAt Jack Mitford jump over the wall behind the table to deliver the keg to the Thirsy Patron below.";
+                ["GERMAN"] = "Liefere das Fass an den Durstigen Gast, ohne dass Dich ein Wachtmeister sieht.\n\nEin Fass liegt nahe des Ofens der Bediensteten.\n\nMit dem Fass, nimm den Weg gegenüber Nora Lewison Richtung Jakob Mittfurth (Der dritte Tisch aus 'Der Allergrößte Magen' - <rgb=#FF0000>Vorsicht bei der Annäherung, da dort ein Wachtmeister patrouilliert.</rgb>).\n\nBei Jakob Mittfurth über die Mauer hinter dem Tisch springen und das Fass dem Durstigen Gast bringen.";
             };
         };
 
@@ -720,7 +720,7 @@ Return to Cora Brownlock.
             ["STRING"] = {
                 ["ENGLISH"] = "This is an eating race where you need to eat 5 things at each table before you can continue. Try to avoid eating bread and pies as they have the biggest debuffs.\n\n- Berries: -1% run speed (4m)\n- Mushrooms: -3% run speed (4m)\n- Eggs: -5% run speed (4m)\n- Pie: -10% run speed (4m)\n- Bread: -15% run speed (4m)\n- Mystery Drink: Removes all debuffs OR -60% run speed (20s)";
                 ["FRENCH"] = "C'est une course de nourriture o\195\185 vous devez manger 5 choses par table avant de continuer. Essayez d'\195\169viter de manger du pain ou des tourtes car ils ont les plus gros debuffs.\n\n- Baies: -1% vitesse de course (4m)\n- Champignons: -3% vitesse de course (4m)\n- \197\146ufs: -5% vitesse de course (4m)\n- Tourte: -10% vitesse de course (4m)\n- Pain: -15% vitesse de course (4m)\n- Boisson Myst\195\168rieuse: Supprime tout les debuffs OU -60% vitesse de course (20s)";
-                ["GERMAN"] = "This is an eating race where you need to eat 5 things at each table before you can continue. Try to avoid eating bread and pies as they have the biggest debuffs.\n\n- Berries: -1% run speed (4m)\n- Mushrooms: -3% run speed (4m)\n- Eggs: -5% run speed (4m)\n- Pie: -10% run speed (4m)\n- Bread: -15% run speed (4m)\n- Mystery Drink: Removes all debuffs OR -60% run speed (20s)";
+                ["GERMAN"] = "Dies ist ein Wettessen, bei dem man an jedem Tisch 5 Sachen verzehren muss, um weiterzukommen. Versuche Brot und Pasteten zu vermeiden, da sie die längste Zeit benötigen.\n\n- Beeren: -1% Geschwindigkeit (4m)\n- Pilze: -3% Geschwindigkeit (4m)\n- Eier: -5% Geschwindigkeit (4m)\n- Pastete: -10% Geschwindigkeit (4m)\n- Brot: -15% Geschwindigkeit (4m)\n- Rätselhaftes Getränk: Entfernt die Verlangsamungen ODER -60% Geschwindigkeit (20s)";
             };
         };
 

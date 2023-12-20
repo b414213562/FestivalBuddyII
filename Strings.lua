@@ -146,7 +146,7 @@ _LANG = {
         ["BARTER"]      = {["ENGLISH"] = "Barter";          ["FRENCH"] = "Troqueur";            ["GERMAN"] = "Tausch";          };
         ["BARTERITEMS"] = {["ENGLISH"] = "Barter Items";    ["FRENCH"] = "Articles de troc";    ["GERMAN"] = "Tauschobjekte";   };
         ["SORT"]        = {["ENGLISH"] = "Sort";            ["FRENCH"] = "Trier";               ["GERMAN"] = "Sortieren";       };
-        ["QUICK_GUIDE"] = {["ENGLISH"] = "Quick Guide";                                         ["GERMAN"] = "Kurzanleitung";   };
+        ["QUICK_GUIDE"] = {["ENGLISH"] = "Quick Guide";     ["FRENCH"] = "Guide Rapide";        ["GERMAN"] = "Kurzanleitung";   };
         ["ALTS"]        = {["ENGLISH"] = "Alts";            ["FRENCH"] = "Alts";                ["GERMAN"] = "Twinks";          };
         ["MAP"]         = {["ENGLISH"] = "Map";             ["FRENCH"] = "Map";                 ["GERMAN"] = "Karte";           };
         ["RESETS"]      = {["ENGLISH"] = "Resets";          ["FRENCH"] = "Remettre \195\160 0"; ["GERMAN"] = "Rücksetzungen";   };
@@ -535,6 +535,20 @@ _LANG = {
                 ["GERMAN"] = "Das Weizenlabyrinth ändert sein Aussehen jeden Tag um 10 Uhr Serverzeit (~16 Uhr). Es gibt fünf verschiedene Labyrinthe. Bitte betrete den Irrgarten und wähle aus, was Du an der ersten Kreuzung siehst!";
             };
 
+            ["QUICK_GUIDE"] = {
+                ["QUICK_GUIDE_TITLE"] = {
+                    ["ENGLISH"] = "Quick Guide";
+                    ["GERMAN"] = "Kurzanleitung";
+                    ["FRENCH"] = "Guide Rapide";
+                };
+                ["QUICK_GUIDE_RESET"] = {
+                    ["ENGLISH"] = "Reset this quick guide";
+                    ["GERMAN"] = "Liste zurücksetzen";
+                    ["FRENCH"] = "Réinitialiser ce guide rapide";
+                };
+            }
+
+
         };
 
     };
@@ -572,10 +586,10 @@ _LANG = {
         };
 
         [YULE] = {
-            [1] = { key = "VILLAIN";            name =     {["ENGLISH"] = "Villain";            ["FRENCH"] = "M\195\169chant";                      ["GERMAN"] = "Villain";             }; };
-            [2] = { key = "PROTAGONIST";        name =     {["ENGLISH"] = "Protagonist";        ["FRENCH"] = "Protagoniste";                        ["GERMAN"] = "Protagonist";         }; };
-            [3] = { key = "EXTRA";              name =     {["ENGLISH"] = "Extra";              ["FRENCH"] = "Figurant";                            ["GERMAN"] = "Extra";               }; };
-            [4] = { key = "THEATRE";            name =     {["ENGLISH"] = "Frostbluff Theatre"; ["FRENCH"] = "Th\195\169\195\162tre de Rivegel";    ["GERMAN"] = "Frostbluff Theatre";  }; };
+            [1] = { key = "VILLAIN";            name =     {["ENGLISH"] = "Villain";            ["FRENCH"] = "M\195\169chant";                      ["GERMAN"] = "Bösewicht";             }; };
+            [2] = { key = "PROTAGONIST";        name =     {["ENGLISH"] = "Protagonist";        ["FRENCH"] = "Protagoniste";                        ["GERMAN"] = "Hauptdarsteller";         }; };
+            [3] = { key = "EXTRA";              name =     {["ENGLISH"] = "Extra";              ["FRENCH"] = "Figurant";                            ["GERMAN"] = "Statist";               }; };
+            [4] = { key = "THEATRE";            name =     {["ENGLISH"] = "Frostbluff Theatre"; ["FRENCH"] = "Th\195\169\195\162tre de Rivegel";    ["GERMAN"] = "Frostfels-Theater";  }; };
         };
 
         [ANNIVERSARY] = {};
@@ -750,7 +764,7 @@ _LANG = {
     ["BUTTONS"] = {
         ["BACKGROUND"] = {["ENGLISH"] = "Background";                           ["GERMAN"] = "Hintergrund"; };
         ["AUTO_OPEN"]  = {["ENGLISH"] = "Auto open";                            ["GERMAN"] = "Autoöffnen";  };
-        ["DANCE"]      = {["ENGLISH"] = "Dance";        ["FRENCH"] = "Danse";   ["GERMAN"] = "Dance";       };
+        ["DANCE"]      = {["ENGLISH"] = "Dance";        ["FRENCH"] = "Danse";   ["GERMAN"] = "Tänze";       };
     };
 
     ["TOKENS"] = { -- BARTER TOKENS USED AT THE FESTIVALS.
@@ -878,14 +892,17 @@ _LANG = {
 
         ["HARVESTMATH_MAZE_ID_LABEL"] = {
             ["ENGLISH"] = "Change current Harvestmath maze:";
+            ["GERMAN"] = "Ändere das aktuelle Herbst-Labyrinth:";
         };
 
         ["HARVESTMATH_MAZE_ID_BUTTON"] = {
             ["ENGLISH"] = "Change";
+            ["GERMAN"] = "Ändern";
         };
 
         ["MAIN_WINDOW_SCALING"] = {
             ["ENGLISH"] = "Main Window Scaling: %.1fx";
+            ["GERMAN"] = "Haupt-Fenster Vergrößerung: %.1fx";
         };
     };
 };
