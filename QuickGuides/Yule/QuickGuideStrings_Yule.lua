@@ -407,10 +407,9 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[YULE] = {
     };
 }
 
-local language = Turbine.Engine:GetLanguage();
-if (language == Turbine.Language.French) then
+if (CLIENTLANG == "FRENCH") then
     import "CubePlugins.FestivalBuddyII.QuickGuides.Yule.QuickGuideStrings_YuleFR";
-elseif (language == Turbine.Language.German) then
+elseif (CLIENTLANG == "GERMAN") then
     import "CubePlugins.FestivalBuddyII.QuickGuides.Yule.QuickGuideStrings_YuleDE";
 else
     import "CubePlugins.FestivalBuddyII.QuickGuides.Yule.QuickGuideStrings_YuleEN";

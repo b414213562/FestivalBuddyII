@@ -533,10 +533,9 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[MIDSUMMER] = {
     };
 };
 
-local language = Turbine.Engine:GetLanguage();
-if (language == Turbine.Language.French) then
+if (CLIENTLANG == "FRENCH") then
     import "CubePlugins.FestivalBuddyII.QuickGuides.Midsummer.QuickGuideStrings_MidsummerFR";
-elseif (language == Turbine.Language.German) then
+elseif (CLIENTLANG == "GERMAN") then
     import "CubePlugins.FestivalBuddyII.QuickGuides.Midsummer.QuickGuideStrings_MidsummerDE";
 else
     import "CubePlugins.FestivalBuddyII.QuickGuides.Midsummer.QuickGuideStrings_MidsummerEN";

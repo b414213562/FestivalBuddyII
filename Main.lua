@@ -19,15 +19,15 @@ import "CubePlugins.FestivalBuddyII.TimeFunctions";
 import "CubePlugins.FestivalBuddyII.Strings";
 import "CubePlugins.FestivalBuddyII.Images";
 import "CubePlugins.FestivalBuddyII.QuestStrings";
-import "CubePlugins.FestivalBuddyII.QuickGuides.QuickGuides";
-import "CubePlugins.FestivalBuddyII.QuickGuides.Midsummer.QuickGuideStrings_Midsummer";
-import "CubePlugins.FestivalBuddyII.QuickGuides.Yule.QuickGuideStrings_Yule";
 import "CubePlugins.FestivalBuddyII.FestivalFunctions";
 import "CubePlugins.FestivalBuddyII.Globals";
 --import "CubePlugins.FestivalBuddyII.Libraries.Tooltip";
 import "CubePlugins.FestivalBuddyII.ChatLogger";
 import "CubePlugins.FestivalBuddyII.BarterItems";
 import "CubePlugins.FestivalBuddyII.TimerControl";
+import "CubePlugins.FestivalBuddyII.QuickGuides.QuickGuides";
+import "CubePlugins.FestivalBuddyII.QuickGuides.Midsummer.QuickGuideStrings_Midsummer";
+import "CubePlugins.FestivalBuddyII.QuickGuides.Yule.QuickGuideStrings_Yule";
 
 -- Windows --
 import "CubePlugins.FestivalBuddyII.OptionsWin";
