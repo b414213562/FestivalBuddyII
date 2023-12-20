@@ -1078,7 +1078,15 @@ function CreateEmotesAssist(EMOTELIST)
             qsLabel:SetForeColor(WHITE);
         end
 
-        qsEmote:SetShortcut(Turbine.UI.Lotro.Shortcut(Turbine.UI.Lotro.ShortcutType.Alias, v));
+        -- This works around this documented error:
+        -- Garan: There is a bug with using the shorcut constructor where if you supply the "data" string
+        --        Turbine.UI.Lotro.Shortcut( Turbine.UI.Lotro.ShortcutType. Alias, '/say Wall of Annúminas')
+        --        If you use a shorcut like that, where data is placed as constructor arg, it comes across in chat as mangled like... Wall of AnnA^minas
+        --        However, if you use the SetData('Wall of Annúminas') method instead, it works. So there is a workaround.
+        local shortcut = Turbine.UI.Lotro.Shortcut();
+        shortcut:SetType(Turbine.UI.Lotro.ShortcutType.Alias);
+        shortcut:SetData(v);
+        qsEmote:SetShortcut(shortcut);
 
         QSTOP = QSTOP + QSHEIGHT + QSGAP;
         tempHeight = QSTOP;
