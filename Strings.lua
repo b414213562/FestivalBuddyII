@@ -695,17 +695,21 @@ _LANG = {
             ["THEATRE"]                         = {["ENGLISH"] = "The Frostbluff Theatre";              ["FRENCH"] = "Le Th\195\169\195\162tre de Rivegel";                 ["GERMAN"] = "Das Frostfels-Theater";               };
             ["STUFFING_THE_STUFFED"]            = {["ENGLISH"] = "Stuffing the Stuffed";                ["FRENCH"] = "Gaver les participants";                              ["GERMAN"] = "Volle Leute vollkommen vollstopfen";  };
             ["EMPTY_KEG_EMERGENCY"]             = {["ENGLISH"] = "Empty Keg Emergency";                 ["FRENCH"] = "Des tonneaux presque vides";                          ["GERMAN"] = "Notfall: Trockenes Fass";             };
-            ["THE_BIGGEST_STOMACH_OF_THEM_ALL"] = {["ENGLISH"] = "The Biggest Stomach of Them All";     ["FRENCH"] = "Le plus gros estomac du monde";                       ["GERMAN"] = "Der allergrößte Magen";               };
-            -- "A_BROKEN_SNOWMAN"
-            -- "A_CHARITABLE_SPIRIT"
-            -- "COLD_AS_ICE"
-            -- "FILLING_THE_FIELD"
-            -- "IN_THE_SPIRIT_OF_YULE"
-            -- "MAKING_MISCHIEF"
-            -- "MOVING_THEM_OFF"
-            -- "TIDYING_UP"
-            -- "UNWILLING_FIREWOOD"
-            -- "YULE_FESTIVAL_DAILY"            
+            ["A_BROKEN_SNOWMAN"]                = {["ENGLISH"] = "A Broken Snowman?";                   ["FRENCH"] = "Un bonhomme de neige cassé ?";                        ["GERMAN"] = "Ein kaputter Schneemann?";            };
+            ["A_CHARITABLE_SPIRIT"]             = {["ENGLISH"] = "A Charitable Spirit";                 ["FRENCH"] = "Un esprit charitable";                                ["GERMAN"] = "Eine wohltätige Seele";               };
+            ["COLD_AS_ICE"]                     = {["ENGLISH"] = "Cold as Ice";                         ["FRENCH"] = "Froid mortel";                                        ["GERMAN"] = "Eiskalt";                             };
+            ["FILLING_THE_FIELD"]               = {["ENGLISH"] = "Filling The Field";                   ["FRENCH"] = "Des bonshommes, sur le champ";                        ["GERMAN"] = "Das Feld füllen";                     };
+            ["IN_THE_SPIRIT_OF_YULE"]           = {["ENGLISH"] = "In the Spirit of Yule";               ["FRENCH"] = "L'esprit de Yule";                                    ["GERMAN"] = "Im Geiste des Julfests";              };
+            ["MAKING_MISCHIEF"]                 = {["ENGLISH"] = "Making Mischief";                     ["FRENCH"] = "Mauvais tours";                                       ["GERMAN"] = "Unfug für Anfänger";                  };
+            ["MOVING_THEM_OFF"]                 = {["ENGLISH"] = "Moving Them Off";                     ["FRENCH"] = "Circulez";                                            ["GERMAN"] = "Vertreibt sie";                       };
+            ["TIDYING_UP"]                      = {["ENGLISH"] = "Tidying Up";                          ["FRENCH"] = "Grand nettoyage";                                     ["GERMAN"] = "Aufräumen";                           };
+            ["UNWILLING_FIREWOOD"]              = {["ENGLISH"] = "Unwilling Firewood";                  ["FRENCH"] = "Les fagots récalcitrants";                            ["GERMAN"] = "Widerwilliges Feuerholz";             };
+            ["YULE_FESTIVAL_DAILY"]             = {["ENGLISH"] = "Yule Festival (Daily)";               ["FRENCH"] = "Festival de Yule (Quotidien)";                        ["GERMAN"] = "Julfest (täglich)";                   };
+            ["THE_BIGGEST_STOMACH_OF_THEM_ALL"]     = {["ENGLISH"] = "The Biggest Stomach of Them All";             ["FRENCH"] = "Le plus gros estomac du monde";               ["GERMAN"] = "Der allergrößte Magen";               };
+            ["THE_BIGGEST_STOMACH_OF_THEM_ALL_2"]   = {["ENGLISH"] = "The Biggest Stomach of Them All (Part II)";   ["FRENCH"] = "Le plus gros estomac du monde (partie II)";   ["GERMAN"] = "Der allergrößte Bauch (Teil II)";     };
+            ["THE_BIGGEST_STOMACH_OF_THEM_ALL_3"]   = {["ENGLISH"] = "The Biggest Stomach of Them All (Part III)";  ["FRENCH"] = "Le plus gros estomac du monde (partie III)";  ["GERMAN"] = "Der allergrößte Bauch (Teil III)";    };
+            ["THE_BIGGEST_STOMACH_OF_THEM_ALL_4"]   = {["ENGLISH"] = "The Biggest Stomach of Them All (Part IV)";   ["FRENCH"] = "Le plus gros estomac du monde (partie IV)";   ["GERMAN"] = "Der allergrößte Bauch (Teil IV)";     };
+            ["THE_BIGGEST_STOMACH_OF_THEM_ALL_5"]   = {["ENGLISH"] = "The Biggest Stomach of Them All (Part V)";    ["FRENCH"] = "Le plus gros estomac du monde (partie V)";    ["GERMAN"] = "Der allergrößte Bauch (Teil V)";      };
         };
 
         [ANNIVERSARY] = {
