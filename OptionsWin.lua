@@ -706,6 +706,7 @@ function DrawFarmersFaireFatMayorDebug(options)
     CreateFarmersFaireFatMayorButton(options, 2.5, y, "Fail", function() HandleFarmersFaireFatMayorResultClick("Success") end);
     y = y + 30
 
+    return y;
 end
 
 function HandleFarmersFaireFatMayorItemClick(item)
@@ -733,19 +734,31 @@ function HandleFarmersFaireFatMayorResultClick(result)
 end
 
 function DrawOptionsWin()
+    -- UI hierarchy:
+    -- options
+    --      non-debug options
+    --      debug options
+
     local options = Turbine.UI.Control();
+    options:SetWidth(500);
     plugin.GetOptionsPanel = function(self) return options; end
 
-    local y = topMargin;
-    y = DrawGenericOptions(options, y);
-    y = DrawQuickGuideOptions(options, y);
-    y = DrawMapOptions(options, y);
-    options:SetSize(350, y);
+    local nonDebugOptions = Turbine.UI.Control();
+    nonDebugOptions:SetParent(options);
 
-    if (not SHOW_DEBUG_OPTIONS) then return; end
+    local y = topMargin;
+    y = DrawGenericOptions(nonDebugOptions, y);
+    y = DrawQuickGuideOptions(nonDebugOptions, y);
+    y = DrawMapOptions(nonDebugOptions, y);
+    nonDebugOptions:SetSize(350, y);
+
+    if (not SHOW_DEBUG_OPTIONS) then
+        options:SetHeight(nonDebugOptions:GetHeight());
+        return;
+    end
 
     -- Calculate where all the debug sections should be:
-    questAcceptCompleteFailY = y;
+    questAcceptCompleteFailY = 0;
     hobnanigansY = questAcceptCompleteFailY + 100;
     fireworksY = hobnanigansY + 240;
     fireworksColumnLeftMargin = 75;
@@ -754,14 +767,21 @@ function DrawOptionsWin()
     fireworksRowHeight = 30;
     fatMayorY = fireworksY + 185;
 
-    -- Make room for the sections:
-    options:SetHeight(y + 600);
+    local debugOptions = Turbine.UI.Control();
+    debugOptions:SetTop(y);
+    debugOptions:SetParent(options);
+    debugOptions:SetWidth(options:GetWidth());
+    debugOptions:SetHeight(options:GetHeight());
+    debugOptions:SetBackColor(Turbine.UI.Color.DarkBlue);
 
     -- Draw the debug sections
-    DrawQuestAcceptCompleteFail(options);
-    DrawHobnanigansDebug(options);
-    DrawFireworksDebug(options);
-    DrawFarmersFaireFatMayorDebug(options);
+    DrawQuestAcceptCompleteFail(debugOptions);
+    DrawHobnanigansDebug(debugOptions);
+    DrawFireworksDebug(debugOptions);
+    y = DrawFarmersFaireFatMayorDebug(debugOptions);
+
+    debugOptions:SetHeight(y);
+    options:SetHeight(nonDebugOptions:GetHeight() + debugOptions:GetHeight());
 end
 
 
