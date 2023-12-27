@@ -89,4 +89,9 @@ _IMAGES = {
     [MIDSUMMER] = {
         ["BACKGROUND"] = RESOURCEDIR .. "MainWin_Back_Midsummer.tga";
     };
+
+    -- TODO: Better background
+    [ILAA] = {
+        ["BACKGROUND"] = RESOURCEDIR .. "MainWin_Back_Midsummer.tga";
+    };
 };

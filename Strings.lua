@@ -15,6 +15,7 @@ ANNIVERSARY = 5;
 FARMERSFAIRE = 6;
 HOBNANIGANS = 7;
 MIDSUMMER = 8;
+ILAA = 9; -- Inn League / Ale Association
 
 -- Anniversary: Fireworks in Bree
 NO_FIREWORKS = 0;
@@ -107,7 +108,9 @@ HOBNANIGANS_MITHRIL = 8;
 MIDSUMMER_TOKEN = 1;
 MIDSUMMER_MC = 2;
 
-
+-- Inn League / Ale Association Tokens:
+ILAA_BADGE_OF_TASTE = 1;
+ILAA_BADGE_OF_DISHONOUR = 2;
 
 -- E.G -- wBListParent:SetText(GetString(_LANG.ERRORS.LOAD));
 _LANG = {
@@ -140,6 +143,7 @@ _LANG = {
         [FARMERSFAIRE] = {["ENGLISH"] = "Farmers Faire";    ["FRENCH"] = "Foire des fermiers";  ["GERMAN"] = "Bauernfest";  };
         [HOBNANIGANS]  = {["ENGLISH"] = "Hobnanigans";      ["FRENCH"] = "Hobnanigans";         ["GERMAN"] = "Hobnanigans"; };
         [MIDSUMMER]    = {["ENGLISH"] = "Midsummer";        ["FRENCH"] = "Solstice d'été";      ["GERMAN"] = "Mittsommer";  };
+        [ILAA]         = {["ENGLISH"] = "Inn League/Ale Association"; };
     };
 
     ["OTHER"] = {
@@ -596,6 +600,7 @@ _LANG = {
         [FARMERSFAIRE] = {};
         [HOBNANIGANS] = {};
         [MIDSUMMER] = {};
+        [ILAA] = {};
 
     };
 
@@ -763,6 +768,32 @@ _LANG = {
             ["SAPPHIRE_FIREFLY_LANTERNS"]   = { ["ENGLISH"] = "Sapphire Firefly Lanterns";              ["FRENCH"] = "Lanternes à libellule saphir";        ["GERMAN"] = "Saphirblaue Glühwürmchenlaternen";        };
         };
 
+        [ILAA] = {
+            ["ALL_BUT_THE_CIDER"] = {["ENGLISH"] = "All But the Cider"; ["FRENCH"] = "Tout sauf le cidre"; ["GERMAN"] = "Alles außer dem Apfelwein"; };
+            ["NEVER_FAR_FROM_HOME"] = {["ENGLISH"] = "Never Far From Home"; ["FRENCH"] = "Toujours près de la maison"; ["GERMAN"] = "Nie weit weg von zu Hause"; };
+            ["ONE_DRINK_TOO_MANY"] = {["ENGLISH"] = "One Drink Too Many"; ["FRENCH"] = "Un verre de trop"; ["GERMAN"] = "Ein Getränk zu viel"; };
+            ["QUITE_A_PICKLE"] = {["ENGLISH"] = "Quite a Pickle"; ["FRENCH"] = "Un problème épineux"; ["GERMAN"] = "Das Dilemma"; };
+            ["A_BIT_OF_BROWN"] = {["ENGLISH"] = "A Bit of Brown"; ["FRENCH"] = "Un peu de brune"; ["GERMAN"] = "Etwas Dunkelbier"; };
+            ["A_REMINDER_OF_RIVENDELL"] = {["ENGLISH"] = "A Reminder of Rivendell"; ["FRENCH"] = "Un souvenir de Fondcombe"; ["GERMAN"] = "Eine Erinnerung an Bruchtal"; };
+            ["A_MEMBER_IN_NEED"] = {["ENGLISH"] = "A Member in Need"; ["FRENCH"] = "Un collègue dans le besoin"; ["GERMAN"] = "Ein Mitglied braucht Hilfe"; };
+            ["A_DRINK_OF_THE_WORST_CHARACTER"] = {["ENGLISH"] = "A Drink of the Worst Character"; ["FRENCH"] = "Une boisson vraiment infâme"; ["GERMAN"] = "Das übelste aller Getränke"; };
+            ["A_SIMPLE_WINE"] = {["ENGLISH"] = "A Simple Wine"; ["FRENCH"] = "Un vin tout simple"; ["GERMAN"] = "Ein einfacher Wein"; };
+            ["A_DARK_DAY"] = {["ENGLISH"] = "A Dark Day"; ["FRENCH"] = "Un jour noir"; ["GERMAN"] = "Ein dunkler Tag"; };
+            ["ATLIS_FAVOURITE"] = {["ENGLISH"] = "Atli's Favourite"; ["FRENCH"] = "La préférée d'Atli"; ["GERMAN"] = "Atlis Lieblingsgetränk"; };
+
+            ["ALL_BUT_THE_GOOD_CIDER"] = {["ENGLISH"] = "All But the Good Cider"; ["FRENCH"] = "Tout sauf le bon cidre"; ["GERMAN"] = "Alles außer dem guten Apfelwein"; };
+            ["NEVER_FURTHER_FROM_HOME"] = {["ENGLISH"] = "Never Further From Home"; ["FRENCH"] = "Toujours plus près de la maison"; ["GERMAN"] = "Nie weiter weg von zu Hause"; };
+            ["ONE_DRINK_TOO_FEW"] = {["ENGLISH"] = "One Drink Too Few"; ["FRENCH"] = "Un verre en moins"; ["GERMAN"] = "Ein Getränk zu wenig"; };
+            ["QUITE_A_TICKLE"] = {["ENGLISH"] = "Quite a Tickle"; ["FRENCH"] = "Ça chatouille"; ["GERMAN"] = "Was zum Kichern"; };
+            ["A_BIT_OF_WHITE"] = {["ENGLISH"] = "A Bit of White"; ["FRENCH"] = "Un soupçon de blanc"; ["GERMAN"] = "Ein wenig Weiß"; };
+            ["BOMBURS_BREATH"] = {["ENGLISH"] = "Bombur's Breath"; ["FRENCH"] = "Souffle de Bombur"; ["GERMAN"] = "Bomburs Odem"; };
+            ["A_DIFFERENT_REMINDER_OF_RIVENDELL"] = {["ENGLISH"] = "A Different Reminder of Rivendell"; ["FRENCH"] = "Un souvenir différent de Fondcombe"; ["GERMAN"] = "Eine andere Erinnerung an Bruchtal"; };
+            ["A_DRINK_OF_THE_BEST_CHARACTER"] = {["ENGLISH"] = "A Drink of the Best Character"; ["FRENCH"] = "Une boisson vraiment délicieuse"; ["GERMAN"] = "Das beste aller Getränke"; };
+            ["A_CONVOLUTED_WINE"] = {["ENGLISH"] = "A Convoluted Wine"; ["FRENCH"] = "Un vin alambiqué"; ["GERMAN"] = "Ein komplexer Wein"; };
+            ["A_DARK_PRANK"] = {["ENGLISH"] = "A Dark Prank"; ["FRENCH"] = "Une sombre farce"; ["GERMAN"] = "Ein dunkler Streich"; };
+            ["NOT_ATLIS_FAVOURITE"] = {["ENGLISH"] = "Not Atli's Favourite"; ["FRENCH"] = "Atli n'apprécie pas trop"; ["GERMAN"] = "Nicht Atlis Lieblingsgetränk"; };
+        }
+
     };
 
     ["BUTTONS"] = {
@@ -855,6 +886,11 @@ _LANG = {
             [MIDSUMMER_TOKEN] = 1879406105; -- MIDSUMMER_TOKEN -- Wallet
             [MIDSUMMER_MC] = 1879255991; -- MITHRIL
         };
+
+        [ILAA] = {
+            [ILAA_BADGE_OF_TASTE] = 1879185136;
+            [ILAA_BADGE_OF_DISHONOUR] = 1879183133;
+        }
     };
 
     ["OPTIONS"] = {
