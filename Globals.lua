@@ -237,7 +237,6 @@ DEFAULT_SETTINGS = {
             ["THE_BIGGEST_STOMACH_OF_THEM_ALL_5"] = true;
             ["TIDYING_UP"] = true;
             ["UNWILLING_FIREWOOD"] = true;
-            ["YULE_FESTIVAL_DAILY"] = true;
         };
         [ILAA] = {
             ["ALL_BUT_THE_CIDER"] = true;
