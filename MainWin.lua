@@ -536,6 +536,8 @@ function LoadQuest(questKey)
 
         if SETTINGS.EMOTESASSIST == true and _QUESTSTRINGS[SELECTEDFESTIVAL][questKey].EMOTES ~= nil then CreateEmotesAssist(GetString(_QUESTSTRINGS[SELECTEDFESTIVAL][questKey].EMOTES)) end;
         if SETTINGS.QSASSIST == true and _QUESTSTRINGS[SELECTEDFESTIVAL][questKey].QUICKSLOTS ~= nil then CreateQuickSlotAssit(GetString(_QUESTSTRINGS[SELECTEDFESTIVAL][questKey].QUICKSLOTS)) end;
+    else
+        questMapImage:SetVisible(false);
     end
 
     -- Put a special case here for GetString(_LANG.QUESTS[5].BREEFIREWORKS):
@@ -565,6 +567,8 @@ function RefreshQuestGuide(QUESTNAME)
     local _QUESTS = _LANG.QUESTS[SELECTEDFESTIVAL];
 
     CloseHelperWindows();
+    -- Clear any existing text:
+    lblQuestGuide:SetText("");
 
     for k,v in pairs (_QUESTS) do
 
