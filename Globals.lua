@@ -292,6 +292,36 @@ DEFAULT_SETTINGS_ACCOUNT = {
         ["FAT_MAYOR"] = true;
         ["BOUNDER_ROUNDS"] = true;
         };
+
+    ["QUICK_GUIDE"] = {
+        ["USE_COLORS"] = true;
+        ["COLORS"] = {
+            ["LOCATION"] = {
+                ["USE"] = true;
+                ["R"] = 0xFF;
+                ["G"] = 0x77;
+                ["B"] = 0x77;
+            };
+            ["QUEST"] = {
+                ["USE"] = true;
+                ["R"] = 0x77;
+                ["G"] = 0x77;
+                ["B"] = 0xFF;
+            };
+            ["NPC"] = {
+                ["USE"] = true;
+                ["R"] = 0x77;
+                ["G"] = 0xFF;
+                ["B"] = 0x77;
+            };
+            ["QUEST_ITEM"] = {
+                ["USE"] = true;
+                ["R"] = 0xCC;
+                ["G"] = 0xCC;
+                ["B"] = 0xCC;
+            };
+        };
+    };
 };
 
 -- Add quest keys here that should be backgroundable.

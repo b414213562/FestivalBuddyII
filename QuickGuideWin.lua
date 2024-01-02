@@ -82,9 +82,19 @@ function QuickGuideWinCreateNode(index)
 
     local objective = _QUICK_GUIDE[SELECTEDFESTIVAL][index];
 
+    -- In order to support colorization of quick guide objectives,
+    -- the DISPLAY string can't be statically initialized.
+    -- In this case, it will be a function that we call.
+    local objectivetext = "";
+    if (type(objective.DISPLAY) == "string") then
+        objectivetext = objective.DISPLAY;
+    elseif (type(objective.DISPLAY) == "function") then
+        objectivetext = objective.DISPLAY();
+    end
+
     local checkBox = Turbine.UI.Lotro.CheckBox();
     checkBox:SetParent(treeNode);
-    checkBox:SetText(objective.DISPLAY);
+    checkBox:SetText(objectivetext);
     checkBox:SetSize(treeView:GetWidth() - 8, 40);
     checkBox:SetMarkupEnabled(true);
     checkBox.CheckedChanged = function(sender, args)

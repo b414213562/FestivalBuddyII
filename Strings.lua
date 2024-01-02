@@ -929,6 +929,18 @@ _LANG = {
         ["QUICK_GUIDE_REMOVE_COMPLETED"]  = { ["ENGLISH"] = "Remove completed items from list";                     ["GERMAN"] = "Fertige Punkte aus der Liste entfernen";              };
         ["QUICK_GUIDE_CLEAR_DELAY"]       = { ["ENGLISH"] = "Delay in seconds before completed items are removed:"; ["GERMAN"] = "Verzögerung in Sekunden bis Punkte entfernt werden";  };
         ["QUICK_GUIDE_QUESTS_TO_INCLUED"] = { ["ENGLISH"] = "Quests to include in quick guide:";                    ["GERMAN"] = "Aufgaben, die in die Schnell-Liste sollen";           };
+        ["QUICK_GUIDE_COLORS"]            = { ["ENGLISH"] = "Quick Guide Colors:"; };
+        ["QUICK_GUIDE_USE_COLORS"]        = { ["ENGLISH"] = "Enable Colors"; };
+        ["QUICK_GUIDE_COLOR"] = {
+            ["LOCATION"] = { ["ENGLISH"] = "Location:"; };
+            ["QUEST"] = { ["ENGLISH"] = "Quest:"; };
+            ["NPC"] = { ["ENGLISH"] = "NPC:"; };
+            ["QUEST_ITEM"] = { ["ENGLISH"] = "Quest Item:"; };
+        };
+        ["QUICK_GUIDE_COLOR_CHANGE"]      = { ["ENGLISH"] = "Change"; };
+        ["QUICK_GUIDE_COLOR_DEFAULT"]     = { ["ENGLISH"] = "Default"; };
+        ["COLOR_PICKER"]                  = { ["ENGLISH"] = "Color Picker"; };
+        ["SAVE_COLOR"]                    = { ["ENGLISH"] = "Save"; };
 
         ["HARVESTMATH_MAZE_ID_LABEL"] = {
             ["ENGLISH"] = "Change current Harvestmath maze:";

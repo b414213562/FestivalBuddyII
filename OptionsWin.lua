@@ -111,6 +111,60 @@ function DrawMainWindowScaling(options, y)
     return y;
 end
 
+function CreateColorRow(colorSetting)
+    local colorRow = Turbine.UI.Control();
+    colorRow:SetSize(350, 30);
+
+    local quickGuideLocationColorCheckbox = Turbine.UI.Lotro.CheckBox();
+    quickGuideLocationColorCheckbox:SetParent(colorRow);
+    quickGuideLocationColorCheckbox:SetText(GetString(_LANG.OPTIONS.QUICK_GUIDE_COLOR[colorSetting]));
+    quickGuideLocationColorCheckbox:SetSize(120, 30);
+    quickGuideLocationColorCheckbox:SetPosition(20, 0);
+    quickGuideLocationColorCheckbox:SetChecked(SETTINGS_ACCOUNT.QUICK_GUIDE.COLORS[colorSetting].USE);
+    quickGuideLocationColorCheckbox.CheckedChanged = function(sender, args)
+        SETTINGS_ACCOUNT.QUICK_GUIDE.COLORS[colorSetting].USE = not SETTINGS_ACCOUNT.QUICK_GUIDE.COLORS[colorSetting].USE;
+        QuickGuideWinLoadFestival();
+    end
+
+    local setting = SETTINGS_ACCOUNT.QUICK_GUIDE.COLORS[colorSetting];
+    local quickGuideLocationColor = Turbine.UI.Control();
+    quickGuideLocationColor:SetParent(colorRow);
+    quickGuideLocationColor:SetBackColor(Turbine.UI.Color(setting.R / 255, setting.G / 255, setting.B / 255));
+    quickGuideLocationColor:SetSize(25, 25);
+    quickGuideLocationColor:SetPosition(140, 0);
+
+    local changeButton = Turbine.UI.Lotro.Button();
+    changeButton:SetParent(colorRow);
+    changeButton:SetText(GetString(_LANG.OPTIONS.QUICK_GUIDE_COLOR_CHANGE));
+    changeButton:SetWidth(75);
+    changeButton:SetPosition(170, 3);
+    changeButton.Click = function(sender, args)
+        ColorPickerWindow.SetColor(setting.R, setting.G, setting.B, function(red, green, blue)
+            setting.R = red;
+            setting.G = green;
+            setting.B = blue;
+            quickGuideLocationColor:SetBackColor(Turbine.UI.Color(setting.R / 255, setting.G / 255, setting.B / 255));
+            QuickGuideWinLoadFestival();
+        end);
+    end
+
+    local defaultButton = Turbine.UI.Lotro.Button();
+    defaultButton:SetParent(colorRow);
+    defaultButton:SetText(GetString(_LANG.OPTIONS.QUICK_GUIDE_COLOR_DEFAULT));
+    defaultButton:SetWidth(75);
+    defaultButton:SetPosition(250, 3);
+    defaultButton.Click = function(sender, args)
+        local defaultSetting = DefaultHighlightColors[colorSetting];
+        setting.R = defaultSetting.R;
+        setting.G = defaultSetting.G;
+        setting.B = defaultSetting.B;
+        quickGuideLocationColor:SetBackColor(Turbine.UI.Color(setting.R / 255, setting.G / 255, setting.B / 255));
+        QuickGuideWinLoadFestival();
+    end
+
+    return colorRow;
+end
+
 function DrawQuickGuideOptions(options, y)
     local quickGuideLabel = Turbine.UI.Label();
     quickGuideLabel:SetParent(options);
@@ -157,6 +211,48 @@ function DrawQuickGuideOptions(options, y)
     end
     y = y + 40;
 
+    -- Colors section:
+    local quickGuideColors = Turbine.UI.Label();
+    quickGuideColors:SetParent(options);
+    quickGuideColors:SetText(GetString(_LANG.OPTIONS.QUICK_GUIDE_COLORS));
+    quickGuideColors:SetSize(200, 30);
+    quickGuideColors:SetPosition(10, y);
+    y = y + 20;
+
+    local quickGuideUseColors = Turbine.UI.Lotro.CheckBox();
+    quickGuideUseColors:SetParent(options);
+    quickGuideUseColors:SetText(GetString(_LANG.OPTIONS.QUICK_GUIDE_USE_COLORS));
+    quickGuideUseColors:SetSize(150, 20);
+    quickGuideUseColors:SetPosition(20, y);
+    quickGuideUseColors:SetChecked(SETTINGS_ACCOUNT.QUICK_GUIDE.USE_COLORS);
+    quickGuideUseColors.CheckedChanged = function (sender, args)
+        SETTINGS_ACCOUNT.QUICK_GUIDE.USE_COLORS = not SETTINGS_ACCOUNT.QUICK_GUIDE.USE_COLORS;
+        QuickGuideWinLoadFestival();
+    end
+    y = y + 30;
+
+    local colorRow = CreateColorRow("LOCATION");
+    colorRow:SetParent(options);
+    colorRow:SetPosition(0, y);
+    y = y + 30;
+
+    colorRow = CreateColorRow("QUEST");
+    colorRow:SetParent(options);
+    colorRow:SetPosition(0, y);
+    y = y + 30;
+
+    colorRow = CreateColorRow("NPC");
+    colorRow:SetParent(options);
+    colorRow:SetPosition(0, y);
+    y = y + 30;
+
+    colorRow = CreateColorRow("QUEST_ITEM");
+    colorRow:SetParent(options);
+    colorRow:SetPosition(0, y);
+    y = y + 30;
+
+    y = y + 40;
+    -- end Colors section
 
     local questsToIncludeLabel = Turbine.UI.Label();
     questsToIncludeLabel:SetParent(options);
@@ -742,7 +838,83 @@ function HandleFarmersFaireFatMayorResultClick(result)
     end
 end
 
+function CreateColorPickerWindow()
+    -- the color picker window
+    ColorPickerWindow = Turbine.UI.Lotro.Window();
+    ColorPickerWindow:SetSize(300,180);
+    ColorPickerWindow:SetPosition(100,100);
+    ColorPickerWindow:SetText(GetString(_LANG.OPTIONS.COLOR_PICKER));
+
+    ColorPickerWindow.SaveCallback = nil;
+
+    -- slightly not-black background to see the edges more easily:
+    local background = Turbine.UI.Control();
+    background:SetParent(ColorPickerWindow);
+    background:SetSize(284, 145 - 38);
+    background:SetPosition(8, 38);
+    background:SetBackColor(Turbine.UI.Color(0.1, 0.1, 0.1));
+
+    -- the color picker
+    local colorPicker = Libraries.ColorPicker.Create();
+    colorPicker:SetParent(ColorPickerWindow);
+    colorPicker:SetSize(280, 70);
+    colorPicker:SetPosition(10, 40);
+
+    -- selected color preview
+    local colorPreview = Turbine.UI.Control();
+    colorPreview:SetParent(ColorPickerWindow);
+    colorPreview:SetSize(23,23);
+    colorPreview:SetPosition(95,120);
+
+    local colorLabelFont = Turbine.UI.Lotro.Font.TrajanPro14;
+    local colorLabelColor = Turbine.UI.Color((229/255),(209/255),(136/255));
+
+    -- selected color hex value
+    local colorLabel = Turbine.UI.Label();
+    colorLabel = Turbine.UI.Label();
+    colorLabel:SetParent(ColorPickerWindow);
+    colorLabel:SetPosition(125,120);
+    colorLabel:SetSize(220,23);
+    colorLabel:SetForeColor(colorLabelColor);
+    colorLabel:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleLeft);
+    colorLabel:SetFont(colorLabelFont);
+
+    -- button which updates the SETTINGS and recolours the window.
+    local saveButton = Turbine.UI.Lotro.Button();
+    saveButton:SetParent(ColorPickerWindow);
+    saveButton:SetText(GetString(_LANG.OPTIONS.SAVE_COLOR));
+    saveButton:SetPosition(100, 150);
+    saveButton:SetWidth(100);
+    saveButton.Click = function(sender, args)
+        local red, green, blue = colorPicker:GetRGBColor();
+        if (ColorPickerWindow.SaveCallback) then
+            ColorPickerWindow.SaveCallback(red, green, blue);
+        end
+        ColorPickerWindow:SetVisible(false);
+    end
+    saveButton:SetEnabled(false);
+
+    -- respond to clicks:
+    colorPicker.LeftClick = function ()
+        colorPreview:SetBackColor(colorPicker:GetTurbineColor());
+        colorLabel:SetText("Hex: #" .. colorPicker:GetHexColor());
+        saveButton:SetEnabled(true);
+    end
+
+    ColorPickerWindow.SetColor = function(red, green, blue, saveCallback)
+        colorPreview:SetBackColor(Turbine.UI.Color(red / 255, green / 255, blue / 255));
+        colorLabel:SetText(string.format("Hex: #%02x%02x%02x", red, green, blue));
+
+        ColorPickerWindow.SaveCallback = saveCallback;
+        ColorPickerWindow:SetVisible(true);
+        ColorPickerWindow:Activate();
+    end
+
+end
+
 function DrawOptionsWin()
+    CreateColorPickerWindow();
+
     -- UI hierarchy:
     -- options
     --      non-debug options
