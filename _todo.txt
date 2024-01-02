@@ -9,11 +9,9 @@ Note: It might be that not all emotes that are not good are bad.
 Yule:
     Need better quest help:
         Stolen Treats
-    Need quick guide for town quests.
-        Need to add logic to options to populate multiple quick guides
-            Each quest to show up in options needs an entry in the Strings.lua _LANG table.
-                Finish adding quest guides for each of those first?
-            maybe a dropdown to select which one is being edited?
+
+Options for Quick Guides:
+    maybe a dropdown to select which one is being edited?
 
 Bugs:
     Need a central system to retrieve the Harvest Map that can trigger the ID window to show up.
