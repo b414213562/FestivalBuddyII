@@ -53,6 +53,25 @@ import "CubePlugins.FestivalBuddyII.Commands";
 
 -----------------------------------------------------------------------------------------------------------
 
+function UnloadReloader()
+    Turbine.PluginManager.RefreshAvailablePlugins();
+
+    ReloaderUnloader = Turbine.UI.Control();
+    ReloaderUnloader:SetWantsUpdates( true );
+
+    ReloaderUnloader.Update = function( sender, args )
+        ReloaderUnloader:SetWantsUpdates( false );
+        Turbine.PluginManager.RefreshAvailablePlugins();
+        local loadedPlugins = Turbine.PluginManager.GetLoadedPlugins();
+
+        for k,v in pairs(loadedPlugins) do
+            if v.Name == "~Festival Buddy II Reloader" then
+                Turbine.PluginManager.UnloadScriptState( 'FestivalBuddyReloader' );
+            end
+        end
+    end
+end
+
 function saveData()
 
     -- Store the settings table.
@@ -251,6 +270,7 @@ end
 
 
 -- Initiate load sequence
+UnloadReloader();
 loadData();
 CheckCharData();
 DrawWindows();
