@@ -733,6 +733,114 @@ Return to Cora Brownlock.
             ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Yule/The Biggest Stomach of Them All.tga";
         };
 
+        ["THE_BIGGEST_STOMACH_OF_THEM_ALL_2"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = "1. Pick up quest from Ona Kay and wait.\n2. Eat 5 food at first station.\n3. Eat 5 food at second station.\n4. Eat 5 food at third station.\n5. Eat 5 food at fourth station.\n6. Eat 5 food at fifth station.\n\nRun Speed Debuffs: \nBerries: -1%\nMushrooms: -3%\nEggs: -5%\nPie: -10%\nBread: -15%\nMystery Drink: Removes all debuffs OR -60% for 20s";
+--                ["ENGLISH"] = "This is an eating race where you need to eat 5 things at each table before you can continue. Try to avoid eating bread and pies as they have the biggest debuffs.\n\n- Berries: -1% run speed (4m)\n- Mushrooms: -3% run speed (4m)\n- Eggs: -5% run speed (4m)\n- Pie: -10% run speed (4m)\n- Bread: -15% run speed (4m)\n- Mystery Drink: Removes all debuffs OR -60% run speed (20s)";
+                ["FRENCH"] = "C'est une course de nourriture o\195\185 vous devez manger 5 choses par table avant de continuer. Essayez d'\195\169viter de manger du pain ou des tourtes car ils ont les plus gros debuffs.\n\n- Baies: -1% vitesse de course (4m)\n- Champignons: -3% vitesse de course (4m)\n- \197\146ufs: -5% vitesse de course (4m)\n- Tourte: -10% vitesse de course (4m)\n- Pain: -15% vitesse de course (4m)\n- Boisson Myst\195\168rieuse: Supprime tout les debuffs OU -60% vitesse de course (20s)";
+                ["GERMAN"] = "Dies ist ein Wettessen, bei dem man an jedem Tisch 5 Sachen verzehren muss, um weiterzukommen. Versuche Brot und Pasteten zu vermeiden, da sie die längste Zeit benötigen.\n\n- Beeren: -1% Geschwindigkeit (4m)\n- Pilze: -3% Geschwindigkeit (4m)\n- Eier: -5% Geschwindigkeit (4m)\n- Pastete: -10% Geschwindigkeit (4m)\n- Brot: -15% Geschwindigkeit (4m)\n- Rätselhaftes Getränk: Entfernt die Verlangsamungen ODER -60% Geschwindigkeit (20s)";
+            };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Yule/The Biggest Stomach of Them All.tga";
+            ["HIDDEN"] = true;
+        };
+
+        ["THE_BIGGEST_STOMACH_OF_THEM_ALL_3"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = "1. Pick up quest from Ona Kay and wait.\n2. Eat 5 food at first station.\n3. Eat 5 food at second station.\n4. Eat 5 food at third station.\n5. Eat 5 food at fourth station.\n6. Eat 5 food at fifth station.\n\nRun Speed Debuffs: \nBerries: -1%\nMushrooms: -3%\nEggs: -5%\nPie: -10%\nBread: -15%\nMystery Drink: Removes all debuffs OR -60% for 20s";
+--                ["ENGLISH"] = "This is an eating race where you need to eat 5 things at each table before you can continue. Try to avoid eating bread and pies as they have the biggest debuffs.\n\n- Berries: -1% run speed (4m)\n- Mushrooms: -3% run speed (4m)\n- Eggs: -5% run speed (4m)\n- Pie: -10% run speed (4m)\n- Bread: -15% run speed (4m)\n- Mystery Drink: Removes all debuffs OR -60% run speed (20s)";
+                ["FRENCH"] = "C'est une course de nourriture o\195\185 vous devez manger 5 choses par table avant de continuer. Essayez d'\195\169viter de manger du pain ou des tourtes car ils ont les plus gros debuffs.\n\n- Baies: -1% vitesse de course (4m)\n- Champignons: -3% vitesse de course (4m)\n- \197\146ufs: -5% vitesse de course (4m)\n- Tourte: -10% vitesse de course (4m)\n- Pain: -15% vitesse de course (4m)\n- Boisson Myst\195\168rieuse: Supprime tout les debuffs OU -60% vitesse de course (20s)";
+                ["GERMAN"] = "Dies ist ein Wettessen, bei dem man an jedem Tisch 5 Sachen verzehren muss, um weiterzukommen. Versuche Brot und Pasteten zu vermeiden, da sie die längste Zeit benötigen.\n\n- Beeren: -1% Geschwindigkeit (4m)\n- Pilze: -3% Geschwindigkeit (4m)\n- Eier: -5% Geschwindigkeit (4m)\n- Pastete: -10% Geschwindigkeit (4m)\n- Brot: -15% Geschwindigkeit (4m)\n- Rätselhaftes Getränk: Entfernt die Verlangsamungen ODER -60% Geschwindigkeit (20s)";
+            };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Yule/The Biggest Stomach of Them All.tga";
+            ["HIDDEN"] = true;
+        };
+
+        ["THE_BIGGEST_STOMACH_OF_THEM_ALL_4"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = "1. Pick up quest from Ona Kay and wait.\n2. Eat 5 food at first station.\n3. Eat 5 food at second station.\n4. Eat 5 food at third station.\n5. Eat 5 food at fourth station.\n6. Eat 5 food at fifth station.\n\nRun Speed Debuffs: \nBerries: -1%\nMushrooms: -3%\nEggs: -5%\nPie: -10%\nBread: -15%\nMystery Drink: Removes all debuffs OR -60% for 20s";
+--                ["ENGLISH"] = "This is an eating race where you need to eat 5 things at each table before you can continue. Try to avoid eating bread and pies as they have the biggest debuffs.\n\n- Berries: -1% run speed (4m)\n- Mushrooms: -3% run speed (4m)\n- Eggs: -5% run speed (4m)\n- Pie: -10% run speed (4m)\n- Bread: -15% run speed (4m)\n- Mystery Drink: Removes all debuffs OR -60% run speed (20s)";
+                ["FRENCH"] = "C'est une course de nourriture o\195\185 vous devez manger 5 choses par table avant de continuer. Essayez d'\195\169viter de manger du pain ou des tourtes car ils ont les plus gros debuffs.\n\n- Baies: -1% vitesse de course (4m)\n- Champignons: -3% vitesse de course (4m)\n- \197\146ufs: -5% vitesse de course (4m)\n- Tourte: -10% vitesse de course (4m)\n- Pain: -15% vitesse de course (4m)\n- Boisson Myst\195\168rieuse: Supprime tout les debuffs OU -60% vitesse de course (20s)";
+                ["GERMAN"] = "Dies ist ein Wettessen, bei dem man an jedem Tisch 5 Sachen verzehren muss, um weiterzukommen. Versuche Brot und Pasteten zu vermeiden, da sie die längste Zeit benötigen.\n\n- Beeren: -1% Geschwindigkeit (4m)\n- Pilze: -3% Geschwindigkeit (4m)\n- Eier: -5% Geschwindigkeit (4m)\n- Pastete: -10% Geschwindigkeit (4m)\n- Brot: -15% Geschwindigkeit (4m)\n- Rätselhaftes Getränk: Entfernt die Verlangsamungen ODER -60% Geschwindigkeit (20s)";
+            };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Yule/The Biggest Stomach of Them All.tga";
+            ["HIDDEN"] = true;
+        };
+
+        ["THE_BIGGEST_STOMACH_OF_THEM_ALL_5"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = "1. Pick up quest from Ona Kay and wait.\n2. Eat 5 food at first station.\n3. Eat 5 food at second station.\n4. Eat 5 food at third station.\n5. Eat 5 food at fourth station.\n6. Eat 5 food at fifth station.\n\nRun Speed Debuffs: \nBerries: -1%\nMushrooms: -3%\nEggs: -5%\nPie: -10%\nBread: -15%\nMystery Drink: Removes all debuffs OR -60% for 20s";
+--                ["ENGLISH"] = "This is an eating race where you need to eat 5 things at each table before you can continue. Try to avoid eating bread and pies as they have the biggest debuffs.\n\n- Berries: -1% run speed (4m)\n- Mushrooms: -3% run speed (4m)\n- Eggs: -5% run speed (4m)\n- Pie: -10% run speed (4m)\n- Bread: -15% run speed (4m)\n- Mystery Drink: Removes all debuffs OR -60% run speed (20s)";
+                ["FRENCH"] = "C'est une course de nourriture o\195\185 vous devez manger 5 choses par table avant de continuer. Essayez d'\195\169viter de manger du pain ou des tourtes car ils ont les plus gros debuffs.\n\n- Baies: -1% vitesse de course (4m)\n- Champignons: -3% vitesse de course (4m)\n- \197\146ufs: -5% vitesse de course (4m)\n- Tourte: -10% vitesse de course (4m)\n- Pain: -15% vitesse de course (4m)\n- Boisson Myst\195\168rieuse: Supprime tout les debuffs OU -60% vitesse de course (20s)";
+                ["GERMAN"] = "Dies ist ein Wettessen, bei dem man an jedem Tisch 5 Sachen verzehren muss, um weiterzukommen. Versuche Brot und Pasteten zu vermeiden, da sie die längste Zeit benötigen.\n\n- Beeren: -1% Geschwindigkeit (4m)\n- Pilze: -3% Geschwindigkeit (4m)\n- Eier: -5% Geschwindigkeit (4m)\n- Pastete: -10% Geschwindigkeit (4m)\n- Brot: -15% Geschwindigkeit (4m)\n- Rätselhaftes Getränk: Entfernt die Verlangsamungen ODER -60% Geschwindigkeit (20s)";
+            };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Yule/The Biggest Stomach of Them All.tga";
+            ["HIDDEN"] = true;
+        };
+
+        ["A_BROKEN_SNOWMAN"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = "1. Pick up Filling the Field from Virgil Greenfield.\n2. Pick up 'A Broken Snowman?' from Virgil's Broken Snowman.\n3. Pick up Sticks.\n4. Gather coal.\n3. Build snowman at pile. (The giant version is at 12.67N, 95.21W)\n1. Return Filling the Field to Virgil Greenfield.";
+            };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Yule/A Broken Snowman.tga";
+        };
+
+        ["A_CHARITABLE_SPIRIT"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = "1. Pick up quest from Daley Utteridge.\n2. Donate one token to Regina Judson.\n3. Donate one token to Jack Judson.\n4. Donate one token to Bill Hyde.\n5. Donate one token to Barrett Nowell.\n6. Donate one token to Ted Ives.\n1. Return to Daley Utteridge.";
+            };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Yule/A Charitable Spirit.tga";
+        };
+
+        ["COLD_AS_ICE"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = "1. Pick up quest from Daley Utteridge.\n\n2. Disperse 4 Wintry Weather.\n\n1. Return to Daley Utteridge.";
+            };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Yule/Cold as Ice.tga";
+        };
+
+        ["FILLING_THE_FIELD"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = "1. Pick up Filling the Field from Virgil Greenfield.\n2. Pick up 'A Broken Snowman?' from Virgil's Broken Snowman.\n3. Pick up Sticks.\n4. Gather coal.\n3. Build snowman at pile. (The giant version is at 12.67N, 95.21W)\n1. Return Filling the Field to Virgil Greenfield.";
+            };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Yule/A Broken Snowman.tga";
+        };
+
+        ["IN_THE_SPIRIT_OF_YULE"] = {
+            ["HIDDEN"] = true;
+        };
+
+        ["MAKING_MISCHIEF"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = "1. Pick up quest from Gareth Rust.\n\n2. Set off fireworks.\n\n3. Pick 8 pockets.\n\n1. Return to Gareth Rust.";
+            };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Yule/Making Mischief.tga";
+        };
+
+        ["MOVING_THEM_OFF"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = "1. Pick up quest from Guard Kember.\n2. Tell Barrett Nowell to move off.\n3. Tell Ted Ives to move off.\n4. Tell Regina Judson to move off.\n5. Tell Jack Judson to move off.\n6. Tell Bill Hyde to move off.\n1. Return to Guard Kember.";
+            };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Yule/Moving Them Off.tga";
+        };
+
+        ["TIDYING_UP"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = "1. Pick up quest from Basil Wyndham.\n2. Tidy up.\n3. Tidy up.\n4. Tidy up.\n5. Tidy up.\n1. Return to Basil Wyndham.";
+            };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Yule/Tidying Up.tga";
+        };
+
+        ["UNWILLING_FIREWOOD"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = "1. Pick up quest from Mabel Mitford.\n\n2. Collect 9 firewood from the best trees.\n\n1. Return to Mabel Mitford.";
+            };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Yule/Unwilling Firewood.tga";
+        };
+
+        ["YULE_FESTIVAL_DAILY"] = {
+            ["HIDDEN"] = true;
+        };
+
     };
 
     -- ANNIVERSARY -------------------------------------------------------------------------------------------------------------------
