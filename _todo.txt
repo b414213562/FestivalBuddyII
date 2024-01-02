@@ -3,7 +3,6 @@ Quests: Add "HIDDEN" flag for things like Biggest Stomach parts 2 - 5.
 Add type-specific check boxes for Location, etc., so you can use only some colors.
 LOAD_QUEST didn't clear the emotes window (see completing Yeti)
 Remove /cheer popup for yeti quest?
-Background image for IL/AA.
 
 Expand Theater Emotes to add in at least one failure option.
     Better to have three, so make two columns of three, with a lable for each: Good / Bad?

@@ -2,6 +2,7 @@ v2.0.5 changes:
     Festivals:
         Added French translations for Yule Quick Guide.
         Added German translations from Mandraval for UI and Quick Guide.
+        Added Inn League / Ale Association Quick Guide. (Based on hunter travel skills.)
 
 v2.0.4 changes:
     Festivals:
