@@ -1123,6 +1123,12 @@ function MainWinRedraw()
     local defaultHeight = MainWindowHeight;
     local stretchedWindowHeight = (stretchedWindowWidth / defaultWidth) * defaultHeight;
 
+    -- If we're close to 100%, snap back to 100% to avoid UI blurring:
+    if (math.abs(stretchedWindowWidth - MainWindowWidth) < 10) then
+        stretchedWindowWidth = MainWindowWidth;
+        stretchedWindowHeight = MainWindowHeight;
+    end
+
     -- Stretch the window:
     wMainWinParent:SetSize(stretchedWindowWidth, stretchedWindowHeight);
     Onscreen(wMainWinParent, stretchedWindowWidth, stretchedWindowHeight);
