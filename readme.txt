@@ -3,6 +3,8 @@ v2.0.5 changes:
         Added French translations for Yule Quick Guide.
         Added German translations from Mandraval for UI and Quick Guide.
         Added Inn League / Ale Association Quick Guide. (Based on hunter travel skills.)
+        Removed /cheer emote window for The Abominable Snow Beasts quest. (Quest tracker provides this automatically.)
+
 
 v2.0.4 changes:
     Festivals:

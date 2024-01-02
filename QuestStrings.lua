@@ -590,11 +590,12 @@ Return to Cora Brownlock.
                 ["FRENCH"] = "<rgb=#FF0000>/bravo</rgb> aux b\195\170tes des neiges (s\195\169lectionner la cible).\n\nLes b\195\170tes des neiges se trouvent dans le petit bois dans le coin sud-est de la carte (12.2N, 93.6W). - casualstrolltomordor.com";
                 ["GERMAN"] = "Schneekreaturen zu-<rgb=#FF0000>/jubeln</rgb> (Auswählen!).\n\nDie Schneekreaturen befinden sich im lichten Gehölz in der Süd-Ost-Ecke, etwa bei (12.2N, 93.6W). - casualstrolltomordor.com";
             };
-            ["EMOTES"] = {
-                ["ENGLISH"] = {"/cheer"};
-                ["FRENCH"] = {"/bravo"};
-                ["GERMAN"] = {"/jubeln"};
-            };
+-- The quest tracker provides this emote automatically.
+--            ["EMOTES"] = {
+--                ["ENGLISH"] = {"/cheer"};
+--                ["FRENCH"] = {"/bravo"};
+--                ["GERMAN"] = {"/jubeln"};
+--            };
             ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Yule/The Abominable Snow-beasts.tga";
         };
 
