@@ -197,8 +197,8 @@ function DrawMainWin()
                 wQuickGuideWinParent:SetVisible(SETTINGS.QUICK_GUIDE_WIN.VISIBLE);
 
                 if wMainWinParent:IsVisible() == true then
-                    if wEmoteAssistParent ~= nil then wEmoteAssistParent:SetVisible(SETTINGS.EMOTEWIN.VISIBLE) end;
-                    if wQSAssistParent ~= nil then wQSAssistParent:SetVisible(SETTINGS.QSWIN.VISIBLE) end;
+                    EmotesAssistSetVisible(SETTINGS.EMOTEWIN.VISIBLE);
+                    QSAssistSetVisible(SETTINGS.QSWIN.VISIBLE);
                 end
             else
                 wMainWinParent:SetVisible(false);
@@ -207,8 +207,8 @@ function DrawMainWin()
                 wDanceParent:SetVisible(false);
                 wQuickGuideWinParent:SetVisible(false);
 
-                if wEmoteAssistParent ~= nil then wEmoteAssistParent:SetVisible(false) end;
-                if wQSAssistParent ~= nil then wQSAssistParent:SetVisible(false) end;
+                EmotesAssistSetVisible(false);
+                QSAssistSetVisible(false);
             end
 
             ToggleHUD_Fireworks();
@@ -228,8 +228,8 @@ function DrawMainWin()
                 SETTINGS.DANCEWIN.VISIBLE = false;
                 wDanceParent:SetVisible(false);
 
-                if wEmoteAssistParent ~= nil then wEmoteAssistParent:SetVisible(false) end;
-                if wQSAssistParent ~= nil then wQSAssistParent:SetVisible(false) end;
+                EmotesAssistSetVisible(false);
+                QSAssistSetVisible(false);
 
                 print(GetString(_LANG.OTHER.COMMAND));
             end
@@ -483,8 +483,8 @@ function SetMainWinVisible(newIsVisible)
         wMainWinParent:SetVisible(true);
         SETTINGS.MAINWIN.VISIBLE = true;
 
-        if wEmoteAssistParent ~= nil then wEmoteAssistParent:SetVisible(SETTINGS.EMOTEWIN.VISIBLE) end;
-        if wQSAssistParent ~= nil then wQSAssistParent:SetVisible(SETTINGS.QSWIN.VISIBLE) end;
+        EmotesAssistSetVisible(SETTINGS.EMOTEWIN.VISIBLE);
+        QSAssistSetVisible(SETTINGS.QSWIN.VISIBLE);
 
         wMainWinParent:Activate();
     else
@@ -932,6 +932,11 @@ function CreateQuickSlotAssit(QSLIST)
 
 end
 
+function QSAssistSetVisible(newVisible)
+    if (wQSAssistParent ~= nil) then
+        wQSAssistParent:SetVisible(newVisible);
+    end
+end
 
 -- This function takes an item name and searches for it within the player's backpack. If it's found it returns the item.
 function GetInvItem(SENDER,ITEMNAME)
@@ -1112,6 +1117,11 @@ function CreateEmotesAssist(EMOTELIST)
     end
 end
 
+function EmotesAssistSetVisible(newVisible)
+    if (wEmoteAssistParent ~= nil) then
+        wEmoteAssistParent:SetVisible(newVisible);
+    end
+end
 
 -- Scale the window based on the setting.
 function MainWinRedraw()
