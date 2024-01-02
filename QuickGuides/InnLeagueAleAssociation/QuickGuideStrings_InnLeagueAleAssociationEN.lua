@@ -43,53 +43,105 @@ QG_ILAA[QG_ILAA_INDEX.A_DIFFERENT_REMINDER_OF_RIVENDELL_END].DISPLAY = "Travel t
 
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[ILAA] = {
     ["New Quest: All But the Good Cider"] = QG_ILAA_INDEX.ALL_BUT_THE_GOOD_CIDER_PICKUP;
+    ["New Quest: All But the Cider"] = QG_ILAA_INDEX.ALL_BUT_THE_CIDER_PICKUP;
+
     ["New Quest: Never Further From Home"] = QG_ILAA_INDEX.NEVER_FURTHER_FROM_HOME_PICKUP;
+    ["New Quest: Never Far From Home"] = QG_ILAA_INDEX.NEVER_FAR_FROM_HOME_PICKUP;
+
     ["New Quest: One Drink Too Few"] = QG_ILAA_INDEX.ONE_DRINK_TOO_FEW_PICKUP;
+    ["New Quest: One Drink Too Many"] = QG_ILAA_INDEX.ONE_DRINK_TOO_MANY_PICKUP;
+
     ["New Quest: Quite a Tickle"] = QG_ILAA_INDEX.QUITE_A_TICKLE_PICKUP;
+    ["New Quest: Quite a Pickle"] = QG_ILAA_INDEX.QUITE_A_PICKLE_PICKUP;
+
     ["New Quest: A Bit of White"] = QG_ILAA_INDEX.A_BIT_OF_WHITE_PICKUP;
+    ["New Quest: A Bit of Brown"] = QG_ILAA_INDEX.A_BIT_OF_BROWN_PICKUP;
+
     ["New Quest: Bombur's Breath"] = QG_ILAA_INDEX.BOMBURS_BREATH_PICKUP;
+    ["New Quest: A Member in Need"] = QG_ILAA_INDEX.A_MEMBER_IN_NEED_PICKUP;
+
     ["New Quest: A Different Reminder of Rivendell"] = QG_ILAA_INDEX.A_DIFFERENT_REMINDER_OF_RIVENDELL_PICKUP;
+    ["New Quest: A Reminder of Rivendell"] = QG_ILAA_INDEX.A_REMINDER_OF_RIVENDELL_PICKUP;
+
     ["New Quest: A Drink of the Best Character"] = QG_ILAA_INDEX.A_DRINK_OF_THE_BEST_CHARACTER_PICKUP;
+    ["New Quest: A Drink of the Worst Character"] = QG_ILAA_INDEX.A_DRINK_OF_THE_WORST_CHARACTER_PICKUP;
+
     ["New Quest: A Convoluted Wine"] = QG_ILAA_INDEX.A_CONVOLUTED_WINE_PICKUP;
+    ["New Quest: A Simple Wine"] = QG_ILAA_INDEX.A_SIMPLE_WINE_PICKUP;
+
     ["New Quest: A Dark Prank"] = QG_ILAA_INDEX.A_DARK_PRANK_PICKUP;
+    ["New Quest: A Dark Day"] = QG_ILAA_INDEX.A_DARK_DAY_PICKUP;
+
     ["New Quest: Not Atli's Favourite"] = QG_ILAA_INDEX.NOT_ATLIS_FAVOURITE_PICKUP;
+    ["New Quest: Atli's Favourite"] = QG_ILAA_INDEX.ATLIS_FAVOURITE_PICKUP;
 };
 
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[ILAA] = {
     ["Completed:\nAll But the Good Cider\n"] = QG_ILAA_INDEX.ALL_BUT_THE_GOOD_CIDER_END;
+    ["Completed:\nAll But the Cider\n"] = QG_ILAA_INDEX.ALL_BUT_THE_CIDER_END;
+
     ["Completed:\nNever Further From Home\n"] = QG_ILAA_INDEX.NEVER_FURTHER_FROM_HOME_END;
+    ["Completed:\nNever Far From Home\n"] = QG_ILAA_INDEX.NEVER_FAR_FROM_HOME_END;
+
     ["Completed:\nOne Drink Too Few\n"] = QG_ILAA_INDEX.ONE_DRINK_TOO_FEW_END;
+    ["Completed:\nOne Drink Too Many\n"] = QG_ILAA_INDEX.ONE_DRINK_TOO_MANY_END;
+
     ["Completed:\nQuite a Tickle\n"] = QG_ILAA_INDEX.QUITE_A_TICKLE_END;
+    ["Completed:\nQuite a Pickle\n"] = QG_ILAA_INDEX.QUITE_A_PICKLE_END;
+
     ["Completed:\nA Bit of White\n"] = QG_ILAA_INDEX.A_BIT_OF_WHITE_END;
+    ["Completed:\nA Bit of Brown\n"] = QG_ILAA_INDEX.A_BIT_OF_BROWN_END;
+
     ["Completed:\nBombur's Breath\n"] = QG_ILAA_INDEX.BOMBURS_BREATH_END;
+    ["Completed:\nA Member in Need\n"] = QG_ILAA_INDEX.A_MEMBER_IN_NEED_END;
+
     ["Completed:\nA Different Reminder of Rivendell\n"] = QG_ILAA_INDEX.A_DIFFERENT_REMINDER_OF_RIVENDELL_END;
+    ["Completed:\nA Reminder of Rivendell\n"] = QG_ILAA_INDEX.A_REMINDER_OF_RIVENDELL_END;
+
     ["Completed:\nA Drink of the Best Character\n"] = QG_ILAA_INDEX.A_DRINK_OF_THE_BEST_CHARACTER_END;
+    ["Completed:\nA Drink of the Worst Character\n"] = QG_ILAA_INDEX.A_DRINK_OF_THE_WORST_CHARACTER_END;
+
     ["Completed:\nA Convoluted Wine\n"] = QG_ILAA_INDEX.A_CONVOLUTED_WINE_END;
+    ["Completed:\nA Simple Wine\n"] = QG_ILAA_INDEX.A_SIMPLE_WINE_END;
+
     ["Completed:\nA Dark Prank\n"] = QG_ILAA_INDEX.A_DARK_PRANK_END;
+    ["Completed:\nA Dark Day\n"] = QG_ILAA_INDEX.A_DARK_DAY_END;
+
     ["Completed:\nNot Atli's Favourite\n"] = QG_ILAA_INDEX.NOT_ATLIS_FAVOURITE_END;
+    ["Completed:\nAtli's Favourite\n"] = QG_ILAA_INDEX.ATLIS_FAVOURITE_END;
 };
 
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[ILAA] = {
     ["You have collected fake Stars of Old Cider"] = QG_ILAA_INDEX.ALL_BUT_THE_GOOD_CIDER_DRINK;
+    ["You have collected Stars of Old Cider"] = QG_ILAA_INDEX.ALL_BUT_THE_CIDER_DRINK;
+
     ["You have collected fake Limael's Vintage"] = QG_ILAA_INDEX.NEVER_FURTHER_FROM_HOME_DRINK;
+    ["You have collected Limael's Vintage"] = QG_ILAA_INDEX.NEVER_FAR_FROM_HOME_DRINK;
+
     ["You have collected fake Forsaken Ale"] = QG_ILAA_INDEX.ONE_DRINK_TOO_FEW_DRINK;
+    ["You have collected Forsaken Ale"] = QG_ILAA_INDEX.ONE_DRINK_TOO_MANY_DRINK;
+
     ["You have collected fake Thistlebelly Brew"] = QG_ILAA_INDEX.QUITE_A_TICKLE_DRINK;
+    ["You have collected Thistlebelly Brew"] = QG_ILAA_INDEX.QUITE_A_PICKLE_DRINK;
+
     ["You have collected fake Blagrove's Brown"] = QG_ILAA_INDEX.A_BIT_OF_WHITE_DRINK;
+    ["You have collected Blagrove's Brown"] = QG_ILAA_INDEX.A_BIT_OF_BROWN_DRINK;
+
     ["You have collected fake Bombur's Beard Lager"] = QG_ILAA_INDEX.BOMBURS_BREATH_DRINK;
+    ["Collected Bombur's Beard Lager"] = QG_ILAA_INDEX.A_MEMBER_IN_NEED_DRINK;
+
     ["You have collected fake Dorwinion White"] = QG_ILAA_INDEX.A_DIFFERENT_REMINDER_OF_RIVENDELL_DRINK;
+    ["You have collected Dorwinion White"] = QG_ILAA_INDEX.A_REMINDER_OF_RIVENDELL_DRINK;
+
     ["You have collected the mead. It will be disguised as Swill for you"] = QG_ILAA_INDEX.A_DRINK_OF_THE_BEST_CHARACTER_DRINK;
+    ["You have collected Swill....(yech)"] = QG_ILAA_INDEX.A_DRINK_OF_THE_WORST_CHARACTER_DRINK;
+
     ["You have collected fake Brandy Wine"] = QG_ILAA_INDEX.A_CONVOLUTED_WINE_DRINK;
+    ["You have collected Brandy Wine"] = QG_ILAA_INDEX.A_SIMPLE_WINE_DRINK;
+
     ["You have collected fake Moor-boar Beer"] = QG_ILAA_INDEX.A_DARK_PRANK_DRINK;
+    ["You have collected Moor-boar Beer"] = QG_ILAA_INDEX.A_DARK_DAY_DRINK;
+
     ["You have collected fake Beakbreaker Ale"] = QG_ILAA_INDEX.NOT_ATLIS_FAVOURITE_DRINK;
+    ["You have collected Beakbreaker Ale"] = QG_ILAA_INDEX.ATLIS_FAVOURITE_DRINK;
 };
-
--- You have collected Thistlebelly Brew
--- You have collected Forsaken Ale
--- You have collected Limael's Vintage
--- Collected Bombur's Beard Lager
--- You have collected Blagrove's Brown
--- You have collected Stars of Old Cider
--- You have collected Moor-boar Beer
--- You have collected Swill....(yech)
-
--- Note: From MM to Echad Candelleth: Stop by Last Homely House?
