@@ -1,5 +1,4 @@
 Save file format: Save QUICK_GUIDE_PROGRESS using objective key (e.g. IN_THE_SPIRIT_OF_YULE_PICKUP) instead of index (e.g. 1)
-Quests: Add "HIDDEN" flag for things like Biggest Stomach parts 2 - 5.
 Add type-specific check boxes for Location, etc., so you can use only some colors.
 LOAD_QUEST didn't clear the emotes window (see completing Yeti)
 Remove /cheer popup for yeti quest?

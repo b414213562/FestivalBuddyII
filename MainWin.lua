@@ -399,7 +399,10 @@ function FillMainWin(FESTIVAL)
     local _REFORMATQUESTS = {};
 
     for k,v in pairs(_LANG.QUESTS[SELECTEDFESTIVAL]) do
-        table.insert(_REFORMATQUESTS,GetString(v));
+        local isHidden = _QUESTSTRINGS[SELECTEDFESTIVAL][k] and _QUESTSTRINGS[SELECTEDFESTIVAL][k].HIDDEN;
+        if (not isHidden) then
+            table.insert(_REFORMATQUESTS,GetString(v));
+        end
     end
     table.sort(_REFORMATQUESTS);
 
