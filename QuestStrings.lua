@@ -595,6 +595,7 @@ Return to Cora Brownlock.
                 ["FRENCH"] = {"/bravo"};
                 ["GERMAN"] = {"/jubeln"};
             };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Yule/The Abominable Snow-beasts.tga";
         };
 
         ["THEATRE"] = {
@@ -706,6 +707,7 @@ Return to Cora Brownlock.
                 ["FRENCH"] = "R\195\169cup\195\169rez les ingr\195\169dients pour la f\195\170te\n\nCueillez des baies - vers le fort 12.7N, 93.4W\nRamassez des \197\147ufs pr\195\168s des poules - Terre de Cotte 13.3N, 94.6W\nRamassez de beaux champignons - dans la serre 11.8N, 94.3W\nFaites du pain au four des domestiques - 12.4N, 95.6W\n\nCo-ordinates from casualstrolltomordor.com";
                 ["GERMAN"] = "Sammle Zutaten für die Völlerei\n\nSammle frische Winterbeeren - nahe der Hütte 12.7N, 93.4W\nSammle Eier von verhätschelten Hühnern - Gackerland 13.3N, 94.6W\nSammle gut gepflegte Pilze - im Gewächshaus 11.8N, 94.3W\nBacke frisches Brot am Bediensteten-Ofen - 12.4N, 95.6W\n\nKoordinaten stammen von casualstrolltomordor.com";
             };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Yule/Stuffing the Stuffed.tga";
         };
 
         ["EMPTY_KEG_EMERGENCY"] = {
@@ -714,6 +716,7 @@ Return to Cora Brownlock.
                 ["FRENCH"] = "Livrez le tonneau au Client Assoif\195\169 sans vous faire attraper par les gardes.\n\nLes tonneaux se trouvent \195\169 c\195\180t\195\169 du four de serviteur.\n\nAvec le tonneau, prendre le chemin face \195\160 Nora Lewison vers Jacques Passegu\195\169 (la troisi\195\168me table de la qu\195\170te 'Le plus gros estomac du monde' - <rgb=#FF0000>attention au garde qui patrouille dans le coin</rgb>).\n\nArriv\195\169 \195\160 Jacques Passegu\195\169 sauter le mur derri\195\168re les tables pour livrer le tonneau au Client Assoif\195\169 en dessous.";
                 ["GERMAN"] = "Liefere das Fass an den Durstigen Gast, ohne dass Dich ein Wachtmeister sieht.\n\nEin Fass liegt nahe des Ofens der Bediensteten.\n\nMit dem Fass, nimm den Weg gegenüber Nora Lewison Richtung Jakob Mittfurth (Der dritte Tisch aus 'Der Allergrößte Magen' - <rgb=#FF0000>Vorsicht bei der Annäherung, da dort ein Wachtmeister patrouilliert.</rgb>).\n\nBei Jakob Mittfurth über die Mauer hinter dem Tisch springen und das Fass dem Durstigen Gast bringen.";
             };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Yule/Empty Keg Emergency.tga";
         };
 
         ["THE_BIGGEST_STOMACH_OF_THEM_ALL"] = {
@@ -722,6 +725,7 @@ Return to Cora Brownlock.
                 ["FRENCH"] = "C'est une course de nourriture o\195\185 vous devez manger 5 choses par table avant de continuer. Essayez d'\195\169viter de manger du pain ou des tourtes car ils ont les plus gros debuffs.\n\n- Baies: -1% vitesse de course (4m)\n- Champignons: -3% vitesse de course (4m)\n- \197\146ufs: -5% vitesse de course (4m)\n- Tourte: -10% vitesse de course (4m)\n- Pain: -15% vitesse de course (4m)\n- Boisson Myst\195\168rieuse: Supprime tout les debuffs OU -60% vitesse de course (20s)";
                 ["GERMAN"] = "Dies ist ein Wettessen, bei dem man an jedem Tisch 5 Sachen verzehren muss, um weiterzukommen. Versuche Brot und Pasteten zu vermeiden, da sie die längste Zeit benötigen.\n\n- Beeren: -1% Geschwindigkeit (4m)\n- Pilze: -3% Geschwindigkeit (4m)\n- Eier: -5% Geschwindigkeit (4m)\n- Pastete: -10% Geschwindigkeit (4m)\n- Brot: -15% Geschwindigkeit (4m)\n- Rätselhaftes Getränk: Entfernt die Verlangsamungen ODER -60% Geschwindigkeit (20s)";
             };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Yule/The Biggest Stomach of Them All.tga";
         };
 
     };
