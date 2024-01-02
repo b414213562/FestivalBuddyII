@@ -239,7 +239,8 @@ function QuickGuideWinMarkComplete(index)
             local isChainUsed = SETTINGS.QUICK_GUIDE_QUESTS_TO_USE[SELECTEDFESTIVAL][chainName];
 
             if (isChainUsed and not isChainComplete) then
-                LoadQuest(loadQuestDirective);
+                local questName = GetString(_LANG.QUESTS[SELECTEDFESTIVAL][loadQuestDirective]);
+                RefreshQuestGuide(questName);
             end
         end
     end
