@@ -1,7 +1,7 @@
 ---This function makes sure the object is positioned on the screen and not off it
 ---@param OBJECT Control A Control, or something with GetWidth/GetHeight/GetLeft/GetTop/SetPosition functions.
----@param stretchedWindowWidth number Optional stretchmode width. 
----@param stretchedWindowHeight number Optional stretchmode height. 
+---@param stretchedWindowWidth? number Optional stretchmode width. 
+---@param stretchedWindowHeight? number Optional stretchmode height. 
 function Onscreen(OBJECT, stretchedWindowWidth, stretchedWindowHeight)
 
     local DISPLAYWIDTH = Turbine.UI.Display.GetWidth();
