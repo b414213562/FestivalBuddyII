@@ -316,6 +316,14 @@ function ColorPicker.Create()
 
 	end
 
+    Picker.SetRGBColor = function(red, green, blue)
+		colRGB = {
+			["R"] = red;
+			["G"] = green;
+			["B"] = blue;
+        };
+    end
+
 
 	-- This part creates the metatable.
 	wColorWin.__index = wColorWin;
