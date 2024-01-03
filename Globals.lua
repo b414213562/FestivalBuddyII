@@ -295,6 +295,10 @@ DEFAULT_SETTINGS_ACCOUNT = {
 
     ["QUICK_GUIDE"] = {
         ["USE_COLORS"] = true;
+        ["COLOR_PICKER_WIN"] = {
+            ["X"] = (SCREENWIDTH/2)-100;
+            ["Y"] = SCREENHEIGHT/3;
+        };
         ["COLORS"] = {
             ["LOCATION"] = {
                 ["USE"] = true;

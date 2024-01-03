@@ -842,8 +842,15 @@ function CreateColorPickerWindow()
     -- the color picker window
     ColorPickerWindow = Turbine.UI.Lotro.Window();
     ColorPickerWindow:SetSize(300,230);
-    ColorPickerWindow:SetPosition(100,100);
+    ColorPickerWindow:SetPosition(
+        SETTINGS_ACCOUNT.QUICK_GUIDE.COLOR_PICKER_WIN.X,
+        SETTINGS_ACCOUNT.QUICK_GUIDE.COLOR_PICKER_WIN.Y);
     ColorPickerWindow:SetText(GetString(_LANG.OPTIONS.COLOR_PICKER));
+    ColorPickerWindow.PositionChanged = function(sender, args)
+        local left, top = ColorPickerWindow:GetPosition();
+        SETTINGS_ACCOUNT.QUICK_GUIDE.COLOR_PICKER_WIN.X = left;
+        SETTINGS_ACCOUNT.QUICK_GUIDE.COLOR_PICKER_WIN.Y = top;
+    end
 
     ColorPickerWindow.SaveCallback = nil;
 

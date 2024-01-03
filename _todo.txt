@@ -1,8 +1,5 @@
 Save file format: Save QUICK_GUIDE_PROGRESS using objective key (e.g. IN_THE_SPIRIT_OF_YULE_PICKUP) instead of index (e.g. 1)
 
-Color Picker Window:
-    Save location of Color Picker window
-
 Expand Theater Emotes to add in at least one failure option.
     Better to have three, so make two columns of three, with a lable for each: Good / Bad?
 Note: It might be that not all emotes that are not good are bad.
