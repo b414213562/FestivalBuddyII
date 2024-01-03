@@ -841,7 +841,7 @@ end
 function CreateColorPickerWindow()
     -- the color picker window
     ColorPickerWindow = Turbine.UI.Lotro.Window();
-    ColorPickerWindow:SetSize(300,180);
+    ColorPickerWindow:SetSize(300,230);
     ColorPickerWindow:SetPosition(100,100);
     ColorPickerWindow:SetText(GetString(_LANG.OPTIONS.COLOR_PICKER));
 
@@ -850,40 +850,121 @@ function CreateColorPickerWindow()
     -- slightly not-black background to see the edges more easily:
     local background = Turbine.UI.Control();
     background:SetParent(ColorPickerWindow);
-    background:SetSize(284, 145 - 38);
+    background:SetSize(284, 145 - 38 + 25*2);
     background:SetPosition(8, 38);
     background:SetBackColor(Turbine.UI.Color(0.1, 0.1, 0.1));
 
     -- the color picker
+    local topMargin = 40;
+    local colorPickerHeight = 70;
     local colorPicker = Libraries.ColorPicker.Create();
     colorPicker:SetParent(ColorPickerWindow);
-    colorPicker:SetSize(280, 70);
-    colorPicker:SetPosition(10, 40);
+    colorPicker:SetSize(280, colorPickerHeight);
+    colorPicker:SetPosition(10, topMargin);
 
+    local presetRowsY = topMargin + colorPickerHeight + 10;
+
+    -- based on a 24-pack of Crayola crayons:
+    local presetColors = {
+        [1] = {
+            [1] = "FFAACC"; -- carnation pink
+            [2] = "C0448F"; -- red violet
+            [3] = "F75394"; -- violet red
+            [4] = "EE204D"; -- red
+            [5] = "FC2847"; -- scarlet
+            [6] = "FF5349"; -- red orange
+            [7] = "FF7538"; -- orange
+            [8] = "FFB653"; -- yellow orange
+            [9] = "FDD9B5"; -- apricot
+            [10] = "FDDB6D"; -- dandelion
+            [11] = "FCE883"; -- yellow
+            [12] = "F0E891"; -- green yellow            
+        };
+        [2] = {
+            [1] = "C5E384"; -- yellow green
+            [2] = "1CAC78"; -- green
+            [3] = "199EBD"; -- blue green
+            [4] = "1DACD6"; -- cerulean
+            [5] = "1F75FE"; -- blue
+            [6] = "5D76CB"; -- indigo
+            [7] = "7366BD"; -- blue violet
+            [8] = "926EAE"; -- violet
+            [9] = "B4674D"; -- brown
+            [10] = "232323"; -- black
+            [11] = "95918C"; -- gray
+            [12] = "EDEDED"; -- white            
+        };
+    };
+
+    for i = 1, 2 do
+        for j = 1, 12 do
+            local color = presetColors[i][j];
+            local _, _, rStr, gStr, bStr = string.find(presetColors[i][j], "([%da-fA-F][%da-fA-F])([%da-fA-F][%da-fA-F])([%da-fA-F][%da-fA-F])");
+            local r = tonumber(rStr, 16);
+            local g = tonumber(gStr, 16);
+            local b = tonumber(bStr, 16);
+    
+            local presetColorControl = Turbine.UI.Control();
+            presetColorControl:SetParent(ColorPickerWindow);
+            presetColorControl:SetBackColor(Turbine.UI.Color(r/255, g/255, b/255));
+            presetColorControl:SetSize(20, 20);
+            presetColorControl:SetPosition((j-1) * 23 + 12, (i-1) * 23 + presetRowsY);
+            presetColorControl.color = color;
+            presetColorControl.MouseClick = function(sender, args)
+                ColorPickerWindow.SetColor(r, g, b);
+            end
+        end
+    end
+
+    local previewRowY = presetRowsY + (25*2);
     -- selected color preview
+    local x = 50;
     local colorPreview = Turbine.UI.Control();
     colorPreview:SetParent(ColorPickerWindow);
     colorPreview:SetSize(23,23);
-    colorPreview:SetPosition(95,120);
+    colorPreview:SetPosition(x, previewRowY);
 
     local colorLabelFont = Turbine.UI.Lotro.Font.TrajanPro14;
     local colorLabelColor = Turbine.UI.Color((229/255),(209/255),(136/255));
 
     -- selected color hex value
     local colorLabel = Turbine.UI.Label();
-    colorLabel = Turbine.UI.Label();
     colorLabel:SetParent(ColorPickerWindow);
-    colorLabel:SetPosition(125,120);
-    colorLabel:SetSize(220,23);
-    colorLabel:SetForeColor(colorLabelColor);
-    colorLabel:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleLeft);
-    colorLabel:SetFont(colorLabelFont);
+    colorLabel:SetPosition(x + 30, previewRowY + 5);
+    colorLabel:SetSize(50, 23);
+    colorLabel:SetText("Hex: #");
+
+    local colorTextBox = Turbine.UI.Lotro.TextBox();
+    colorTextBox:SetParent(ColorPickerWindow);
+    colorTextBox:SetPosition(x + 80, previewRowY);
+    colorTextBox:SetSize(75,23);
+    colorTextBox:SetForeColor(colorLabelColor);
+    colorTextBox:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleLeft);
+    colorTextBox:SetFont(colorLabelFont);
+    colorTextBox:SetMultiline(false);
+    colorTextBox.FocusGained = function(sender, events)
+        colorTextBox.previousValue = colorTextBox:GetText();
+    end
+    colorTextBox.FocusLost = function(sender, events)
+        local value = colorTextBox:GetText();
+        if (not value:match("^[%da-fA-F][%da-fA-F][%da-fA-F][%da-fA-F][%da-fA-F][%da-fA-F]$")) then
+            colorTextBox:SetText(colorTextBox.previousValue);
+        else
+            colorTextBox.previousValue = value;
+        end
+    end
+
+    local updateButton = Turbine.UI.Lotro.Button();
+    updateButton:SetParent(ColorPickerWindow);
+    updateButton:SetText(GetString(_LANG.OPTIONS.UPDATE));
+    updateButton:SetPosition(x + 160, previewRowY);
+    updateButton:SetWidth(60);
 
     -- button which updates the SETTINGS and recolours the window.
     local saveButton = Turbine.UI.Lotro.Button();
     saveButton:SetParent(ColorPickerWindow);
     saveButton:SetText(GetString(_LANG.OPTIONS.SAVE_COLOR));
-    saveButton:SetPosition(100, 150);
+    saveButton:SetPosition(100, previewRowY + 30);
     saveButton:SetWidth(100);
     saveButton.Click = function(sender, args)
         local red, green, blue = colorPicker:GetRGBColor();
@@ -892,20 +973,29 @@ function CreateColorPickerWindow()
         end
         ColorPickerWindow:SetVisible(false);
     end
-    saveButton:SetEnabled(false);
+
+    updateButton.Click = function(sender, args)
+        local _, _, rStr, gStr, bStr = string.find(colorTextBox:GetText(), "([%da-fA-F][%da-fA-F])([%da-fA-F][%da-fA-F])([%da-fA-F][%da-fA-F])");
+        local r = tonumber(rStr, 16);
+        local g = tonumber(gStr, 16);
+        local b = tonumber(bStr, 16);
+        ColorPickerWindow.SetColor(r, g, b);
+    end
 
     -- respond to clicks:
     colorPicker.LeftClick = function ()
         colorPreview:SetBackColor(colorPicker:GetTurbineColor());
-        colorLabel:SetText("Hex: #" .. colorPicker:GetHexColor());
-        saveButton:SetEnabled(true);
+        colorTextBox:SetText(colorPicker:GetHexColor());
     end
 
     ColorPickerWindow.SetColor = function(red, green, blue, saveCallback)
+        colorPicker.SetRGBColor(red, green, blue);
         colorPreview:SetBackColor(Turbine.UI.Color(red / 255, green / 255, blue / 255));
-        colorLabel:SetText(string.format("Hex: #%02x%02x%02x", red, green, blue));
+        colorTextBox:SetText(string.format("%02x%02x%02x", red, green, blue));
 
-        ColorPickerWindow.SaveCallback = saveCallback;
+        if (saveCallback ~= nil) then
+            ColorPickerWindow.SaveCallback = saveCallback;
+        end
         ColorPickerWindow:SetVisible(true);
         ColorPickerWindow:Activate();
     end

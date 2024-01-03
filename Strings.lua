@@ -941,6 +941,7 @@ _LANG = {
         ["QUICK_GUIDE_COLOR_DEFAULT"]     = { ["ENGLISH"] = "Default"; };
         ["COLOR_PICKER"]                  = { ["ENGLISH"] = "Color Picker"; };
         ["SAVE_COLOR"]                    = { ["ENGLISH"] = "Save"; };
+        ["UPDATE"]                        = { ["ENGLISH"] = "Update"; };
 
         ["HARVESTMATH_MAZE_ID_LABEL"] = {
             ["ENGLISH"] = "Change current Harvestmath maze:";

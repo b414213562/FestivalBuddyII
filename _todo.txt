@@ -1,9 +1,7 @@
 Save file format: Save QUICK_GUIDE_PROGRESS using objective key (e.g. IN_THE_SPIRIT_OF_YULE_PICKUP) instead of index (e.g. 1)
 
-Color Picker Window: Make hex code selectable for copying and editable for specific code selection.
-    Add buttons for black and white specifically?
-    Make window bigger, add a row or two of the common 16/32 colors.
-    When clicked, update preview and hex code, but don't trigger save button.
+Color Picker Window:
+    Save location of Color Picker window
 
 Expand Theater Emotes to add in at least one failure option.
     Better to have three, so make two columns of three, with a lable for each: Good / Bad?
