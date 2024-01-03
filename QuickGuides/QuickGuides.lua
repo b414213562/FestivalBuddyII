@@ -96,6 +96,22 @@ function _G.TurnInTo(quest, npc)
     return string.format("Turn in %s to %s", HighlightQuest(quest), HighlightNpc(npc));
 end
 
+---Helper for continuing a quest with an action
+---@param quest string
+---@param objective string
+---@return string
+function _G.Continue(quest, objective)
+    return string.format("%s: %s", HighlightQuest(quest), objective);
+end
+
+---Helper for continuing a quest with an NPC
+---@param quest string
+---@param npc string
+---@return string
+function _G.ContinueWith(quest, npc)
+    return string.format("%s: Continue quest with %s", HighlightQuest(quest), HighlightNpc(npc));
+end
+
 ---Helper for collecting a quest item from an NPC
 ---@param questItem string
 ---@param npc string
