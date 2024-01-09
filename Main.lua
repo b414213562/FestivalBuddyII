@@ -268,7 +268,7 @@ function LoadSavedImageData()
     end
 end
 
-function loadData()
+function LoadData()
     ---------------------------------------------------------------------------------------------------------------------------------
     LoadSettingsFileCharacter();
     LoadSettingsFileServer();
@@ -305,7 +305,7 @@ end
 
 -- Initiate load sequence
 UnloadReloader();
-loadData();
+LoadData();
 CheckCharData();
 DrawWindows();
 InitiateChatLogger();
