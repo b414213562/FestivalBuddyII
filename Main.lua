@@ -160,10 +160,7 @@ function loadData()
         SavedCharData = PatchDataLoad(Turbine.DataScope.Server, "FestivalBuddy_CharData");
     end
 
-    if pcall(GetSavedCharData) then
-        -- Loaded without error
-        SavedCharData = PatchDataLoad(Turbine.DataScope.Server, "FestivalBuddy_CharData");
-    else
+    if not pcall(GetSavedCharData) then
         -- Loaded with errors
         SavedCharData = nil;
         Turbine.Shell.WriteLine(GetString(_LANG.ERRORS.LOAD.SETTINGS));
