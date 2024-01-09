@@ -114,10 +114,7 @@ function MergeDefaultIntoTable(loadedTable, defaultTable)
     return mergedTable;
 end
 
-function loadData()
-
-    ---------------------------------------------------------------------------------------------------------------------------------
-
+function LoadSettingsFileCharacter()
     -- SAVED SETTINGS --
     local SavedSettings = LoadFileIntoTable(
         Turbine.DataScope.Character,
@@ -128,6 +125,28 @@ function loadData()
     -- Assume the HUD is toggled to visible when the plugin is loaded.
     SETTINGS.SHOWSCREEN = true;
 
+    -- Populate a global variable:
+    SELECTEDFESTIVAL = SETTINGS.FESTIVAL;
+
+    -- Currently Festival Buddy II doesn't provide an option for the user
+    -- to modify this setting. But, the code in MinimizedIcon expects it to be there.
+    -- Change this to true if you want to have to hold shift to move the minimize icon.
+    SETTINGS.MOVE_ICON_REQUIRES_SHIFT = false;
+
+    if (SETTINGS.SETTINGS_VERSION == nil) then
+        SETTINGS.SETTINGS_VERSION = "v1.0";
+    end
+
+    if (SETTINGS.SETTINGS_VERSION == "v1.0") then
+        SETTINGS["SELFESTIVAL"] = nil; -- obsolete setting
+        SETTINGS["LANGUAGE"] = nil; -- no longer saving languge in settings as of 1.4.5.2.
+
+        SETTINGS.SETTINGS_VERSION = "v1.1";
+    end -- end 1.0 to 1.1 update
+
+end
+
+function LoadSettingsFileServer()
     -- SAVED SERVER SETTINGS --
     local serverSettings = LoadFileIntoTable(
             Turbine.DataScope.Server,
@@ -135,6 +154,12 @@ function loadData()
             GetString(_LANG.ERRORS.LOAD.SETTINGS_SERVER));
     SETTINGS_SERVER = MergeDefaultIntoTable(serverSettings, DEFAULT_SETTINGS_SERVER);
 
+    if (SETTINGS_SERVER.SETTINGS_SERVER_VERSION == nil) then
+        SETTINGS_SERVER.SETTINGS_SERVER_VERSION = "v1.0";
+    end
+end
+
+function LoadSettingsFileAccount()
     -- SAVED ACCOUNT SETTINGS --
     local accountSettings = LoadFileIntoTable(
         Turbine.DataScope.Account,
@@ -142,15 +167,12 @@ function loadData()
         GetString(_LANG.ERRORS.LOAD.SETTINGS_ACCOUNT));
     SETTINGS_ACCOUNT = MergeDefaultIntoTable(accountSettings, DEFAULT_SETTINGS_ACCOUNT);
 
-    SELECTEDFESTIVAL = SETTINGS.FESTIVAL;
-    SETTINGS["SELFESTIVAL"] = nil; -- obsolete setting
-    SETTINGS["LANGUAGE"] = nil; -- no longer saving languge in settings as of 1.4.5.2.
+    if (SETTINGS_ACCOUNT.SETTINGS_ACCOUNT_VERSION == nil) then
+        SETTINGS_ACCOUNT.SETTINGS_ACCOUNT_VERSION = "v1.0";
+    end
+end
 
-    SETTINGS.MOVE_ICON_REQUIRES_SHIFT = false;
-
-    ----------------------------------------------------------------------------------------------------------------------------------
-
-
+function LoadServerWideCharacterData()
     -- SAVED CHARACTER DATA --
 
     local SavedCharData = {};
@@ -166,52 +188,59 @@ function loadData()
         Turbine.Shell.WriteLine(GetString(_LANG.ERRORS.LOAD.SETTINGS));
     end
 
-
-    -- Check the saved settings to make sure it is still compatible with newer updates, add in any missing default settings
-    if type(SavedCharData) == 'table' then
-        _CHARDATA = deepcopy(SavedCharData);
+    if (SavedCharData.SAVED_CHAR_DATA_VERSION == nil) then
+        SavedCharData.SAVED_CHAR_DATA_VERSION = "v1.0";
     end
 
-    -- Update old format to new format
-    for playerName,festivalsTable in pairs (_CHARDATA) do
-        if festivalsTable["Spring"] ~= nil then
-            _CHARDATA[playerName][1] = deepcopy(festivalsTable["Spring"]);
-            festivalsTable["Spring"] = nil;
+    if (SavedCharData.SAVED_CHAR_DATA_VERSION == "v1.0") then
+        -- Check the saved settings to make sure it is still compatible with newer updates, add in any missing default settings
+        if type(SavedCharData) == 'table' then
+            _CHARDATA = deepcopy(SavedCharData);
         end
 
-        if festivalsTable["Harvestmath"] ~= nil then
-            _CHARDATA[playerName][3] = deepcopy(festivalsTable["Harvestmath"]);
-            festivalsTable["Harvestmath"] = nil;
-        end
+        -- Update old format to new format
+        for playerName,festivalsTable in pairs (_CHARDATA) do
+            if festivalsTable["Spring"] ~= nil then
+                _CHARDATA[playerName][1] = deepcopy(festivalsTable["Spring"]);
+                festivalsTable["Spring"] = nil;
+            end
 
-        if festivalsTable["Yule"] ~= nil then
-            _CHARDATA[playerName][4] = deepcopy(festivalsTable["Yule"]);
-            festivalsTable["Yule"] = nil;
-        end
+            if festivalsTable["Harvestmath"] ~= nil then
+                _CHARDATA[playerName][3] = deepcopy(festivalsTable["Harvestmath"]);
+                festivalsTable["Harvestmath"] = nil;
+            end
 
-        for festivalID,dataCategory in pairs (festivalsTable) do
-            if dataCategory.TOKENS ~= nil then
-                for k,v in pairs (dataCategory.TOKENS) do
-                    if _LANG.TOKENS[festivalID][k] == nil then _CHARDATA[playerName][festivalID].TOKENS[k] = nil end;
+            if festivalsTable["Yule"] ~= nil then
+                _CHARDATA[playerName][4] = deepcopy(festivalsTable["Yule"]);
+                festivalsTable["Yule"] = nil;
+            end
+
+            for festivalID,dataCategory in pairs (festivalsTable) do
+                if dataCategory.TOKENS ~= nil then
+                    for k,v in pairs (dataCategory.TOKENS) do
+                        if _LANG.TOKENS[festivalID][k] == nil then _CHARDATA[playerName][festivalID].TOKENS[k] = nil end;
+                    end
                 end
             end
         end
 
-    end
+        -- Remove any session play characters
+        -- Note: This should fix any existing session play characters in save files,
+        -- and prevent new session plays from persisting.
+        for playerName,_ in pairs(_CHARDATA) do
+            if (playerName:sub(1,1) == "~") then
+                Turbine.Shell.WriteLine("Found a character with a leading ~: " .. playerName);
 
-    -- Remove any session play characters
-    -- Note: This should fix any existing session play characters in save files,
-    -- and prevent new session plays from persisting.
-    for playerName,_ in pairs(_CHARDATA) do
-        if (playerName:sub(1,1) == "~") then
-            Turbine.Shell.WriteLine("Found a character with a leading ~: " .. playerName);
-
-            _CHARDATA[playerName] = nil;
+                _CHARDATA[playerName] = nil;
+            end
         end
-    end
 
-    ----------------------------------------------------------------------------------------------------------------------------------
+        SavedCharData.SAVED_CHAR_DATA_VERSION = "v1.1";
+    end -- end 1.0 to 1.1 update
 
+end
+
+function LoadSavedImageData()
     -- SAVED IMAGE IDs --
 
     local SavedImageData = {};
@@ -237,10 +266,18 @@ function loadData()
         _SAVEDIMAGES = deepcopy(SavedImageData);
 
     end
+end
 
+function loadData()
+    ---------------------------------------------------------------------------------------------------------------------------------
+    LoadSettingsFileCharacter();
+    LoadSettingsFileServer();
+    LoadSettingsFileAccount();
     ----------------------------------------------------------------------------------------------------------------------------------
-
-
+    LoadServerWideCharacterData();
+    ----------------------------------------------------------------------------------------------------------------------------------
+    LoadSavedImageData();
+    ----------------------------------------------------------------------------------------------------------------------------------
 end
 
 
