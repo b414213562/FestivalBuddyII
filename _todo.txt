@@ -1,4 +1,26 @@
-Save file format: Save QUICK_GUIDE_PROGRESS using objective key (e.g. IN_THE_SPIRIT_OF_YULE_PICKUP) instead of index (e.g. 1)
+Save file format:
+    Character specific:
+        FestivalBuddy_Settings.plugindata
+            QUICK_GUIDE_PROGRESS indicies are numerical values for festivals. This means reordering festivals would break this part.
+                QUICK_GUIDE_PROGRESS[i] indicies are numerical values for an objective's ordinal in the list. This means reordering a quick guide would break this part.
+            QUICK_GUIDE_QUESTS_TO_USE indicies are numerical values for festivals.
+
+    Server specific:
+        FestivalBuddy_CharData.plugindata - Stores tokens and cooldowns for all characters on a server
+            [character][i] indicies are numerical values for festivals.
+            [character][COOLDOWNS] indicies are localized quest names?
+            [character][TOKENS] indicies are the ordinals for the current order of festival tokens.
+
+
+        FestivalBuddy_ServerSettings.plugindata
+            No known issues.
+    
+    Account specific:
+        FestivalBuddy_AccountSettings.plugindata
+            No known issues.
+
+Get rid of _SAVEDIMAGES, SavedImageData, etc - it doesn't seem to do anything.
+Should we do the full localization check for fractional numbers? We're only using PatchDataSave/Load here.
 
 Expand Theater Emotes to add in at least one failure option.
     Better to have three, so make two columns of three, with a lable for each: Good / Bad?
