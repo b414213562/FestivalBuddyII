@@ -126,7 +126,7 @@ function RefreshAltDisplay(NAME)
 
     -- This function updates the window display with the selected alt.
 
-    local _RELFESTIVALTABLE = _CHARDATA[NAME][SELECTEDFESTIVAL];
+    local _RELFESTIVALTABLE = _CHARDATA.CHARS[NAME][SELECTEDFESTIVAL];
 
     -- TOKENS ----------------------------------------------------------------------------
     cAltTokenHolder:ClearItems();

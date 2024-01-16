@@ -43,7 +43,7 @@ function DrawMainWin()
         CloseHelperWindows();
         RefreshTokenView();
         RefreshBarterList();
-        CheckFestivalData(_CHARDATA[MYCHAR:GetName()]);
+        CheckFestivalData(_CHARDATA.CHARS[MYCHAR:GetName()]);
         QuickGuideWinLoadFestival();
         if ddAltNames ~= nil then RefreshAltDisplay(ddAltNames:GetText()) end;
 
@@ -631,7 +631,7 @@ function RefreshDebuffView()
                 -- Store expiry time in _CHARDATA
                 local EFFECTEND = CUREFFECT:GetStartTime() + CUREFFECT:GetDuration();
 
-                _CHARDATA[MYCHAR:GetName()][SELECTEDFESTIVAL]["COOLDOWNS"][debuffName] = EFFECTEND;
+                _CHARDATA.CHARS[MYCHAR:GetName()][SELECTEDFESTIVAL]["COOLDOWNS"][debuffName] = EFFECTEND;
 
                 break;
             end
@@ -646,7 +646,7 @@ function RefreshDebuffView()
                 cCURITEMICON:SetPosition(0,2);
 
             else
-                _CHARDATA[MYCHAR:GetName()][SELECTEDFESTIVAL]["COOLDOWNS"][debuffName] = 0;
+                _CHARDATA.CHARS[MYCHAR:GetName()][SELECTEDFESTIVAL]["COOLDOWNS"][debuffName] = 0;
                 cCURITEMLABEL:SetForeColor(YELLOW);
                 cCURITEMICON:SetBackground(_IMAGES.GREENTICK);
                 cCURITEMICON:SetSize(25,22);
@@ -668,7 +668,7 @@ function RefreshDebuffView()
                 cCURITEMICON:SetSize(32,32);
                 cCURITEMICON:SetPosition(0,2);
 
-                local _END = GetEndTime(_CHARDATA[MYCHAR:GetName()][SELECTEDFESTIVAL]["COOLDOWNS"][debuffName]);
+                local _END = GetEndTime(_CHARDATA.CHARS[MYCHAR:GetName()][SELECTEDFESTIVAL]["COOLDOWNS"][debuffName]);
                 local _CURDATE = Turbine.Engine.GetDate();
 
                 local ENDMINUTE = tostring(_END.MINUTE);
@@ -727,7 +727,7 @@ function RefreshTokenView()
             cItemInspect:SetItemInfo(ITEM:GetItemInfo());
             cItemInspect:SetQuantity(TEMPITEM:GetQuantity());
 
-            _CHARDATA[MYCHAR:GetName()][SELECTEDFESTIVAL]["TOKENS"][k] = TEMPITEM:GetQuantity();
+            _CHARDATA.CHARS[MYCHAR:GetName()][SELECTEDFESTIVAL]["TOKENS"][k] = TEMPITEM:GetQuantity();
 
             PARENTWIDTH = PARENTWIDTH + ITEMWIDTH;
 
@@ -744,10 +744,10 @@ function RefreshTokenView()
             MYWALLET:GetItem(TOKENINDEX).QuantityChanged = function (sender,args)
                 -- Quantity changed event
                 cItemInspect:SetQuantity(TEMPITEM:GetQuantity());
-                _CHARDATA[MYCHAR:GetName()][SELECTEDFESTIVAL]["TOKENS"][k] = TEMPITEM:GetQuantity();
+                _CHARDATA.CHARS[MYCHAR:GetName()][SELECTEDFESTIVAL]["TOKENS"][k] = TEMPITEM:GetQuantity();
             end
         else
-            _CHARDATA[MYCHAR:GetName()][SELECTEDFESTIVAL]["TOKENS"][k] = 0;
+            _CHARDATA.CHARS[MYCHAR:GetName()][SELECTEDFESTIVAL]["TOKENS"][k] = 0;
         end
 
     end

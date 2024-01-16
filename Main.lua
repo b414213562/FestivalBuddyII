@@ -188,37 +188,35 @@ function LoadServerWideCharacterData()
         Turbine.Shell.WriteLine(GetString(_LANG.ERRORS.LOAD.SETTINGS));
     end
 
-    if (SavedCharData.SAVED_CHAR_DATA_VERSION == nil) then
-        SavedCharData.SAVED_CHAR_DATA_VERSION = "v1.0";
+    if (SavedCharData == nil) then
+        SavedCharData = {};
     end
 
-    if (SavedCharData.SAVED_CHAR_DATA_VERSION == "v1.0") then
+    -- Version nil covers anything before plugin version 2.0.5.
+    if (SavedCharData.SAVED_CHAR_DATA_VERSION == nil) then
         -- Check the saved settings to make sure it is still compatible with newer updates, add in any missing default settings
-        if type(SavedCharData) == 'table' then
-            _CHARDATA = deepcopy(SavedCharData);
-        end
 
         -- Update old format to new format
-        for playerName,festivalsTable in pairs (_CHARDATA) do
+        for playerName,festivalsTable in pairs (SavedCharData) do
             if festivalsTable["Spring"] ~= nil then
-                _CHARDATA[playerName][1] = deepcopy(festivalsTable["Spring"]);
+                SavedCharData[playerName][1] = deepcopy(festivalsTable["Spring"]);
                 festivalsTable["Spring"] = nil;
             end
 
             if festivalsTable["Harvestmath"] ~= nil then
-                _CHARDATA[playerName][3] = deepcopy(festivalsTable["Harvestmath"]);
+                SavedCharData[playerName][3] = deepcopy(festivalsTable["Harvestmath"]);
                 festivalsTable["Harvestmath"] = nil;
             end
 
             if festivalsTable["Yule"] ~= nil then
-                _CHARDATA[playerName][4] = deepcopy(festivalsTable["Yule"]);
+                SavedCharData[playerName][4] = deepcopy(festivalsTable["Yule"]);
                 festivalsTable["Yule"] = nil;
             end
 
             for festivalID,dataCategory in pairs (festivalsTable) do
                 if dataCategory.TOKENS ~= nil then
                     for k,v in pairs (dataCategory.TOKENS) do
-                        if _LANG.TOKENS[festivalID][k] == nil then _CHARDATA[playerName][festivalID].TOKENS[k] = nil end;
+                        if _LANG.TOKENS[festivalID][k] == nil then SavedCharData[playerName][festivalID].TOKENS[k] = nil end;
                     end
                 end
             end
@@ -227,17 +225,36 @@ function LoadServerWideCharacterData()
         -- Remove any session play characters
         -- Note: This should fix any existing session play characters in save files,
         -- and prevent new session plays from persisting.
-        for playerName,_ in pairs(_CHARDATA) do
+        for playerName,_ in pairs(SavedCharData) do
             if (playerName:sub(1,1) == "~") then
                 Turbine.Shell.WriteLine("Found a character with a leading ~: " .. playerName);
 
-                _CHARDATA[playerName] = nil;
+                SavedCharData[playerName] = nil;
+            end
+        end
+
+        SavedCharData.SAVED_CHAR_DATA_VERSION = "v1.0";
+    end -- end 1.0
+
+    -- Version 1.1 introduced in plugin version 2.0.5.
+    if (SavedCharData.SAVED_CHAR_DATA_VERSION == "v1.0") then
+        Turbine.Shell.WriteLine("Updating 1.0 to 1.1");
+
+        -- Nest characters under new table so that we can iterate through a table and only find characters.
+        SavedCharData.CHARS = {};
+        for playerName,festivalsTable in pairs (SavedCharData) do
+            if (playerName ~= "SAVED_CHAR_DATA_VERSION" and
+                playerName ~= "CHARS") then
+                Turbine.Shell.WriteLine("Moving data for " .. playerName .. " under CHARS");
+                SavedCharData.CHARS[playerName] = festivalsTable;
+                SavedCharData[playerName] = nil;
             end
         end
 
         SavedCharData.SAVED_CHAR_DATA_VERSION = "v1.1";
     end -- end 1.0 to 1.1 update
 
+    _CHARDATA = deepcopy(SavedCharData);
 end
 
 function LoadSavedImageData()

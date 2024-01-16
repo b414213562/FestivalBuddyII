@@ -124,9 +124,9 @@ function CheckCharData()
     -- This function checks if there is an entry in the _CHARDATA table, if not then it creates it.
     local CHARNAME = MYCHAR:GetName();
 
-    if type (_CHARDATA[CHARNAME]) ~= 'table' then _CHARDATA[CHARNAME] = {} end;
+    if type (_CHARDATA.CHARS[CHARNAME]) ~= 'table' then _CHARDATA.CHARS[CHARNAME] = {} end;
 
-    CheckFestivalData(_CHARDATA[CHARNAME]);
+    CheckFestivalData(_CHARDATA.CHARS[CHARNAME]);
 
 end
 
@@ -173,7 +173,7 @@ function GetAltNames()
     -- This function gets the names of the alts which have data stored and builds the names into a returned table.
     local _ALTS = {};
 
-    for k,v in pairs (_CHARDATA) do
+    for k,v in pairs (_CHARDATA.CHARS) do
         if k ~= MYCHAR:GetName() then
             table.insert(_ALTS,k);
         end
