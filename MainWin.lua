@@ -683,7 +683,7 @@ function RefreshDebuffView()
                 --cCURITEMLABEL:SetToolTip(GetString(_LANG.OTHER.RESETS) .. ": " .. sEND);
 
             else
-                _CHARDATA[MYCHAR:GetName()][SELECTEDFESTIVAL]["COOLDOWNS"][debuffName] = 0;
+                _CHARDATA.CHARS[MYCHAR:GetName()][SELECTEDFESTIVAL]["COOLDOWNS"][debuffName] = 0;
                 cCURITEMLABEL:SetForeColor(YELLOW);
                 cCURITEMICON:SetBackground(_IMAGES.GREENTICK);
                 cCURITEMICON:SetSize(25,22);
