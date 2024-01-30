@@ -148,8 +148,8 @@ function CheckFestivalData(_TABLE)
         local _CDTABLE = _TABLE[e]["COOLDOWNS"];
 
         for k,v in ipairs (_LANG.DEBUFFS[e]) do
-            if _CDTABLE[v.name[CLIENTLANG]] == nil then
-                _CDTABLE[v.name[CLIENTLANG]] = 0;
+            if _CDTABLE[v.key] == nil then
+                _CDTABLE[v.key] = 0;
             end
         end
 
@@ -182,3 +182,17 @@ function GetAltNames()
     return _ALTS;
 end
 
+
+---Returns the _LANG.DEBUFF[FESTIVAL] index that matches the given key.
+---@param debuffKey string
+---@return integer
+function GetDebuffIndexFromDebuffKey(debuffKey)
+    for festivalNumber, festivalDebuffs in pairs(_LANG.DEBUFFS) do
+        for debuffIndex, debuffData in pairs(festivalDebuffs) do
+            if (debuffData.key == debuffKey) then
+                return debuffIndex;
+            end
+        end
+    end
+    return 1;
+end

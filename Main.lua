@@ -245,16 +245,84 @@ function LoadServerWideCharacterData()
         for playerName,festivalsTable in pairs (SavedCharData) do
             if (playerName ~= "SAVED_CHAR_DATA_VERSION" and
                 playerName ~= "CHARS") then
-                Turbine.Shell.WriteLine("Moving data for " .. playerName .. " under CHARS");
+                -- Moving data for playerName under CHARS
                 SavedCharData.CHARS[playerName] = festivalsTable;
                 SavedCharData[playerName] = nil;
             end
         end
 
+        -- Change cooldowns keys from localized quest names to quest keys:
+        -- For each player's festival data:
+        for playerName,festivalsTable in pairs(SavedCharData.CHARS) do
+            -- For each festival in the festival data:
+            for festivalNumber, festivalData in pairs(festivalsTable) do
+                -- Check the cooldowns for this festival of this character:
+                local cooldowns = festivalData["COOLDOWNS"];
+
+                if (cooldowns and next(cooldowns) ~= nil) then
+                    local updatedCooldowns = {};
+
+                    -- For each debuff listed:
+                    for localizedDebuffName,cooldownValue in pairs(cooldowns) do
+                        -- Convert to using debuff key instead of localized value:
+                        local debuffKey = GetDebuffKeyFromLocalizedName(localizedDebuffName);
+
+                        -- if the key is already in the cooldowns table
+                        -- then prefer a non-zero number to a zero
+                        -- and prefer a larger non-zero number to a smaller non-zero number
+                        if (updatedCooldowns[debuffKey]) then
+                            local keyValue = updatedCooldowns[debuffKey];
+
+                            if (tonumber(cooldownValue) > tonumber(keyValue)) then
+                                updatedCooldowns[debuffKey] = cooldownValue;
+                            end
+                        else
+                            updatedCooldowns[debuffKey] = cooldownValue;
+                        end
+                    end
+
+                    festivalData["COOLDOWNS"] = deepcopy(updatedCooldowns);
+                end
+
+            end
+        end
+
+
         SavedCharData.SAVED_CHAR_DATA_VERSION = "v1.1";
     end -- end 1.0 to 1.1 update
 
     _CHARDATA = deepcopy(SavedCharData);
+end
+
+---Gets the debuff key (e.g. "APPLEBOBBING") for a localized debuff name (e.g. "Apfeltauchen"). If no key is found, returns the original string instead.
+---@param debuffNameToCheck string
+---@return string
+function GetDebuffKeyFromLocalizedName(debuffNameToCheck)
+    -- Loop through all possible debuffs, checking for a match:
+    for festivalNumber, festivalDebuffs in pairs(_LANG.DEBUFFS) do
+        for debuffIndex, debuffData in pairs(festivalDebuffs) do
+            for language, localizedDebuffName in pairs(debuffData.name) do
+                if (debuffNameToCheck == localizedDebuffName) then
+                    return debuffData.key;
+                end
+            end
+        end
+    end
+
+    -- These aren't matching for some reason, handle them manually:
+    if (debuffNameToCheck == "Chasse au tr#195##169#sor : Coffre" or
+        debuffNameToCheck == "Chasse au trésor : Coffre") then
+        return "THCHEST";
+    elseif (debuffNameToCheck == "Tr#195##169#sor secret : Coffre" or
+            debuffNameToCheck == "Trésor secret : Coffre") then
+        return "SECRETREASURECHEST";
+    elseif (debuffNameToCheck == "Chasse au tr#195##169#sor : Cassette" or
+            debuffNameToCheck == "Chasse au trésor : Cassette") then
+        return "THLOCKBOX";
+    end
+
+    -- If we didn't find a match, just return the original value:
+    return debuffNameToCheck
 end
 
 function LoadSavedImageData()

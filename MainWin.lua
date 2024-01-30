@@ -631,7 +631,7 @@ function RefreshDebuffView()
                 -- Store expiry time in _CHARDATA
                 local EFFECTEND = CUREFFECT:GetStartTime() + CUREFFECT:GetDuration();
 
-                _CHARDATA.CHARS[MYCHAR:GetName()][SELECTEDFESTIVAL]["COOLDOWNS"][debuffName] = EFFECTEND;
+                _CHARDATA.CHARS[MYCHAR:GetName()][SELECTEDFESTIVAL]["COOLDOWNS"][v.key] = EFFECTEND;
 
                 break;
             end
@@ -646,7 +646,7 @@ function RefreshDebuffView()
                 cCURITEMICON:SetPosition(0,2);
 
             else
-                _CHARDATA.CHARS[MYCHAR:GetName()][SELECTEDFESTIVAL]["COOLDOWNS"][debuffName] = 0;
+                _CHARDATA.CHARS[MYCHAR:GetName()][SELECTEDFESTIVAL]["COOLDOWNS"][v.key] = 0;
                 cCURITEMLABEL:SetForeColor(YELLOW);
                 cCURITEMICON:SetBackground(_IMAGES.GREENTICK);
                 cCURITEMICON:SetSize(25,22);
@@ -668,7 +668,7 @@ function RefreshDebuffView()
                 cCURITEMICON:SetSize(32,32);
                 cCURITEMICON:SetPosition(0,2);
 
-                local _END = GetEndTime(_CHARDATA.CHARS[MYCHAR:GetName()][SELECTEDFESTIVAL]["COOLDOWNS"][debuffName]);
+                local _END = GetEndTime(_CHARDATA.CHARS[MYCHAR:GetName()][SELECTEDFESTIVAL]["COOLDOWNS"][v.key]);
                 local _CURDATE = Turbine.Engine.GetDate();
 
                 local ENDMINUTE = tostring(_END.MINUTE);
@@ -683,7 +683,7 @@ function RefreshDebuffView()
                 --cCURITEMLABEL:SetToolTip(GetString(_LANG.OTHER.RESETS) .. ": " .. sEND);
 
             else
-                _CHARDATA.CHARS[MYCHAR:GetName()][SELECTEDFESTIVAL]["COOLDOWNS"][debuffName] = 0;
+                _CHARDATA.CHARS[MYCHAR:GetName()][SELECTEDFESTIVAL]["COOLDOWNS"][v.key] = 0;
                 cCURITEMLABEL:SetForeColor(YELLOW);
                 cCURITEMICON:SetBackground(_IMAGES.GREENTICK);
                 cCURITEMICON:SetSize(25,22);

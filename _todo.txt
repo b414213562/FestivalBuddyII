@@ -8,9 +8,6 @@ Save file format:
     Server specific:
         FestivalBuddy_CharData.plugindata - Stores tokens and cooldowns for all characters on a server
             [character][i] indicies are numerical values for festivals.
-            [character][COOLDOWNS] indicies are localized quest names?
-                CheckFestivalData() will need to be updated to stop using CLIENTLANG.
-                RefreshDebuffView() could maybe use v.name instead of debuffName?
             [character][TOKENS] indicies are the ordinals for the current order of festival tokens.
 
             Adding the version at root showed an issue: The loading code assumes everything is a character,

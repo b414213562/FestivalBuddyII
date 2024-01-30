@@ -194,7 +194,9 @@ function RefreshAltDisplay(NAME)
         cCURITEMLABEL:SetFont(Verdana12);
         --cCURITEMLABEL:SetOutlineColor(BLACK);
         --cCURITEMLABEL:SetFontStyle(Turbine.UI.FontStyle.Outline);
-        cCURITEMLABEL:SetText(k);
+        local debuffIndex = GetDebuffIndexFromDebuffKey(k);
+        local debuffName = GetString(_LANG.DEBUFFS[SELECTEDFESTIVAL][debuffIndex].name);
+        cCURITEMLABEL:SetText(debuffName);
 
         -- Get timestamp and test if the cooldown has expired.
         local CURTIME = Turbine.Engine.GetGameTime();
