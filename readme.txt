@@ -3,6 +3,9 @@ v2.0.5 changes:
         Added French translations for Yule Quick Guide.
         Added German translations from Mandraval for UI and Quick Guide.
         Removed /cheer emote window for The Abominable Snow Beasts quest. (Quest tracker provides this automatically.)
+    
+    Language:
+        Fixed French name for "Secret Treasure - Chest".
 
     Quick Guides:
         Added Inn League / Ale Association Quick Guide. (Based on hunter travel skills.)

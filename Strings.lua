@@ -583,7 +583,7 @@ _LANG = {
             [2] = { key = "GEODEHUNTING";       name =     {["ENGLISH"] = "Geode Hunting";                  ["FRENCH"] = "A la pêche aux géodes";       ["GERMAN"] = "Geodensuche";                 }; };
             [3] = { key = "PUMPKINPICKING";     name =     {["ENGLISH"] = "Pumpkin Picking";                ["FRENCH"] = "La chasse aux citrouilles";   ["GERMAN"] = "Kürbiswettstreit";            }; };
             [4] = { key = "APPLEBOBBING";       name =     {["ENGLISH"] = "Apple Bobbing";                  ["FRENCH"] = "Pêche aux pommes";            ["GERMAN"] = "Apfeltauchen";                }; };
-            [5] = { key = "SECRETREASURECHEST"; name =     {["ENGLISH"] = "Secret Treasure - Chest";        ["FRENCH"] = "Chasse au trésor : Coffre";   ["GERMAN"] = "Geheimer Schatz - Truhe";     }; };
+            [5] = { key = "SECRETREASURECHEST"; name =     {["ENGLISH"] = "Secret Treasure - Chest";        ["FRENCH"] = "Trésor secret : Coffre";      ["GERMAN"] = "Geheimer Schatz - Truhe";     }; };
             [6] = { key = "THSTRONGBOX";        name =     {["ENGLISH"] = "Treasure Hunting - Strongbox";   ["FRENCH"] = "Chasse au trésor : Cassette"; ["GERMAN"] = "Schatzsuche - robuste Kiste"; }; };
             [7] = { key = "THLOCKBOX";          name =     {["ENGLISH"] = "Treasure Hunting - Lockbox";     ["FRENCH"] = "Chasse au trésor : Cassette"; ["GERMAN"] = "Schatzsuche - Schatulle";     }; };
             [8] = { key = "THCHEST";            name =     {["ENGLISH"] = "Treasure Hunting - Chest";       ["FRENCH"] = "Chasse au trésor : Coffre";   ["GERMAN"] = "Schatzsuche - Truhe";         }; };
