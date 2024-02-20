@@ -128,15 +128,16 @@ function RefreshBarterList()
             --lstTokensNeeded:SetBackColor(Turbine.UI.Color.Red);
 
             if type(v[2])=='table' then
-                for k,v in pairs (v[2]) do
-                    local tokenItem = GetItemFromID(_LANG.TOKENS[SELECTEDFESTIVAL][k]);
+                for token_key,token_count in pairs (v[2]) do
+                    local token_id = TOKEN_IDS[SELECTEDFESTIVAL][token_key];
+                    local tokenItem = GetItemFromID(token_id);
                     if tokenItem ~= nil then
                         local cTokenInspect = Turbine.UI.Lotro.ItemInfoControl();
                         cTokenInspect:SetParent(ROWBACK);
                         cTokenInspect:SetSize(36,36);
                         cTokenInspect:SetPosition(1,1);
                         cTokenInspect:SetItemInfo(tokenItem:GetItemInfo());
-                        cTokenInspect:SetQuantity(v);
+                        cTokenInspect:SetQuantity(token_count);
 
                         lstTokensNeeded:AddItem(cTokenInspect);
                     end

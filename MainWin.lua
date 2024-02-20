@@ -707,11 +707,14 @@ function RefreshTokenView()
     local PARENTWIDTH = 0;
 
     -- Iterate the tokens by numerical index to keep the stated order:
-    for k=1, #_LANG.TOKENS[SELECTEDFESTIVAL] do
-        local v = _LANG.TOKENS[SELECTEDFESTIVAL][k];
+    for tokenUiIndex=1, #TOKEN_UI_ORDER[SELECTEDFESTIVAL] do
+        local tokenKey = TOKEN_UI_ORDER[SELECTEDFESTIVAL][tokenUiIndex];
+        local tokenId = TOKEN_IDS[SELECTEDFESTIVAL][tokenKey];
 
         -- This will check each of the tokens for the selected festival to see if they exist in the wallet.
-        local TOKENINDEX,ITEM = GetTokenIndex(v);
+        -- TODO: Every time through this look we call GetTokenIndex which iterates through every item in the wallet.
+        --   Replace this logic by getting the relevant details from the wallet for this festival first.
+        local TOKENINDEX,ITEM = GetTokenIndex(tokenId);
 
         if TOKENINDEX ~= nil and TOKENINDEX ~= 0 then
             -- Exists in wallet.
@@ -727,7 +730,7 @@ function RefreshTokenView()
             cItemInspect:SetItemInfo(ITEM:GetItemInfo());
             cItemInspect:SetQuantity(TEMPITEM:GetQuantity());
 
-            _CHARDATA.CHARS[MYCHAR:GetName()][SELECTEDFESTIVAL]["TOKENS"][k] = TEMPITEM:GetQuantity();
+            _CHARDATA.CHARS[MYCHAR:GetName()][SELECTEDFESTIVAL]["TOKENS"][tokenKey] = TEMPITEM:GetQuantity();
 
             PARENTWIDTH = PARENTWIDTH + ITEMWIDTH;
 
@@ -744,10 +747,10 @@ function RefreshTokenView()
             MYWALLET:GetItem(TOKENINDEX).QuantityChanged = function (sender,args)
                 -- Quantity changed event
                 cItemInspect:SetQuantity(TEMPITEM:GetQuantity());
-                _CHARDATA.CHARS[MYCHAR:GetName()][SELECTEDFESTIVAL]["TOKENS"][k] = TEMPITEM:GetQuantity();
+                _CHARDATA.CHARS[MYCHAR:GetName()][SELECTEDFESTIVAL]["TOKENS"][tokenKey] = TEMPITEM:GetQuantity();
             end
         else
-            _CHARDATA.CHARS[MYCHAR:GetName()][SELECTEDFESTIVAL]["TOKENS"][k] = 0;
+            _CHARDATA.CHARS[MYCHAR:GetName()][SELECTEDFESTIVAL]["TOKENS"][tokenKey] = 0;
         end
 
     end

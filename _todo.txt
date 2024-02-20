@@ -8,7 +8,6 @@ Save file format:
     Server specific:
         FestivalBuddy_CharData.plugindata - Stores tokens and cooldowns for all characters on a server
             [character][i] indicies are numerical values for festivals.
-            [character][TOKENS] indicies are the ordinals for the current order of festival tokens.
 
             Adding the version at root showed an issue: The loading code assumes everything is a character,
                 which meant the version entry broke the code.
@@ -20,6 +19,12 @@ Save file format:
     Account specific:
         FestivalBuddy_AccountSettings.plugindata
             No known issues.
+
+Logic fixes:
+    MainWin:GetTokenIndex - n^2 iterations through wallet contents
+    If one Mithril Coin value for one festival for one character changes,
+        it really changes for all festivals and all chacters, because they point to the same thing.
+        If a WalletItem has IsAccountItem = true, then whenever the value changes we should change it everywhere.
 
 The way I modified _LANG.DEBUFFS to allow for ordering in the UI makes it harder to find a debuff.
     Consider: A separate table that controls the UI ordering, and not as part of _LANG?

@@ -157,7 +157,7 @@ function CheckFestivalData(_TABLE)
         -- TOKENS ---
         if _TABLE[e]["TOKENS"] == nil then _TABLE[e]["TOKENS"] = {} end;
 
-        for k,v in pairs (_LANG.TOKENS[e]) do
+        for k,v in pairs (TOKEN_IDS[e]) do
             if _TABLE[e]["TOKENS"][k] == nil then
                 _TABLE[e]["TOKENS"][k] = 0;
             end

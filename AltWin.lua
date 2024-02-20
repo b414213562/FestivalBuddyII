@@ -138,12 +138,13 @@ function RefreshAltDisplay(NAME)
     if _RELFESTIVALTABLE == nil then return end;
 
     for k,v in pairs (_RELFESTIVALTABLE["TOKENS"]) do
-        if v > 0 and _LANG.TOKENS[SELECTEDFESTIVAL][k] ~= nil then
+        local tokenID = TOKEN_IDS[SELECTEDFESTIVAL][k];
+        if v > 0 and tokenID then
             -- Only add tokens that the player has.
             local cCURITEM = Turbine.UI.Control();
             cCURITEM:SetSize(ITEMWIDTH,36);
 
-            local ITEM = GetItemFromID(_LANG.TOKENS[SELECTEDFESTIVAL][k]);
+            local ITEM = GetItemFromID(tokenID);
 
             local cItemInspect = Turbine.UI.Lotro.ItemInfoControl();
             cItemInspect:SetParent(cCURITEM);

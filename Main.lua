@@ -17,6 +17,7 @@ import "CubePlugins.FestivalBuddyII.Libraries.DragBar";
 import "CubePlugins.FestivalBuddyII.GeneralFunctions";
 import "CubePlugins.FestivalBuddyII.TimeFunctions";
 import "CubePlugins.FestivalBuddyII.Strings";
+import "CubePlugins.FestivalBuddyII.Tokens";
 import "CubePlugins.FestivalBuddyII.Images";
 import "CubePlugins.FestivalBuddyII.QuestStrings";
 import "CubePlugins.FestivalBuddyII.FestivalFunctions";
@@ -213,10 +214,15 @@ function LoadServerWideCharacterData()
                 festivalsTable["Yule"] = nil;
             end
 
+            -- Use _OLD_FESTIVAL_TOKEN_DATA in Tokens_v10_to_v11 to check the TOKEN data.
+            import "CubePlugins.FestivalBuddyII.PriorSaveFormats.Tokens_v10_to_v11";
+
             for festivalID,dataCategory in pairs (festivalsTable) do
                 if dataCategory.TOKENS ~= nil then
                     for k,v in pairs (dataCategory.TOKENS) do
-                        if _LANG.TOKENS[festivalID][k] == nil then SavedCharData[playerName][festivalID].TOKENS[k] = nil end;
+                        if (not PriorSaveFormats._OLD_FESTIVAL_TOKEN_DATA[festivalID][k]) then
+                            SavedCharData[playerName][festivalID].TOKENS[k] = nil;
+                        end
                     end
                 end
             end
@@ -286,6 +292,10 @@ function LoadServerWideCharacterData()
 
             end
         end
+
+        import "CubePlugins.FestivalBuddyII.PriorSaveFormats.Tokens_v10_to_v11";
+
+        PriorSaveFormats.Update_tokens_from_v10_to_v11(SavedCharData.CHARS);
 
 
         SavedCharData.SAVED_CHAR_DATA_VERSION = "v1.1";
