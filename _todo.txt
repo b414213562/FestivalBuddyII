@@ -9,9 +9,10 @@ Save file format:
         FestivalBuddy_CharData.plugindata - Stores tokens and cooldowns for all characters on a server
             [character][i] indicies are numerical values for festivals.
 
-            Adding the version at root showed an issue: The loading code assumes everything is a character,
-                which meant the version entry broke the code.
-
+            Look into all uses of FESTIVAL:
+                Need to be able to translate the festivalKey to number using the FESTIVAL_UI_ORDER table:
+                    local args = {Index = festivalNumber};
+                    ddFestivals.ItemChanged(nil, args);
 
         FestivalBuddy_ServerSettings.plugindata
             No known issues.
@@ -25,6 +26,7 @@ Logic fixes:
     If one Mithril Coin value for one festival for one character changes,
         it really changes for all festivals and all chacters, because they point to the same thing.
         If a WalletItem has IsAccountItem = true, then whenever the value changes we should change it everywhere.
+    SELECTEDQUEST uses the localized quest name instead of the internal quest key. Why?!?
 
 The way I modified _LANG.DEBUFFS to allow for ordering in the UI makes it harder to find a debuff.
     Consider: A separate table that controls the UI ordering, and not as part of _LANG?

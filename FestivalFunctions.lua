@@ -42,19 +42,19 @@ function ClearSelectedQuest()
     questMapImage:SetVisible(false);
 end
 
-function GetFestivalNumberAndQuestKeyFromNewQuest(cMessage)
+function GetFestivalKeyAndQuestKeyFromNewQuest(cMessage)
     -- loop through quest names to see if there's a match in the table
-    for festivalNumber in pairs (_LANG.FESTIVALS) do
-        for k,v in pairs (_LANG.QUESTS[festivalNumber]) do
+    for festivalKey in pairs (_LANG.FESTIVALS) do
+        for questKey,questNames in pairs (_LANG.QUESTS[festivalKey]) do
 
             local starting_character = 1;
             local use_plain_text_find = true;
 
-            local questToCheck = GetString(v);
+            local questToCheck = GetString(questNames);
             local findResult = string.find(cMessage, questToCheck, starting_character, use_plain_text_find);
 
             if findResult then
-                return festivalNumber, k;
+                return festivalKey, questKey;
             end
         end
     end
@@ -62,11 +62,11 @@ function GetFestivalNumberAndQuestKeyFromNewQuest(cMessage)
 end
 
 function FilterNewQuests(cMessage)
-    local festivalNumber, questKey = GetFestivalNumberAndQuestKeyFromNewQuest(cMessage);
+    local festivalKey, questKey = GetFestivalKeyAndQuestKeyFromNewQuest(cMessage);
     if (questKey) then
-        RefreshFestival(festivalNumber);
-        RefreshQuestGuide(GetString(_LANG.QUESTS[festivalNumber][questKey]));
-        SETTINGS.IN_PROGRESS_QUESTS[questKey] = festivalNumber;
+        RefreshFestival(festivalKey);
+        RefreshQuestGuide(GetString(_LANG.QUESTS[festivalKey][questKey]));
+        SETTINGS.IN_PROGRESS_QUESTS[questKey] = festivalKey;
     end
 
     QuickGuideWinHandleQuestAccept(cMessage);
