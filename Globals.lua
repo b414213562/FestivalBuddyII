@@ -345,3 +345,16 @@ QUICK_GUIDES = {
     [YULE] = true;
     [ILAA] = true;
 }
+
+-- The default UI Order for the Festivals Drop Down
+FESTIVALS_UI_ORDER = {
+    [1] = SPRING;
+    [2] = SUMMER;
+    [3] = HARVESTMATH;
+    [4] = YULE;
+    [5] = ANNIVERSARY;
+    [6] = FARMERSFAIRE;
+    [7] = HOBNANIGANS;
+    [8] = MIDSUMMER;
+    [9] = ILAA;
+};
