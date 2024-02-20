@@ -139,7 +139,7 @@ function RefreshAltDisplay(NAME)
 
     for k,v in pairs (_RELFESTIVALTABLE["TOKENS"]) do
         if v > 0 and _LANG.TOKENS[SELECTEDFESTIVAL][k] ~= nil then
-            -- Only add tokens that they player has.
+            -- Only add tokens that the player has.
             local cCURITEM = Turbine.UI.Control();
             cCURITEM:SetSize(ITEMWIDTH,36);
 
