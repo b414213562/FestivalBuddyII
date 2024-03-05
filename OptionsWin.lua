@@ -264,7 +264,7 @@ function DrawQuickGuideOptions(options, y)
     -- Festival-specific section:
 
     -- iterate through festivals table so guides appear in same order here:
-    for festival in ipairs(_LANG.FESTIVALS) do
+    for k,festival in ipairs(FESTIVALS_UI_ORDER) do
         if (QUICK_GUIDES[festival]) then
 
             local quickGuideFestivalLabel = Turbine.UI.Label();

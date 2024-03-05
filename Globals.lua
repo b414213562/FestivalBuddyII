@@ -108,7 +108,7 @@ CLIENTLANG = GetClientLanguage();
 DEFAULT_SETTINGS = {
 
     ["MSGCOLOR"] = "FFFFFF";
-    ["FESTIVAL"] = 1;
+    ["FESTIVAL"] = "SPRING";
     ["QUEST"] = nil;
     ["EMOTESASSIST"] = true;
     ["QSASSIST"] = true;

@@ -19,8 +19,8 @@ function DrawMainWin()
 
     local _FESTIVALS = {};
 
-    for k,v in ipairs(_LANG.FESTIVALS) do
-        table.insert(_FESTIVALS,GetString(v));
+    for k,v in ipairs(FESTIVALS_UI_ORDER) do
+        table.insert(_FESTIVALS,GetString(_LANG.FESTIVALS[v]));
     end
 
     ddFestivals = DropDown(_FESTIVALS,GetString(_LANG.FESTIVALS[SELECTEDFESTIVAL]));
@@ -33,7 +33,7 @@ function DrawMainWin()
     wHobnanigans:SetVisible(SELECTEDFESTIVAL == HOBNANIGANS);
 
     ddFestivals.ItemChanged = function (Sender,Args)
-        SELECTEDFESTIVAL = Args.Index;
+        SELECTEDFESTIVAL = FESTIVALS_UI_ORDER[Args.Index];
         SETTINGS.FESTIVAL = SELECTEDFESTIVAL;
         SETTINGS.QUEST = nil;
         SELECTEDQUEST = "";
@@ -508,7 +508,15 @@ function RefreshFestival(festival)
     ddFestivals:SetText(GetString(_LANG.FESTIVALS[festival]));
 
     -- Trigger the itemChanged logic of the dropdown:
-    local args = {Index = festival};
+    -- Given the festival key, get the UI index:
+    local index = 1;
+    for i=1,#FESTIVALS_UI_ORDER do
+        if (FESTIVALS_UI_ORDER[i] == festival) then
+            index = i;
+        end
+    end
+
+    local args = {Index = index};
     ddFestivals.ItemChanged(nil, args);
 
     MazeMapUpdateFestival(festival);

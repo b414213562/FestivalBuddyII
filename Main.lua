@@ -126,9 +126,6 @@ function LoadSettingsFileCharacter()
     -- Assume the HUD is toggled to visible when the plugin is loaded.
     SETTINGS.SHOWSCREEN = true;
 
-    -- Populate a global variable:
-    SELECTEDFESTIVAL = SETTINGS.FESTIVAL;
-
     -- Currently Festival Buddy II doesn't provide an option for the user
     -- to modify this setting. But, the code in MinimizedIcon expects it to be there.
     -- Change this to true if you want to have to hold shift to move the minimize icon.
@@ -142,8 +139,14 @@ function LoadSettingsFileCharacter()
         SETTINGS["SELFESTIVAL"] = nil; -- obsolete setting
         SETTINGS["LANGUAGE"] = nil; -- no longer saving languge in settings as of 1.4.5.2.
 
+        import "CubePlugins.FestivalBuddyII.PriorSaveFormats.Festivals_v10_to_v11";
+        PriorSaveFormats.Update_FestivalBuddySettings_Festivals_from_v10_to_v11(SETTINGS);
+
         SETTINGS.SETTINGS_VERSION = "v1.1";
     end -- end 1.0 to 1.1 update
+
+    -- Populate a global variable:
+    SELECTEDFESTIVAL = SETTINGS.FESTIVAL;
 
 end
 
@@ -297,6 +300,8 @@ function LoadServerWideCharacterData()
 
         PriorSaveFormats.Update_tokens_from_v10_to_v11(SavedCharData.CHARS);
 
+        import "CubePlugins.FestivalBuddyII.PriorSaveFormats.Festivals_v10_to_v11";
+        PriorSaveFormats.Update_FestivalBuddy_CharData_Festivals_from_v10_to_v11(SavedCharData.CHARS);
 
         SavedCharData.SAVED_CHAR_DATA_VERSION = "v1.1";
     end -- end 1.0 to 1.1 update
