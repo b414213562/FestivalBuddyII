@@ -1,5 +1,5 @@
 
-_OLD_FESTIVAL_TOKEN_DATA = {
+_V10_FESTIVAL_TOKEN_DATA = {
     [SPRING] = {
         [1] = "SPRING_FESTIVAL";
         [2] = "SPRING_MITHRIL";
@@ -110,7 +110,7 @@ function Update_tokens_from_v10_to_v11(charsTable)
             -- Fix up the TOKENS table:
             local newTOKENS = { };
             for tokenNumber, tokenCount in pairs(festivalData.TOKENS) do
-                local tokenName = _OLD_FESTIVAL_TOKEN_DATA[festivalNumber][tokenNumber];
+                local tokenName = _V10_FESTIVAL_TOKEN_DATA[festivalNumber][tokenNumber];
                 newTOKENS[tokenName] = tokenCount;
             end
             festivalData.TOKENS = newTOKENS;

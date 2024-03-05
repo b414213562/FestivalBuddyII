@@ -214,13 +214,13 @@ function LoadServerWideCharacterData()
                 festivalsTable["Yule"] = nil;
             end
 
-            -- Use _OLD_FESTIVAL_TOKEN_DATA in Tokens_v10_to_v11 to check the TOKEN data.
+            -- Use _V10_FESTIVAL_TOKEN_DATA in Tokens_v10_to_v11 to check the TOKEN data.
             import "CubePlugins.FestivalBuddyII.PriorSaveFormats.Tokens_v10_to_v11";
 
             for festivalID,dataCategory in pairs (festivalsTable) do
                 if dataCategory.TOKENS ~= nil then
                     for k,v in pairs (dataCategory.TOKENS) do
-                        if (not PriorSaveFormats._OLD_FESTIVAL_TOKEN_DATA[festivalID][k]) then
+                        if (not PriorSaveFormats._V10_FESTIVAL_TOKEN_DATA[festivalID][k]) then
                             SavedCharData[playerName][festivalID].TOKENS[k] = nil;
                         end
                     end
