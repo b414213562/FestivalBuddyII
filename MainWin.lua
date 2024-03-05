@@ -398,8 +398,8 @@ function FillMainWin(FESTIVAL)
     -- QUEST GUIDE -----------------------------------------------------------------------
     local _REFORMATQUESTS = {};
 
-    for k,v in pairs(_LANG.QUESTS[SELECTEDFESTIVAL]) do
-        local isHidden = _QUESTSTRINGS[SELECTEDFESTIVAL][k] and _QUESTSTRINGS[SELECTEDFESTIVAL][k].HIDDEN;
+    for k,v in pairs(_LANG.QUESTS[FESTIVAL]) do
+        local isHidden = _QUESTSTRINGS[FESTIVAL][k] and _QUESTSTRINGS[FESTIVAL][k].HIDDEN;
         if (not isHidden) then
             table.insert(_REFORMATQUESTS,GetString(v));
         end
@@ -411,7 +411,7 @@ function FillMainWin(FESTIVAL)
     ddQuests:SetPosition(45,cDebuffHolder:GetTop()+cDebuffHolder:GetHeight() + 10);
     ddQuests:SetWidth(200);
     ddQuests:SetAlignment("Left");
-    ddQuests:SetVisible(SELECTEDFESTIVAL ~= HOBNANIGANS);
+    ddQuests:SetVisible(FESTIVAL ~= HOBNANIGANS);
     
     ddQuests.ItemChanged = function (Sender,Args)
         RefreshQuestGuide(Args.Text);
@@ -469,7 +469,7 @@ function FillMainWin(FESTIVAL)
     end
 
     if (btnMazeMap ~= nil) then
-        btnMazeMap:SetVisible(_QUESTSTRINGS[SELECTEDFESTIVAL].MAP ~= nil);
+        btnMazeMap:SetVisible(_QUESTSTRINGS[FESTIVAL].MAP ~= nil);
     end
 
     RefreshDebuffView();
