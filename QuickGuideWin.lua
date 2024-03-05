@@ -39,7 +39,7 @@ function DrawQuickGuideWin()
     treeView:SetVerticalScrollBar(scrollbar);
     treeView.scrollbar = scrollbar;
 
-    QuickGuideWinLoadFestival(SELECTEDFESTIVAL);
+    QuickGuideWinLoadFestival();
 
     wQuickGuideWinParent.SizeChanged = function(sender, args)
         SETTINGS.QUICK_GUIDE_WIN.HEIGHT = wQuickGuideWinParent:GetHeight();
