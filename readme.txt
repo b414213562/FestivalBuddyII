@@ -3,6 +3,7 @@ v2.0.5 changes:
         Added French translations for Yule Quick Guide.
         Added German translations from Mandraval for UI and Quick Guide.
         Removed /cheer emote window for The Abominable Snow Beasts quest. (Quest tracker provides this automatically.)
+        Reordered festivals to match appearance in calendar year.
     
     Language:
         Fixed French name for "Secret Treasure - Chest".
@@ -11,6 +12,9 @@ v2.0.5 changes:
         Added Inn League / Ale Association Quick Guide. (Based on hunter travel skills.)
         Added color highlighting to Quick Guides.
         Added options to control use and color of highlighting.
+
+    Other:
+        Updated how Festival Buddy II save files store data. Files will be automatically updated when FBII loads.
 
 v2.0.4 changes:
     Festivals:

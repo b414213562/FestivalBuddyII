@@ -1,3 +1,8 @@
+Get rid of summer!!!! festival
+    2.0 to 2.1 save file: Convert summer tokens to farmers faire tokens
+    What else?!?
+
+
 Logic fixes:
     MainWin:GetTokenIndex - n^2 iterations through wallet contents
     If one Mithril Coin value for one festival for one character changes,
