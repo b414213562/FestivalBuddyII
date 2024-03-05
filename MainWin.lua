@@ -501,17 +501,17 @@ function CloseHelperWindows()
     ToggleVisibility_Fireworks(false);
 end
 
-function RefreshFestival(festivalNumber)
-    if (festivalNumber == SELECTEDFESTIVAL) then return; end
+function RefreshFestival(festival)
+    if (festival == SELECTEDFESTIVAL) then return; end
 
     -- Update the text of the dropdown:
-    ddFestivals:SetText(GetString(_LANG.FESTIVALS[festivalNumber]));
+    ddFestivals:SetText(GetString(_LANG.FESTIVALS[festival]));
 
     -- Trigger the itemChanged logic of the dropdown:
-    local args = {Index = festivalNumber};
+    local args = {Index = festival};
     ddFestivals.ItemChanged(nil, args);
 
-    MazeMapUpdateFestival(festivalNumber);
+    MazeMapUpdateFestival(festival);
 end
 
 function LoadQuest(questKey)
