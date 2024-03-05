@@ -1,6 +1,6 @@
 
 _V10_FESTIVAL_TOKEN_DATA = {
-    [SPRING] = {
+    [1] = { -- SPRING
         [1] = "SPRING_FESTIVAL";
         [2] = "SPRING_MITHRIL";
         [3] = "SPRING_RACE";
@@ -8,7 +8,7 @@ _V10_FESTIVAL_TOKEN_DATA = {
         [5] = "SPRING_MARIGOLD";
         [6] = "SPRING_PRIMROSE";
     };
-    [SUMMER] = {
+    [2] = { -- SUMMER
         [1] = "SUMMER_RACE";
         [2] = "SUMMER_FESTIVAL";
         [3] = "SUMMER_HADDOCK";
@@ -21,7 +21,7 @@ _V10_FESTIVAL_TOKEN_DATA = {
         [10] = "SUMMER_SMALLFISH";
         [11] = "SUMMER_MITHRIL";
     };
-    [HARVESTMATH] = {
+    [3] = { -- HARVESTMATH
         [1] = "HARVESTMATH_RACE";
         [2] = "HARVESTMATH_FESTIVAL";
         [3] = "HARVESTMATH_MITHRIL";
@@ -38,25 +38,25 @@ _V10_FESTIVAL_TOKEN_DATA = {
         [14] = "HARVESTMATH_MEDIUMPUMPKIN";
         [15] = "HARVESTMATH_LARGEPUMPKIN";
     };
-    [YULE] = {
+    [4] = { -- YULE
         [1] = "YULE_FESTIVAL";
         [2] = "YULE_GOLDFESTIVAL";
         [3] = "YULE_TICKET";
         [4] = "YULE_RACE";
         [5] = "YULE_MITHRIL";
     };
-    [ANNIVERSARY] = {
+    [5] = { -- ANNIVERSARY
         [1] = "ANNIVERSARY_RACE";
         [2] = "ANNIVERSARY_FESTIVAL";
         [3] = "ANNIVERSARY_STEEL";
         [4] = "ANNIVERSARY_MITHRIL";
     };
-    [FARMERSFAIRE] = {
+    [6] = { -- FARMERSFAIRE
         [1] = "FARMERSFAIRE_RACE";
         [2] = "FARMERSFAIRE_FESTIVAL";
         [3] = "FARMERSFAIRE_MITHRIL";
     };
-    [HOBNANIGANS] = {
+    [7] = { -- HOBNANIGANS
         [1] = "HOBNANIGANS_TOKEN";
         [2] = "HOBNANIGANS_WHITE_CHICKEN_TOKEN";
         [3] = "HOBNANIGANS_RED_CHICKEN_TOKEN";
@@ -66,11 +66,11 @@ _V10_FESTIVAL_TOKEN_DATA = {
         [7] = "HOBNANIGANS_ORANGE_WYANDOTTE_TOKEN";
         [8] = "HOBNANIGANS_MITHRIL";
     };
-    [MIDSUMMER] = {
+    [8] = { -- MIDSUMMER
         [1] = "MIDSUMMER_TOKEN";
         [2] = "MIDSUMMER_MC";
     };
-    [ILAA] = {
+    [9] = { -- ILAA
         [1] = "ILAA_BADGE_OF_TASTE";
         [2] = "ILAA_BADGE_OF_DISHONOUR";
     };
