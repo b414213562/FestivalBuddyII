@@ -102,7 +102,7 @@ _V10_FESTIVAL_TOKEN_DATA = {
 --        ["SPRING_PRIMROSE"] = "0";
 --     }
 
-function Update_tokens_from_v10_to_v11(charsTable)
+function Update_tokens_from_v10_to_v20(charsTable)
     -- For each player's festival data:
     for playerName,festivalsTable in pairs(charsTable) do
         -- For each festival in the festival data:

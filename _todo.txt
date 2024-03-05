@@ -1,5 +1,3 @@
-Maybe call the new format v20, since this is more than a minor change?
-
 Logic fixes:
     MainWin:GetTokenIndex - n^2 iterations through wallet contents
     If one Mithril Coin value for one festival for one character changes,

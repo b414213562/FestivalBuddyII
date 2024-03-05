@@ -139,11 +139,11 @@ function LoadSettingsFileCharacter()
         SETTINGS["SELFESTIVAL"] = nil; -- obsolete setting
         SETTINGS["LANGUAGE"] = nil; -- no longer saving languge in settings as of 1.4.5.2.
 
-        import "CubePlugins.FestivalBuddyII.PriorSaveFormats.Festivals_v10_to_v11";
-        PriorSaveFormats.Update_FestivalBuddySettings_Festivals_from_v10_to_v11(SETTINGS);
+        import "CubePlugins.FestivalBuddyII.PriorSaveFormats.Festivals_v10_to_v20";
+        PriorSaveFormats.Update_FestivalBuddySettings_Festivals_from_v10_to_v20(SETTINGS);
 
-        SETTINGS.SETTINGS_VERSION = "v1.1";
-    end -- end 1.0 to 1.1 update
+        SETTINGS.SETTINGS_VERSION = "v2.0";
+    end -- end 1.0 to 2.0 update
 
     -- Populate a global variable:
     SELECTEDFESTIVAL = SETTINGS.FESTIVAL;
@@ -217,8 +217,8 @@ function LoadServerWideCharacterData()
                 festivalsTable["Yule"] = nil;
             end
 
-            -- Use _V10_FESTIVAL_TOKEN_DATA in Tokens_v10_to_v11 to check the TOKEN data.
-            import "CubePlugins.FestivalBuddyII.PriorSaveFormats.Tokens_v10_to_v11";
+            -- Use _V10_FESTIVAL_TOKEN_DATA in Tokens_v10_to_v20 to check the TOKEN data.
+            import "CubePlugins.FestivalBuddyII.PriorSaveFormats.Tokens_v10_to_v20";
 
             for festivalID,dataCategory in pairs (festivalsTable) do
                 if dataCategory.TOKENS ~= nil then
@@ -245,9 +245,9 @@ function LoadServerWideCharacterData()
         SavedCharData.SAVED_CHAR_DATA_VERSION = "v1.0";
     end -- end 1.0
 
-    -- Version 1.1 introduced in plugin version 2.0.5.
+    -- Version 2.0 introduced in plugin version 2.0.5.
     if (SavedCharData.SAVED_CHAR_DATA_VERSION == "v1.0") then
-        Turbine.Shell.WriteLine("Updating 1.0 to 1.1");
+        --Turbine.Shell.WriteLine("Updating Festival Buddy II server-level character datafile format from 1.0 to 2.0");
 
         -- Nest characters under new table so that we can iterate through a table and only find characters.
         SavedCharData.CHARS = {};
@@ -296,15 +296,15 @@ function LoadServerWideCharacterData()
             end
         end
 
-        import "CubePlugins.FestivalBuddyII.PriorSaveFormats.Tokens_v10_to_v11";
+        import "CubePlugins.FestivalBuddyII.PriorSaveFormats.Tokens_v10_to_v20";
 
-        PriorSaveFormats.Update_tokens_from_v10_to_v11(SavedCharData.CHARS);
+        PriorSaveFormats.Update_tokens_from_v10_to_v20(SavedCharData.CHARS);
 
-        import "CubePlugins.FestivalBuddyII.PriorSaveFormats.Festivals_v10_to_v11";
-        PriorSaveFormats.Update_FestivalBuddy_CharData_Festivals_from_v10_to_v11(SavedCharData.CHARS);
+        import "CubePlugins.FestivalBuddyII.PriorSaveFormats.Festivals_v10_to_v20";
+        PriorSaveFormats.Update_FestivalBuddy_CharData_Festivals_from_v10_to_v20(SavedCharData.CHARS);
 
-        SavedCharData.SAVED_CHAR_DATA_VERSION = "v1.1";
-    end -- end 1.0 to 1.1 update
+        SavedCharData.SAVED_CHAR_DATA_VERSION = "v2.0";
+    end -- end 1.0 to 2.0 update
 
     _CHARDATA = deepcopy(SavedCharData);
 end

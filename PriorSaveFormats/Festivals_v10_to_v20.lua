@@ -12,7 +12,7 @@ _V10_FESTIVAL_DATA = {
     [9] = "ILAA";
 };
 
-function Update_FestivalBuddy_CharData_Festivals_from_v10_to_v11(charsTable)
+function Update_FestivalBuddy_CharData_Festivals_from_v10_to_v20(charsTable)
     -- For each player's festival data:
     for playerName,festivalsTable in pairs(charsTable) do
         -- For each festival in the festival data:
@@ -28,7 +28,7 @@ function Update_FestivalBuddy_CharData_Festivals_from_v10_to_v11(charsTable)
 
 end
 
-function Update_FestivalBuddySettings_Festivals_from_v10_to_v11(settings)
+function Update_FestivalBuddySettings_Festivals_from_v10_to_v20(settings)
 
     local selectedFestivalName = _V10_FESTIVAL_DATA[settings["FESTIVAL"]];
     settings["FESTIVAL"] = selectedFestivalName;
