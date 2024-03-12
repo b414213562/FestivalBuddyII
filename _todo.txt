@@ -1,6 +1,12 @@
 Get rid of summer!!!! festival
     Convert summer tokens to farmers faire tokens? Or just get rid of them, since they don't exist anymore?
     What else?!?
+        AllChars / FestivalBuddy_CharData.plugindata:
+            CHARS / char / SUMMER / COOLDOWNS & TOKENS
+            For tokens like SUMMER_SMALLFISH, are we changing to FARMERSFAIR_SMALLFISH?
+        char / FestivalBuddy_Settings.plugindata
+            if 	["FESTIVAL"] = "SUMMER", change it to FARMERSFAIR
+            
 
 
 Logic fixes:
