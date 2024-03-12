@@ -4,8 +4,6 @@ Get rid of summer!!!! festival
         AllChars / FestivalBuddy_CharData.plugindata:
             CHARS / char / SUMMER / COOLDOWNS & TOKENS
             For tokens like SUMMER_SMALLFISH, are we changing to FARMERSFAIR_SMALLFISH?
-        char / FestivalBuddy_Settings.plugindata
-            if 	["FESTIVAL"] = "SUMMER", change it to FARMERSFAIR
             
 
 

@@ -142,6 +142,12 @@ function LoadSettingsFileCharacter()
         import "CubePlugins.FestivalBuddyII.PriorSaveFormats.Festivals_v10_to_v20";
         PriorSaveFormats.Update_FestivalBuddySettings_Festivals_from_v10_to_v20(SETTINGS);
 
+        -- Consolidated Summer into Farmers Faire,
+        -- so make sure the current festival is correct:
+        if (SETTINGS.FESTIVAL == SUMMER) then
+            SETTINGS.FESTIVAL = FARMERSFAIRE;
+        end
+
         SETTINGS.SETTINGS_VERSION = "v2.0";
     end -- end 1.0 to 2.0 update
 
