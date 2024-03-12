@@ -137,9 +137,12 @@ function RefreshAltDisplay(NAME)
 
     if _RELFESTIVALTABLE == nil then return end;
 
-    for k,v in pairs (_RELFESTIVALTABLE["TOKENS"]) do
-        local tokenID = TOKEN_IDS[SELECTEDFESTIVAL][k];
-        if v > 0 and tokenID then
+    for tokenUiIndex=1, #TOKEN_UI_ORDER[SELECTEDFESTIVAL] do
+        local tokenKey = TOKEN_UI_ORDER[SELECTEDFESTIVAL][tokenUiIndex];
+        local tokenID = TOKEN_IDS[SELECTEDFESTIVAL][tokenKey];
+        local tokenCount = _RELFESTIVALTABLE["TOKENS"][tokenKey];
+
+        if tokenCount > 0 and tokenID then
             -- Only add tokens that the player has.
             local cCURITEM = Turbine.UI.Control();
             cCURITEM:SetSize(ITEMWIDTH,36);
@@ -151,7 +154,7 @@ function RefreshAltDisplay(NAME)
             cItemInspect:SetSize(36,36);
             cItemInspect:SetPosition(cCURITEM:GetWidth()-36,0);
             cItemInspect:SetItemInfo(ITEM:GetItemInfo());
-            cItemInspect:SetQuantity(v);
+            cItemInspect:SetQuantity(tokenCount);
 
             PARENTWIDTH = PARENTWIDTH + ITEMWIDTH;
 
