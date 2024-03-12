@@ -77,119 +77,118 @@ _BARTER =
     };
 
 
-    -- SUMMER --------------------------------------------------------------------------------------------
-    [SUMMER] =
+    -- FARMERS FAIRE --------------------------------------------------------------------------------------------
+    [FARMERSFAIRE] =
     {
-
         -- General
         [1]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "General"; }; };
 
-        [2]={[1]=1879313833;[2]={["SUMMER_FESTIVAL"]=20;};};          -- Robe of the Wedmath Celebration
-        [3]={[1]=1879313834;[2]={["SUMMER_FESTIVAL"]=20;};};          -- Cloak of the Wedmath Celebration
-        [4]={[1]=1879313835;[2]={["SUMMER_FESTIVAL"]=20;};};          -- Hooded Cloak of the Wedmath Celebration
-        [5]={[1]=1879272166;[2]={["SUMMER_FESTIVAL"]=15;};};          -- Robe of the Midsummer
-        [6]={[1]=1879272165;[2]={["SUMMER_FESTIVAL"]=15;};};          -- Cloak of the Midsummer
-        [7]={[1]=1879272164;[2]={["SUMMER_FESTIVAL"]=15;};};          -- Hooded Cloak of the Midsummer
-        [8]={[1]=1879249071;[2]={["SUMMER_FESTIVAL"]=15;};};          -- Summerdays dress
-        [9]={[1]=1879249069;[2]={["SUMMER_FESTIVAL"]=15;};};          -- Summerdays Tunic and Trousers
-        [10]={[1]=1879249070;[2]={["SUMMER_FESTIVAL"]=15;};};         -- Summerdays Cloak
-        [11]={[1]=1879249068;[2]={["SUMMER_FESTIVAL"]=15;};};         -- Summerdays Hooded Cloak
-        [12]={[1]=1879249072;[2]={["SUMMER_FESTIVAL"]=15;};};         -- Summerdays Hat
-        [13]={[1]=1879104057;[2]={["SUMMER_FESTIVAL"]=10;};};         -- Turquoise Summer Circlet
-        [14]={[1]=1879104078;[2]={["SUMMER_FESTIVAL"]=10;};};         -- Sleeveless Elven Tunic
-        [15]={[1]=1879185942;[2]={["SUMMER_FESTIVAL"]=10;};};         -- Long-sleeved Summer Dress
-        [16]={[1]=1879185939;[2]={["SUMMER_FESTIVAL"]=10;};};         -- Sleeveless Summer Dress
-        [17]={[1]=1879185941;[2]={["SUMMER_FESTIVAL"]=10;};};         -- Short-sleeved Summer Dress
-        [18]={[1]=1879185940;[2]={["SUMMER_FESTIVAL"]=10;};};         -- Long-sleeved Summer Tunic and Trousers
-        [19]={[1]=1879185943;[2]={["SUMMER_FESTIVAL"]=10;};};         -- Short-sleeved Summer Tunic and Trousers
-        [20]={[1]=1879185953;[2]={["SUMMER_FESTIVAL"]=10;};};         -- Golden Tree Summer Cloak
-        [21]={[1]=1879185951;[2]={["SUMMER_FESTIVAL"]=10;};};         -- Summer Travelling Cloak
-        [22]={[1]=1879159561;[2]={["SUMMER_FESTIVAL"]=10;};};         -- Cloak of the Summer Sun
-        [23]={[1]=1879159581;[2]={["SUMMER_FESTIVAL"]=10;};};         -- Sun Hat
-        [24]={[1]=1879249578;[2]={["SUMMER_FESTIVAL"]=15;};};         -- Glowing Bonfire
-        [25]={[1]=1879249577;[2]={["SUMMER_FESTIVAL"]=15;};};         -- Smoky Bonfire
-        [26]={[1]=1879249579;[2]={["SUMMER_FESTIVAL"]=15;};};         -- Modest Cookfire
-        [27]={[1]=1879249576;[2]={["SUMMER_FESTIVAL"]=15;};};         -- Feast Day Cookfire
-        [28]={[1]=1879185967;[2]={["SUMMER_FESTIVAL"]=10;};};         -- White Wicker Chair
-        [29]={[1]=1879185965;[2]={["SUMMER_FESTIVAL"]=10;};};         -- Summer Hammock
-        [30]={[1]=1879185962;[2]={["SUMMER_FESTIVAL"]=10;};};         -- Mossy Wicker Chair
-        [31]={[1]=1879159513;[2]={["SUMMER_FESTIVAL"]=10;};};         -- Summerfest Painting
-        [32]={[1]=1879159507;[2]={["SUMMER_FESTIVAL"]=10;};};         -- Summerfest Bed
-        [33]={[1]=1879205540;[2]={["SUMMER_FESTIVAL"]=10;};};         -- Map of Lothlorien
-        [34]={[1]=1879205564;[2]={["SUMMER_FESTIVAL"]=10;};};         -- Map of the Ettenmoors
-        [35]={[1]=1879205567;[2]={["SUMMER_FESTIVAL"]=10;};};         -- Map of Caras Galadhon
-        [36]={[1]=1879205544;[2]={["SUMMER_FESTIVAL"]=10;};};         -- Map of the Northern Barrow-downs
-        [37]={[1]=1879159373;[2]={["SUMMER_FESTIVAL"]=3;};[3]=5;};    -- Monster Fare
-        [38]={[1]=1879159383;[2]={["SUMMER_FESTIVAL"]=3;};[3]=5;};    -- Foul Blasts
-        [39]={[1]=1879159304;[2]={["SUMMER_FESTIVAL"]=3;};[3]=5;};    -- Fire-breathing Potions
-        [40]={[1]=1879159399;[2]={["SUMMER_FESTIVAL"]=3;};[3]=5;};    -- Essence of Toad
-        [41]={[1]=1879159223;[2]={["SUMMER_FESTIVAL"]=3;};[3]=5;};    -- Mugs of Triple Strength Brandy
-        [42]={[1]=1879159224;[2]={["SUMMER_FESTIVAL"]=3;};[3]=5;};    -- Mugs of... Liquid
-        [43]={[1]=1879159367;[2]={["SUMMER_FESTIVAL"]=3;};[3]=5;};    -- Saffron's Lipstick
-        [44]={[1]=1879159235;[2]={["SUMMER_FESTIVAL"]=3;};[3]=5;};    -- Vile Vittles
-        [45]={[1]=1879233669;[2]={["SUMMER_FESTIVAL"]=5;};[3]=5;};    -- Piles of Mysterious Powder
-        [46]={[1]=1879313837;[2]={["SUMMER_FESTIVAL"]=40;};};         -- Steed of the Wedmath Celebration
-        [47]={[1]=1879313843;[2]={["SUMMER_FESTIVAL"]=40;};};         -- Caparison of the Wedmath Celebration
-        [48]={[1]=1879272168;[2]={["SUMMER_FESTIVAL"]=20;};};         -- Steed of the Midsummer
-        [49]={[1]=1879249514;[2]={["SUMMER_FESTIVAL"]=20;};};         -- Summerdays Steed
-        [50]={[1]=1879272171;[2]={["SUMMER_FESTIVAL"]=20;};};         -- Caparison of the Midsummer
+        [2]={[1]=1879313833;[2]={["FARMERSFAIRE_FESTIVAL"]=20;};};          -- Robe of the Wedmath Celebration
+        [3]={[1]=1879313834;[2]={["FARMERSFAIRE_FESTIVAL"]=20;};};          -- Cloak of the Wedmath Celebration
+        [4]={[1]=1879313835;[2]={["FARMERSFAIRE_FESTIVAL"]=20;};};          -- Hooded Cloak of the Wedmath Celebration
+        [5]={[1]=1879272166;[2]={["FARMERSFAIRE_FESTIVAL"]=15;};};          -- Robe of the Midsummer
+        [6]={[1]=1879272165;[2]={["FARMERSFAIRE_FESTIVAL"]=15;};};          -- Cloak of the Midsummer
+        [7]={[1]=1879272164;[2]={["FARMERSFAIRE_FESTIVAL"]=15;};};          -- Hooded Cloak of the Midsummer
+        [8]={[1]=1879249071;[2]={["FARMERSFAIRE_FESTIVAL"]=15;};};          -- Summerdays dress
+        [9]={[1]=1879249069;[2]={["FARMERSFAIRE_FESTIVAL"]=15;};};          -- Summerdays Tunic and Trousers
+        [10]={[1]=1879249070;[2]={["FARMERSFAIRE_FESTIVAL"]=15;};};         -- Summerdays Cloak
+        [11]={[1]=1879249068;[2]={["FARMERSFAIRE_FESTIVAL"]=15;};};         -- Summerdays Hooded Cloak
+        [12]={[1]=1879249072;[2]={["FARMERSFAIRE_FESTIVAL"]=15;};};         -- Summerdays Hat
+        [13]={[1]=1879104057;[2]={["FARMERSFAIRE_FESTIVAL"]=10;};};         -- Turquoise Summer Circlet
+        [14]={[1]=1879104078;[2]={["FARMERSFAIRE_FESTIVAL"]=10;};};         -- Sleeveless Elven Tunic
+        [15]={[1]=1879185942;[2]={["FARMERSFAIRE_FESTIVAL"]=10;};};         -- Long-sleeved Summer Dress
+        [16]={[1]=1879185939;[2]={["FARMERSFAIRE_FESTIVAL"]=10;};};         -- Sleeveless Summer Dress
+        [17]={[1]=1879185941;[2]={["FARMERSFAIRE_FESTIVAL"]=10;};};         -- Short-sleeved Summer Dress
+        [18]={[1]=1879185940;[2]={["FARMERSFAIRE_FESTIVAL"]=10;};};         -- Long-sleeved Summer Tunic and Trousers
+        [19]={[1]=1879185943;[2]={["FARMERSFAIRE_FESTIVAL"]=10;};};         -- Short-sleeved Summer Tunic and Trousers
+        [20]={[1]=1879185953;[2]={["FARMERSFAIRE_FESTIVAL"]=10;};};         -- Golden Tree Summer Cloak
+        [21]={[1]=1879185951;[2]={["FARMERSFAIRE_FESTIVAL"]=10;};};         -- Summer Travelling Cloak
+        [22]={[1]=1879159561;[2]={["FARMERSFAIRE_FESTIVAL"]=10;};};         -- Cloak of the Summer Sun
+        [23]={[1]=1879159581;[2]={["FARMERSFAIRE_FESTIVAL"]=10;};};         -- Sun Hat
+        [24]={[1]=1879249578;[2]={["FARMERSFAIRE_FESTIVAL"]=15;};};         -- Glowing Bonfire
+        [25]={[1]=1879249577;[2]={["FARMERSFAIRE_FESTIVAL"]=15;};};         -- Smoky Bonfire
+        [26]={[1]=1879249579;[2]={["FARMERSFAIRE_FESTIVAL"]=15;};};         -- Modest Cookfire
+        [27]={[1]=1879249576;[2]={["FARMERSFAIRE_FESTIVAL"]=15;};};         -- Feast Day Cookfire
+        [28]={[1]=1879185967;[2]={["FARMERSFAIRE_FESTIVAL"]=10;};};         -- White Wicker Chair
+        [29]={[1]=1879185965;[2]={["FARMERSFAIRE_FESTIVAL"]=10;};};         -- Summer Hammock
+        [30]={[1]=1879185962;[2]={["FARMERSFAIRE_FESTIVAL"]=10;};};         -- Mossy Wicker Chair
+        [31]={[1]=1879159513;[2]={["FARMERSFAIRE_FESTIVAL"]=10;};};         -- Summerfest Painting
+        [32]={[1]=1879159507;[2]={["FARMERSFAIRE_FESTIVAL"]=10;};};         -- Summerfest Bed
+        [33]={[1]=1879205540;[2]={["FARMERSFAIRE_FESTIVAL"]=10;};};         -- Map of Lothlorien
+        [34]={[1]=1879205564;[2]={["FARMERSFAIRE_FESTIVAL"]=10;};};         -- Map of the Ettenmoors
+        [35]={[1]=1879205567;[2]={["FARMERSFAIRE_FESTIVAL"]=10;};};         -- Map of Caras Galadhon
+        [36]={[1]=1879205544;[2]={["FARMERSFAIRE_FESTIVAL"]=10;};};         -- Map of the Northern Barrow-downs
+        [37]={[1]=1879159373;[2]={["FARMERSFAIRE_FESTIVAL"]=3;};[3]=5;};    -- Monster Fare
+        [38]={[1]=1879159383;[2]={["FARMERSFAIRE_FESTIVAL"]=3;};[3]=5;};    -- Foul Blasts
+        [39]={[1]=1879159304;[2]={["FARMERSFAIRE_FESTIVAL"]=3;};[3]=5;};    -- Fire-breathing Potions
+        [40]={[1]=1879159399;[2]={["FARMERSFAIRE_FESTIVAL"]=3;};[3]=5;};    -- Essence of Toad
+        [41]={[1]=1879159223;[2]={["FARMERSFAIRE_FESTIVAL"]=3;};[3]=5;};    -- Mugs of Triple Strength Brandy
+        [42]={[1]=1879159224;[2]={["FARMERSFAIRE_FESTIVAL"]=3;};[3]=5;};    -- Mugs of... Liquid
+        [43]={[1]=1879159367;[2]={["FARMERSFAIRE_FESTIVAL"]=3;};[3]=5;};    -- Saffron's Lipstick
+        [44]={[1]=1879159235;[2]={["FARMERSFAIRE_FESTIVAL"]=3;};[3]=5;};    -- Vile Vittles
+        [45]={[1]=1879233669;[2]={["FARMERSFAIRE_FESTIVAL"]=5;};[3]=5;};    -- Piles of Mysterious Powder
+        [46]={[1]=1879313837;[2]={["FARMERSFAIRE_FESTIVAL"]=40;};};         -- Steed of the Wedmath Celebration
+        [47]={[1]=1879313843;[2]={["FARMERSFAIRE_FESTIVAL"]=40;};};         -- Caparison of the Wedmath Celebration
+        [48]={[1]=1879272168;[2]={["FARMERSFAIRE_FESTIVAL"]=20;};};         -- Steed of the Midsummer
+        [49]={[1]=1879249514;[2]={["FARMERSFAIRE_FESTIVAL"]=20;};};         -- Summerdays Steed
+        [50]={[1]=1879272171;[2]={["FARMERSFAIRE_FESTIVAL"]=20;};};         -- Caparison of the Midsummer
 
         -- Thorin's Hall Fishing
         [51]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Thorin's Hall Fishing"; }; };
 
-        [52]={[2]={["SUMMER_FESTIVAL"]=5;};[1]=1879103655;};                      -- Yellow Fireworks Launcher
-        [53]={[2]={["SUMMER_HADDOCK"]=1;};[1]=1879103656;};                       -- Red Fireworks Launcher
-        [54]={[2]={["SUMMER_FESTIVAL"]=5;};[1]=1879103653;};                      -- Purple Fireworks Launcher
-        [55]={[2]={["SUMMER_FESTIVAL"]=10;};[1]=1879115999;};                     -- Triumphs of the Dwarves Music Box
-        [56]={[2]={["SUMMER_FESTIVAL"]=10;};[1]=1879138060;};                     -- Summerfest Wall
-        [57]={[2]={["SUMMER_HADDOCK"]=1;["SUMMER_FESTIVAL"]=6;};[1]=1879117676;};   -- Blue Ceremonial Dress
+        [52]={[2]={["FARMERSFAIRE_FESTIVAL"]=5;};[1]=1879103655;};                      -- Yellow Fireworks Launcher
+        [53]={[2]={["FARMERSFAIRE_HADDOCK"]=1;};[1]=1879103656;};                       -- Red Fireworks Launcher
+        [54]={[2]={["FARMERSFAIRE_FESTIVAL"]=5;};[1]=1879103653;};                      -- Purple Fireworks Launcher
+        [55]={[2]={["FARMERSFAIRE_FESTIVAL"]=10;};[1]=1879115999;};                     -- Triumphs of the Dwarves Music Box
+        [56]={[2]={["FARMERSFAIRE_FESTIVAL"]=10;};[1]=1879138060;};                     -- Summerfest Wall
+        [57]={[2]={["FARMERSFAIRE_HADDOCK"]=1;["FARMERSFAIRE_FESTIVAL"]=6;};[1]=1879117676;};   -- Blue Ceremonial Dress
 
         -- Celondim Fishing
         [58]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Celondim Fishing"; }; };
 
-        [59]={[1]=1879116002;[2]={["SUMMER_CELEBHAL"]=1;["SUMMER_FESTIVAL"]=6;};};  -- Large Flowerbed
-        [60]={[1]=1879116003;[2]={["SUMMER_FESTIVAL"]=10;};};                     -- Large Vegetable Garden
-        [61]={[1]=1879131126;[2]={["SUMMER_CELEBHAL"]=1;["SUMMER_FESTIVAL"]=6;};};  -- Summer Welcome Mat
-        [62]={[1]=1879115997;[2]={["SUMMER_FESTIVAL"]=10;};};                     -- Eternal Elven-song Music Box
-        [63]={[1]=1879138059;[2]={["SUMMER_FESTIVAL"]=10;};};                     -- Festival of Enedhin Wall
-        [64]={[1]=1879117675;[2]={["SUMMER_CELEBHAL"]=1;["SUMMER_FESTIVAL"]=6;};};  -- Green Ceremonial Dress
+        [59]={[1]=1879116002;[2]={["FARMERSFAIRE_CELEBHAL"]=1;["FARMERSFAIRE_FESTIVAL"]=6;};};  -- Large Flowerbed
+        [60]={[1]=1879116003;[2]={["FARMERSFAIRE_FESTIVAL"]=10;};};                     -- Large Vegetable Garden
+        [61]={[1]=1879131126;[2]={["FARMERSFAIRE_CELEBHAL"]=1;["FARMERSFAIRE_FESTIVAL"]=6;};};  -- Summer Welcome Mat
+        [62]={[1]=1879115997;[2]={["FARMERSFAIRE_FESTIVAL"]=10;};};                     -- Eternal Elven-song Music Box
+        [63]={[1]=1879138059;[2]={["FARMERSFAIRE_FESTIVAL"]=10;};};                     -- Festival of Enedhin Wall
+        [64]={[1]=1879117675;[2]={["FARMERSFAIRE_CELEBHAL"]=1;["FARMERSFAIRE_FESTIVAL"]=6;};};  -- Green Ceremonial Dress
 
         -- Bree Fishing
         [65]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Bree Fishing"; }; };
 
-        [66]={[1]=1879116001;[2]={["SUMMER_GOLDRED"]=1;["SUMMER_FESTIVAL"]=6;};};   -- Small Vegetable garden
-        [67]={[1]=1879116452;[2]={["SUMMER_GOLDRED"]=1;["SUMMER_FESTIVAL"]=6;};};   -- Purple Flowerbox
-        [68]={[1]=1879116451;[2]={["SUMMER_FESTIVAL"]=10;};};                     -- Orange Flowerbox
-        [69]={[1]=1879116000;[2]={["SUMMER_FESTIVAL"]=10;};};                     -- Summerdays Music box
-        [70]={[1]=1879138058;[2]={["SUMMER_FESTIVAL"]=10;};};                     -- Summerdays Wall
-        [71]={[1]=1879103151;[2]={["SUMMER_GOLDRED"]=1;["SUMMER_FESTIVAL"]=6;};};   -- White Ceremonial Dress
+        [66]={[1]=1879116001;[2]={["FARMERSFAIRE_GOLDRED"]=1;["FARMERSFAIRE_FESTIVAL"]=6;};};   -- Small Vegetable garden
+        [67]={[1]=1879116452;[2]={["FARMERSFAIRE_GOLDRED"]=1;["FARMERSFAIRE_FESTIVAL"]=6;};};   -- Purple Flowerbox
+        [68]={[1]=1879116451;[2]={["FARMERSFAIRE_FESTIVAL"]=10;};};                     -- Orange Flowerbox
+        [69]={[1]=1879116000;[2]={["FARMERSFAIRE_FESTIVAL"]=10;};};                     -- Summerdays Music box
+        [70]={[1]=1879138058;[2]={["FARMERSFAIRE_FESTIVAL"]=10;};};                     -- Summerdays Wall
+        [71]={[1]=1879103151;[2]={["FARMERSFAIRE_GOLDRED"]=1;["FARMERSFAIRE_FESTIVAL"]=6;};};   -- White Ceremonial Dress
 
         -- Shire Fishing
         [72]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Shire Fishing"; }; };
 
-        [73]={[1]=1879103534;[2]={["SUMMER_FESTIVAL"]=5;};};                      -- Blue Fireworks Launcher
-        [74]={[1]=1879103657;[2]={["SUMMER_FESTIVAL"]=5;};};                      -- Orange Fireworks Launcher
-        [75]={[1]=1879103654;[2]={["SUMMER_FESTIVAL"]=5;};};                      -- Green Fireworks Launcher
-        [76]={[1]=1879115998;[2]={["SUMMER_FLOUNDER"]=1;["SUMMER_FESTIVAL"]=6;};};  -- Seasonal Banner
-        [77]={[1]=1879138061;[2]={["SUMMER_FESTIVAL"]=10;};};                     -- Lithe Days Wall
+        [73]={[1]=1879103534;[2]={["FARMERSFAIRE_FESTIVAL"]=5;};};                      -- Blue Fireworks Launcher
+        [74]={[1]=1879103657;[2]={["FARMERSFAIRE_FESTIVAL"]=5;};};                      -- Orange Fireworks Launcher
+        [75]={[1]=1879103654;[2]={["FARMERSFAIRE_FESTIVAL"]=5;};};                      -- Green Fireworks Launcher
+        [76]={[1]=1879115998;[2]={["FARMERSFAIRE_FLOUNDER"]=1;["FARMERSFAIRE_FESTIVAL"]=6;};};  -- Seasonal Banner
+        [77]={[1]=1879138061;[2]={["FARMERSFAIRE_FESTIVAL"]=10;};};                     -- Lithe Days Wall
 
         -- Festival Tokens Exchange
         [78]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Festival Tokens Exchange"; }; };
 
-        [79]={[1]=1879115678;[2]={["SUMMER_FESTIVAL"]=12;};}; -- Celebhal
-        [80]={[1]=1879115925;[2]={["SUMMER_FESTIVAL"]=12;};}; -- Silver Haddock
-        [81]={[1]=1879115929;[2]={["SUMMER_FESTIVAL"]=12;};}; -- Golden Redfish
-        [82]={[1]=1879115924;[2]={["SUMMER_FESTIVAL"]=12;};}; -- Starry Flounder
+        [79]={[1]=1879115678;[2]={["FARMERSFAIRE_FESTIVAL"]=12;};}; -- Celebhal
+        [80]={[1]=1879115925;[2]={["FARMERSFAIRE_FESTIVAL"]=12;};}; -- Silver Haddock
+        [81]={[1]=1879115929;[2]={["FARMERSFAIRE_FESTIVAL"]=12;};}; -- Golden Redfish
+        [82]={[1]=1879115924;[2]={["FARMERSFAIRE_FESTIVAL"]=12;};}; -- Starry Flounder
 
-        [83]={[1]=1879115679;[2]={["SUMMER_AMBERJACK"]=4;};}; -- Summer Festival Token (AMBERJACK)
-        [84]={[1]=1879115679;[2]={["SUMMER_LUILLIM"]=4;};};   -- Summer Festival Token (LUILLIM)
-        [85]={[1]=1879115679;[2]={["SUMMER_DRUM"]=4;};};      -- Summer Festival Token (DRUM)
-        [86]={[1]=1879115679;[2]={["SUMMER_SMALLFISH"]=4;};}; -- Summer Festival Token (SMALLFISH)
+        [83]={[1]=1879115679;[2]={["FARMERSFAIRE_AMBERJACK"]=4;};}; -- Summer Festival Token (AMBERJACK)
+        [84]={[1]=1879115679;[2]={["FARMERSFAIRE_LUILLIM"]=4;};};   -- Summer Festival Token (LUILLIM)
+        [85]={[1]=1879115679;[2]={["FARMERSFAIRE_DRUM"]=4;};};      -- Summer Festival Token (DRUM)
+        [86]={[1]=1879115679;[2]={["FARMERSFAIRE_SMALLFISH"]=4;};}; -- Summer Festival Token (SMALLFISH)
 
-        [87]={[1]=1879115679;[2]={["SUMMER_HADDOCK"]=1;};[3]=2;};     -- Summer Festival Token (HADDOCK)
-        [88]={[1]=1879115679;[2]={["SUMMER_CELEBHAL"]=1;};[3]=2;};    -- Summer Festival Token (CELEBHAL)
-        [89]={[1]=1879115679;[2]={["SUMMER_GOLDRED"]=1;};[3]=2;};     -- Summer Festival Token (GOLDRED)
-        [90]={[1]=1879115679;[2]={["SUMMER_FLOUNDER"]=1;};[3]=2;};    -- Summer Festival Token (FLOUNDER)
+        [87]={[1]=1879115679;[2]={["FARMERSFAIRE_HADDOCK"]=1;};[3]=2;};     -- Summer Festival Token (HADDOCK)
+        [88]={[1]=1879115679;[2]={["FARMERSFAIRE_CELEBHAL"]=1;};[3]=2;};    -- Summer Festival Token (CELEBHAL)
+        [89]={[1]=1879115679;[2]={["FARMERSFAIRE_GOLDRED"]=1;};[3]=2;};     -- Summer Festival Token (GOLDRED)
+        [90]={[1]=1879115679;[2]={["FARMERSFAIRE_FLOUNDER"]=1;};[3]=2;};    -- Summer Festival Token (FLOUNDER)
 
     };
 
@@ -404,12 +403,6 @@ _BARTER =
         [48]={[1]=1879305987;[2]={["ANNIVERSARY_FESTIVAL"]=10;};};        -- Caparison of Odogil
         [49]={[1]=1879201537;[2]={["ANNIVERSARY_MITHRIL"]=70;};};        -- Anniversary Steed
         [50]={[1]=1879233624;[2]={["ANNIVERSARY_MITHRIL"]=70;};};        -- Fireworks Laden Steed
-    };
-
-    -- FARMERS FAIRE --------------------------------------------------------------------------------------------
-    [FARMERSFAIRE] =
-    {
-
     };
 
     -- HOBNANIGANS ----------------------------

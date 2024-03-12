@@ -8,7 +8,6 @@ RANDOM = 5;
 
 -- Festivals:
 SPRING = "SPRING";
-SUMMER = "SUMMER";
 HARVESTMATH = "HARVESTMATH";
 YULE = "YULE";
 ANNIVERSARY = "ANNIVERSARY";
@@ -62,7 +61,6 @@ _LANG = {
 
     ["FESTIVALS"] = {
         [SPRING]       = {["ENGLISH"] = "Spring";           ["FRENCH"] = "Printemps";           ["GERMAN"] = "Frühling";    };
-        [SUMMER]       = {["ENGLISH"] = "Summer";           ["FRENCH"] = "\195\137t\195\169";   ["GERMAN"] = "Summer";      };
         [HARVESTMATH]  = {["ENGLISH"] = "Harvestmath";      ["FRENCH"] = "Moissines";           ["GERMAN"] = "Ernte";       };
         [YULE]         = {["ENGLISH"] = "Yule";             ["FRENCH"] = "Yule";                ["GERMAN"] = "Julfest";     };
         [ANNIVERSARY]  = {["ENGLISH"] = "Anniversary";      ["FRENCH"] = "Anniversaire";        ["GERMAN"] = "Jubiläums";   };
@@ -502,7 +500,6 @@ _LANG = {
 
     ["DEBUFFS"] = {    -- Must match the names given in-game
         [SPRING] = {};
-        [SUMMER] = {};
 
         [HARVESTMATH] = {
             [1] = { key = "SCROLLSEARCHING";    name =     {["ENGLISH"] = "Scroll Searching";               ["FRENCH"] = "Pêche aux parchemins";        ["GERMAN"] = "Schriftrollenziehen";         }; };
@@ -571,16 +568,6 @@ _LANG = {
             ["MISPLACED_COMPANIONS"] = {["ENGLISH"] = "Misplaced Companions";                       ["FRENCH"] = "Les compagnons égarés";                               ["GERMAN"] = "Am falschen Ort";                                     };
             ["A_LAUGH_AT_THE_LOST"]  = {["ENGLISH"] = "A Laugh at the Lost";                        ["FRENCH"] = "Une farce aux perdus";                                ["GERMAN"] = "Ein Witz auf Kosten der Verirrten";                   };
             ["TERRIBLE_TWEENS"]      = {["ENGLISH"] = "Terrible Tweens";                            ["FRENCH"] = "Terribles jeunes";                                    ["GERMAN"] = "Fürchterliche Zwanziger";                             };
-        };
-
-        [SUMMER] = { -- Todo: Pick up translations here:
-            ["TOOMUCHFESTIVAL"]  = {["ENGLISH"] = "Too Much Festival";          ["FRENCH"] = "Trop de festivités";                  ["GERMAN"] = "Zu viel Feierei";                 };
-            ["GOINGHUNGRY"]      = {["ENGLISH"] = "Going Hungry";               ["FRENCH"] = "La faim qui vous tenaille";           ["GERMAN"] = "Hunger schieben";                 };
-            ["BELONGINGS"]       = {["ENGLISH"] = "Belongings Gone Fishing";    ["FRENCH"] = "A la pêche aux effets personnels";    ["GERMAN"] = "Ins Wasser gefallen";             };
-            ["STOCKINGPOND"]     = {["ENGLISH"] = "Stocking the Pond";          ["FRENCH"] = "Un étang à remplir";                  ["GERMAN"] = "Bestücken des Teichs";            };
-            ["FORGOTTENERRANDS"] = {["ENGLISH"] = "Forgotten Errands";          ["FRENCH"] = "Les objets égarés";                   ["GERMAN"] = "Vergessene Besorgungen";          };
-            ["WAGER"]            = {["ENGLISH"] = "Losing More Than a Wager";   ["FRENCH"] = "Plus qu'un simple pari";              ["GERMAN"] = "Nicht nur den Einsatz verloren";  };
-            ["MISSINGTHINGS"]    = {["ENGLISH"] = "Missing Things";             ["FRENCH"] = "Les objets perdus";                   ["GERMAN"] = "Verlorene Dinge";                 };
         };
 
         [HARVESTMATH] = {
@@ -662,6 +649,15 @@ _LANG = {
             ["A_SHOPPING_LIST"]             = { ["ENGLISH"] = "A Shopping List";                ["FRENCH"] = "Une liste de courses";                    ["GERMAN"] = "Eine Einkaufsliste";                  };
             ["A_MARKET_LIST"]               = { ["ENGLISH"] = "A Market List";                  ["FRENCH"] = "Une liste de marchés";                    ["GERMAN"] = "Eine Marktliste";                     };
             ["A_VENDOR_LIST"]               = { ["ENGLISH"] = "A Vendor List";                  ["FRENCH"] = "Une liste de marchands";                  ["GERMAN"] = "Eine Händlerliste";                   };
+
+            --- Added from Summer:
+            ["TOOMUCHFESTIVAL"]  = {["ENGLISH"] = "Too Much Festival";          ["FRENCH"] = "Trop de festivités";                  ["GERMAN"] = "Zu viel Feierei";                 };
+            ["GOINGHUNGRY"]      = {["ENGLISH"] = "Going Hungry";               ["FRENCH"] = "La faim qui vous tenaille";           ["GERMAN"] = "Hunger schieben";                 };
+            ["BELONGINGS"]       = {["ENGLISH"] = "Belongings Gone Fishing";    ["FRENCH"] = "A la pêche aux effets personnels";    ["GERMAN"] = "Ins Wasser gefallen";             };
+            ["STOCKINGPOND"]     = {["ENGLISH"] = "Stocking the Pond";          ["FRENCH"] = "Un étang à remplir";                  ["GERMAN"] = "Bestücken des Teichs";            };
+            ["FORGOTTENERRANDS"] = {["ENGLISH"] = "Forgotten Errands";          ["FRENCH"] = "Les objets égarés";                   ["GERMAN"] = "Vergessene Besorgungen";          };
+            ["WAGER"]            = {["ENGLISH"] = "Losing More Than a Wager";   ["FRENCH"] = "Plus qu'un simple pari";              ["GERMAN"] = "Nicht nur den Einsatz verloren";  };
+            ["MISSINGTHINGS"]    = {["ENGLISH"] = "Missing Things";             ["FRENCH"] = "Les objets perdus";                   ["GERMAN"] = "Verlorene Dinge";                 };
         };
 
         [HOBNANIGANS] = {

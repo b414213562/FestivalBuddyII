@@ -38,10 +38,6 @@ _IMAGES = {
         ["MAZEMAP_SIGNS"] = RESOURCEDIR .. "Maze Map-Signs.tga";
     };
 
-    [SUMMER] = {
-        ["BACKGROUND"] = RESOURCEDIR .. "MainWin_Back_Summer.tga";
-    };
-
     [HARVESTMATH] = {
         ["BACKGROUND"] = RESOURCEDIR .. "MainWin_Back_Harvestmath.tga";
 

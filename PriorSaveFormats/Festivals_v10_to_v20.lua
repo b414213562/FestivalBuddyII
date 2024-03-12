@@ -12,16 +12,18 @@ _V10_FESTIVAL_DATA = {
     [9] = "ILAA";
 };
 
+---Update festival numbers, remove SUMMER.
+---@param charsTable any
 function Update_FestivalBuddy_CharData_Festivals_from_v10_to_v20(charsTable)
     -- For each player's festival data:
     for playerName,festivalsTable in pairs(charsTable) do
         -- For each festival in the festival data:
         local newFESTIVALS = { };
         for festivalNumber, festivalData in pairs(festivalsTable) do
-            -- Fix up the TOKENS table:
-
-            local festivalName = _V10_FESTIVAL_DATA[festivalNumber];
-            newFESTIVALS[festivalName] = festivalData;
+            local festivalKey = _V10_FESTIVAL_DATA[festivalNumber];
+            if (festivalKey ~= "SUMMER") then
+                newFESTIVALS[festivalKey] = festivalData;
+            end
         end
         charsTable[playerName] = newFESTIVALS;
     end

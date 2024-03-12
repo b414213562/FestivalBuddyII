@@ -12,19 +12,6 @@ TOKEN_IDS = {
         ["SPRING_MARIGOLD"] = 0x7000D70A;
         ["SPRING_PRIMROSE"] = 0x7000D709;
     };
-    [SUMMER] = {
-        ["SUMMER_RACE"]      = 0x700107BC;
-        ["SUMMER_FESTIVAL"]  = 0x7001079F;
-        ["SUMMER_HADDOCK"]   = 0x70010895;
-        ["SUMMER_AMBERJACK"] = 0x7001079A;
-        ["SUMMER_LUILLIM"]   = 0x7001079B;
-        ["SUMMER_DRUM"]      = 0x7001079C;
-        ["SUMMER_CELEBHAL"]  = 0x7001079E;
-        ["SUMMER_GOLDRED"]   = 0x70010899;
-        ["SUMMER_FLOUNDER"]  = 0x70010894;
-        ["SUMMER_SMALLFISH"] = 0x70010897;
-        ["SUMMER_MITHRIL"]   = 0x70032BB7;
-    };
     [HARVESTMATH] = {
         ["HARVESTMATH_RACE"]               = 0x7000D145;
         ["HARVESTMATH_FESTIVAL"]           = 0x7000C3A0;
@@ -61,8 +48,17 @@ TOKEN_IDS = {
         ["ANNIVERSARY_MITHRIL"]  = 0x70032BB7;
     };
     [FARMERSFAIRE] = {
+        ["SUMMER_RACE"]           = 0x700107BC;
         ["FARMERSFAIRE_RACE"]     = 0x7002BBD0;
         ["FARMERSFAIRE_FESTIVAL"] = 0x7002ADA3;
+        ["FARMERSFAIRE_HADDOCK"]   = 0x70010895;
+        ["FARMERSFAIRE_AMBERJACK"] = 0x7001079A;
+        ["FARMERSFAIRE_LUILLIM"]   = 0x7001079B;
+        ["FARMERSFAIRE_DRUM"]      = 0x7001079C;
+        ["FARMERSFAIRE_CELEBHAL"]  = 0x7001079E;
+        ["FARMERSFAIRE_GOLDRED"]   = 0x70010899;
+        ["FARMERSFAIRE_FLOUNDER"]  = 0x70010894;
+        ["FARMERSFAIRE_SMALLFISH"] = 0x70010897;
         ["FARMERSFAIRE_MITHRIL"]  = 0x70032BB7;
     };
     [HOBNANIGANS] = {
@@ -94,19 +90,6 @@ TOKEN_UI_ORDER = {
         [4] = "SPRING_VIOLET";
         [5] = "SPRING_MARIGOLD";
         [6] = "SPRING_PRIMROSE";
-    };
-    [SUMMER] = {
-        [1] = "SUMMER_RACE";
-        [2] = "SUMMER_FESTIVAL";
-        [3] = "SUMMER_HADDOCK";
-        [4] = "SUMMER_AMBERJACK";
-        [5] = "SUMMER_LUILLIM";
-        [6] = "SUMMER_DRUM";
-        [7] = "SUMMER_CELEBHAL";
-        [8] = "SUMMER_GOLDRED";
-        [9] = "SUMMER_FLOUNDER";
-        [10] = "SUMMER_SMALLFISH";
-        [11] = "SUMMER_MITHRIL";
     };
     [HARVESTMATH] = {
         [1] = "HARVESTMATH_RACE";
@@ -144,9 +127,18 @@ TOKEN_UI_ORDER = {
         [4] = "ANNIVERSARY_MITHRIL";
     };
     [FARMERSFAIRE] = {
-        [1] = "FARMERSFAIRE_RACE";
-        [2] = "FARMERSFAIRE_FESTIVAL";
-        [3] = "FARMERSFAIRE_MITHRIL";
+        [1] = "SUMMER_RACE";
+        [2] = "FARMERSFAIRE_RACE";
+        [3] = "FARMERSFAIRE_FESTIVAL";
+        [4] = "FARMERSFAIRE_HADDOCK";
+        [5] = "FARMERSFAIRE_AMBERJACK";
+        [6] = "FARMERSFAIRE_LUILLIM";
+        [7] = "FARMERSFAIRE_DRUM";
+        [8] = "FARMERSFAIRE_CELEBHAL";
+        [9] = "FARMERSFAIRE_GOLDRED";
+        [10] = "FARMERSFAIRE_FLOUNDER";
+        [11] = "FARMERSFAIRE_SMALLFISH";
+        [12] = "FARMERSFAIRE_MITHRIL";
     };
     [HOBNANIGANS] = {
         [1] = "HOBNANIGANS_TOKEN";

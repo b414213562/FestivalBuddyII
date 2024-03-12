@@ -351,11 +351,10 @@ FESTIVALS_UI_ORDER = {
     [1] = SPRING;       -- 2024:  3/12@10am	4/1@3am
     [2] = ANNIVERSARY;  -- 2024:  4/18@10am	5/6@3am
     [3] = MIDSUMMER;    -- 2024:  6/6@10am	6/26@3am
-    [4] = SUMMER;       -- no longer exists, combined with Farmers Faire
-    [5] = FARMERSFAIRE; -- 2024:  8/15@10am	9/4@3am
-    [6] = HARVESTMATH;  -- 2024: 10/10@10am	11/4@3am
-    [7] = YULE;         -- 2024: 12/12@10am	1/6/25@3am
+    [4] = FARMERSFAIRE; -- 2024:  8/15@10am	9/4@3am
+    [5] = HARVESTMATH;  -- 2024: 10/10@10am	11/4@3am
+    [6] = YULE;         -- 2024: 12/12@10am	1/6/25@3am
 
-    [8] = HOBNANIGANS;
-    [9] = ILAA;
+    [7] = HOBNANIGANS;
+    [8] = ILAA;
 };

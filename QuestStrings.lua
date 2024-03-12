@@ -236,68 +236,6 @@ _QUESTSTRINGS = {
 
     };
 
-    -- SUMMER ------------------------------------------------------------------------------------------------------
-    [SUMMER] = {
-
-        ["TOOMUCHFESTIVAL"] = {
-            ["STRING"] = {
-                ["ENGLISH"] = "Find all 5 of Foxglove's items. They can all be found about the festival area.\n\nTeapot - 29.7s, 71.5w \nParasol - 30.2s, 71.5w \nWine - 29.9s, 71.1w \nBook - 29.7s, 71.2w \nTwine - 29.9s, 71.5w \n";
-                ["FRENCH"] = "Find all 5 of Foxglove's items. They can all be found about the festival area.\n\nTeapot - 29.7s, 71.5w \nParasol - 30.2s, 71.5w \nWine - 29.9s, 71.1w \nBook - 29.7s, 71.2w \nTwine - 29.9s, 71.5w \n";
-                ["GERMAN"] = "Finde alle 5 Gegenstände für Fuchsia. \n\nTeekanne - 29.7s, 71.5w \nSchirm - 30.2s, 71.5w \nWein - 29.9s, 71.1w \nBuch - 29.7s, 71.2w \nZwirn - 29.9s, 71.5w\n";
-            };
-        };
-
-        ["GOINGHUNGRY"] = {
-            ["STRING"] = {
-                ["ENGLISH"] = "Find all 5 of Melilot's items.\n\nPorridge - 29.4s, 71.4w \nCheese - 29.7s, 72.0w \nBread - 30.9s, 71.2w \nEggs - 30.4s, 71.4w \nMushrooms - 29.4s, 70.5w \n";
-                ["FRENCH"] = "Find all 5 of Melilot's items.\n\nPorridge - 29.4s, 71.4w \nCheese - 29.7s, 72.0w \nBread - 30.9s, 71.2w \nEggs - 30.4s, 71.4w \nMushrooms - 29.4s, 70.5w \n";
-                ["GERMAN"] = "Finde alle 5 Gegenstände für Melilot.\n\nHaferbrei - 29.4s, 71.4w \nKäse - 29.7s, 72.0w \nBrot - 30.9s, 71.2w \nEier - 30.4s, 71.4w \nPilze - 29.4s, 70.5w \n";
-            };
-        };
-
-        ["BELONGINGS"] = {
-            ["STRING"] = {
-                ["ENGLISH"] = "Find all 5 of Mosco's items.\n\nLucky Bait - 30.5s, 70.1w \nFishing Pole - 31.3s, 69.9w \nHoe - 31.0s, 70.0w \nCloak - 31.3s, 69.2w \nElevenses Meal - 30.7s, 69.6w \n";
-                ["FRENCH"] = "Find all 5 of Mosco's items.\n\nLucky Bait - 30.5s, 70.1w \nFishing Pole - 31.3s, 69.9w \nHoe - 31.0s, 70.0w \nCloak - 31.3s, 69.2w \nElevenses Meal - 30.7s, 69.6w \n";
-                ["GERMAN"] = "Finde alle 5 Gegenstände für Mosco.\n\nGlücksköder - 30.5s, 70.1w \nAngelrute - 31.3s, 69.9w \nKorb - 31.0s, 70.0w \nUmhang - 31.3s, 69.2w \nImbiss - 30.7s, 69.6w \n";
-            };
-        };
-
-        ["STOCKINGPOND"] = {
-            ["STRING"] = {
-                ["ENGLISH"] = "1) The best place to catch amberjacks is inside Thorin's Hall near the waterfall.\n\n2) The best place to catch luillim is in Celondim by the docks.\n\n3) The best place to catch drum is near Bree, at the pond by Pierson's Farm (33.0s, 49.8w).";
-                ["FRENCH"] = "1) The best place to catch amberjacks is inside Thorin's Hall near the waterfall.\n\n2) The best place to catch luillim is in Celondim by the docks.\n\n3) The best place to catch drum is near Bree, at the pond by Pierson's Farm (33.0s, 49.8w).";
-                ["GERMAN"] = "1) Der beste Platz für amberjacks ist in Thorins Halle nahe des Wasserfalls.\n\n2) Der beste Platz für Luillim ist am Hafen in Celondim.\n\n3) Der beste Platz für Trommelfische ist südlich von Bree, am Teich (33.0s, 49.8w).";
-            };
-        };
-
-        ["FORGOTTENERRANDS"] = {
-            ["STRING"] = {
-                ["ENGLISH"] = "Find all 5 of Ambi's items.\n\nRed Jar - auction room by Farmann \nGreen Jar - vault by Escrow Broker Tuki \nBlue Bottle - main hall by minstrel trainer \nNote - eastern slope to the tavern \nPack - next to the bridge by the waterfall";
-                ["FRENCH"] = "Find all 5 of Ambi's items.\n\nRed Jar - auction room by Farmann \nGreen Jar - vault by Escrow Broker Tuki \nBlue Bottle - main hall by minstrel trainer \nNote - eastern slope to the tavern \nPack - next to the bridge by the waterfall";
-                ["GERMAN"] = "Finde alle 5 Gegenstände für Ambi.\n\nRote Vase - Auktionshalle nähe Farmann \nGrüne Vase - Vermögensverwahrer Tuki \nBlaue Flasche - Haupthalle beim Barden-Trainer \nNotiz - östliche Rampe zur Kneipe\nRucksack - an der Brücke beim Wasserfall";
-            };
-        };
-
-        ["WAGER"] = {
-            ["STRING"] = {
-                ["ENGLISH"] = "Find all 5 of Skalli's items.\n\nThe items are all easily found within the race arena.";
-                ["FRENCH"] = "Find all 5 of Skalli's items.\n\nThe items are all easily found within the race arena.";
-                ["GERMAN"] = "Finde alle 5 Gegenstände für Skalli.\n\nGegenstände befinden sich alle in der Renn-Arena.";
-            };
-        };
-
-        ["MISSINGTHINGS"] = {
-            ["STRING"] = {
-                ["ENGLISH"] = "Find all 5 of Lalfor's items about Duillon.\n\nGoblet - 24.1s, 93.2w \nJewellery Box - 23.9s, 93.0w \nBlue Book - 23.8s, 92.9w \nBrown Book - 23.8s, 92.7w \nBundle of Books - 23.9s, 92.7w \n";
-                ["FRENCH"] = "Find all 5 of Lalfor's items about Duillon.\n\nGoblet - 24.1s, 93.2w \nJewellery Box - 23.9s, 93.0w \nBlue Book - 23.8s, 92.9w \nBrown Book - 23.8s, 92.7w \nBundle of Books - 23.9s, 92.7w \n";
-                ["GERMAN"] = "Finde alle 5 Gegenstände für Lalfor um Duillon.\n\nKelch - 24.1s, 93.2w \nJuwelenkiste - 23.9s, 93.0w \nblaues Buch - 23.8s, 92.9w \nbraunes Buch - 23.8s, 92.7w \nBücherbündel - 23.9s, 92.7w \n";
-            };
-        };
-
-    };
-
-
     -- HARVESTMATH -----------------------------------------------------------------------------------------------------
     [HARVESTMATH]= {
         -- Festival maze map coordinates
@@ -976,6 +914,63 @@ Return to Cora Brownlock.
             };
         };
 
+        
+        --- Moved from Summer:
+        ["TOOMUCHFESTIVAL"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = "Find all 5 of Foxglove's items. They can all be found about the festival area.\n\nTeapot - 29.7s, 71.5w \nParasol - 30.2s, 71.5w \nWine - 29.9s, 71.1w \nBook - 29.7s, 71.2w \nTwine - 29.9s, 71.5w \n";
+                ["FRENCH"] = "Find all 5 of Foxglove's items. They can all be found about the festival area.\n\nTeapot - 29.7s, 71.5w \nParasol - 30.2s, 71.5w \nWine - 29.9s, 71.1w \nBook - 29.7s, 71.2w \nTwine - 29.9s, 71.5w \n";
+                ["GERMAN"] = "Finde alle 5 Gegenstände für Fuchsia. \n\nTeekanne - 29.7s, 71.5w \nSchirm - 30.2s, 71.5w \nWein - 29.9s, 71.1w \nBuch - 29.7s, 71.2w \nZwirn - 29.9s, 71.5w\n";
+            };
+        };
+
+        ["GOINGHUNGRY"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = "Find all 5 of Melilot's items.\n\nPorridge - 29.4s, 71.4w \nCheese - 29.7s, 72.0w \nBread - 30.9s, 71.2w \nEggs - 30.4s, 71.4w \nMushrooms - 29.4s, 70.5w \n";
+                ["FRENCH"] = "Find all 5 of Melilot's items.\n\nPorridge - 29.4s, 71.4w \nCheese - 29.7s, 72.0w \nBread - 30.9s, 71.2w \nEggs - 30.4s, 71.4w \nMushrooms - 29.4s, 70.5w \n";
+                ["GERMAN"] = "Finde alle 5 Gegenstände für Melilot.\n\nHaferbrei - 29.4s, 71.4w \nKäse - 29.7s, 72.0w \nBrot - 30.9s, 71.2w \nEier - 30.4s, 71.4w \nPilze - 29.4s, 70.5w \n";
+            };
+        };
+
+        ["BELONGINGS"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = "Find all 5 of Mosco's items.\n\nLucky Bait - 30.5s, 70.1w \nFishing Pole - 31.3s, 69.9w \nHoe - 31.0s, 70.0w \nCloak - 31.3s, 69.2w \nElevenses Meal - 30.7s, 69.6w \n";
+                ["FRENCH"] = "Find all 5 of Mosco's items.\n\nLucky Bait - 30.5s, 70.1w \nFishing Pole - 31.3s, 69.9w \nHoe - 31.0s, 70.0w \nCloak - 31.3s, 69.2w \nElevenses Meal - 30.7s, 69.6w \n";
+                ["GERMAN"] = "Finde alle 5 Gegenstände für Mosco.\n\nGlücksköder - 30.5s, 70.1w \nAngelrute - 31.3s, 69.9w \nKorb - 31.0s, 70.0w \nUmhang - 31.3s, 69.2w \nImbiss - 30.7s, 69.6w \n";
+            };
+        };
+
+        ["STOCKINGPOND"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = "1) The best place to catch amberjacks is inside Thorin's Hall near the waterfall.\n\n2) The best place to catch luillim is in Celondim by the docks.\n\n3) The best place to catch drum is near Bree, at the pond by Pierson's Farm (33.0s, 49.8w).";
+                ["FRENCH"] = "1) The best place to catch amberjacks is inside Thorin's Hall near the waterfall.\n\n2) The best place to catch luillim is in Celondim by the docks.\n\n3) The best place to catch drum is near Bree, at the pond by Pierson's Farm (33.0s, 49.8w).";
+                ["GERMAN"] = "1) Der beste Platz für amberjacks ist in Thorins Halle nahe des Wasserfalls.\n\n2) Der beste Platz für Luillim ist am Hafen in Celondim.\n\n3) Der beste Platz für Trommelfische ist südlich von Bree, am Teich (33.0s, 49.8w).";
+            };
+        };
+
+        ["FORGOTTENERRANDS"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = "Find all 5 of Ambi's items.\n\nRed Jar - auction room by Farmann \nGreen Jar - vault by Escrow Broker Tuki \nBlue Bottle - main hall by minstrel trainer \nNote - eastern slope to the tavern \nPack - next to the bridge by the waterfall";
+                ["FRENCH"] = "Find all 5 of Ambi's items.\n\nRed Jar - auction room by Farmann \nGreen Jar - vault by Escrow Broker Tuki \nBlue Bottle - main hall by minstrel trainer \nNote - eastern slope to the tavern \nPack - next to the bridge by the waterfall";
+                ["GERMAN"] = "Finde alle 5 Gegenstände für Ambi.\n\nRote Vase - Auktionshalle nähe Farmann \nGrüne Vase - Vermögensverwahrer Tuki \nBlaue Flasche - Haupthalle beim Barden-Trainer \nNotiz - östliche Rampe zur Kneipe\nRucksack - an der Brücke beim Wasserfall";
+            };
+        };
+
+        ["WAGER"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = "Find all 5 of Skalli's items.\n\nThe items are all easily found within the race arena.";
+                ["FRENCH"] = "Find all 5 of Skalli's items.\n\nThe items are all easily found within the race arena.";
+                ["GERMAN"] = "Finde alle 5 Gegenstände für Skalli.\n\nGegenstände befinden sich alle in der Renn-Arena.";
+            };
+        };
+
+        ["MISSINGTHINGS"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = "Find all 5 of Lalfor's items about Duillon.\n\nGoblet - 24.1s, 93.2w \nJewellery Box - 23.9s, 93.0w \nBlue Book - 23.8s, 92.9w \nBrown Book - 23.8s, 92.7w \nBundle of Books - 23.9s, 92.7w \n";
+                ["FRENCH"] = "Find all 5 of Lalfor's items about Duillon.\n\nGoblet - 24.1s, 93.2w \nJewellery Box - 23.9s, 93.0w \nBlue Book - 23.8s, 92.9w \nBrown Book - 23.8s, 92.7w \nBundle of Books - 23.9s, 92.7w \n";
+                ["GERMAN"] = "Finde alle 5 Gegenstände für Lalfor um Duillon.\n\nKelch - 24.1s, 93.2w \nJuwelenkiste - 23.9s, 93.0w \nblaues Buch - 23.8s, 92.9w \nbraunes Buch - 23.8s, 92.7w \nBücherbündel - 23.9s, 92.7w \n";
+            };
+        };
     };
 
     [HOBNANIGANS] = {

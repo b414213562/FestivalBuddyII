@@ -1,11 +1,3 @@
-Get rid of summer!!!! festival
-    Convert summer tokens to farmers faire tokens? Or just get rid of them, since they don't exist anymore?
-    What else?!?
-        AllChars / FestivalBuddy_CharData.plugindata:
-            CHARS / char / SUMMER / COOLDOWNS & TOKENS
-            For tokens like SUMMER_SMALLFISH, are we changing to FARMERSFAIR_SMALLFISH?
-            
-
 
 Logic fixes:
     MainWin:GetTokenIndex - n^2 iterations through wallet contents

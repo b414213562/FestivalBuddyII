@@ -76,6 +76,22 @@ _V10_FESTIVAL_TOKEN_DATA = {
     };
 };
 
+-- Table for moving some SUMMER tokens under FARMERS FAIRE
+-- If an entry is here, it should be moved from SUMMER to FARMERS FAIRE under the new name.
+-- If an entry is not here, the data should not be copied. (e.g. SUMMER festival tokens)
+_V10_to_V20_SUMMER_TO_FARMERSFAIRE_TOKEN_KEYS = {
+    -- Old Summer token  = New Farmers Faire token
+    ["SUMMER_RACE"]      = "SUMMER_RACE";
+    ["SUMMER_HADDOCK"]   = "FARMERSFAIRE_HADDOCK";
+    ["SUMMER_AMBERJACK"] = "FARMERSFAIRE_AMBERJACK";
+    ["SUMMER_LUILLIM"]   = "FARMERSFAIRE_LUILLIM";
+    ["SUMMER_DRUM"]      = "FARMERSFAIRE_DRUM";
+    ["SUMMER_CELEBHAL"]  = "FARMERSFAIRE_CELEBHAL";
+    ["SUMMER_GOLDRED"]   = "FARMERSFAIRE_GOLDRED";
+    ["SUMMER_FLOUNDER"]  = "FARMERSFAIRE_FLOUNDER";
+    ["SUMMER_SMALLFISH"] = "FARMERSFAIRE_SMALLFISH";
+};
+
 -- TODO:
 -- This function converts this:
 -- ["Dief"] = {
@@ -102,9 +118,12 @@ _V10_FESTIVAL_TOKEN_DATA = {
 --        ["SPRING_PRIMROSE"] = "0";
 --     }
 
+--- Updates the TOKENs save file table to be indexed by the token key instead of the UI display index.
+--- Also merges the SUMMER tokens into the FARMERS FAIRE tokens.
+---@param charsTable any
 function Update_tokens_from_v10_to_v20(charsTable)
     -- For each player's festival data:
-    for playerName,festivalsTable in pairs(charsTable) do
+    for charName,festivalsTable in pairs(charsTable) do
         -- For each festival in the festival data:
         for festivalNumber, festivalData in pairs(festivalsTable) do
             -- Fix up the TOKENS table:
@@ -115,6 +134,17 @@ function Update_tokens_from_v10_to_v20(charsTable)
             end
             festivalData.TOKENS = newTOKENS;
         end
+
+        -- Merge SUMMER into FARMERS FAIRE:
+        local summerFestivalNumber = 2;
+        local farmersfaireFestivalNumber = 6;
+        for tokenKey, tokenCount in pairs(festivalsTable[summerFestivalNumber].TOKENS) do
+            local newKey = _V10_to_V20_SUMMER_TO_FARMERSFAIRE_TOKEN_KEYS[tokenKey]; 
+            if (newKey) then
+                festivalsTable[farmersfaireFestivalNumber].TOKENS[newKey] = tokenCount;
+            end
+        end
+
     end
 
 end
