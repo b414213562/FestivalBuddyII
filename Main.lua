@@ -146,6 +146,9 @@ function LoadSettingsFileCharacter()
     end -- end 1.0 to 2.0 update
 
     -- Populate a global variable:
+    if (not SETTINGS.FESTIVAL) then
+        SETTINGS.FESTIVAL = SPRING;
+    end
     SELECTEDFESTIVAL = SETTINGS.FESTIVAL;
 
 end
