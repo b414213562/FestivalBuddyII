@@ -92,7 +92,30 @@ _V10_to_V20_SUMMER_TO_FARMERSFAIRE_TOKEN_KEYS = {
     ["SUMMER_SMALLFISH"] = "FARMERSFAIRE_SMALLFISH";
 };
 
--- TODO:
+_V10_TOKENS_TO_DELETE = {
+    [1] = { -- SPRING
+        [2] = "SPRING_MITHRIL";
+    };
+    [3] = { -- HARVESTMATH
+        [3] = "HARVESTMATH_MITHRIL";
+    };
+    [4] = { -- YULE
+        [5] = "YULE_MITHRIL";
+    };
+    [5] = { -- ANNIVERSARY
+        [4] = "ANNIVERSARY_MITHRIL";
+    };
+    [6] = { -- FARMERSFAIRE
+        [3] = "FARMERSFAIRE_MITHRIL";
+    };
+    [7] = { -- HOBNANIGANS
+        [8] = "HOBNANIGANS_MITHRIL";
+    };
+    [8] = { -- MIDSUMMER
+        [2] = "MIDSUMMER_MC";
+    };
+};
+
 -- This function converts this:
 -- ["Dief"] = {
 --   ["1"] = { -- SPRING
@@ -120,6 +143,7 @@ _V10_to_V20_SUMMER_TO_FARMERSFAIRE_TOKEN_KEYS = {
 
 --- Updates the TOKENs save file table to be indexed by the token key instead of the UI display index.
 --- Also merges the SUMMER tokens into the FARMERS FAIRE tokens.
+--- Also deletes old Mithril Coin entries in favor of the new GENERIC system.
 ---@param charsTable any
 function Update_tokens_from_v10_to_v20(charsTable)
     -- For each player's festival data:
@@ -130,7 +154,12 @@ function Update_tokens_from_v10_to_v20(charsTable)
             local newTOKENS = { };
             for tokenNumber, tokenCount in pairs(festivalData.TOKENS) do
                 local tokenName = _V10_FESTIVAL_TOKEN_DATA[festivalNumber][tokenNumber];
-                newTOKENS[tokenName] = tokenCount;
+
+                -- Skip any tokens we're deleting
+                if (not _V10_TOKENS_TO_DELETE[festivalNumber] or
+                    not _V10_TOKENS_TO_DELETE[festivalNumber][tokenNumber]) then
+                    newTOKENS[tokenName] = tokenCount;
+                end
             end
             festivalData.TOKENS = newTOKENS;
         end
@@ -142,6 +171,19 @@ function Update_tokens_from_v10_to_v20(charsTable)
             local newKey = _V10_to_V20_SUMMER_TO_FARMERSFAIRE_TOKEN_KEYS[tokenKey]; 
             if (newKey) then
                 festivalsTable[farmersfaireFestivalNumber].TOKENS[newKey] = tokenCount;
+            end
+        end
+
+        -- And add a GENERIC table:
+        local genericFestivalNumber = 10;
+        if festivalsTable[genericFestivalNumber] == nil then festivalsTable[genericFestivalNumber] = {}; end
+        if festivalsTable[genericFestivalNumber]["TOKENS"] == nil then festivalsTable[genericFestivalNumber]["TOKENS"] = {}; end
+
+        for k,v in pairs (TOKEN_IDS[GENERIC]) do
+            if (not IsGenericTokenAccountWide(k)) then
+                if festivalsTable[genericFestivalNumber]["TOKENS"][k] == nil then
+                    festivalsTable[genericFestivalNumber]["TOKENS"][k] = 0;
+                end
             end
         end
 

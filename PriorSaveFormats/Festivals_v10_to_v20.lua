@@ -10,6 +10,7 @@ _V10_FESTIVAL_DATA = {
     [7] = "HOBNANIGANS";
     [8] = "MIDSUMMER";
     [9] = "ILAA";
+    [10] = "GENERIC"; -- Generated during the v1.0 to v2.0 upgrade
 };
 
 ---Update festival numbers, remove SUMMER.

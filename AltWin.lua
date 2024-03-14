@@ -137,10 +137,12 @@ function RefreshAltDisplay(NAME)
 
     if _RELFESTIVALTABLE == nil then return end;
 
-    for tokenUiIndex=1, #TOKEN_UI_ORDER[SELECTEDFESTIVAL] do
-        local tokenKey = TOKEN_UI_ORDER[SELECTEDFESTIVAL][tokenUiIndex];
-        local tokenID = TOKEN_IDS[SELECTEDFESTIVAL][tokenKey];
-        local tokenCount = _RELFESTIVALTABLE["TOKENS"][tokenKey];
+    local festivalTokensUIOrder = GetFestivalTokensUIOrder(SELECTEDFESTIVAL);
+
+    for tokenUiIndex=1, #festivalTokensUIOrder do
+        local tokenKey = festivalTokensUIOrder[tokenUiIndex];
+        local tokenID = GetTokenID(SELECTEDFESTIVAL, tokenKey);
+        local tokenCount = GetTokenQuantityFromSaveFile(_CHARDATA.CHARS[NAME], SELECTEDFESTIVAL, tokenKey);
 
         if tokenCount > 0 and tokenID then
             -- Only add tokens that the player has.

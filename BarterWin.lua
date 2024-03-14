@@ -129,8 +129,9 @@ function RefreshBarterList()
 
             if type(v[2])=='table' then
                 for token_key,token_count in pairs (v[2]) do
-                    local token_id = TOKEN_IDS[SELECTEDFESTIVAL][token_key];
+                    local token_id = GetTokenID(SELECTEDFESTIVAL, token_key);
                     local tokenItem = GetItemFromID(token_id);
+
                     if tokenItem ~= nil then
                         local cTokenInspect = Turbine.UI.Lotro.ItemInfoControl();
                         cTokenInspect:SetParent(ROWBACK);

@@ -714,19 +714,21 @@ function RefreshTokenView()
     local ITEMWIDTH = 40;
     local PARENTWIDTH = 0;
 
+    local festivalTokensUIOrder = GetFestivalTokensUIOrder(SELECTEDFESTIVAL);
+    local festivalTokenQuantites = GetFestivalTokenQuantities(SELECTEDFESTIVAL);
+
     -- Iterate the tokens by numerical index to keep the stated order:
-    for tokenUiIndex=1, #TOKEN_UI_ORDER[SELECTEDFESTIVAL] do
-        local tokenKey = TOKEN_UI_ORDER[SELECTEDFESTIVAL][tokenUiIndex];
-        local tokenId = TOKEN_IDS[SELECTEDFESTIVAL][tokenKey];
+    for tokenUiIndex=1, #festivalTokensUIOrder do
+        local tokenKey = festivalTokensUIOrder[tokenUiIndex];
 
-        -- This will check each of the tokens for the selected festival to see if they exist in the wallet.
-        -- TODO: Every time through this look we call GetTokenIndex which iterates through every item in the wallet.
-        --   Replace this logic by getting the relevant details from the wallet for this festival first.
-        local TOKENINDEX,ITEM = GetTokenIndex(tokenId);
+        if (festivalTokenQuantites[tokenKey] and 
+            festivalTokenQuantites[tokenKey].QUANTITY > 0) then
 
-        if TOKENINDEX ~= nil and TOKENINDEX ~= 0 then
             -- Exists in wallet.
-            local TEMPITEM = MYWALLET:GetItem(TOKENINDEX);
+
+            local festivalTokenQuantity = festivalTokenQuantites[tokenKey].QUANTITY;
+            local item = festivalTokenQuantites[tokenKey].ITEM;
+            local walletItem = festivalTokenQuantites[tokenKey].WALLET_ITEM;
 
             local cCURITEM = Turbine.UI.Control();
             cCURITEM:SetSize(ITEMWIDTH,36);
@@ -735,10 +737,10 @@ function RefreshTokenView()
             cItemInspect:SetParent(cCURITEM);
             cItemInspect:SetSize(36,36);
             cItemInspect:SetPosition(0,0);
-            cItemInspect:SetItemInfo(ITEM:GetItemInfo());
-            cItemInspect:SetQuantity(TEMPITEM:GetQuantity());
+            cItemInspect:SetItemInfo(item:GetItemInfo());
+            cItemInspect:SetQuantity(festivalTokenQuantity);
 
-            _CHARDATA.CHARS[MYCHAR:GetName()][SELECTEDFESTIVAL]["TOKENS"][tokenKey] = TEMPITEM:GetQuantity();
+            UpdateTokenSaveValue(SELECTEDFESTIVAL, tokenKey, festivalTokenQuantity);
 
             PARENTWIDTH = PARENTWIDTH + ITEMWIDTH;
 
@@ -752,41 +754,18 @@ function RefreshTokenView()
                 cTokenHolder:SetLeft(wMainWinHolder:GetWidth()-PARENTWIDTH-10);
             end
 
-            MYWALLET:GetItem(TOKENINDEX).QuantityChanged = function (sender,args)
+            walletItem.QuantityChanged = function (sender,args)
                 -- Quantity changed event
-                cItemInspect:SetQuantity(TEMPITEM:GetQuantity());
-                _CHARDATA.CHARS[MYCHAR:GetName()][SELECTEDFESTIVAL]["TOKENS"][tokenKey] = TEMPITEM:GetQuantity();
+                cItemInspect:SetQuantity(festivalTokenQuantity);
+                UpdateTokenSaveValue(SELECTEDFESTIVAL, tokenKey, festivalTokenQuantity);
             end
         else
-            _CHARDATA.CHARS[MYCHAR:GetName()][SELECTEDFESTIVAL]["TOKENS"][tokenKey] = 0;
+            UpdateTokenSaveValue(SELECTEDFESTIVAL, tokenKey, 0);
         end
 
     end
 
 end
-
-
-
-function GetTokenIndex(itemID)
-
-    if itemID == nil then return end;
-
-    local TOKENINDEX = 0;
-
-    local item = GetItemFromID(itemID);
-    local itemName = item:GetItemInfo():GetName();
-
-    for i=1, MYWALLET:GetSize() do
-        if MYWALLET:GetItem(i):GetName() == itemName then
-            TOKENINDEX = i;
-            break;
-        end
-    end
-
-    return TOKENINDEX,item;
-
-end
-
 
 -- This function creates a window displaying the list of quickslots
 function CreateQuickSlotAssit(QSLIST)

@@ -186,7 +186,7 @@ DEFAULT_SETTINGS = {
 
     ["IN_PROGRESS_QUESTS"] = {
         -- example:
-        -- ["BOUNDER_ROUNDS"] = true
+        -- ["BOUNDER_ROUNDS"] = "FARMERSFAIRE"
     };
 
     ["QUICK_GUIDE_PROGRESS"] = {

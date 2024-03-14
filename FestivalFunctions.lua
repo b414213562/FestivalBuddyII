@@ -163,6 +163,17 @@ function CheckFestivalData(_TABLE)
             end
         end
 
+        if _TABLE[GENERIC] == nil then _TABLE[GENERIC] = {}; end
+        if _TABLE[GENERIC]["TOKENS"] == nil then _TABLE[GENERIC]["TOKENS"] = {}; end
+
+        for k,v in pairs (TOKEN_IDS[GENERIC]) do
+            if (not IsGenericTokenAccountWide(k)) then
+                if _TABLE[GENERIC]["TOKENS"][k] == nil then
+                    _TABLE[GENERIC]["TOKENS"][k] = 0;
+                end
+            end
+        end
+
     end
 
 end

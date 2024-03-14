@@ -6,7 +6,6 @@
 TOKEN_IDS = {
     [SPRING] = {
         ["SPRING_FESTIVAL"] = 0x7001947F;
-        ["SPRING_MITHRIL"]  = 0x70032BB7;
         ["SPRING_RACE"]     = 0x7001E78B;
         ["SPRING_VIOLET"]   = 0x7000D707;
         ["SPRING_MARIGOLD"] = 0x7000D70A;
@@ -15,7 +14,6 @@ TOKEN_IDS = {
     [HARVESTMATH] = {
         ["HARVESTMATH_RACE"]               = 0x7000D145;
         ["HARVESTMATH_FESTIVAL"]           = 0x7000C3A0;
-        ["HARVESTMATH_MITHRIL"]            = 0x70032BB7;
 
         ["HARVESTMATH_SMALLAPPLE"]         = 0x7000C39C;
         ["HARVESTMATH_MEDIUMAPPLE"]        = 0x7000C39B;
@@ -38,14 +36,12 @@ TOKEN_IDS = {
         ["YULE_GOLDFESTIVAL"] = 0x700331E4;
         ["YULE_TICKET"]       = 0x7002E769;
         ["YULE_RACE"]         = 0x70018CE7;
-        ["YULE_MITHRIL"]      = 0x70032BB7;
     };
     [ANNIVERSARY] = {
         ["ANNIVERSARY_RACE"]     = 0x700255F2;
         ["ANNIVERSARY_FESTIVAL"] = 0x700253D1;
 
         ["ANNIVERSARY_STEEL"]    = 0x7003E4AF;
-        ["ANNIVERSARY_MITHRIL"]  = 0x70032BB7;
     };
     [FARMERSFAIRE] = {
         ["SUMMER_RACE"]           = 0x700107BC;
@@ -59,7 +55,6 @@ TOKEN_IDS = {
         ["FARMERSFAIRE_GOLDRED"]   = 0x70010899;
         ["FARMERSFAIRE_FLOUNDER"]  = 0x70010894;
         ["FARMERSFAIRE_SMALLFISH"] = 0x70010897;
-        ["FARMERSFAIRE_MITHRIL"]  = 0x70032BB7;
     };
     [HOBNANIGANS] = {
         ["HOBNANIGANS_TOKEN"]                   = 0x7003ECEF; -- Inventory
@@ -69,15 +64,19 @@ TOKEN_IDS = {
         ["HOBNANIGANS_SCRAPPER_CHICKEN_TOKEN"]  = 0x7003ECEE; -- Inventory
         ["HOBNANIGANS_BLACKFOOT_CHICKEN_TOKEN"] = 0x7003ECF1; -- Inventory
         ["HOBNANIGANS_ORANGE_WYANDOTTE_TOKEN"]  = 0x7003ECF2; -- Inventory
-        ["HOBNANIGANS_MITHRIL"]                 = 0x70032BB7;
     };
     [MIDSUMMER] = {
         ["MIDSUMMER_TOKEN"] = 0x70057619; -- Wallet
-        ["MIDSUMMER_MC"]    = 0x70032BB7;
     };
     [ILAA] = {
         ["ILAA_BADGE_OF_TASTE"]     = 0x700216F0;
         ["ILAA_BADGE_OF_DISHONOUR"] = 0x70020F1D;
+    };
+    
+    -- End of Festival specific tokens
+    [GENERIC] ={
+        ["GENERIC_FESTIVITY"] = 0x07004E472;
+        ["GENERIC_MITHRIL"] = 0x70032BB7;
     };
 };
 
@@ -85,46 +84,42 @@ TOKEN_IDS = {
 TOKEN_UI_ORDER = {
     [SPRING] = {
         [1] = "SPRING_FESTIVAL";
-        [2] = "SPRING_MITHRIL";
-        [3] = "SPRING_RACE"; -- no longer used?
-        [4] = "SPRING_VIOLET";
-        [5] = "SPRING_MARIGOLD";
-        [6] = "SPRING_PRIMROSE";
+        [2] = "SPRING_RACE"; -- no longer used?
+        [3] = "SPRING_VIOLET";
+        [4] = "SPRING_MARIGOLD";
+        [5] = "SPRING_PRIMROSE";
     };
     [HARVESTMATH] = {
         [1] = "HARVESTMATH_RACE";
         [2] = "HARVESTMATH_FESTIVAL";
-        [3] = "HARVESTMATH_MITHRIL";
 
-        [4] = "HARVESTMATH_SMALLAPPLE";
-        [5] = "HARVESTMATH_MEDIUMAPPLE";
-        [6] = "HARVESTMATH_LARGEAPPLE";
+        [3] = "HARVESTMATH_SMALLAPPLE";
+        [4] = "HARVESTMATH_MEDIUMAPPLE";
+        [5] = "HARVESTMATH_LARGEAPPLE";
 
-        [7] = "HARVESTMATH_CRACKEDGEODE";
-        [8] = "HARVESTMATH_PRISTINEGEODE";
-        [9] = "HARVESTMATH_FAULTLESSGEODE";
+        [6] = "HARVESTMATH_CRACKEDGEODE";
+        [7] = "HARVESTMATH_PRISTINEGEODE";
+        [8] = "HARVESTMATH_FAULTLESSGEODE";
 
-        [10] = "HARVESTMATH_UNIMPRESSIVESCROLL";
-        [11] = "HARVESTMATH_WELLWRITTENSCROLL";
-        [12] = "HARVESTMATH_ELEGANTSCROLL";
+         [9] = "HARVESTMATH_UNIMPRESSIVESCROLL";
+        [10] = "HARVESTMATH_WELLWRITTENSCROLL";
+        [11] = "HARVESTMATH_ELEGANTSCROLL";
 
-        [13] = "HARVESTMATH_SMALLPUMPKIN";
-        [14] = "HARVESTMATH_MEDIUMPUMPKIN";
-        [15] = "HARVESTMATH_LARGEPUMPKIN";
+        [12] = "HARVESTMATH_SMALLPUMPKIN";
+        [13] = "HARVESTMATH_MEDIUMPUMPKIN";
+        [14] = "HARVESTMATH_LARGEPUMPKIN";
     };
     [YULE] = {
         [1] = "YULE_FESTIVAL";
         [2] = "YULE_GOLDFESTIVAL";
         [3] = "YULE_TICKET";
         [4] = "YULE_RACE";
-        [5] = "YULE_MITHRIL";
     };
     [ANNIVERSARY] = {
         [1] = "ANNIVERSARY_RACE";
         [2] = "ANNIVERSARY_FESTIVAL";
 
         [3] = "ANNIVERSARY_STEEL";
-        [4] = "ANNIVERSARY_MITHRIL";
     };
     [FARMERSFAIRE] = {
         [1] = "SUMMER_RACE";
@@ -138,7 +133,6 @@ TOKEN_UI_ORDER = {
         [9] = "FARMERSFAIRE_GOLDRED";
         [10] = "FARMERSFAIRE_FLOUNDER";
         [11] = "FARMERSFAIRE_SMALLFISH";
-        [12] = "FARMERSFAIRE_MITHRIL";
     };
     [HOBNANIGANS] = {
         [1] = "HOBNANIGANS_TOKEN";
@@ -148,14 +142,161 @@ TOKEN_UI_ORDER = {
         [5] = "HOBNANIGANS_SCRAPPER_CHICKEN_TOKEN";
         [6] = "HOBNANIGANS_BLACKFOOT_CHICKEN_TOKEN";
         [7] = "HOBNANIGANS_ORANGE_WYANDOTTE_TOKEN";
-        [8] = "HOBNANIGANS_MITHRIL";
     };
     [MIDSUMMER] = {
         [1] = "MIDSUMMER_TOKEN";
-        [2] = "MIDSUMMER_MC";
     };
     [ILAA] = {
         [1] = "ILAA_BADGE_OF_TASTE";
         [2] = "ILAA_BADGE_OF_DISHONOUR";
     };
+    [GENERIC] = {
+        [1] = "GENERIC_MITHRIL";
+        [2] = "GENERIC_FESTIVITY";
+    };
 };
+
+TOKEN_FESTIVAL_USES_GENERIC_TOKEN = {
+    [SPRING] = {
+        ["GENERIC_MITHRIL"] = true;
+        ["GENERIC_FESTIVITY"] = true;
+    };
+    [HARVESTMATH] = {
+        ["GENERIC_MITHRIL"] = true;
+        ["GENERIC_FESTIVITY"] = false;
+    };
+    [YULE] = {
+        ["GENERIC_MITHRIL"] = true;
+        ["GENERIC_FESTIVITY"] = false;
+    };
+    [ANNIVERSARY] = {
+        ["GENERIC_MITHRIL"] = true;
+        ["GENERIC_FESTIVITY"] = false;
+    };
+    [FARMERSFAIRE] = {
+        ["GENERIC_MITHRIL"] = false;
+        ["GENERIC_FESTIVITY"] = false;
+    };
+    [HOBNANIGANS] = {
+        ["GENERIC_MITHRIL"] = true;
+        ["GENERIC_FESTIVITY"] = false;
+    };
+    [MIDSUMMER] = {
+        ["GENERIC_MITHRIL"] = true;
+        ["GENERIC_FESTIVITY"] = false;
+    };
+    [ILAA] = {
+        ["GENERIC_MITHRIL"] = false;
+        ["GENERIC_FESTIVITY"] = false;
+    };
+};
+
+function GetTokenID(festival, tokenKey)
+    local tokenID = TOKEN_IDS[festival][tokenKey];
+    if (not tokenID and
+        TOKEN_IDS[GENERIC][tokenKey]) then
+        tokenID = TOKEN_IDS[GENERIC][tokenKey];
+    end
+    return tokenID;
+end
+
+function GetTokenQuantityFromSaveFile(characterTable, festival, tokenKey)
+    if (IsGenericKey(tokenKey)) then
+        if (IsGenericTokenAccountWide(tokenKey)) then
+            return GetTokenQuantityFromWallet(GENERIC, tokenKey);
+        else
+            return characterTable[GENERIC]["TOKENS"][tokenKey] or 0;
+        end
+    else
+        return characterTable[festival]["TOKENS"][tokenKey] or 0;
+    end
+end
+
+function GetTokenQuantityFromWallet(festival, tokenKey)
+    local itemId = GetTokenID(festival, tokenKey);
+    local item = GetItemFromID(itemId);
+    local itemName = item:GetItemInfo():GetName();
+
+    for i=1, MYWALLET:GetSize() do
+        local walletItem = MYWALLET:GetItem(i);
+        local walletItemName = walletItem:GetName();
+        if (itemName == walletItemName) then
+            return walletItem:GetQuantity();
+        end
+    end
+    return 0;
+end
+
+function IsGenericKey(tokenKey)
+    return TOKEN_IDS[GENERIC][tokenKey] ~= nil;
+end
+
+function IsGenericTokenAccountWide(tokenKey)
+    if (tokenKey == "GENERIC_MITHRIL") then return true; end
+    if (tokenKey == "GENERIC_FESTIVITY") then return false; end
+
+    -- Didn't recognise it, default to true.
+    return true;
+end
+
+function GetItemAndNameFromFestivalAndItemKey(festival, itemKey)
+    local itemId = GetTokenID(festival, itemKey);
+    local item = GetItemFromID(itemId);
+    local itemName = item:GetItemInfo():GetName();
+    return item,itemName;
+end
+
+function AddNameToKeyForFestival(festival, nameToKeyLookup)
+    for tokenUiIndex=1, #TOKEN_UI_ORDER[festival] do
+        local tokenKey = TOKEN_UI_ORDER[festival][tokenUiIndex];
+        local item,itemName = GetItemAndNameFromFestivalAndItemKey(festival, tokenKey);
+        nameToKeyLookup[itemName] = { ["KEY"] = tokenKey; ["ITEM"] = item; };
+    end
+end
+
+function GetFestivalTokenQuantities(festival)
+    local nameToItemAndKeyLookup = {};
+
+    AddNameToKeyForFestival(festival, nameToItemAndKeyLookup);
+    AddNameToKeyForFestival(GENERIC, nameToItemAndKeyLookup);
+
+    local festivalTokens = {};
+
+    for i=1, MYWALLET:GetSize() do
+        local walletItem = MYWALLET:GetItem(i);
+        local itemName = walletItem:GetName();
+        if (nameToItemAndKeyLookup[itemName]) then
+            festivalTokens[nameToItemAndKeyLookup[itemName].KEY] = {
+                ["QUANTITY"] = walletItem:GetQuantity();
+                ["ITEM"] = nameToItemAndKeyLookup[itemName].ITEM;
+                ["WALLET_ITEM"] = walletItem;
+            };
+        end
+    end
+
+    return festivalTokens;
+end
+
+function GetFestivalTokensUIOrder(festival)
+    local tokenUIOrder = {};
+    for tokenUiIndex=1, #TOKEN_UI_ORDER[festival] do
+        table.insert(tokenUIOrder, TOKEN_UI_ORDER[festival][tokenUiIndex]);
+    end
+    for tokenUiIndex=1, #TOKEN_UI_ORDER[festival] do
+        local genericKey = TOKEN_UI_ORDER[GENERIC][tokenUiIndex];
+        if (TOKEN_FESTIVAL_USES_GENERIC_TOKEN[festival][genericKey]) then
+            table.insert(tokenUIOrder, genericKey);
+        end
+    end
+    return tokenUIOrder;
+end
+
+function UpdateTokenSaveValue(festival, tokenKey, quantity)
+    if (IsGenericKey(tokenKey)) then
+        if (not IsGenericTokenAccountWide(tokenKey)) then
+            _CHARDATA.CHARS[MYCHAR:GetName()][GENERIC]["TOKENS"][tokenKey] = quantity;
+        end
+    else
+        _CHARDATA.CHARS[MYCHAR:GetName()][festival]["TOKENS"][tokenKey] = quantity;
+    end
+end

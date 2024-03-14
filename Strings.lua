@@ -15,6 +15,7 @@ FARMERSFAIRE = "FARMERSFAIRE";
 HOBNANIGANS = "HOBNANIGANS";
 MIDSUMMER = "MIDSUMMER";
 ILAA = "ILAA"; -- Inn League / Ale Association
+GENERIC = "GENERIC";
 
 -- Anniversary: Fireworks in Bree
 NO_FIREWORKS = 0;
