@@ -88,8 +88,8 @@ function CheckForInProgressThatIsCompletedOrFailed(cMessage)
     local use_plain_text_find = true;
 
     -- Stop tracking in-progress quests even if it's not the selected quest:
-    for questKey,festivalNumber in pairs (SETTINGS.IN_PROGRESS_QUESTS) do
-        local questToCheck = GetString(_LANG.QUESTS[festivalNumber][questKey]);
+    for questKey,festivalKey in pairs (SETTINGS.IN_PROGRESS_QUESTS) do
+        local questToCheck = GetString(_LANG.QUESTS[festivalKey][questKey]);
 
         local findResult = string.find(cMessage, questToCheck, starting_character, use_plain_text_find);
         if (findResult) then
@@ -137,17 +137,17 @@ function CheckFestivalData(_TABLE)
 
     -- Checks if the current festival exists in the characters data, if so then it adds any newer fields that may have been
     -- added in newer updates whilst retaining the values of old values that have been loaded.
-    for e,f in pairs(_LANG.FESTIVALS) do
+    for festivalKey,f in pairs(_LANG.FESTIVALS) do
 
-        if _TABLE[e] == nil then _TABLE[e] = {} end;
+        if _TABLE[festivalKey] == nil then _TABLE[festivalKey] = {} end;
 
 
         -- COOLDOWNS ---
-        if _TABLE[e]["COOLDOWNS"] == nil then _TABLE[e]["COOLDOWNS"] = {} end;
+        if _TABLE[festivalKey]["COOLDOWNS"] == nil then _TABLE[festivalKey]["COOLDOWNS"] = {} end;
 
-        local _CDTABLE = _TABLE[e]["COOLDOWNS"];
+        local _CDTABLE = _TABLE[festivalKey]["COOLDOWNS"];
 
-        for k,v in ipairs (_LANG.DEBUFFS[e]) do
+        for k,v in ipairs (_LANG.DEBUFFS[festivalKey]) do
             if _CDTABLE[v.key] == nil then
                 _CDTABLE[v.key] = 0;
             end
@@ -155,11 +155,11 @@ function CheckFestivalData(_TABLE)
 
 
         -- TOKENS ---
-        if _TABLE[e]["TOKENS"] == nil then _TABLE[e]["TOKENS"] = {} end;
+        if _TABLE[festivalKey]["TOKENS"] == nil then _TABLE[festivalKey]["TOKENS"] = {} end;
 
-        for k,v in pairs (TOKEN_IDS[e]) do
-            if _TABLE[e]["TOKENS"][k] == nil then
-                _TABLE[e]["TOKENS"][k] = 0;
+        for k,v in pairs (TOKEN_IDS[festivalKey]) do
+            if _TABLE[festivalKey]["TOKENS"][k] == nil then
+                _TABLE[festivalKey]["TOKENS"][k] = 0;
             end
         end
 
@@ -187,7 +187,7 @@ end
 ---@param debuffKey string
 ---@return integer
 function GetDebuffIndexFromDebuffKey(debuffKey)
-    for festivalNumber, festivalDebuffs in pairs(_LANG.DEBUFFS) do
+    for festivalKey, festivalDebuffs in pairs(_LANG.DEBUFFS) do
         for debuffIndex, debuffData in pairs(festivalDebuffs) do
             if (debuffData.key == debuffKey) then
                 return debuffIndex;

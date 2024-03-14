@@ -274,7 +274,7 @@ function LoadServerWideCharacterData()
         -- For each player's festival data:
         for playerName,festivalsTable in pairs(SavedCharData.CHARS) do
             -- For each festival in the festival data:
-            for festivalNumber, festivalData in pairs(festivalsTable) do
+            for festivalKey, festivalData in pairs(festivalsTable) do
                 -- Check the cooldowns for this festival of this character:
                 local cooldowns = festivalData["COOLDOWNS"];
 
@@ -324,7 +324,7 @@ end
 ---@return string
 function GetDebuffKeyFromLocalizedName(debuffNameToCheck)
     -- Loop through all possible debuffs, checking for a match:
-    for festivalNumber, festivalDebuffs in pairs(_LANG.DEBUFFS) do
+    for festivalKey, festivalDebuffs in pairs(_LANG.DEBUFFS) do
         for debuffIndex, debuffData in pairs(festivalDebuffs) do
             for language, localizedDebuffName in pairs(debuffData.name) do
                 if (debuffNameToCheck == localizedDebuffName) then
