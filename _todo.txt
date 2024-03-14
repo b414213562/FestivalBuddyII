@@ -1,3 +1,11 @@
+v1.0 to 2.0:
+
+	["IN_PROGRESS_QUESTS"] = 
+	{
+		["YULE_FESTIVAL_DAILY"] = "4"
+	},
+
+    questkey to festival number - needs to be converted
 
 Logic fixes:
     MainWin:GetTokenIndex - n^2 iterations through wallet contents
@@ -5,6 +13,9 @@ Logic fixes:
         it really changes for all festivals and all chacters, because they point to the same thing.
         If a WalletItem has IsAccountItem = true, then whenever the value changes we should change it everywhere.
     SELECTEDQUEST uses the localized quest name instead of the internal quest key. Why?!?
+        Answer: Because when we do a regex against chat we use SELECTEDQUEST.
+        But sometimes we want to compare against a questkey. Maybe just store both of them?
+            Does SELECTEDQUEST get persisted in the save file?
 
 The way I modified _LANG.DEBUFFS to allow for ordering in the UI makes it harder to find a debuff.
     Consider: A separate table that controls the UI ordering, and not as part of _LANG?
