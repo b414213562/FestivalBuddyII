@@ -239,7 +239,7 @@ function DrawMainWin()
             MazeMapSetVisible(false);
         end
 
-        if args.Action == KEY_ACTION_REPOSITION_UI and SELECTEDQUEST == GetString(_LANG.QUESTS[5].BREEFIREWORKS) then
+        if args.Action == KEY_ACTION_REPOSITION_UI and SELECTEDQUEST == GetString(_LANG.QUESTS[ANNIVERSARY].BREEFIREWORKS) then
             RepositionUI_Fireworks();
         end
 
@@ -548,7 +548,7 @@ function LoadQuest(questKey)
         questMapImage:SetVisible(false);
     end
 
-    -- Put a special case here for GetString(_LANG.QUESTS[5].BREEFIREWORKS):
+    -- Put a special case here for GetString(_LANG.QUESTS[ANNIVERSARY].BREEFIREWORKS):
     -- if that quest, show the Event Quickslot template of choice,
     -- otherwise, hide it.
     ToggleVisibility_Fireworks(questKey == "BREEFIREWORKS");
