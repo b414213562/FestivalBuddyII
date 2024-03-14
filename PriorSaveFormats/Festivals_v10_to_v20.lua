@@ -60,4 +60,12 @@ function Update_FestivalBuddySettings_Festivals_from_v10_to_v20(settings)
     end
     settings.QUICK_GUIDE_PROGRESS = newQuickGuideProgress;
 
+    -- IN_PROGRESS_QUESTS entries are [questkey] = festivalNumber
+    -- Convert to [questkey] = festivalkey:
+    if (settings.IN_PROGRESS_QUESTS == nil) then settings.IN_PROGRESS_QUESTS = {}; end
+    for questKey,festivalNumber in pairs (settings.IN_PROGRESS_QUESTS) do
+        settings.IN_PROGRESS_QUESTS[questKey] = _V10_FESTIVAL_DATA[festivalNumber];
+    end
+
+
 end
