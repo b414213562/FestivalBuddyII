@@ -1,0 +1,35 @@
+Festival Buddy II version v2.1.0 is now available at [URL='https://www.lotrointerface.com/downloads/info1218-FestivalBuddyII.html']lotrointerface.com[/URL].
+
+This update has numerous festival and quick guide changes, and a major change to save file structures.
+
+Version 2.1.0 release notes:
+
+Festivals:
+[list]
+[*]    Reordered festivals to match appearance in calendar year.
+[*]    Removed /cheer emote window for The Abominable Snow Beasts quest. (Quest tracker provides this automatically.)
+[*]    Updated Spring barter items.
+[*]    Consolidated old Summer festival into Farmers Faire.
+[/list]
+
+Language:
+[list]
+[*]    Fixed French name for "Secret Treasure - Chest".
+[*]    Added French translations for Yule Quick Guide.
+[*]    Added German translations from Mandraval for UI and Quick Guide.
+[/list]
+
+Quick Guides:
+[list]
+[*]    Added Inn League / Ale Association Quick Guide. (Based on hunter travel skills.)
+[*]    Updated Yule Quick Guide.
+[*]    Added color highlighting to Quick Guides.
+[*]    Added options to control use and color of highlighting.
+[/list]
+
+Other:
+[list]
+[*]    Updated how Festival Buddy II save files store data. Files will be automatically updated when FB2 loads.
+[*]    Changed window scaling logic so that if it is close to 100%, it snaps back to 100% to avoid UI blurring.
+[*]    Fixed order of currencies in the Alts Window.
+[/list]
