@@ -40,9 +40,6 @@ end
 function FilterStandard(cMessage)
 -- Filters here for use with the Standard channel.
 
-    --Debug("Standard: " .. cMessage);
-
-
     -- Yule Festival: Theatre emote prompt filters.
     if ISACTING == true then
 

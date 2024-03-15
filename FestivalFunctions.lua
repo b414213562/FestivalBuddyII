@@ -19,8 +19,6 @@ function GetDebuffs()
 
                 local TIME = ConvertTime(CDREMAINING);
 
-                --Debug(CUREFFECT:GetName() .. " = " .. TIME.DAYS .. ":" .. TIME.HOURS .. ":" .. TIME.MINUTES .. ":" .. TIME.SECONDS);
-
                 break;
             end
 
