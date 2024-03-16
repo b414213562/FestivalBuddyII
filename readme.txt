@@ -1,3 +1,7 @@
+v2.1.2 changes:
+    Bugs:
+        Fixed bug that prevented token counts from updating.
+
 v2.1.1 changes:
     Festivals:
         Added French translations for Yule Quick Guide.

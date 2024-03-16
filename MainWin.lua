@@ -755,9 +755,9 @@ function RefreshTokenView()
             end
 
             walletItem.QuantityChanged = function (sender,args)
-                -- Quantity changed event
-                cItemInspect:SetQuantity(festivalTokenQuantity);
-                UpdateTokenSaveValue(SELECTEDFESTIVAL, tokenKey, festivalTokenQuantity);
+                local newQuantity = sender:GetQuantity();
+                cItemInspect:SetQuantity(newQuantity);
+                UpdateTokenSaveValue(SELECTEDFESTIVAL, tokenKey, newQuantity);
             end
         else
             UpdateTokenSaveValue(SELECTEDFESTIVAL, tokenKey, 0);
