@@ -1,4 +1,4 @@
-v2.1.0 changes:
+v2.1.1 changes:
     Festivals:
         Added French translations for Yule Quick Guide.
         Added German translations from Mandraval for UI and Quick Guide.

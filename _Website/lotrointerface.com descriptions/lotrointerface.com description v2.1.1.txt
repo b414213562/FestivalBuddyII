@@ -35,7 +35,7 @@ When the Plugin Manager opens, find Festival Buddy II in the list on the left si
 [SIZE="4"][COLOR="DeepSkyBlue"]Revision History[/COLOR][/SIZE]
 
 [list]
-[*] 2024-03-15 version 2.1.0: Numerous festival and quick guide changes, and a major change to save file structures. Release notes [url=https://forums.lotro.com/index.php?threads/plugin-festival-buddy-ii.1514/post-74481]here[/url].
+[*] 2024-03-15 version 2.1.1: Numerous festival and quick guide changes, and a major change to save file structures. Release notes [url=https://forums.lotro.com/index.php?threads/plugin-festival-buddy-ii.1514/post-74481]here[/url].
 [*] 2023-12-12 version 2.0.4: Added a quick guide for the Yule festival. Release notes [url=https://forums.lotro.com/index.php?threads/plugin-festival-buddy-ii.1514/post-56421]here[/url].
 [*] 2023-12-07 version 2.0.3: Added Harvestmath quest guides for Tanglecorn and Haunted Burrow. Added option to scale main window for readability. Added in numerous German and French translations. Release notes [url=https://forums.lotro.com/index.php?threads/plugin-festival-buddy-ii.1514/post-55145]here[/url].
 [*] 2023-06-20 version 2.0.1: Initial release of Festival Buddy II! Announcement [url=https://forums.lotro.com/index.php?threads/plugin-festival-buddy-ii.1514/]here[/url].

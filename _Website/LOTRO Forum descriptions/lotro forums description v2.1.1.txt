@@ -1,8 +1,8 @@
-Festival Buddy II version v2.1.0 is now available at [URL='https://www.lotrointerface.com/downloads/info1218-FestivalBuddyII.html']lotrointerface.com[/URL].
+Festival Buddy II version v2.1.1 is now available at [URL='https://www.lotrointerface.com/downloads/info1218-FestivalBuddyII.html']lotrointerface.com[/URL].
 
 This update has numerous festival and quick guide changes, and a major change to save file structures.
 
-Version 2.1.0 release notes:
+Version 2.1.1 release notes:
 
 Festivals:
 [list]
