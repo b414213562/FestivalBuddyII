@@ -85,8 +85,8 @@ TOKEN_UI_ORDER = {
     [SPRING] = {
         [1] = "SPRING_FESTIVAL";
         [2] = "SPRING_RACE"; -- no longer used?
-        [3] = "SPRING_VIOLET";
-        [4] = "SPRING_MARIGOLD";
+        [3] = "SPRING_MARIGOLD";
+        [4] = "SPRING_VIOLET";
         [5] = "SPRING_PRIMROSE";
     };
     [HARVESTMATH] = {

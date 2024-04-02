@@ -1,4 +1,7 @@
 v2.1.2 changes:
+    Festivals:
+        Spring:
+            Updated order of Marigold and Violet tokens to match helper text for A Fistful of Flowers
     Bugs:
         Fixed bug that prevented token counts from updating.
 
