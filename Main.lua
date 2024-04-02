@@ -152,9 +152,13 @@ function LoadSettingsFileCharacter()
         SETTINGS.SETTINGS_VERSION = "v2.0";
     end -- end 1.0 to 2.0 update
 
-    -- Populate a global variable:
-    if (not SETTINGS.FESTIVAL) then
-        SETTINGS.FESTIVAL = SPRING;
+    -- Populate the global SELECTEDFESTIVAL variable:
+    local settingIsMissing = not SETTINGS.FESTIVAL;
+    local settingIsNotString = type(SETTINGS.FESTIVAL) == "number";
+    local settingNeedsFixing = settingIsMissing or settingIsNotString;
+    if (settingNeedsFixing) then
+        -- Default to the first festival in the festival dropdown:
+        SETTINGS.FESTIVAL = FESTIVALS_UI_ORDER[1];
     end
     SELECTEDFESTIVAL = SETTINGS.FESTIVAL;
 
