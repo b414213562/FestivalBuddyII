@@ -7,6 +7,7 @@ v2.1.2 changes:
 
     Bugs:
         Fixed bug that prevented token counts from updating.
+        Bumped file format for character-specific data from 2.0 to 2.1 to update in-progress quest data.
 
 v2.1.1 changes:
     Festivals:

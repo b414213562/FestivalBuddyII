@@ -1,3 +1,23 @@
+bugs:
+
+    ...ns\CubePlugins\FestivalBuddyII\FestivalFunctions.lua:90: attempt to index field '?' (a nil value)
+    Red Maid, tier 1, just finished
+    Naruhel's Silver Chest resets in: 0d - 11h - 32m.
+
+    There were 2, here's the other.
+    Checking deeds for matching criteria...
+    Deed Tracker: Did not find an uncompleted deed matching "Boss from the Vaults: Naruhel"
+    Progress has been added to the Reward Track.
+    You've earned 49 silver pieces and 70 copper coins for quest completion.
+    ...ns\CubePlugins\FestivalBuddyII\FestivalFunctions.lua:90: attempt to index field '?' (a nil value)
+    Completed:
+    Boss from the Vaults: Naruhel - Tier1
+    Checking deeds for matching criteria...
+    Deed Tracker: Did not find an uncompleted deed matching "Boss from the Vaults: Naruhel - Tier1"
+
+
+Eliminate SELECTEDFESTIVAL and just use SETTINGS.FESTIVAL? Add a helper function GetFestival()?
+
 v1.0 to 2.0:
 
 	["IN_PROGRESS_QUESTS"] = 

@@ -151,6 +151,13 @@ function LoadSettingsFileCharacter()
         SETTINGS.SETTINGS_VERSION = "v2.0";
     end -- end 1.0 to 2.0 update
 
+    if (SETTINGS.SETTINGS_VERSION == "v2.0") then
+        import "CubePlugins.FestivalBuddyII.PriorSaveFormats.Festivals_v20_to_v21";
+        PriorSaveFormats.Update_FestivalBuddySettings_from_v20_to_v21(SETTINGS);
+
+        SETTINGS.SETTINGS_VERSION = "v2.1";
+    end
+
     -- Populate the global SELECTEDFESTIVAL variable:
     local settingIsMissing = not SETTINGS.FESTIVAL;
     local settingIsNotString = type(SETTINGS.FESTIVAL) == "number";
