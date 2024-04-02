@@ -354,13 +354,17 @@ function GetDebuffKeyFromLocalizedName(debuffNameToCheck)
 end
 
 function LoadData()
-    ---------------------------------------------------------------------------------------------------------------------------------
+    --- CHARACTER ---
     LoadSettingsFileCharacter();
+
+    --- SERVER ---
     LoadSettingsFileServer();
+
+    --- ACCOUNT ---
     LoadSettingsFileAccount();
-    ----------------------------------------------------------------------------------------------------------------------------------
+
+    --- SERVER ---
     LoadServerWideCharacterData();
-    ----------------------------------------------------------------------------------------------------------------------------------
 end
 
 
