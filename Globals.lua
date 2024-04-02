@@ -4,7 +4,6 @@ SETTINGS = {}; -- Table used when loading settings.
 SETTINGS_SERVER = {}; -- Table for server-wide settings.
 SETTINGS_ACCOUNT = {}; -- Table for account-wide settings.
 _CHARDATA = {}; -- Table used when loading saved character data.
-_SAVEDIMAGES = {}; -- Table used when loading saved image ids.
 
 blSAVED = false;
 

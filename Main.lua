@@ -78,7 +78,6 @@ function saveData()
     -- Store the settings table.
     PatchDataSave(Turbine.DataScope.Character, "FestivalBuddy_Settings", SETTINGS);
     PatchDataSave(Turbine.DataScope.Server, "FestivalBuddy_CharData", _CHARDATA);
-    PatchDataSave(Turbine.DataScope.Account, "FestivalBuddy_ImageIDs", _SAVEDIMAGES);
     PatchDataSave(Turbine.DataScope.Server, "FestivalBuddy_ServerSettings", SETTINGS_SERVER);
     PatchDataSave(Turbine.DataScope.Account, "FestivalBuddy_AccountSettings", SETTINGS_ACCOUNT);
 end
@@ -354,34 +353,6 @@ function GetDebuffKeyFromLocalizedName(debuffNameToCheck)
     return debuffNameToCheck
 end
 
-function LoadSavedImageData()
-    -- SAVED IMAGE IDs --
-
-    local SavedImageData = {};
-
-    -- Load the settings
-    function GetSavedImageData()
-        SavedImageData = PatchDataLoad(Turbine.DataScope.Account, "FestivalBuddy_ImageIDs");
-    end
-
-    if pcall(GetSavedImageData) then
-        -- Loaded without error
-        SavedImageData = PatchDataLoad(Turbine.DataScope.Account, "FestivalBuddy_ImageIDs");
-    else
-        -- Loaded with errors
-        SavedImageData = nil;
-        Turbine.Shell.WriteLine(GetString(_LANG.ERRORS.LOAD.SETTINGS_ACCOUNT));
-    end
-
-
-    -- Check the saved settings to make sure it is still compatible with newer updates, add in any missing default settings
-    if type(SavedImageData) == 'table' then
-
-        _SAVEDIMAGES = deepcopy(SavedImageData);
-
-    end
-end
-
 function LoadData()
     ---------------------------------------------------------------------------------------------------------------------------------
     LoadSettingsFileCharacter();
@@ -389,8 +360,6 @@ function LoadData()
     LoadSettingsFileAccount();
     ----------------------------------------------------------------------------------------------------------------------------------
     LoadServerWideCharacterData();
-    ----------------------------------------------------------------------------------------------------------------------------------
-    LoadSavedImageData();
     ----------------------------------------------------------------------------------------------------------------------------------
 end
 

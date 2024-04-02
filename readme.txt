@@ -2,6 +2,9 @@ v2.1.2 changes:
     Festivals:
         Spring:
             Updated order of Marigold and Violet tokens to match helper text for A Fistful of Flowers
+    General:    
+        Stopped generating empty AllServers/FestivalBuddy_ImageIDs.plugindata file.
+
     Bugs:
         Fixed bug that prevented token counts from updating.
 

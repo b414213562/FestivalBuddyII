@@ -16,7 +16,6 @@ Logic fixes:
 The way I modified _LANG.DEBUFFS to allow for ordering in the UI makes it harder to find a debuff.
     Consider: A separate table that controls the UI ordering, and not as part of _LANG?
 
-Get rid of _SAVEDIMAGES, SavedImageData, etc - it doesn't seem to do anything.
 Should we do the full localization check for fractional numbers? We're only using PatchDataSave/Load here.
 
 Expand Theater Emotes to add in at least one failure option.
