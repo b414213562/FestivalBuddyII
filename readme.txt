@@ -8,6 +8,8 @@ v2.1.2 changes:
     Bugs:
         Fixed bug that prevented token counts from updating.
         Bumped file format for character-specific data from 2.0 to 2.1 to update in-progress quest data.
+            Too many entries were being saved.
+            Summer entries should have been updated to Farmers Faire when Summer was removed in 2.1.1.
 
 v2.1.1 changes:
     Festivals:
