@@ -15,28 +15,29 @@ _V10_FESTIVAL_DATA = {
 
 function Update_FestivalBuddySettings_from_v20_to_v21(settings)
 
-    -- For any IN_PROGRESS_QUESTS entries that are [questkey] = festivalNumber
-    -- Convert to [questkey] = festivalkey:
     if (settings.IN_PROGRESS_QUESTS == nil) then settings.IN_PROGRESS_QUESTS = {}; end
+    -- Loop through IN_PROGRESS_QUESTS and do the following:
 
-    for questKey,festivalKey in pairs (settings.IN_PROGRESS_QUESTS) do
-        if (type(festivalKey) == "number") then
-            if (festivalKey == 2) then festivalKey = 6; end
-            settings.IN_PROGRESS_QUESTS[questKey] = _V10_FESTIVAL_DATA[festivalKey];
-        end
-    end
-
-    -- Delete any entry that doesn't correpsond to a backgroundable quest:
-    local entriesToDelete = {};
+    -- Delete any entry that doesn't correspond to a backgroundable quest.
+    -- For any IN_PROGRESS_QUESTS entries that are [questkey] = festivalNumber,
+    --     Convert to [questkey] = festivalkey:
+    --     Note: This probably only applies to the developer's files, as many got a partial upgrade.
     for questKey,festivalKey in pairs (settings.IN_PROGRESS_QUESTS) do
         local isQuestBackgroundable = BACKROUNDABLE_QUESTS[questKey];
 
+        -- If it's not backgroundable, we don't want it in IN_PROGRESS_QUESTS
         if (not isQuestBackgroundable) then
-            table.insert(entriesToDelete, questKey);
+            settings.IN_PROGRESS_QUESTS[questKey] = nil;
+        else
+            -- If it is, double-check that the number-to-festival conversion happened,
+            -- and that we don't have a rogue SUMMER reference.
+            if (type(festivalKey) == "number") then
+                if (festivalKey == 2) then festivalKey = 6; end
+                settings.IN_PROGRESS_QUESTS[questKey] = _V10_FESTIVAL_DATA[festivalKey];
+            elseif (festivalKey == "SUMMER") then
+                settings.IN_PROGRESS_QUESTS[questKey] = "FARMERSFAIRE";
+            end
         end
-    end
-    for index, questKey in pairs(entriesToDelete) do
-        settings.IN_PROGRESS_QUESTS[questKey] = nil;
     end
 
 end
