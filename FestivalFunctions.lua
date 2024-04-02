@@ -64,7 +64,12 @@ function FilterNewQuests(cMessage)
     if (questKey) then
         RefreshFestival(festivalKey);
         RefreshQuestGuide(GetString(_LANG.QUESTS[festivalKey][questKey]));
-        SETTINGS.IN_PROGRESS_QUESTS[questKey] = festivalKey;
+
+        -- Only add to IN_PROGRESS_QUESTS if the associated quest is backgroundable.
+        local isQuestBackgroundable = BACKROUNDABLE_QUESTS[questKey];
+        if (isQuestBackgroundable) then
+            SETTINGS.IN_PROGRESS_QUESTS[questKey] = festivalKey;
+        end
     end
 
     QuickGuideWinHandleQuestAccept(cMessage);
