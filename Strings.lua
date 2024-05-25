@@ -64,11 +64,11 @@ _LANG = {
         [SPRING]       = {["ENGLISH"] = "Spring";           ["FRENCH"] = "Printemps";           ["GERMAN"] = "Frühling";    };
         [HARVESTMATH]  = {["ENGLISH"] = "Harvestmath";      ["FRENCH"] = "Moissines";           ["GERMAN"] = "Ernte";       };
         [YULE]         = {["ENGLISH"] = "Yule";             ["FRENCH"] = "Yule";                ["GERMAN"] = "Julfest";     };
-        [ANNIVERSARY]  = {["ENGLISH"] = "Anniversary";      ["FRENCH"] = "Anniversaire";        ["GERMAN"] = "Jubiläums";   };
+        [ANNIVERSARY]  = {["ENGLISH"] = "Anniversary";      ["FRENCH"] = "Anniversaire";        ["GERMAN"] = "Jubiläum";   };
         [FARMERSFAIRE] = {["ENGLISH"] = "Farmers Faire";    ["FRENCH"] = "Foire des fermiers";  ["GERMAN"] = "Bauernfest";  };
         [HOBNANIGANS]  = {["ENGLISH"] = "Hobnanigans";      ["FRENCH"] = "Hobnanigans";         ["GERMAN"] = "Hobnanigans"; };
         [MIDSUMMER]    = {["ENGLISH"] = "Midsummer";        ["FRENCH"] = "Solstice d'été";      ["GERMAN"] = "Mittsommer";  };
-        [ILAA]         = {["ENGLISH"] = "Inn League/Ale Association"; };
+        [ILAA]         = {["ENGLISH"] = "Inn League/Ale Association"; ["GERMAN"] = "Gasthausliga/Biergenossenschaft"};
     };
 
     ["OTHER"] = {
@@ -761,19 +761,19 @@ _LANG = {
         ["QUICK_GUIDE_REMOVE_COMPLETED"]  = { ["ENGLISH"] = "Remove completed items from list";                     ["GERMAN"] = "Fertige Punkte aus der Liste entfernen";              };
         ["QUICK_GUIDE_CLEAR_DELAY"]       = { ["ENGLISH"] = "Delay in seconds before completed items are removed:"; ["GERMAN"] = "Verzögerung in Sekunden bis Punkte entfernt werden";  };
         ["QUICK_GUIDE_QUESTS_TO_INCLUED"] = { ["ENGLISH"] = "Quests to include in quick guide:";                    ["GERMAN"] = "Aufgaben, die in die Schnell-Liste sollen";           };
-        ["QUICK_GUIDE_COLORS"]            = { ["ENGLISH"] = "Quick Guide Colors:"; };
-        ["QUICK_GUIDE_USE_COLORS"]        = { ["ENGLISH"] = "Enable Colors"; };
+        ["QUICK_GUIDE_COLORS"]            = { ["ENGLISH"] = "Quick Guide Colors:"; ["GERMAN"] = "Farben in der Kurzanleitung:";};
+        ["QUICK_GUIDE_USE_COLORS"]        = { ["ENGLISH"] = "Enable Colors"; ["GERMAN"] = "Farben benutzen";};
         ["QUICK_GUIDE_COLOR"] = {
-            ["LOCATION"] = { ["ENGLISH"] = "Location:"; };
-            ["QUEST"] = { ["ENGLISH"] = "Quest:"; };
-            ["NPC"] = { ["ENGLISH"] = "NPC:"; };
-            ["QUEST_ITEM"] = { ["ENGLISH"] = "Quest Item:"; };
+            ["LOCATION"] = { ["ENGLISH"] = "Location:"; ["GERMAN"] = "Orte:";};
+            ["QUEST"] = { ["ENGLISH"] = "Quest:"; ["GERMAN"] = "Aufgaben:";};
+            ["NPC"] = { ["ENGLISH"] = "NPC:"; ["GERMAN"] = "Personen:";};
+            ["QUEST_ITEM"] = { ["ENGLISH"] = "Quest Item:"; ["GERMAN"] = "Gegenstand:";};
         };
-        ["QUICK_GUIDE_COLOR_CHANGE"]      = { ["ENGLISH"] = "Change"; };
-        ["QUICK_GUIDE_COLOR_DEFAULT"]     = { ["ENGLISH"] = "Default"; };
-        ["COLOR_PICKER"]                  = { ["ENGLISH"] = "Color Picker"; };
-        ["SAVE_COLOR"]                    = { ["ENGLISH"] = "Save"; };
-        ["UPDATE"]                        = { ["ENGLISH"] = "Update"; };
+        ["QUICK_GUIDE_COLOR_CHANGE"]      = { ["ENGLISH"] = "Change"; ["GERMAN"] = "Ändern";};
+        ["QUICK_GUIDE_COLOR_DEFAULT"]     = { ["ENGLISH"] = "Default"; ["GERMAN"] = "Standard";};
+        ["COLOR_PICKER"]                  = { ["ENGLISH"] = "Color Picker"; ["GERMAN"] = "Farb-Auswahl";};
+        ["SAVE_COLOR"]                    = { ["ENGLISH"] = "Save"; ["GERMAN"] = "Speichern";};
+        ["UPDATE"]                        = { ["ENGLISH"] = "Update"; ["GERMAN"] = "Aktualisieren";};
 
         ["HARVESTMATH_MAZE_ID_LABEL"] = {
             ["ENGLISH"] = "Change current Harvestmath maze:";

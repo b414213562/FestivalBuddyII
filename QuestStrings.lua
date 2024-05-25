@@ -14,7 +14,7 @@ _QUESTSTRINGS = {
             name = {
                 ["ENGLISH"] = "Hedge Maze Map";
                 ["FRENCH"] = "Hedge Maze Map";
-                ["GERMAN"] = "Hedge Maze Map";
+                ["GERMAN"] = "Heckenlabyrinth";
             };
             cornerCoordinates = {
                 west = -50.8718,
@@ -29,7 +29,7 @@ _QUESTSTRINGS = {
             ["STRING"] = {
                 ["ENGLISH"] =  "Drive away 10 pesky shrews\nCan be completed across numerous rounds";
                 ["FRENCH"] =  "Ecrasez 10 musaraignes\nPeut \195\170tre compl\195\169t\195\169 en plusieurs manches";
-                ["GERMAN"] =  "Drive away 10 pesky shrews\nCan be completed across numerous rounds";
+                ["GERMAN"] =  "Vertreibe 10 lästige Spitzmäuse\nKann über mehrere Runden erfolgen";
             };
 
             ["QUICKSLOTS"] = {
@@ -52,7 +52,7 @@ _QUESTSTRINGS = {
             ["STRING"] = {
                 ["ENGLISH"] =  "Drive away 10 pesky shrews before the end of the round";
                 ["FRENCH"] =  "Ecrasez 10 musaraignes avant la fin de la manche";
-                ["GERMAN"] =  "Drive away 10 pesky shrews before the end of the round";
+                ["GERMAN"] =  "Vertreibe 10 lästige Spitzmäuse in einer Runde";
             };
 
             ["QUICKSLOTS"] = {
@@ -75,7 +75,7 @@ _QUESTSTRINGS = {
             ["STRING"] = {
                 ["ENGLISH"] =  "Before the end of the round:\n\n1) Drive away 10 pesky shrews\n2) Plant 5 seedlings in mounds of soil";
                 ["FRENCH"] =  "Avant la fin de la manche:\n\n1) Ecrasez 10 musaraignes\n2) Plantez 5 graines dans les tas de terreau";
-                ["GERMAN"] =  "Before the end of the round:\n\n1) Drive away 10 pesky shrews\n2) Plant 5 seedlings in mounds of soil";
+                ["GERMAN"] =  "Erledige in einer Runde:\n\n1) Vertreibe 10 lästige Spitzmäuse\n2) Pflanze 5 Setzlinge in der Erde";
             };
 
             ["QUICKSLOTS"] = {
@@ -98,7 +98,7 @@ _QUESTSTRINGS = {
             ["STRING"] = {
                 ["ENGLISH"] =  "Drive away the enormous shrew";
                 ["FRENCH"] =  "Ecrasez la musaraigne gigantesque";
-                ["GERMAN"] =  "Drive away the enormous shrew";
+                ["GERMAN"] =  "Vertreibe die enorme Spitzmaus";
             };
 
             ["QUICKSLOTS"] = {
@@ -121,7 +121,7 @@ _QUESTSTRINGS = {
             ["STRING"] = {
                 ["ENGLISH"] =  "Collect as many flowers as you can in one hour.\n\n<rgb=#ffc000>Marigolds</rgb> can be found north of Michel Delving\n<rgb=#f06ee0>Violets</rgb> can be found west of Bree\n<rgb=#bbfffb>Primroses</rgb> can be found west of Celondim\n\nThese are found in patches of flowers";
                 ["FRENCH"] =  "Rammassez autant de fleurs que vous le pouvez en une heure.\n\nLes <rgb=#ffc000>Soucis</rgb> se trouvent au nord de Grand'Cave\nLes <rgb=#f06ee0>Violettes</rgb> se trouvent \195\160 l'ouest de Bree\nLes <rgb=#bbfffb>Primev\195\168res</rgb> se trouvent \195\160 l'ouest de Celondim\n\nElles se trouvent dans les parterres de fleurs.";
-                ["GERMAN"] =  "Collect as many flowers as you can in one hour.\n\n<rgb=#ffc000>Marigolds</rgb> can be found north of Michel Delving\n<rgb=#f06ee0>Violets</rgb> can be found west of Bree\n<rgb=#bbfffb>Primroses</rgb> can be found west of Celondim\n\nThese are found in patches of flowers";
+                ["GERMAN"] =  "Sammle in einer Stunde so viele Blumen wie möglich.\n\n<rgb=#ffc000>Ringelblumen</rgb> nördlich von Michelbinge\n<rgb=#f06ee0>Veilchen</rgb> westlich von Bree\n<rgb=#bbfffb>Schlüsselblume</rgb> westlich von Celondim\n\nDiese findet man in Blumenbeeten";
             };
         };
 
@@ -263,7 +263,7 @@ _QUESTSTRINGS = {
             ["STRING"] = {
                 ["ENGLISH"] = "Troves and Trickery -- Duillond \n\nPerform emotes on selected targets: \n24.6S, 92.4W = /look \n23.9S, 92.5W = /hail \n24.1S, 93.2W = /eat \n24.1S, 93.0W = /dance \n\nLocations and emotes from http://casualstrolltomordor.com";
                 ["FRENCH"] = "Tours et surprises -- Duillond \n\nLancer les \195\169motes sur les cibles: \n24.6S, 92.4W = /regarder \n23.9S, 92.5W = /bonjour \n24.1S, 93.2W = /manger \n24.1S, 93.0W = /danser \n\nLocations and emotes from http://casualstrolltomordor.com";
-                ["GERMAN"] = "Troves and Trickery -- Duillond \n\nPerform emotes on selected targets: \n24.6S, 92.4W = /look \n23.9S, 92.5W = /hail \n24.1S, 93.2W = /eat \n24.1S, 93.0W = /dance \n\nLocations and emotes from http://casualstrolltomordor.com";
+                ["GERMAN"] = "Schätze und Scherze - Duíllont\n\nNutze Emotes auf die Ziele:\n24.6S, 92.4W = /schauen \n23.9S, 92.5W = /gruß \n24.1S, 93.2W = /essen \n24.1S, 93.0W = /tanzen \nKoordinaten und Emotes von \nhttps://lotro-wiki.com/index.php/Quest:Troves_and_Trickery_--_Duillond";
             };
             ["EMOTES"] = {
                 ["ENGLISH"] = {"/look","/hail","/eat","/dance"};
@@ -276,7 +276,7 @@ _QUESTSTRINGS = {
             ["STRING"] = {
                 ["ENGLISH"] = "Troves and Trickery -- Thorin's Hall \n\nPerform emotes on selected targets: \nLabourer in corridor near tavern = /whistle \nDwarf in Maker's Hall = /drink \nDwarf in Forging Hall = /flex \nDwarf in Main Hall by Hunter Trainer = /mock \n\nLocations and emotes from http://casualstrolltomordor.com";
                 ["FRENCH"] = "Tours et surprises -- Palais de Thorin \n\nLancer les \195\169motes sur les cibles: \nDans le corridor vers la taverne = /siffler \nDans la galerie des artisans = /boire \nDans la salle des forges = /biceps \nDans le hall vers le mentor chasseur = /railler \n\nLocations and emotes from http://casualstrolltomordor.com";
-                ["GERMAN"] = "Troves and Trickery -- Thorin's Hall \n\nPerform emotes on selected targets: \nLabourer in corridor near tavern = /whistle \nDwarf in Maker's Hall = /drink \nDwarf in Forging Hall = /flex \nDwarf in Main Hall by Hunter Trainer = /mock \n\nLocations and emotes from http://casualstrolltomordor.com";
+                ["GERMAN"] = "Schätze und Scherze - Thorins Halle\n\nNutze Emotes auf die Ziele:\nArbeiter im Gang nahe der Taverne = /pfeifen \nZwerg in der Handwerkshalle = /trinken \nZwerg in der Halle der Schmiede = /muskelspiel \nZwerg in der Haupthalle nahe des Jägerausbilders = /verspotten\nKoordinaten und Emotes von \nhttps://lotro-wiki.com/index.php/Quest:Troves_and_Trickery_--_Duillond";
             };
             ["EMOTES"] = {
                 ["ENGLISH"] = {"/whistle","/drink","/flex","/mock"};
@@ -289,7 +289,7 @@ _QUESTSTRINGS = {
             ["STRING"] = {
                 ["ENGLISH"] = "Troves and Trickery -- the Shire \n\nPerform emotes on selected targets: \n30.7S, 71.1W = /shiver \n31.0S, 70.9W = /tantrum \n31.5S, 71.4W = /burp \n29.5S, 71.2W = /pick \n\nLocations and emotes from http://casualstrolltomordor.com";
                 ["FRENCH"] = "Tours et surprises -- La Comt\195\169 \n\nLancer les  \195\169motes sur les cibles: \n30.7S, 71.1W = /frissonner \n31.0S, 70.9W = /caprice \n31.5S, 71.4W = /rot \n29.5S, 71.2W = /d\195\169manger \n\nLocations and emotes from http://casualstrolltomordor.com";
-                ["GERMAN"] = "Troves and Trickery -- the Shire \n\nPerform emotes on selected targets: \n30.7S, 71.1W = /shiver \n31.0S, 70.9W = /tantrum \n31.5S, 71.4W = /burp \n29.5S, 71.2W = /pick \n\nLocations and emotes from http://casualstrolltomordor.com";
+                ["GERMAN"] = "Schätze und Scherze - Das Auenland\n\nNutze Emotes auf die Ziele:\n30.7S, 71.1W = /erschauern \n31.0S, 70.9W = /wutanfall \n31.5S, 71.4W = /rülpsen \n29.5S, 71.2W = /pokratzen\nKoordinaten und Emotes von \nhttps://lotro-wiki.com/index.php/Quest:Troves_and_Trickery_--_The_Shire";
             };
             ["EMOTES"] = {
                 ["ENGLISH"] = {"/shiver","/tantrum","/burp","/pick"};
@@ -302,7 +302,7 @@ _QUESTSTRINGS = {
             ["STRING"] = {
                 ["ENGLISH"] = "Troves and Trickery -- Bree \n\nPerform emotes on selected targets: \n30.6S, 52.0W = /scold \n30.9S, 52.6W = /crazy \n31.9S, 50.6W = /no \n29.9S, 51.3W = /whippitydo \n\nLocations and emotes from http://casualstrolltomordor.com";
                 ["FRENCH"] = "Tours et surprises -- Bree \n\nLancer les \195\169motes sur les cibles: \n30.6S, 52.0W = /gronder \n30.9S, 52.6W = /fou \n31.9S, 50.6W = /non \n29.9S, 51.3W = /youpi \n\nLocations and emotes from http://casualstrolltomordor.com";
-                ["GERMAN"] = "Troves and Trickery -- Bree \n\nPerform emotes on selected targets: \n30.6S, 52.0W = /scold \n30.9S, 52.6W = /crazy \n31.9S, 50.6W = /no \n29.9S, 51.3W = /whippitydo \n\nLocations and emotes from http://casualstrolltomordor.com";
+                ["GERMAN"] = "Schätze und Scherze - Bree\n\nNutze Emotes auf die Ziele:\n30.6S, 52.0W = /ausschimpfen \n30.9S, 52.6W = /verrückt \n31.9S, 50.6W = /nein \n29.9S, 51.3W = /ohwietoll \nKoordinaten und Emotes von \nhttps://lotro-wiki.com/index.php/Quest:Troves_and_Trickery_--_Bree";
             };
             ["EMOTES"] = {
                 ["ENGLISH"] = {"/scold","/crazy","/no","/whippitydo"};
@@ -316,12 +316,14 @@ _QUESTSTRINGS = {
         ["A_WINDY_WALK_THROUGH_WISTMEAD"] = {
             ["STRING"] = {
                 ["ENGLISH"] = "(One-time quest to unlock the rest of the Wistmead quests)\n1. Pick up quest from Walaric Goldworthy in Wistmead.\n2. Talk to Ermentrude Haybank next to the maze.\n3. Talk to Halinard Bunce by the tents.\n4. Talk to Iris Tunnelly near Walaric.\n1. Return to Walaric."
+                ["GERMAN"] = "(Einmalaufgabe, um die restlichen Wistmead Aufgaben freizuschalten)\n1. Nimm die Aufgabe von Walarich Goldbeutel in Wistmead an.\n2. Sprich mit Ermentrude Heubank am Irrgarten.\n3. Sprich mit Halinard Bunce bei den Zelten.\n4. Sprich mit Iris Tunnelly nahe Walarich.\n5. Kehre zu Walarich zurück."
             };
             ["IMAGE"] = _IMAGES[HARVESTMATH].A_WINDY_WALK_THROUGH_WISTMEAD;
         };
         ["CHALLENGING_WHEAT"] = {
             ["STRING"] = {
                 ["ENGLISH"] = "Navigate the maze quickly, but don't cheat!";
+                ["GERMAN"] = "Laufe schnell durch den Irrgarten, ohne abzukürzen!";
             };
 
             ["MAP"] = {
@@ -335,6 +337,7 @@ _QUESTSTRINGS = {
         ["CHEAT_OF_THE_WHEAT"] = {
             ["STRING"] = {
                 ["ENGLISH"] = "Navigate the maze quickly! (You'll need to cheat!)";
+                ["GERMAN"] = "Laufe schnell durch den Irrgarten, MIT Abkürzungen!";
             };
 
             ["MAP"] = {
@@ -348,6 +351,7 @@ _QUESTSTRINGS = {
         ["GATHERING_GOURDS"] = {
             ["STRING"] = {
                 ["ENGLISH"] = "Find 10 gourds in the maze! (No time limit.)";
+                ["GERMAN"] = "Finde 10 Kürbisse im Irrgarten! (Kein Zeitmimit.)";
             };
             ["MAP"] = {
                 ["image1"] = _IMAGES[HARVESTMATH].TANGLECORN_1_CORDS_AND_GOURDS;
@@ -360,6 +364,7 @@ _QUESTSTRINGS = {
         ["PREVENTING_A_MURDER"] = {
             ["STRING"] = {
                 ["ENGLISH"] = "Find 10 cords in the maze! (No time limit.)";
+                ["GERMAN"] = "Finde 10 Raben im Irrgarten! (Kein Zeitmimit.)";
             };
             ["MAP"] = {
                 ["image1"] = _IMAGES[HARVESTMATH].TANGLECORN_1_CORDS_AND_GOURDS;
@@ -380,6 +385,14 @@ _QUESTSTRINGS = {
 3. Talk to Gaffer Gamgee.
 
 Next quest: Bilbo's Letter]];
+                ["GERMAN"] = [[
+(Einmalige Aufgabenreihe, um die heimgesuchte Höhle freizuschalten)
+
+1. Nimm die Aufgabe bei Opal Gutleib an.
+2. Sprich mit Lobelia Sackheim-Beutlin.
+3. Sprich mit Ohm Gamgee.
+
+Nächste Aufgabe: Bilbos Brief]];
             };
         };
         ["BILBOS_LETTER"] = {
@@ -393,6 +406,15 @@ Next quest: Bilbo's Letter]];
 4. Prod Lobelia for information x4.
 
 Next quest: The Haunted Burrow]];
+                ["GERMAN"] = [[
+(Zweiter Teil der Aufgabenreihe, um die Heimgesuchte Höhle freizuschalten)
+
+1. Nimm die Aufgabe bei Ohm Gamgee an.
+2. Frage den Ohm nach Bilbos Brief.
+3. Bringe Bilbos Brief zu Lobelia.
+4. Frag Lobelia 4 mal nach Informationen.
+
+Nächste Aufgabe: Die Heimgesuchte Erdhöhle]];
             };
         };
         ["THE_HAUNTED_BURROW"] = {
@@ -402,6 +424,11 @@ Next quest: The Haunted Burrow]];
 1. Pick up quest from Lobelia Sackville-Baggins.
 2. Talk to Lobelia inside the Haunted Burrow.
 3. Talk to Opal Goodbody.]];
+                ["GERMAN"] = [[
+(Letzter Teil der Aufgabenreihe, um die Heimgesuchte Höhle freizuschalten)
+1. Nimm die Aufgabe bei Lobelia Sackheim-Beutlin an.
+2. Sprich mit Lobelia in der Heimgesuchten Erdhöhle.
+3. Sprich mit Opal Gutleib.]];
             };
         };
 
@@ -410,6 +437,10 @@ Next quest: The Haunted Burrow]];
                 ["ENGLISH"] = [[
 1. Use chain in the Attic, defeat the 'skeleton'.
 Return to Polo Puddifoot.]];
+                ["GERMAN"] = [[
+1. Benutze die Kette auf dem Dachboden
+2. Vertreibe das 'Skelett'
+Kehre zu Polo Platschfuß zurück.]];
             };
             ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Harvestmath/Rattling in the Haunted Burrow.tga";
         };
@@ -418,6 +449,10 @@ Return to Polo Puddifoot.]];
                 ["ENGLISH"] = [[
 1. Use honey in the Cobwebbed Wing, defeat the 'bear'.
 Return to Polo Puddifoot.]];
+                ["GERMAN"] = [[
+1. Benutze den Honig im Spinnwebenflügel
+2. Vertreibe den 'Bär'
+Kehre zu Polo Platschfuß zurück.]];
             };
             ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Harvestmath/Roaring Maw in the Haunted Burrow.tga";
         };
@@ -426,6 +461,10 @@ Return to Polo Puddifoot.]];
                 ["ENGLISH"] = [[
 1. Use candle in the Creeping Wing, defeat the 'ghost'.
 Return to Polo Puddifoot.]];
+                ["GERMAN"] = [[
+1. Benutze die Kerze im Kriecherflügel
+2. Vertreibe den 'Geist'
+Kehre zu Polo Platschfuß zurück.]];
             };
             ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Harvestmath/Wailing in the Haunted Burrow.tga";
         };
@@ -438,6 +477,12 @@ Return to Polo Puddifoot.]];
 3. Go to Creeping Wing, use the orange bottle.
 4. Go to Basement, use the blue bottle.
 Return to Algrim Goodbody.]];
+                ["GERMAN"] = [[
+1. Betrete die Höhle, benutze die Weiße Flasche.
+2. Betrete den Spinnwebenflügel, benutze die Blaue Flasche.
+3. Betrete den Kriecherflügel, benutze die Orange Flasche.
+4. Betrete den Keller, benutze die Blaue Flasche.
+Kehre zu Adalgrim Gutleib zurück.]];
             };
             ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Harvestmath/A Riddle in a Bottle.tga";
         };
@@ -451,6 +496,13 @@ Return to Algrim Goodbody.]];
 4. Get the proof in the Basement.
 Return to Poppy Cotton.
 ]];
+                ["GERMAN"] = [[
+1. Sammle den Beweis auf dem Dachboden.
+2. Sammle den Beweis im Spinnwebenflügel.
+3. Sammle den Beweis im Kriecherflügel.
+4. Sammle den Beweis im Keller.
+Kehre zu Magsame Hüttinger zurück.
+]];
             };
             ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Harvestmath/A Stroll Through the Haunted Burrow.tga";
         };
@@ -462,6 +514,13 @@ Return to Poppy Cotton.
 3. Get the proof in the Creeping Wing.
 4. Get the proof in the Basement.
 Return to Poppy Cotton.
+]];
+                ["GERMAN"] = [[
+1. Sammle den Beweis auf dem Dachboden.
+2. Sammle den Beweis im Spinnwebenflügel.
+3. Sammle den Beweis im Kriecherflügel.
+4. Sammle den Beweis im Keller.
+Kehre zu Magsame Hüttinger zurück.
 ]];
             };
             ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Harvestmath/A Stroll Through the Haunted Burrow.tga";
@@ -478,6 +537,15 @@ Return to Poppy Cotton.
 6. Find hobbit near Main Cellar entrance.
 Return to May Gamgee.
 ]];
+                ["GERMAN"] = [[
+1. Finde den Hobbit auf dem Dachboden.
+2. Finde den Hobbit im Spinnwebenflügel.
+3. Finde den Hobbit im Keller.
+4. Finde den Hobbit nahe Beutelsend im Hauptkeller.
+5. Finde den Hobbit in der Mitte des Hauptkellers.
+6. Finde den Hobbit nahe des Eingangs des Hauptkellers.
+Kehre zu Maie Gamdschie zurück.
+]];
             };
             ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Harvestmath/The Great Hobbit Rescue.tga";
         };
@@ -490,6 +558,14 @@ Return to May Gamgee.
 4. Get the valuable in the Creeping Wing.
 5. Get the valuable in the Basement.
 Return to Holfast Burrows.
+]];
+                ["GERMAN"] = [[
+1. Sammle die Wertsache außerhalb des Dachbodens.
+2. Sammle die Wertsache auf dem Dachbodens.
+3. Sammle die Wertsache auf dem Spinnwebenflügel.
+4. Sammle die Wertsache auf dem Kriecherflügel.
+5. Sammle die Wertsache auf dem Keller.
+Kehre zu Holfast Lochner zurück.
 ]];
             };
             ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Harvestmath/Valuables Gone Astray.tga";
@@ -506,6 +582,15 @@ Return to Holfast Burrows.
 6. Scare hobbit near Main Cellar entrance.
 Return to May Gamgee.
 ]];
+                ["GERMAN"] = [[
+1. Erschrecke den Hobbit auf dem Dachboden.
+2. Erschrecke den Hobbit im Spinnwebenflügel.
+3. Erschrecke den Hobbit im Keller.
+4. Erschrecke den Hobbit nahe Beutelsend im Hauptkeller.
+5. Erschrecke den Hobbit in der Mitte des Hauptkellers.
+6. Erschrecke den Hobbit nahe des Eingangs des Hauptkellers.
+Kehre zu Ráthgeir zurück.
+]];
             };
             ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Harvestmath/The Great Hobbit Rescue.tga";
         };
@@ -514,6 +599,10 @@ Return to May Gamgee.
                 ["ENGLISH"] = [[
 1. Collect treasured wine.
 Return to Cora Brownlock.
+]];
+                ["GERMAN"] = [[
+1. Sammle den wertvollen Wein.
+Kehre zu Cora Braunlock zurück.
 ]];
             };
             ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Harvestmath/The Inn League Excavation.tga";
@@ -787,7 +876,7 @@ Return to Cora Brownlock.
             ["STRING"] = {
                 ["ENGLISH"] = "This takes place in the Festival Arena at Thorin's Hall\n\nObjectives:\n-Knock <rgb=#FF0000>8</rgb> competitors out of the way.\n-You do not need to pick up the mug.\n-You will not fail if knocked out of the arena.\n\nContributes to the 'Mightiest Arm' deed.";
                 ["FRENCH"] = "Cet \195\169v\195\168nement se passe dans l'ar\195\168ne du festival au Palais de Thorin\n\nObjectifs:\n-Ejectez <rgb=#FF0000>8</rgb> adversaires hors de l'ar\195\168ne.\n-Vous n'avez pas besoin d'attraper la chope.\n-Vous n'\195\169chouerez pas si vous \195\170tes \195\169ject\195\169 de l'ar\195\168ne.\n\nContribue \195\160 la prouesse 'Casseur'.";
-                ["GERMAN"] = "This takes place in the Festival Arena at Thorin's Hall\n\nObjectives:\n-Knock <rgb=#FF0000>8</rgb> competitors out of the way.\n-You do not need to pick up the mug.\n-You will not fail if knocked out of the arena.\n\nContributes to the 'Mightiest Arm' deed.";
+                ["GERMAN"] = "Findet in der Festarena in Thorins Halle statt\n\nZiel:\n-Prügle auf <rgb=#FF0000>8</rgb> Teilnehmer ein.\n-Der Krug muss <rgb=#00ff00>nicht</rgb> aufgehoben werden.\n-Verlassen der Arena lässt den Kampf <rgb=#00ff00>nicht</rgb> scheitern.\n\nZählt für 'Der Kräftigste Arm' Tat.";
             };
 
             ["QUICKSLOTS"] = {
@@ -807,7 +896,7 @@ Return to Cora Brownlock.
             ["STRING"] = {
                 ["ENGLISH"] = "This takes place in the Festival Arena at Thorin's Hall\n\nObjectives:\n-Knock <rgb=#FF0000>8</rgb> competitors out of the way.\n-You do not need to pick up the mug.\n-You <rgb=#FF0000>will fail</rgb> if knocked out of the arena.\n\nContributes to the 'Mightiest Arm' deed.";
                 ["FRENCH"] = "Cet \195\169v\195\168nement se passe dans l'ar\195\168ne du festival au Palais de Thorin\n\nObjectifs:\n-Ejectez <rgb=#FF0000>8</rgb> adversaires hors de l'ar\195\168ne.\n-Vous n'avez pas besoin d'attraper la chope.\n-Vous <rgb=#FF0000>\195\169chouerez</rgb> si vous \195\170tes \195\169ject\195\169 de l'ar\195\168ne.\n\nContribue \195\160 la prouesse 'Casseur'.";
-                ["GERMAN"] = "This takes place in the Festival Arena at Thorin's Hall\n\nObjectives:\n-Knock <rgb=#FF0000>8</rgb> competitors out of the way.\n-You do not need to pick up the mug.\n-You <rgb=#FF0000>will fail</rgb> if knocked out of the arena.\n\nContributes to the 'Mightiest Arm' deed.";
+                ["GERMAN"] = "Findet in der Festarena in Thorins Halle statt\n\nZiel:\n-Prügle auf <rgb=#FF0000>8</rgb> Teilnehmer ein.\n-Der Krug muss <rgb=#00ff00>nicht</rgb> aufgehoben werden.\n-Verlassen der Arena lässt den Kampf <rgb=#ff0000>scheitern</rgb>.\n\nZählt für 'Der Kräftigste Arm' Tat.";
             };
 
             ["QUICKSLOTS"] = {
@@ -827,7 +916,7 @@ Return to Cora Brownlock.
             ["STRING"] = {
                 ["ENGLISH"] = "This takes place in the Festival Arena at Thorin's Hall\n\nObjectives:\n-Knock <rgb=#FF0000>8</rgb> competitors out of the way.\n-You <rgb=#FF0000>need</rgb> to pick up the mug.\n-You <rgb=#FF0000>will fail</rgb> if knocked out of the arena.\n\nContributes to the 'Mightiest Arm' deed.\nContributes to the 'Why Your Head Hurts' deed.";
                 ["FRENCH"] = "Cet \195\169v\195\168nement se passe dans l'ar\195\168ne du festival au Palais de Thorin\n\nObjectifs:\n-Ejectez <rgb=#FF0000>8</rgb> adversaires hors de l'ar\195\168ne.\n-Vous <rgb=#FF0000>devez</rgb> attraper la chope.\n-Vous <rgb=#FF0000>\195\169chouerez</rgb> si vous \195\170tes \195\169ject\195\169 de l'ar\195\168ne.\n\nContribue \195\160 la prouesse 'Casseur'.\nContribue \195\160 la prouesse 'Battu, Contusionn\195\169, Endolori'";
-                ["GERMAN"] = "This takes place in the Festival Arena at Thorin's Hall\n\nObjectives:\n-Knock <rgb=#FF0000>8</rgb> competitors out of the way.\n-You <rgb=#FF0000>need</rgb> to pick up the mug.\n-You <rgb=#FF0000>will fail</rgb> if knocked out of the arena.\n\nContributes to the 'Mightiest Arm' deed.\nContributes to the 'Why Your Head Hurts' deed.";
+                ["GERMAN"] = "Findet in der Festarena in Thorins Halle statt\n\nZiel:\n-Prügle auf <rgb=#FF0000>8</rgb> Teilnehmer ein.\n-Der Krug muss <rgb=#00ff00>aufgehoben</rgb> werden.\n-Verlassen der Arena lässt den Kampf <rgb=#ff0000>scheitern</rgb>.\n\nZählt für 'Der Kräftigste Arm' Tat.";
             };
 
             ["QUICKSLOTS"] = {
@@ -847,7 +936,7 @@ Return to Cora Brownlock.
             ["STRING"] = {
                 ["ENGLISH"] = "Follow the instructions given by the 'Fireworks Announcer' to make sure you launch a suitable coloured firework.\n\nThe Announcer will try and trick you out with statements such as, <rgb=#FF0000>anything except</rgb>, or <rgb=#FF0000>anything but</rgb>, so make sure you read the instructions carefully.";
                 ["FRENCH"] = "Suivez les instructions donn\195\169es par 'l'Animateur du feu d'artifice' pour \195\170tre s\195\187r(e) de lancer la bonne couleur.\n\nL'animateur tente de vous embrouiller avec des formules du type, <rgb=#FF0000>tout ce que vous voulez sauf</rgb>, ou <rgb=#FF0000>autre chose que</rgb>, soyez certain(e) d'avoir lu les instructions correctement.";
-                ["GERMAN"] = "Follow the instructions given by the 'Fireworks Announcer' to make sure you launch a suitable coloured firework.\n\nThe Announcer will try and trick you out with statements such as, <rgb=#FF0000>anything except</rgb>, or <rgb=#FF0000>anything but</rgb>, so make sure you read the instructions carefully.";
+                ["GERMAN"] = "Folge den Anweisungen des 'Feuerwerk-Ansagers', um ein passendes Feuerwerk zu zünden.\n\nDer Ansager versucht, Teilnehmer reinzulegen, indem er Formulierungen wie <rgb=#FF0000>alles außer</rgb>, oder <rgb=#FF0000>nicht</rgb> benutzt. Lies GENAU!";
             };
         };
 
@@ -855,7 +944,7 @@ Return to Cora Brownlock.
             ["STRING"] = {
                 ["ENGLISH"] = "Envelopes can be found around Bree, open them to collect invitations and occassionally get prizes.\n\nNote: You can collect as many envelopes as you want, but can only open them until the six invitations have been collected.";
                 ["FRENCH"] = "Les enveloppes se trouvent dans Bree, ouvrez les pour r\195\169cup\195\169rer les invitations et de temps en temps des cadeaux.\n\nNote: Vous pouvez ramassez autant d'enveloppes que vous le voulez, mais vous ne pourrez plus les ouvrir une fois les six invitations r\195\169cup\195\169es.";
-                ["GERMAN"] = "Envelopes can be found around Bree, open them to collect invitations and occassionally get prizes.\n\nNote: You can collect as many envelopes as you want, but can only open them until the six invitations have been collected.";
+                ["GERMAN"] = "Briefe findet man in ganz Bree, öffne die Umschläge, um Einladungen und manchmal Geschenke zu erhalten.\n\nNebenbei: Du kannst so viele Umschläge sammeln, wie Du willst, aber Du kannst nur so lange Umschläge öffnen, bis Du sechs Einladungen gefunden hast.";
             };
         };
 
@@ -944,7 +1033,7 @@ Return to Cora Brownlock.
             ["STRING"] = {
                 ["ENGLISH"] = "1) The best place to catch amberjacks is inside Thorin's Hall near the waterfall.\n\n2) The best place to catch luillim is in Celondim by the docks.\n\n3) The best place to catch drum is near Bree, at the pond by Pierson's Farm (33.0s, 49.8w).";
                 ["FRENCH"] = "1) The best place to catch amberjacks is inside Thorin's Hall near the waterfall.\n\n2) The best place to catch luillim is in Celondim by the docks.\n\n3) The best place to catch drum is near Bree, at the pond by Pierson's Farm (33.0s, 49.8w).";
-                ["GERMAN"] = "1) Der beste Platz für amberjacks ist in Thorins Halle nahe des Wasserfalls.\n\n2) Der beste Platz für Luillim ist am Hafen in Celondim.\n\n3) Der beste Platz für Trommelfische ist südlich von Bree, am Teich (33.0s, 49.8w).";
+                ["GERMAN"] = "1) Der beste Platz für Gelbschwanzmakrelen ist in Thorins Halle nahe des Wasserfalls.\n\n2) Der beste Platz für Luillim ist am Hafen in Celondim.\n\n3) Der beste Platz für Trommelfische ist südlich von Bree, am Teich (33.0s, 49.8w).";
             };
         };
 
@@ -980,18 +1069,21 @@ Return to Cora Brownlock.
         ["A_CURE_FOR_ALL_ILLS"] = {
             ["STRING"] = {
                 ["ENGLISH"] = "1. Take quest from Ioreth.\n\n2. Dispose of 10 half-emptied bottles.\n\n3. Remove 6 noisy revellers.\n\n1. Return to Ioreth.";
+                ["GERMAN"] = "1. Aufgabe bei Ioreth annehmen.\n\n2. Entsorge 10 halb-leere Flaschen.\n\n3. Schicke 6 neugierige Besucher weg.\n\n1. Kehre zu Ioreth zurück.";
             };
             ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Midsummer/A Cure For All Ills.tga";
         };
         ["AIDING_THE_STABLE_HANDS"] = {
             ["STRING"] = {
                 ["ENGLISH"] = "1. Pick up quest from Loborís inside City Stables.\n\n2. Pick up brush and apples.\n\n3. Feed and brush horses.\n\n1. Return to Loborís.";
+                ["GERMAN"] = "1. Aufgabe bei Loborís in den Ställen annehmen.\n\n2. Nimm die Bürste und die Äpfel.\n\n3. Füttere und striegle die Pferde.\n\n1. Kehre zu Loborís zurück.";
             };
             ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Midsummer/Aiding the Stable-hands.tga";
         };
         ["ARRANGING_ARRANGEMENTS"] = {
             ["STRING"] = {
                 ["ENGLISH"] = "1. Pick up quest from Florist on the Citadel. Place 5 of the following floral arrangements:\n2. Two arrangements in The Merry Swan [21.0N, 56.6W] (Craftsmen's Tier)\n3. Three arrangements in the Blue Theatre [21.5N, 56.5W] (Players' Tier)\n4. Two arrangements in the Hall of Air [23.1N, 56.3W] (Sages' Tier)\nQuest auto-completes";
+                ["GERMAN"] = "1. Nimm die Aufgabe bei der Blumenhändlerin in der Zitadelle an. Platziere 5 der folgenden Blumenarrangements:\n2. Zwei in Fröhlichen Schwan [21.0N, 56.6W] (Handwerkerring)\n3. Drei im Blauen Theater [21.5N, 56.5W] (Spielerring)\n4. Zwei in der Halle der Luft [23.1N, 56.3W] (Gelehrtenring)\nAufgabe schließt automatisch ab";
             };
             ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Midsummer/Arranging Arrangements.tga";
         };
