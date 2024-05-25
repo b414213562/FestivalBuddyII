@@ -25,6 +25,7 @@ function DrawMazeMapWin()
     wMazeMapWinParent:SetVisible(SETTINGS.MAZEMAPWIN.VISIBLE);
 
     -- I think this is a Window instead of Control to help stuff showing on top of other stuff?
+    -- Update: SetOpacity seems to only work on Window, not Control.
     local map = Turbine.UI.Window();
     wMazeMapWinParent.map = map;
     map:SetParent(wMazeMapWinParent);
@@ -359,6 +360,7 @@ end
 -- Todo: Make a library out of the "where am I" code?
 -- You are on [EN-RP] Laurelin server 65 at r1 lx959 ly996 ox155.94 oy81.83 oz416.53 h87.2. Game timestamp 497716977.002.
 -- You are on [EN-RP] Laurelin server 52 at r1 lx960 ly996 i5 ox3.41 oy82.72 oz416.53 h90.0. Game timestamp 497717344.548.
+-- Ihr seid auf dem Server "[DE] Gwaihir" (27) in r1 lx952 ly997 ox2.36 oy118.58 oz414.44 h30.9. Spiel-Zeitstempel 422606916.679.
 local LOC_MESSAGES = {
     'You are on %a+ server %d+ at r(%d+) lx(%d+%.?%d*) ly(%d+%.?%d*) i%d+ ox(%d+%.?%d*) oy(%d+%.?%d*) oz(%d+%.?%d*) h(%d+%.?%d*)',
     'You are on %[EN%-RP%] %a+ server %d+ at r(%d+) lx(%d+%.?%d*) ly(%d+%.?%d*) i%d+ ox(%d+%.?%d*) oy(%d+%.?%d*) oz(%d+%.?%d*) h(%d+%.?%d*)',
@@ -372,7 +374,8 @@ local LOC_MESSAGES = {
     'You are on %a+ server %d+ at r(%d+) lx(%d+%.?%d*) ly(%d+%.?%d*) cInside ox(.-%d+%.?%d*) oy(.-%d+%.?%d*) oz(.-%d+%.?%d*) h(%d+%.?%d*)',
     'You are on %a+ server %d+ at r(%d+) lx(%d+%.?%d*) ly(%d+%.?%d*) ox(.-%d+%.?%d*) oy(.-%d+%.?%d*) oz(.-%d+%.?%d*)',
     'You are on %[EN%-RP%] server %d+ at r(%d+) lx(%d+%.?%d*) ly(%d+%.?%d*) ox(.-%d+%.?%d*) oy(.-%d+%.?%d*) oz(.-%d+%.?%d*)',
-    'You are on %a+ server %d+ at r(%d+) lx(%d+%.?%d*) ly(%d+%.?%d*) cInside ox(.-%d+%.?%d*) oy(.-%d+%.?%d*) oz(.-%d+%.?%d*)'
+    'You are on %a+ server %d+ at r(%d+) lx(%d+%.?%d*) ly(%d+%.?%d*) cInside ox(.-%d+%.?%d*) oy(.-%d+%.?%d*) oz(.-%d+%.?%d*)',
+    'Ihr seid auf dem Server \"%[DE%] %a+\" (%d+) in r(%d+) lx(%d+%.?%d*) ly(%d+%.?%d*) ox(%d+%.?%d*) oy(%d+%.?%d*) oz(%d+%.?%d*) h(%d+%.?%d*)'
 };
 
 function MazeMapParseChatLocation(message)

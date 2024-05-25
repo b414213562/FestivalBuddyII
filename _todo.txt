@@ -1,3 +1,9 @@
+Note: FBII GENERIC_FESTIVITY should be on for anything with a Festival instance.
+
+
+LOC_MESSAGES is not localized.
+    Extract it to a library and make it work on all languages, all servers.
+
 Eliminate SELECTEDFESTIVAL and just use SETTINGS.FESTIVAL? Add a helper function GetFestival()?
 
 Logic fixes:
