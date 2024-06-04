@@ -66,7 +66,7 @@ _LANG = {
         [YULE]         = {["ENGLISH"] = "Yule";             ["FRENCH"] = "Yule";                ["GERMAN"] = "Julfest";     };
         [ANNIVERSARY]  = {["ENGLISH"] = "Anniversary";      ["FRENCH"] = "Anniversaire";        ["GERMAN"] = "Jubiläum";   };
         [FARMERSFAIRE] = {["ENGLISH"] = "Farmers Faire";    ["FRENCH"] = "Foire des fermiers";  ["GERMAN"] = "Bauernfest";  };
-        [HOBNANIGANS]  = {["ENGLISH"] = "Hobnanigans";      ["FRENCH"] = "Hobnanigans";         ["GERMAN"] = "Hobnanigans"; };
+        [HOBNANIGANS]  = {["ENGLISH"] = "Hobnanigans";      ["FRENCH"] = "Chasse-poulet";         ["GERMAN"] = "Hobnanigans"; };
         [MIDSUMMER]    = {["ENGLISH"] = "Midsummer";        ["FRENCH"] = "Solstice d'été";      ["GERMAN"] = "Mittsommer";  };
         [ILAA]         = {["ENGLISH"] = "Inn League/Ale Association"; ["GERMAN"] = "Gasthausliga/Biergenossenschaft"};
     };
@@ -272,6 +272,13 @@ _LANG = {
         };
 
         ["HOBNANIGANS_ACCOUNCEMENTS"] = {
+            -- A Game of Hobnanigans -- Flying Feathers
+            -- Eine Runde Hobnanigans – Fliegende Federn
+            -- Une partie de chasse-poulet – Plumes Volantes
+
+            -- A Game of Hobnanigans -- Steel Beaks
+            -- Eine Runde Hobnanigans – Stahlschnäbel
+            -- Une partie de chasse-poulet – Becs d’Acier
             ["HOBNANIGANS_QUEST_BEGIN_TEXT"] = {
                 ["ENGLISH"] = "New Quest: A Game of Hobnanigans %-%- (.*) %- Field ([1-4])";
                 ["GERMAN"] = "Neue Aufgabe: Eine Runde Hobnanigans – (.*) – Feld ([1-4])";
@@ -279,21 +286,57 @@ _LANG = {
             };
             ["HOBNANIGANS_QUEST_END_TEXT"] = {
                 ["ENGLISH"] = "Failed: A Game of Hobnanigans %-%- (.*) %- Field ([1-4])";
+                ["GERMAN"] = "Gescheitert: Eine Runde Hobnanigans – (.*) – Feld ([1-4])";
+                ["FRENCH"] = "Echec : Une partie de chasse-poulet – (.*) - Terrain ([1-4])";
             };
+
+            -- [06/02 10:29:41 PM] Field 3 Referee says, ''The Game Hen has landed on the field. Begin play!''
+            -- [06/02 10:29:41 PM] Schiedsrichter - Feld 3 sagt: ''Das Spielhuhn ist auf dem Feld gelandet. Fang an zu spielen!''
+            -- [02/06, 10:29:41 PM] Arbitre du terrain 3 dit : ''Le poulet a atterri sur le terrain de jeu. Commencez la partie !''
             ["HOBNANIGANS_ACTIVE_PLAY_BEGIN"] = {
                 ["ENGLISH"] = "Field ([1-4]) Referee says, ''The Game Hen has landed on the field%. Begin play!''";
+                ["GERMAN"] = "Schiedsrichter - Feld ([1-4]) sagt: ''Das Spielhuhn ist auf dem Feld gelandet%. Fang an zu spielen!";
+                ["FRENCH"] = "Arbitre du terrain ([1-4]) dit : ''Le poulet a atterri sur le terrain de jeu%. Commencez la partie !''";
             };
+
+            -- [06/02 10:26:01 PM] Field 3 Referee says, ''Steel Beaks score!!''
+            -- [06/02 10:26:01 PM] Schiedsrichter - Feld 3 sagt: ''Die Stahlschnäbel punkten!!''
+            -- [02/06, 10:26:01 PM] Arbitre du terrain 3 dit : ''Les Becs d’Acier marquent !''
+
+            -- [06/02 10:26:34 PM] Field 3 Referee says, ''Flying Feathers score!!!''
+            -- [06/02 10:26:34 PM] Schiedsrichter - Feld 3 sagt: ''Die Fliegenden Federn punkten!!!''
+            -- [02/06, 10:26:34 PM] Arbitre du terrain 3 dit : ''Les Plumes Volantes marquent !''
             ["HOBNANIGANS_POINT_SCORED"] = {
                 ["ENGLISH"] = "Field ([1-4]) Referee says, ''(.*) score!+''";
+                ["GERMAN"] = "Schiedsrichter %- Feld ([1-4]) sagt: ''Die (.*) punkten!+''";
+                ["FRENCH"] = "Arbitre du terrain ([1-4]) dit : ''Les (.*) marquent !+''";
             };
+
+            -- [06/02 10:33:00 PM] Field 3 Referee says, ''Flying Feathers Win!!!''
+            -- [06/02 10:33:00 PM] Schiedsrichter - Feld 3 sagt: ''Die Fliegenden Federn haben gewonnen!!!''
+            -- [02/06, 10:33:00 PM] Arbitre du terrain 3 dit : ''Victoire des Plumes Volantes !''
             ["HOBNANIGANS_GAME_END"] = {
                 ["ENGLISH"] = "Field ([1-4]) Referee says, ''(.*) Win!+''";
+                ["GERMAN"] = "Schiedsrichter %- Feld ([1-4]) sagt: ''Die (.*) haben gewonnen!+''";
+                ["FRENCH"] = "Arbitre du terrain ([1-4]) dit : ''Victoire des (.*) !+''";
             };
+
+            -- [06/02 10:09:01 PM] Field 3 Referee says, ''Six minutes left in the game!''
+            -- [06/02 10:09:01 PM] Schiedsrichter - Feld 3 sagt: ''Noch 6 Minuten Spielzeit übrig.''
+            -- [02/06, 10:09:01 PM] Arbitre du terrain 3 dit : ''Plus que 6 minutes de jeu !''
             ["HOBNANIGANS_TIME_REMAINING_6"] = {
                 ["ENGLISH"] = "Field ([1-4]) Referee says, ''Six minutes left in the game!+''";
+                ["GERMAN"] = "Schiedsrichter %- Feld ([1-4]) sagt: ''Noch 6 Minuten Spielzeit übrig%.''";
+                ["FRENCH"] = "Arbitre du terrain ([1-4]) dit : ''Plus que 6 minutes de jeu !+''";
             };
+
+            -- [06/02 10:13:01 PM] Field 3 Referee says, ''Two minutes left in the game!''
+            -- [06/02 10:13:01 PM] Schiedsrichter - Feld 3 sagt: ''Noch 2 Minuten Spielzeit übrig.''
+            -- [02/06, 10:13:01 PM] Arbitre du terrain 3 dit : ''Plus que deux minutes de jeu !''
             ["HOBNANIGANS_TIME_REMAINING_2"] = {
                 ["ENGLISH"] = "Field ([1-4]) Referee says, ''Two minutes left in the game!+''";
+                ["GERMAN"] = "Schiedsrichter %- Feld ([1-4]) sagt: ''Noch 2 Minuten Spielzeit übrig%.''";
+                ["FRENCH"] = "Arbitre du terrain ([1-4]) dit : ''Plus que deux minutes de jeu !+''";
             };
         };
 
@@ -306,7 +349,7 @@ _LANG = {
             -- Convert team name to lookup key
             ["Steel Beaks"] = "STEEL_BEAKS";
             ["Stahlschnäbel"] = "STEEL_BEAKS";
-            ["Becs d'Acier"] = "STEEL_BEAKS";
+            ["Becs d’Acier"] = "STEEL_BEAKS";
 
             -- Convert lookup key to team name:
             ["FLYING_FEATHERS"] = {
@@ -318,25 +361,35 @@ _LANG = {
             ["STEEL_BEAKS"] = {
                 ["ENGLISH"] = "Steel Beaks";
                 ["GERMAN"] = "Stahlschnäbel";
-                ["FRENCH"] = "Becs d'Acier";
+                ["FRENCH"] = "Becs d’Acier";
             };
         };
 
         ["HOBNANIGANS_TEXT"] = {
             ["FIELD"] = {
                 ["ENGLISH"] = "Field";
+                ["GERMAN"] = "Feld";
+                -- ["FRENCH"] = "";
             };
             ["NONE"] = {
                 ["ENGLISH"] = "None";
+                ["GERMAN"] = "Keines";
+                -- ["FRENCH"] = "";
             };
             ["NEED_QUEST"] = {
                 ["ENGLISH"] = "Need Quest";
+                ["GERMAN"] = "Aufgabe benötigt";
+                -- ["FRENCH"] = "";
             };
             ["WAITING_FOR_START"] = {
                 ["ENGLISH"] = "Waiting...";
+                ["GERMAN"] = "Warte auf Anpfiff";
+                -- ["FRENCH"] = "";
             };
             ["GAME_OVER"] = {
                 ["ENGLISH"] = "Game Over!";
+                ["GERMAN"] = "Spiel vorbei!";
+                -- ["FRENCH"] = "";
             };
         };
 
@@ -551,7 +604,7 @@ _LANG = {
         -- Must match the text given in-game
         ["NEWQUEST"]       = {["ENGLISH"] = "New Quest:";   ["FRENCH"] = "Nouvelle quête :";    ["GERMAN"] = "Neue Aufgabe:";   };
         ["COMPLETEDQUEST"] = {["ENGLISH"] = "Completed:";   ["FRENCH"] = "Terminé :";           ["GERMAN"] = "Abgeschlossen:";  };
-        ["FAILEDQUEST"]    = {["ENGLISH"] = "Failed:";      ["FRENCH"] = "Failed\195\169";      ["GERMAN"] = "Gescheitert:";    };
+        ["FAILEDQUEST"]    = {["ENGLISH"] = "Failed:";      ["FRENCH"] = "Echec :";      ["GERMAN"] = "Gescheitert:";    };
 
         -- Season specific -- Must match the text given in-game
         [SPRING] = {
