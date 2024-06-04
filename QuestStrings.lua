@@ -315,8 +315,8 @@ _QUESTSTRINGS = {
         -- todo: localize these new quests:
         ["A_WINDY_WALK_THROUGH_WISTMEAD"] = {
             ["STRING"] = {
-                ["ENGLISH"] = "(One-time quest to unlock the rest of the Wistmead quests)\n1. Pick up quest from Walaric Goldworthy in Wistmead.\n2. Talk to Ermentrude Haybank next to the maze.\n3. Talk to Halinard Bunce by the tents.\n4. Talk to Iris Tunnelly near Walaric.\n1. Return to Walaric."
-                ["GERMAN"] = "(Einmalaufgabe, um die restlichen Wistmead Aufgaben freizuschalten)\n1. Nimm die Aufgabe von Walarich Goldbeutel in Wistmead an.\n2. Sprich mit Ermentrude Heubank am Irrgarten.\n3. Sprich mit Halinard Bunce bei den Zelten.\n4. Sprich mit Iris Tunnelly nahe Walarich.\n5. Kehre zu Walarich zurück."
+                ["ENGLISH"] = "(One-time quest to unlock the rest of the Wistmead quests)\n1. Pick up quest from Walaric Goldworthy in Wistmead.\n2. Talk to Ermentrude Haybank next to the maze.\n3. Talk to Halinard Bunce by the tents.\n4. Talk to Iris Tunnelly near Walaric.\n1. Return to Walaric.";
+                ["GERMAN"] = "(Einmalaufgabe, um die restlichen Wistmead Aufgaben freizuschalten)\n1. Nimm die Aufgabe von Walarich Goldbeutel in Wistmead an.\n2. Sprich mit Ermentrude Heubank am Irrgarten.\n3. Sprich mit Halinard Bunce bei den Zelten.\n4. Sprich mit Iris Tunnelly nahe Walarich.\n5. Kehre zu Walarich zurück.";
             };
             ["IMAGE"] = _IMAGES[HARVESTMATH].A_WINDY_WALK_THROUGH_WISTMEAD;
         };
