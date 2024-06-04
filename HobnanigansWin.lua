@@ -79,7 +79,11 @@ function DrawHobnanigansWin()
 
     hobnanigansStatus = Turbine.UI.Label();
     hobnanigansStatus:SetParent(wHobnanigans);
-    hobnanigansStatus:SetFont(Turbine.UI.Lotro.Font.TrajanProBold36);
+    if (CLIENTLANG == "GERMAN") then
+        hobnanigansStatus:SetFont(Turbine.UI.Lotro.Font.TrajanProBold30);
+    else
+        hobnanigansStatus:SetFont(Turbine.UI.Lotro.Font.TrajanProBold36);
+    end
     hobnanigansStatus:SetFontStyle(Turbine.UI.FontStyle.Outline);
     hobnanigansStatus:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleCenter);
     hobnanigansStatus:SetSize(260, 40);

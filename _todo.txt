@@ -1,7 +1,6 @@
 Todo:
     Thank Talyrion for the latest translations in the release notes
-Hobnanigans: (2023-06-01)
-    Get French and German strings!
+Make Hobnanigans debug work with other languages
 
 
 
