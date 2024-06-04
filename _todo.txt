@@ -1,4 +1,8 @@
-Note: FBII GENERIC_FESTIVITY should be on for anything with a Festival instance.
+Todo:
+    Thank Talyrion for the latest translations in the release notes
+Hobnanigans: (2023-06-01)
+    Get French and German strings!
+
 
 
 LOC_MESSAGES is not localized.
@@ -127,9 +131,6 @@ Consider using a starts_with function instead of a pattern to find the announcer
         Turbine.Shell.WriteLine("starting text: \"" .. starting_text .. "\", length: " .. length .. ", substring: \"" .. substring .. "\", equal: " .. dump(are_equal));
         return are_equal;
     end
-
-Hobnanigans: (2023-06-01)
-    Get French and German strings!
 
 Anniversary:
 

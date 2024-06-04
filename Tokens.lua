@@ -167,15 +167,15 @@ TOKEN_FESTIVAL_USES_GENERIC_TOKEN = {
     };
     [YULE] = {
         ["GENERIC_MITHRIL"] = true;
-        ["GENERIC_FESTIVITY"] = false;
+        ["GENERIC_FESTIVITY"] = true;
     };
     [ANNIVERSARY] = {
         ["GENERIC_MITHRIL"] = true;
-        ["GENERIC_FESTIVITY"] = false;
+        ["GENERIC_FESTIVITY"] = true;
     };
     [FARMERSFAIRE] = {
         ["GENERIC_MITHRIL"] = false;
-        ["GENERIC_FESTIVITY"] = false;
+        ["GENERIC_FESTIVITY"] = true;
     };
     [HOBNANIGANS] = {
         ["GENERIC_MITHRIL"] = true;
