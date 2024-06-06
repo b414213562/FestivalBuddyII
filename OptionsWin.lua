@@ -497,6 +497,115 @@ function DrawFireworksDebug(options)
 end
 
 function DrawHobnanigansDebug(options)
+    local debugText = {
+        ["START_FIELD_2"] = {
+            ["FF"] = {
+                ["ENGLISH"] = "New Quest: A Game of Hobnanigans -- Flying Feathers - Field 2";
+                ["GERMAN"] = "Neue Aufgabe: Eine Runde Hobnanigans – Fliegende Federn – Feld 2";
+                ["FRENCH"] = "Nouvelle quête : Une partie de chasse-poulet – Plumes Volantes - Terrain 2";
+            };
+            ["SB"] = {
+                ["ENGLISH"] = "New Quest: A Game of Hobnanigans -- Steel Beaks - Field 2";
+                ["GERMAN"] = "Neue Aufgabe: Eine Runde Hobnanigans – Stahlschnäbel – Feld 2";
+                ["FRENCH"] = "Nouvelle quête : Une partie de chasse-poulet – Becs d’Acier - Terrain 2";
+            };
+        };
+        ["STOP_FIELD_2"] = {
+            ["FF"] = {
+                ["ENGLISH"] = "Failed: A Game of Hobnanigans -- Flying Feathers - Field 2";
+                ["GERMAN"] = "Gescheitert: Eine Runde Hobnanigans – Fliegende Federn – Feld 2";
+                ["FRENCH"] = "Echec : Une partie de chasse-poulet – Plumes Volantes - Terrain 2";
+            };
+            ["SB"] = {
+                ["ENGLISH"] = "Failed: A Game of Hobnanigans -- Steel Beaks - Field 2";
+                ["GERMAN"] = "Gescheitert: Eine Runde Hobnanigans – Stahlschnäbel – Feld 2";
+                ["FRENCH"] = "Echec : Une partie de chasse-poulet – Becs d’Acier - Terrain 2";
+            };
+        };
+        ["START_FIELD_3"] = {
+            ["FF"] = {
+                ["ENGLISH"] = "New Quest: A Game of Hobnanigans -- Flying Feathers - Field 3";
+                ["GERMAN"] = "Neue Aufgabe: Eine Runde Hobnanigans – Fliegende Federn – Feld 3";
+                ["FRENCH"] = "Nouvelle quête : Une partie de chasse-poulet – Plumes Volantes - Terrain 3";
+            };
+            ["SB"] = {
+                ["ENGLISH"] = "New Quest: A Game of Hobnanigans -- Flying Feathers - Field 3";
+                ["GERMAN"] = "Neue Aufgabe: Eine Runde Hobnanigans – Stahlschnäbel – Feld 3";
+                ["FRENCH"] = "Nouvelle quête : Une partie de chasse-poulet – Becs d’Acier - Terrain 3";
+            };
+        };
+        ["STOP_FIELD_3"] = {
+            ["FF"] = {
+                ["ENGLISH"] = "Failed: A Game of Hobnanigans -- Flying Feathers - Field 3";
+                ["GERMAN"] = "Gescheitert: Eine Runde Hobnanigans – Fliegende Federn – Feld 3";
+                ["FRENCH"] = "Echec : Une partie de chasse-poulet – Plumes Volantes - Terrain 3";
+            };
+            ["SB"] = {
+                ["ENGLISH"] = "Failed: A Game of Hobnanigans -- Steel Beaks - Field 3";
+                ["GERMAN"] = "Gescheitert: Eine Runde Hobnanigans – Stahlschnäbel – Feld 3";
+                ["FRENCH"] = "Echec : Une partie de chasse-poulet – Becs d’Acier - Terrain 3";
+            };
+        };
+        ["START_GAME_2"] = {
+            ["ENGLISH"] = "Field 2 Referee says, ''The Game Hen has landed on the field. Begin play!''";
+            ["GERMAN"] = "Schiedsrichter - Feld 2 sagt: ''Das Spielhuhn ist auf dem Feld gelandet. Fang an zu spielen!";
+            ["FRENCH"] = "Arbitre du terrain 2 dit : ''Le poulet a atterri sur le terrain de jeu. Commencez la partie !''";
+        };
+        ["START_GAME_3"] = {
+            ["ENGLISH"] = "Field 3 Referee says, ''The Game Hen has landed on the field. Begin play!''";
+            ["GERMAN"] = "Schiedsrichter - Feld 3 sagt: ''Das Spielhuhn ist auf dem Feld gelandet. Fang an zu spielen!";
+            ["FRENCH"] = "Arbitre du terrain 3 dit : ''Le poulet a atterri sur le terrain de jeu. Commencez la partie !''";
+        };
+        ["STOP_GAME_2"] = {
+            ["FF"] = {
+                ["ENGLISH"] = "Field 2 Referee says, ''Flying Feathers Win!!!''";
+                ["GERMAN"] = "Schiedsrichter - Feld 2 sagt: ''Die Fliegenden Federn haben gewonnen!!!''";
+                ["FRENCH"] = "Arbitre du terrain 2 dit : ''Victoire des Plumes Volantes !''";
+            };
+            ["SB"] = {
+                ["ENGLISH"] = "Field 2 Referee says, ''Steel Beaks Win!!!''";
+                ["GERMAN"] = "Schiedsrichter - Feld 2 sagt: ''Die Stahlschnäbel haben gewonnen!!!''";
+                ["FRENCH"] = "Arbitre du terrain 2 dit : ''Victoire des Becs d’Acier !''";
+            };
+        };
+        ["STOP_GAME_3"] = {
+            ["FF"] = {
+                ["ENGLISH"] = "Field 3 Referee says, ''Flying Feathers Win!!!''";
+                ["GERMAN"] = "Schiedsrichter - Feld 3 sagt: ''Die Fliegenden Federn haben gewonnen!!!''";
+                ["FRENCH"] = "Arbitre du terrain 3 dit : ''Victoire des Plumes Volantes !''";
+            };
+            ["SB"] = {
+                ["ENGLISH"] = "Field 3 Referee says, ''Steel Beaks Win!!!''";
+                ["GERMAN"] = "Schiedsrichter - Feld 3 sagt: ''Die Stahlschnäbel haben gewonnen!!!''";
+                ["FRENCH"] = "Arbitre du terrain 3 dit : ''Victoire des Becs d’Acier !''";
+            };
+        };
+        ["SCORE_2"] = {
+            ["FF"] = {
+                ["ENGLISH"] = "Field 2 Referee says, ''Flying Feathers score!!''";
+                ["GERMAN"] = "Schiedsrichter - Feld 2 sagt: ''Die Fliegenden Federn punkten!!''";
+                ["FRENCH"] = "Arbitre du terrain 2 dit : ''Les Plumes Volantes marquent !''";
+            };
+            ["SB"] = {
+                ["ENGLISH"] = "Field 2 Referee says, ''Steel Beaks score!!''";
+                ["GERMAN"] = "Schiedsrichter - Feld 2 sagt: ''Die Stahlschnäbel punkten!!''";
+                ["FRENCH"] = "Arbitre du terrain 2 dit : ''Les Becs d’Acier marquent !''";
+            };
+        };
+        ["SCORE_3"] = {
+            ["FF"] = {
+                ["ENGLISH"] = "Field 3 Referee says, ''Flying Feathers score!!''";
+                ["GERMAN"] = "Schiedsrichter - Feld 3 sagt: ''Die Fliegenden Federn punkten!!''";
+                ["FRENCH"] = "Arbitre du terrain 3 dit : ''Les Plumes Volantes marquent !''";
+            };
+            ["SB"] = {
+                ["ENGLISH"] = "Field 3 Referee says, ''Steel Beaks score!!''";
+                ["GERMAN"] = "Schiedsrichter - Feld 3 sagt: ''Die Stahlschnäbel punkten!!''";
+                ["FRENCH"] = "Arbitre du terrain 3 dit : ''Les Becs d’Acier marquent !''";
+            };
+        };
+    };
+
     -- Hobnanigans:
     local hobnanigansHeaderLabel = Turbine.UI.Label();
     hobnanigansHeaderLabel:SetParent(options);
@@ -537,7 +646,7 @@ function DrawHobnanigansDebug(options)
     startField2QuestFF:SetWidth(50);
     startField2QuestFF:SetPosition(120, y);
     startField2QuestFF.Click = function(sender, args)
-        FilterQuest("New Quest: A Game of Hobnanigans -- Flying Feathers - Field 2");
+        FilterQuest(debugText.START_FIELD_2.FF[CLIENTLANG]);
     end
 
     local stopField2QuestFF = Turbine.UI.Lotro.Button();
@@ -546,7 +655,7 @@ function DrawHobnanigansDebug(options)
     stopField2QuestFF:SetWidth(50);
     stopField2QuestFF:SetPosition(180, y);
     stopField2QuestFF.Click = function(sender, args)
-        FilterQuest("Failed: A Game of Hobnanigans -- Flying Feathers - Field 2");
+        FilterQuest(debugText.STOP_FIELD_2.FF[CLIENTLANG]);
     end
 
     local startField2QuestSB = Turbine.UI.Lotro.Button();
@@ -555,7 +664,7 @@ function DrawHobnanigansDebug(options)
     startField2QuestSB:SetWidth(50);
     startField2QuestSB:SetPosition(240, y);
     startField2QuestSB.Click = function(sender, args)
-        FilterQuest("New Quest: A Game of Hobnanigans -- Steel Beaks - Field 2");
+        FilterQuest(debugText.START_FIELD_2.SB[CLIENTLANG]);
     end
 
     local stopField2QuestSB = Turbine.UI.Lotro.Button();
@@ -564,7 +673,7 @@ function DrawHobnanigansDebug(options)
     stopField2QuestSB:SetWidth(50);
     stopField2QuestSB:SetPosition(300, y);
     stopField2QuestSB.Click = function(sender, args)
-        FilterQuest("Failed: A Game of Hobnanigans -- Steel Beaks - Field 2");
+        FilterQuest(debugText.STOP_FIELD_2.SB[CLIENTLANG]);
     end
     y = y + 30;
 
@@ -580,7 +689,7 @@ function DrawHobnanigansDebug(options)
     startField3QuestFF:SetParent(options)
     startField3QuestFF:SetText("Start");
     startField3QuestFF.Click = function(sender, args)
-        FilterQuest("New Quest: A Game of Hobnanigans -- Flying Feathers - Field 3");
+        FilterQuest(debugText.START_FIELD_3.FF[CLIENTLANG]);
     end
     startField3QuestFF:SetWidth(50);
     startField3QuestFF:SetPosition(120, y);
@@ -589,7 +698,7 @@ function DrawHobnanigansDebug(options)
     stopField3QuestFF:SetParent(options)
     stopField3QuestFF:SetText("Stop");
     stopField3QuestFF.Click = function(sender, args)
-        FilterQuest("Failed: A Game of Hobnanigans -- Flying Feathers - Field 3");
+        FilterQuest(debugText.STOP_FIELD_3.FF[CLIENTLANG]);
     end
     stopField3QuestFF:SetWidth(50);
     stopField3QuestFF:SetPosition(180, y);
@@ -598,7 +707,7 @@ function DrawHobnanigansDebug(options)
     startField3QuestSB:SetParent(options)
     startField3QuestSB:SetText("Start");
     startField3QuestSB.Click = function(sender, args)
-        FilterQuest("New Quest: A Game of Hobnanigans -- Steel Beaks - Field 3");
+        FilterQuest(debugText.START_FIELD_3.SB[CLIENTLANG]);
     end
     startField3QuestSB:SetWidth(50);
     startField3QuestSB:SetPosition(240, y);
@@ -607,7 +716,7 @@ function DrawHobnanigansDebug(options)
     stopField3QuestSB:SetParent(options)
     stopField3QuestSB:SetText("Stop");
     stopField3QuestSB.Click = function(sender, args)
-        FilterQuest("Failed: A Game of Hobnanigans -- Steel Beaks - Field 3");
+        FilterQuest(debugText.STOP_FIELD_3.SB[CLIENTLANG]);
     end
     stopField3QuestSB:SetWidth(50);
     stopField3QuestSB:SetPosition(300, y);
@@ -625,7 +734,7 @@ function DrawHobnanigansDebug(options)
     startGame2:SetParent(options)
     startGame2:SetText("Start");
     startGame2.Click = function(sender, args)
-        FilterSay("Field 2 Referee says, ''The Game Hen has landed on the field. Begin play!''");
+        FilterSay(debugText.START_GAME_2[CLIENTLANG]);
     end
     startGame2:SetWidth(50);
     startGame2:SetPosition(60, y);
@@ -634,7 +743,8 @@ function DrawHobnanigansDebug(options)
     stopGame2FF:SetParent(options)
     stopGame2FF:SetText("Stop");
     stopGame2FF.Click = function(sender, args)
-        FilterSay("Field 2 Referee says, ''Flying Feathers Win!!!''"); end
+        FilterSay(debugText.STOP_GAME_2.FF[CLIENTLANG]);
+    end
     stopGame2FF:SetWidth(50);
     stopGame2FF:SetPosition(180, y);
 
@@ -642,7 +752,8 @@ function DrawHobnanigansDebug(options)
     stopGame2SB:SetParent(options)
     stopGame2SB:SetText("Stop");
     stopGame2SB.Click = function(sender, args)
-        FilterSay("Field 2 Referee says, ''Steel Beaks Win!!!''"); end
+        FilterSay(debugText.STOP_GAME_2.SB[CLIENTLANG]);
+    end
     stopGame2SB:SetWidth(50);
     stopGame2SB:SetPosition(300, y);
     y = y + 30;
@@ -659,7 +770,7 @@ function DrawHobnanigansDebug(options)
     startGame3:SetParent(options)
     startGame3:SetText("Start");
     startGame3.Click = function(sender, args)
-        FilterSay("Field 3 Referee says, ''The Game Hen has landed on the field. Begin play!''");
+        FilterSay(debugText.START_GAME_3[CLIENTLANG]);
     end
     startGame3:SetWidth(50);
     startGame3:SetPosition(60, y);
@@ -668,7 +779,7 @@ function DrawHobnanigansDebug(options)
     stopGame3FF:SetParent(options)
     stopGame3FF:SetText("Stop");
     stopGame3FF.Click = function(sender, args)
-        FilterSay("Field 3 Referee says, ''Flying Feathers Win!!!''");
+        FilterSay(debugText.STOP_GAME_3.FF[CLIENTLANG]);
     end
     stopGame3FF:SetWidth(50);
     stopGame3FF:SetPosition(180, y);
@@ -677,7 +788,7 @@ function DrawHobnanigansDebug(options)
     stopGame3SB:SetParent(options)
     stopGame3SB:SetText("Stop");
     stopGame3SB.Click = function(sender, args)
-        FilterSay("Field 3 Referee says, ''Steel Beaks Win!!!''");
+        FilterSay(debugText.STOP_GAME_3.SB[CLIENTLANG]);
     end
     stopGame3SB:SetWidth(50);
     stopGame3SB:SetPosition(300, y);
@@ -695,7 +806,7 @@ function DrawHobnanigansDebug(options)
     game2ScoreFF:SetParent(options)
     game2ScoreFF:SetText("FF2");
     game2ScoreFF.Click = function(sender, args)
-        FilterSay("Field 2 Referee says, ''Flying Feathers score!!!''");
+        FilterSay(debugText.SCORE_2.FF[CLIENTLANG])
     end
     game2ScoreFF:SetWidth(50);
     game2ScoreFF:SetPosition(120, y);
@@ -704,7 +815,7 @@ function DrawHobnanigansDebug(options)
     game3ScoreFF:SetParent(options)
     game3ScoreFF:SetText("FF3");
     game3ScoreFF.Click = function(sender, args)
-        FilterSay("Field 3 Referee says, ''Flying Feathers score!!!''");
+        FilterSay(debugText.SCORE_3.FF[CLIENTLANG])
     end
     game3ScoreFF:SetWidth(50);
     game3ScoreFF:SetPosition(180, y);
@@ -713,7 +824,7 @@ function DrawHobnanigansDebug(options)
     game2ScoreSB:SetParent(options)
     game2ScoreSB:SetText("SB2");
     game2ScoreSB.Click = function(sender, args)
-        FilterSay("Field 2 Referee says, ''Steel Beaks score!!!''");
+        FilterSay(debugText.SCORE_2.SB[CLIENTLANG])
     end
     game2ScoreSB:SetWidth(50);
     game2ScoreSB:SetPosition(240, y);
@@ -722,7 +833,7 @@ function DrawHobnanigansDebug(options)
     game3ScoreSB:SetParent(options)
     game3ScoreSB:SetText("SB3");
     game3ScoreSB.Click = function(sender, args)
-        FilterSay("Field 3 Referee says, ''Steel Beaks score!!!''");
+        FilterSay(debugText.SCORE_3.SB[CLIENTLANG])
     end
     game3ScoreSB:SetWidth(50);
     game3ScoreSB:SetPosition(300, y);
