@@ -2,14 +2,24 @@ v2.1.2 changes:
     Festivals:
         Spring:
             Updated order of Marigold and Violet tokens to match helper text for A Fistful of Flowers
+        Midsummer:
+            Added German translations from Mandraval for Quick Guide.
+        Harvestmath:
+            Added German translations from Mandraval for quests and Quick Guide.
+        Hobnanigans:
+            Added French and German translations so that the scoreboard should automatically track the state of the game.
+            Note: The field number is missing from the Field 1 quest, so tracking does not work correctly there yet.
+
     General:    
         Stopped generating empty AllServers/FestivalBuddy_ImageIDs.plugindata file.
+        Added additinal German translations from Mandraval for UI.
 
     Bugs:
         Fixed bug that prevented token counts from updating.
         Bumped file format for character-specific data from 2.0 to 2.1 to update in-progress quest data.
-            Too many entries were being saved.
+            Reduced number of entries that were being saved.
             Summer entries should have been updated to Farmers Faire when Summer was removed in 2.1.1.
+        Enabled Festivity Token display for Anniversary, Farmers Faire, and Yule festivals.
 
 v2.1.1 changes:
     Festivals:
