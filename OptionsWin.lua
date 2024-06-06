@@ -677,7 +677,7 @@ function DrawHobnanigansDebug(options)
     end
     y = y + 30;
 
-    -- Start/Stop quests on Field 2
+    -- Start/Stop quests on Field 3
     local field3Label = Turbine.UI.Label();
     field3Label:SetParent(options);
     field3Label:SetText("Field 3 Quest: ");
