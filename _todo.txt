@@ -1,12 +1,8 @@
 Todo:
-    Thank Talyrion for the latest translations in the release notes
-Make Hobnanigans debug work with other languages
-    Still needed: timer remaining bypasses the parsing.
-    Still needed: Make sure French debug buttons can advance the state of play.
-        Note: Background of teams is not highlighting.
-    [23:16] +Hyoss: IIRC there is some help for unit tests through 'import "Turbine.Testing";'
-        Let's add some unit tests for string parsing as a learning excercise.
-        Look at TravelWindowII for example unit testing
+    Consider adding unit tests to confirm string parsing:
+        [23:16] +Hyoss: IIRC there is some help for unit tests through 'import "Turbine.Testing";'
+            Let's add some unit tests for string parsing as a learning excercise.
+            Look at TravelWindowII for example unit testing
 
 BUG:
     All languages
