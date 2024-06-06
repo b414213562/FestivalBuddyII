@@ -282,12 +282,12 @@ _LANG = {
             ["HOBNANIGANS_QUEST_BEGIN_TEXT"] = {
                 ["ENGLISH"] = "New Quest: A Game of Hobnanigans %-%- (.*) %- Field ([1-4])";
                 ["GERMAN"] = "Neue Aufgabe: Eine Runde Hobnanigans – (.*) – Feld ([1-4])";
-                ["FRENCH"] = "Nouvelle quête : Une partie de chasse-poulet – (.*) - Terrain ([1-4])";
+                ["FRENCH"] = "Nouvelle quête : Une partie de chasse%-poulet – (.*) %- Terrain ([1-4])";
             };
             ["HOBNANIGANS_QUEST_END_TEXT"] = {
                 ["ENGLISH"] = "Failed: A Game of Hobnanigans %-%- (.*) %- Field ([1-4])";
                 ["GERMAN"] = "Gescheitert: Eine Runde Hobnanigans – (.*) – Feld ([1-4])";
-                ["FRENCH"] = "Echec : Une partie de chasse-poulet – (.*) - Terrain ([1-4])";
+                ["FRENCH"] = "Echec : Une partie de chasse%-poulet – (.*) %- Terrain ([1-4])";
             };
 
             -- [06/02 10:29:41 PM] Field 3 Referee says, ''The Game Hen has landed on the field. Begin play!''
@@ -295,7 +295,7 @@ _LANG = {
             -- [02/06, 10:29:41 PM] Arbitre du terrain 3 dit : ''Le poulet a atterri sur le terrain de jeu. Commencez la partie !''
             ["HOBNANIGANS_ACTIVE_PLAY_BEGIN"] = {
                 ["ENGLISH"] = "Field ([1-4]) Referee says, ''The Game Hen has landed on the field%. Begin play!''";
-                ["GERMAN"] = "Schiedsrichter - Feld ([1-4]) sagt: ''Das Spielhuhn ist auf dem Feld gelandet%. Fang an zu spielen!";
+                ["GERMAN"] = "Schiedsrichter %- Feld ([1-4]) sagt: ''Das Spielhuhn ist auf dem Feld gelandet%. Fang an zu spielen!";
                 ["FRENCH"] = "Arbitre du terrain ([1-4]) dit : ''Le poulet a atterri sur le terrain de jeu%. Commencez la partie !''";
             };
 
@@ -343,7 +343,10 @@ _LANG = {
         ["HOBNANIGANS_TEAMS"] = {
             -- Convert team name to lookup key
             ["Flying Feathers"] = "FLYING_FEATHERS";
+
+            ["Fliegenden Federn"] = "FLYING_FEATHERS";
             ["Fliegende Federn"] = "FLYING_FEATHERS";
+
             ["Plumes Volantes"] = "FLYING_FEATHERS";
 
             -- Convert team name to lookup key
