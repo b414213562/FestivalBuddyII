@@ -1107,7 +1107,7 @@ Kehre zu Cora Braunlock zurück.
         };
         ["HONOURING_HEALERS"] = {
             ["STRING"] = {
-                ["ENGLISH"] = "Pick up quest from the Postmaster in House of Craft, Craftsmen's Tier.\nGo to Houses of Healing, House of Remedies (Sages' Tier).\n1. Entrance\n* One healer (green) stands still.\n* Five healers (red, blue, purple, cyan, yellow) walk along a path.\nReturn to the Postmaster.";
+                ["ENGLISH"] = "Pick up quest from the Postmaster in House of Craft, Craftsmen's Tier.\nGo to Houses of Healing, House of Remedies (Masters' Tier).\n1. Entrance\n* One healer (green) stands still.\n* Five healers (red, blue, purple, cyan, yellow) walk along a path.\nReturn to the Postmaster.";
             };
             ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Midsummer/Honouring Healers.tga";
         };
