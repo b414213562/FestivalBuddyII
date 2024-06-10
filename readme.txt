@@ -12,7 +12,7 @@ v2.1.2 changes:
 
     General:    
         Stopped generating empty AllServers/FestivalBuddy_ImageIDs.plugindata file.
-        Added additinal German translations from Mandraval for UI.
+        Added additional German translations from Mandraval for UI.
 
     Bugs:
         Fixed bug that prevented token counts from updating.

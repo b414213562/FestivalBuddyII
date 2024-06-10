@@ -1,0 +1,43 @@
+Festival Buddy II version v2.1.2 is now available at [URL='https://www.lotrointerface.com/downloads/info1218-FestivalBuddyII.html']lotrointerface.com[/URL].
+
+This update has numerous festival and quick guide changes, and a major change to save file structures.
+
+Version 2.1.2 release notes:
+
+Festivals:
+[list]
+    [*] Spring:
+    [list]
+        [*] Updated order of Marigold and Violet tokens to match helper text for A Fistful of Flowers
+    [/list]
+    [*] Midsummer:
+    [list]
+        [*] Added German translations from Mandraval for Quick Guide.
+    [/list]
+    [*] Harvestmath:
+    [list]
+        [*] Added German translations from Mandraval for quests and Quick Guide.
+    [/list]
+    [*] Hobnanigans:
+    [list]
+        [*] Added French and German translations so that the scoreboard should automatically track the state of the game.
+        [*] Note: The field number is missing from the Field 1 quest, so tracking does not work correctly there yet.
+    [/list]
+[/list]
+
+General:
+[list]
+    [*] Stopped generating empty AllServers/FestivalBuddy_ImageIDs.plugindata file.
+    [*] Added additional German translations from Mandraval for UI.
+[/list]
+
+Bugs:
+[list]
+    [*] Fixed bug that prevented token counts from updating.
+    [*] Bumped file format for character-specific data from 2.0 to 2.1 to update in-progress quest data.
+    [list]
+        [*] Reduced number of entries that were being saved.
+        [*] Summer entries should have been updated to Farmers Faire when Summer was removed in 2.1.1.
+    [/list]
+    [*] Enabled Festivity Token display for Anniversary, Farmers Faire, and Yule festivals.
+[/list]
