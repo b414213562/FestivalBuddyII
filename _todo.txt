@@ -3,6 +3,8 @@ Todo:
         [23:16] +Hyoss: IIRC there is some help for unit tests through 'import "Turbine.Testing";'
             Let's add some unit tests for string parsing as a learning excercise.
             Look at TravelWindowII for example unit testing
+    NotACat — 2024-06-06 at 11:33 PM
+    it just occurred to me to ask whether you can detect the "invitation" quest for the current Festival, the one that gives us the Map to the venue, and thereby set the Festival in the Buddy window
 
 BUG:
     All languages
