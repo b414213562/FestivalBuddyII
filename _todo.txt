@@ -6,6 +6,12 @@ Todo:
     NotACat — 2024-06-06 at 11:33 PM
     it just occurred to me to ask whether you can detect the "invitation" quest for the current Festival, the one that gives us the Map to the venue, and thereby set the Festival in the Buddy window
 
+Barter Window Improvements:
+    Make window resizable vertically.
+    Change to tree view, so we can collapse sections.
+    Add filters: "Cosmetic Pets", "Mounts", "doesn't costs mithril", etc.
+    Show any currencies used in window at top of window.
+
 BUG:
     All languages
         Field 1 isn't included in the quest name :(
