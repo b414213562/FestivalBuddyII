@@ -970,7 +970,7 @@ _BARTER =
 
     [MIDSUMMER] =
     {
-        [1]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "New Items (2024)"; }; };
+        [1]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "New Items (2024)"; ["GERMAN"] = "Neue Gegenstände (2024)"; }; };
         [2]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879408621;}; -- Circlet of Hanging Blooms
         [3]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879487482;}; -- Ceremonial Staff of the Eternal Sun
         [4]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879487483;}; -- Hanging Blooms Circlet or Eternal Sun Staff - Gift-wrapped Selection Box
@@ -991,7 +991,7 @@ _BARTER =
         [19]={[2]={["MIDSUMMER_TOKEN"]=12;};[1]=1879486647;}; -- Medium Potted Jacaranda
         [20]={[2]={["MIDSUMMER_TOKEN"]=12;};[1]=1879486649;}; -- Tall Potted Umbari Palm
         [21]={[2]={["MIDSUMMER_TOKEN"]=15;};[1]=1879486629;}; -- Large Potted Sago Palm
-        [22]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Midsummer Garb"; }; };
+        [22]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Midsummer Garb"; ["GERMAN"] = "Mittsommer-Gewand"; }; };
         [23]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879487483;}; -- Hanging Blooms Circlet or Eternal Sun Staff - Gift-wrapped Selection Box
         [24]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879408621;}; -- Circlet of Hanging Blooms
         [25]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879487482;}; -- Ceremonial Staff of the Eternal Sun
@@ -1020,7 +1020,7 @@ _BARTER =
         [48]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879408622;}; -- Bride's Dress
         [49]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879408620;}; -- Galadriel's Dress
         [50]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879408618;}; -- Arwen's Dinner Dress
-        [51]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Cosmetic Pets"; }; };
+        [51]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Cosmetic Pets"; ["GERMAN"] = "Zierwerk-Begleiter"; }; };
         [52]={[2]={["MIDSUMMER_TOKEN"]=30;};[1]=1879409168;}; -- Tome of the Wedding Celebration Pony
         [53]={[2]={["GENERIC_MITHRIL"]=30;};[1]=1879409168;}; -- Tome of the Wedding Celebration Pony
         [54]={[2]={["MIDSUMMER_TOKEN"]=20;};[1]=1879411763;}; -- Tome of the Wild Chocolate Donkey
@@ -1032,7 +1032,7 @@ _BARTER =
         [60]={[2]={["MIDSUMMER_TOKEN"]=20;};[1]=1879408150;}; -- Tome of the Purple Firefly
         [61]={[2]={["MIDSUMMER_TOKEN"]=20;};[1]=1879408152;}; -- Tome of the Red Firefly
         [62]={[2]={["MIDSUMMER_TOKEN"]=20;};[1]=1879409019;}; -- Tome of the Gondor Midsummer Kite
-        [63]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Midsummer Steeds"; }; };
+        [63]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Midsummer Steeds"; ["GERMAN"] = "Mittsommer-Rösser"; }; };
         [64]={[2]={["MIDSUMMER_TOKEN"]=25;};[1]=1879465461;}; -- Summer Concert Steed
         [65]={[2]={["MIDSUMMER_TOKEN"]=20;};[1]=1879465477;}; -- Summer Concert Accessory
         [66]={[2]={["MIDSUMMER_TOKEN"]=15;};[1]=1879465479;}; -- Summer Concert Caparison
@@ -1045,7 +1045,7 @@ _BARTER =
         [73]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879420901;}; -- Saddle of Entwining Blossoms
         [74]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879420895;}; -- Steed of Entwining Blossoms
         [75]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879420902;}; -- Entwining Blossoms War-steed Cosmetics
-        [76]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Instruments"; }; };
+        [76]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Instruments"; ["GERMAN"] = "Instrumente"; }; };
         [77]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879421116;}; -- Summer Celebration Lute
         [78]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879421111;}; -- Summer Celebration Horn
         [79]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879421112;}; -- Summer Celebration Clarinet
@@ -1059,16 +1059,16 @@ _BARTER =
         [87]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879421118;}; -- Summer Celebration Mountain Harp
         [88]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879421109;}; -- Summer Celebration Fiddle
         [89]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879421115;}; -- Summer Celebration Bassoon
-        [90]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Fireworks"; }; };
+        [90]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Fireworks"; ["GERMAN"] = "Feuerwerkskörper"; }; };
         [91]={[2]={["MIDSUMMER_TOKEN"]=2;};[1]=1879408775;}; -- Elanor Fireworks
         [92]={[2]={["MIDSUMMER_TOKEN"]=2;};[1]=1879408779;}; -- Green and White Niphredil Fireworks
         [93]={[2]={["MIDSUMMER_TOKEN"]=2;};[1]=1879408777;}; -- Wedding Ring Fireworks
         [94]={[2]={["MIDSUMMER_TOKEN"]=2;};[1]=1879408776;}; -- White Niphredil Fireworks
-        [95]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Emotes"; }; };
+        [95]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Emotes"; ["GERMAN"] = "Emotes"; }; };
         [96]={[2]={["MIDSUMMER_TOKEN"]=30;};[1]=1879408986;}; -- Grant the Coin Toss Emote
         [97]={[2]={["MIDSUMMER_TOKEN"]=30;};[1]=1879408989;}; -- Grant the Wine Tasting Emote
         [98]={[2]={["MIDSUMMER_TOKEN"]=30;};[1]=1879408916;}; -- Golden Wedding Fireworks
-        [99]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Housing Items"; }; };
+        [99]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Housing Items"; ["GERMAN"] = "Wohngegenstände"; }; };
         [100]={[2]={["MIDSUMMER_TOKEN"]=15;};[1]=1879448044;}; -- Brimful Quiver Inn Signpost
         [101]={[2]={["MIDSUMMER_TOKEN"]=25;};[1]=1879486669;}; -- Large Tree Garden
         [102]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879486631;}; -- Potted Wisteria
@@ -1092,7 +1092,7 @@ _BARTER =
         [120]={[2]={["MIDSUMMER_TOKEN"]=20;};[1]=1879457522;}; -- Pristine Eregion Gazebo Tower
         [121]={[2]={["MIDSUMMER_TOKEN"]=15;};[1]=1879448522;}; -- Hobbit Dais
         [122]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879408190;}; -- Purple Firefly Lantern
-        [123]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "More Housing Items"; }; };
+        [123]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "More Housing Items"; ["GERMAN"] = "Weitere Wohngegenstände"; }; };
         [124]={[2]={["MIDSUMMER_TOKEN"]=20;};[1]=1879420817;}; -- Midsummer Stable
         [125]={[2]={["MIDSUMMER_TOKEN"]=15;};[1]=1879420816;}; -- Silver Pedestal
         [126]={[2]={["MIDSUMMER_TOKEN"]=15;};[1]=1879408591;}; -- Ornate Planter
@@ -1132,9 +1132,9 @@ _BARTER =
         [160]={[2]={["MIDSUMMER_TOKEN"]=15;};[1]=1879409075;}; -- Floating Lantern - Closed
         [161]={[2]={["MIDSUMMER_TOKEN"]=15;};[1]=1879409074;}; -- Floating Lantern - Half-open
         [162]={[2]={["MIDSUMMER_TOKEN"]=15;};[1]=1879409073;}; -- Floating Lantern - Open
-        [163]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Essences"; }; };
+        [163]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Essences"; ["GERMAN"] = "Essenzen"; }; };
         [164]={[2]={["MIDSUMMER_TOKEN"]=60;};[1]=1879439435;}; -- Essence Reclamation Scroll
-        [165]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Blackroot Steed"; }; };
+        [165]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Blackroot Steed"; ["GERMAN"] = "Schwarzgrund-Ross"; }; };
         [166]={[2]={["MIDSUMMER_TOKEN"]=20;};[1]=1879408656;}; -- Blackroot Steed
         [167]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879408735;}; -- Flag of Blackroot
         [168]={[2]={["MIDSUMMER_TOKEN"]=16;};[1]=1879408748;}; -- Caparison of Blackroot
@@ -1142,7 +1142,7 @@ _BARTER =
         [170]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879408727;}; -- Saddle of Blackroot
         [171]={[2]={["GENERIC_FESTIVITY"]=70;};[1]=1879408656;}; -- Blackroot Steed
         [172]={[2]={["GENERIC_FESTIVITY"]=70;};[1]=1879408769;}; -- Blackroot War-steed Cosmetics
-        [173]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Lamedon Steed"; }; };
+        [173]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Lamedon Steed"; ["GERMAN"] = "Lamedon-Ross"; }; };
         [174]={[2]={["MIDSUMMER_TOKEN"]=20;};[1]=1879408669;}; -- Lamedon Steed
         [175]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879408739;}; -- Flag of Lamedon
         [176]={[2]={["MIDSUMMER_TOKEN"]=16;};[1]=1879408743;}; -- Caparison of Lamedon
@@ -1150,7 +1150,7 @@ _BARTER =
         [178]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879408729;}; -- Saddle of Lamedon
         [179]={[2]={["GENERIC_FESTIVITY"]=70;};[1]=1879408669;}; -- Lamedon Steed
         [180]={[2]={["GENERIC_FESTIVITY"]=70;};[1]=1879408766;}; -- Lamedon War-steed Cosmetics
-        [181]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Lebennin Steed"; }; };
+        [181]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Lebennin Steed"; ["GERMAN"] = "Lebennin-Ross"; }; };
         [182]={[2]={["MIDSUMMER_TOKEN"]=20;};[1]=1879408673;}; -- Lebennin Steed
         [183]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879408742;}; -- Flag of Lebennin
         [184]={[2]={["MIDSUMMER_TOKEN"]=16;};[1]=1879408731;}; -- Caparison of Lebennin
@@ -1158,7 +1158,7 @@ _BARTER =
         [186]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879408745;}; -- Saddle of Lebennin
         [187]={[2]={["GENERIC_FESTIVITY"]=70;};[1]=1879408673;}; -- Lebennin Steed
         [188]={[2]={["GENERIC_FESTIVITY"]=70;};[1]=1879408762;}; -- Lebennin War-steed Cosmetics
-        [189]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Lossarnach Steed"; }; };
+        [189]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Lossarnach Steed"; ["GERMAN"] = "Lossarnach-Ross"; }; };
         [190]={[2]={["MIDSUMMER_TOKEN"]=20;};[1]=1879408651;}; -- Lossarnach Steed
         [191]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879408738;}; -- Flag of Lossarnach
         [192]={[2]={["MIDSUMMER_TOKEN"]=16;};[1]=1879408728;}; -- Caparison of Lossarnach
