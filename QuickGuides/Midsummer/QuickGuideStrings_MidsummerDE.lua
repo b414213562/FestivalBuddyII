@@ -25,7 +25,7 @@ QG_MIDSUMMER[QG_MIDSUMMER_INDEX.WHAT_ALES_YOU_1].DISPLAY = "Die Bier-Jahreszeite
 QG_MIDSUMMER[QG_MIDSUMMER_INDEX.TO_THE_LAST_DROP_COMPLETE].DISPLAY = "Bis zum letzten Tropfen: Nimm das richtige Weinfaß im Gespaltenen Schild.";
 QG_MIDSUMMER[QG_MIDSUMMER_INDEX.TOSS_A_COIN_END].DISPLAY = "Gib 'Münzwurf' bei Ulthir (obere Etage) ab";
 QG_MIDSUMMER[QG_MIDSUMMER_INDEX.WHAT_ALES_YOU_2].DISPLAY = "Nach Süden zum Mûmak und Feste für das zweite 'Die Bier-Jahreszeiten' Faß, Neben dem Mûmak";
-QG_MIDSUMMER[QG_MIDSUMMER_INDEX.ARTISTIC_DIRECTION_LEBADAR].DISPLAY = "[Milestone] Nimm den Stallmeister zum <rgb=#ffc000>Handwerkerring</rgb>. Am Fuß der Rampe, führe 'Richtungsweisende Kunst' mit Lebadar fort";
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.ARTISTIC_DIRECTION_LEBADAR].DISPLAY = "[Markstein] Nimm den Stallmeister zum <rgb=#ffc000>Handwerkerring</rgb>. Am Fuß der Rampe, führe 'Richtungsweisende Kunst' mit Lebadar fort";
 QG_MIDSUMMER[QG_MIDSUMMER_INDEX.GROWING_PAINS_PICKUP].DISPLAY = "Nimm 'Wachstumsschmerzen' bei Lebadar an";
 QG_MIDSUMMER[QG_MIDSUMMER_INDEX.UNHELPFUL_HOUNDS_PICKUP].DISPLAY = "Nimm 'Unnütze Hunde' bei der Besorgten Frau am Platz an";
 QG_MIDSUMMER[QG_MIDSUMMER_INDEX.UNHELPFUL_HOUNDS_CONTINUE].DISPLAY = "Unnütze Hunde: Finde den vermißten Ring";
