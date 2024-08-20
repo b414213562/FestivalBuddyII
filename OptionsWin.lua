@@ -496,8 +496,158 @@ function DrawFireworksDebug(options)
     DrawFireworksButton(options, yellowNoText, 2, 4);
 end
 
+function DrawHobnanigansDebug_StartStopQuests(options, y, fieldNumber, debugText)
+    local field2Label = Turbine.UI.Label();
+    field2Label:SetParent(options);
+    field2Label:SetText("Field " .. fieldNumber .. " Quest: ");
+    field2Label:SetSize(120, 20);
+    field2Label:SetPosition(10, y);
+    field2Label:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleLeft);
+
+    local startField2QuestFF = Turbine.UI.Lotro.Button();
+    startField2QuestFF:SetParent(options)
+    startField2QuestFF:SetText("Start");
+    startField2QuestFF:SetWidth(50);
+    startField2QuestFF:SetPosition(120, y);
+    startField2QuestFF.Click = function(sender, args)
+        FilterQuest(debugText["START_FIELD_" .. fieldNumber].FF[CLIENTLANG]);
+    end
+
+    local stopField2QuestFF = Turbine.UI.Lotro.Button();
+    stopField2QuestFF:SetParent(options)
+    stopField2QuestFF:SetText("Stop");
+    stopField2QuestFF:SetWidth(50);
+    stopField2QuestFF:SetPosition(180, y);
+    stopField2QuestFF.Click = function(sender, args)
+        FilterQuest(debugText["STOP_FIELD_" .. fieldNumber].FF[CLIENTLANG]);
+    end
+
+    local startField2QuestSB = Turbine.UI.Lotro.Button();
+    startField2QuestSB:SetParent(options)
+    startField2QuestSB:SetText("Start");
+    startField2QuestSB:SetWidth(50);
+    startField2QuestSB:SetPosition(240, y);
+    startField2QuestSB.Click = function(sender, args)
+        FilterQuest(debugText["START_FIELD_" .. fieldNumber].SB[CLIENTLANG]);
+    end
+
+    local stopField2QuestSB = Turbine.UI.Lotro.Button();
+    stopField2QuestSB:SetParent(options)
+    stopField2QuestSB:SetText("Stop");
+    stopField2QuestSB:SetWidth(50);
+    stopField2QuestSB:SetPosition(300, y);
+    stopField2QuestSB.Click = function(sender, args)
+        FilterQuest(debugText["STOP_FIELD_" .. fieldNumber].SB[CLIENTLANG]);
+    end
+    y = y + 30;
+    return y;
+end
+
+function DrawHobnanigansDebug_BeginEndGame(options, y, fieldNumber, debugText)
+    local gameLabel = Turbine.UI.Label();
+    gameLabel:SetParent(options);
+    gameLabel:SetText("Game " .. fieldNumber .. ":");
+    gameLabel:SetSize(120, 20);
+    gameLabel:SetPosition(10, y);
+    gameLabel:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleLeft);
+
+    local startGame = Turbine.UI.Lotro.Button();
+    startGame:SetParent(options)
+    startGame:SetText("Start");
+    startGame.Click = function(sender, args)
+        FilterSay(debugText["START_GAME_" .. fieldNumber][CLIENTLANG]);
+    end
+    startGame:SetWidth(50);
+    startGame:SetPosition(60, y);
+
+    local stopGameFF = Turbine.UI.Lotro.Button();
+    stopGameFF:SetParent(options)
+    stopGameFF:SetText("Stop");
+    stopGameFF.Click = function(sender, args)
+        FilterSay(debugText["STOP_GAME_" .. fieldNumber].FF[CLIENTLANG]);
+    end
+    stopGameFF:SetWidth(50);
+    stopGameFF:SetPosition(180, y);
+
+    local stopGameSB = Turbine.UI.Lotro.Button();
+    stopGameSB:SetParent(options)
+    stopGameSB:SetText("Stop");
+    stopGameSB.Click = function(sender, args)
+        FilterSay(debugText["STOP_GAME_" .. fieldNumber].SB[CLIENTLANG]);
+    end
+    stopGameSB:SetWidth(50);
+    stopGameSB:SetPosition(300, y);
+    y = y + 30;
+    return y;
+end
+
+function DrawHobnanigansDebug_Score(options, x, y, team, fieldNumber, debugText)
+    local gameScore = Turbine.UI.Lotro.Button();
+    gameScore:SetParent(options)
+    gameScore:SetText(team .. fieldNumber);
+    gameScore.Click = function(sender, args)
+        FilterSay(debugText["SCORE_" .. fieldNumber][team][CLIENTLANG])
+    end
+    gameScore:SetWidth(50);
+    gameScore:SetPosition(x, y);
+end
+
+function DrawHobnanigansDebug_Time(options, x, y, secondsRemaining)
+    local timeMarker = " s";
+    local time = secondsRemaining;
+    if (time > 60) then
+        time = time / 60;
+        timeMarker = " m";
+    end
+
+    local gameTime = Turbine.UI.Lotro.Button();
+    gameTime:SetParent(options)
+    gameTime:SetText(time .. timeMarker);
+    gameTime.Click = function(sender, args)
+        TimerSetTimeRemaining(hobnanigansTimer, secondsRemaining + 2);
+    end
+    gameTime:SetWidth(50);
+    gameTime:SetPosition(x, y);
+
+end
+
+function DrawHobnanigansDebug_Winner(options, x, y, team, fieldNumber, debugText)
+    local winner = Turbine.UI.Lotro.Button();
+    winner:SetParent(options)
+    winner:SetText(team .. fieldNumber);
+    winner.Click = function(sender, args)
+        FilterSay(debugText["STOP_GAME_" .. fieldNumber][team][CLIENTLANG]);
+    end
+    winner:SetWidth(50);
+    winner:SetPosition(x, y);
+end
+
 function DrawHobnanigansDebug(options)
     local debugText = {
+        ["START_FIELD_1"] = {
+            ["FF"] = {
+                ["ENGLISH"] = "New Quest: A Game of Hobnanigans -- Flying Feathers";
+                ["GERMAN"] = "Neue Aufgabe: Eine Runde Hobnanigans – Fliegende Federn";
+                ["FRENCH"] = "Nouvelle quête : Une partie de chasse-poulet – Plumes Volantes";
+            };
+            ["SB"] = {
+                ["ENGLISH"] = "New Quest: A Game of Hobnanigans -- Steel Beaks";
+                ["GERMAN"] = "Neue Aufgabe: Eine Runde Hobnanigans – Stahlschnäbel";
+                ["FRENCH"] = "Nouvelle quête : Une partie de chasse-poulet – Becs d’Acier";
+            };
+        };
+        ["STOP_FIELD_1"] = {
+            ["FF"] = {
+                ["ENGLISH"] = "Failed: A Game of Hobnanigans -- Flying Feathers";
+                ["GERMAN"] = "Gescheitert: Eine Runde Hobnanigans – Fliegende Federn";
+                ["FRENCH"] = "Echec : Une partie de chasse-poulet – Plumes Volantes";
+            };
+            ["SB"] = {
+                ["ENGLISH"] = "Failed: A Game of Hobnanigans -- Steel Beaks";
+                ["GERMAN"] = "Gescheitert: Eine Runde Hobnanigans – Stahlschnäbel";
+                ["FRENCH"] = "Echec : Une partie de chasse-poulet – Becs d’Acier";
+            };
+        };
         ["START_FIELD_2"] = {
             ["FF"] = {
                 ["ENGLISH"] = "New Quest: A Game of Hobnanigans -- Flying Feathers - Field 2";
@@ -529,7 +679,7 @@ function DrawHobnanigansDebug(options)
                 ["FRENCH"] = "Nouvelle quête : Une partie de chasse-poulet – Plumes Volantes - Terrain 3";
             };
             ["SB"] = {
-                ["ENGLISH"] = "New Quest: A Game of Hobnanigans -- Flying Feathers - Field 3";
+                ["ENGLISH"] = "New Quest: A Game of Hobnanigans -- Steel Beaks - Field 3";
                 ["GERMAN"] = "Neue Aufgabe: Eine Runde Hobnanigans – Stahlschnäbel – Feld 3";
                 ["FRENCH"] = "Nouvelle quête : Une partie de chasse-poulet – Becs d’Acier - Terrain 3";
             };
@@ -546,6 +696,36 @@ function DrawHobnanigansDebug(options)
                 ["FRENCH"] = "Echec : Une partie de chasse-poulet – Becs d’Acier - Terrain 3";
             };
         };
+        ["START_FIELD_4"] = {
+            ["FF"] = {
+                ["ENGLISH"] = "New Quest: A Game of Hobnanigans -- Flying Feathers - Field 4";
+                ["GERMAN"] = "Neue Aufgabe: Eine Runde Hobnanigans – Fliegende Federn – Feld 4";
+                ["FRENCH"] = "Nouvelle quête : Une partie de chasse-poulet – Plumes Volantes - Terrain 4";
+            };
+            ["SB"] = {
+                ["ENGLISH"] = "New Quest: A Game of Hobnanigans -- Steel Beaks - Field 4";
+                ["GERMAN"] = "Neue Aufgabe: Eine Runde Hobnanigans – Stahlschnäbel – Feld 4";
+                ["FRENCH"] = "Nouvelle quête : Une partie de chasse-poulet – Becs d’Acier - Terrain 4";
+            };
+        };
+        ["STOP_FIELD_4"] = {
+            ["FF"] = {
+                ["ENGLISH"] = "Failed: A Game of Hobnanigans -- Flying Feathers - Field 4";
+                ["GERMAN"] = "Gescheitert: Eine Runde Hobnanigans – Fliegende Federn – Feld 4";
+                ["FRENCH"] = "Echec : Une partie de chasse-poulet – Plumes Volantes - Terrain 4";
+            };
+            ["SB"] = {
+                ["ENGLISH"] = "Failed: A Game of Hobnanigans -- Steel Beaks - Field 4";
+                ["GERMAN"] = "Gescheitert: Eine Runde Hobnanigans – Stahlschnäbel – Feld 4";
+                ["FRENCH"] = "Echec : Une partie de chasse-poulet – Becs d’Acier - Terrain 4";
+            };
+        };
+
+        ["START_GAME_1"] = {
+            ["ENGLISH"] = "Field 1 Referee says, ''The Game Hen has landed on the field. Begin play!''";
+            ["GERMAN"] = "Schiedsrichter - Feld 1 sagt: ''Das Spielhuhn ist auf dem Feld gelandet. Fang an zu spielen!";
+            ["FRENCH"] = "Arbitre du terrain 1 dit : ''Le poulet a atterri sur le terrain de jeu. Commencez la partie !''";
+        };
         ["START_GAME_2"] = {
             ["ENGLISH"] = "Field 2 Referee says, ''The Game Hen has landed on the field. Begin play!''";
             ["GERMAN"] = "Schiedsrichter - Feld 2 sagt: ''Das Spielhuhn ist auf dem Feld gelandet. Fang an zu spielen!";
@@ -555,6 +735,24 @@ function DrawHobnanigansDebug(options)
             ["ENGLISH"] = "Field 3 Referee says, ''The Game Hen has landed on the field. Begin play!''";
             ["GERMAN"] = "Schiedsrichter - Feld 3 sagt: ''Das Spielhuhn ist auf dem Feld gelandet. Fang an zu spielen!";
             ["FRENCH"] = "Arbitre du terrain 3 dit : ''Le poulet a atterri sur le terrain de jeu. Commencez la partie !''";
+        };
+        ["START_GAME_4"] = {
+            ["ENGLISH"] = "Field 4 Referee says, ''The Game Hen has landed on the field. Begin play!''";
+            ["GERMAN"] = "Schiedsrichter - Feld 4 sagt: ''Das Spielhuhn ist auf dem Feld gelandet. Fang an zu spielen!";
+            ["FRENCH"] = "Arbitre du terrain 4 dit : ''Le poulet a atterri sur le terrain de jeu. Commencez la partie !''";
+        };
+
+        ["STOP_GAME_1"] = {
+            ["FF"] = {
+                ["ENGLISH"] = "Field 1 Referee says, ''Flying Feathers Win!!!''";
+                ["GERMAN"] = "Schiedsrichter - Feld 1 sagt: ''Die Fliegenden Federn haben gewonnen!!!''";
+                ["FRENCH"] = "Arbitre du terrain 1 dit : ''Victoire des Plumes Volantes !''";
+            };
+            ["SB"] = {
+                ["ENGLISH"] = "Field 1 Referee says, ''Steel Beaks Win!!!''";
+                ["GERMAN"] = "Schiedsrichter - Feld 1 sagt: ''Die Stahlschnäbel haben gewonnen!!!''";
+                ["FRENCH"] = "Arbitre du terrain 1 dit : ''Victoire des Becs d’Acier !''";
+            };
         };
         ["STOP_GAME_2"] = {
             ["FF"] = {
@@ -580,6 +778,31 @@ function DrawHobnanigansDebug(options)
                 ["FRENCH"] = "Arbitre du terrain 3 dit : ''Victoire des Becs d’Acier !''";
             };
         };
+        ["STOP_GAME_4"] = {
+            ["FF"] = {
+                ["ENGLISH"] = "Field 4 Referee says, ''Flying Feathers Win!!!''";
+                ["GERMAN"] = "Schiedsrichter - Feld 4 sagt: ''Die Fliegenden Federn haben gewonnen!!!''";
+                ["FRENCH"] = "Arbitre du terrain 4 dit : ''Victoire des Plumes Volantes !''";
+            };
+            ["SB"] = {
+                ["ENGLISH"] = "Field 4 Referee says, ''Steel Beaks Win!!!''";
+                ["GERMAN"] = "Schiedsrichter - Feld 4 sagt: ''Die Stahlschnäbel haben gewonnen!!!''";
+                ["FRENCH"] = "Arbitre du terrain 4 dit : ''Victoire des Becs d’Acier !''";
+            };
+        };
+
+        ["SCORE_1"] = {
+            ["FF"] = {
+                ["ENGLISH"] = "Field 1 Referee says, ''Flying Feathers score!!''";
+                ["GERMAN"] = "Schiedsrichter - Feld 1 sagt: ''Die Fliegenden Federn punkten!!''";
+                ["FRENCH"] = "Arbitre du terrain 1 dit : ''Les Plumes Volantes marquent !''";
+            };
+            ["SB"] = {
+                ["ENGLISH"] = "Field 1 Referee says, ''Steel Beaks score!!''";
+                ["GERMAN"] = "Schiedsrichter - Feld 1 sagt: ''Die Stahlschnäbel punkten!!''";
+                ["FRENCH"] = "Arbitre du terrain 1 dit : ''Les Becs d’Acier marquent !''";
+            };
+        };
         ["SCORE_2"] = {
             ["FF"] = {
                 ["ENGLISH"] = "Field 2 Referee says, ''Flying Feathers score!!''";
@@ -602,6 +825,18 @@ function DrawHobnanigansDebug(options)
                 ["ENGLISH"] = "Field 3 Referee says, ''Steel Beaks score!!''";
                 ["GERMAN"] = "Schiedsrichter - Feld 3 sagt: ''Die Stahlschnäbel punkten!!''";
                 ["FRENCH"] = "Arbitre du terrain 3 dit : ''Les Becs d’Acier marquent !''";
+            };
+        };
+        ["SCORE_4"] = {
+            ["FF"] = {
+                ["ENGLISH"] = "Field 4 Referee says, ''Flying Feathers score!!''";
+                ["GERMAN"] = "Schiedsrichter - Feld 4 sagt: ''Die Fliegenden Federn punkten!!''";
+                ["FRENCH"] = "Arbitre du terrain 4 dit : ''Les Plumes Volantes marquent !''";
+            };
+            ["SB"] = {
+                ["ENGLISH"] = "Field 4 Referee says, ''Steel Beaks score!!''";
+                ["GERMAN"] = "Schiedsrichter - Feld 4 sagt: ''Die Stahlschnäbel punkten!!''";
+                ["FRENCH"] = "Arbitre du terrain 4 dit : ''Les Becs d’Acier marquent !''";
             };
         };
     };
@@ -632,169 +867,17 @@ function DrawHobnanigansDebug(options)
     sbLabel:SetPosition(270, y);
     y = y + 30;
 
-    -- Start/Stop quests on Field 2
-    local field2Label = Turbine.UI.Label();
-    field2Label:SetParent(options);
-    field2Label:SetText("Field 2 Quest: ");
-    field2Label:SetSize(120, 20);
-    field2Label:SetPosition(10, y);
-    field2Label:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleLeft);
-
-    local startField2QuestFF = Turbine.UI.Lotro.Button();
-    startField2QuestFF:SetParent(options)
-    startField2QuestFF:SetText("Start");
-    startField2QuestFF:SetWidth(50);
-    startField2QuestFF:SetPosition(120, y);
-    startField2QuestFF.Click = function(sender, args)
-        FilterQuest(debugText.START_FIELD_2.FF[CLIENTLANG]);
+    -- Start/Stop quests on Fields 1-4
+    for i=1, 4 do
+        y = DrawHobnanigansDebug_StartStopQuests(options, y, i, debugText);
     end
 
-    local stopField2QuestFF = Turbine.UI.Lotro.Button();
-    stopField2QuestFF:SetParent(options)
-    stopField2QuestFF:SetText("Stop");
-    stopField2QuestFF:SetWidth(50);
-    stopField2QuestFF:SetPosition(180, y);
-    stopField2QuestFF.Click = function(sender, args)
-        FilterQuest(debugText.STOP_FIELD_2.FF[CLIENTLANG]);
+    -- Begin/End game on Fields 1-4:
+    for i=1, 4 do
+        y = DrawHobnanigansDebug_BeginEndGame(options, y, i, debugText);
     end
 
-    local startField2QuestSB = Turbine.UI.Lotro.Button();
-    startField2QuestSB:SetParent(options)
-    startField2QuestSB:SetText("Start");
-    startField2QuestSB:SetWidth(50);
-    startField2QuestSB:SetPosition(240, y);
-    startField2QuestSB.Click = function(sender, args)
-        FilterQuest(debugText.START_FIELD_2.SB[CLIENTLANG]);
-    end
-
-    local stopField2QuestSB = Turbine.UI.Lotro.Button();
-    stopField2QuestSB:SetParent(options)
-    stopField2QuestSB:SetText("Stop");
-    stopField2QuestSB:SetWidth(50);
-    stopField2QuestSB:SetPosition(300, y);
-    stopField2QuestSB.Click = function(sender, args)
-        FilterQuest(debugText.STOP_FIELD_2.SB[CLIENTLANG]);
-    end
-    y = y + 30;
-
-    -- Start/Stop quests on Field 3
-    local field3Label = Turbine.UI.Label();
-    field3Label:SetParent(options);
-    field3Label:SetText("Field 3 Quest: ");
-    field3Label:SetSize(120, 20);
-    field3Label:SetPosition(10, y);
-    field3Label:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleLeft);
-
-    local startField3QuestFF = Turbine.UI.Lotro.Button();
-    startField3QuestFF:SetParent(options)
-    startField3QuestFF:SetText("Start");
-    startField3QuestFF.Click = function(sender, args)
-        FilterQuest(debugText.START_FIELD_3.FF[CLIENTLANG]);
-    end
-    startField3QuestFF:SetWidth(50);
-    startField3QuestFF:SetPosition(120, y);
-
-    local stopField3QuestFF = Turbine.UI.Lotro.Button();
-    stopField3QuestFF:SetParent(options)
-    stopField3QuestFF:SetText("Stop");
-    stopField3QuestFF.Click = function(sender, args)
-        FilterQuest(debugText.STOP_FIELD_3.FF[CLIENTLANG]);
-    end
-    stopField3QuestFF:SetWidth(50);
-    stopField3QuestFF:SetPosition(180, y);
-
-    local startField3QuestSB = Turbine.UI.Lotro.Button();
-    startField3QuestSB:SetParent(options)
-    startField3QuestSB:SetText("Start");
-    startField3QuestSB.Click = function(sender, args)
-        FilterQuest(debugText.START_FIELD_3.SB[CLIENTLANG]);
-    end
-    startField3QuestSB:SetWidth(50);
-    startField3QuestSB:SetPosition(240, y);
-
-    local stopField3QuestSB = Turbine.UI.Lotro.Button();
-    stopField3QuestSB:SetParent(options)
-    stopField3QuestSB:SetText("Stop");
-    stopField3QuestSB.Click = function(sender, args)
-        FilterQuest(debugText.STOP_FIELD_3.SB[CLIENTLANG]);
-    end
-    stopField3QuestSB:SetWidth(50);
-    stopField3QuestSB:SetPosition(300, y);
-    y = y + 30;
-
-    -- Begin/End game on field 2:
-    local game2Label = Turbine.UI.Label();
-    game2Label:SetParent(options);
-    game2Label:SetText("Game 2:");
-    game2Label:SetSize(120, 20);
-    game2Label:SetPosition(10, y);
-    game2Label:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleLeft);
-
-    local startGame2 = Turbine.UI.Lotro.Button();
-    startGame2:SetParent(options)
-    startGame2:SetText("Start");
-    startGame2.Click = function(sender, args)
-        FilterSay(debugText.START_GAME_2[CLIENTLANG]);
-    end
-    startGame2:SetWidth(50);
-    startGame2:SetPosition(60, y);
-
-    local stopGame2FF = Turbine.UI.Lotro.Button();
-    stopGame2FF:SetParent(options)
-    stopGame2FF:SetText("Stop");
-    stopGame2FF.Click = function(sender, args)
-        FilterSay(debugText.STOP_GAME_2.FF[CLIENTLANG]);
-    end
-    stopGame2FF:SetWidth(50);
-    stopGame2FF:SetPosition(180, y);
-
-    local stopGame2SB = Turbine.UI.Lotro.Button();
-    stopGame2SB:SetParent(options)
-    stopGame2SB:SetText("Stop");
-    stopGame2SB.Click = function(sender, args)
-        FilterSay(debugText.STOP_GAME_2.SB[CLIENTLANG]);
-    end
-    stopGame2SB:SetWidth(50);
-    stopGame2SB:SetPosition(300, y);
-    y = y + 30;
-
-    -- Begin/End game on field 2:
-    local game3Label = Turbine.UI.Label();
-    game3Label:SetParent(options);
-    game3Label:SetText("Game 3:");
-    game3Label:SetSize(120, 20);
-    game3Label:SetPosition(10, y);
-    game3Label:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleLeft);
-
-    local startGame3 = Turbine.UI.Lotro.Button();
-    startGame3:SetParent(options)
-    startGame3:SetText("Start");
-    startGame3.Click = function(sender, args)
-        FilterSay(debugText.START_GAME_3[CLIENTLANG]);
-    end
-    startGame3:SetWidth(50);
-    startGame3:SetPosition(60, y);
-
-    local stopGame3FF = Turbine.UI.Lotro.Button();
-    stopGame3FF:SetParent(options)
-    stopGame3FF:SetText("Stop");
-    stopGame3FF.Click = function(sender, args)
-        FilterSay(debugText.STOP_GAME_3.FF[CLIENTLANG]);
-    end
-    stopGame3FF:SetWidth(50);
-    stopGame3FF:SetPosition(180, y);
-
-    local stopGame3SB = Turbine.UI.Lotro.Button();
-    stopGame3SB:SetParent(options)
-    stopGame3SB:SetText("Stop");
-    stopGame3SB.Click = function(sender, args)
-        FilterSay(debugText.STOP_GAME_3.SB[CLIENTLANG]);
-    end
-    stopGame3SB:SetWidth(50);
-    stopGame3SB:SetPosition(300, y);
-    y = y + 30;
-
-    -- Score on field 2/3:
+    -- Score on fields 1-4:
     local game2Score = Turbine.UI.Label();
     game2Score:SetParent(options);
     game2Score:SetText("Score:");
@@ -802,42 +885,12 @@ function DrawHobnanigansDebug(options)
     game2Score:SetPosition(10, y);
     game2Score:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleLeft);
 
-    local game2ScoreFF = Turbine.UI.Lotro.Button();
-    game2ScoreFF:SetParent(options)
-    game2ScoreFF:SetText("FF2");
-    game2ScoreFF.Click = function(sender, args)
-        FilterSay(debugText.SCORE_2.FF[CLIENTLANG])
+    for i=1, 4 do
+        DrawHobnanigansDebug_Score(options, 60 + i*60, y, "FF", i, debugText);
+        DrawHobnanigansDebug_Score(options, 60 + i*60, y + 30, "SB", i, debugText);
     end
-    game2ScoreFF:SetWidth(50);
-    game2ScoreFF:SetPosition(120, y);
 
-    local game3ScoreFF = Turbine.UI.Lotro.Button();
-    game3ScoreFF:SetParent(options)
-    game3ScoreFF:SetText("FF3");
-    game3ScoreFF.Click = function(sender, args)
-        FilterSay(debugText.SCORE_3.FF[CLIENTLANG])
-    end
-    game3ScoreFF:SetWidth(50);
-    game3ScoreFF:SetPosition(180, y);
-
-    local game2ScoreSB = Turbine.UI.Lotro.Button();
-    game2ScoreSB:SetParent(options)
-    game2ScoreSB:SetText("SB2");
-    game2ScoreSB.Click = function(sender, args)
-        FilterSay(debugText.SCORE_2.SB[CLIENTLANG])
-    end
-    game2ScoreSB:SetWidth(50);
-    game2ScoreSB:SetPosition(240, y);
-
-    local game3ScoreSB = Turbine.UI.Lotro.Button();
-    game3ScoreSB:SetParent(options)
-    game3ScoreSB:SetText("SB3");
-    game3ScoreSB.Click = function(sender, args)
-        FilterSay(debugText.SCORE_3.SB[CLIENTLANG])
-    end
-    game3ScoreSB:SetWidth(50);
-    game3ScoreSB:SetPosition(300, y);
-    y = y + 30;
+    y = y + 60;
 
     -- Move time to specific values:
     local gameAdvanceTime = Turbine.UI.Label();
@@ -847,42 +900,25 @@ function DrawHobnanigansDebug(options)
     gameAdvanceTime:SetPosition(10, y);
     gameAdvanceTime:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleLeft);
 
-    local gameTime10minutes = Turbine.UI.Lotro.Button();
-    gameTime10minutes:SetParent(options)
-    gameTime10minutes:SetText("10 m");
-    gameTime10minutes.Click = function(sender, args)
-        TimerSetTimeRemaining(hobnanigansTimer, 10 * 60);
-    end
-    gameTime10minutes:SetWidth(50);
-    gameTime10minutes:SetPosition(120, y);
-
-    local gameTime6minutes = Turbine.UI.Lotro.Button();
-    gameTime6minutes:SetParent(options)
-    gameTime6minutes:SetText("6 m");
-    gameTime6minutes.Click = function(sender, args)
-        TimerSetTimeRemaining(hobnanigansTimer, 6 * 60 + 2);
-    end
-    gameTime6minutes:SetWidth(50);
-    gameTime6minutes:SetPosition(180, y);
-
-    local gameTime2minutes = Turbine.UI.Lotro.Button();
-    gameTime2minutes:SetParent(options)
-    gameTime2minutes:SetText("2 m");
-    gameTime2minutes.Click = function(sender, args)
-        TimerSetTimeRemaining(hobnanigansTimer, 2 * 60 + 2);
-    end
-    gameTime2minutes:SetWidth(50);
-    gameTime2minutes:SetPosition(240, y);
-
-    local gameTime0minutes = Turbine.UI.Lotro.Button();
-    gameTime0minutes:SetParent(options)
-    gameTime0minutes:SetText("10 s");
-    gameTime0minutes.Click = function(sender, args)
-        TimerSetTimeRemaining(hobnanigansTimer, 10);
-    end
-    gameTime0minutes:SetWidth(50);
-    gameTime0minutes:SetPosition(300, y);
+    DrawHobnanigansDebug_Time(options, 120, y, 10 * 60);
+    DrawHobnanigansDebug_Time(options, 180, y, 6 * 60);
+    DrawHobnanigansDebug_Time(options, 240, y, 2 * 60);
+    DrawHobnanigansDebug_Time(options, 300, y, 10);
     y = y + 30;
+
+    -- Declare winner:
+    local declareWinner = Turbine.UI.Label();
+    declareWinner:SetParent(options);
+    declareWinner:SetText("Winner:");
+    declareWinner:SetSize(150, 20);
+    declareWinner:SetPosition(10, y);
+    declareWinner:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleLeft);
+
+    for i=1, 4 do
+        DrawHobnanigansDebug_Winner(options, 60 + i*60, y, "FF", i, debugText);
+        DrawHobnanigansDebug_Winner(options, 60 + i*60, y + 30, "SB", i, debugText);
+    end
+    y = y + 60;
 
 end
 
@@ -1149,7 +1185,7 @@ function DrawOptionsWin()
     -- Calculate where all the debug sections should be:
     questAcceptCompleteFailY = 0;
     hobnanigansY = questAcceptCompleteFailY + 100;
-    fireworksY = hobnanigansY + 240;
+    fireworksY = hobnanigansY + 480;
     fireworksColumnLeftMargin = 75;
     fireworksColumnWidth = 50;
     fireworksRowTopMargin = 50;

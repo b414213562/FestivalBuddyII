@@ -280,14 +280,68 @@ _LANG = {
             -- Eine Runde Hobnanigans – Stahlschnäbel
             -- Une partie de chasse-poulet – Becs d’Acier
             ["HOBNANIGANS_QUEST_BEGIN_TEXT"] = {
-                ["ENGLISH"] = "New Quest: A Game of Hobnanigans %-%- (.*) %- Field ([1-4])";
-                ["GERMAN"] = "Neue Aufgabe: Eine Runde Hobnanigans – (.*) – Feld ([1-4])";
-                ["FRENCH"] = "Nouvelle quête : Une partie de chasse%-poulet – (.*) %- Terrain ([1-4])";
+                ["New Quest: A Game of Hobnanigans -- Flying Feathers"] = { ["TEAM"] = "FLYING_FEATHERS"; ["FIELD"] = 1; };
+                ["Neue Aufgabe: Eine Runde Hobnanigans – Fliegende Federn"] = { ["TEAM"] = "FLYING_FEATHERS"; ["FIELD"] = 1; };
+                ["Nouvelle quête : Une partie de chasse-poulet – Plumes Volantes"] = { ["TEAM"] = "FLYING_FEATHERS"; ["FIELD"] = 1; };
+
+                ["New Quest: A Game of Hobnanigans -- Steel Beaks"] = { ["TEAM"] = "STEEL_BEAKS"; ["FIELD"] = 1; };
+                ["Neue Aufgabe: Eine Runde Hobnanigans – Stahlschnäbel"] = { ["TEAM"] = "STEEL_BEAKS"; ["FIELD"] = 1; };
+                ["Nouvelle quête : Une partie de chasse-poulet – Becs d'Acier"] = { ["TEAM"] = "STEEL_BEAKS"; ["FIELD"] = 1; };
+
+                ["New Quest: A Game of Hobnanigans -- Flying Feathers - Field 2"] = { ["TEAM"] = "FLYING_FEATHERS"; ["FIELD"] = 2; };
+                ["Neue Aufgabe: Eine Runde Hobnanigans – Fliegende Federn – Feld 2"] = { ["TEAM"] = "FLYING_FEATHERS"; ["FIELD"] = 2; };
+                ["Nouvelle quête : Une partie de chasse-poulet – Plumes Volantes - Terrain 2"] = { ["TEAM"] = "FLYING_FEATHERS"; ["FIELD"] = 2; };
+
+                ["New Quest: A Game of Hobnanigans -- Steel Beaks - Field 2"] = { ["TEAM"] = "STEEL_BEAKS"; ["FIELD"] = 2; };
+                ["Neue Aufgabe: Eine Runde Hobnanigans – Stahlschnäbel – Feld 2"] = { ["TEAM"] = "STEEL_BEAKS"; ["FIELD"] = 2; };
+                ["Nouvelle quête : Une partie de chasse-poulet – Becs d'Acier - Terrain 2"] = { ["TEAM"] = "STEEL_BEAKS"; ["FIELD"] = 2; };
+
+                ["New Quest: A Game of Hobnanigans -- Flying Feathers - Field 3"] = { ["TEAM"] = "FLYING_FEATHERS"; ["FIELD"] = 3; };
+                ["Neue Aufgabe: Eine Runde Hobnanigans – Fliegende Federn – Feld 3"] = { ["TEAM"] = "FLYING_FEATHERS"; ["FIELD"] = 3; };
+                ["Nouvelle quête : Une partie de chasse-poulet – Plumes Volantes - Terrain 3"] = { ["TEAM"] = "FLYING_FEATHERS"; ["FIELD"] = 3; };
+
+                ["New Quest: A Game of Hobnanigans -- Steel Beaks - Field 3"] = { ["TEAM"] = "STEEL_BEAKS"; ["FIELD"] = 3; };
+                ["Neue Aufgabe: Eine Runde Hobnanigans – Stahlschnäbel – Feld 3"] = { ["TEAM"] = "STEEL_BEAKS"; ["FIELD"] = 3; };
+                ["Nouvelle quête : Une partie de chasse-poulet – Becs d'Acier - Terrain 3"] = { ["TEAM"] = "STEEL_BEAKS"; ["FIELD"] = 3; };
+
+                ["New Quest: A Game of Hobnanigans -- Flying Feathers - Field 4"] = { ["TEAM"] = "FLYING_FEATHERS"; ["FIELD"] = 4; };
+                ["Neue Aufgabe: Eine Runde Hobnanigans – Fliegende Federn – Feld 4"] = { ["TEAM"] = "FLYING_FEATHERS"; ["FIELD"] = 4; };
+                ["Nouvelle quête : Une partie de chasse-poulet – Plumes Volantes - Terrain 4"] = { ["TEAM"] = "FLYING_FEATHERS"; ["FIELD"] = 4; };
+
+                ["New Quest: A Game of Hobnanigans -- Steel Beaks - Field 4"] = { ["TEAM"] = "STEEL_BEAKS"; ["FIELD"] = 4; };
+                ["Neue Aufgabe: Eine Runde Hobnanigans – Stahlschnäbel – Feld 4"] = { ["TEAM"] = "STEEL_BEAKS"; ["FIELD"] = 4; };
+                ["Nouvelle quête : Une partie de chasse-poulet – Becs d'Acier - Terrain 4"] = { ["TEAM"] = "STEEL_BEAKS"; ["FIELD"] = 4; };
             };
             ["HOBNANIGANS_QUEST_END_TEXT"] = {
-                ["ENGLISH"] = "Failed: A Game of Hobnanigans %-%- (.*) %- Field ([1-4])";
-                ["GERMAN"] = "Gescheitert: Eine Runde Hobnanigans – (.*) – Feld ([1-4])";
-                ["FRENCH"] = "Echec : Une partie de chasse%-poulet – (.*) %- Terrain ([1-4])";
+                ["Failed: A Game of Hobnanigans -- Flying Feathers"] = true;
+                ["Failed: A Game of Hobnanigans -- Flying Feathers - Field 2"] = true;
+                ["Failed: A Game of Hobnanigans -- Flying Feathers - Field 3"] = true;
+                ["Failed: A Game of Hobnanigans -- Flying Feathers - Field 4"] = true;
+
+                ["Failed: A Game of Hobnanigans -- Steel Beaks"] = true;
+                ["Failed: A Game of Hobnanigans -- Steel Beaks - Field 2"] = true;
+                ["Failed: A Game of Hobnanigans -- Steel Beaks - Field 3"] = true;
+                ["Failed: A Game of Hobnanigans -- Steel Beaks - Field 4"] = true;
+
+                ["Echec : Une partie de chasse-poulet – Plumes Volantes"] = true;
+                ["Echec : Une partie de chasse-poulet – Plumes Volantes - Terrain 2"] = true;
+                ["Echec : Une partie de chasse-poulet – Plumes Volantes - Terrain 3"] = true;
+                ["Echec : Une partie de chasse-poulet – Plumes Volantes - Terrain 4"] = true;
+
+                ["Echec : Une partie de chasse-poulet – Becs d’Acier"] = true;
+                ["Echec : Une partie de chasse-poulet – Becs d’Acier - Terrain 2"] = true;
+                ["Echec : Une partie de chasse-poulet – Becs d’Acier - Terrain 3"] = true;
+                ["Echec : Une partie de chasse-poulet – Becs d’Acier - Terrain 4"] = true;
+
+                ["Gescheitert: Eine Runde Hobnanigans – Fliegende Federn"] = true;
+                ["Gescheitert: Eine Runde Hobnanigans – Fliegende Federn – Feld 2"] = true;
+                ["Gescheitert: Eine Runde Hobnanigans – Fliegende Federn – Feld 3"] = true;
+                ["Gescheitert: Eine Runde Hobnanigans – Fliegende Federn – Feld 4"] = true;
+
+                ["Gescheitert: Eine Runde Hobnanigans – Stahlschnäbel"] = true;
+                ["Gescheitert: Eine Runde Hobnanigans – Stahlschnäbel – Feld 2"] = true;
+                ["Gescheitert: Eine Runde Hobnanigans – Stahlschnäbel – Feld 3"] = true;
+                ["Gescheitert: Eine Runde Hobnanigans – Stahlschnäbel – Feld 4"] = true;
             };
 
             -- [06/02 10:29:41 PM] Field 3 Referee says, ''The Game Hen has landed on the field. Begin play!''

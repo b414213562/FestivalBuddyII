@@ -2,6 +2,9 @@ v2.1.3 changes:
     Festivals:
         Incorporated numerous German translations from Mandraval.
 
+        Hobnanigans:
+            Fixed an issue where games on Field 1 would not be recognized.
+
     Bug fix:
         Fixed an issue where an old Festival Buddy save file had Summer selected and it wasn't correctly converted to Farmers Faire.
 

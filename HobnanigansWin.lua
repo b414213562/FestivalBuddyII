@@ -92,6 +92,8 @@ function DrawHobnanigansWin()
     --hobnanigansStatus:SetBackColor(Turbine.UI.Color.BlanchedAlmond);
 end
 
+--- Set the current field based on parsed chat text
+---@param fieldNumber string?
 function SetField(fieldNumber)
     wHobnanigans.fieldNumber = fieldNumber;
     if (fieldNumber == nil) then
@@ -115,11 +117,11 @@ end
 
 function SetHobnanigansTeam(team)
     wHobnanigans.team = team;
-    if (team == GetString(_LANG.OTHER.HOBNANIGANS_TEAMS.FLYING_FEATHERS)) then
+    if (team == "FLYING_FEATHERS") then
         hobnanigansTimer:SetBackColor(flyingFeathersBorderColor);
         hobnanigansFlyingFeathersLabel:SetBackColor(flyingFeathersBorderColor);
         hobnanigansSteelBeaksLabel:SetBackColor(nil);
-    elseif (team == GetString(_LANG.OTHER.HOBNANIGANS_TEAMS.STEEL_BEAKS)) then
+    elseif (team == "STEEL_BEAKS") then
         hobnanigansTimer:SetBackColor(steelBeaksBorderColor);
         hobnanigansFlyingFeathersLabel:SetBackColor(nil);
         hobnanigansSteelBeaksLabel:SetBackColor(steelBeaksBorderColor);
@@ -146,21 +148,24 @@ end
 
 function HandleQuestChat_HobnanigansTracker(rawText)
     if (not wHobnanigans.questActive) then
-        local team, fieldNumber = string.match(rawText, GetString(_LANG.OTHER.HOBNANIGANS_ACCOUNCEMENTS.HOBNANIGANS_QUEST_BEGIN_TEXT));
-        if (team ~= nil and fieldNumber ~= nil) then
+        local entry = _LANG.OTHER.HOBNANIGANS_ACCOUNCEMENTS.HOBNANIGANS_QUEST_BEGIN_TEXT[rawText]
+        if (entry) then
+            local team = entry["TEAM"];
+            local fieldNumber = entry["FIELD"];
+
             -- Quest begins!
             --Turbine.Shell.WriteLine("Quest started: '" .. team .. "' on field '" .. fieldNumber .. "'");
             wHobnanigans.questActive = true;
             SetHobnanigansTeam(team)
-            SetField(fieldNumber);
+            SetField(tostring(fieldNumber));
             wHobnanigans.playActive = false;
             ClearScores();
             ShowHobnanigansText("WAITING_FOR_START");
         end
     else
         -- Quest might end:
-        local team, fieldNumber = string.match(rawText, GetString(_LANG.OTHER.HOBNANIGANS_ACCOUNCEMENTS.HOBNANIGANS_QUEST_END_TEXT));
-        if (team ~= nil and fieldNumber ~= nil) then
+        local entry = _LANG.OTHER.HOBNANIGANS_ACCOUNCEMENTS.HOBNANIGANS_QUEST_END_TEXT[rawText];
+        if (entry) then
             -- Quest ends!
             --Turbine.Shell.WriteLine("Quest failed: team '" .. team .. "' on field '" .. fieldNumber .. "'");
             wHobnanigans.questActive = false;
