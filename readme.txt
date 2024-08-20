@@ -1,3 +1,10 @@
+v2.1.3 changes:
+    Festivals:
+        Incorporated numerous German translations from Mandraval.
+
+    Bug fix:
+        Fixed an issue where an old Festival Buddy save file had Summer selected and it wasn't correctly converted to Farmers Faire.
+
 v2.1.2 changes:
     Festivals:
         Spring:

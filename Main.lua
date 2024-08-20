@@ -143,8 +143,12 @@ function LoadSettingsFileCharacter()
 
         -- Consolidated Summer into Farmers Faire,
         -- so make sure the current festival is correct:
-        local summerFestivalNumber = 2;
-        if (SETTINGS.FESTIVAL == summerFestivalNumber) then
+        local possibleSummer = {
+            ["SUMMER"] = true;
+            [2] = true;
+            ["2"] = true;
+        }
+        if (possibleSummer[SETTINGS.FESTIVAL]) then
             SETTINGS.FESTIVAL = FARMERSFAIRE;
         end
 
