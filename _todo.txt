@@ -1,3 +1,17 @@
+Deed Tracker: Did not find an uncompleted deed matching "A Dark Treasure"
+...ns\CubePlugins\FestivalBuddyII\FestivalFunctions.lua:90: attempt to index field '?' (a nil value)
+
+
+[19:42] Talyrion1003: but.... my FB II does not seem to update the tokens in its window...
+[19:44] Talyrion1003: I logged into my character, and it shows 22 anniversary tokens... after doing a quest the wallet count is 25, but FB II still shows 22... (may it be from the save-file changes?) might be an old save file, it seems to update the numbers on load...
+
+[20:31] Talyrion1003: returning to FB II... I just tested on a german client on BR with a fresh character and added anniversary token (through the quest) and it showed up... then I got mithril from aubergine.. and it showed up... then I reloaded FB II, and added mithril again.. this time, no change in display
+[20:31] Talyrion1003: will change lang to english to test again...
+[20:47] Talyrion1003: sir, I have to inform you, that adding another 1000 mithril coins will not change the amount displayed by FB II (on english client)
+[21:09] Talyrion1003: did another test... french version does also not update (as expected)... changing the festival to a different and reselect the current festival will update the numbers... so I suspect a missing update on a token-change
+[22:36] Talyrion1003: another update: reselecting the same festival from the drop down will update the token numbers, spending shield-tokens does not update
+
+
 Todo:
     Consider adding unit tests to confirm string parsing:
         [23:16] +Hyoss: IIRC there is some help for unit tests through 'import "Turbine.Testing";'
