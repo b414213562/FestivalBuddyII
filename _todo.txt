@@ -216,6 +216,5 @@ Make alert window movable:
     When repositioning is toggled off,
         disable drag bar and save position in settings.
 
-Add Farmers Faire barter items
 Incorporate French / German strings from Egarthur
 Find out if French / German session play also uses the tilde prefix convention.

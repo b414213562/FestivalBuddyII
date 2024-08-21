@@ -1,8 +1,19 @@
 
 function DrawBarterWin()
 
+    -- Initialize window height to a good default, if it's not present:
+    if (not SETTINGS.BARTERWIN.HEIGHT) then
+        SETTINGS.BARTERWIN.HEIGHT = 500;
+    end
+
+    -- Make sure saved height isn't too tall for screen:
+    local displayHeight = Turbine.UI.Display.GetHeight()
+    if ((SETTINGS.BARTERWIN.Y + SETTINGS.BARTERWIN.HEIGHT) > displayHeight) then
+        SETTINGS.BARTERWIN.HEIGHT = displayHeight - SETTINGS.BARTERWIN.Y;
+    end
+
     wBarterWinParent = Turbine.UI.Lotro.Window();
-    wBarterWinParent:SetSize(480,500);
+    wBarterWinParent:SetSize(480,SETTINGS.BARTERWIN.HEIGHT);
     wBarterWinParent:SetPosition(SETTINGS.BARTERWIN.X,SETTINGS.BARTERWIN.Y);
     wBarterWinParent:SetVisible(SETTINGS.BARTERWIN.VISIBLE);
     wBarterWinParent:SetText(GetString(_LANG.OTHER.BARTER));
@@ -12,7 +23,7 @@ function DrawBarterWin()
 
     wBarterWinBack = Turbine.UI.Control();
     wBarterWinBack:SetParent(wBarterWinParent);
-    wBarterWinBack:SetSize(480,500);
+    wBarterWinBack:SetSize(480,SETTINGS.BARTERWIN.HEIGHT);
     wBarterWinBack:SetPosition(1,-2);
     wBarterWinBack:SetBackground(_IMAGES.BARTERBACK);
     wBarterWinBack:SetBlendMode(4);
@@ -29,7 +40,7 @@ function DrawBarterWin()
 
     lstBarterItems = Turbine.UI.ListBox();
     lstBarterItems:SetParent(wBarterWinParent);
-    lstBarterItems:SetSize(422,380);
+    lstBarterItems:SetSize(422,SETTINGS.BARTERWIN.HEIGHT - 120);
     lstBarterItems:SetPosition(25,80);
 
     slstBarterItems = Turbine.UI.Lotro.ScrollBar();
@@ -74,6 +85,7 @@ function DrawBarterWin()
         lstBarterItems:SetHeight(newListHeight);
         slstBarterItems:SetHeight(newListHeight);
 
+        SETTINGS.BARTERWIN.HEIGHT = newWindowHeight;
     end
 
 end
