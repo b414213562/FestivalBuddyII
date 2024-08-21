@@ -4,6 +4,11 @@ v2.1.3 changes:
 
         Hobnanigans:
             Fixed an issue where games on Field 1 would not be recognized.
+        Farmers Faire:
+            Updated barter items.
+    
+    General:
+        Made barter window resizable vertically
 
     Bug fix:
         Fixed an issue where an old Festival Buddy save file had Summer selected and it wasn't correctly converted to Farmers Faire.

@@ -253,115 +253,474 @@ _BARTER =
     -- FARMERS FAIRE --------------------------------------------------------------------------------------------
     [FARMERSFAIRE] =
     {
-        -- General
-        [1]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "General"; }; };
-
-        [2]={[1]=1879313833;[2]={["FARMERSFAIRE_FESTIVAL"]=45;};};          -- Robe of the Wedmath Celebration
-        [3]={[1]=1879313834;[2]={["FARMERSFAIRE_FESTIVAL"]=45;};};          -- Cloak of the Wedmath Celebration
-        [4]={[1]=1879313835;[2]={["FARMERSFAIRE_FESTIVAL"]=45;};};          -- Hooded Cloak of the Wedmath Celebration
-        [5]={[1]=1879272166;[2]={["FARMERSFAIRE_FESTIVAL"]=45;};};          -- Robe of the Midsummer
-        [6]={[1]=1879272165;[2]={["FARMERSFAIRE_FESTIVAL"]=45;};};          -- Cloak of the Midsummer
-        [7]={[1]=1879272164;[2]={["FARMERSFAIRE_FESTIVAL"]=45;};};          -- Hooded Cloak of the Midsummer
-        [8]={[1]=1879249071;[2]={["FARMERSFAIRE_FESTIVAL"]=45;};};          -- Summerdays dress
-        [9]={[1]=1879249069;[2]={["FARMERSFAIRE_FESTIVAL"]=45;};};          -- Summerdays Tunic and Trousers
-        [10]={[1]=1879249070;[2]={["FARMERSFAIRE_FESTIVAL"]=45;};};         -- Summerdays Cloak
-        [11]={[1]=1879249068;[2]={["FARMERSFAIRE_FESTIVAL"]=45;};};         -- Summerdays Hooded Cloak
-        [12]={[1]=1879249072;[2]={["FARMERSFAIRE_FESTIVAL"]=45;};};         -- Summerdays Hat
-        [13]={[1]=1879104057;[2]={["FARMERSFAIRE_FESTIVAL"]=30;};};         -- Turquoise Summer Circlet
-        [14]={[1]=1879104078;[2]={["FARMERSFAIRE_FESTIVAL"]=30;};};         -- Sleeveless Elven Tunic
-        [15]={[1]=1879185942;[2]={["FARMERSFAIRE_FESTIVAL"]=30;};};         -- Long-sleeved Summer Dress
-        [16]={[1]=1879185939;[2]={["FARMERSFAIRE_FESTIVAL"]=30;};};         -- Sleeveless Summer Dress
-        [17]={[1]=1879185941;[2]={["FARMERSFAIRE_FESTIVAL"]=30;};};         -- Short-sleeved Summer Dress
-        [18]={[1]=1879185940;[2]={["FARMERSFAIRE_FESTIVAL"]=30;};};         -- Long-sleeved Summer Tunic and Trousers
-        [19]={[1]=1879185943;[2]={["FARMERSFAIRE_FESTIVAL"]=30;};};         -- Short-sleeved Summer Tunic and Trousers
-        [20]={[1]=1879185953;[2]={["FARMERSFAIRE_FESTIVAL"]=30;};};         -- Golden Tree Summer Cloak
-        [21]={[1]=1879185951;[2]={["FARMERSFAIRE_FESTIVAL"]=30;};};         -- Summer Travelling Cloak
-        [22]={[1]=1879159561;[2]={["FARMERSFAIRE_FESTIVAL"]=30;};};         -- Cloak of the Summer Sun
-        [23]={[1]=1879159581;[2]={["FARMERSFAIRE_FESTIVAL"]=30;};};         -- Sun Hat
-        [24]={[1]=1879249578;[2]={["FARMERSFAIRE_FESTIVAL"]=45;};};         -- Glowing Bonfire
-        [25]={[1]=1879249577;[2]={["FARMERSFAIRE_FESTIVAL"]=45;};};         -- Smoky Bonfire
-        [26]={[1]=1879249579;[2]={["FARMERSFAIRE_FESTIVAL"]=45;};};         -- Modest Cookfire
-        [27]={[1]=1879249576;[2]={["FARMERSFAIRE_FESTIVAL"]=45;};};         -- Feast Day Cookfire
-        [28]={[1]=1879185967;[2]={["FARMERSFAIRE_FESTIVAL"]=30;};};         -- White Wicker Chair
-        [29]={[1]=1879185965;[2]={["FARMERSFAIRE_FESTIVAL"]=30;};};         -- Summer Hammock
-        [30]={[1]=1879185962;[2]={["FARMERSFAIRE_FESTIVAL"]=30;};};         -- Mossy Wicker Chair
-        [31]={[1]=1879159513;[2]={["FARMERSFAIRE_FESTIVAL"]=30;};};         -- Summerfest Painting
-        [32]={[1]=1879159507;[2]={["FARMERSFAIRE_FESTIVAL"]=30;};};         -- Summerfest Bed
-        [33]={[1]=1879205540;[2]={["FARMERSFAIRE_FESTIVAL"]=30;};};         -- Map of Lothlórien
-        [34]={[1]=1879205564;[2]={["FARMERSFAIRE_FESTIVAL"]=30;};};         -- Map of the Ettenmoors
-        [35]={[1]=1879205567;[2]={["FARMERSFAIRE_FESTIVAL"]=30;};};         -- Map of Caras Galadhon
-        [36]={[1]=1879205544;[2]={["FARMERSFAIRE_FESTIVAL"]=30;};};         -- Map of the Northern Barrow-downs
-        [37]={[1]=1879159373;[2]={["FARMERSFAIRE_FESTIVAL"]=9;};[3]=5;};    -- Monster Fare
-        [38]={[1]=1879159383;[2]={["FARMERSFAIRE_FESTIVAL"]=9;};[3]=5;};    -- Foul Blasts
-        [39]={[1]=1879159304;[2]={["FARMERSFAIRE_FESTIVAL"]=9;};[3]=5;};    -- Fire-breathing Potions
-        [40]={[1]=1879159399;[2]={["FARMERSFAIRE_FESTIVAL"]=9;};[3]=5;};    -- Essence of Toad
-        [41]={[1]=1879159223;[2]={["FARMERSFAIRE_FESTIVAL"]=9;};[3]=5;};    -- Mugs of Triple Strength Brandy
-        [42]={[1]=1879159224;[2]={["FARMERSFAIRE_FESTIVAL"]=9;};[3]=5;};    -- Mugs of... Liquid
-        [43]={[1]=1879159367;[2]={["FARMERSFAIRE_FESTIVAL"]=9;};[3]=5;};    -- Saffron's Lipstick
-        [44]={[1]=1879159235;[2]={["FARMERSFAIRE_FESTIVAL"]=9;};[3]=5;};    -- Vile Vittles
-        [45]={[1]=1879233669;[2]={["FARMERSFAIRE_FESTIVAL"]=6;};[3]=5;};    -- Piles of Mysterious Powder
-        [46]={[1]=1879313837;[2]={["FARMERSFAIRE_FESTIVAL"]=80;};};         -- Steed of the Wedmath Celebration
-        [47]={[1]=1879313843;[2]={["FARMERSFAIRE_FESTIVAL"]=80;};};         -- Caparison of the Wedmath Celebration
-        [48]={[1]=1879272168;[2]={["FARMERSFAIRE_FESTIVAL"]=80;};};         -- Steed of the Midsummer
-        [49]={[1]=1879249514;[2]={["FARMERSFAIRE_FESTIVAL"]=80;};};         -- Summerdays Steed
-        [50]={[1]=1879272171;[2]={["FARMERSFAIRE_FESTIVAL"]=80;};};         -- Caparison of the Midsummer
-
-        -- Thorin's Hall Fishing
-        [51]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Thorin's Hall Fishing"; }; };
-
-        [52]={[2]={["FARMERSFAIRE_FESTIVAL"]=15;};[1]=1879103655;};                      -- Yellow Fireworks Launcher
-        [53]={[2]={["FARMERSFAIRE_HADDOCK"]=1;};[1]=1879103656;};                       -- Red Fireworks Launcher
-        [54]={[2]={["FARMERSFAIRE_FESTIVAL"]=15;};[1]=1879103653;};                      -- Purple Fireworks Launcher
-        [55]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879115999;};                     -- Triumphs of the Dwarves Music Box
-        [56]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879138060;};                     -- 'Summerfest' Wall
-        [57]={[2]={["FARMERSFAIRE_HADDOCK"]=1;["FARMERSFAIRE_FESTIVAL"]=15;};[1]=1879117676;};   -- Blue Ceremonial Dress
-
-        -- Celondim Fishing
-        [58]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Celondim Fishing"; }; };
-
-        [59]={[1]=1879116002;[2]={["FARMERSFAIRE_CELEBHAL"]=1;["FARMERSFAIRE_FESTIVAL"]=15;};};  -- Large Flowerbed
-        [60]={[1]=1879116003;[2]={["FARMERSFAIRE_FESTIVAL"]=30;};};                     -- Large Vegetable Garden
-        [61]={[1]=1879131126;[2]={["FARMERSFAIRE_CELEBHAL"]=1;["FARMERSFAIRE_FESTIVAL"]=15;};};  -- Summer Welcome Mat
-        [62]={[1]=1879115997;[2]={["FARMERSFAIRE_FESTIVAL"]=30;};};                     -- Eternal Elven-song Music Box
-        [63]={[1]=1879138059;[2]={["FARMERSFAIRE_FESTIVAL"]=30;};};                     -- Festival of Enedhin Wall
-        [64]={[1]=1879117675;[2]={["FARMERSFAIRE_CELEBHAL"]=1;["FARMERSFAIRE_FESTIVAL"]=15;};};  -- Green Ceremonial Dress
-
-        -- Bree Fishing
-        [65]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Bree Fishing"; }; };
-
-        [66]={[1]=1879116001;[2]={["FARMERSFAIRE_GOLDRED"]=1;["FARMERSFAIRE_FESTIVAL"]=15;};};   -- Small Vegetable garden
-        [67]={[1]=1879116452;[2]={["FARMERSFAIRE_GOLDRED"]=1;["FARMERSFAIRE_FESTIVAL"]=15;};};   -- Purple Flowerbox
-        [68]={[1]=1879116451;[2]={["FARMERSFAIRE_FESTIVAL"]=30;};};                     -- Orange Flowerbox
-        [69]={[1]=1879116000;[2]={["FARMERSFAIRE_FESTIVAL"]=30;};};                     -- Summerdays Music box
-        [70]={[1]=1879138058;[2]={["FARMERSFAIRE_FESTIVAL"]=30;};};                     -- Summerdays Wall
-        [71]={[1]=1879103151;[2]={["FARMERSFAIRE_GOLDRED"]=1;["FARMERSFAIRE_FESTIVAL"]=15;};};   -- White Ceremonial Dress
-
-        -- Shire Fishing
-        [72]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Shire Fishing"; }; };
-
-        [73]={[1]=1879103534;[2]={["FARMERSFAIRE_FESTIVAL"]=5;};};                      -- Blue Fireworks Launcher
-        [74]={[1]=1879103657;[2]={["FARMERSFAIRE_FESTIVAL"]=5;};};                      -- Orange Fireworks Launcher
-        [75]={[1]=1879103654;[2]={["FARMERSFAIRE_FESTIVAL"]=5;};};                      -- Green Fireworks Launcher
-        [76]={[1]=1879115998;[2]={["FARMERSFAIRE_FLOUNDER"]=1;["FARMERSFAIRE_FESTIVAL"]=6;};};  -- Seasonal Banner
-        [77]={[1]=1879138061;[2]={["FARMERSFAIRE_FESTIVAL"]=10;};};                     -- Lithe Days Wall
-
-        -- Festival Tokens Exchange
-        [78]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Festival Tokens Exchange"; }; };
-
-        [79]={[1]=1879115678;[2]={["FARMERSFAIRE_FESTIVAL"]=12;};}; -- Celebhal
-        [80]={[1]=1879115925;[2]={["FARMERSFAIRE_FESTIVAL"]=12;};}; -- Silver Haddock
-        [81]={[1]=1879115929;[2]={["FARMERSFAIRE_FESTIVAL"]=12;};}; -- Golden Redfish
-        [82]={[1]=1879115924;[2]={["FARMERSFAIRE_FESTIVAL"]=12;};}; -- Starry Flounder
-
-        [83]={[1]=0x7002ADA3;[2]={["FARMERSFAIRE_AMBERJACK"]=4;};[3]=3;}; -- Farmers Faire Token (AMBERJACK)
-        [84]={[1]=0x7002ADA3;[2]={["FARMERSFAIRE_LUILLIM"]=4;};[3]=3;};   -- Farmers Faire Token (LUILLIM)
-        [85]={[1]=0x7002ADA3;[2]={["FARMERSFAIRE_DRUM"]=4;};[3]=3;};      -- Farmers Faire Token (DRUM)
-        [86]={[1]=0x7002ADA3;[2]={["FARMERSFAIRE_SMALLFISH"]=4;};[3]=3;}; -- Farmers Faire Token (SMALLFISH)
-
-        [87]={[1]=0x7002ADA3;[2]={["FARMERSFAIRE_HADDOCK"]=1;};[3]=2;};     -- Farmers Faire Token (HADDOCK)
-        [88]={[1]=0x7002ADA3;[2]={["FARMERSFAIRE_CELEBHAL"]=1;};[3]=6;};    -- Farmers Faire Token (CELEBHAL)
-        [89]={[1]=0x7002ADA3;[2]={["FARMERSFAIRE_GOLDRED"]=1;};[3]=6;};     -- Farmers Faire Token (GOLDRED)
-        [90]={[1]=0x7002ADA3;[2]={["FARMERSFAIRE_FLOUNDER"]=1;};[3]=6;};    -- Farmers Faire Token (FLOUNDER)
+        [1]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Dill Goodchild, Festival Rewards"; }; };
+        [2]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Emotes and Cosmetic Pets"; }; };
+        [3]={[2]={["FARMERSFAIRE_FESTIVAL"]=80;};[1]=1879335454;}; -- Grant Hobbit Dance 4 Emote
+        [4]={[2]={["FARMERSFAIRE_FESTIVAL"]=80;};[1]=1879335493;}; -- Grant the Fountain Emote
+        [5]={[2]={["FARMERSFAIRE_FESTIVAL"]=60;};[1]=1879335548;}; -- Tome of the Sunny Summer Kite
+        [6]={[2]={["GENERIC_MITHRIL"]=30;};[1]=1879335790;}; -- Tome of the Soaring Bird Kite
+        [7]={[2]={["FARMERSFAIRE_FESTIVAL"]=50;};[1]=1879351563;}; -- Tome of the Summer Flower Kite
+        [8]={[2]={["FARMERSFAIRE_FESTIVAL"]=60;};[1]=1879351565;}; -- Tome of the Midsummer's Comet Kite
+        [9]={[2]={["FARMERSFAIRE_FESTIVAL"]=80;};[1]=1879351567;}; -- Grant the Bubbling Fish Pipe Emote
+        [10]={[2]={["FARMERSFAIRE_FESTIVAL"]=60;};[1]=1879368656;}; -- Tome of the Blue Peahen
+        [11]={[2]={["FARMERSFAIRE_FESTIVAL"]=60;};[1]=1879368669;}; -- Tome of the Blue Peacock
+        [12]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cosmetic Rewards - 1 Year Old"; }; };
+        [13]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879389979;}; -- Cloak of the Light-wisps
+        [14]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879389971;}; -- Hooded Cloak of the Light-wisps
+        [15]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879389976;}; -- Cap of Summer's Night
+        [16]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879389973;}; -- Tunic Set of Summer's Night
+        [17]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879389983;}; -- Firefly Lantern
+        [18]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879368208;}; -- Peacock Cap
+        [19]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879368207;}; -- Peacock Bonnet
+        [20]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879368206;}; -- Peacock Waistcoat
+        [21]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879368209;}; -- Peacock Dress
+        [22]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879368210;}; -- Picnic Dress
+        [23]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879368211;}; -- Peacock Trousers
+        [24]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cosmetic Rewards - Classic Rewards Part 2"; }; };
+        [25]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879313833;}; -- Robe of the Wedmath Celebration
+        [26]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879313834;}; -- Cloak of the Wedmath Celebration
+        [27]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879313835;}; -- Hooded Cloak of the Wedmath Celebration
+        [28]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879272166;}; -- Robe of the Midsummer
+        [29]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879272165;}; -- Cloak of the Midsummer
+        [30]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879272164;}; -- Hooded Cloak of the Midsummer
+        [31]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879249071;}; -- Summerdays dress
+        [32]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879249069;}; -- Summerdays Tunic and Trousers
+        [33]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879249070;}; -- Summerdays Cloak
+        [34]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879249068;}; -- Summerdays Hooded Cloak
+        [35]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879249072;}; -- Summerdays Hat
+        [36]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cosmetic Rewards - Classic Rewards Part 1"; }; };
+        [37]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879351473;}; -- Short-sleeved Sunflower Tunic and Trousers
+        [38]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879351472;}; -- Long-sleeved Sunflower Tunic and Trousers
+        [39]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879357560;}; -- Sunflower Cloak
+        [40]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879357561;}; -- Hooded Sunflower Cloak
+        [41]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879357563;}; -- Short-sleeved Sunflower Dress
+        [42]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879357559;}; -- Long-sleeved Sunflower Dress
+        [43]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879357562;}; -- Sleeveless Sunflower Dress
+        [44]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879335443;}; -- Cloak of the Summer Sea
+        [45]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879335442;}; -- Mantle of the Summer Sea
+        [46]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879326027;}; -- Cloak of Nárië
+        [47]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879326026;}; -- Hooded Cloak of Nárië
+        [48]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879326023;}; -- Surcoat of Nárië
+        [49]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cosmetic Rewards - Special"; }; };
+        [50]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879104057;}; -- Turquoise Summer Circlet
+        [51]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879104078;}; -- Sleeveless Elven Tunic
+        [52]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879185942;}; -- Long-sleeved Summer Dress
+        [53]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879185939;}; -- Sleeveless Summer Dress
+        [54]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879185941;}; -- Short-sleeved Summer Dress
+        [55]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879185940;}; -- Long-sleeved Summer Tunic and Trousers
+        [56]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879185943;}; -- Short-sleeved Summer Tunic and Trousers
+        [57]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879185953;}; -- Golden Tree Summer Cloak
+        [58]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879185951;}; -- Summer Travelling Cloak
+        [59]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879159561;}; -- Cloak of the Summer Sun
+        [60]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879159581;}; -- Sun Hat
+        [61]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Housing Rewards - General"; }; };
+        [62]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879249578;}; -- Glowing Bonfire
+        [63]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879249577;}; -- Smoky Bonfire
+        [64]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879249579;}; -- Modest Cookfire
+        [65]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879249576;}; -- Feast Day Cookfire
+        [66]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879185967;}; -- White Wicker Chair
+        [67]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879185965;}; -- Summer Hammock
+        [68]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879185962;}; -- Mossy Wicker Chair
+        [69]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879159513;}; -- Summerfest Painting
+        [70]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879159507;}; -- Summerfest Bed
+        [71]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Housing Rewards - Maps"; }; };
+        [72]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879205540;}; -- Map of Lothlórien
+        [73]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879205564;}; -- Map of the Ettenmoors
+        [74]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879205567;}; -- Map of Caras Galadhon
+        [75]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879205544;}; -- Map of the Northern Barrow-downs
+        [76]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Consumables"; }; };
+        [77]={[3]=5;[2]={["FARMERSFAIRE_FESTIVAL"]=9;};[1]=1879159373;}; -- Monster Fare
+        [78]={[3]=5;[2]={["FARMERSFAIRE_FESTIVAL"]=9;};[1]=1879159383;}; -- Foul Blasts
+        [79]={[3]=5;[2]={["FARMERSFAIRE_FESTIVAL"]=9;};[1]=1879159304;}; -- Fire-breathing Potions
+        [80]={[3]=5;[2]={["FARMERSFAIRE_FESTIVAL"]=9;};[1]=1879159399;}; -- Essence of Toad
+        [81]={[3]=5;[2]={["FARMERSFAIRE_FESTIVAL"]=9;};[1]=1879159223;}; -- Mugs of Triple Strength Brandy
+        [82]={[3]=5;[2]={["FARMERSFAIRE_FESTIVAL"]=9;};[1]=1879159224;}; -- Mugs of... Liquid
+        [83]={[3]=5;[2]={["FARMERSFAIRE_FESTIVAL"]=9;};[1]=1879159367;}; -- Saffron's Lipstick
+        [84]={[3]=5;[2]={["FARMERSFAIRE_FESTIVAL"]=9;};[1]=1879159235;}; -- Vile Vittles
+        [85]={[3]=5;[2]={["FARMERSFAIRE_FESTIVAL"]=6;};[1]=1879233669;}; -- Piles of Mysterious Powder
+        [86]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Summer Festival Steeds"; }; };
+        [87]={[2]={["FARMERSFAIRE_FESTIVAL"]=80;};[1]=1879390708;}; -- Steed of Summer's Night
+        [88]={[2]={["FARMERSFAIRE_FESTIVAL"]=80;};[1]=1879390718;}; -- Lamp of Summer's Night
+        [89]={[2]={["FARMERSFAIRE_FESTIVAL"]=80;};[1]=1879390717;}; -- Caparison of Summer's Night
+        [90]={[2]={["FARMERSFAIRE_FESTIVAL"]=80;};[1]=1879390719;}; -- Saddle of Summer's Night
+        [91]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Summer Festival Steeds - Mithril"; }; };
+        [92]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879249514;}; -- Summerdays Steed
+        [93]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879115711;}; -- Lithe Festival Steed
+        [94]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879185142;}; -- Pale Golden Summer Steed
+        [95]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879208702;}; -- Summerfest Steed
+        [96]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879272168;}; -- Steed of the Midsummer
+        [97]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879272171;}; -- Caparison of the Midsummer
+        [98]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879313837;}; -- Steed of the Wedmath Celebration
+        [99]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879313843;}; -- Caparison of the Wedmath Celebration
+        [100]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879326031;}; -- Steed of Nárië
+        [101]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879326058;}; -- Caparison of Nárië
+        [102]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879335448;}; -- Steed of the Summer Sea
+        [103]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879335451;}; -- Caparison of the Summer Sea
+        [104]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879352174;}; -- Sunflower Steed
+        [105]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879353389;}; -- Sunflower Head-piece
+        [106]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879353385;}; -- Sunflower Caparison
+        [107]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879353386;}; -- Sunflower Saddle
+        [108]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879353381;}; -- Sunflower Tail-piece
+        [109]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879353382;}; -- Basket of Sunflowers
+        [110]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879368611;}; -- Steed of the Perfect Picnic
+        [111]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879368807;}; -- Caparison of the Perfect Picnic
+        [112]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879368808;}; -- Saddle of the Perfect Picnic
+        [113]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879368804;}; -- Basket of the Perfect Picnic
+        [114]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879390708;}; -- Steed of Summer's Night
+        [115]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879390718;}; -- Lamp of Summer's Night
+        [116]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879390717;}; -- Caparison of Summer's Night
+        [117]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879390719;}; -- Saddle of Summer's Night
+        [118]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Gift Boxes of Past Years"; }; };
+        [119]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879351749;}; -- Short-sleeved Sunflower Tunic and Trousers - Gift-wrapped
+        [120]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879351746;}; -- Long-sleeved Sunflower Tunic and Trousers - Gift-wrapped
+        [121]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879358044;}; -- Sunflower Cloak - Gift-wrapped
+        [122]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879358043;}; -- Hooded Sunflower Cloak - Gift-wrapped
+        [123]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879358046;}; -- Sleeveless Sunflower Dress - Gift-wrapped
+        [124]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879358047;}; -- Short-sleeved Sunflower Dress - Gift-wrapped
+        [125]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879358045;}; -- Long-sleeved Sunflower Dress - Gift-wrapped
+        [126]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879368619;}; -- Peacock Cap - Gift Wrapped
+        [127]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879368624;}; -- Peacock Bonnet - Gift Wrapped
+        [128]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879368622;}; -- Peacock Waistcoat - Gift Wrapped
+        [129]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879368618;}; -- Peacock Dress - Gift Wrapped
+        [130]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879368613;}; -- Picnic Dress - Gift Wrapped
+        [131]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879368614;}; -- Peacock Trousers - Gift Wrapped
+        [132]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879390720;}; -- Garments of Summer's Night - Gift-wrapped selection box
+        [133]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Dill Goodchild, Festival Rewards and Caltha Tunnelly, Festival Announcer & Rewards Vendor"; }; };
+        [134]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Essences"; }; };
+        [135]={[2]={["FARMERSFAIRE_FESTIVAL"]=180;};[1]=1879439435;}; -- Essence Reclamation Scroll
+        [136]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Dyes"; }; };
+        [137]={[3]=6;[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879329685;}; -- Rohan Green Dye
+        [138]={[3]=6;[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879329676;}; -- Sunset Orange Dye
+        [139]={[3]=6;[2]={["GENERIC_MITHRIL"]=10;};[1]=1879329684;}; -- Shire Peach Dye
+        [140]={[3]=6;[2]={["GENERIC_MITHRIL"]=10;};[1]=1879329687;}; -- Dark Clay Dye
+        [141]={[2]={["FARMERSFAIRE_FESTIVAL"]=20;};[1]=1879397282;}; -- Assortment of Dwarf-candles
+        [142]={[3]=5;[2]={["FARMERSFAIRE_FESTIVAL"]=10;};[1]=1879387361;}; -- Yellow Dwarf-candle
+        [143]={[3]=5;[2]={["FARMERSFAIRE_FESTIVAL"]=10;};[1]=1879387362;}; -- Red Dwarf-candle
+        [144]={[3]=5;[2]={["FARMERSFAIRE_FESTIVAL"]=10;};[1]=1879387363;}; -- Green Dwarf-candle
+        [145]={[3]=5;[2]={["FARMERSFAIRE_FESTIVAL"]=10;};[1]=1879387360;}; -- Blue Dwarf-candle
+        [146]={[3]=5;[2]={["FARMERSFAIRE_FESTIVAL"]=10;};[1]=1879387357;}; -- Orange Dwarf-candle
+        [147]={[3]=5;[2]={["FARMERSFAIRE_FESTIVAL"]=10;};[1]=1879387358;}; -- White Dwarf-candle
+        [148]={[3]=5;[2]={["FARMERSFAIRE_FESTIVAL"]=10;};[1]=1879387359;}; -- Purple Dwarf-candle
+        [149]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Caltha Tunnelly, Festival Announcer & Rewards Vendor"; }; };
+        [150]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "New Cosmetics"; }; };
+        [151]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879490789;}; -- Fine Boots of the Potato Farmer
+        [152]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879490792;}; -- Fine Hat of the Potato Farmer
+        [153]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879490782;}; -- Fine Mantle of the Potato Farmer
+        [154]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879490791;}; -- Fine Tunic and Leggings of the Potato Farmer
+        [155]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879490841;}; -- Fine Garments of the Potato Farmer -  Gift-wrapped Selection Box
+        [156]={[2]={["FARMERSFAIRE_FESTIVAL"]=60;};[1]=1879490987;}; -- Tome of the Potato Farmer's Fine Cow
+        [157]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879485346;}; -- Tome of the Heather Hamster
+        [158]={[2]={["GENERIC_MITHRIL"]=30;};[1]=1879485346;}; -- Tome of the Heather Hamster
+        [159]={[2]={["FARMERSFAIRE_FESTIVAL"]=80;};[1]=1879490847;}; -- Potato Farmer's Fine Steed
+        [160]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879490847;}; -- Potato Farmer's Fine Steed
+        [161]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879490814;}; -- Potato Farmer's Fine Accessory
+        [162]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879490817;}; -- Potato Farmer's Fine Caparison
+        [163]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879490815;}; -- Potato Farmer's Fine Head-piece
+        [164]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879490840;}; -- Potato Farmer's Fine War-steed Cosmetics
+        [165]={[2]={["FARMERSFAIRE_FESTIVAL"]=25;};[1]=1879491033;}; -- Farmer's Fine Walls
+        [166]={[2]={["FARMERSFAIRE_FESTIVAL"]=25;};[1]=1879491032;}; -- Farmer's Fine Floor
+        [167]={[2]={["FARMERSFAIRE_FESTIVAL"]=25;};[1]=1879491235;}; -- Decorative Farmer's Fine Floor
+        [168]={[2]={["FARMERSFAIRE_FESTIVAL"]=25;};[1]=1879491237;}; -- Decorative Wall - 10m (Farmer's Fine Wall)
+        [169]={[2]={["FARMERSFAIRE_FESTIVAL"]=25;};[1]=1879491238;}; -- Decorative Wall - 20m (Farmer's Fine Wall)
+        [170]={[2]={["FARMERSFAIRE_FESTIVAL"]=25;};[1]=1879491236;}; -- Tall Decorative Wall - 10m (Farmer's Fine Wall)
+        [171]={[2]={["FARMERSFAIRE_FESTIVAL"]=25;};[1]=1879491239;}; -- Tall Decorative Wall - 20m (Farmer's Fine Wall)
+        [172]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cosmetics - Part 1"; }; };
+        [173]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879335478;}; -- Mantle of the Farmer's Table
+        [174]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879335481;}; -- Cloak of the Farmer's Table
+        [175]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879326024;}; -- Surcoat of the Yield
+        [176]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879326028;}; -- Pack of the Yield
+        [177]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879315024;}; -- Robe of Bounty
+        [178]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879315026;}; -- Cloak of Bounty
+        [179]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879315025;}; -- Hooded Cloak of Bounty
+        [180]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879273456;}; -- Robe of Plenty
+        [181]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879273455;}; -- Cloak of Plenty
+        [182]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879273457;}; -- Hooded Cloak of Plenty
+        [183]={[2]={["FARMERSFAIRE_FESTIVAL"]=25;};[1]=1879242273;}; -- Gardening Gloves
+        [184]={[2]={["FARMERSFAIRE_FESTIVAL"]=25;};[1]=1879242275;}; -- Circlet of Fresh-picked Flowers
+        [185]={[2]={["FARMERSFAIRE_FESTIVAL"]=25;};[1]=1879242269;}; -- Gardening Boots
+        [186]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879242279;}; -- Gardener's Apron
+        [187]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879242270;}; -- Hooded Cloak of the Harvest
+        [188]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879242271;}; -- Hooded Leather Cloak
+        [189]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879242708;}; -- Farmer's Fancy Tunic and Trousers
+        [190]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879242301;}; -- Farmer's Fancy Dress
+        [191]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879242274;}; -- Farmer's Fancy Wide-brimmed Hat
+        [192]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cosmetics - Part 2"; }; };
+        [193]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879242278;}; -- Chicken Mask
+        [194]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879242276;}; -- Donkey Mask
+        [195]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879242268;}; -- Duckling Mask
+        [196]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879242277;}; -- Pig Mask
+        [197]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879242272;}; -- Sheep Mask
+        [198]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879242302;}; -- Basket of Colourful Eggs
+        [199]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879242300;}; -- Cornstalk
+        [200]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879242303;}; -- Lantern
+        [201]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879358794;}; -- Basket of Freshly Picked Apples
+        [202]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879410868;}; -- Shimmering Breeze Cloak
+        [203]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879410875;}; -- Shimmering Breeze Tunic
+        [204]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879410872;}; -- Shimmering Breeze Dress
+        [205]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879391808;}; -- Straw Sun Hat with Ribbon
+        [206]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879391805;}; -- Short-brimmed Straw Sun Hat
+        [207]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879391806;}; -- Ascot Scarf
+        [208]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879369948;}; -- Robe of the Farmers Feast
+        [209]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879369949;}; -- Cloak of the Farmers Feast
+        [210]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879369947;}; -- Hooded Cloak of the Farmers Feast
+        [211]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879358785;}; -- Cloak of the Harvest Sky
+        [212]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879358784;}; -- Hooded Cloak of the Harvest Sky
+        [213]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cosmetics - Part 3"; }; };
+        [214]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879490789;}; -- Fine Boots of the Potato Farmer
+        [215]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879490792;}; -- Fine Hat of the Potato Farmer
+        [216]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879490782;}; -- Fine Mantle of the Potato Farmer
+        [217]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879490791;}; -- Fine Tunic and Leggings of the Potato Farmer
+        [218]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879468789;}; -- Cloak of the Blazing Firmament
+        [219]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879468788;}; -- Hooded Cloak of the Blazing Firmament
+        [220]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879468662;}; -- Boots of the Blazing Firmament
+        [221]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879468666;}; -- Fire-fox mask
+        [222]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879468670;}; -- Robe of the Blazing Firmament
+        [223]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879449432;}; -- Oar in Hand
+        [224]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879449494;}; -- Innkeeper's Dress
+        [225]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879422340;}; -- Cloak of the Green Grocer
+        [226]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879422339;}; -- Tunic of the Green Grocer
+        [227]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879422338;}; -- Boots of the Green Grocer
+        [228]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Housing Rewards"; }; };
+        [229]={[2]={["FARMERSFAIRE_FESTIVAL"]=25;};[1]=1879491033;}; -- Farmer's Fine Walls
+        [230]={[2]={["FARMERSFAIRE_FESTIVAL"]=25;};[1]=1879491032;}; -- Farmer's Fine Floor
+        [231]={[2]={["FARMERSFAIRE_FESTIVAL"]=25;};[1]=1879491235;}; -- Decorative Farmer's Fine Floor
+        [232]={[2]={["FARMERSFAIRE_FESTIVAL"]=25;};[1]=1879491237;}; -- Decorative Wall - 10m (Farmer's Fine Wall)
+        [233]={[2]={["FARMERSFAIRE_FESTIVAL"]=25;};[1]=1879491238;}; -- Decorative Wall - 20m (Farmer's Fine Wall)
+        [234]={[2]={["FARMERSFAIRE_FESTIVAL"]=25;};[1]=1879491236;}; -- Tall Decorative Wall - 10m (Farmer's Fine Wall)
+        [235]={[2]={["FARMERSFAIRE_FESTIVAL"]=25;};[1]=1879491239;}; -- Tall Decorative Wall - 20m (Farmer's Fine Wall)
+        [236]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879468690;}; -- Centrepiece of the Blazing Firmament
+        [237]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879449498;}; -- Woven Reed Rowboat
+        [238]={[2]={["FARMERSFAIRE_FESTIVAL"]=25;};[1]=1879449497;}; -- Oar
+        [239]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879422349;}; -- Water Trough
+        [240]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879422354;}; -- Empty Trough
+        [241]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879422351;}; -- Feed Trough
+        [242]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879422353;}; -- Crates of Vegetables
+        [243]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879422352;}; -- Crates of Food
+        [244]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879422350;}; -- Bread Baskets
+        [245]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879393765;}; -- Barrel of Purple Clover
+        [246]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879393764;}; -- Barrel of White Clover
+        [247]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879393748;}; -- Vase of Wild Clover
+        [248]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879393749;}; -- Vase of Purple Clover
+        [249]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879393766;}; -- Vase of Gladdens
+        [250]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879393757;}; -- Raised Planter of Wild Clover
+        [251]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879393761;}; -- Raised Planter of Purple Clover
+        [252]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879393750;}; -- Raised Planter of White Clover
+        [253]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879393763;}; -- Raised Planter of Rockroses
+        [254]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879393751;}; -- Barrel of Cockscomb
+        [255]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879393753;}; -- Raised Planter of Cockscomb
+        [256]={[2]={["FARMERSFAIRE_FESTIVAL"]=60;};[1]=1879369990;}; -- Decorative Oven
+        [257]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879242714;}; -- Mushroom Ring
+        [258]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879242715;}; -- Golden Chicken Statue
+        [259]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879242717;}; -- Small Mushroom Garden
+        [260]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879242713;}; -- Produce Stall
+        [261]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879242716;}; -- Golden Egg
+        [262]={[2]={["FARMERSFAIRE_FESTIVAL"]=60;};[1]=1879242712;}; -- Chicken Coop
+        [263]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cosmetic Pets"; }; };
+        [264]={[2]={["FARMERSFAIRE_FESTIVAL"]=60;};[1]=1879368661;}; -- Tome of the Black Peahen
+        [265]={[2]={["FARMERSFAIRE_FESTIVAL"]=60;};[1]=1879368667;}; -- Tome of the Black Peacock
+        [266]={[2]={["FARMERSFAIRE_FESTIVAL"]=60;};[1]=1879368666;}; -- Tome of the Big Goat Kid
+        [267]={[2]={["FARMERSFAIRE_FESTIVAL"]=60;};[1]=1879358813;}; -- Tome of the Harvest Revelry Kite
+        [268]={[2]={["FARMERSFAIRE_FESTIVAL"]=60;};[1]=1879358820;}; -- Tome of the Golden Grain Kite
+        [269]={[2]={["FARMERSFAIRE_FESTIVAL"]=60;};[1]=1879409774;}; -- Tome of the Grey Pig
+        [270]={[2]={["FARMERSFAIRE_FESTIVAL"]=60;};[1]=1879339322;}; -- Tome of the Gloaming Kite
+        [271]={[2]={["FARMERSFAIRE_FESTIVAL"]=60;};[1]=1879422325;}; -- Tome of the Woodland Doe
+        [272]={[2]={["FARMERSFAIRE_FESTIVAL"]=60;};[1]=1879422322;}; -- Tome of the Spotted Woodland Fawn
+        [273]={[2]={["FARMERSFAIRE_FESTIVAL"]=60;};[1]=1879420846;}; -- Tome of the Mushroom Nether-hound
+        [274]={[2]={["GENERIC_MITHRIL"]=30;};[1]=1879411749;}; -- Tome of the Feed-laden Donkey
+        [275]={[2]={["GENERIC_MITHRIL"]=30;};[1]=1879468685;}; -- Tome of the Fire-fox Bandit
+        [276]={[2]={["FARMERSFAIRE_FESTIVAL"]=60;};[1]=1879490987;}; -- Tome of the Potato Farmer's Fine Cow
+        [277]={[2]={["GENERIC_MITHRIL"]=30;};[1]=1879485346;}; -- Tome of the Heather Hamster
+        [278]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Farmers Faire Steeds"; }; };
+        [279]={[2]={["FARMERSFAIRE_FESTIVAL"]=80;};[1]=1879490847;}; -- Potato Farmer's Fine Steed
+        [280]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879490814;}; -- Potato Farmer's Fine Accessory
+        [281]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879490817;}; -- Potato Farmer's Fine Caparison
+        [282]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879490815;}; -- Potato Farmer's Fine Head-piece
+        [283]={[2]={["FARMERSFAIRE_FESTIVAL"]=80;};[1]=1879468697;}; -- Steed of the Blazing Firmament
+        [284]={[2]={["FARMERSFAIRE_FESTIVAL"]=50;};[1]=1879468707;}; -- Caparison of the Blazing Firmament
+        [285]={[2]={["FARMERSFAIRE_FESTIVAL"]=40;};[1]=1879468701;}; -- Head-piece of the Blazing Firmament
+        [286]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879468700;}; -- Saddle of the Blazing Firmament
+        [287]={[2]={["FARMERSFAIRE_FESTIVAL"]=40;};[1]=1879468702;}; -- Tail of the Blazing Firmament
+        [288]={[2]={["FARMERSFAIRE_FESTIVAL"]=80;};[1]=1879422348;}; -- Steed of the Green Grocer
+        [289]={[2]={["FARMERSFAIRE_FESTIVAL"]=40;};[1]=1879422359;}; -- Green Grocer Accessory
+        [290]={[2]={["FARMERSFAIRE_FESTIVAL"]=50;};[1]=1879422362;}; -- Green Grocer Caparison
+        [291]={[2]={["FARMERSFAIRE_FESTIVAL"]=40;};[1]=1879422360;}; -- Green Grocer Head-piece
+        [292]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879422361;}; -- Green Grocer Saddle
+        [293]={[2]={["FARMERSFAIRE_FESTIVAL"]=80;};[1]=1879410881;}; -- Steed of the Shimmering Breeze
+        [294]={[2]={["FARMERSFAIRE_FESTIVAL"]=50;};[1]=1879410879;}; -- Shimmering Breeze Accessory
+        [295]={[2]={["FARMERSFAIRE_FESTIVAL"]=50;};[1]=1879410880;}; -- Shimmering Breeze Caparison
+        [296]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879410877;}; -- Shimmering Breeze Head-piece
+        [297]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879410878;}; -- Shimmering Breeze Saddle
+        [298]={[2]={["FARMERSFAIRE_FESTIVAL"]=80;};[1]=1879369985;}; -- Farmers Feast Steed
+        [299]={[2]={["FARMERSFAIRE_FESTIVAL"]=80;};[1]=1879369988;}; -- Farmers Feast Caparison
+        [300]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Farmers Faire Steeds - Mithril"; }; };
+        [301]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879490847;}; -- Potato Farmer's Fine Steed
+        [302]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879490840;}; -- Potato Farmer's Fine War-steed Cosmetics
+        [303]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879468697;}; -- Steed of the Blazing Firmament
+        [304]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879468711;}; -- Blazing Firmament War-steed Cosmetics
+        [305]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879422348;}; -- Steed of the Green Grocer
+        [306]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879422365;}; -- Green Grocer War-steed Cosmetics
+        [307]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879410881;}; -- Steed of the Shimmering Breeze
+        [308]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879410889;}; -- Shimmering Breeze War-steed Cosmetics
+        [309]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879369985;}; -- Farmers Feast Steed
+        [310]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879369988;}; -- Farmers Feast Caparison
+        [311]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879358792;}; -- Goat of the Harvest Sky
+        [312]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879335477;}; -- The Farmer's Second Favourite Steed
+        [313]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879335474;}; -- Caparison of the Farmer's Favoured
+        [314]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879326030;}; -- Steed of the Yield
+        [315]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879326059;}; -- Caparison of the Yield
+        [316]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879315036;}; -- Steed of Bounty
+        [317]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879273453;}; -- Steed of Plenty
+        [318]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879242573;}; -- Farmers Faire Steed
+        [319]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879315038;}; -- Caparison of Bounty
+        [320]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879273555;}; -- Caparison of Plenty
+        [321]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Summer Festival Steeds - Mithril"; }; };
+        [322]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879249514;}; -- Summerdays Steed
+        [323]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879115711;}; -- Lithe Festival Steed
+        [324]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879185142;}; -- Pale Golden Summer Steed
+        [325]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879208702;}; -- Summerfest Steed
+        [326]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879272168;}; -- Steed of the Midsummer
+        [327]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879272171;}; -- Caparison of the Midsummer
+        [328]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879313837;}; -- Steed of the Wedmath Celebration
+        [329]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879313843;}; -- Caparison of the Wedmath Celebration
+        [330]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879326031;}; -- Steed of Nárië
+        [331]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879326058;}; -- Caparison of Nárië
+        [332]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879335448;}; -- Steed of the Summer Sea
+        [333]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879335451;}; -- Caparison of the Summer Sea
+        [334]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879352174;}; -- Sunflower Steed
+        [335]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879353389;}; -- Sunflower Head-piece
+        [336]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879353385;}; -- Sunflower Caparison
+        [337]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879353386;}; -- Sunflower Saddle
+        [338]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879353381;}; -- Sunflower Tail-piece
+        [339]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879353382;}; -- Basket of Sunflowers
+        [340]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879368611;}; -- Steed of the Perfect Picnic
+        [341]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879368807;}; -- Caparison of the Perfect Picnic
+        [342]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879368808;}; -- Saddle of the Perfect Picnic
+        [343]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879368804;}; -- Basket of the Perfect Picnic
+        [344]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879390708;}; -- Steed of Summer's Night
+        [345]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879390718;}; -- Lamp of Summer's Night
+        [346]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879390717;}; -- Caparison of Summer's Night
+        [347]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879390719;}; -- Saddle of Summer's Night
+        [348]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Farmers Faire Gift Boxes"; }; };
+        [349]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879490841;}; -- Fine Garments of the Potato Farmer -  Gift-wrapped Selection Box
+        [350]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879468710;}; -- Blazing Firmament Garments - Gift-wrapped Selection Box
+        [351]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879449495;}; -- Innkeeper's Dress - Gift Wrapped
+        [352]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879422366;}; -- Green Grocer Garments - Gift-wrapped selection box
+        [353]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879410886;}; -- Shimmering Breeze Garments - Gift-wrapped selection box
+        [354]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879391818;}; -- Farmers Faire Wear - Gift-wrapped selection box
+        [355]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879380132;}; -- Robe of the Farmers Feast - Gift Wrapped
+        [356]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879380134;}; -- Cloak of the Farmers Feast - Gift Wrapped
+        [357]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879380130;}; -- Hooded Cloak of the Farmers Feast - Gift Wrapped
+        [358]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879358790;}; -- Cloak of the Harvest Sky - Gift Wrapped
+        [359]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879358791;}; -- Hooded Cloak of the Harvest Sky - Gift Wrapped
+        [360]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879358810;}; -- Basket of Freshly Picked Apples - Gift Wrapped
+        [361]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Other"; }; };
+        [362]={[3]=5;[2]={["FARMERSFAIRE_FESTIVAL"]=6;};[1]=1879233669;}; -- Pile of Mysterious Powder
+        [363]={[3]=5;[2]={["FARMERSFAIRE_FESTIVAL"]=9;};[1]=1879182968;}; -- Doom-shroom
+        [364]={[2]={["FARMERSFAIRE_FESTIVAL"]=15;};[1]=1879103661;}; -- Blueberry Tart Recipe
+        [365]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Ernwyd Brandybuck, Quartermaster (The Party Tree)"; }; };
+        [366]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Page 1"; }; };
+        [367]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879115678;}; -- Celebhal
+        [368]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879115925;}; -- Silver Haddock
+        [369]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879115929;}; -- Golden Redfish
+        [370]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879115924;}; -- Starry Flounder
+        [371]={[2]={["FARMERSFAIRE_FESTIVAL"]=15;};[1]=1879103534;}; -- Blue Fireworks Launcher
+        [372]={[2]={["FARMERSFAIRE_FESTIVAL"]=15;};[1]=1879103657;}; -- Orange Fireworks Launcher
+        [373]={[2]={["FARMERSFAIRE_FESTIVAL"]=15;};[1]=1879103654;}; -- Green Fireworks Launcher
+        [374]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;["FARMERSFAIRE_FLOUNDER"]=1;};[1]=1879115998;}; -- Seasonal Banner
+        [375]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879138061;}; -- 'Lithe Days' Wall
+        [376]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879442989;}; -- Decorative Wall - 10m (Lithe Days)
+        [377]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879443060;}; -- Tall Decorative Wall - 10m (Lithe Days)
+        [378]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879442951;}; -- Decorative Wall - 20m (Lithe Days)
+        [379]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879443032;}; -- Tall Decorative Wall - 20m (Lithe Days)
+        [380]={[2]={["FARMERSFAIRE_FESTIVAL"]=15;["FARMERSFAIRE_CELEBHAL"]=1;};[1]=1879116002;}; -- Large Flowerbed
+        [381]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879116003;}; -- Large Vegetable Garden
+        [382]={[2]={["FARMERSFAIRE_FESTIVAL"]=15;["FARMERSFAIRE_CELEBHAL"]=1;};[1]=1879131126;}; -- Summer Welcome Mat
+        [383]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879115997;}; -- Eternal Elven-song Music Box
+        [384]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879138059;}; -- 'Festival of Enedhin' Wall
+        [385]={[2]={["FARMERSFAIRE_FESTIVAL"]=15;["FARMERSFAIRE_CELEBHAL"]=1;};[1]=1879117675;}; -- Green Ceremonial Dress
+        [386]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879443008;}; -- Decorative Wall - 10m (Festival of Enedhin)
+        [387]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Page 2"; }; };
+        [388]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879442975;}; -- Tall Decorative Wall - 10m (Festival of Enedhin)
+        [389]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879443094;}; -- Decorative Wall - 20m (Festival of Enedhin)
+        [390]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879443080;}; -- Tall Decorative Wall - 20m (Festival of Enedhin)
+        [391]={[2]={["FARMERSFAIRE_FESTIVAL"]=15;};[1]=1879103655;}; -- Yellow Fireworks Launcher
+        [392]={[2]={["FARMERSFAIRE_HADDOCK"]=1;};[1]=1879103656;}; -- Red Fireworks Launcher
+        [393]={[2]={["FARMERSFAIRE_FESTIVAL"]=15;};[1]=1879103653;}; -- Purple Fireworks Launcher
+        [394]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879115999;}; -- Triumphs of the Dwarves Music Box
+        [395]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879138060;}; -- 'Summerfest' Wall
+        [396]={[2]={["FARMERSFAIRE_FESTIVAL"]=15;["FARMERSFAIRE_HADDOCK"]=1;};[1]=1879117676;}; -- Blue Ceremonial Dress
+        [397]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879443035;}; -- Decorative Wall - 10m (Dwarf Summerfest)
+        [398]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879443101;}; -- Tall Decorative Wall - 10m (Dwarf Summerfest)
+        [399]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879443031;}; -- Decorative Wall - 20m (Dwarf Summerfest)
+        [400]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879443022;}; -- Tall Decorative Wall - 20m (Dwarf Summerfest)
+        [401]={[2]={["FARMERSFAIRE_FESTIVAL"]=15;};[1]=1879116001;}; -- Small Vegetable Garden
+        [402]={[2]={["FARMERSFAIRE_FESTIVAL"]=15;["FARMERSFAIRE_GOLDRED"]=1;};[1]=1879116452;}; -- Purple Flowerbox
+        [403]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879116451;}; -- Orange Flowerbox
+        [404]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879116000;}; -- Summerdays Music Box
+        [405]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879138058;}; -- 'Summerdays' Wall
+        [406]={[2]={["FARMERSFAIRE_FESTIVAL"]=15;["FARMERSFAIRE_GOLDRED"]=1;};[1]=1879103151;}; -- White Ceremonial Dress
+        [407]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879443087;}; -- Decorative Wall - 10m (Summerdays)
+        [408]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Page 3"; }; };
+        [409]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879443007;}; -- Tall Decorative Wall - 10m (Summerdays)
+        [410]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879443085;}; -- Decorative Wall - 20m (Summerdays)
+        [411]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879443068;}; -- Tall Decorative Wall - 20m (Summerdays)
+        [412]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Fishing Quartermasters:\n* Gaellien at Celondim (Elf)\n* Láfi at Thorin's Hall (Dwarf)\n* Neddie Grubb at Bywater Pool (Hobbit)\n* Will Hindmarsh at Pierson's Farm (Man)"; }; ["DIVIDER_HEIGHT"] = 120;};
+        [413]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Page 1"; }; };
+        [414]={[3]=3;[2]={["FARMERSFAIRE_LUILLIM"]=4;};[1]=1879223715;}; -- Farmers Faire Tokens
+        [415]={[3]=3;[2]={["FARMERSFAIRE_AMBERJACK"]=4;};[1]=1879223715;}; -- Farmers Faire Tokens
+        [416]={[3]=3;[2]={["FARMERSFAIRE_DRUM"]=4;};[1]=1879223715;}; -- Farmers Faire Tokens
+        [417]={[3]=6;[2]={["FARMERSFAIRE_CELEBHAL"]=1;};[1]=1879223715;}; -- Farmers Faire Tokens
+        [418]={[3]=6;[2]={["FARMERSFAIRE_HADDOCK"]=1;};[1]=1879223715;}; -- Farmers Faire Tokens
+        [419]={[3]=6;[2]={["FARMERSFAIRE_GOLDRED"]=1;};[1]=1879223715;}; -- Farmers Faire Tokens
+        [420]={[3]=6;[2]={["FARMERSFAIRE_FLOUNDER"]=1;};[1]=1879223715;}; -- Farmers Faire Tokens
+        [421]={[3]=3;[2]={["FARMERSFAIRE_SMALLFISH"]=4;};[1]=1879223715;}; -- Farmers Faire Tokens
+        [422]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Verbena Greenhand, Farmers Festivity Token Vendor"; }; };
+        [423]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Seasonal Skirmish Rewards - Summer"; }; };
+        [424]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879368659;}; -- Tome of the Green Peahen
+        [425]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879368664;}; -- Tome of the Green Peacock
+        [426]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879368810;}; -- Perfect Picnic Steed
+        [427]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879369002;}; -- Picnic Blanket
+        [428]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879369003;}; -- Tome of the Picnic Pony
+        [429]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879369188;}; -- Tome of the Rain-cloud
+        [430]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879369194;}; -- Purple Summer Party Banner
+        [431]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879369195;}; -- Blue Summer Party Banner
+        [432]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879389975;}; -- Cloak of the Perfect Picnic
+        [433]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879389977;}; -- Hooded Cloak of the Perfect Picnic
+        [434]={[2]={["GENERIC_FESTIVITY"]=15;};[1]=1879389981;}; -- Tunic Set of the Perfect Picnic
+        [435]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879389982;}; -- Canteen
+        [436]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879422324;}; -- Tome of the Woodland Hart
+        [437]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879449493;}; -- Robe of Leisure
+        [438]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879468685;}; -- Tome of the Fire-fox Bandit
+        [439]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879485346;}; -- Tome of the Heather Hamster
+        [440]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Vault Quartermaster"; }; };
+        [441]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Thrâng Cosmetic Weapons"; }; };
+        [442]={[2]={["FARMERSFAIRE_THRANG"]=1;};[1]=1879369113;}; -- Replica of Bone-splitter
+        [443]={[2]={["FARMERSFAIRE_THRANG"]=1;};[1]=1879369109;}; -- Replica Great Hammer of Moria
+        [444]={[2]={["FARMERSFAIRE_THRANG"]=1;};[1]=1879369112;}; -- Gleaming Staff
+        [445]={[2]={["FARMERSFAIRE_THRANG"]=1;};[1]=1879369111;}; -- Great Sword of Blows
+        [446]={[2]={["FARMERSFAIRE_THRANG"]=1;};[1]=1879369110;}; -- Leader's Veneration
+        [447]={[2]={["FARMERSFAIRE_THRANG"]=1;};[1]=1879369107;}; -- Great Club of Valour
+        [448]={[2]={["FARMERSFAIRE_THRANG"]=1;};[1]=1879094727;}; -- Heavy Axe of the Righteous
+        [449]={[2]={["FARMERSFAIRE_THRANG"]=1;};[1]=1879369106;}; -- Thrâng's Sword
+        [450]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Thrâng Cosmetic Armour"; }; };
+        [451]={[2]={["FARMERSFAIRE_THRANG"]=1;};[1]=1879370037;}; -- Reforged Rift-defender's Helm
+        [452]={[2]={["FARMERSFAIRE_THRANG"]=1;};[1]=1879370052;}; -- Reforged Rift-defender's Shoulder-guards
+        [453]={[2]={["FARMERSFAIRE_THRANG"]=1;};[1]=1879370041;}; -- Reforged Rift-defender's Breastplate
+        [454]={[2]={["FARMERSFAIRE_THRANG"]=1;};[1]=1879370046;}; -- Reforged Rift-defender's Gloves
+        [455]={[2]={["FARMERSFAIRE_THRANG"]=1;};[1]=1879370040;}; -- Reforged Rift-defender's Leggings
+        [456]={[2]={["FARMERSFAIRE_THRANG"]=1;};[1]=1879370047;}; -- Reforged Rift-defender's Boots
+        [457]={[2]={["FARMERSFAIRE_THRANG"]=1;};[1]=1879370048;}; -- Reforged Rift-runner's Helm
+        [458]={[2]={["FARMERSFAIRE_THRANG"]=1;};[1]=1879370051;}; -- Reforged Rift-runner's Shoulder-guards
+        [459]={[2]={["FARMERSFAIRE_THRANG"]=1;};[1]=1879370053;}; -- Reforged Rift-runner's Breastplate
+        [460]={[2]={["FARMERSFAIRE_THRANG"]=1;};[1]=1879370054;}; -- Reforged Rift-runner's Gloves
+        [461]={[2]={["FARMERSFAIRE_THRANG"]=1;};[1]=1879370050;}; -- Reforged Rift-runner's Leggings
+        [462]={[2]={["FARMERSFAIRE_THRANG"]=1;};[1]=1879370045;}; -- Reforged Rift-runner's Boots
+        [463]={[2]={["FARMERSFAIRE_THRANG"]=1;};[1]=1879370039;}; -- Reforged Rift-seeker's Circlet
+        [464]={[2]={["FARMERSFAIRE_THRANG"]=1;};[1]=1879370049;}; -- Reforged Rift-seeker's Shoulder-guards
+        [465]={[2]={["FARMERSFAIRE_THRANG"]=1;};[1]=1879370042;}; -- Reforged Rift-seeker's Jacket
+        [466]={[2]={["FARMERSFAIRE_THRANG"]=1;};[1]=1879370044;}; -- Reforged Rift-seeker's Gloves
+        [467]={[2]={["FARMERSFAIRE_THRANG"]=1;};[1]=1879370038;}; -- Reforged Rift-seeker's Leggings
+        [468]={[2]={["FARMERSFAIRE_THRANG"]=1;};[1]=1879370043;}; -- Reforged Rift-seeker's Boots
 
     };
 
