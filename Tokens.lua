@@ -55,6 +55,8 @@ TOKEN_IDS = {
         ["FARMERSFAIRE_GOLDRED"]   = 0x70010899;
         ["FARMERSFAIRE_FLOUNDER"]  = 0x70010894;
         ["FARMERSFAIRE_SMALLFISH"] = 0x70010897;
+        ["FARMERSFAIRE_THRANG"] = 0x7004E5D7; -- Thrâng's Vault Token
+
     };
     [HOBNANIGANS] = {
         ["HOBNANIGANS_TOKEN"]                   = 0x7003ECEF; -- Inventory
@@ -133,6 +135,7 @@ TOKEN_UI_ORDER = {
         [9] = "FARMERSFAIRE_GOLDRED";
         [10] = "FARMERSFAIRE_FLOUNDER";
         [11] = "FARMERSFAIRE_SMALLFISH";
+        [12] = "FARMERSFAIRE_THRANG";
     };
     [HOBNANIGANS] = {
         [1] = "HOBNANIGANS_TOKEN";
