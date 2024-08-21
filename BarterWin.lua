@@ -123,6 +123,13 @@ function RefreshBarterList()
                 item = GetItemFromID(v[1]);
             end
 
+            -- When adding new items, if an item name resolves to multiple IDs
+            -- some of those IDs might not work. Uncomment when adding items
+            -- to catch that case:
+--            if (item == nil) then
+--                Turbine.Shell.WriteLine("Couldn't resolve item #" .. dump(v[1]));
+--            end
+
             local cItemInspect = Turbine.UI.Lotro.ItemInfoControl();
             cItemInspect:SetParent(ROWBACK);
             cItemInspect:SetSize(36,36);
