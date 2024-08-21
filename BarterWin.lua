@@ -99,10 +99,12 @@ function RefreshBarterList()
             local dividerLabel = Turbine.UI.Label();
             dividerLabel:SetParent(ROWHOLDER);
             dividerLabel:SetSize(ROWWIDTH, ROWHEIGHT);
+
             if (v[1] == "DIVIDER1") then
                 dividerLabel:SetFont(Turbine.UI.Lotro.Font.BookAntiquaBold22);
             elseif (v[1] == "DIVIDER2") then
-                dividerLabel:SetFont(Turbine.UI.Lotro.Font.BookAntiquaBold19);
+                dividerLabel:SetFont(Turbine.UI.Lotro.Font.BookAntiqua22);
+            end
             end
             dividerLabel:SetFontStyle(Turbine.UI.FontStyle.Outline);
             dividerLabel:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleCenter);
