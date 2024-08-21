@@ -16,7 +16,7 @@ _IMAGES = {
     ["REFRESH_OVER"] = RESOURCEDIR .. "button_refresh_highlight.tga";
     ["COMMONBACK"] = RESOURCEDIR .. "CommonBack.tga";
     ["BARTERITEMSBACK"] = RESOURCEDIR .. "BarterItems.tga";
-    ["BARTERBACK"] = RESOURCEDIR .. "BarterBack.tga";
+    ["BARTERBACK"] = RESOURCEDIR .. "BarterBackNoTop.tga";
     ["ALTBACK"] = RESOURCEDIR .. "Alt_Back.tga";
 
     ["MAPPOINT"] = 0x41007F4C; -- red arrow from map and radar ("note_avatar.tga")

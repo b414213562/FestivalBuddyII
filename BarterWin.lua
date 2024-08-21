@@ -6,6 +6,9 @@ function DrawBarterWin()
     wBarterWinParent:SetPosition(SETTINGS.BARTERWIN.X,SETTINGS.BARTERWIN.Y);
     wBarterWinParent:SetVisible(SETTINGS.BARTERWIN.VISIBLE);
     wBarterWinParent:SetText(GetString(_LANG.OTHER.BARTER));
+    wBarterWinParent:SetResizable(true);
+    wBarterWinParent:SetMinimumWidth(480);
+    wBarterWinParent:SetMaximumWidth(480);
 
     wBarterWinBack = Turbine.UI.Control();
     wBarterWinBack:SetParent(wBarterWinParent);
@@ -54,6 +57,23 @@ function DrawBarterWin()
 
     wBarterWinParent.VisibleChanged = function(sender,args)
         if wBarterWinParent:IsVisible() == true then wBarterWinParent:Activate() end;
+    end
+
+    wBarterWinParent.SizeChanged = function(sender, args)
+        local newWindowHeight = wBarterWinParent:GetHeight();
+        local isBackVisible = newWindowHeight >= 500;
+
+        wBarterWinBack:SetVisible(isBackVisible);
+        wBarterWinBack:SetTop(newWindowHeight - 502)
+
+        local newListHeight = newWindowHeight - 120;
+        if (not isBackVisible) then
+            newListHeight = newListHeight + 20;
+        end
+
+        lstBarterItems:SetHeight(newListHeight);
+        slstBarterItems:SetHeight(newListHeight);
+
     end
 
 end
