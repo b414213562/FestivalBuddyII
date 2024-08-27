@@ -9,6 +9,7 @@ v2.1.3 changes:
     
     General:
         Made barter window resizable vertically
+        Multiple alerts can now be displayed, which is useful for doing Bounders Rounds + Fat Mayer at the same time.
 
     Bug fix:
         Fixed an issue where an old Festival Buddy save file had Summer selected and it wasn't correctly converted to Farmers Faire.
