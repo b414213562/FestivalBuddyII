@@ -8,9 +8,8 @@ function ResetCancellationToken()
 end
 
 function CancelAlert()
-    if (alert_cancellation_token ~= nil and
-        alert_cancellation_token.Cancel ~= nil) then
-            alert_cancellation_token.Cancel();
+    if (alert_cancellation_token) then
+        DoCallbacks(alert_cancellation_token, "Cancel");
     end
 end
 

@@ -60,8 +60,9 @@ function Alert.Constructor(SENDER,MESSAGE,DURATION,SHOW_REMAINING_TIME,CALLBACK,
     MessageLabel:SetText(MESSAGE);
 
     local isCancelled = false;
+    local cancelFunction = function() isCancelled = true; end;
     if (CANCELLATION_TOKEN ~= nil) then
-        CANCELLATION_TOKEN.Cancel = function() isCancelled = true; end
+        AddCallback(CANCELLATION_TOKEN, "Cancel", cancelFunction);
     end
 
     -- This function animates the main windows fade out when mouse leaves.
@@ -130,6 +131,9 @@ function Alert.Constructor(SENDER,MESSAGE,DURATION,SHOW_REMAINING_TIME,CALLBACK,
                 end
                 CONTROL:SetVisible(false);
                 RemoveActiveAlert(AnimateControl);
+                if (CANCELLATION_TOKEN ~= nil) then
+                    RemoveCallback(CANCELLATION_TOKEN, "Cancel", cancelFunction);
+                end
             end
         end
     end
