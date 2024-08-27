@@ -1,6 +1,5 @@
-Deed Tracker: Did not find an uncompleted deed matching "A Dark Treasure"
-...ns\CubePlugins\FestivalBuddyII\FestivalFunctions.lua:90: attempt to index field '?' (a nil value)
-
+barter window: tree instead of list
+on-screen message: allow more than one
 
 [19:42] Talyrion1003: but.... my FB II does not seem to update the tokens in its window...
 [19:44] Talyrion1003: I logged into my character, and it shows 22 anniversary tokens... after doing a quest the wallet count is 25, but FB II still shows 22... (may it be from the save-file changes?) might be an old save file, it seems to update the numbers on load...

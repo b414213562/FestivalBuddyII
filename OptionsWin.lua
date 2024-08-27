@@ -1,5 +1,5 @@
 
-SHOW_DEBUG_OPTIONS = false;
+SHOW_DEBUG_OPTIONS = true;
 
 local topMargin = 10;
 
@@ -985,6 +985,113 @@ function HandleFarmersFaireFatMayorResultClick(result)
     end
 end
 
+--- Draw a section to allow testing of the Alert functionality
+---@param options Control
+---@param y number
+---@return number
+function DrawAlertDebug(options, optionsY)
+    local y = 0;
+    local seconds = 5;
+
+    local alertDebugControl = Turbine.UI.Control();
+    alertDebugControl:SetParent(options);
+    --alertDebugControl:SetBackColor(Turbine.UI.Color.DarkOrange);
+    alertDebugControl:SetSize(options:GetWidth(), 100);
+    alertDebugControl:SetTop(optionsY);
+
+
+    -- A call to Alert looks like this:
+--    Alert(
+--        "<rgb=#00FFFF>"..message.."</rgb>",
+--        secondsToShow,
+--        showRemaningTime,
+--        callback,
+--        alert_cancellation_token);
+    -- Support changing message, secondsToShow, showRemainingTime.
+
+    local alertDebugLabel = Turbine.UI.Label();
+    alertDebugLabel:SetParent(alertDebugControl);
+    alertDebugLabel:SetWidth(200);
+    alertDebugLabel:SetPosition(0, y);
+    alertDebugLabel:SetText("Alerts:");
+    y = y + 30;
+
+    local messageLabel = Turbine.UI.Label();
+    messageLabel:SetParent(alertDebugControl);
+    messageLabel:SetWidth(200);
+    messageLabel:SetPosition(20, y);
+    messageLabel:SetText("Message:");
+
+    local messageTextBox = Turbine.UI.Lotro.TextBox();
+    messageTextBox:SetParent(alertDebugControl);
+    messageTextBox:SetPosition(100, y-10);
+    messageTextBox:SetSize(300, 30);
+    messageTextBox:SetMultiline(false);
+    messageTextBox:SetText("Sample Message");
+    y = y + 35;
+    -- <rgb=#00FFFF>Sample Message</rgb>
+
+    local secondsLabel = Turbine.UI.Label();
+    secondsLabel:SetParent(alertDebugControl);
+    secondsLabel:SetWidth(200);
+    secondsLabel:SetPosition(20, y);
+    secondsLabel:SetText("Seconds:");
+
+    local secondsTextBox = Turbine.UI.Lotro.TextBox();
+    secondsTextBox:SetParent(alertDebugControl);
+    secondsTextBox:SetPosition(100, y-10);
+    secondsTextBox:SetSize(100, 30);
+    secondsTextBox:SetMultiline(false);
+    secondsTextBox:SetText(tostring(seconds));
+    secondsTextBox.FocusLost = function(sender, args)
+        local newSeconds = tonumber(secondsTextBox:GetText());
+        if (newSeconds) then
+            seconds = newSeconds;
+        else
+            secondsTextBox:SetText(tostring(seconds));
+        end
+    end
+    y = y + 35;
+
+    local showRemainingCheckBox = Turbine.UI.Lotro.CheckBox();
+    showRemainingCheckBox:SetParent(alertDebugControl);
+    showRemainingCheckBox:SetSize(200, 20);
+    showRemainingCheckBox:SetPosition(20, y);
+    showRemainingCheckBox:SetText("Show Remaining Time");
+    showRemainingCheckBox:SetChecked(true);
+    y = y + 30;
+
+    local showButton = Turbine.UI.Lotro.Button();
+    showButton:SetParent(alertDebugControl);
+    showButton:SetText("Send Alert");
+    showButton:SetWidth(100);
+    showButton:SetPosition(75, y);
+    showButton.Click = function(sender, args)
+        Alert(
+            messageTextBox:GetText(),
+            seconds,
+            showRemainingCheckBox:IsChecked(),
+            nil,
+            alert_cancellation_token);
+    end
+
+    local cancelButton = Turbine.UI.Lotro.Button();
+    cancelButton:SetParent(alertDebugControl);
+    cancelButton:SetText("Cancel Alert");
+    cancelButton:SetWidth(100);
+    cancelButton:SetPosition(200, y);
+    cancelButton.Click = function(sender, args)
+        CancelAlert();
+    end
+
+    y = y + 30;
+
+
+
+    alertDebugControl:SetHeight(y);
+    return optionsY + alertDebugControl:GetHeight();
+end
+
 function CreateColorPickerWindow()
     -- the color picker window
     ColorPickerWindow = Turbine.UI.Lotro.Window();
@@ -1204,6 +1311,7 @@ function DrawOptionsWin()
     DrawHobnanigansDebug(debugOptions);
     DrawFireworksDebug(debugOptions);
     y = DrawFarmersFaireFatMayorDebug(debugOptions);
+    y = DrawAlertDebug(debugOptions, y);
 
     debugOptions:SetHeight(y);
     options:SetHeight(nonDebugOptions:GetHeight() + debugOptions:GetHeight());
