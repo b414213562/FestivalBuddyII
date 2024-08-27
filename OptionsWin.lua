@@ -1026,7 +1026,7 @@ function DrawAlertDebug(options, optionsY)
     messageTextBox:SetParent(alertDebugControl);
     messageTextBox:SetPosition(100, y-10);
     messageTextBox:SetSize(300, 30);
-    messageTextBox:SetMultiline(false);
+    messageTextBox:SetMultiline(true); -- Alert allows multiline messages
     messageTextBox:SetText("Sample Message");
     y = y + 35;
     -- <rgb=#00FFFF>Sample Message</rgb>
