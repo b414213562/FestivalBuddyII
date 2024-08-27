@@ -1,5 +1,5 @@
 
-SHOW_DEBUG_OPTIONS = true;
+SHOW_DEBUG_OPTIONS = false;
 
 local topMargin = 10;
 
