@@ -13,6 +13,28 @@
 Alert = {};
 _mtAlert = {};
 
+ActiveAlerts = {};
+ActiveAlertsCount = 0;
+
+--- Adds an animating alert to the global table
+---@param control Control
+---@return integer # A zero-based index usable to adjust on-screen elements.
+function AddActiveAlert(control)
+    local alertNumber = #ActiveAlerts + 1;
+    control.Number = alertNumber;
+    ActiveAlerts[alertNumber] = control;
+    ActiveAlertsCount = ActiveAlertsCount + 1;
+    return control.Number - 1;
+end
+
+--- Removes an animating alert from the global table
+---@param control Control
+function RemoveActiveAlert(control)
+    local alertNumber = control.Number;
+    ActiveAlerts[alertNumber] = nil;
+    ActiveAlertsCount = ActiveAlertsCount - 1;
+end
+
 function Alert.Constructor(SENDER,MESSAGE,DURATION,SHOW_REMAINING_TIME,CALLBACK,CANCELLATION_TOKEN)
 
     if DURATION == nil then DURATION = 2.5 end;
@@ -55,9 +77,12 @@ function Alert.Constructor(SENDER,MESSAGE,DURATION,SHOW_REMAINING_TIME,CALLBACK,
         local remainingTimeUpdateInterval = 0.5;
         local precisionString = "%.0f";
 
-        AnimateControl = Turbine.UI.Control();
+        local AnimateControl = Turbine.UI.Control();
         AnimateControl:SetSize(1,1);
         AnimateControl:SetWantsUpdates(true);
+        local alertSlot = AddActiveAlert(AnimateControl);
+        STARTY = alertSlot * 100 + STARTY;
+        FINISHY = alertSlot * 100 + FINISHY;
 
         AnimateControl.Update = function ()
 
@@ -104,6 +129,7 @@ function Alert.Constructor(SENDER,MESSAGE,DURATION,SHOW_REMAINING_TIME,CALLBACK,
                     CALLBACK();
                 end
                 CONTROL:SetVisible(false);
+                RemoveActiveAlert(AnimateControl);
             end
         end
     end
