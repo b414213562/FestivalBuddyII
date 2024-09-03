@@ -2,10 +2,14 @@ v2.1.3 changes:
     Festivals:
         Incorporated numerous German translations from Mandraval.
 
-        Hobnanigans:
-            Fixed an issue where games on Field 1 would not be recognized.
+        Midsummer:
+            Updated barter items:
         Farmers Faire:
             Updated barter items.
+        Yule:
+            Updated barter items.
+        Hobnanigans:
+            Fixed an issue where games on Field 1 would not be recognized.
     
     General:
         Made barter window resizable vertically

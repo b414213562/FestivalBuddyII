@@ -1,0 +1,38 @@
+Festival Buddy II version v2.1.3 is now available at [URL='https://www.lotrointerface.com/downloads/info1218-FestivalBuddyII.html']lotrointerface.com[/URL].
+
+This update has numerous festival barter list changes, better Hobnanigans support, an improved Alert system, and a few other changes.
+
+Version 2.1.3 release notes:
+
+Festivals:
+[list]
+    [*] Incorporated numerous German translations from Mandraval.
+
+    Midsummer:
+    [list]
+        [*] Updated barter items:
+    [/list]
+    Farmers Faire:
+    [list]
+        [*] Updated barter items.
+    [/list]
+    Yule:
+    [list]
+        [*] Updated barter items.
+    [/list]
+    Hobnanigans:
+    [list]
+        [*] Fixed an issue where games on Field 1 would not be recognized.        
+    [/list]
+[/list]
+
+General:
+[list]
+    [*] Made barter window resizable vertically
+    [*] Multiple alerts can now be displayed, which is useful for doing Bounders Rounds + Fat Mayer at the same time.
+[/list]
+
+Bug fix:
+[list]
+    [*] Fixed an issue where an old Festival Buddy save file had Summer selected and it wasn't correctly converted to Farmers Faire.
+[/list]
