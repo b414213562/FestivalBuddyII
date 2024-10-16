@@ -17,7 +17,7 @@ QG_ILAA[QG_ILAA_INDEX.QUITE_A_TICKLE_PICKUP].DISPLAY = function() return string.
 QG_ILAA[QG_ILAA_INDEX.QUITE_A_TICKLE_DRINK].DISPLAY = function() return CollectFromNpc("Fake Thistlebelly Brew", "Rúnulf"); end
 QG_ILAA[QG_ILAA_INDEX.QUITE_A_TICKLE_END].DISPLAY = function() return string.format("Travel to %s, turn in %s to %s.", HighlightLocation("Ost Haer in Harloeg"), HighlightQuest("Quite a Tickle"), HighlightNpc("Wald Mugwort")); end
 QG_ILAA[QG_ILAA_INDEX.QUITE_A_PICKLE_PICKUP].DISPLAY = function() return TakeFrom("Quite a Pickle", "Wald Mugwort"); end
-QG_ILAA[QG_ILAA_INDEX.QUITE_A_PICKLE_DRINK].DISPLAY = function() return CollectFromLocation("Thistlebelly Brew", "The Ivy Bush, The Shire"); end
+QG_ILAA[QG_ILAA_INDEX.QUITE_A_PICKLE_DRINK].DISPLAY = function() return CollectFromLocation("Thistlebelly Brew", "The Ivy Bush in Hobbiton"); end
 QG_ILAA[QG_ILAA_INDEX.QUITE_A_PICKLE_END].DISPLAY = function() return TurnInTo("Quite a Pickle", "Wald Mugwort"); end
 
 QG_ILAA[QG_ILAA_INDEX.NEVER_FURTHER_FROM_HOME_DRINK].DISPLAY = function() return TravelCollectFrom("Prancing Pony in Bree", "Fake Limael's Vintage", "Barliman Butterbur"); end
@@ -67,7 +67,7 @@ QG_ILAA[QG_ILAA_INDEX.A_DARK_DAY_DRINK].DISPLAY = function() return CollectFromL
 QG_ILAA[QG_ILAA_INDEX.A_DARK_DAY_END].DISPLAY = function() return TurnInTo("A Dark Day", "Lófi"); end
 QG_ILAA[QG_ILAA_INDEX.A_DRINK_OF_THE_BEST_CHARACTER_END].DISPLAY = function() return TravelTurnInTo("Aughaire in Angmar", "A Drink of the Best Character", "Nathalan"); end
 QG_ILAA[QG_ILAA_INDEX.A_DRINK_OF_THE_WORST_CHARACTER_PICKUP].DISPLAY = function() return TakeFrom("A Drink of the Worst Character", "Nathalan"); end
-QG_ILAA[QG_ILAA_INDEX.A_DRINK_OF_THE_WORST_CHARACTER_DRINK].DISPLAY = function() return CollectFromLocation("Swill", "The Forsaken Inn, Lone Lands"); end
+QG_ILAA[QG_ILAA_INDEX.A_DRINK_OF_THE_WORST_CHARACTER_DRINK].DISPLAY = function() return CollectFromLocation("Swill", "The Forsaken Inn, Lone-lands"); end
 QG_ILAA[QG_ILAA_INDEX.A_DRINK_OF_THE_WORST_CHARACTER_END].DISPLAY = function() return TurnInTo("A Drink of the Worst Character", "Nathalan"); end
 QG_ILAA[QG_ILAA_INDEX.A_DIFFERENT_REMINDER_OF_RIVENDELL_END].DISPLAY = function() return TravelTurnInTo("Refuge of Edhelion in Ered Luin", "A Different Reminder of Rivendell", "Lendasil"); end
 QG_ILAA[QG_ILAA_INDEX.A_REMINDER_OF_RIVENDELL_PICKUP].DISPLAY = function() return TakeFrom("A Reminder of Rivendell", "Lendasil"); end
