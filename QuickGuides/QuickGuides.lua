@@ -79,13 +79,24 @@ function _G.HighlightQuestItem(questItem)
     return Highlight(questItem, "QUEST_ITEM");
 end
 
+QUICK_GUIDES_FORMAT_STRINGS = {
+    ["TravelTurnInTo"] = { ["ENGLISH"] = "Travel to %s, turn in %s to %s"; ["GERMAN"] = "Reisen nach %s, gib %s bei %s ab"; };
+    ["TurnInTo"] = { ["ENGLISH"] = "Turn in %s to %s"; ["GERMAN"] = "Gib %s bei %s ab"; };
+    ["Continue"] = { ["ENGLISH"] = "%s: %s"; };
+    ["ContinueWith"] = { ["ENGLISH"] = "%s: Continue quest with %s"; ["GERMAN"] = "%s: Setze Aufgabe bei %s fort"; }; -- or "Setze Aufgabe %s bei %s fort"
+    ["CollectFromNpc"] = { ["ENGLISH"] = "Collect %s from %s"; ["GERMAN"] = "Besorge %s von %s"; };
+    ["CollectFromLocation"] = { ["ENGLISH"] = "Collect %s from %s"; ["GERMAN"] = "Besorge %s aus %s"; };
+    ["TravelCollectFrom"] = { ["ENGLISH"] = "Travel to %s, collect %s from %s"; ["GERMAN"] = "Reise nach %s, besorge %s von %s"; };
+    ["TakeFrom"] = { ["ENGLISH"] = "Take %s from %s"; ["GERMAN"] = "Nimm %s bei %s an"; };
+}
+
 ---Helper for travelling to an objective, turning in a quest to an NPC.
 ---@param location string
 ---@param quest string
 ---@param npc string
 ---@return string
 function _G.TravelTurnInTo(location, quest, npc)
-    return string.format("Travel to %s, turn in %s to %s", HighlightLocation(location), HighlightQuest(quest), HighlightNpc(npc));
+    return string.format(GetString(QUICK_GUIDES_FORMAT_STRINGS.TravelTurnInTo), HighlightLocation(location), HighlightQuest(quest), HighlightNpc(npc));
 end
 
 ---Helper for turning in a quest to an NPC
@@ -93,7 +104,7 @@ end
 ---@param npc string
 ---@return string
 function _G.TurnInTo(quest, npc)
-    return string.format("Turn in %s to %s", HighlightQuest(quest), HighlightNpc(npc));
+    return string.format(GetString(QUICK_GUIDES_FORMAT_STRINGS.TurnInTo), HighlightQuest(quest), HighlightNpc(npc));
 end
 
 ---Helper for continuing a quest with an action
@@ -101,7 +112,7 @@ end
 ---@param objective string
 ---@return string
 function _G.Continue(quest, objective)
-    return string.format("%s: %s", HighlightQuest(quest), objective);
+    return string.format(GetString(QUICK_GUIDES_FORMAT_STRINGS.Continue), HighlightQuest(quest), objective);
 end
 
 ---Helper for continuing a quest with an NPC
@@ -109,7 +120,7 @@ end
 ---@param npc string
 ---@return string
 function _G.ContinueWith(quest, npc)
-    return string.format("%s: Continue quest with %s", HighlightQuest(quest), HighlightNpc(npc));
+    return string.format(GetString(QUICK_GUIDES_FORMAT_STRINGS.ContinueWith), HighlightQuest(quest), HighlightNpc(npc));
 end
 
 ---Helper for collecting a quest item from an NPC
@@ -117,7 +128,7 @@ end
 ---@param npc string
 ---@return string
 function _G.CollectFromNpc(questItem, npc)
-    return string.format("Collect %s from %s", HighlightQuestItem(questItem), HighlightNpc(npc));
+    return string.format(GetString(QUICK_GUIDES_FORMAT_STRINGS.CollectFromNpc), HighlightQuestItem(questItem), HighlightNpc(npc));
 end
 
 ---Helper for collecting a quest item from a location
@@ -125,7 +136,7 @@ end
 ---@param location string
 ---@return string
 function _G.CollectFromLocation(questItem, location)
-    return string.format("Collect %s from %s", HighlightQuestItem(questItem), HighlightLocation(location));
+    return string.format(GetString(QUICK_GUIDES_FORMAT_STRINGS.CollectFromLocation), HighlightQuestItem(questItem), HighlightLocation(location));
 end
 
 ---Helper for travelling to a location to collecte a quest item from an NPC
@@ -134,7 +145,7 @@ end
 ---@param npc string
 ---@return string
 function _G.TravelCollectFrom(location, questItem, npc)
-    return string.format("Travel to %s, collect %s from %s", HighlightLocation(location), HighlightQuestItem(questItem), HighlightNpc(npc));
+    return string.format(GetString(QUICK_GUIDES_FORMAT_STRINGS.TravelCollectFrom), HighlightLocation(location), HighlightQuestItem(questItem), HighlightNpc(npc));
 end
 
 ---Helper for taking a quest from an NPC
@@ -142,7 +153,7 @@ end
 ---@param npc string
 ---@return string
 function _G.TakeFrom(quest, npc)
-    return string.format("Take %s from %s", HighlightQuest(quest), HighlightNpc(npc));
+    return string.format(GetString(QUICK_GUIDES_FORMAT_STRINGS.TakeFrom), HighlightQuest(quest), HighlightNpc(npc));
 end
 
 _G.AddNextQuickguideValue = AddNextQuickguideValue;
