@@ -1,3 +1,5 @@
+Change references from Ten to MazeResetTime or something similar.
+
 barter window: tree instead of list
 
 [19:42] Talyrion1003: but.... my FB II does not seem to update the tokens in its window...
@@ -9,6 +11,10 @@ barter window: tree instead of list
 [21:09] Talyrion1003: did another test... french version does also not update (as expected)... changing the festival to a different and reselect the current festival will update the numbers... so I suspect a missing update on a token-change
 [22:36] Talyrion1003: another update: reselecting the same festival from the drop down will update the token numbers, spending shield-tokens does not update
 
+Quick Guide ideas:
+    For quick guide quest progress that involves acquiring an item (re: Inn League drinks),
+    monitor the inventory to see if they already have it, and if so mark off the objective.
+    If they lose the item, un-mark off the objective.
 
 Todo:
     Consider adding unit tests to confirm string parsing:
