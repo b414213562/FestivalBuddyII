@@ -16,12 +16,15 @@ local fireworksRowHeight = 30;
 local fatMayorY = fireworksY + 185;
 
 function DrawGenericOptions(options, y)
+    local indent = 10;
+    local controlWidth = options:GetWidth() - indent * 2;
+
     -- Ignore Escape key:
     local escapeKeyClosesWindows = Turbine.UI.Lotro.CheckBox();
     escapeKeyClosesWindows:SetParent(options);
     escapeKeyClosesWindows:SetText(GetString(_LANG.OPTIONS.ESCAPE_KEY_CLOSES_WINDOWS));
-    escapeKeyClosesWindows:SetSize(400, 20);
-    escapeKeyClosesWindows:SetPosition(10, y);
+    escapeKeyClosesWindows:SetSize(controlWidth, 20);
+    escapeKeyClosesWindows:SetPosition(indent, y);
     escapeKeyClosesWindows:SetChecked(SETTINGS.ESCAPE_KEY_CLOSES_WINDOWS);
     escapeKeyClosesWindows.CheckedChanged = function(sender, args)
         SETTINGS.ESCAPE_KEY_CLOSES_WINDOWS = escapeKeyClosesWindows:IsChecked();
@@ -30,7 +33,146 @@ function DrawGenericOptions(options, y)
 
     y = DrawMainWindowScaling(options, y);
 
+    -- Offset from Server Time
+    local timeOffsetSectionLabel = Turbine.UI.Label();
+    timeOffsetSectionLabel:SetParent(options);
+    timeOffsetSectionLabel:SetSize(controlWidth, 30);
+    timeOffsetSectionLabel:SetPosition(indent, y);
+    timeOffsetSectionLabel:SetMultiline(true);
+    timeOffsetSectionLabel:SetText(GetString(_LANG.OPTIONS.WHAT_IS_LOCAL_TIME_OFFSET));
+    y = y + 30;
+
+    local localTimeOffset = SETTINGS_ACCOUNT.LOCAL_TIME_OFFSET;
+
+    local timeOffsetLabel = Turbine.UI.Label();
+    timeOffsetLabel:SetParent(options);
+    timeOffsetLabel:SetSize(180, 25);
+    timeOffsetLabel:SetPosition(indent, y);
+    timeOffsetLabel:SetText(GetString(_LANG.OPTIONS.OFFSET_HOURS));
+--    timeOffsetLabel:SetBackColor(Turbine.UI.Color.DarkSlateBlue);
+    timeOffsetLabel:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleLeft);
+
+    local timeOffsetTextBox = Turbine.UI.Lotro.TextBox();
+    timeOffsetTextBox:SetParent(options);
+    timeOffsetTextBox:SetSize(60, 25);
+    timeOffsetTextBox:SetPosition(indent + timeOffsetLabel:GetWidth(), y);
+    timeOffsetTextBox:SetText(localTimeOffsetDisplay);
+    timeOffsetTextBox:SetMultiline(false);
+    timeOffsetTextBox.SetOffsetText = function(self, offset)
+        local localTimeOffsetDisplay = (((offset > 0) and "+") or "") .. offset;
+        self:SetText(localTimeOffsetDisplay);
+    end
+    timeOffsetTextBox:SetOffsetText(localTimeOffset);
+    timeOffsetTextBox.FocusLost = function(sender, args)
+        SaveTimeOffset(timeOffsetTextBox:GetText());
+    end
+    timeOffsetTextBox.KeyDown = function(sender, args)
+        local enter = 162;
+        if (args.Action == enter) then
+            SaveTimeOffset(timeOffsetTextBox:GetText());
+        end
+    end
+    TimeOffsetTextBox = timeOffsetTextBox;
+
+    local servertimeQuickslot = Turbine.UI.Lotro.Quickslot();
+    servertimeQuickslot:SetParent(options);
+    servertimeQuickslot:SetSize(60, 25);
+    servertimeQuickslot:SetPosition(indent + timeOffsetTextBox:GetLeft() + timeOffsetTextBox:GetWidth() + 20, y)
+    servertimeQuickslot:SetAllowDrop(false);
+    servertimeQuickslot:SetVisible(true);
+
+    local servertimeLabel = Turbine.UI.Label();
+    servertimeLabel:SetParent(options);
+    servertimeLabel:SetSize(60, 25);
+    servertimeLabel:SetPosition(servertimeQuickslot:GetLeft(), y);
+    servertimeLabel:SetMouseVisible(false);
+    servertimeLabel:SetBackColor(Turbine.UI.Color(0.1,0.15,0.3));
+    servertimeLabel:SetFont(Turbine.UI.Lotro.Font.Verdana12);
+    servertimeLabel:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleCenter);
+    servertimeLabel:SetText(GetString(_LANG.OPTIONS.DETECT_OFFSET));
+
+    servertimeQuickslot.MouseEnter = function(sender, args)
+        servertimeLabel:SetBackColor(Turbine.UI.Color(0.2,0.25,0.4));
+        servertimeLabel:SetForeColor(YELLOW);
+    end
+
+    servertimeQuickslot.MouseLeave = function(sender, args)
+        servertimeLabel:SetBackColor(Turbine.UI.Color(0.1,0.15,0.3));
+        servertimeLabel:SetForeColor(WHITE);
+    end
+
+    local servertimeShortcut = Turbine.UI.Lotro.Shortcut();
+    servertimeShortcut:SetType(Turbine.UI.Lotro.ShortcutType.Alias);
+    servertimeShortcut:SetData(GetString(_LANG.OPTIONS.SERVERTIME_COMMAND))
+    servertimeQuickslot:SetShortcut(servertimeShortcut);
+
+    y = y + 30
+
     return y + 20;
+end
+
+function SaveTimeOffset(value)
+    local offset = tonumber(value);
+    SETTINGS_ACCOUNT.LOCAL_TIME_OFFSET = offset;
+end
+
+function CheckStandardChatForServerTime(message)
+    local pattern = GetString(_LANG.OPTIONS.SERVERTIME_CHAT_PATTERN)
+    -- todo: Only check this if mouse cursor is over the button?
+    local matches = {string.match(message, pattern)};
+    if (matches[1]) then
+        local month = tonumber(matches[1]);
+        local day = tonumber(matches[2]);
+        local hour = tonumber(matches[3]);
+        local minute = tonumber(matches[4]);
+        local amPm = matches[5];
+
+        if (CLIENTLANG ~= "ENGLISH") then
+            month = tonumber(matches[2]);
+            day = tonumber(matches[1]);
+        end
+
+        hour = hour % 12;
+        if (amPm == "PM") then hour = hour + 12; end
+
+        local offset = DetectTimeZone(month, day, hour, minute, amPm);
+        TimeOffsetTextBox:SetOffsetText(offset);
+        TimeOffsetTextBox:FocusLost();
+    end
+end
+
+--- Algorithm inspired by Thurallor's Reminders
+---@param serverMonth any
+---@param serverDay any
+---@param serverHour any
+---@param serverMinute any
+---@param serverAmPm any
+function DetectTimeZone(serverMonth, serverDay, serverHour, serverMinute, serverAmPm)
+    local serverMinuteOfDay = serverHour * 60 + serverMinute;
+
+    local localDate = Turbine.Engine.GetDate();
+    local localDay, localHour, localMinute = localDate.Day, localDate.Hour, localDate.Minute;
+    local localMinuteOfDay = localHour * 60 + localMinute;
+
+    -- Detect day offset between server and local time
+    local offsetDays = localDay - serverDay;
+    if (offsetDays > 1) then
+        -- Server time is next month
+        offsetDays = -1;
+    elseif (offsetDays < -1) then
+        -- Server time is last month
+        offsetDays = 1;
+    end
+
+    -- Chat message is not exactly synched with GetDate() function.
+    -- To cope with this, round the offset to the nearest 15-minute interval.
+    -- All time zone offsets in the world are multiples of 15 minutes.
+    local offsetMinutes = (24 * 60 * offsetDays) + localMinuteOfDay - serverMinuteOfDay;
+    offsetMinutes = 15 * math.floor(0.5 + offsetMinutes / 15);
+    local offsetHours = offsetMinutes / 60;
+
+    Turbine.Shell.WriteLine("Offset hours: " .. offsetHours);
+    return offsetHours;
 end
 
 function DrawMainWindowScaling(options, y)
@@ -1277,12 +1419,13 @@ function DrawOptionsWin()
 
     local nonDebugOptions = Turbine.UI.Control();
     nonDebugOptions:SetParent(options);
+    nonDebugOptions:SetWidth(350);
 
     local y = topMargin;
     y = DrawGenericOptions(nonDebugOptions, y);
     y = DrawQuickGuideOptions(nonDebugOptions, y);
     y = DrawMapOptions(nonDebugOptions, y);
-    nonDebugOptions:SetSize(350, y);
+    nonDebugOptions:SetHeight(y);
 
     if (not SHOW_DEBUG_OPTIONS) then
         options:SetHeight(nonDebugOptions:GetHeight());

@@ -1,4 +1,7 @@
 v2.1.4 changes:
+    General:
+        Incorporated code from Thurallor's Reminders for detecting the server/local time offset.
+    
     Bug fix:
         Reset button and credits no longer cover the quick guide scrollbar.
 

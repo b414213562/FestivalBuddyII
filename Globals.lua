@@ -325,6 +325,8 @@ DEFAULT_SETTINGS_ACCOUNT = {
             };
         };
     };
+
+    ["LOCAL_TIME_OFFSET"] = 0;
 };
 
 -- Add quest keys here that should be backgroundable.

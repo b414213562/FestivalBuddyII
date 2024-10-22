@@ -55,6 +55,7 @@ function FilterStandard(cMessage)
     end
     ----
 
+    CheckStandardChatForServerTime(cMessage);
     MazeMapHandleStandardChatMessage(cMessage);
 
 end

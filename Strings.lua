@@ -867,6 +867,16 @@ _LANG = {
 
         ["ESCAPE_KEY_CLOSES_WINDOWS"] = { ["ENGLISH"] = "Escape key closes Festival Buddy windows"; ["GERMAN"] = "ESC-Taste schließt Festival Buddy"; };
 
+        ["WHAT_IS_LOCAL_TIME_OFFSET"] = { ["ENGLISH"] = "What is your local time difference from server time?"; ["GERMAN"] = "Wie groß ist der Zeitunterschied zwischen deiner lokalen Uhrzeit und der Serverzeit?"; ["FRENCH"] = "Quelle est la différence de temps entre l'heure locale et l'heure du serveur ?"; };
+        ["OFFSET_HOURS"] = { ["ENGLISH"] = "Offset (+/- hours)"; ["GERMAN"] = "Ausgleichen (+/- Stunden)"; ["FRENCH"] = "Décalage (+/- heures)"; };
+        ["DETECT_OFFSET"] = { ["ENGLISH"] = "Detect"; ["GERMAN"] = "Ermitteln"; ["FRENCH"] = "Détecter"; };
+        ["SERVERTIME_COMMAND"] = { ["ENGLISH"] = "/servertime"; ["GERMAN"] = "/serverzeit"; ["FRENCH"] = "/heureserveur"; };
+        ["SERVERTIME_CHAT_PATTERN"] = {
+            ["ENGLISH"] = "^The current time on the server is ([0-9]+)/([0-9]+) ([0-9]+):([0-9]+) ([AP]M)%.";
+            ["GERMAN"] = "^Der Server zeigt die folgende Zeit an: ([0-9]+)%. ([0-9]+)%., ([0-9]+): ([0-9]+) ([AP]M)%.";
+            ["FRENCH"] = "^L'heure actuelle de votre serveur est ([0-9]+)/([0-9]+), ([0-9]+):([0-9]+) ([AP]M)%.";
+        };
+
         ["QUICK_GUIDE"]                   = { ["ENGLISH"] = "Quick Guide:";                                         ["GERMAN"] = "Schnell-Liste:";                                      };
         ["QUICK_GUIDE_REMOVE_COMPLETED"]  = { ["ENGLISH"] = "Remove completed items from list";                     ["GERMAN"] = "Fertige Punkte aus der Liste entfernen";              };
         ["QUICK_GUIDE_CLEAR_DELAY"]       = { ["ENGLISH"] = "Delay in seconds before completed items are removed:"; ["GERMAN"] = "Verzögerung in Sekunden bis Punkte entfernt werden";  };
