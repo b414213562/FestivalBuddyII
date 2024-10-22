@@ -80,7 +80,7 @@ function _G.HighlightQuestItem(questItem)
 end
 
 QUICK_GUIDES_FORMAT_STRINGS = {
-    ["TravelTurnInTo"] = { ["ENGLISH"] = "Travel to %s, turn in %s to %s"; ["GERMAN"] = "Reisen nach %s, gib %s bei %s ab"; };
+    ["TravelTurnInTo"] = { ["ENGLISH"] = "Travel to %s, turn in %s to %s"; ["GERMAN"] = "Reise nach %s, gib %s bei %s ab"; };
     ["TurnInTo"] = { ["ENGLISH"] = "Turn in %s to %s"; ["GERMAN"] = "Gib %s bei %s ab"; };
     ["Continue"] = { ["ENGLISH"] = "%s: %s"; };
     ["ContinueWith"] = { ["ENGLISH"] = "%s: Continue quest with %s"; ["GERMAN"] = "%s: Setze Aufgabe bei %s fort"; }; -- or "Setze Aufgabe %s bei %s fort"
