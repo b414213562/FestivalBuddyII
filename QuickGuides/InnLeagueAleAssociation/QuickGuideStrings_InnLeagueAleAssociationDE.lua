@@ -31,7 +31,7 @@ QG_ILAA[QG_ILAA_INDEX.NEVER_FAR_FROM_HOME_PICKUP].DISPLAY = function() return Ta
 QG_ILAA[QG_ILAA_INDEX.NEVER_FAR_FROM_HOME_DRINK].DISPLAY = function() return CollectFromLocation("Limaels Tröpfchen", "Limaels Weinberg, Ered Luin"); end
 QG_ILAA[QG_ILAA_INDEX.NEVER_FAR_FROM_HOME_END].DISPLAY = function() return TurnInTo("Nie weit weg von zu Hause", "Widukind Hopfenholz"); end
 
-QG_ILAA[QG_ILAA_INDEX.ALL_BUT_THE_GOOD_CIDER_DRINK].DISPLAY = function() return TravelCollectFrom("Die Verlassene Herberge in Die Einsamen Lande", "Gefälschter Apfelwein \"Alter Stern\"", "Anlaf der Einsame"); end
+QG_ILAA[QG_ILAA_INDEX.ALL_BUT_THE_GOOD_CIDER_DRINK].DISPLAY = function() return TravelCollectFrom("Die Verlassene Herberge in den Einsamen Lande", "Gefälschter Apfelwein \"Alter Stern\"", "Anlaf der Einsame"); end
 QG_ILAA[QG_ILAA_INDEX.A_CONVOLUTED_WINE_DRINK].DISPLAY = function() return TravelCollectFrom("Gasthaus \"Adler und Kind\" in Michelbinge", "Gefälschter Branntwein", "Karlo Schwarzhain"); end
 QG_ILAA[QG_ILAA_INDEX.A_BIT_OF_WHITE_DRINK].DISPLAY = function() return TravelCollectFrom("Gasthaus \"Efeubusch\" in Hobbingen", "Gefälschtes Schwarzhain Dunkel", "Herward Lehmhügels"); end
 QG_ILAA[QG_ILAA_INDEX.BOMBURS_BREATH_DRINK].DISPLAY = function() return TravelCollectFrom("Gasthaus Zum Grünen Drachen in Wasserau", "Gefälschtes Bomburs Helles", "Berndt Wurzelknoten"); end
@@ -50,14 +50,14 @@ QG_ILAA[QG_ILAA_INDEX.ALL_BUT_THE_GOOD_CIDER_END].DISPLAY = function() return Tr
 QG_ILAA[QG_ILAA_INDEX.ALL_BUT_THE_CIDER_PICKUP].DISPLAY = function() return TakeFrom("Alles außer dem Apfelwein", "Fuchsia Gruber"); end
 QG_ILAA[QG_ILAA_INDEX.ALL_BUT_THE_CIDER_DRINK].DISPLAY = function() return CollectFromLocation("Apfelwein 'Alter Stern'", "Zum Tänzelnden Pony, Breeland"); end
 QG_ILAA[QG_ILAA_INDEX.ALL_BUT_THE_CIDER_END].DISPLAY = function() return TurnInTo("Alles außer dem Apfelwein", "Fuchsia Gruber"); end
-QG_ILAA[QG_ILAA_INDEX.A_DRINK_OF_THE_BEST_CHARACTER_DRINK].DISPLAY = function() return string.format("In %s, besorge %s von %s", HighlightLocation("Gasthaus Pflug und Sterne"), HighlightQuestItem("Gefälschtes Spülwasser"), HighlightNpc("Herwarth Kahnwurz")); end
-QG_ILAA[QG_ILAA_INDEX.NOT_ATLIS_FAVOURITE_END].DISPLAY = function() return TravelTurnInTo("Hrimbarg in Nebelgebirge", "Nicht Atlis Lieblingsgetränk", "Óli"); end
+QG_ILAA[QG_ILAA_INDEX.A_DRINK_OF_THE_BEST_CHARACTER_DRINK].DISPLAY = function() return string.format("Im %s, besorge %s von %s", HighlightLocation("Gasthaus Pflug und Sterne"), HighlightQuestItem("Gefälschtes Spülwasser"), HighlightNpc("Herwarth Kahnwurz")); end
+QG_ILAA[QG_ILAA_INDEX.NOT_ATLIS_FAVOURITE_END].DISPLAY = function() return TravelTurnInTo("Hrimbarg im Nebelgebirge", "Nicht Atlis Lieblingsgetränk", "Óli"); end
 QG_ILAA[QG_ILAA_INDEX.ATLIS_FAVOURITE_PICKUP].DISPLAY = function() return TakeFrom("Atlis Lieblingsgetränk", "Óli"); end
 QG_ILAA[QG_ILAA_INDEX.ATLIS_FAVOURITE_DRINK].DISPLAY = function() return CollectFromLocation("Schnabelbrecher-Bier", "Gasthaus \"Schluchtenflechter\", Breeland"); end
 QG_ILAA[QG_ILAA_INDEX.ATLIS_FAVOURITE_END].DISPLAY = function() return TurnInTo("Atlis Lieblingsgetränk", "Óli"); end
 QG_ILAA[QG_ILAA_INDEX.A_DIFFERENT_REMINDER_OF_RIVENDELL_DRINK].DISPLAY = function() return TravelCollectFrom("Das Letzte Heimelige Haus in Bruchtal-Klamm", "Gefälschter weißer Dorwinion", "Sogadan"); end
 
-QG_ILAA[QG_ILAA_INDEX.A_CONVOLUTED_WINE_END].DISPLAY = function() return TravelTurnInTo("Echad Candelleth in Die Trollhöhen", "Ein komplexer Wein", "Saerthuithel"); end
+QG_ILAA[QG_ILAA_INDEX.A_CONVOLUTED_WINE_END].DISPLAY = function() return TravelTurnInTo("Echad Candelleth in den Trollhöhen", "Ein komplexer Wein", "Saerthuithel"); end
 QG_ILAA[QG_ILAA_INDEX.A_SIMPLE_WINE_PICKUP].DISPLAY = function() return TakeFrom("Ein einfacher Wein", "Saerthuithel"); end
 QG_ILAA[QG_ILAA_INDEX.A_SIMPLE_WINE_DRINK].DISPLAY = function() return CollectFromLocation("Branntwein", "Gasthaus Zum Goldenen Barsch, Das Auenland"); end
 QG_ILAA[QG_ILAA_INDEX.A_SIMPLE_WINE_END].DISPLAY = function() return TurnInTo("Ein einfacher Wein", "Saerthuithel"); end
