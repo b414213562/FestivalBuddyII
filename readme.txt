@@ -1,3 +1,7 @@
+v2.1.4 changes:
+    Bug fix:
+        Reset button and credits no longer cover the quick guide scrollbar.
+
 v2.1.3 changes:
     Festivals:
         Incorporated numerous German translations from Mandraval.

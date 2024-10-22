@@ -1,4 +1,6 @@
 
+ScrollbarWidth = 8;
+
 function DrawQuickGuideWin()
 
     local tempWidth = 400;
@@ -32,8 +34,8 @@ function DrawQuickGuideWin()
 
     local scrollbar = Turbine.UI.Lotro.ScrollBar();
     scrollbar:SetParent(treeView);
-    scrollbar:SetSize(8, treeView:GetHeight());
-    scrollbar:SetPosition(treeView:GetWidth() - 8, 0);
+    scrollbar:SetSize(ScrollbarWidth, treeView:GetHeight());
+    scrollbar:SetPosition(treeView:GetWidth() - ScrollbarWidth, 0);
     scrollbar:SetOrientation(Turbine.UI.Orientation.Vertical);
     scrollbar:SetVisible(false);
     treeView:SetVerticalScrollBar(scrollbar);
@@ -76,7 +78,7 @@ function QuickGuideWinCreateNode(index)
     local treeView = wQuickGuideWinParent.treeView;
     local isCompleted = QuickGuideWinIsCompleted(index);
     local treeNode = Turbine.UI.TreeNode();
-    treeNode:SetSize(treeView:GetWidth() - 8, 40);
+    treeNode:SetSize(treeView:GetWidth() - ScrollbarWidth, 40);
     treeNode.complete = isCompleted;
     treeNode.index = index;
 
@@ -95,7 +97,7 @@ function QuickGuideWinCreateNode(index)
     local checkBox = Turbine.UI.Lotro.CheckBox();
     checkBox:SetParent(treeNode);
     checkBox:SetText(objectivetext);
-    checkBox:SetSize(treeView:GetWidth() - 8, 40);
+    checkBox:SetSize(treeView:GetWidth() - ScrollbarWidth, 40);
     checkBox:SetMarkupEnabled(true);
     checkBox.CheckedChanged = function(sender, args)
         QuickGuidWinHandleCheckedEntry(treeNode);
@@ -129,7 +131,7 @@ function QuickGuideWinLoadFestival()
     end
 
     local resetNode = Turbine.UI.TreeNode();
-    resetNode:SetSize(treeView:GetWidth(), 20);
+    resetNode:SetSize(treeView:GetWidth() - ScrollbarWidth, 20);
     resetNode.isReset = true;
 
     local resetItem = Turbine.UI.Lotro.Button();
@@ -144,13 +146,13 @@ function QuickGuideWinLoadFestival()
     end
 
     local creditNode = Turbine.UI.TreeNode();
-    creditNode:SetSize(treeView:GetWidth(), 70);
+    creditNode:SetSize(treeView:GetWidth() - ScrollbarWidth, 70);
     creditNode.isReset = true;
 
     local creditLabel = Turbine.UI.Label();
     creditLabel:SetParent(creditNode);
     creditLabel:SetText(_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[SELECTEDFESTIVAL]);
-    creditLabel:SetSize(treeView:GetWidth(), 70);
+    creditLabel:SetSize(treeView:GetWidth() - ScrollbarWidth, 70);
     treeView:GetNodes():Add(creditNode);
 end
 
