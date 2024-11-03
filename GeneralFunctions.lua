@@ -463,3 +463,20 @@ function ClearTable(TABLE)
         TABLE[k] = nil;
     end
 end
+
+-- this will be true if the number is formatted with a 
+-- comma for the decimal place / radix point, false otherwise
+local isEuroFormat=(tonumber("1,000")==1);
+
+-- create a function to automatcially convert in string format to number:
+if (isEuroFormat) then
+    function EuroNormalize(value)
+        if (value == nil) then return 0.0; end
+        return tonumber((string.gsub(value, "%.", ",")));
+    end
+else
+    function EuroNormalize(value)
+        if (value == nil) then return 0.0; end
+        return tonumber((string.gsub(value, ",", ".")));
+    end
+end

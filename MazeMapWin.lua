@@ -382,8 +382,8 @@ function MazeMapParseChatLocation(message)
         if r ~= nil then
 
             h = h or 0; -- heading is not always included. Fill it in if missing.
-            local x = (( math.floor( lx / 8 ) * 160 + tonum(ox) ) - 29360) / 200;
-            local y = (( math.floor( ly / 8 ) * 160 + tonum(oy) ) - 24880) / 200;
+            local x = (( math.floor( EuroNormalize(lx) / 8 ) * 160 + EuroNormalize(ox) ) - 29360) / 200;
+            local y = (( math.floor( EuroNormalize(ly) / 8 ) * 160 + EuroNormalize(oy) ) - 24880) / 200;
             return { longitude = x, latitude = y, heading = h };
         end
     end
