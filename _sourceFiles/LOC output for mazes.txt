@@ -1,0 +1,57 @@
+The Hedge Maze:
+	Outside Front:
+		not north-facing:
+			You are on Treebeard server 23 at r1 lx959 ly996 ox154.54 oy82.79 oz416.53 h94.2. Game timestamp 104995202.115.
+			Ihr seid auf dem Server "[EN-RP] Laurelin" (31) in r1 lx959 ly996 ox152.62 oy83.14 oz416.53 h90.0. Spiel-Zeitstempel 548234785.806.
+			Vous vous trouvez sur [EN-RP] Laurelin, serveur 31, à r1 lx959 ly996 ox152.06 oy81.21 oz416.53 h78.8. Horodatage du jeu 548235325.382.
+		north-facing:
+			You are on Treebeard server 23 at r1 lx959 ly996 ox155.16 oy82.47 oz416.53. Game timestamp 104995263.847.
+			Ihr seid auf dem Server "[EN-RP] Laurelin" (31) in r1 lx959 ly996 ox151.61 oy84.78 oz416.53. Spiel-Zeitstempel 548234818.988.
+			Vous vous trouvez sur [EN-RP] Laurelin, serveur 31, à r1 lx959 ly996 ox152.06 oy81.21 oz416.53. Horodatage du jeu 548235343.208.
+	Outside Back:
+		not north-facing:
+			You are on Treebeard server 11 at r1 lx968 ly996 ox9.77 oy81.50 oz416.53 h71.7. Game timestamp 104996643.106.
+			Ihr seid auf dem Server "[EN-RP] Laurelin" (31) in r1 lx968 ly996 ox14.64 oy84.58 oz416.94 h97.0. Spiel-Zeitstempel 548235571.754.
+			Vous vous trouvez sur [EN-RP] Laurelin, serveur 31, à r1 lx968 ly996 ox13.71 oy82.62 oz416.95 h94.2. Horodatage du jeu 548235610.471.
+		north-facing:
+			You are on Treebeard server 11 at r1 lx968 ly996 ox9.77 oy81.50 oz416.53. Game timestamp 104996655.631.
+			Ihr seid auf dem Server "[EN-RP] Laurelin" (31) in r1 lx968 ly996 ox14.60 oy85.16 oz417.04. Spiel-Zeitstempel 548235593.333.
+			Vous vous trouvez sur [EN-RP] Laurelin, serveur 31, à r1 lx968 ly996 ox13.65 oy83.53 oz416.86. Horodatage du jeu 548235629.774.
+	Inside:
+		not north-facing:
+			You are on Treebeard server 13 at r1 lx960 ly996 i3 ox3.32 oy82.72 oz416.53 h90.0. Game timestamp 104995214.424.
+			Ihr seid auf dem Server "[EN-RP] Laurelin" (28) in r1 lx960 ly996 i82 ox5.21 oy82.72 oz416.53 h90.0. Spiel-Zeitstempel 548235073.500.
+			Vous vous trouvez sur [EN-RP] Laurelin, serveur 56, à r1 lx960 ly996 i82 ox6.84 oy82.72 oz416.50 h90.0. Horodatage du jeu 548235354.801.
+		north-facing:
+			You are on Treebeard server 13 at r1 lx960 ly996 i3 ox2.99 oy83.25 oz416.53. Game timestamp 104995224.752.
+			Ihr seid auf dem Server "[EN-RP] Laurelin" (28) in r1 lx960 ly996 i82 ox5.21 oy82.72 oz416.53. Spiel-Zeitstempel 548235090.873.
+			Vous vous trouvez sur [EN-RP] Laurelin, serveur 56, à r1 lx960 ly996 i82 ox6.84 oy82.72 oz416.50. Horodatage du jeu 548235373.424.
+
+Wheat Maze:
+	Outside Front:
+		not north-facing:
+			You are on Treebeard server 14 at r1 lx331 ly1951 i6 ox72.22 oy151.76 oz0.05 h358.6. Game timestamp 104997511.437.
+			Ihr seid auf dem Server "[EN-RP] Laurelin" (31) in r1 lx331 ly1951 i24 ox72.13 oy152.78 oz0.05 h4.2. Spiel-Zeitstempel 548236446.255.
+			Vous vous trouvez sur [EN-RP] Laurelin, serveur 31, à r1 lx331 ly1951 i24 ox72.21 oy152.44 oz0.05 h347.3. Horodatage du jeu 548236478.141.
+		north facing:
+			You are on Treebeard server 14 at r1 lx331 ly1951 i6 ox72.22 oy151.76 oz0.05. Game timestamp 104997567.242.
+			Ihr seid auf dem Server "[EN-RP] Laurelin" (31) in r1 lx331 ly1951 i24 ox72.13 oy152.78 oz0.05. Spiel-Zeitstempel 548236464.453.
+			Vous vous trouvez sur [EN-RP] Laurelin, serveur 31, à r1 lx331 ly1951 i24 ox71.49 oy153.05 oz0.05. Horodatage du jeu 548236508.075.
+	Outside Back:
+		not north-facing:
+			Ihr seid auf dem Server "[EN-RP] Laurelin" (31) in r1 lx331 ly1959 i24 ox72.71 oy147.96 oz0.05 h88.6. Spiel-Zeitstempel 548236611.782.
+			Vous vous trouvez sur [EN-RP] Laurelin, serveur 31, à r1 lx331 ly1959 i24 ox72.67 oy146.59 oz0.05 h91.4. Horodatage du jeu 548236636.836.
+			You are on Treebeard server 14 at r1 lx331 ly1959 i6 ox73.63 oy148.72 oz0.05 h85.8. Game timestamp 104998005.865.
+		north facing:
+			Ihr seid auf dem Server "[EN-RP] Laurelin" (31) in r1 lx331 ly1959 i24 ox72.71 oy147.96 oz0.05. Spiel-Zeitstempel 548236626.178.
+			Vous vous trouvez sur [EN-RP] Laurelin, serveur 31, à r1 lx331 ly1959 i24 ox72.67 oy146.59 oz0.05. Horodatage du jeu 548236647.792.
+			You are on Treebeard server 14 at r1 lx331 ly1959 i6 ox73.63 oy148.72 oz0.05. Game timestamp 104998022.526.
+	Inside:
+		not north-facing:
+			You are on Treebeard server 14 at r1 lx331 ly1953 i6 ox72.55 oy25.40 oz0.05 h68.9. Game timestamp 104997901.595.
+			Ihr seid auf dem Server "[EN-RP] Laurelin" (31) in r1 lx331 ly1953 i24 ox72.55 oy24.07 oz0.05 h43.6. Spiel-Zeitstempel 548236762.912.
+			Vous vous trouvez sur [EN-RP] Laurelin, serveur 31, à r1 lx331 ly1953 i24 ox73.55 oy23.61 oz0.05 h358.6. Horodatage du jeu 548236772.778.
+		north facing:
+			You are on Treebeard server 14 at r1 lx331 ly1953 i6 ox72.55 oy25.40 oz0.05. Game timestamp 104997891.026.
+			Ihr seid auf dem Server "[EN-RP] Laurelin" (31) in r1 lx331 ly1953 i24 ox72.55 oy24.07 oz0.05. Spiel-Zeitstempel 548236752.353.
+			Vous vous trouvez sur [EN-RP] Laurelin, serveur 31, à r1 lx331 ly1953 i24 ox73.57 oy24.69 oz0.05. Horodatage du jeu 548236785.937.

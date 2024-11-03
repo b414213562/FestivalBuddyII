@@ -363,21 +363,17 @@ end
 -- Ihr seid auf dem Server "[DE] Gwaihir" (27) in r1 lx952 ly997 ox2.36 oy118.58 oz414.44 h30.9. Spiel-Zeitstempel 422606916.679.
 -- Ihr seid auf dem Server "[DE] Gwaihir" (28) in r1 lx331 ly1953 i23 ox72.54 oy28.97 oz0.05. Spiel-Zeitstempel 441604528.234.
 local LOC_MESSAGES = {
-    'You are on %a+ server %d+ at r(%d+) lx(%d+%.?%d*) ly(%d+%.?%d*) i%d+ ox(%d+%.?%d*) oy(%d+%.?%d*) oz(%d+%.?%d*) h(%d+%.?%d*)',
-    'You are on %[EN%-RP%] %a+ server %d+ at r(%d+) lx(%d+%.?%d*) ly(%d+%.?%d*) i%d+ ox(%d+%.?%d*) oy(%d+%.?%d*) oz(%d+%.?%d*) h(%d+%.?%d*)',
-    'You are on %a+ server %d+ at r(%d+) lx(%d+%.?%d*) ly(%d+%.?%d*) i%d+ cInside ox(.-%d+%.?%d*) oy(.-%d+%.?%d*) oz(.-%d+%.?%d*) h(%d+%.?%d*)',
-    'You are on %a+ server %d+ at r(%d+) lx(%d+%.?%d*) ly(%d+%.?%d*) i%d+ ox(%d+%.?%d*) oy(%d+%.?%d*) oz(%d+%.?%d*)',
-    'You are on %[EN%-RP%] %a+ server %d+ at r(%d+) lx(%d+%.?%d*) ly(%d+%.?%d*) i%d+ ox(%d+%.?%d*) oy(%d+%.?%d*) oz(%d+%.?%d*)',
-    'You are on %a+ server %d+ at r(%d+) lx(%d+%.?%d*) ly(%d+%.?%d*) i%d+ cInside ox(.-%d+%.?%d*) oy(.-%d+%.?%d*) oz(.-%d+%.?%d*)',
-    -- not likely to match last --
-    'You are on %a+ server %d+ at r(%d+) lx(%d+%.?%d*) ly(%d+%.?%d*) ox(.-%d+%.?%d*) oy(.-%d+%.?%d*) oz(.-%d+%.?%d*) h(%d+%.?%d*)',
-    'You are on %[EN%-RP%] %a+ server %d+ at r(%d+) lx(%d+%.?%d*) ly(%d+%.?%d*) ox(.-%d+%.?%d*) oy(.-%d+%.?%d*) oz(.-%d+%.?%d*) h(%d+%.?%d*)',
-    'You are on %a+ server %d+ at r(%d+) lx(%d+%.?%d*) ly(%d+%.?%d*) cInside ox(.-%d+%.?%d*) oy(.-%d+%.?%d*) oz(.-%d+%.?%d*) h(%d+%.?%d*)',
-    'You are on %a+ server %d+ at r(%d+) lx(%d+%.?%d*) ly(%d+%.?%d*) ox(.-%d+%.?%d*) oy(.-%d+%.?%d*) oz(.-%d+%.?%d*)',
-    'You are on %[EN%-RP%] server %d+ at r(%d+) lx(%d+%.?%d*) ly(%d+%.?%d*) ox(.-%d+%.?%d*) oy(.-%d+%.?%d*) oz(.-%d+%.?%d*)',
-    'You are on %a+ server %d+ at r(%d+) lx(%d+%.?%d*) ly(%d+%.?%d*) cInside ox(.-%d+%.?%d*) oy(.-%d+%.?%d*) oz(.-%d+%.?%d*)',
-    'Ihr seid auf dem Server \"%[DE%] %a+\" %(%d+%) in r(%d+) lx(%d+%.?%d*) ly(%d+%.?%d*) ox(%d+%.?%d*) oy(%d+%.?%d*) oz(%d+%.?%d*) h(%d+%.?%d*)',
-    'Ihr seid auf dem Server \"%[DE%] %a+\" %(%d+%) in r(%d+) lx(%d+%.?%d*) ly(%d+%.?%d*) ox(%d+%.?%d*) oy(%d+%.?%d*) oz(%d+%.?%d*)',
+    -- Needed for The Hedge Maze and Tanglecorn
+    'r(%d+) lx(%d+%.?%d*) ly(%d+%.?%d*) i%d+ ox(%d+%.?%d*) oy(%d+%.?%d*) oz(%d+%.?%d*)',
+    'r(%d+) lx(%d+%.?%d*) ly(%d+%.?%d*) i%d+ ox(%d+%.?%d*) oy(%d+%.?%d*) oz(%d+%.?%d*) h(%d+%.?%d*)',
+    'r(%d+) lx(%d+%.?%d*) ly(%d+%.?%d*) ox(%d+%.?%d*) oy(%d+%.?%d*) oz(%d+%.?%d*)',
+    'r(%d+) lx(%d+%.?%d*) ly(%d+%.?%d*) ox(%d+%.?%d*) oy(%d+%.?%d*) oz(%d+%.?%d*) h(%d+%.?%d*)',
+
+    -- Other locations from Wapyoint, not likely to match:
+	-- 'r(%d+) lx(%d+%.?%d*) ly(%d+%.?%d*) i%d+ cInside ox(%d+%.?%d*) oy(%d+%.?%d*) oz(%d+%.?%d*) h(%d+%.?%d*)',
+	-- 'r(%d+) lx(%d+%.?%d*) ly(%d+%.?%d*) i%d+ cInside ox(%d+%.?%d*) oy(%d+%.?%d*) oz(%d+%.?%d*)',
+	-- 'r(%d+) lx(%d+%.?%d*) ly(%d+%.?%d*) cInside ox(%d+%.?%d*) oy(%d+%.?%d*) oz(%d+%.?%d*) h(%d+%.?%d*)',
+	-- 'r(%d+) lx(%d+%.?%d*) ly(%d+%.?%d*) cInside ox(%d+%.?%d*) oy(%d+%.?%d*) oz(%d+%.?%d*)'
 };
 
 function MazeMapParseChatLocation(message)

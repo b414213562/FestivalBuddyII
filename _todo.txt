@@ -1,10 +1,5 @@
 Change references from Ten to MazeResetTime or something similar.
 Warn if the maze will change sooner than the end of the maze quest.
-Do /loc just outside and inside the wheat maze and the festival ground mazes in each language, and only worry about supporting those.
-    Waypoint needs to be more generic, but we don't need that complexity here.
-    Either include versions where we face exactly north (0 degrees) and not, or if we don't use height then stop the pattern early.
-    If we continue to parse server names, make sure each server name in-game matches the patterns.
-        Better: STOP caring about the server name, go back to a simpler pattern. Start at r, end after h.
 
 if cornerCoordinates is empty, then instead of processing /loc raise the maze # selector window.
     OR - since we default to maze map 1, why aren't we populating the coordinates since it's always the same?
