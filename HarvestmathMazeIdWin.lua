@@ -85,7 +85,7 @@ end
 function HarvestmathMazeIdSetId(id)
     -- Get the current time:
     local now = Turbine.Engine.GetDate();
-    local previousTen = GetPreviousHourTen(now);
+    local previousTen = GetPreviousMazeResetHour(now);
 
     --Turbine.Shell.WriteLine("Using " .. PrettyPrintDate(previousTen) .. " as roll-over to current maze.");
     SETTINGS_SERVER.HARVESTMATH_MAZE_ID.NUMBER = id;

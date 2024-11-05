@@ -9,7 +9,7 @@ end
 
 ---Returns the previous 10:00 version of this structure.
 ---@param originalDate EngineGetDateTable The date to calculate the previous 10:00 from.
-function GetPreviousHourTen(originalDate)
+function GetPreviousMazeResetHour(originalDate)
     local mazeResetHourServer = 10; -- 10 am server time
     local mazeResetHourLocal = mazeResetHourServer + SETTINGS_ACCOUNT.LOCAL_TIME_OFFSET;
 
