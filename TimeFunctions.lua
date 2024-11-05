@@ -21,7 +21,7 @@ function GetPreviousHourTen(originalDate)
         date.Second == 0;
     if (doesTimeMatchReset) then return date; end
 
-    local hourAfterTen =
+    local isTimeAfterReset =
         (date.Hour > mazeResetHourLocal) or
         (date.Hour == mazeResetHourLocal and date.Minute > 0) or
         (date.Hour == mazeResetHourLocal and date.Minute == 0 and date.Second > 0);
@@ -29,7 +29,7 @@ function GetPreviousHourTen(originalDate)
     date.Hour = mazeResetHourLocal;
     date.Minute = 0;
     date.Second = 0;
-    if (hourAfterTen) then
+    if (isTimeAfterReset) then
         return date;
     end
 
