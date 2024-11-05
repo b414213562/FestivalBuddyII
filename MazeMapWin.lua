@@ -158,17 +158,17 @@ end
 
 function MazeMapGetHarvestmapMazeId()
     local now = Turbine.Engine.GetDate();
-    local previousTen = GetPreviousMazeResetHour(now);
+    local previousMazeResetHour = GetPreviousMazeResetHour(now);
 
     local storedId = SETTINGS_SERVER.HARVESTMATH_MAZE_ID.NUMBER;
     local storedTienUur = SETTINGS_SERVER.HARVESTMATH_MAZE_ID.ID_DATE;
 
     -- Add code so this function cannot be called without storedTienUur being valid.
-    if (previousTen == nil or previousTen.Year == nil or storedTienUur == nil or storedTienUur.Year == nil) then
+    if (previousMazeResetHour == nil or previousMazeResetHour.Year == nil or storedTienUur == nil or storedTienUur.Year == nil) then
         return 1;
     end
 
-    local difference = GetDayDifference(previousTen, storedTienUur);
+    local difference = GetDayDifference(previousMazeResetHour, storedTienUur);
     local mazeNumber = (storedId + difference) % 5;
     if (mazeNumber == 0) then mazeNumber = 5; end
 
