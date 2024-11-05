@@ -1,3 +1,30 @@
+---Returns a guess of whether or not we are currently between the times that one of
+---U.S. / Europe has changed for DST and the other has not yet.
+---If true, then the offset between U.S. and Europe is -1 from normal.
+---Note: Returns an incorrect result between midnight and the actual start/stop of DST.
+---@param localDateTime EngineGetDateTable
+---@return boolean
+function IsDstStartStopOverlap(localDateTime)
+    local localDayOfYear = localDateTime.DayOfYear;
+
+    -- We don't have the data to do a lookup, assume no overlap.
+    if (DaylightSavingTimeLookup[localDateTime.Year] == nil) then return false; end
+
+    local usDstStart = DaylightSavingTimeLookup[localDateTime.Year]["START"]["US"];
+    local europeDstStart = DaylightSavingTimeLookup[localDateTime.Year]["START"]["EU"];
+
+    local usDstStop = DaylightSavingTimeLookup[localDateTime.Year]["STOP"]["US"];
+    local europeDstStop = DaylightSavingTimeLookup[localDateTime.Year]["STOP"]["EU"];
+
+    if (localDayOfYear >= usDstStart and localDayOfYear < europeDstStart) then
+        return true
+    elseif (localDayOfYear >= europeDstStop and localDayOfYear < usDstStop) then
+        return true
+    end
+
+    return false;
+end
+
 ---Returns a nicely formatted string from a date.
 ---@param date EngineGetDateTable
 function PrettyPrintDate(date)

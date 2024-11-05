@@ -1,4 +1,3 @@
-Change references from Ten to MazeResetTime or something similar.
 Warn if the maze will change sooner than the end of the maze quest.
 
 if cornerCoordinates is empty, then instead of processing /loc raise the maze # selector window.

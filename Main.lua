@@ -51,6 +51,9 @@ import "CubePlugins.FestivalBuddyII.Dance";
 -- Other imports --
 import "CubePlugins.FestivalBuddyII.Commands";
 
+-- Tests --
+import "CubePlugins.FestivalBuddyII.Tests.TimeFunctionsTests";
+
 
 -----------------------------------------------------------------------------------------------------------
 
