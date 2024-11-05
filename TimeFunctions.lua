@@ -15,11 +15,11 @@ function GetPreviousHourTen(originalDate)
 
     local date = deepcopy(originalDate);
 
-    local hourIsTen =
+    local doesTimeMatchReset =
         date.Hour == mazeResetHourLocal and
         date.Minute == 0 and
         date.Second == 0;
-    if (hourIsTen) then return date; end
+    if (doesTimeMatchReset) then return date; end
 
     local hourAfterTen =
         (date.Hour > mazeResetHourLocal) or
