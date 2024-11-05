@@ -10,20 +10,23 @@ end
 ---Returns the previous 10:00 version of this structure.
 ---@param originalDate EngineGetDateTable The date to calculate the previous 10:00 from.
 function GetPreviousHourTen(originalDate)
+    local mazeResetHourServer = 10; -- 10 am server time
+    local mazeResetHourLocal = mazeResetHourServer + SETTINGS_ACCOUNT.LOCAL_TIME_OFFSET;
+
     local date = deepcopy(originalDate);
 
     local hourIsTen =
-        date.Hour == 10 and
+        date.Hour == mazeResetHourLocal and
         date.Minute == 0 and
         date.Second == 0;
     if (hourIsTen) then return date; end
 
     local hourAfterTen =
-        (date.Hour > 10) or
-        (date.Hour == 10 and date.Minute > 0) or
-        (date.Hour == 10 and date.Minute == 0 and date.Second > 0);
+        (date.Hour > mazeResetHourLocal) or
+        (date.Hour == mazeResetHourLocal and date.Minute > 0) or
+        (date.Hour == mazeResetHourLocal and date.Minute == 0 and date.Second > 0);
 
-    date.Hour = 10;
+    date.Hour = mazeResetHourLocal;
     date.Minute = 0;
     date.Second = 0;
     if (hourAfterTen) then
