@@ -35,16 +35,23 @@ function PrettyPrintDate(date)
 end
 
 ---Returns the previous 10:00 version of this structure.
+---Note: converts server time to local time using SETTINGS_ACCOUNT.LOCAL_TIME_OFFSET (passed as localTimeOffset).
+---e.g. for Netherlands this would be 16:00:00 most of the year, and 15:00:00 during DST-end overlap.
 ---@param originalDate EngineGetDateTable The date to calculate the previous 10:00 from.
-function GetPreviousMazeResetHour(originalDate)
+function GetPreviousMazeResetHour(originalDate, localTimeOffset)
     local mazeResetHourServer = 10; -- 10 am server time
-    local mazeResetHourLocal = mazeResetHourServer + SETTINGS_ACCOUNT.LOCAL_TIME_OFFSET;
 
+    local localTimeOffsetHour = math.floor(localTimeOffset or 0);
+    local localTimeOffsetMinute = (localTimeOffset - localTimeOffsetHour) * 60;
+
+    local mazeResetHourLocal = mazeResetHourServer + (localTimeOffsetHour or 0);
+
+    -- Duplicate the passed-in date so we can modify it as-needed:
     local date = deepcopy(originalDate);
 
     local doesTimeMatchReset =
         date.Hour == mazeResetHourLocal and
-        date.Minute == 0 and
+        date.Minute == localTimeOffsetMinute and
         date.Second == 0;
     if (doesTimeMatchReset) then return date; end
 
@@ -54,7 +61,7 @@ function GetPreviousMazeResetHour(originalDate)
         (date.Hour == mazeResetHourLocal and date.Minute == 0 and date.Second > 0);
 
     date.Hour = mazeResetHourLocal;
-    date.Minute = 0;
+    date.Minute = localTimeOffsetMinute;
     date.Second = 0;
     if (isTimeAfterReset) then
         return date;
@@ -77,6 +84,7 @@ function GetPreviousMazeResetHour(originalDate)
         date.Month = 12;
     end
 
+    -- Note: For DayOfWeek, Sunday = 1 and Saturday = 7
     date.DayOfWeek = date.DayOfWeek - 1;
     if (date.DayOfWeek < 1) then date.DayOfWeek = 7; end
     date.DayOfYear = date.DayOfYear - 1;

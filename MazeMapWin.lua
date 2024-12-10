@@ -158,7 +158,7 @@ end
 
 function MazeMapGetHarvestmapMazeId()
     local now = Turbine.Engine.GetDate();
-    local previousMazeResetHour = GetPreviousMazeResetHour(now);
+    local previousMazeResetHour = GetPreviousMazeResetHour(now, SETTINGS_ACCOUNT.LOCAL_TIME_OFFSET);
 
     local storedId = SETTINGS_SERVER.HARVESTMATH_MAZE_ID.NUMBER;
     local storedTienUur = SETTINGS_SERVER.HARVESTMATH_MAZE_ID.ID_DATE;
