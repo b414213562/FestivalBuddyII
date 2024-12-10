@@ -464,6 +464,8 @@ function ClearTable(TABLE)
     end
 end
 
+-- Function to handle parsing a string into a number correctly based on the locale:
+
 -- this will be true if the number is formatted with a 
 -- comma for the decimal place / radix point, false otherwise
 local isEuroFormat=(tonumber("1,000")==1);
