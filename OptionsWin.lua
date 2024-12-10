@@ -171,8 +171,28 @@ function DetectTimeZone(serverMonth, serverDay, serverHour, serverMinute, server
     offsetMinutes = 15 * math.floor(0.5 + offsetMinutes / 15);
     local offsetHours = offsetMinutes / 60;
 
-    Turbine.Shell.WriteLine("Offset hours: " .. offsetHours);
-    return offsetHours;
+    -- Turbine.Shell.WriteLine("Offset hours: " .. offsetHours);
+
+    -- Take into account plausible DST ending overlap.
+    local easternStandardTimeOffset = -5;
+    local easternDaylightTimeOffset = -4;
+
+    local ukMinimumOffset = 0;
+    local easternEuropeMaximumOffset = 3;
+
+    local minimumEuropeOffset = ukMinimumOffset - easternDaylightTimeOffset;
+    local maximumEuropeOffset = easternEuropeMaximumOffset - easternStandardTimeOffset;
+
+    local isProbablyEurope = offsetHours >= minimumEuropeOffset and offsetHours <= maximumEuropeOffset;
+    local isProbablyDstOverlap = IsDstStartStopOverlap(localDate);
+    local dstAdjustment = 0;
+    if (isProbablyDstOverlap) then dstAdjustment = 1; end
+
+    -- Turbine.Shell.WriteLine("isProbablyEurope: " .. dump(isProbablyEurope));
+    -- Turbine.Shell.WriteLine("isProbablyDstOverlap: " .. dump(isProbablyDstOverlap));
+    -- Turbine.Shell.WriteLine("dstAdjustment: " .. dstAdjustment);
+
+    return offsetHours + dstAdjustment;
 end
 
 function DrawMainWindowScaling(options, y)

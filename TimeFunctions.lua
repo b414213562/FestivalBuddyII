@@ -1,3 +1,33 @@
+-- Daylight Saving Time start/stop: (includes day of year)
+
+-- United States: (https://www.timeanddate.com/time/change/usa/new-york)
+-- Year     DST Start (Clock Forward)       DST End (Clock Backward)
+-- 2024     Sunday, 10 March, 02:00 (70)    Sunday, 3 November, 02:00 (308)
+-- 2025     Sunday,  9 March, 02:00 (68)    Sunday, 2 November, 02:00 (306)
+-- 2026     Sunday,  8 March, 02:00 (67)    Sunday, 1 November, 02:00 (305)
+-- 2027     Sunday, 14 March, 02:00 (73)    Sunday, 7 November, 02:00 (311)
+-- 2028     Sunday, 12 March, 02:00 (72)    Sunday, 5 November, 02:00 (310)
+-- 2029     Sunday, 11 March, 02:00 (70)    Sunday, 4 November, 02:00 (308)
+
+-- Netherlands: (https://www.timeanddate.com/time/change/netherlands/amsterdam)
+-- 2024    Sunday, 31 March, 02:00 (91)     Sunday, 27 October, 03:00 (301)
+-- 2025    Sunday, 30 March, 02:00 (89)     Sunday, 26 October, 03:00 (299)
+-- 2026    Sunday, 29 March, 02:00 (88)     Sunday, 25 October, 03:00 (298)
+-- 2027    Sunday, 28 March, 02:00 (87)     Sunday, 31 October, 03:00 (304)
+-- 2028    Sunday, 26 March, 02:00 (86)     Sunday, 29 October, 03:00 (303)
+-- 2029    Sunday, 25 March, 02:00 (84)     Sunday, 28 October, 03:00 (301)
+
+DaylightSavingTimeLookup = {
+    [2024] = { ["START"] = { ["US"] = 70; ["EU"] = 91; }; ["STOP"] = { ["US"] = 308; ["EU"] = 301; }; };
+    [2025] = { ["START"] = { ["US"] = 68; ["EU"] = 89; }; ["STOP"] = { ["US"] = 306; ["EU"] = 299; }; };
+    [2026] = { ["START"] = { ["US"] = 67; ["EU"] = 88; }; ["STOP"] = { ["US"] = 305; ["EU"] = 298; }; };
+    [2027] = { ["START"] = { ["US"] = 73; ["EU"] = 87; }; ["STOP"] = { ["US"] = 311; ["EU"] = 304; }; };
+    [2028] = { ["START"] = { ["US"] = 72; ["EU"] = 86; }; ["STOP"] = { ["US"] = 310; ["EU"] = 303; }; };
+    [2029] = { ["START"] = { ["US"] = 70; ["EU"] = 84; }; ["STOP"] = { ["US"] = 308; ["EU"] = 301; }; };
+
+    -- TODO in 2026: Verify these are still correct, and add future entries.
+};
+
 ---Returns a guess of whether or not we are currently between the times that one of
 ---U.S. / Europe has changed for DST and the other has not yet.
 ---If true, then the offset between U.S. and Europe is -1 from normal.
