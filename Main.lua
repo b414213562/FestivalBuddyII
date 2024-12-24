@@ -53,7 +53,9 @@ import "CubePlugins.FestivalBuddyII.Dance";
 import "CubePlugins.FestivalBuddyII.Commands";
 
 -- Tests --
-import "CubePlugins.FestivalBuddyII.Tests.TimeFunctionsTests";
+if (SHOW_DEBUG_OPTIONS) then
+    import "CubePlugins.FestivalBuddyII.Tests.TimeFunctionsTests";
+end
 
 
 -----------------------------------------------------------------------------------------------------------
