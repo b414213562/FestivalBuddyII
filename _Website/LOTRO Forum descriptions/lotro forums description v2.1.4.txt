@@ -1,0 +1,35 @@
+Festival Buddy II version v2.1.4 is now available at [URL='https://www.lotrointerface.com/downloads/info1218-FestivalBuddyII.html']lotrointerface.com[/URL].
+
+This update updates the Yule 2024 barter items, adds local time offset support, and a few other fixes.
+
+Version 2.1.4 release notes:
+
+General:
+[list]
+    [*] Incorporated code from Thurallor's Reminders for detecting the server/local time offset.
+    [*] Note: The local time offset detection tries to determine if you are in the period when the U.S. and Europe are entering / leaving daylight saving time at different times. It may get this wrong.
+[/list]
+
+Festivals:
+[list]
+    [*] Inn League / Ale Association:
+    [list]
+        [*] Added French and German versions of Inn League / Ale Association quick guide.
+    [/list]
+    [*] Harvestmath:
+    [list]
+        [*] Added local time offset detection to the Harvestmath Maze ID window.
+        [*] Incorporated local time offset into maze ID logic.
+    [/list]
+    [*] Yule:
+    [list]
+        [*] Updated barter items.
+        [*] Added a missing hyphen in English version of Yule quick guide ("snow-beast").
+    [/list]
+[/list]
+
+Bug fix:
+[list]
+    [*] Reset button and credits no longer cover the quick guide scrollbar.
+    [*] Fixed position detection via /loc, /pos, and /emp
+[/list]

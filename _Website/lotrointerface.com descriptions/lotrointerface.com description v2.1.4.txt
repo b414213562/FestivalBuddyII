@@ -1,0 +1,44 @@
+[SIZE="4"][COLOR="DeepSkyBlue"]Introduction[/COLOR][/SIZE]
+
+Festival Buddy II is a simple tool to help you keep track of the festivities through-out Middle-earth. It is an updated version of the original [url=https://www.lotrointerface.com/downloads/info767-FestivalBuddy.html]Festival Buddy, by Galuhad[/url].
+
+It will display the number of tokens in your wallet, when some effects have expired (e.g. the treasure chests in the Haunted Barrow), and a simple quest guide for those quests that are easily forgotten. There's also a dance instructor to help you with the dance quests, and a barter list showing the cost of all the items at the festival so you can refer to it on the go.
+
+Midsummer is a complicated festival. It now has an integrated Quick Guide (based on [url=https://lifebeyondtheshire.com/lotro-midsummer-festival-quick-guide/]LilRedHead's Quick Guide[/url]) you can use to keep track of all the interwoven quests of Minas Tirith. You can see a full walkthrough of the Minas Tirith Midsummer quests [url=https://youtu.be/FNFE1VSqW5g]here[/url].
+
+Festival Buddy II is available at present in English and partially in French and German.
+
+This plugin adds the following commands when loaded:
+/festival - Shows/hides the main window.
+
+Current festivals supported: Spring, Anniversary, Midsummer, Farmers Faire, Harvestmath, Yule, and Hobnanigans, plus Quick Guide support for the Inn Leauge/Ale Association delivery quests.
+
+Please let me know if you spot any errors, or if you have any requests.
+
+[SIZE="4"][COLOR="DeepSkyBlue"]Installation and Startup[/COLOR][/SIZE]
+
+[list]
+[*]Unzip the downloaded Festival Buddy II archive. You will get a folder called "CubePlugins". Move this folder into your Documents/The Lord of the Rings Online/Plugins folder.
+[*]Or if you prefer, you may use [url=https://www.lotrointerface.com/downloads/info663-LOTROPluginCompendium.html]Plugin Compendium[/url] to do the installation.
+[/list]
+
+To load the plugin, use the game's built-in Plugin Manager.  This can be found in the "^" menu, at the bottom of the screen.  Click the [IMG]http://i.imgur.com/aT2k9Lw.png[/IMG] icon, then choose "System" and then "Plugin Manager". (As a shortcut, you can also type "/plugins manager" in your chat window.)
+
+When the Plugin Manager opens, find Festival Buddy II in the list on the left side. Click "Load" to load the plugin. If you would like the plugin to load automatically each time you login, choose your character's name in the "Automatically Load For" pulldown menu.
+
+[SIZE="4"][COLOR="DeepSkyBlue"]Known Issues[/COLOR][/SIZE]
+[list]
+[*] If a midsummer quick guide objective both ends a quest and tries to specify the next quest to be loaded into the main UI, the quest does not load into the main UI.
+[/list]
+
+[SIZE="4"][COLOR="DeepSkyBlue"]Revision History[/COLOR][/SIZE]
+
+[list]
+[*] 2024-12-24 version 2.1.4: Updated Yule 2024 barter items, added local time offset support, and a few other fixes. Release notes [url=https://forums.lotro.com/index.php?threads/plugin-festival-buddy-ii.1514/post-135437]here[/url].
+[*] 2024-09-03 version 2.1.3: Fixed Hobnanigans play on Field 1, and in French and German. Updated Anniversary, Farmers Faire, and Yule barter items. Made alerts better. Release notes [url=https://forums.lotro.com/index.php?threads/plugin-festival-buddy-ii.1514/post-110521]here[/url].
+[*] 2024-06-09 version 2.1.2: Added numerous translations, and a few other minor changes. Release notes [url=https://forums.lotro.com/index.php?threads/plugin-festival-buddy-ii.1514/post-89856]here[/url].
+[*] 2024-03-15 version 2.1.1: Numerous festival and quick guide changes, and a major change to save file structures. Release notes [url=https://forums.lotro.com/index.php?threads/plugin-festival-buddy-ii.1514/post-74481]here[/url].
+[*] 2023-12-12 version 2.0.4: Added a quick guide for the Yule festival. Release notes [url=https://forums.lotro.com/index.php?threads/plugin-festival-buddy-ii.1514/post-56421]here[/url].
+[*] 2023-12-07 version 2.0.3: Added Harvestmath quest guides for Tanglecorn and Haunted Burrow. Added option to scale main window for readability. Added in numerous German and French translations. Release notes [url=https://forums.lotro.com/index.php?threads/plugin-festival-buddy-ii.1514/post-55145]here[/url].
+[*] 2023-06-20 version 2.0.1: Initial release of Festival Buddy II! Announcement [url=https://forums.lotro.com/index.php?threads/plugin-festival-buddy-ii.1514/]here[/url].
+[/list]
