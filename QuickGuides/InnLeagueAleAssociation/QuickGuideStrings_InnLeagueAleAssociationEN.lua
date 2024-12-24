@@ -53,7 +53,7 @@ QG_ILAA[QG_ILAA_INDEX.ALL_BUT_THE_CIDER_END].DISPLAY = function() return TurnInT
 QG_ILAA[QG_ILAA_INDEX.A_DRINK_OF_THE_BEST_CHARACTER_DRINK].DISPLAY = function() return string.format("In %s, collect %s from %s", HighlightLocation("The Plough and Stars"), HighlightQuestItem("Fake Swill"), HighlightNpc("Halson Tubwort")); end
 QG_ILAA[QG_ILAA_INDEX.NOT_ATLIS_FAVOURITE_END].DISPLAY = function() return TravelTurnInTo("Hrimbarg in Misty Mountains", "Not Atli's Favourite", "Óli"); end
 QG_ILAA[QG_ILAA_INDEX.ATLIS_FAVOURITE_PICKUP].DISPLAY = function() return TakeFrom("Atli's Favourite", "Óli"); end
-QG_ILAA[QG_ILAA_INDEX.ATLIS_FAVOURITE_DRINK].DISPLAY = function() return CollectFromLocation("Beakbreaker Ale", "The Comb and Wattle Inn, Bree-land"); end
+QG_ILAA[QG_ILAA_INDEX.ATLIS_FAVOURITE_DRINK].DISPLAY = function() return CollectFromLocation("Beakbreaker Ale", "The Comb and Wattle Inn, Combe, Bree-land"); end
 QG_ILAA[QG_ILAA_INDEX.ATLIS_FAVOURITE_END].DISPLAY = function() return TurnInTo("Atli's Favourite", "Óli"); end
 QG_ILAA[QG_ILAA_INDEX.A_DIFFERENT_REMINDER_OF_RIVENDELL_DRINK].DISPLAY = function() return TravelCollectFrom("The Last Homely House in Rivendell", "Fake Dorwinion White", "Sogadan"); end
 

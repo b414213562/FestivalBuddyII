@@ -53,7 +53,7 @@ QG_ILAA[QG_ILAA_INDEX.ALL_BUT_THE_CIDER_END].DISPLAY = function() return TurnInT
 QG_ILAA[QG_ILAA_INDEX.A_DRINK_OF_THE_BEST_CHARACTER_DRINK].DISPLAY = function() return string.format("In %s, collect %s from %s", HighlightLocation("La Charrue et les Etoiles"), HighlightQuestItem("Fausse Binouze"), HighlightNpc("Halson Fondecuve")); end
 QG_ILAA[QG_ILAA_INDEX.NOT_ATLIS_FAVOURITE_END].DISPLAY = function() return TravelTurnInTo("Hrimbarg en Monts Brumeux", "Atli n'apprécie pas trop", "Oli"); end
 QG_ILAA[QG_ILAA_INDEX.ATLIS_FAVOURITE_PICKUP].DISPLAY = function() return TakeFrom("La préférée d'Atli", "Oli"); end
-QG_ILAA[QG_ILAA_INDEX.ATLIS_FAVOURITE_DRINK].DISPLAY = function() return CollectFromLocation("Pinte de Blonde de Brisebec", "Auberge de la Combe et de la Caroncule, Pays de Bree"); end
+QG_ILAA[QG_ILAA_INDEX.ATLIS_FAVOURITE_DRINK].DISPLAY = function() return CollectFromLocation("Pinte de Blonde de Brisebec", "Auberge de la Combe et de la Caroncule, Combe, Pays de Bree"); end
 QG_ILAA[QG_ILAA_INDEX.ATLIS_FAVOURITE_END].DISPLAY = function() return TurnInTo("La préférée d'Atli", "Oli"); end
 QG_ILAA[QG_ILAA_INDEX.A_DIFFERENT_REMINDER_OF_RIVENDELL_DRINK].DISPLAY = function() return TravelCollectFrom("Dernière Maison Simple en Vallée de Fondcombe", "Faux vin blanc de Dorwinion", "Sogadan"); end
 

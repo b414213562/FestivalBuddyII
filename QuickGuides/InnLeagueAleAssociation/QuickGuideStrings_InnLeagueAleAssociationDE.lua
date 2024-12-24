@@ -53,7 +53,7 @@ QG_ILAA[QG_ILAA_INDEX.ALL_BUT_THE_CIDER_END].DISPLAY = function() return TurnInT
 QG_ILAA[QG_ILAA_INDEX.A_DRINK_OF_THE_BEST_CHARACTER_DRINK].DISPLAY = function() return string.format("Im %s, besorge %s von %s", HighlightLocation("Gasthaus Pflug und Sterne"), HighlightQuestItem("Gefälschtes Spülwasser"), HighlightNpc("Herwarth Kahnwurz")); end
 QG_ILAA[QG_ILAA_INDEX.NOT_ATLIS_FAVOURITE_END].DISPLAY = function() return TravelTurnInTo("Hrimbarg im Nebelgebirge", "Nicht Atlis Lieblingsgetränk", "Óli"); end
 QG_ILAA[QG_ILAA_INDEX.ATLIS_FAVOURITE_PICKUP].DISPLAY = function() return TakeFrom("Atlis Lieblingsgetränk", "Óli"); end
-QG_ILAA[QG_ILAA_INDEX.ATLIS_FAVOURITE_DRINK].DISPLAY = function() return CollectFromLocation("Schnabelbrecher-Bier", "Gasthaus \"Schluchtenflechter\", Breeland"); end
+QG_ILAA[QG_ILAA_INDEX.ATLIS_FAVOURITE_DRINK].DISPLAY = function() return CollectFromLocation("Schnabelbrecher-Bier", "Gasthaus \"Schluchtenflechter\", Schlucht, Breeland"); end
 QG_ILAA[QG_ILAA_INDEX.ATLIS_FAVOURITE_END].DISPLAY = function() return TurnInTo("Atlis Lieblingsgetränk", "Óli"); end
 QG_ILAA[QG_ILAA_INDEX.A_DIFFERENT_REMINDER_OF_RIVENDELL_DRINK].DISPLAY = function() return TravelCollectFrom("Das Letzte Heimelige Haus in Bruchtal-Klamm", "Gefälschter weißer Dorwinion", "Sogadan"); end
 
