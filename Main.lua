@@ -32,6 +32,7 @@ import "CubePlugins.FestivalBuddyII.QuickGuides.Midsummer.QuickGuideStrings_Mids
 import "CubePlugins.FestivalBuddyII.QuickGuides.Yule.QuickGuideStrings_Yule";
 
 -- Windows --
+import "CubePlugins.FestivalBuddyII.TimeOffsetControl";
 import "CubePlugins.FestivalBuddyII.Libraries.ColorPicker";
 import "CubePlugins.FestivalBuddyII.OptionsWin";
 import "CubePlugins.FestivalBuddyII.BarterWin";

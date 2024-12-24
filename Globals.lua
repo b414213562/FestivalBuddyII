@@ -12,6 +12,7 @@ MYWALLET = MYCHAR:GetWallet();
 EFFECTS = MYCHAR:GetEffects();
 MYBACKPACK = MYCHAR:GetBackpack();
 
+CALLBACKS = {};
 
 MYWALLET.ItemAdded = function (sender,args)
     RefreshTokenView();
@@ -359,3 +360,16 @@ FESTIVALS_UI_ORDER = {
     [7] = HOBNANIGANS;
     [8] = ILAA;
 };
+
+DoingTimeOffsetChanged = false;
+function SaveTimeOffset(value)
+    -- Don't process a save attempt if we're in the middle of broadcasting TimeOffsetChanged:
+    if DoingTimeOffsetChanged then return; end
+
+    local offset = tonumber(value);
+    SETTINGS_ACCOUNT.LOCAL_TIME_OFFSET = offset;
+
+    DoingTimeOffsetChanged = true
+    DoCallbacks(CALLBACKS, "TimeOffsetChanged", offset);
+    DoingTimeOffsetChanged = false;
+end

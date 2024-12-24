@@ -33,87 +33,13 @@ function DrawGenericOptions(options, y)
 
     y = DrawMainWindowScaling(options, y);
 
-    -- Offset from Server Time
-    local timeOffsetSectionLabel = Turbine.UI.Label();
-    timeOffsetSectionLabel:SetParent(options);
-    timeOffsetSectionLabel:SetSize(controlWidth, 30);
-    timeOffsetSectionLabel:SetPosition(indent, y);
-    timeOffsetSectionLabel:SetMultiline(true);
-    timeOffsetSectionLabel:SetText(GetString(_LANG.OPTIONS.WHAT_IS_LOCAL_TIME_OFFSET));
-    y = y + 30;
-
-    local localTimeOffset = SETTINGS_ACCOUNT.LOCAL_TIME_OFFSET;
-
-    local timeOffsetLabel = Turbine.UI.Label();
-    timeOffsetLabel:SetParent(options);
-    timeOffsetLabel:SetSize(180, 25);
-    timeOffsetLabel:SetPosition(indent, y);
-    timeOffsetLabel:SetText(GetString(_LANG.OPTIONS.OFFSET_HOURS));
---    timeOffsetLabel:SetBackColor(Turbine.UI.Color.DarkSlateBlue);
-    timeOffsetLabel:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleLeft);
-
-    local timeOffsetTextBox = Turbine.UI.Lotro.TextBox();
-    timeOffsetTextBox:SetParent(options);
-    timeOffsetTextBox:SetSize(60, 25);
-    timeOffsetTextBox:SetPosition(indent + timeOffsetLabel:GetWidth(), y);
-    timeOffsetTextBox:SetText(localTimeOffsetDisplay);
-    timeOffsetTextBox:SetMultiline(false);
-    timeOffsetTextBox.SetOffsetText = function(self, offset)
-        local localTimeOffsetDisplay = (((offset > 0) and "+") or "") .. offset;
-        self:SetText(localTimeOffsetDisplay);
-    end
-    timeOffsetTextBox:SetOffsetText(localTimeOffset);
-    timeOffsetTextBox.FocusLost = function(sender, args)
-        SaveTimeOffset(timeOffsetTextBox:GetText());
-    end
-    timeOffsetTextBox.KeyDown = function(sender, args)
-        local enter = 162;
-        if (args.Action == enter) then
-            SaveTimeOffset(timeOffsetTextBox:GetText());
-        end
-    end
-    TimeOffsetTextBox = timeOffsetTextBox;
-
-    local servertimeQuickslot = Turbine.UI.Lotro.Quickslot();
-    servertimeQuickslot:SetParent(options);
-    servertimeQuickslot:SetSize(60, 25);
-    servertimeQuickslot:SetPosition(indent + timeOffsetTextBox:GetLeft() + timeOffsetTextBox:GetWidth() + 20, y)
-    servertimeQuickslot:SetAllowDrop(false);
-    servertimeQuickslot:SetVisible(true);
-
-    local servertimeLabel = Turbine.UI.Label();
-    servertimeLabel:SetParent(options);
-    servertimeLabel:SetSize(60, 25);
-    servertimeLabel:SetPosition(servertimeQuickslot:GetLeft(), y);
-    servertimeLabel:SetMouseVisible(false);
-    servertimeLabel:SetBackColor(Turbine.UI.Color(0.1,0.15,0.3));
-    servertimeLabel:SetFont(Turbine.UI.Lotro.Font.Verdana12);
-    servertimeLabel:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleCenter);
-    servertimeLabel:SetText(GetString(_LANG.OPTIONS.DETECT_OFFSET));
-
-    servertimeQuickslot.MouseEnter = function(sender, args)
-        servertimeLabel:SetBackColor(Turbine.UI.Color(0.2,0.25,0.4));
-        servertimeLabel:SetForeColor(YELLOW);
-    end
-
-    servertimeQuickslot.MouseLeave = function(sender, args)
-        servertimeLabel:SetBackColor(Turbine.UI.Color(0.1,0.15,0.3));
-        servertimeLabel:SetForeColor(WHITE);
-    end
-
-    local servertimeShortcut = Turbine.UI.Lotro.Shortcut();
-    servertimeShortcut:SetType(Turbine.UI.Lotro.ShortcutType.Alias);
-    servertimeShortcut:SetData(GetString(_LANG.OPTIONS.SERVERTIME_COMMAND))
-    servertimeQuickslot:SetShortcut(servertimeShortcut);
-
-    y = y + 30
+    local timeOffsetSection = TimeOffsetControl();
+    timeOffsetSection:SetParent(options);
+    timeOffsetSection:SetPosition(indent, y);
+    timeOffsetSection:SetSize(controlWidth, 60);
+    y = y + 60;
 
     return y + 20;
-end
-
-function SaveTimeOffset(value)
-    local offset = tonumber(value);
-    SETTINGS_ACCOUNT.LOCAL_TIME_OFFSET = offset;
 end
 
 function CheckStandardChatForServerTime(message)
@@ -136,8 +62,7 @@ function CheckStandardChatForServerTime(message)
         if (amPm == "PM") then hour = hour + 12; end
 
         local offset = DetectTimeZone(month, day, hour, minute, amPm);
-        TimeOffsetTextBox:SetOffsetText(offset);
-        TimeOffsetTextBox:FocusLost();
+        SaveTimeOffset(offset);
     end
 end
 
