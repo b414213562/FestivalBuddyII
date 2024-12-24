@@ -569,9 +569,14 @@ _LANG = {
                 ["GERMAN"] = "Weizenlabyrinth ID";
             };
 
+            ["HARVESTMATH_MAZE_ID_WIN_INTRODUCTION"] = {
+                ["ENGLISH"] = "The Tanglecorn maze changes layout every day at 10 am server time.";
+                ["GERMAN"] = "Das Weizenlabyrinth ändert sein Aussehen jeden Tag um 10 Uhr Serverzeit (~16 Uhr).";
+            };
+
             ["HARVESTMATH_MAZE_ID_WIN_INSTRUCTIONS"] = {
-                ["ENGLISH"] = "The Tanglecorn maze changes layout every day at 10 am server time. There are five different layouts. Please identify the current layout by entering the maze and selecting what you see at the first intersection.";
-                ["GERMAN"] = "Das Weizenlabyrinth ändert sein Aussehen jeden Tag um 10 Uhr Serverzeit (~16 Uhr). Es gibt fünf verschiedene Labyrinthe. Bitte betrete den Irrgarten und wähle aus, was Du an der ersten Kreuzung siehst!";
+                ["ENGLISH"] = "There are five different layouts. Please identify the current layout by entering the maze and selecting what you see at the first intersection.";
+                ["GERMAN"] = "Es gibt fünf verschiedene Labyrinthe. Bitte betrete den Irrgarten und wähle aus, was Du an der ersten Kreuzung siehst!";
             };
 
             ["QUICK_GUIDE"] = {

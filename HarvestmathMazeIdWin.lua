@@ -4,7 +4,8 @@ function DrawHarvestmathMazeIdWin()
 
     local imageWidth = 240;
 
-    local contentWidth = imageWidth + 50;
+    local timeOffsetExtraWidth = 15;
+    local contentWidth = imageWidth + 50 + timeOffsetExtraWidth;
     local contentHeight = (100 + 10) * 5;
 
     local windowLeftBorder = 20;
@@ -12,12 +13,16 @@ function DrawHarvestmathMazeIdWin()
     local windowTopBorder = 40;
     local windowBottomBorder = 20;
 
-    local labelHeight = 100;
+    local introductionHeight = 30;
+    local instructionHeight = 50;
+    local timeOffsetHeight = 60;
+
+    local labelHeights = introductionHeight + timeOffsetHeight + instructionHeight;
 
 
     wHarvestmathMazeIdWinParent:SetSize(
         contentWidth + windowLeftBorder + windowRightBorder,
-        labelHeight + contentHeight + windowTopBorder + windowBottomBorder);
+        labelHeights + contentHeight + windowTopBorder + windowBottomBorder);
     wHarvestmathMazeIdWinParent:SetPosition(
         SETTINGS.HARVESTMATH_MAZE_ID_WIN.X,
         SETTINGS.HARVESTMATH_MAZE_ID_WIN.Y);
@@ -32,22 +37,46 @@ function DrawHarvestmathMazeIdWin()
         HarvestmathMazeIdSetVisible(false);
     end);
 
-    local explanationLabel = Turbine.UI.Label();
-    explanationLabel:SetParent(wHarvestmathMazeIdWinParent);
-    explanationLabel:SetSize(wHarvestmathMazeIdWinParent:GetWidth() - 20, labelHeight);
-    explanationLabel:SetMultiline(true);
-    explanationLabel:SetPosition(10, windowTopBorder + 10);
-    explanationLabel:SetText(GetString(_LANG.OTHER.WINDOWS.HARVESTMATH_MAZE_ID_WIN_INSTRUCTIONS));
+    local y = windowTopBorder + 10;
+
+    local introductionLabel = Turbine.UI.Label();
+    introductionLabel:SetParent(wHarvestmathMazeIdWinParent);
+    introductionLabel:SetSize(wHarvestmathMazeIdWinParent:GetWidth() - 20, introductionHeight);
+    introductionLabel:SetMultiline(true);
+    introductionLabel:SetPosition(10, y);
+    introductionLabel:SetText(GetString(_LANG.OTHER.WINDOWS.HARVESTMATH_MAZE_ID_WIN_INTRODUCTION));
+    --introductionLabel:SetBackColor(Turbine.UI.Color.DarkRed);
+    y = y + introductionHeight;
+
+    local timeOffsetSection = TimeOffsetControl();
+    timeOffsetSection:SetParent(wHarvestmathMazeIdWinParent);
+    timeOffsetSection:SetPosition(10, y);
+    timeOffsetSection:SetSize(wHarvestmathMazeIdWinParent:GetWidth() - 20, 60);
+    timeOffsetSection:SetBackColor(Turbine.UI.Color.DarkGreen);
+    AddCallback(CALLBACKS, "TimeOffsetChanged", function(sender, args)
+        --timeOffsetSection:SetBackColor(Turbine.UI.Color.Black);
+        timeOffsetSection:SetBackColor(Turbine.UI.Color.DarkBlue);
+    end);
+    y = y + 60;
+
+    local instructionsLabel = Turbine.UI.Label();
+    instructionsLabel:SetParent(wHarvestmathMazeIdWinParent);
+    instructionsLabel:SetSize(wHarvestmathMazeIdWinParent:GetWidth() - 20, instructionHeight);
+    instructionsLabel:SetMultiline(true);
+    instructionsLabel:SetPosition(10, y);
+    instructionsLabel:SetText(GetString(_LANG.OTHER.WINDOWS.HARVESTMATH_MAZE_ID_WIN_INSTRUCTIONS));
+    --instructionsLabel:SetBackColor(Turbine.UI.Color.DarkOliveGreen);
+    y = y + instructionHeight;
 
     -- A control to hold all of the other stuff:
     local selectionControlsParent = Turbine.UI.Control();
     selectionControlsParent:SetParent(wHarvestmathMazeIdWinParent);
     selectionControlsParent:SetSize(contentWidth, contentHeight);
-    selectionControlsParent:SetPosition(windowLeftBorder, windowTopBorder + labelHeight);
+    selectionControlsParent:SetPosition(windowLeftBorder, windowTopBorder + 10 + labelHeights);
 
     -- Add each image and button
     for i=1, 5 do
-        local y = (i - 1) * 100 + ((i - 1) * 10);
+        y = (i - 1) * 100 + ((i - 1) * 10);
 
         local mazeImage = Turbine.UI.Control();
         mazeImage:SetParent(selectionControlsParent);
