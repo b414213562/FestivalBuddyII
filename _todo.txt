@@ -1,3 +1,4 @@
+Maybe change storedTienUur to English? Or all the way Dutch?
 Add Option to try and account for Daylight Saving Time (US / EU only).
 
 Warn if the maze will change sooner than the end of the maze quest.
