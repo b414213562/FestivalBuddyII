@@ -156,7 +156,7 @@ function GetDaysOfMonth(month, year)
     end
 end
 
----Gets
+---Gets the number of days in a given year
 ---@param year any
 ---@return integer
 function GetDaysInYear(year)
