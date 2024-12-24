@@ -1,9 +1,21 @@
 v2.1.4 changes:
     General:
         Incorporated code from Thurallor's Reminders for detecting the server/local time offset.
+            Note: The local time offset detection tries to determine if you are in the period when the U.S. and Europe are entering / leaving daylight saving time at different times. It may get this wrong.
+
+    Festivals:
+        Inn League / Ale Association:
+            Added French and German versions of Inn League / Ale Association quick guide.
+        Harvestmath:
+            Added local time offset detection to the Harvestmath Maze ID window.
+            Incorporated local time offset into maze ID logic.
+        Yule:
+            Updated barter items.
+            Added a missing hyphen in English version of Yule quick guide ("snow-beast").
     
     Bug fix:
         Reset button and credits no longer cover the quick guide scrollbar.
+        Fixed position detection via /loc, /pos, and /emp
 
 v2.1.3 changes:
     Festivals:
