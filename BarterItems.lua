@@ -798,307 +798,337 @@ _BARTER =
     -- YULE --------------------------------------------------------------------------------------------
     [YULE] =
     {
-        [1]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "New Rewards (2023)"; }; };
-        [2]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879479164;}; -- Cloak of Icy Expeditions
-        [3]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879479157;}; -- Hooded Cloak of Icy Expeditions
-        [4]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879479162;}; -- Boots of Icy Expeditions
-        [5]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879479158;}; -- Mittens of Icy Expeditions
-        [6]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879479169;}; -- Hat of Icy Expeditions
-        [7]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879479166;}; -- Coat of Icy Expeditions
-        [8]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879479170;}; -- Garments of Icy Expeditions - Gift-wrapped Selection Box
-        [9]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879479289;}; -- Wintry Outdoor Fire-pit
-        [10]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879479288;}; -- Wintry Lantern Post
-        [11]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879479290;}; -- Wintry Yule Wall Banner
-        [12]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879479307;}; -- Tome of the Icy Expeditions Sheep
-        [13]={[2]={["YULE_FESTIVAL"]=80;};[1]=1879479318;}; -- Icy Expeditions Steed
-        [14]={[2]={["YULE_FESTIVAL"]=70;};[1]=1879479323;}; -- Icy Expeditions Caparison
-        [15]={[2]={["YULE_FESTIVAL"]=50;};[1]=1879479322;}; -- Icy Expeditions Head-piece
-        [16]={[2]={["YULE_FESTIVAL"]=40;};[1]=1879479324;}; -- Icy Expeditions Saddle
-        [17]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Consumables"; }; };
-        [18]={[2]={["YULE_FESTIVAL"]=1;};[1]=1879302499;}; -- Map to Winter-home
-        [19]={[3]=5;[2]={["YULE_FESTIVAL"]=5;};[1]=1879173156;}; -- 5 Frosty Beverages
-        [20]={[3]=5;[2]={["YULE_FESTIVAL"]=5;};[1]=1879173157;}; -- 5 Snow-jars
-        [21]={[3]=5;[2]={["YULE_FESTIVAL"]=5;};[1]=1879173158;}; -- 5 Grim Crystals
-        [22]={[3]=5;[2]={["YULE_FESTIVAL"]=5;};[1]=1879173159;}; -- 5 Piles of Fluffy Snow
-        [23]={[3]=5;[2]={["YULE_FESTIVAL"]=5;};[1]=1879199287;}; -- 5 Perfect Snowballs
-        [24]={[3]=5;[2]={["YULE_FESTIVAL"]=5;};[1]=1879199969;}; -- 5 Pieces of Rotten Fruit
-        [25]={[3]=5;[2]={["YULE_FESTIVAL"]=5;};[1]=1879199971;}; -- 5 Bags of Flower Petals
-        [26]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Cosmetic Clothing"; }; };
-        [27]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879174375;}; -- Snow-dusted Travelling Robe
-        [28]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879174376;}; -- Snow-dusted Travelling Gloves
-        [29]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879174377;}; -- Snow-dusted Travelling Hat
-        [30]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879174378;}; -- Snow-dusted Travelling Boots
-        [31]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879174379;}; -- Snow-dusted Travelling Shoulders
-        [32]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879199301;}; -- Yule Tunic and Trousers
-        [33]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879230028;}; -- Snowy Dress
-        [34]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879199305;}; -- Yule Scarf
-        [35]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879199306;}; -- Yule Stocking Cap
-        [36]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879230030;}; -- Snowy Tunic and Trousers
-        [37]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Cosmetic Cloaks"; }; };
-        [38]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879220544;}; -- Fancy Winter Cloak
-        [39]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879220543;}; -- Warm Winter Cloak
-        [40]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879199299;}; -- Yule Hoodless Cloak
-        [41]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879199295;}; -- Yule Hooded Cloak
-        [42]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879230031;}; -- Snowy Hoodless Cloak
-        [43]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879230029;}; -- Brisk Yule Cloak
-        [44]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Gift Boxes"; }; };
-        [45]={[2]={["YULE_FESTIVAL"]=10;};[1]=1879149782;}; -- Elf Gift Box
-        [46]={[2]={["YULE_FESTIVAL"]=10;};[1]=1879149762;}; -- Bree-land Gift Box
-        [47]={[2]={["YULE_FESTIVAL"]=10;};[1]=1879149778;}; -- Dwarf Gift Box
-        [48]={[2]={["YULE_FESTIVAL"]=10;};[1]=1879149758;}; -- Hobbit Gift Box
-        [49]={[2]={["YULE_FESTIVAL"]=1;};[1]=1879173117;}; -- 'Supreme Legendary Gift' Box
-        [50]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Housing Decoration"; }; };
-        [51]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879479288;}; -- Wintry Lantern Post
-        [52]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879479290;}; -- Wintry Yule Wall Banner
-        [53]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879456348;}; -- Wheeled Chair
-        [54]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879456975;}; -- Snow-strider's Mitten Shelf
-        [55]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879456974;}; -- Snow-strider's Wreath
-        [56]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879442119;}; -- Wreath of Shire Holly
-        [57]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879442118;}; -- Candlelit Wreath of Shire Holly
-        [58]={[2]={["YULE_FESTIVAL"]=20;};[1]=1879442974;}; -- Tall Decorative Wall - 20m (Dwarf Yule-fest)
-        [59]={[2]={["YULE_FESTIVAL"]=20;};[1]=1879442968;}; -- Decorative Wall - 20m (Dwarf Yule-fest)
-        [60]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879442964;}; -- Tall Decorative Wall - 10m (Dwarf Yule-fest)
-        [61]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879443084;}; -- Decorative Wall - 10m (Dwarf Yule-fest)
-        [62]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879414526;}; -- Red Poinsettia Yule Tree
-        [63]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879414527;}; -- White Poinsettia Yule Tree
-        [64]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879414525;}; -- Red Poinsettia Wreath
-        [65]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879414528;}; -- Bountiful Red Poinsettia Wreath
-        [66]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879414529;}; -- White Poinsettia Wreath
-        [67]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879414524;}; -- Bountiful White Poinsettia Wreath
-        [68]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879385131;}; -- Eye-catching Outdoor Yule-tree
-        [69]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879385132;}; -- Decorated Yule-tree
-        [70]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879362758;}; -- Snowball Arena
-        [71]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879199292;}; -- Theatre Stage
-        [72]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879199042;}; -- Unhappy Snowman
-        [73]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879199041;}; -- Brown-capped Snowman
-        [74]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879199044;}; -- Snowman with Mittens
-        [75]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879199040;}; -- Snowman with a Staff
-        [76]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879199043;}; -- Top Hat Snowman
-        [77]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879199039;}; -- Wizard's Hat Snowman
-        [78]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879199045;}; -- Bald Snowman
-        [79]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879199293;}; -- Yule Flag
-        [80]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879199294;}; -- Yule Banner
-        [81]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879149574;}; -- Mistletoe
-        [82]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Housing Maps"; }; };
-        [83]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879205565;}; -- Map of Thorin's Gate
-        [84]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879205568;}; -- Map of Forochel
-        [85]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879205545;}; -- Map of Frostbluff
-        [86]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879205550;}; -- Map of the Southern Barrow-downs
-        [87]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Titles"; }; };
-        [88]={[2]={["YULE_FESTIVAL"]=10;};[1]=1879200192;}; -- Title Writ - Thespian
-        [89]={[2]={["YULE_FESTIVAL"]=10;};[1]=1879200230;}; -- Title Writ - Star of the Show
-        [90]={[2]={["YULE_FESTIVAL"]=10;};[1]=1879200231;}; -- Title Writ - Protagonist
-        [91]={[2]={["YULE_FESTIVAL"]=10;};[1]=1879200232;}; -- Title Writ - Villain
-        [92]={[2]={["YULE_FESTIVAL"]=10;};[1]=1879200233;}; -- Title Writ - Extra
-        [93]={[2]={["YULE_FESTIVAL"]=10;};[1]=1879200229;}; -- Title Writ - Laughing-stock
-        [94]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Festival Gifts"; }; };
-        [95]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879479170;}; -- Garments of Icy Expeditions - Gift-wrapped Selection Box
-        [96]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879457009;}; -- Snow-strider's Garments - Gift-wrapped Selection Box
-        [97]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879442139;}; -- Shire Holly Yule Garments - Gift-wrapped selection box
-        [98]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879414301;}; -- Gala-worthy Yule Garments - Gift-wrapped selection box
-        [99]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879399239;}; -- Garments of the Ice Flower - Gift-wrapped selection box
-        [100]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879385130;}; -- Garments of the Northern Sky - Gift-wrapped selection box
-        [101]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879362283;}; -- Woodland Crown - Gift Wrapped
-        [102]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879362280;}; -- Fur Mantle - Gift Wrapped
-        [103]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879362279;}; -- Ornate Winter Dress - Gift Wrapped
-        [104]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879362282;}; -- Ornate Winter Jacket and Trousers - Gift Wrapped
-        [105]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879362281;}; -- Ornate Winter Cloak - Gift Wrapped
-        [106]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879342506;}; -- Hooded Cloak of Winter's Light - Gift Wrapped
-        [107]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879342503;}; -- Cloak of Winter's Light - Gift Wrapped
-        [108]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879342508;}; -- Robe of Winter's Light - Gift-wrapped
-        [109]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "The More the Merrier Steeds"; }; };
-        [110]={[2]={["YULE_FESTIVAL"]=80;};[1]=1879479318;}; -- Icy Expeditions Steed
-        [111]={[2]={["YULE_FESTIVAL"]=80;};[1]=1879479318;}; -- Snow-strider's Steed
-        [112]={[2]={["YULE_FESTIVAL"]=80;};[1]=1879442109;}; -- Shire Holly Steed
-        [113]={[2]={["YULE_FESTIVAL"]=60;};[1]=1879414302;}; -- Yule Gala Steed
-        [114]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "The More the Merrier Warsteed"; }; };
-        [115]={[2]={["YULE_FESTIVAL"]=70;};[1]=1879479323;}; -- Icy Expeditions Caparison
-        [116]={[2]={["YULE_FESTIVAL"]=50;};[1]=1879479322;}; -- Icy Expeditions Head-piece
-        [117]={[2]={["YULE_FESTIVAL"]=40;};[1]=1879479324;}; -- Icy Expeditions Saddle
-        [118]={[2]={["YULE_FESTIVAL"]=70;};[1]=1879456976;}; -- Snow-strider's Caparison
-        [119]={[2]={["YULE_FESTIVAL"]=50;};[1]=1879456983;}; -- Snow-strider's Head-piece
-        [120]={[2]={["YULE_FESTIVAL"]=40;};[1]=1879456972;}; -- Snow-strider's Saddle
-        [121]={[2]={["YULE_FESTIVAL"]=70;};[1]=1879442113;}; -- Shire Holly Caparison
-        [122]={[2]={["YULE_FESTIVAL"]=50;};[1]=1879442112;}; -- Shire Holly Head-piece
-        [123]={[2]={["YULE_FESTIVAL"]=40;};[1]=1879442115;}; -- Shire Holly Saddle
-        [124]={[2]={["YULE_FESTIVAL"]=50;};[1]=1879414307;}; -- Yule Gala Caparison
-        [125]={[2]={["YULE_FESTIVAL"]=50;};[1]=1879414308;}; -- Yule Gala Head-piece
-        [126]={[2]={["YULE_FESTIVAL"]=50;};[1]=1879414306;}; -- Yule Gala Saddle
-        [127]={[2]={["YULE_FESTIVAL"]=50;};[1]=1879399247;}; -- Caparison of the Ice Flower
-        [128]={[2]={["YULE_FESTIVAL"]=50;};[1]=1879399246;}; -- Head-piece of the Ice Flower
-        [129]={[2]={["YULE_FESTIVAL"]=50;};[1]=1879399248;}; -- Saddle of the Ice Flower
-        [130]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Cosmetic Pets and Emotes"; }; };
-        [131]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879479307;}; -- Tome of the Icy Expeditions Sheep
-        [132]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879414199;}; -- Tome of the Festive Yule Goat Kid
-        [133]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879414272;}; -- Tome of the Poinsettia Huorn
-        [134]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879414271;}; -- Tome of the Brown Bear Cub
-        [135]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879384672;}; -- Grant the Frost Breath Emote
-        [136]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879385162;}; -- Tome of the Snowy Barn Owl
-        [137]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879362277;}; -- Tome of the Snow Owl
-        [138]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879362278;}; -- Tome of the White Hare
-        [139]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879339317;}; -- Tome of the Kite of the Sickle
-        [140]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879341433;}; -- Tome of the Winter's Flower
-        [141]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879316486;}; -- Tome of the Grim
-        [142]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879316484;}; -- Tome of the Fire Grim
-        [143]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879316487;}; -- Tome of the Shadow Grim
-        [144]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879396921;}; -- Tome of the White Wolf-dog
-        [145]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Rewards of Yules Past - Part 1"; }; };
-        [146]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879456990;}; -- Snow-strider's Mantle
-        [147]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879456981;}; -- Snow-strider's Hooded Mantle
-        [148]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879456982;}; -- Snow-strider's Boots
-        [149]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879456985;}; -- Snow-strider's Mittens
-        [150]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879456971;}; -- Snow-strider's Cap
-        [151]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879456989;}; -- Snow-strider's Clothes
-        [152]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879442119;}; -- Wreath of Shire Holly
-        [153]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879442118;}; -- Candlelit Wreath of Shire Holly
-        [154]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879442103;}; -- Cloak of Shire Holly
-        [155]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879442104;}; -- Hooded Cloak of Shire Holly
-        [156]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879442099;}; -- Shire Holly Crown
-        [157]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879442102;}; -- Mantle of Shire Holly
-        [158]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879442101;}; -- Garments of Shire Holly
-        [159]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879442100;}; -- Gown of Shire Holly
-        [160]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879442116;}; -- Yule Candle
-        [161]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879414526;}; -- Red Poinsettia Yule Tree
-        [162]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879414527;}; -- White Poinsettia Yule Tree
-        [163]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879414525;}; -- Red Poinsettia Wreath
-        [164]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879414528;}; -- Bountiful Red Poinsettia Wreath
-        [165]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879414529;}; -- White Poinsettia Wreath
-        [166]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879414524;}; -- Bountiful White Poinsettia Wreath
-        [167]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Rewards of Yules Past - Part 2"; }; };
-        [168]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879414272;}; -- Tome of the Poinsettia Huorn
-        [169]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879414271;}; -- Tome of the Brown Bear Cub
-        [170]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879414241;}; -- Gala-worthy Tunic and Jacket
-        [171]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879414243;}; -- Gala-worthy Trousers and Boots
-        [172]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879414247;}; -- Gala-worthy Mantle
-        [173]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879414244;}; -- Gala-worthy Gloves
-        [174]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879414246;}; -- Poinsettia Crown
-        [175]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879414245;}; -- Cloak of Flurries
-        [176]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879414291;}; -- Hooded Cloak of Flurries
-        [177]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879414240;}; -- Gala-worthy Gown
-        [178]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879414242;}; -- Gala-worthy Shoulders
-        [179]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879362255;}; -- Woodland Crown
-        [180]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879362257;}; -- Fur Mantle
-        [181]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879362259;}; -- Ornate Winter Dress
-        [182]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879362256;}; -- Ornate Winter Jacket and Trousers
-        [183]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879362258;}; -- Ornate Winter Cloak
-        [184]={[2]={["YULE_FESTIVAL"]=20;};[1]=1879257607;}; -- Festive Wine Skin
-        [185]={[2]={["YULE_FESTIVAL"]=20;};[1]=1879257608;}; -- Bunch of Holly
-        [186]={[2]={["YULE_FESTIVAL"]=20;};[1]=1879257609;}; -- Festive Yule Mug
-        [187]={[2]={["YULE_FESTIVAL"]=30;};[1]=1879258392;}; -- Yule Sparkler
-        [188]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879329708;}; -- Shield of the Ithilien Winter
-        [189]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879329817;}; -- Hooded Mantle of Winter Drifts
-        [190]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879329819;}; -- Helmed Mantle of Winter Drifts
-        [191]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879315994;}; -- Robe of Winter Winds
-        [192]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879315992;}; -- Cloak of Winter Winds
-        [193]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879315993;}; -- Hooded Cloak of Winter Winds
-        [194]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879341982;}; -- Hooded Cloak of Winter's Light
-        [195]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879341275;}; -- Cloak of Winter's Light
-        [196]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879341279;}; -- Robe of Winter's Light
-        [197]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879397726;}; -- Ice Flower Cloak
-        [198]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879397727;}; -- Hooded Ice Flower Cloak
-        [199]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879397730;}; -- Ice Flower Trousers
-        [200]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879397725;}; -- Ice Flower Jacket
-        [201]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879399238;}; -- Ice Flower Crown
-        [202]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879378381;}; -- Brusque Bassoon
-        [203]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879385118;}; -- Vestments of the Northern Sky
-        [204]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879385119;}; -- Shoulder-guards of the Northern Sky
-        [205]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879385117;}; -- Hood of the Northern Sky
-        [206]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "The More the Merrier Rewards"; }; };
-        [207]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879301209;}; -- Wintertide Robe
-        [208]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879301208;}; -- Wintertide Cloak
-        [209]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879301207;}; -- Wintertide Hooded Cloak
-        [210]={[2]={["YULE_FESTIVAL"]=30;};[1]=1879257606;}; -- Wintry Yule Pack
-        [211]={[2]={["YULE_FESTIVAL"]=30;};[1]=1879258397;}; -- Wintry Yule Hat
-        [212]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879256492;}; -- Yule-tree Cloak
-        [213]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879257604;}; -- Wintry Yule Robe
-        [214]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879258369;}; -- Wintry Yule Cloak
-        [215]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879257572;}; -- Golden Festival Token
-        [216]={[3]=25;[2]={};[1]=1879256449;}; -- Yule Festival Token
-        [217]={[2]={["YULE_FESTIVAL"]=50;["YULE_GOLDFESTIVAL"]=1;};[1]=1879233702;}; -- Horned Snow-beast Cloak
-        [218]={[2]={["YULE_FESTIVAL"]=50;["YULE_GOLDFESTIVAL"]=1;};[1]=1879233699;}; -- Snow-beast Boots
-        [219]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Dyes"; }; };
-        [220]={[3]=6;[2]={["YULE_FESTIVAL"]=30;};[1]=1879329689;}; -- Moria Silver Dye
-        [221]={[3]=6;[2]={["YULE_FESTIVAL"]=30;};[1]=1879329677;}; -- Belegaer Blue Dye
-        [222]={[3]=6;[2]={["GENERIC_MITHRIL"]=10;};[1]=1879329679;}; -- Dark Mossy Green Dye
-        [223]={[3]=6;[2]={["GENERIC_MITHRIL"]=10;};[1]=1879329675;}; -- Lórien Gold Dye
-        [224]={[2]={["YULE_FESTIVAL"]=20;};[1]=1879397282;}; -- Assortment of Dwarf-candles
-        [225]={[3]=5;[2]={["YULE_FESTIVAL"]=10;};[1]=1879387361;}; -- Yellow Dwarf-candle
-        [226]={[3]=5;[2]={["YULE_FESTIVAL"]=10;};[1]=1879387362;}; -- Red Dwarf-candle
-        [227]={[3]=5;[2]={["YULE_FESTIVAL"]=10;};[1]=1879387363;}; -- Green Dwarf-candle
-        [228]={[3]=5;[2]={["YULE_FESTIVAL"]=10;};[1]=1879387360;}; -- Blue Dwarf-candle
-        [229]={[3]=5;[2]={["YULE_FESTIVAL"]=10;};[1]=1879387357;}; -- Orange Dwarf-candle
-        [230]={[3]=5;[2]={["YULE_FESTIVAL"]=10;};[1]=1879387358;}; -- White Dwarf-candle
-        [231]={[3]=5;[2]={["YULE_FESTIVAL"]=10;};[1]=1879387359;}; -- Purple Dwarf-candle
-        [232]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Yule Festivities"; }; };
-        [233]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879479289;}; -- Wintry Outdoor Fire-pit
-        [234]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879456987;}; -- Snow-strider's Woven Deer
-        [235]={[2]={["GENERIC_FESTIVITY"]=30;};[1]=1879442098;}; -- Tome of the Yule Princess Bunny
-        [236]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879416913;}; -- Blue Winter Celebration Banner
-        [237]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879416922;}; -- Purple Winter Celebration Banner
-        [238]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879385176;}; -- Storvâgûn's Smallest Mace
-        [239]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879385178;}; -- Storvâgûn's Smaller Mace
-        [240]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879385177;}; -- Storvâgûn's Small Mace
-        [241]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879411753;}; -- Tome of the Alabaster Donkey
-        [242]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879397728;}; -- Knitted Frostbluff Mitts of Comfort
-        [243]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879397729;}; -- Knitted Cozy Frostbluff Cap
-        [244]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879397731;}; -- Knitted Frostbluff Tunic of Snowball Resistance
-        [245]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879385146;}; -- Stately Malformed Snowman
-        [246]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879385145;}; -- Malformed Miniature Snow Ent
-        [247]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879385144;}; -- Malformed Snow Etten
-        [248]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879385093;}; -- Storvâgûn's Spare Shoulder-guards
-        [249]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879385096;}; -- Storvâgûn's Spare Helm
-        [250]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879385095;}; -- Storvâgûn's Spare Gloves
-        [251]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879385094;}; -- Storvâgûn's Spare Boots
-        [252]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879385143;}; -- Malformed Snow-wizard
-        [253]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879385123;}; -- Carrot Nose
-        [254]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879385160;}; -- Tome of the Snow Not-so-grim
-        [255]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879385120;}; -- Battle at Frostbluff Cloak
-        [256]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879385121;}; -- Hooded Battle at Frostbluff Cloak
-        [257]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Yule Festival Steeds - Mithril"; }; };
-        [258]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879479318;}; -- Icy Expeditions Steed
-        [259]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879456973;}; -- Snow-strider's Steed
-        [260]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879442109;}; -- Shire Holly Steed
-        [261]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879414302;}; -- Yule Gala Steed
-        [262]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879399228;}; -- Ice Flower Steed
-        [263]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879385115;}; -- Herald of the Northern Star
-        [264]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879362239;}; -- Winter Elk
-        [265]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879341281;}; -- Steed of Winter's Light
-        [266]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879329778;}; -- Steed of the Ithilien Winter
-        [267]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879315979;}; -- Steed of Winter Winds
-        [268]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879301199;}; -- Wintertide Steed
-        [269]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879229973;}; -- Snowy Steed
-        [270]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879220549;}; -- Frosty Steed
-        [271]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879199199;}; -- Glittering Yule Steed
-        [272]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879173352;}; -- Yule Festival Snow Steed
-        [273]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879149787;}; -- Yule Festival Steed
-        [274]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879256859;}; -- Wintry Yule Steed
-        [275]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Yule Festival War-steed - Mithril"; }; };
-        [276]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879479332;}; -- Icy Expeditions War-steed Cosmetics
-        [277]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879456976;}; -- Snow-strider's Caparison
-        [278]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879456983;}; -- Snow-strider's Head-piece
-        [279]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879456972;}; -- Snow-strider's Saddle
-        [280]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879442113;}; -- Shire Holly Caparison
-        [281]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879442112;}; -- Shire Holly Head-piece
-        [282]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879442115;}; -- Shire Holly Saddle
-        [283]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879414307;}; -- Yule Gala Caparison
-        [284]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879414308;}; -- Yule Gala Head-piece
-        [285]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879414306;}; -- Yule Gala Saddle
-        [286]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879399247;}; -- Caparison of the Ice Flower
-        [287]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879399246;}; -- Head-piece of the Ice Flower
-        [288]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879399248;}; -- Saddle of the Ice Flower
-        [289]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879385098;}; -- Lamp of the Northern Herald
-        [290]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879385097;}; -- Trappings of the Northern Herald
-        [291]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879385099;}; -- Head-piece of the Northern Herald
-        [292]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879385100;}; -- Saddle of the Northern Herald
-        [293]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879341330;}; -- Caparison of Winter's Light
-        [294]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879341335;}; -- Antlers of Winter's Light
-        [295]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879341334;}; -- War-steed's Leggings of Winter's Light
-        [296]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879341336;}; -- Saddle of Winter's Light
-        [297]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879341329;}; -- Tail of Winter's Light
-        [298]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879329812;}; -- Caparison of the Ithilien Winter
-        [299]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879315982;}; -- Winter Winds Caparison
-        [300]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879301206;}; -- Wintertide Caparison
-        [301]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879257016;}; -- War-steed Cosmetic Set - Wintry Yule Appearance
+        [1]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Jeffrey Bloomer, Barter Vendor"; }; };
+        [2]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Consumables"; }; };
+        [3]={[2]={["YULE_FESTIVAL"]=1;};[1]=1879302499;}; -- Map to Winter-home
+        [4]={[3]=5;[2]={["YULE_FESTIVAL"]=5;};[1]=1879173156;}; -- 5 Frosty Beverages
+        [5]={[3]=5;[2]={["YULE_FESTIVAL"]=5;};[1]=1879173157;}; -- 5 Snow-jars
+        [6]={[3]=5;[2]={["YULE_FESTIVAL"]=5;};[1]=1879173158;}; -- 5 Grim Crystals
+        [7]={[3]=5;[2]={["YULE_FESTIVAL"]=5;};[1]=1879173159;}; -- 5 Piles of Fluffy Snow
+        [8]={[3]=5;[2]={["YULE_FESTIVAL"]=5;};[1]=1879199287;}; -- 5 Perfect Snowballs
+        [9]={[3]=5;[2]={["YULE_FESTIVAL"]=5;};[1]=1879199969;}; -- 5 Pieces of Rotten Fruit
+        [10]={[3]=5;[2]={["YULE_FESTIVAL"]=5;};[1]=1879199971;}; -- 5 Bags of Flower Petals
+        [11]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cosmetic Clothing"; }; };
+        [12]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879174375;}; -- Snow-dusted Travelling Robe
+        [13]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879174376;}; -- Snow-dusted Travelling Gloves
+        [14]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879174377;}; -- Snow-dusted Travelling Hat
+        [15]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879174378;}; -- Snow-dusted Travelling Boots
+        [16]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879174379;}; -- Snow-dusted Travelling Shoulders
+        [17]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879199301;}; -- Yule Tunic and Trousers
+        [18]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879230028;}; -- Snowy Dress
+        [19]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879199305;}; -- Yule Scarf
+        [20]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879199306;}; -- Yule Stocking Cap
+        [21]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879230030;}; -- Snowy Tunic and Trousers
+        [22]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cosmetic Cloaks"; }; };
+        [23]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879220544;}; -- Fancy Winter Cloak
+        [24]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879220543;}; -- Warm Winter Cloak
+        [25]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879199299;}; -- Yule Hoodless Cloak
+        [26]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879199295;}; -- Yule Hooded Cloak
+        [27]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879230031;}; -- Snowy Hoodless Cloak
+        [28]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879230029;}; -- Brisk Yule Cloak
+        [29]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Gift Boxes"; }; };
+        [30]={[2]={["YULE_FESTIVAL"]=10;};[1]=1879149782;}; -- Elf Gift Box
+        [31]={[2]={["YULE_FESTIVAL"]=10;};[1]=1879149762;}; -- Bree-land Gift Box
+        [32]={[2]={["YULE_FESTIVAL"]=10;};[1]=1879149778;}; -- Dwarf Gift Box
+        [33]={[2]={["YULE_FESTIVAL"]=10;};[1]=1879149758;}; -- Hobbit Gift Box
+        [34]={[2]={["YULE_FESTIVAL"]=1;};[1]=1879173117;}; -- 'Supreme Legendary Gift' Box
+        [35]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Housing Decoration"; }; };
+        [36]={[2]={["YULE_FESTIVAL"]=20;};[1]=1879498312;}; -- Snowy Evening Walls
+        [37]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879498311;}; -- Decorative Wall - 10m (Snowy Evening)
+        [38]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879498310;}; -- Tall Decorative Wall - 10m (Snowy Evening)
+        [39]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879498309;}; -- Decorative Wall - 20m (Snowy Evening)
+        [40]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879498308;}; -- Tall Decorative Wall - 20m (Snowy Evening)
+        [41]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879479288;}; -- Wintry Lantern Post
+        [42]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879479290;}; -- Wintry Yule Wall Banner
+        [43]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879456348;}; -- Wheeled Chair
+        [44]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879456975;}; -- Snow-strider's Mitten Shelf
+        [45]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879456974;}; -- Snow-strider's Wreath
+        [46]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879442119;}; -- Wreath of Shire Holly
+        [47]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879442118;}; -- Candlelit Wreath of Shire Holly
+        [48]={[2]={["YULE_FESTIVAL"]=20;};[1]=1879442974;}; -- Tall Decorative Wall - 20m (Dwarf Yule-fest)
+        [49]={[2]={["YULE_FESTIVAL"]=20;};[1]=1879442968;}; -- Decorative Wall - 20m (Dwarf Yule-fest)
+        [50]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879442964;}; -- Tall Decorative Wall - 10m (Dwarf Yule-fest)
+        [51]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879443084;}; -- Decorative Wall - 10m (Dwarf Yule-fest)
+        [52]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879414526;}; -- Red Poinsettia Yule Tree
+        [53]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879414527;}; -- White Poinsettia Yule Tree
+        [54]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879414525;}; -- Red Poinsettia Wreath
+        [55]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879414528;}; -- Bountiful Red Poinsettia Wreath
+        [56]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879414529;}; -- White Poinsettia Wreath
+        [57]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879414524;}; -- Bountiful White Poinsettia Wreath
+        [58]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879385131;}; -- Eye-catching Outdoor Yule-tree
+        [59]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879385132;}; -- Decorated Yule-tree
+        [60]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879362758;}; -- Snowball Arena
+        [61]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879199292;}; -- Theatre Stage
+        [62]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879199042;}; -- Unhappy Snowman
+        [63]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879199041;}; -- Brown-capped Snowman
+        [64]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879199044;}; -- Snowman with Mittens
+        [65]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879199040;}; -- Snowman with a Staff
+        [66]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879199043;}; -- Top Hat Snowman
+        [67]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879199039;}; -- Wizard's Hat Snowman
+        [68]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879199045;}; -- Bald Snowman
+        [69]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879199293;}; -- Yule Flag
+        [70]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879199294;}; -- Yule Banner
+        [71]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879149574;}; -- Mistletoe
+        [72]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Housing Maps"; }; };
+        [73]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879205565;}; -- Map of Thorin's Gate
+        [74]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879205568;}; -- Map of Forochel
+        [75]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879205545;}; -- Map of Frostbluff
+        [76]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879205550;}; -- Map of the Southern Barrow-downs
+        [77]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Titles"; }; };
+        [78]={[2]={["YULE_FESTIVAL"]=10;};[1]=1879200192;}; -- Title Writ - Thespian
+        [79]={[2]={["YULE_FESTIVAL"]=10;};[1]=1879200230;}; -- Title Writ - Star of the Show
+        [80]={[2]={["YULE_FESTIVAL"]=10;};[1]=1879200231;}; -- Title Writ - Protagonist
+        [81]={[2]={["YULE_FESTIVAL"]=10;};[1]=1879200232;}; -- Title Writ - Villain
+        [82]={[2]={["YULE_FESTIVAL"]=10;};[1]=1879200233;}; -- Title Writ - Extra
+        [83]={[2]={["YULE_FESTIVAL"]=10;};[1]=1879200229;}; -- Title Writ - Laughing-stock
+        [84]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Alex Grey, Barter Vendor"; }; };
+        [85]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "New Rewards (2024)"; }; };
+        [86]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879498097;}; -- Cloak of a Snowy Evening
+        [87]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879498105;}; -- Hooded Cloak of a Snowy Evening
+        [88]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879498094;}; -- Boots of a Snowy Evening
+        [89]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879498096;}; -- Hood of a Snowy Evening
+        [90]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879498100;}; -- Scarf of a Snowy Evening
+        [91]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879498104;}; -- Jacket of a Snowy Evening
+        [92]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879498346;}; -- Snowy Evening Garments - Gift-wrapped Selection Box
+        [93]={[2]={["YULE_FESTIVAL"]=80;};[1]=1879498325;}; -- Snowy Evening Steed
+        [94]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879498325;}; -- Snowy Evening Steed
+        [95]={[2]={["YULE_FESTIVAL"]=70;};[1]=1879498352;}; -- Snowy Evening Caparison
+        [96]={[2]={["YULE_FESTIVAL"]=50;};[1]=1879498351;}; -- Snowy Evening Head-piece
+        [97]={[2]={["YULE_FESTIVAL"]=40;};[1]=1879498334;}; -- Snowy Evening Saddle
+        [98]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879498373;}; -- Snowy Evening War-steed Cosmetics
+        [99]={[2]={["YULE_FESTIVAL"]=20;};[1]=1879498312;}; -- Snowy Evening Walls
+        [100]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879498311;}; -- Decorative Wall - 10m (Snowy Evening)
+        [101]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879498310;}; -- Tall Decorative Wall - 10m (Snowy Evening)
+        [102]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879498309;}; -- Decorative Wall - 20m (Snowy Evening)
+        [103]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879498308;}; -- Tall Decorative Wall - 20m (Snowy Evening)
+        [104]={[2]={["GENERIC_FESTIVITY"]=30;};[1]=1879498320;}; -- Tome of the Snowy Evening Pig
+        [105]={[2]={["GENERIC_MITHRIL"]=30;};[1]=1879498320;}; -- Tome of the Snowy Evening Pig
+        [106]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Festival Gifts"; }; };
+        [107]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879498346;}; -- Snowy Evening Garments - Gift-wrapped Selection Box
+        [108]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879479170;}; -- Garments of Icy Expeditions - Gift-wrapped Selection Box
+        [109]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879457009;}; -- Snow-strider's Garments - Gift-wrapped Selection Box
+        [110]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879442139;}; -- Shire Holly Yule Garments - Gift-wrapped selection box
+        [111]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879414301;}; -- Gala-worthy Yule Garments - Gift-wrapped selection box
+        [112]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879399239;}; -- Garments of the Ice Flower - Gift-wrapped selection box
+        [113]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879385130;}; -- Garments of the Northern Sky - Gift-wrapped selection box
+        [114]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879362283;}; -- Woodland Crown - Gift Wrapped
+        [115]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879362280;}; -- Fur Mantle - Gift Wrapped
+        [116]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879362279;}; -- Ornate Winter Dress - Gift Wrapped
+        [117]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879362282;}; -- Ornate Winter Jacket and Trousers - Gift Wrapped
+        [118]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879362281;}; -- Ornate Winter Cloak - Gift Wrapped
+        [119]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879342506;}; -- Hooded Cloak of Winter's Light - Gift Wrapped
+        [120]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879342503;}; -- Cloak of Winter's Light - Gift Wrapped
+        [121]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879342508;}; -- Robe of Winter's Light - Gift-wrapped
+        [122]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "The More the Merrier Steeds"; }; };
+        [123]={[2]={["YULE_FESTIVAL"]=80;};[1]=1879498325;}; -- Snowy Evening Steed
+        [124]={[2]={["YULE_FESTIVAL"]=80;};[1]=1879479318;}; -- Icy Expeditions Steed
+        [125]={[2]={["YULE_FESTIVAL"]=80;};[1]=1879479318;}; -- Snow-strider's Steed
+        [126]={[2]={["YULE_FESTIVAL"]=80;};[1]=1879442109;}; -- Shire Holly Steed
+        [127]={[2]={["YULE_FESTIVAL"]=60;};[1]=1879414302;}; -- Yule Gala Steed
+        [128]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "The More the Merrier Warsteed"; }; };
+        [129]={[2]={["YULE_FESTIVAL"]=70;};[1]=1879498352;}; -- Snowy Evening Caparison
+        [130]={[2]={["YULE_FESTIVAL"]=50;};[1]=1879498351;}; -- Snowy Evening Head-piece
+        [131]={[2]={["YULE_FESTIVAL"]=40;};[1]=1879498334;}; -- Snowy Evening Saddle
+        [132]={[2]={["YULE_FESTIVAL"]=70;};[1]=1879479323;}; -- Icy Expeditions Caparison
+        [133]={[2]={["YULE_FESTIVAL"]=50;};[1]=1879479322;}; -- Icy Expeditions Head-piece
+        [134]={[2]={["YULE_FESTIVAL"]=40;};[1]=1879479324;}; -- Icy Expeditions Saddle
+        [135]={[2]={["YULE_FESTIVAL"]=70;};[1]=1879456976;}; -- Snow-strider's Caparison
+        [136]={[2]={["YULE_FESTIVAL"]=50;};[1]=1879456983;}; -- Snow-strider's Head-piece
+        [137]={[2]={["YULE_FESTIVAL"]=40;};[1]=1879456972;}; -- Snow-strider's Saddle
+        [138]={[2]={["YULE_FESTIVAL"]=70;};[1]=1879442113;}; -- Shire Holly Caparison
+        [139]={[2]={["YULE_FESTIVAL"]=50;};[1]=1879442112;}; -- Shire Holly Head-piece
+        [140]={[2]={["YULE_FESTIVAL"]=40;};[1]=1879442115;}; -- Shire Holly Saddle
+        [141]={[2]={["YULE_FESTIVAL"]=50;};[1]=1879414307;}; -- Yule Gala Caparison
+        [142]={[2]={["YULE_FESTIVAL"]=50;};[1]=1879414308;}; -- Yule Gala Head-piece
+        [143]={[2]={["YULE_FESTIVAL"]=50;};[1]=1879414306;}; -- Yule Gala Saddle
+        [144]={[2]={["YULE_FESTIVAL"]=50;};[1]=1879399247;}; -- Caparison of the Ice Flower
+        [145]={[2]={["YULE_FESTIVAL"]=50;};[1]=1879399246;}; -- Head-piece of the Ice Flower
+        [146]={[2]={["YULE_FESTIVAL"]=50;};[1]=1879399248;}; -- Saddle of the Ice Flower
+        [147]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cosmetic Pets and Emotes"; }; };
+        [148]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879479307;}; -- Tome of the Icy Expeditions Sheep
+        [149]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879414199;}; -- Tome of the Festive Yule Goat Kid
+        [150]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879414272;}; -- Tome of the Poinsettia Huorn
+        [151]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879414271;}; -- Tome of the Brown Bear Cub
+        [152]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879384672;}; -- Grant the Frost Breath Emote
+        [153]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879385162;}; -- Tome of the Snowy Barn Owl
+        [154]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879362277;}; -- Tome of the Snow Owl
+        [155]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879362278;}; -- Tome of the White Hare
+        [156]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879339317;}; -- Tome of the Kite of the Sickle
+        [157]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879341433;}; -- Tome of the Winter's Flower
+        [158]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879316486;}; -- Tome of the Grim
+        [159]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879316484;}; -- Tome of the Fire Grim
+        [160]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879316487;}; -- Tome of the Shadow Grim
+        [161]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879396921;}; -- Tome of the White Wolf-dog
+        [162]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Rewards of Yules Past - Part 1"; }; };
+        [163]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879479164;}; -- Cloak of Icy Expeditions
+        [164]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879479157;}; -- Hooded Cloak of Icy Expeditions
+        [165]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879479162;}; -- Boots of Icy Expeditions
+        [166]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879479158;}; -- Mittens of Icy Expeditions
+        [167]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879479169;}; -- Hat of Icy Expeditions
+        [168]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879479166;}; -- Coat of Icy Expeditions
+        [169]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879456990;}; -- Snow-strider's Mantle
+        [170]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879456981;}; -- Snow-strider's Hooded Mantle
+        [171]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879456982;}; -- Snow-strider's Boots
+        [172]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879456985;}; -- Snow-strider's Mittens
+        [173]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879456971;}; -- Snow-strider's Cap
+        [174]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879456989;}; -- Snow-strider's Clothes
+        [175]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879442119;}; -- Wreath of Shire Holly
+        [176]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879442118;}; -- Candlelit Wreath of Shire Holly
+        [177]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879442103;}; -- Cloak of Shire Holly
+        [178]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879442104;}; -- Hooded Cloak of Shire Holly
+        [179]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879442099;}; -- Shire Holly Crown
+        [180]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879442102;}; -- Mantle of Shire Holly
+        [181]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879442101;}; -- Garments of Shire Holly
+        [182]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879442100;}; -- Gown of Shire Holly
+        [183]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879442116;}; -- Yule Candle
+        [184]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879414526;}; -- Red Poinsettia Yule Tree
+        [185]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879414527;}; -- White Poinsettia Yule Tree
+        [186]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879414525;}; -- Red Poinsettia Wreath
+        [187]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879414528;}; -- Bountiful Red Poinsettia Wreath
+        [188]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879414529;}; -- White Poinsettia Wreath
+        [189]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879414524;}; -- Bountiful White Poinsettia Wreath
+        [190]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Rewards of Yules Past - Part 2"; }; };
+        [191]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879414272;}; -- Tome of the Poinsettia Huorn
+        [192]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879414271;}; -- Tome of the Brown Bear Cub
+        [193]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879414241;}; -- Gala-worthy Tunic and Jacket
+        [194]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879414243;}; -- Gala-worthy Trousers and Boots
+        [195]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879414247;}; -- Gala-worthy Mantle
+        [196]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879414244;}; -- Gala-worthy Gloves
+        [197]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879414246;}; -- Poinsettia Crown
+        [198]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879414245;}; -- Cloak of Flurries
+        [199]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879414291;}; -- Hooded Cloak of Flurries
+        [200]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879414240;}; -- Gala-worthy Gown
+        [201]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879414242;}; -- Gala-worthy Shoulders
+        [202]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879362255;}; -- Woodland Crown
+        [203]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879362257;}; -- Fur Mantle
+        [204]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879362259;}; -- Ornate Winter Dress
+        [205]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879362256;}; -- Ornate Winter Jacket and Trousers
+        [206]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879362258;}; -- Ornate Winter Cloak
+        [207]={[2]={["YULE_FESTIVAL"]=20;};[1]=1879257607;}; -- Festive Wine Skin
+        [208]={[2]={["YULE_FESTIVAL"]=20;};[1]=1879257608;}; -- Bunch of Holly
+        [209]={[2]={["YULE_FESTIVAL"]=20;};[1]=1879257609;}; -- Festive Yule Mug
+        [210]={[2]={["YULE_FESTIVAL"]=30;};[1]=1879258392;}; -- Yule Sparkler
+        [211]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879329708;}; -- Shield of the Ithilien Winter
+        [212]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879329817;}; -- Hooded Mantle of Winter Drifts
+        [213]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879329819;}; -- Helmed Mantle of Winter Drifts
+        [214]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879315994;}; -- Robe of Winter Winds
+        [215]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879315992;}; -- Cloak of Winter Winds
+        [216]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879315993;}; -- Hooded Cloak of Winter Winds
+        [217]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879341982;}; -- Hooded Cloak of Winter's Light
+        [218]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879341275;}; -- Cloak of Winter's Light
+        [219]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879341279;}; -- Robe of Winter's Light
+        [220]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879397726;}; -- Ice Flower Cloak
+        [221]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879397727;}; -- Hooded Ice Flower Cloak
+        [222]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879397730;}; -- Ice Flower Trousers
+        [223]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879397725;}; -- Ice Flower Jacket
+        [224]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879399238;}; -- Ice Flower Crown
+        [225]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879378381;}; -- Brusque Bassoon
+        [226]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879385118;}; -- Vestments of the Northern Sky
+        [227]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879385119;}; -- Shoulder-guards of the Northern Sky
+        [228]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879385117;}; -- Hood of the Northern Sky
+        [229]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "The More the Merrier Rewards"; }; };
+        [230]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879301209;}; -- Wintertide Robe
+        [231]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879301208;}; -- Wintertide Cloak
+        [232]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879301207;}; -- Wintertide Hooded Cloak
+        [233]={[2]={["YULE_FESTIVAL"]=30;};[1]=1879257606;}; -- Wintry Yule Pack
+        [234]={[2]={["YULE_FESTIVAL"]=30;};[1]=1879258397;}; -- Wintry Yule Hat
+        [235]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879256492;}; -- Yule-tree Cloak
+        [236]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879257604;}; -- Wintry Yule Robe
+        [237]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879258369;}; -- Wintry Yule Cloak
+        [238]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879257572;}; -- Golden Festival Token
+        [239]={[3]=25;[2]={};[1]=1879256449;}; -- Yule Festival Token
+        [240]={[2]={["YULE_FESTIVAL"]=50;["YULE_GOLDFESTIVAL"]=1;};[1]=1879233702;}; -- Horned Snow-beast Cloak
+        [241]={[2]={["YULE_FESTIVAL"]=50;["YULE_GOLDFESTIVAL"]=1;};[1]=1879233699;}; -- Snow-beast Boots
+        [242]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Dyes"; }; };
+        [243]={[3]=6;[2]={["YULE_FESTIVAL"]=30;};[1]=1879329689;}; -- Moria Silver Dye
+        [244]={[3]=6;[2]={["YULE_FESTIVAL"]=30;};[1]=1879329677;}; -- Belegaer Blue Dye
+        [245]={[3]=6;[2]={["GENERIC_MITHRIL"]=10;};[1]=1879329679;}; -- Dark Mossy Green Dye
+        [246]={[3]=6;[2]={["GENERIC_MITHRIL"]=10;};[1]=1879329675;}; -- Lórien Gold Dye
+        [247]={[2]={["YULE_FESTIVAL"]=20;};[1]=1879397282;}; -- Assortment of Dwarf-candles
+        [248]={[3]=5;[2]={["YULE_FESTIVAL"]=10;};[1]=1879387361;}; -- Yellow Dwarf-candle
+        [249]={[3]=5;[2]={["YULE_FESTIVAL"]=10;};[1]=1879387362;}; -- Red Dwarf-candle
+        [250]={[3]=5;[2]={["YULE_FESTIVAL"]=10;};[1]=1879387363;}; -- Green Dwarf-candle
+        [251]={[3]=5;[2]={["YULE_FESTIVAL"]=10;};[1]=1879387360;}; -- Blue Dwarf-candle
+        [252]={[3]=5;[2]={["YULE_FESTIVAL"]=10;};[1]=1879387357;}; -- Orange Dwarf-candle
+        [253]={[3]=5;[2]={["YULE_FESTIVAL"]=10;};[1]=1879387358;}; -- White Dwarf-candle
+        [254]={[3]=5;[2]={["YULE_FESTIVAL"]=10;};[1]=1879387359;}; -- Purple Dwarf-candle
+        [255]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Verbena Greenhand, Yule Festivity Token Vendor"; }; };
+        [256]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Yule Festivities"; }; };
+        [257]={[2]={["GENERIC_FESTIVITY"]=30;};[1]=1879498320;}; -- Tome of the Snowy Evening Pig
+        [258]={[2]={["GENERIC_MITHRIL"]=30;};[1]=1879498320;}; -- Tome of the Snowy Evening Pig
+        [259]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879479289;}; -- Wintry Outdoor Fire-pit
+        [260]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879456987;}; -- Snow-strider's Woven Deer
+        [261]={[2]={["GENERIC_FESTIVITY"]=30;};[1]=1879442098;}; -- Tome of the Yule Princess Bunny
+        [262]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879416913;}; -- Blue Winter Celebration Banner
+        [263]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879416922;}; -- Purple Winter Celebration Banner
+        [264]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879385176;}; -- Storvâgûn's Smallest Mace
+        [265]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879385178;}; -- Storvâgûn's Smaller Mace
+        [266]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879385177;}; -- Storvâgûn's Small Mace
+        [267]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879411753;}; -- Tome of the Alabaster Donkey
+        [268]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879397728;}; -- Knitted Frostbluff Mitts of Comfort
+        [269]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879397729;}; -- Knitted Cozy Frostbluff Cap
+        [270]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879397731;}; -- Knitted Frostbluff Tunic of Snowball Resistance
+        [271]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879385146;}; -- Stately Malformed Snowman
+        [272]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879385145;}; -- Malformed Miniature Snow Ent
+        [273]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879385144;}; -- Malformed Snow Etten
+        [274]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879385093;}; -- Storvâgûn's Spare Shoulder-guards
+        [275]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879385096;}; -- Storvâgûn's Spare Helm
+        [276]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879385095;}; -- Storvâgûn's Spare Gloves
+        [277]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879385094;}; -- Storvâgûn's Spare Boots
+        [278]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879385143;}; -- Malformed Snow-wizard
+        [279]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879385123;}; -- Carrot Nose
+        [280]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879385160;}; -- Tome of the Snow Not-so-grim
+        [281]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879385120;}; -- Battle at Frostbluff Cloak
+        [282]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879385121;}; -- Hooded Battle at Frostbluff Cloak
+        [283]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Mount Vendor, Mithril Trader"; }; };
+        [284]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Yule Festival Steeds - Mithril"; }; };
+        [285]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879498325;}; -- Snowy Evening Steed
+        [286]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879479318;}; -- Icy Expeditions Steed
+        [287]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879456973;}; -- Snow-strider's Steed
+        [288]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879442109;}; -- Shire Holly Steed
+        [289]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879414302;}; -- Yule Gala Steed
+        [290]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879399228;}; -- Ice Flower Steed
+        [291]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879385115;}; -- Herald of the Northern Star
+        [292]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879362239;}; -- Winter Elk
+        [293]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879341281;}; -- Steed of Winter's Light
+        [294]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879329778;}; -- Steed of the Ithilien Winter
+        [295]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879315979;}; -- Steed of Winter Winds
+        [296]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879301199;}; -- Wintertide Steed
+        [297]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879229973;}; -- Snowy Steed
+        [298]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879220549;}; -- Frosty Steed
+        [299]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879199199;}; -- Glittering Yule Steed
+        [300]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879173352;}; -- Yule Festival Snow Steed
+        [301]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879149787;}; -- Yule Festival Steed
+        [302]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879256859;}; -- Wintry Yule Steed
+        [303]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Yule Festival War-steed - Mithril"; }; };
+        [304]={[2]={};[1]=1879498373;}; -- Snowy Evening War-steed Cosmetics
+        [305]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879479332;}; -- Icy Expeditions War-steed Cosmetics
+        [306]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879456976;}; -- Snow-strider's Caparison
+        [307]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879456983;}; -- Snow-strider's Head-piece
+        [308]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879456972;}; -- Snow-strider's Saddle
+        [309]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879442113;}; -- Shire Holly Caparison
+        [310]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879442112;}; -- Shire Holly Head-piece
+        [311]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879442115;}; -- Shire Holly Saddle
+        [312]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879414307;}; -- Yule Gala Caparison
+        [313]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879414308;}; -- Yule Gala Head-piece
+        [314]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879414306;}; -- Yule Gala Saddle
+        [315]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879399247;}; -- Caparison of the Ice Flower
+        [316]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879399246;}; -- Head-piece of the Ice Flower
+        [317]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879399248;}; -- Saddle of the Ice Flower
+        [318]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879385098;}; -- Lamp of the Northern Herald
+        [319]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879385097;}; -- Trappings of the Northern Herald
+        [320]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879385099;}; -- Head-piece of the Northern Herald
+        [321]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879385100;}; -- Saddle of the Northern Herald
+        [322]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879341330;}; -- Caparison of Winter's Light
+        [323]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879341335;}; -- Antlers of Winter's Light
+        [324]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879341334;}; -- War-steed's Leggings of Winter's Light
+        [325]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879341336;}; -- Saddle of Winter's Light
+        [326]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879341329;}; -- Tail of Winter's Light
+        [327]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879329812;}; -- Caparison of the Ithilien Winter
+        [328]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879315982;}; -- Winter Winds Caparison
+        [329]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879301206;}; -- Wintertide Caparison
+        [330]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879257016;}; -- War-steed Cosmetic Set - Wintry Yule Appearance
+                
     };
 
     -- ANNIVERSARY --------------------------------------------------------------------------------------------
