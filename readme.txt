@@ -1,3 +1,8 @@
+v2.1.5 changes:
+    Festivals:
+        Anniversary:
+            Updated barter items
+
 v2.1.4 changes:
     General:
         Incorporated code from Thurallor's Reminders for detecting the server/local time offset.

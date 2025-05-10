@@ -1134,56 +1134,383 @@ _BARTER =
     -- ANNIVERSARY --------------------------------------------------------------------------------------------
     [ANNIVERSARY] =
     {
-        [1]={[1]=1879224343;[2]={["ANNIVERSARY_STEEL"]=1;};[3]=20;};    -- Marks
-        [2]={[1]=1879303553;[2]={["ANNIVERSARY_STEEL"]=10;};};            -- Cosmetic Gift Box
-        [3]={[1]=1879303552;[2]={["ANNIVERSARY_STEEL"]=10;};};            -- Battle Gift Box
-        [4]={[1]=1879303554;[2]={["ANNIVERSARY_STEEL"]=25;};};            -- Legendary Gift Box
-        [5]={[1]=1879305980;[2]={["ANNIVERSARY_FESTIVAL"]=10;};};        -- Reveller's Robe of the Odogil
-        [6]={[1]=1879306030;[2]={["ANNIVERSARY_FESTIVAL"]=10;};};        -- Reveller's Cloak of the Odogil
-        [7]={[1]=1879270554;[2]={["ANNIVERSARY_FESTIVAL"]=5;};};        -- Dark Sky Firework Cloak
-        [8]={[1]=1879270557;[2]={["ANNIVERSARY_FESTIVAL"]=7;};};        -- Teal Spark-maker's Pack
-        [9]={[1]=1879270556;[2]={["ANNIVERSARY_FESTIVAL"]=10;};};        -- Decorated Cake Topper
-        [10]={[1]=1879270555;[2]={["ANNIVERSARY_FESTIVAL"]=10;};};        -- Patterned You-in-a-box
-        [11]={[1]=1879233463;[2]={["ANNIVERSARY_FESTIVAL"]=10;};};        -- Cloak of the Fifth Season
-        [12]={[1]=1879234457;[2]={["ANNIVERSARY_FESTIVAL"]=10;};};        -- You-in-a-box
-        [13]={[1]=1879234456;[2]={["ANNIVERSARY_FESTIVAL"]=10;};};        -- Cake Topper
-        [14]={[1]=1879234458;[2]={["ANNIVERSARY_FESTIVAL"]=7;};};        -- Spark-maker's Pack
-        [15]={[1]=1879234461;[2]={["ANNIVERSARY_FESTIVAL"]=7;};};        -- Firework Launcher's Face Guard
-        [16]={[1]=1879234459;[2]={["ANNIVERSARY_FESTIVAL"]=5;};};        -- Firework Hooded Cloak
-        [17]={[1]=1879234460;[2]={["ANNIVERSARY_FESTIVAL"]=5;};};        -- Firework Hoodless Cloak
-        [18]={[1]=1879202457;[2]={["ANNIVERSARY_FESTIVAL"]=4;};};        -- Silken Gown of Golden Splendour
-        [19]={[1]=1879202465;[2]={["ANNIVERSARY_FESTIVAL"]=4;};};        -- Silken Robe of Golden Splendour
-        [20]={[1]=1879202454;[2]={["ANNIVERSARY_FESTIVAL"]=4;};};        -- Cloak of the Shining Star
-        [21]={[1]=1879202455;[2]={["ANNIVERSARY_FESTIVAL"]=4;};};        -- Windmill
-        [22]={[1]=1879202461;[2]={["ANNIVERSARY_FESTIVAL"]=4;};};        -- Toy Windmill
-        [23]={[1]=1879233669;[2]={["ANNIVERSARY_FESTIVAL"]=1;};[3]=5;};    -- Pile of Mysterious Powder
-        [24]={[1]=1879270565;[2]={["ANNIVERSARY_FESTIVAL"]=5;};[3]=5;};    -- White Anniversary Fireworks
-        [25]={[1]=1879270566;[2]={["ANNIVERSARY_FESTIVAL"]=5;};[3]=5;};    -- Rainbow Anniversary Fireworks
-        [26]={[1]=1879303586;[2]={["ANNIVERSARY_FESTIVAL"]=1;};};        -- Map to Bree - Anniversary
-        [27]={[1]=1879205547;[2]={["ANNIVERSARY_FESTIVAL"]=5;};};        -- Map of The Walls of Moria
-        [28]={[1]=1879205569;[2]={["ANNIVERSARY_FESTIVAL"]=5;};};        -- Map of The Silvertine Lodes
-        [29]={[1]=1879205562;[2]={["ANNIVERSARY_FESTIVAL"]=5;};};        -- Map of Durin's Way
-        [30]={[1]=1879205566;[2]={["ANNIVERSARY_FESTIVAL"]=5;};};        -- Map of The Water-works
-        [31]={[1]=1879205542;[2]={["ANNIVERSARY_FESTIVAL"]=5;};};        -- Map of Zelem-melek
-        [32]={[1]=1879205549;[2]={["ANNIVERSARY_FESTIVAL"]=5;};};        -- Map of Nud-melek
-        [33]={[1]=1879205554;[2]={["ANNIVERSARY_FESTIVAL"]=5;};};        -- Map of the Foundations of Stone
-        [34]={[1]=1879205546;[2]={["ANNIVERSARY_FESTIVAL"]=5;};};        -- Map of the Redhorn Lodes
-        [35]={[1]=1879205551;[2]={["ANNIVERSARY_FESTIVAL"]=5;};};        -- Map of Zirakzigil
-        [36]={[1]=1879205558;[2]={["ANNIVERSARY_FESTIVAL"]=5;};};        -- Map of the Flaming Deeps
-        [37]={[1]=1879205563;[2]={["ANNIVERSARY_FESTIVAL"]=5;};};        -- Map of The Grand Stair
-        [38]={[1]=1879202463;[2]={["ANNIVERSARY_FESTIVAL"]=3;};};        -- Map of Bree-land
-        [39]={[1]=1879202456;[2]={["ANNIVERSARY_FESTIVAL"]=3;};};        -- Map of The Shire
-        [40]={[1]=1879202459;[2]={["ANNIVERSARY_FESTIVAL"]=3;};};        -- Map of Ered Luin
-        [41]={[1]=1879202464;[2]={["ANNIVERSARY_FESTIVAL"]=3;};};        -- Map of the Lone-lands
-        [42]={[1]=1879202466;[2]={["ANNIVERSARY_FESTIVAL"]=3;};};        -- Map of the North Downs
-        [43]={[1]=1879202460;[2]={["ANNIVERSARY_FESTIVAL"]=3;};};        -- Map of the Trollshaws
-        [44]={[1]=1879202462;[2]={["ANNIVERSARY_FESTIVAL"]=3;};};        -- Map of the Misty Mountains
-        [45]={[1]=1879202453;[2]={["ANNIVERSARY_FESTIVAL"]=3;};};        -- Map of Angmar
-        [46]={[1]=1879305981;[2]={["ANNIVERSARY_FESTIVAL"]=40;};};        -- Steed of Odogil
-        [47]={[1]=1879270562;[2]={["ANNIVERSARY_FESTIVAL"]=20;};};        -- Teal Fireworks Laden Steed
-        [48]={[1]=1879305987;[2]={["ANNIVERSARY_FESTIVAL"]=10;};};        -- Caparison of Odogil
-        [49]={[1]=1879201537;[2]={["GENERIC_MITHRIL"]=70;};};        -- Anniversary Steed
-        [50]={[1]=1879233624;[2]={["GENERIC_MITHRIL"]=70;};};        -- Fireworks Laden Steed
+        [1]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Frithbert, Games-master"; }; };
+        [2]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Current Anniversary Rewards"; }; };
+        [3]={[2]={["ANNIVERSARY_FESTIVAL"]=40;};[1]=1879503804;}; -- Elk of Baker's Delight
+        [4]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879503804;}; -- Elk of Baker's Delight
+        [5]={[2]={["ANNIVERSARY_FESTIVAL"]=20;};[1]=1879503799;}; -- Tome of the Baker's Delight Cub
+        [6]={[2]={["GENERIC_MITHRIL"]=30;};[1]=1879503799;}; -- Tome of the Baker's Delight Cub
+        [7]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879503811;}; -- Hat of Baker's Delight
+        [8]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879503810;}; -- Jacket and Leggings of Baker's Delight
+        [9]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879503809;}; -- Shoes of Baker's Delight
+        [10]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879503833;}; -- Baker's Delight Garments - Gift-wrapped Selection Box
+        [11]={[2]={["ANNIVERSARY_FESTIVAL"]=25;};[1]=1879503812;}; -- Dining Table of Baker's Delight
+        [12]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879503814;}; -- Dining Chair of Baker's Delight
+        [13]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879503813;}; -- Banner of Baker's Delight
+        [14]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879503816;}; -- Ceremonial Staff of the Searcher
+        [15]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879503821;}; -- Ceremonial Spear of Battle
+        [16]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879503818;}; -- Ceremonial Boar-tooth Dagger
+        [17]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879503817;}; -- Ceremonial Sword of the Mountains
+        [18]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879503815;}; -- Ceremonial Bow of the Hills
+        [19]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879503819;}; -- Ceremonial Cleaver Halberd
+        [20]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879503820;}; -- Ceremonial Great Hammer of Runes
+        [21]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cosmetic Rewards - Older"; }; };
+        [22]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879406734;}; -- Plated Ceremonial Greaves
+        [23]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879406735;}; -- Layered Ceremonial Bracers
+        [24]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879406733;}; -- Flourished Ceremonial Helm
+        [25]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879406731;}; -- Gilded Ceremonial Pauldrons
+        [26]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879406732;}; -- Engraved Ceremonial Breastplate
+        [27]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879387672;}; -- Cloak of the Storied Warrior
+        [28]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879387673;}; -- Hooded Cloak of the Storied Warrior
+        [29]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879387675;}; -- Armour of the Storied Warrior
+        [30]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879387671;}; -- Shoulder-guards of the Storied Warrior
+        [31]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879387674;}; -- Hood of the Storied Warrior
+        [32]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879343739;}; -- Helm of the Unflagging Dragon
+        [33]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879343736;}; -- Pauldrons of the Unflagging Dragon
+        [34]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879343735;}; -- Breastplate of the Unflagging Dragon
+        [35]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879345084;}; -- Gloves of the Unflagging Dragon
+        [36]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879343731;}; -- Boots of the Unflagging Dragon
+        [37]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879343737;}; -- Cloak of the Unflagging Dragon
+        [38]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879344879;}; -- Hooded Cloak of the Unflagging Dragon
+        [39]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879331561;}; -- Fire Flower Cloak
+        [40]={[2]={["ANNIVERSARY_FESTIVAL"]=5;};[1]=1879270554;}; -- Dark Sky Firework Cloak
+        [41]={[2]={["ANNIVERSARY_FESTIVAL"]=7;};[1]=1879270557;}; -- Teal Spark-maker's Pack
+        [42]={[2]={["ANNIVERSARY_FESTIVAL"]=7;};[1]=1879306030;}; -- Reveller's Cloak of the Odogil
+        [43]={[2]={["ANNIVERSARY_FESTIVAL"]=7;};[1]=1879305980;}; -- Reveller's Robe of the Odogil
+        [44]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879368031;}; -- Quiver of the Waking Wood
+        [45]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879367966;}; -- Armour of the Waking Wood
+        [46]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879367963;}; -- Shoulder-guards of the Waking Wood
+        [47]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879367965;}; -- Wrist-guards of the Waking Wood
+        [48]={[2]={["ANNIVERSARY_FESTIVAL"]=7;};[1]=1879368089;}; -- Bardic Fiddle
+        [49]={[2]={["ANNIVERSARY_FESTIVAL"]=15;};[1]=1879365751;}; -- Traveller's Trusty Fiddle
+        [50]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879270556;}; -- Decorated Cake Topper
+        [51]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879270555;}; -- Patterned You-in-a-box
+        [52]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879233463;}; -- Cloak of the Fifth Season
+        [53]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879234457;}; -- You-in-a-box
+        [54]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879234456;}; -- Cake Topper
+        [55]={[2]={["ANNIVERSARY_FESTIVAL"]=7;};[1]=1879234458;}; -- Spark-maker's Pack
+        [56]={[2]={["ANNIVERSARY_FESTIVAL"]=7;};[1]=1879234461;}; -- Firework Launcher's Face Guard
+        [57]={[2]={["ANNIVERSARY_FESTIVAL"]=5;};[1]=1879234459;}; -- Firework Hooded Cloak
+        [58]={[2]={["ANNIVERSARY_FESTIVAL"]=5;};[1]=1879234460;}; -- Firework Hoodless Cloak
+        [59]={[2]={["ANNIVERSARY_FESTIVAL"]=4;};[1]=1879202457;}; -- Silken Gown of Golden Splendour
+        [60]={[2]={["ANNIVERSARY_FESTIVAL"]=4;};[1]=1879202465;}; -- Silken Robe of Golden Splendour
+        [61]={[2]={["ANNIVERSARY_FESTIVAL"]=4;};[1]=1879202454;}; -- Cloak of the Shining Star
+        [62]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cosmetic Rewards"; }; };
+        [63]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879503811;}; -- Hat of Baker's Delight
+        [64]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879503810;}; -- Jacket and Leggings of Baker's Delight
+        [65]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879503809;}; -- Shoes of Baker's Delight
+        [66]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879485238;}; -- Hat of the Green Dragon Inn
+        [67]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879485236;}; -- Outfit of the Green Dragon Inn
+        [68]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879463205;}; -- Cloak of Illumination
+        [69]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879463206;}; -- Hooded Cloak of Illumination
+        [70]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879463208;}; -- Boots of Illumination
+        [71]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879463204;}; -- Gloves of Illumination
+        [72]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879463209;}; -- Cap of Illumination
+        [73]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879463207;}; -- Shoulder-guards of Illumination
+        [74]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879463210;}; -- Jacket of Illumination
+        [75]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879447305;}; -- Cloak of Crystal Resolve
+        [76]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879447308;}; -- Boots of Crystal Resolve
+        [77]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879447306;}; -- Gloves of Crystal Resolve
+        [78]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879447304;}; -- Helm of Crystal Resolve
+        [79]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879447302;}; -- Pauldrons of Crystal Resolve
+        [80]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879447307;}; -- Chestplate of Crystal Resolve
+        [81]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879417804;}; -- Ceremonial Cloak of Remembrance
+        [82]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879417811;}; -- Ceremonial Hooded Cloak of Remembrance
+        [83]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879417806;}; -- Ceremonial Armour of Remembrance
+        [84]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879417797;}; -- Ceremonial Spaulders of Remembrance
+        [85]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879417795;}; -- Ceremonial Boots of Remembrance
+        [86]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879406736;}; -- Tasselled Ceremonial Cloak
+        [87]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879406730;}; -- Hooded Tasselled Ceremonial Cloak
+        [88]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Other Rewards"; }; };
+        [89]={[2]={["ANNIVERSARY_FESTIVAL"]=40;};[1]=1879463969;}; -- Mighty Ram Fireworks
+        [90]={[3]=5;[2]={["ANNIVERSARY_FESTIVAL"]=5;};[1]=1879418733;}; -- Finely Wrought Carrying Torch
+        [91]={[2]={["ANNIVERSARY_FESTIVAL"]=40;};[1]=1879387670;}; -- Eagle Fireworks
+        [92]={[2]={["ANNIVERSARY_FESTIVAL"]=1;};[1]=1879303586;}; -- Map to Bree - Anniversary
+        [93]={[3]=5;[2]={["ANNIVERSARY_FESTIVAL"]=1;};[1]=1879233669;}; -- Pile of Mysterious Powder
+        [94]={[3]=5;[2]={["ANNIVERSARY_FESTIVAL"]=5;};[1]=1879270565;}; -- White Anniversary Fireworks
+        [95]={[3]=5;[2]={["ANNIVERSARY_FESTIVAL"]=5;};[1]=1879270566;}; -- Rainbow Anniversary Fireworks
+        [96]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Housing Items"; }; };
+        [97]={[3]=5;[2]={};[1]=1879205547;}; -- Map of The Walls of Moria
+        [98]={[3]=5;[2]={};[1]=1879205569;}; -- Map of The Silvertine Lodes
+        [99]={[3]=5;[2]={};[1]=1879205562;}; -- Map of Durin's Way
+        [100]={[3]=5;[2]={};[1]=1879205566;}; -- Map of The Water-works
+        [101]={[3]=5;[2]={};[1]=1879205542;}; -- Map of Zelem-melek
+        [102]={[3]=5;[2]={};[1]=1879205549;}; -- Map of Nud-melek
+        [103]={[3]=5;[2]={};[1]=1879205554;}; -- Map of the Foundations of Stone
+        [104]={[3]=5;[2]={};[1]=1879205546;}; -- Map of the Redhorn Lodes
+        [105]={[3]=5;[2]={};[1]=1879205551;}; -- Map of Zirakzigil
+        [106]={[3]=5;[2]={};[1]=1879205558;}; -- Map of the Flaming Deeps
+        [107]={[3]=5;[2]={};[1]=1879205563;}; -- Map of The Grand Stair
+        [108]={[3]=3;[2]={};[1]=1879202463;}; -- Map of Bree-land
+        [109]={[3]=3;[2]={};[1]=1879202456;}; -- Map of The Shire
+        [110]={[3]=3;[2]={};[1]=1879202459;}; -- Map of Ered Luin
+        [111]={[3]=3;[2]={};[1]=1879202464;}; -- Map of the Lone-lands
+        [112]={[3]=3;[2]={};[1]=1879202466;}; -- Map of the North Downs
+        [113]={[3]=3;[2]={};[1]=1879202460;}; -- Map of the Trollshaws
+        [114]={[3]=3;[2]={};[1]=1879202462;}; -- Map of the Misty Mountains
+        [115]={[3]=3;[2]={};[1]=1879202453;}; -- Map of Angmar
+        [116]={[3]=20;[2]={};[1]=1879331592;}; -- Large Moria Mirror
+        [117]={[3]=10;[2]={};[1]=1879331594;}; -- Watchful Raven Statue
+        [118]={[3]=10;[2]={};[1]=1879331593;}; -- Purple Moria Crystal
+        [119]={[3]=4;[2]={};[1]=1879202455;}; -- Windmill
+        [120]={[3]=4;[2]={};[1]=1879202461;}; -- Toy Windmill
+        [121]={[3]=10;[2]={};[1]=1879164445;}; -- Glorious Beer-mug Trophy
+        [122]={[3]=20;[2]={};[1]=1879112149;}; -- Gate to Moria Painting
+        [123]={[3]=20;[2]={};[1]=1879112148;}; -- Path to Moria Painting
+        [124]={[3]=25;[2]={};[1]=1879447423;}; -- Fireplace of the Dragon's Hoard
+        [125]={[3]=25;[2]={};[1]=1879447422;}; -- Fire-pit of the Dragon's Hoard
+        [126]={[3]=7;[2]={};[1]=1879461628;}; -- 'Sixteen Years of Welcome' Themes
+        [127]={[3]=10;[2]={};[1]=1879463244;}; -- Explosive Fireworks Cake
+        [128]={[3]=10;[2]={};[1]=1879463243;}; -- Wooden Fireworks Firing Stand
+        [129]={[3]=10;[2]={};[1]=1879463247;}; -- Wooden Fireworks Firing Stand with Ram Firework
+        [130]={[3]=20;[2]={};[1]=1879463246;}; -- Explosive Fireworks Throne
+        [131]={[3]=10;[2]={};[1]=1879463245;}; -- Fireworks Rack
+        [132]={[3]=20;[2]={};[1]=1879485272;}; -- Green Dragon Inn Bar
+        [133]={[3]=20;[2]={};[1]=1879485271;}; -- Green Dragon Inn Keg
+        [134]={[3]=25;[2]={};[1]=1879503812;}; -- Dining Table of Baker's Delight
+        [135]={[3]=10;[2]={};[1]=1879503814;}; -- Dining Chair of Baker's Delight
+        [136]={[3]=10;[2]={};[1]=1879503813;}; -- Banner of Baker's Delight
+        [137]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Seasonal Skirmish Rewards - Anniversary"; }; };
+        [138]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879503816;}; -- Ceremonial Staff of the Searcher
+        [139]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879503821;}; -- Ceremonial Spear of Battle
+        [140]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879503818;}; -- Ceremonial Boar-tooth Dagger
+        [141]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879503817;}; -- Ceremonial Sword of the Mountains
+        [142]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879503815;}; -- Ceremonial Bow of the Hills
+        [143]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879503819;}; -- Ceremonial Cleaver Halberd
+        [144]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879503820;}; -- Ceremonial Great Hammer of Runes
+        [145]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879485347;}; -- Tome of the Merrymaking Hamster
+        [146]={[2]={["GENERIC_MITHRIL"]=30;};[1]=1879485347;}; -- Tome of the Merrymaking Hamster
+        [147]={[2]={["GENERIC_FESTIVITY"]=15;};[1]=1879485282;}; -- Green Dragon Inn Tankard
+        [148]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879461628;}; -- 'Sixteen Years of Welcome' Themes
+        [149]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879463246;}; -- Explosive Fireworks Throne
+        [150]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879463370;}; -- Forged Ram Walking Staff
+        [151]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879463248;}; -- Forged Ram Lore-master's Staff
+        [152]={[3]=5;[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879463969;}; -- Mighty Ram Fireworks - consumable
+        [153]={[2]={["GENERIC_FESTIVITY"]=30;};[1]=1879447390;}; -- Tome of the Tri-colour Corgi
+        [154]={[2]={["GENERIC_FESTIVITY"]=15;};[1]=1879446513;}; -- Teal Anniversary Fireworks Banner
+        [155]={[2]={["GENERIC_FESTIVITY"]=15;};[1]=1879446514;}; -- Purple Anniversary Firework Banner
+        [156]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879447412;}; -- Anniversary Blue Sparkler
+        [157]={[2]={["GENERIC_FESTIVITY"]=25;};[1]=1879447544;}; -- Explosive Fireworks Crate
+        [158]={[2]={["GENERIC_FESTIVITY"]=15;};[1]=1879447547;}; -- Lamp-post With Celebratory Yellow Banners
+        [159]={[2]={["GENERIC_FESTIVITY"]=15;};[1]=1879447543;}; -- Post With Celebratory Teal Streamers
+        [160]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879447548;}; -- Celebratory Red Banner Wall Hanging
+        [161]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879447549;}; -- Celebratory Yellow Long Banner Wall Hanging
+        [162]={[2]={["GENERIC_FESTIVITY"]=5;};[1]=1879447546;}; -- Teal Ceiling Streamers
+        [163]={[2]={["GENERIC_FESTIVITY"]=5;};[1]=1879447545;}; -- Green Ceiling Streamers
+        [164]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Anniversary Steeds"; }; };
+        [165]={[2]={["ANNIVERSARY_FESTIVAL"]=40;};[1]=1879503804;}; -- Elk of Baker's Delight
+        [166]={[2]={["ANNIVERSARY_FESTIVAL"]=40;};[1]=1879485250;}; -- Steed of the Green Dragon Inn
+        [167]={[2]={["ANNIVERSARY_FESTIVAL"]=40;};[1]=1879485265;}; -- Green Dragon Inn Caparison
+        [168]={[2]={["ANNIVERSARY_FESTIVAL"]=30;};[1]=1879485267;}; -- Green Dragon Inn Head-piece
+        [169]={[2]={["ANNIVERSARY_FESTIVAL"]=40;};[1]=1879463367;}; -- Fireworks-laden Goat
+        [170]={[2]={["ANNIVERSARY_FESTIVAL"]=40;};[1]=1879447317;}; -- Steed of Crystal Resolve
+        [171]={[2]={["ANNIVERSARY_FESTIVAL"]=15;};[1]=1879447333;}; -- Saddlebag of Crystal Resolve
+        [172]={[2]={["ANNIVERSARY_FESTIVAL"]=35;};[1]=1879447330;}; -- Caparison of Crystal Resolve
+        [173]={[2]={["ANNIVERSARY_FESTIVAL"]=25;};[1]=1879447332;}; -- Head-piece of Crystal Resolve
+        [174]={[2]={["ANNIVERSARY_FESTIVAL"]=15;};[1]=1879447334;}; -- Legs of Crystal Resolve
+        [175]={[2]={["ANNIVERSARY_FESTIVAL"]=20;};[1]=1879447331;}; -- Saddle of Crystal Resolve
+        [176]={[2]={["ANNIVERSARY_FESTIVAL"]=15;};[1]=1879447335;}; -- Tail of Crystal Resolve
+        [177]={[2]={["ANNIVERSARY_FESTIVAL"]=40;};[1]=1879417834;}; -- Steed of Remembrance
+        [178]={[2]={["ANNIVERSARY_FESTIVAL"]=40;};[1]=1879417870;}; -- Caparison of Remembrance
+        [179]={[2]={["ANNIVERSARY_FESTIVAL"]=30;};[1]=1879417864;}; -- Head-piece of Remembrance
+        [180]={[2]={["ANNIVERSARY_FESTIVAL"]=20;};[1]=1879417859;}; -- Saddle of Remembrance
+        [181]={[2]={["ANNIVERSARY_FESTIVAL"]=40;};[1]=1879406155;}; -- Steed of Regal Revelry
+        [182]={[2]={["ANNIVERSARY_FESTIVAL"]=30;};[1]=1879406163;}; -- Accessory of Regal Revelry
+        [183]={[2]={["ANNIVERSARY_FESTIVAL"]=30;};[1]=1879406166;}; -- Caparison of Regal Revelry
+        [184]={[2]={["ANNIVERSARY_FESTIVAL"]=30;};[1]=1879406165;}; -- Head-piece of Regal Revelry
+        [185]={[2]={["ANNIVERSARY_FESTIVAL"]=20;};[1]=1879406164;}; -- Saddle of Regal Revelry
+        [186]={[2]={["ANNIVERSARY_FESTIVAL"]=40;};[1]=1879367989;}; -- Sea-ward Steed
+        [187]={[2]={["ANNIVERSARY_FESTIVAL"]=40;};[1]=1879367994;}; -- Sea-ward Caparison
+        [188]={[2]={["ANNIVERSARY_FESTIVAL"]=30;};[1]=1879367991;}; -- Sea-ward Head-piece
+        [189]={[2]={["ANNIVERSARY_FESTIVAL"]=20;};[1]=1879367992;}; -- Sea-ward Legs
+        [190]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Essences"; }; };
+        [191]={[2]={["ANNIVERSARY_FESTIVAL"]=60;};[1]=1879439435;}; -- Essence Reclamation Scroll
+        [192]={[2]={};[1]=1879439435;}; -- Essence Reclamation Scroll
+        [193]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cosmetic Pets"; }; };
+        [194]={[2]={["ANNIVERSARY_FESTIVAL"]=20;};[1]=1879503799;}; -- Tome of the Baker's Delight Cub
+        [195]={[2]={["GENERIC_MITHRIL"]=30;};[1]=1879503799;}; -- Tome of the Baker's Delight Cub
+        [196]={[2]={["ANNIVERSARY_FESTIVAL"]=20;};[1]=1879485343;}; -- Tome of the Sienna Hamster
+        [197]={[2]={["GENERIC_MITHRIL"]=30;};[1]=1879485343;}; -- Tome of the Sienna Hamster
+        [198]={[2]={["ANNIVERSARY_FESTIVAL"]=20;};[1]=1879463368;}; -- Tome of the Anniversary Celebration Goat
+        [199]={[2]={["ANNIVERSARY_FESTIVAL"]=20;};[1]=1879447393;}; -- Tome of the Golden Crystal Beetle
+        [200]={[2]={["GENERIC_MITHRIL"]=30;};[1]=1879447395;}; -- Tome of the Fireworks Corgi
+        [201]={[2]={["ANNIVERSARY_FESTIVAL"]=20;};[1]=1879418610;}; -- Tome of the Cozy Grey Cat
+        [202]={[2]={["ANNIVERSARY_FESTIVAL"]=15;};[1]=1879367981;}; -- Tome of the Beaver
+        [203]={[2]={["ANNIVERSARY_FESTIVAL"]=20;};[1]=1879351564;}; -- Tome of the Sky of a Perfect Day Kite
+        [204]={[2]={["ANNIVERSARY_FESTIVAL"]=15;};[1]=1879344572;}; -- Tome of the Golden Dragon Kite
+        [205]={[2]={["ANNIVERSARY_FESTIVAL"]=15;};[1]=1879344582;}; -- Tome of the Silver Dragon Kite
+        [206]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Gift Boxes"; }; };
+        [207]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879503833;}; -- Baker's Delight Garments - Gift-wrapped Selection Box
+        [208]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879485351;}; -- Garments of the Green Dragon Inn - Gift-wrapped Selection Box
+        [209]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879463514;}; -- Illumination Garments - Gift-wrapped Selection Box
+        [210]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879447578;}; -- Crystal Resolve Garments - Gift-wrapped Selection Box
+        [211]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879417874;}; -- Ceremonial Remembrance Garments - Gift-wrapped selection box
+        [212]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879406815;}; -- Ornamented Anniversary Garment - Gift-wrapped selection box
+        [213]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879387677;}; -- Garments of the Storied Warrior - Gift-wrapped selection box
+        [214]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879367973;}; -- Quiver of the Waking Wood - Gift-wrapped
+        [215]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879367970;}; -- Armour of the Waking Wood - Gift Wrapped
+        [216]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879367971;}; -- Shoulders of the Waking Wood - Gift-wrapped
+        [217]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879367968;}; -- Wrist-guards of the Waking Wood - Gift-wrapped
+        [218]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879344884;}; -- Helm of the Unflagging Dragon - Gift Wrapped
+        [219]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879344889;}; -- Pauldrons of the Unflagging Dragon - Gift Wrapped
+        [220]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879344882;}; -- Breastplate of the Unflagging Dragon - Gift Wrapped
+        [221]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879348856;}; -- Gloves of the Unflagging Dragon - Gift Wrapped
+        [222]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879344894;}; -- Boots of the Unflagging Dragon - Gift Wrapped
+        [223]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879344897;}; -- Cloak of the Unflagging Dragon - Gift Wrapped
+        [224]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879344878;}; -- Hooded Cloak of the Unflagging Dragon - Gift Wrapped
+        [225]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Anniversary Steeds - Mithril"; }; };
+        [226]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879503804;}; -- Elk of Baker's Delight
+        [227]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879485250;}; -- Steed of the Green Dragon Inn
+        [228]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879485326;}; -- Green Dragon Inn War-steed Cosmetics
+        [229]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879463367;}; -- Fireworks-laden Goat
+        [230]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879447317;}; -- Steed of Crystal Resolve
+        [231]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879447566;}; -- Crystal Resolve War-steed Cosmetics
+        [232]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879417834;}; -- Steed of Remembrance
+        [233]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879417870;}; -- Caparison of Remembrance
+        [234]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879417864;}; -- Head-piece of Remembrance
+        [235]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879417859;}; -- Saddle of Remembrance
+        [236]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879406155;}; -- Steed of Regal Revelry
+        [237]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879406163;}; -- Accessory of Regal Revelry
+        [238]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879406166;}; -- Caparison of Regal Revelry
+        [239]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879406165;}; -- Head-piece of Regal Revelry
+        [240]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879406164;}; -- Saddle of Regal Revelry
+        [241]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879367989;}; -- Sea-ward Steed
+        [242]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879367994;}; -- Sea-ward Caparison
+        [243]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879367991;}; -- Sea-ward Head-piece
+        [244]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879367992;}; -- Sea-ward Legs
+        [245]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879201537;}; -- Anniversary Steed
+        [246]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879233624;}; -- Fireworks Laden Steed
+        [247]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879270562;}; -- Teal Fireworks Laden Steed
+        [248]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879305981;}; -- Steed of Odogil
+        [249]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879305987;}; -- Caparison of Odogil
+        [250]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879322295;}; -- Steed of the Woodland Realm
+        [251]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879322294;}; -- Caparison of the Woodland Realm
+        [252]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879331537;}; -- Windfells Goat
+        [253]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879342468;}; -- Steed of the Unflagging Dragon
+        [254]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879344554;}; -- Caparison of the Unflagging Dragon
+        [255]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879344553;}; -- Head-piece of the Unflagging Dragon
+        [256]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879344555;}; -- Legs of the Unflagging Dragon
+        [257]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879344552;}; -- Saddle of the Unflagging Dragon
+        [258]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879344556;}; -- Tail of the Unflagging Dragon
+        [259]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Henry Peartree, Anniversary Horse Trader"; }; };
+        [260]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Anniversary Steeds"; }; };
+        [261]={[2]={["ANNIVERSARY_FESTIVAL"]=40;};[1]=1879503804;}; -- Elk of Baker's Delight
+        [262]={[2]={["ANNIVERSARY_FESTIVAL"]=40;};[1]=1879485250;}; -- Steed of the Green Dragon Inn
+        [263]={[2]={["ANNIVERSARY_FESTIVAL"]=40;};[1]=1879485265;}; -- Green Dragon Inn Caparison
+        [264]={[2]={["ANNIVERSARY_FESTIVAL"]=30;};[1]=1879485267;}; -- Green Dragon Inn Head-piece
+        [265]={[2]={["ANNIVERSARY_FESTIVAL"]=40;};[1]=1879463367;}; -- Fireworks-laden Goat
+        [266]={[2]={["ANNIVERSARY_FESTIVAL"]=40;};[1]=1879447317;}; -- Steed of Crystal Resolve
+        [267]={[2]={["ANNIVERSARY_FESTIVAL"]=15;};[1]=1879447333;}; -- Saddlebag of Crystal Resolve
+        [268]={[2]={["ANNIVERSARY_FESTIVAL"]=35;};[1]=1879447330;}; -- Caparison of Crystal Resolve
+        [269]={[2]={["ANNIVERSARY_FESTIVAL"]=25;};[1]=1879447332;}; -- Head-piece of Crystal Resolve
+        [270]={[2]={["ANNIVERSARY_FESTIVAL"]=15;};[1]=1879447334;}; -- Legs of Crystal Resolve
+        [271]={[2]={["ANNIVERSARY_FESTIVAL"]=20;};[1]=1879447331;}; -- Saddle of Crystal Resolve
+        [272]={[2]={["ANNIVERSARY_FESTIVAL"]=15;};[1]=1879447335;}; -- Tail of Crystal Resolve
+        [273]={[2]={["ANNIVERSARY_FESTIVAL"]=40;};[1]=1879417834;}; -- Steed of Remembrance
+        [274]={[2]={["ANNIVERSARY_FESTIVAL"]=40;};[1]=1879417870;}; -- Caparison of Remembrance
+        [275]={[2]={["ANNIVERSARY_FESTIVAL"]=30;};[1]=1879417864;}; -- Head-piece of Remembrance
+        [276]={[2]={["ANNIVERSARY_FESTIVAL"]=20;};[1]=1879417859;}; -- Saddle of Remembrance
+        [277]={[2]={["ANNIVERSARY_FESTIVAL"]=40;};[1]=1879406155;}; -- Steed of Regal Revelry
+        [278]={[2]={["ANNIVERSARY_FESTIVAL"]=30;};[1]=1879406163;}; -- Accessory of Regal Revelry
+        [279]={[2]={["ANNIVERSARY_FESTIVAL"]=30;};[1]=1879406166;}; -- Caparison of Regal Revelry
+        [280]={[2]={["ANNIVERSARY_FESTIVAL"]=30;};[1]=1879406165;}; -- Head-piece of Regal Revelry
+        [281]={[2]={["ANNIVERSARY_FESTIVAL"]=20;};[1]=1879406164;}; -- Saddle of Regal Revelry
+        [282]={[2]={["ANNIVERSARY_FESTIVAL"]=40;};[1]=1879367989;}; -- Sea-ward Steed
+        [283]={[2]={["ANNIVERSARY_FESTIVAL"]=40;};[1]=1879367994;}; -- Sea-ward Caparison
+        [284]={[2]={["ANNIVERSARY_FESTIVAL"]=30;};[1]=1879367991;}; -- Sea-ward Head-piece
+        [285]={[2]={["ANNIVERSARY_FESTIVAL"]=20;};[1]=1879367992;}; -- Sea-ward Legs
+        [286]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Anniversary Steeds - Mithril"; }; };
+        [287]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879503804;}; -- Elk of Baker's Delight
+        [288]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879485250;}; -- Steed of the Green Dragon Inn
+        [289]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879485326;}; -- Green Dragon Inn War-steed Cosmetics
+        [290]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879463367;}; -- Fireworks-laden Goat
+        [291]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879447317;}; -- Steed of Crystal Resolve
+        [292]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879447566;}; -- Crystal Resolve War-steed Cosmetics
+        [293]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879417834;}; -- Steed of Remembrance
+        [294]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879417870;}; -- Caparison of Remembrance
+        [295]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879417864;}; -- Head-piece of Remembrance
+        [296]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879417859;}; -- Saddle of Remembrance
+        [297]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879406155;}; -- Steed of Regal Revelry
+        [298]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879406163;}; -- Accessory of Regal Revelry
+        [299]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879406166;}; -- Caparison of Regal Revelry
+        [300]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879406165;}; -- Head-piece of Regal Revelry
+        [301]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879406164;}; -- Saddle of Regal Revelry
+        [302]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879367989;}; -- Sea-ward Steed
+        [303]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879367994;}; -- Sea-ward Caparison
+        [304]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879367991;}; -- Sea-ward Head-piece
+        [305]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879367992;}; -- Sea-ward Legs
+        [306]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879201537;}; -- Anniversary Steed
+        [307]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879233624;}; -- Fireworks Laden Steed
+        [308]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879270562;}; -- Teal Fireworks Laden Steed
+        [309]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879305981;}; -- Steed of Odogil
+        [310]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879305987;}; -- Caparison of Odogil
+        [311]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879322295;}; -- Steed of the Woodland Realm
+        [312]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879322294;}; -- Caparison of the Woodland Realm
+        [313]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879331537;}; -- Windfells Goat
+        [314]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879342468;}; -- Steed of the Unflagging Dragon
+        [315]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879344554;}; -- Caparison of the Unflagging Dragon
+        [316]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879344553;}; -- Head-piece of the Unflagging Dragon
+        [317]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879344555;}; -- Legs of the Unflagging Dragon
+        [318]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879344552;}; -- Saddle of the Unflagging Dragon
+        [319]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879344556;}; -- Tail of the Unflagging Dragon
+        [320]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Angeline Greenpasture, Keeper of Gifts"; }; };
+        [321]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Misc. Gifts"; }; };
+        [322]={[3]=5;[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879503823;}; -- Baker's delight Fireworks - consumable
+        [323]={[3]=5;[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879485287;}; -- Green Dragon Inn Fireworks - consumable
+        [324]={[3]=5;[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879463384;}; -- Incandescent Lightning Fireworks - consumable
+        [325]={[3]=5;[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879447419;}; -- Soaring Pinwheel Fireworks - consumable
+        [326]={[3]=5;[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879418945;}; -- Willow Fireworks - consumable
+        [327]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879233681;}; -- Yellow Fireworks Recipe
+        [328]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879233682;}; -- Green Fireworks Recipe
+        [329]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879233683;}; -- Blue Fireworks Recipe
+        [330]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879233684;}; -- Purple Fireworks Recipe
+        [331]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879233685;}; -- Orange Fireworks Recipe
+        [332]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879233686;}; -- Red Fireworks Recipe
+        [333]={[3]=20;[2]={["ANNIVERSARY_FESTIVAL"]=1;};[1]=1879224343;}; -- Mark
+        [334]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Anniversary Gifts"; }; };
+        [335]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879303552;}; -- Battle Gift Box
+        [336]={[2]={["ANNIVERSARY_FESTIVAL"]=25;};[1]=1879303554;}; -- Legendary Gift Box
+        [337]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cosmetics 1"; }; };
+        [338]={[3]=5;[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879418732;}; -- Simple Carrying Torch
+        [339]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879103337;}; -- Simple Hauberk
+        [340]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879103339;}; -- Plain Hauberk
+        [341]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879103341;}; -- Banded Hauberk
+        [342]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879103116;}; -- Rugged Dwarf-make Quiver
+        [343]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879103641;}; -- Fancy Elven Quiver
+        [344]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879103645;}; -- Rugged Quiver
+        [345]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879104054;}; -- Circlet of Men
+        [346]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879104057;}; -- Turquoise Summer Circlet
+        [347]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879104067;}; -- Short Dwarf-make Robe
+        [348]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879104073;}; -- Short Ranger's Robe
+        [349]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879104058;}; -- Exquisite Long-sleeved Dress
+        [350]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879104059;}; -- Common Short-sleeved Dress
+        [351]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879104060;}; -- Fine Short-sleeved Dress
+        [352]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879104061;}; -- Short-sleeved Dwarf-make Dress
+        [353]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879104081;}; -- Common Short-sleeved Tunic and Trousers
+        [354]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879104082;}; -- Short-sleeved Corsair's Tunic and Trousers
+        [355]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879104075;}; -- Common Waistcoat
+        [356]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879104076;}; -- Fancy Waistcoat
+        [357]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cosmetics 2"; }; };
+        [358]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879103330;}; -- Forester's Hauberk
+        [359]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879103335;}; -- Scaled Hauberk
+        [360]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879103332;}; -- Mariner's Hauberk
+        [361]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879103117;}; -- Fine Dwarf-make Quiver
+        [362]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879103643;}; -- Elegant Elven Quiver
+        [363]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879103644;}; -- Sturdy Quiver
+        [364]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879104055;}; -- Dwarf-make Circlet
+        [365]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879104056;}; -- Fine Elven Circlet
+        [366]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879104069;}; -- Short Elven Robe
+        [367]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879104071;}; -- Short Fancy Robe
+        [368]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879104062;}; -- Short-sleeved Elven Dress
+        [369]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879104063;}; -- Elegant Short-sleeved Dress
+        [370]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879104064;}; -- Exquisite Short-sleeved Dress
+        [371]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879104086;}; -- Common Dress
+        [372]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879104084;}; -- Plain Short-sleeved Tunic and Trousers
+        [373]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879104085;}; -- Short-sleeved Elven Tunic and Trousers
+        [374]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879104077;}; -- Fine Waistcoat
+        [375]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879104078;}; -- Sleeveless Elven Tunic
+        [376]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Festival Token Exchange"; }; };
+        [377]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879331992;}; -- Box of Festival Tokens        
     };
 
     -- HOBNANIGANS ----------------------------
