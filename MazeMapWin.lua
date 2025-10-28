@@ -338,7 +338,9 @@ function MazeMapMoveMapPoint(unrotatedX, unrotatedY, heading)
 end
 
 function MazeMapHandleStandardChatMessage(message)
-    if (not wMazeMapWinParent:IsVisible()) then return; end
+    local mazeIsNotVisible = not wMazeMapWinParent:IsVisible();
+    local festivalDoesNotHaveMap = not _QUESTSTRINGS[SELECTEDFESTIVAL].MAP;
+    if (mazeIsNotVisible or festivalDoesNotHaveMap) then return; end
 
     local coordinates = MazeMapParseChatLocation(message);
     if (coordinates) then
