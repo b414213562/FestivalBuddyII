@@ -117,7 +117,9 @@ end
 ---Sets the corner coordinates used in calculating image position from /loc text.
 ---@param cornerCoords table A table with west, north, east, and south entries.
 function MazeMapSetCornerCoordinates(cornerCoords)
-    wMazeMapWinParent.cornerCoordinates = cornerCoords;
+    if (wMazeMapWinParent) then
+        wMazeMapWinParent.cornerCoordinates = cornerCoords;
+    end
 end
 
 function MazeMapSetVisible(newVisibility)
