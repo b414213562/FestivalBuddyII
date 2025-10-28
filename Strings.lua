@@ -509,7 +509,7 @@ _LANG = {
                 ["'I came all the day from Frogmorton to waste the vittles at the Farmers Faire!'\n"] = "waste the vittles";
                 ["'I got into quite a squirrel with Ted Sandyman when he told me the Gaffer's taters weren't as big as his own!'\n"] = "quite a squirrel";
                 ["'I made a daring trip to Farmer Maggot's field to taste a munchroom or two...but his dogs chased me away.'\n"] = "taste a munchroom";
-                ["'That mayor never stops eating! A disgusting display...but that reminds me, I am rather hungry! Where is slupper?'\n"] = "Where is slupper?";
+                ["'That mayor never stops eating! A disgusting display... but that reminds me, I am rather hungry! Where is slupper?'\n"] = "Where is slupper?";
                 ["'The Farmers Faire is my favourite festival of all! I like when the pigs judge the local farmers.'\n"] = "pigs judge";
                 ["'This Faire doesn't hold a candle to Old Bad Maggins's one hundred and eleventh birthday party!'\n"] = "Old Bad Maggins";
             };
