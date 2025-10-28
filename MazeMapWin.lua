@@ -139,6 +139,8 @@ end
 function MazeMapUpdateFestival(selectedFestival)
     local festivalMapData = _QUESTSTRINGS[selectedFestival].MAP;
     if (festivalMapData) then
+        MazeMapSetCornerCoordinates(festivalMapData.cornerCoordinates);
+
         -- Start timer checking for new map:
         -- wMazeMapWinParent.changingMazeMapTimer:SetWantsUpdates(true);
 
