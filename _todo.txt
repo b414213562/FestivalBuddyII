@@ -1,3 +1,5 @@
+2024-12-31 19:54: GnarGnar: feature request for festival buddy II, link to FibroJedi pages
+
 Maybe change storedTienUur to English? Or all the way Dutch?
 Add Option to try and account for Daylight Saving Time (US / EU only).
 

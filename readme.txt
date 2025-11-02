@@ -2,6 +2,12 @@ v2.1.5 changes:
     Festivals:
         Anniversary:
             Updated barter items
+        Farmers Faire:
+            Fixed a rude hobbit text.
+        Harvestmath:
+            Updated barter items
+    Maze Map:
+        Fixed error that occurs when the maze map is open but a quest has not been selected, and /loc occurs.
 
 v2.1.4 changes:
     General:
