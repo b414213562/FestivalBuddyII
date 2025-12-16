@@ -42,7 +42,7 @@ function DrawMainWin()
         MazeMapUpdateFestival(SELECTEDFESTIVAL);
         CloseHelperWindows();
         RefreshTokenView();
-        RefreshBarterList();
+        BarterWinFestivalChanged();
         CheckFestivalData(_CHARDATA.CHARS[MYCHAR:GetName()]);
         QuickGuideWinLoadFestival();
         if ddAltNames ~= nil then RefreshAltDisplay(ddAltNames:GetText()) end;
@@ -109,7 +109,7 @@ function DrawMainWin()
             SETTINGS.BARTERWIN.VISIBLE = true;
         end
 
-        wBarterWinParent:SetVisible(SETTINGS.BARTERWIN.VISIBLE);
+        SetBarterWinVisible(SETTINGS.BARTERWIN.VISIBLE);
 
     end
 
@@ -192,7 +192,7 @@ function DrawMainWin()
             if SETTINGS.SHOWSCREEN then
                 wMainWinParent:SetVisible(SETTINGS.MAINWIN.VISIBLE);
                 wAltWinParent:SetVisible(SETTINGS.ALTWIN.VISIBLE);
-                wBarterWinParent:SetVisible(SETTINGS.BARTERWIN.VISIBLE);
+                SetBarterWinVisible(SETTINGS.BARTERWIN.VISIBLE, true);
                 wDanceParent:SetVisible(SETTINGS.DANCEWIN.VISIBLE);
                 wQuickGuideWinParent:SetVisible(SETTINGS.QUICK_GUIDE_WIN.VISIBLE);
 
@@ -203,7 +203,7 @@ function DrawMainWin()
             else
                 wMainWinParent:SetVisible(false);
                 wAltWinParent:SetVisible(false);
-                wBarterWinParent:SetVisible(false);
+                SetBarterWinVisible(false);
                 wDanceParent:SetVisible(false);
                 wQuickGuideWinParent:SetVisible(false);
 
@@ -223,7 +223,7 @@ function DrawMainWin()
                 wAltWinParent:SetVisible(false);
 
                 SETTINGS.BARTERWIN.VISIBLE = false;
-                wBarterWinParent:SetVisible(false);
+                SetBarterWinVisible(false);
 
                 SETTINGS.DANCEWIN.VISIBLE = false;
                 wDanceParent:SetVisible(false);

@@ -15,7 +15,6 @@ function DrawBarterWin()
     wBarterWinParent = Turbine.UI.Lotro.Window();
     wBarterWinParent:SetSize(480,SETTINGS.BARTERWIN.HEIGHT);
     wBarterWinParent:SetPosition(SETTINGS.BARTERWIN.X,SETTINGS.BARTERWIN.Y);
-    wBarterWinParent:SetVisible(SETTINGS.BARTERWIN.VISIBLE);
     wBarterWinParent:SetText(GetString(_LANG.OTHER.BARTER));
     wBarterWinParent:SetResizable(true);
     wBarterWinParent:SetMinimumWidth(480);
@@ -53,9 +52,6 @@ function DrawBarterWin()
 
     lstBarterItems:SetVerticalScrollBar(slstBarterItems);
 
-    RefreshBarterList();
-
-
     -- Events
     wBarterWinParent.PositionChanged = function()
         SETTINGS.BARTERWIN.X = wBarterWinParent:GetLeft();
@@ -88,8 +84,26 @@ function DrawBarterWin()
         SETTINGS.BARTERWIN.HEIGHT = newWindowHeight;
     end
 
+    SetBarterWinVisible(SETTINGS.BARTERWIN.VISIBLE);
 end
 
+function BarterWinFestivalChanged()
+    if (SETTINGS.BARTERWIN.VISIBLE) then
+        RefreshBarterList();
+    end
+end
+
+function SetBarterWinVisible(isVisible, skipRefresh)
+    if (skipRefresh == nil) then
+        skipRefresh = false;
+    end
+
+    wBarterWinParent:SetVisible(isVisible);
+
+    if (isVisible and not skipRefresh) then
+        RefreshBarterList();
+    end
+end
 
 function RefreshBarterList()
 
