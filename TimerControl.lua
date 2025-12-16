@@ -107,9 +107,9 @@ function FormatHobnanigansTime(timeInSeconds)
 
         return string.format("%dm %ds", minutes, seconds);
     else
-        local formatString = "%.0f";
+        local formatString = "%.0fs";
         if (timeInSeconds < precisionPoint) then
-            formatString = "%.1f";
+            formatString = "%.1fs";
         end
         return string.format(formatString, timeInSeconds);
     end
