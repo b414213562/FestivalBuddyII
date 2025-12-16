@@ -1,0 +1,26 @@
+Festival Buddy II version v2.1.5 is now available at [URL='https://www.lotrointerface.com/downloads/info1218-FestivalBuddyII.html']lotrointerface.com[/URL].
+
+This update updates the Anniversary and Harvestmath barter items, fixes a string for a rude hobbit, and fixes an error with the Maze Map window.
+
+Version 2.1.5 release notes:
+
+Festivals:
+[list]
+    [*] Anniversary:
+    [list]
+        [*] Updated barter items
+    [/list]
+    [*] Farmers Faire:
+    [list]
+        [*] Fixed a rude hobbit text.
+    [/list]
+    [*] Harvestmath:
+    [list]
+        [*] Updated barter items
+    [/list]
+[/list]
+
+Maze Map:
+[list]
+    [*] Fixed error that occurs when the maze map is open but a quest has not been selected, and /loc occurs.
+[/list]
