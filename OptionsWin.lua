@@ -220,6 +220,21 @@ function DrawQuickGuideOptions(options, y)
     end
     y = y + 40;
 
+    -- Timer section:
+    local useTimerCheckbox = Turbine.UI.Lotro.CheckBox();
+    useTimerCheckbox:SetParent(options);
+    useTimerCheckbox:SetText(GetString(_LANG.OPTIONS.QUICK_GUIDE_USE_TIMER));
+    useTimerCheckbox:SetSize(300, 20);
+    useTimerCheckbox:SetPosition(10, y);
+    useTimerCheckbox:SetChecked(SETTINGS.QUICK_GUIDE_USE_TIMER);
+    useTimerCheckbox.CheckedChanged = function (sender, args)
+        SETTINGS.QUICK_GUIDE_USE_TIMER = not SETTINGS.QUICK_GUIDE_USE_TIMER;
+        if (not SETTINGS.QUICK_GUIDE_USE_TIMER) then
+            QuickGuideTimerReset(wQuickGuideWinParent.timer);
+        end
+    end
+    y = y + 30;
+
     -- Colors section:
     local quickGuideColors = Turbine.UI.Label();
     quickGuideColors:SetParent(options);

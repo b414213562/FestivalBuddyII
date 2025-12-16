@@ -116,6 +116,7 @@ DEFAULT_SETTINGS = {
     ["ESCAPE_KEY_CLOSES_WINDOWS"] = true;
     ["QUICK_GUIDE_REMOVE_COMPLETED"] = true;
     ["QUICK_GUIDE_CLEAR_DELAY"] = 5;
+    ["QUICK_GUIDE_USE_TIMER"] = true;
 
     ["MAINWIN"] = {
         ["VISIBLE"] = true;

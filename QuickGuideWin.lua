@@ -49,6 +49,11 @@ function DrawQuickGuideWin()
         treeView:SetHeight(newHeight);
         scrollbar:SetHeight(newHeight);
     end
+
+    local timer = MakeQuickGuideTimerControl(60, 20);
+    timer:SetParent(wQuickGuideWinParent);
+    timer:SetPosition(320, 17);
+    wQuickGuideWinParent.timer = timer;
 end
 
 function QuickGuideTreeViewFilterFunction(treeNode)
@@ -104,6 +109,12 @@ function QuickGuideWinCreateNode(index)
         if (checkBox:IsChecked() and objective.CHAIN_END ~= nil) then
             QuickGuideWinHandleQuestChainBeginOrEnd(index);
         end
+        if (checkBox:IsChecked() and objective.TIMER_START) then
+            QuickGuideTimerStart(wQuickGuideWinParent.timer);
+        end
+        if (checkBox:IsChecked() and objective.TIMER_STOP) then
+            QuickGuideTimerStop(wQuickGuideWinParent.timer);
+        end
     end
     checkBox.Update = function(sender, args)
         local time = Turbine.Engine.GetGameTime();
@@ -143,6 +154,7 @@ function QuickGuideWinLoadFestival()
     resetItem.Click = function(sender, args)
         QuickGuideWinClearCompleted();
         QuickGuideWinLoadFestival();
+        QuickGuideTimerReset(wQuickGuideWinParent.timer);
     end
 
     local creditNode = Turbine.UI.TreeNode();

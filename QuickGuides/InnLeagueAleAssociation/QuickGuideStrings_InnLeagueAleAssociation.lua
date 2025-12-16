@@ -308,6 +308,7 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[ILAA] = {
     };
     [QG_ILAA_INDEX.A_BIT_OF_WHITE_PICKUP] = {
         ["CHAIN_BEGIN"] = "A_BIT_OF_WHITE";
+        ["TIMER_START"] = true;
     };
     [QG_ILAA_INDEX.A_BIT_OF_BROWN_PICKUP] = {
         ["CHAIN_BEGIN"] = "A_BIT_OF_BROWN";
@@ -413,6 +414,7 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[ILAA] = {
     };
     [QG_ILAA_INDEX.A_REMINDER_OF_RIVENDELL_END] = {
         ["CHAIN_END"] = "A_REMINDER_OF_RIVENDELL";
+        ["TIMER_STOP"] = true;
     };
     [QG_ILAA_INDEX.A_DRINK_OF_THE_BEST_CHARACTER_END] = {
         ["CHAIN_END"] = "A_DRINK_OF_THE_BEST_CHARACTER";

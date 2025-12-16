@@ -889,6 +889,7 @@ _LANG = {
         ["QUICK_GUIDE"]                   = { ["ENGLISH"] = "Quick Guide:";                                         ["GERMAN"] = "Schnell-Liste:";                                      };
         ["QUICK_GUIDE_REMOVE_COMPLETED"]  = { ["ENGLISH"] = "Remove completed items from list";                     ["GERMAN"] = "Fertige Punkte aus der Liste entfernen";              };
         ["QUICK_GUIDE_CLEAR_DELAY"]       = { ["ENGLISH"] = "Delay in seconds before completed items are removed:"; ["GERMAN"] = "Verzögerung in Sekunden bis Punkte entfernt werden";  };
+        ["QUICK_GUIDE_USE_TIMER"]  =        { ["ENGLISH"] = "Use Quick Guide timer"; };
         ["QUICK_GUIDE_QUESTS_TO_INCLUED"] = { ["ENGLISH"] = "Quests to include in quick guide:";                    ["GERMAN"] = "Aufgaben, die in die Schnell-Liste sollen";           };
         ["QUICK_GUIDE_COLORS"]            = { ["ENGLISH"] = "Quick Guide Colors:"; ["GERMAN"] = "Farben in der Kurzanleitung:";};
         ["QUICK_GUIDE_USE_COLORS"]        = { ["ENGLISH"] = "Enable Colors"; ["GERMAN"] = "Farben benutzen";};

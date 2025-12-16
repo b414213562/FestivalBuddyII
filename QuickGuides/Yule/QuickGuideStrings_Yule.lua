@@ -253,6 +253,7 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[YULE] = {
     [QG_YULE_INDEX.IN_THE_SPIRIT_OF_YULE_PICKUP] = {
         ["CHAIN_BEGIN"] = "IN_THE_SPIRIT_OF_YULE";
         ["LOAD_QUEST"] = "MOVING_THEM_OFF";
+        ["TIMER_START"] = true;
     };
     [QG_YULE_INDEX.MOVING_THEM_OFF_PICKUP] = {
         ["CHAIN_BEGIN"] = "MOVING_THEM_OFF";
@@ -416,6 +417,7 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[YULE] = {
     };
     [QG_YULE_INDEX.IN_THE_SPIRIT_OF_YULE_END] = {
         ["CHAIN_END"] = "IN_THE_SPIRIT_OF_YULE";
+        ["TIMER_STOP"] = true;
     };
     [QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION1] = {
     };

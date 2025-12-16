@@ -307,6 +307,7 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAIN_LOOKUP[MIDSUMMER] = {
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[MIDSUMMER] = {
     [QG_MIDSUMMER_INDEX.IN_CELEBRATION_OF_MIDSUMMER_PICKUP] = {
         ["CHAIN_BEGIN"] = "IN_CELEBRATION_OF_MIDSUMMER";
+        ["TIMER_START"] = true;
     };
     [QG_MIDSUMMER_INDEX.SOMETHING_FLORAL_PICKUP] = {
         ["CHAIN_BEGIN"] = "SOMETHING_FLORAL";
@@ -530,6 +531,7 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[MIDSUMMER] = {
     };
     [QG_MIDSUMMER_INDEX.FLORAL_CROWNS_END] = {
         ["CHAIN_END"] = "FLORAL_CROWNS";
+        ["TIMER_STOP"] = true;
     };
 };
 
