@@ -68,7 +68,7 @@ function DrawHobnanigansWin()
         ["STEEL_BEAKS"] = hobnanigansSbScoreLabel;
     };
 
-    hobnanigansTimer = MakeTimerControl(
+    hobnanigansTimer = MakeHobnanigansTimerControl(
         260, 20, 10 * 60 - 5, -- minus a few seconds between start and chicken drop
         0, 0,
         Turbine.UI.Color.Green,
@@ -172,7 +172,7 @@ function HandleQuestChat_HobnanigansTracker(rawText)
             SetHobnanigansTeam(nil);
             SetField(nil);
             wHobnanigans.playActive = false;
-            TimerStop(hobnanigansTimer);
+            HobnanigansTimerStop(hobnanigansTimer);
             ShowHobnanigansText("NEED_QUEST");
         end
     end
@@ -194,7 +194,7 @@ function HandleSayChat_HobnanigansTracker(rawText)
         if (fieldNumber ~= nil and fieldNumber == wHobnanigans.fieldNumber and not wHobnanigans.playActive) then
             --Turbine.Shell.WriteLine("Play begins on field '" .. fieldNumber .. "'!");
             wHobnanigans.playActive = true;
-            TimerStart(hobnanigansTimer);
+            HobnanigansTimerStart(hobnanigansTimer);
             ShowHobnanigansText(nil);
         end
     else -- Play is active
@@ -213,18 +213,18 @@ function HandleSayChat_HobnanigansTracker(rawText)
                 --Turbine.Shell.WriteLine("Game over, '" .. team .. "' wins!");
                 wHobnanigans.questActive = false;
                 wHobnanigans.playActive = false;
-                TimerStop(hobnanigansTimer);
+                HobnanigansTimerStop(hobnanigansTimer);
                 ShowHobnanigansText("GAME_OVER");
             else
                 local fieldNumber = string.match(rawText, GetString(_LANG.OTHER.HOBNANIGANS_ACCOUNCEMENTS.HOBNANIGANS_TIME_REMAINING_6));
                 if (fieldNumber ~= nil and fieldNumber == wHobnanigans.fieldNumber) then
                     --Turbine.Shell.WriteLine("6 Minute Announcement");
-                    TimerSetTimeRemaining(hobnanigansTimer, 6 * 60);
+                    HobnanigansTimerSetTimeRemaining(hobnanigansTimer, 6 * 60);
                 else
                     local fieldNumber = string.match(rawText, GetString(_LANG.OTHER.HOBNANIGANS_ACCOUNCEMENTS.HOBNANIGANS_TIME_REMAINING_2));
                     if (fieldNumber ~= nil and fieldNumber == wHobnanigans.fieldNumber) then
                         --Turbine.Shell.WriteLine("2 Minute Announcement");
-                        TimerSetTimeRemaining(hobnanigansTimer, 2 * 60);
+                        HobnanigansTimerSetTimeRemaining(hobnanigansTimer, 2 * 60);
                     end
                 end
             end

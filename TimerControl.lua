@@ -2,7 +2,7 @@
 
 local precisionPoint = 5; -- seconds
 
-function MakeTimerControl(
+function MakeHobnanigansTimerControl(
     width, height, duration,
     borderWidth, borderHeight,
     colorStart,
@@ -19,7 +19,7 @@ function MakeTimerControl(
     control.timer = timer;
 
     timer.TimerWidth = 0;
-    TimerSetSize(control, width, height);
+    HobnanigansTimerSetSize(control, width, height);
     timer:SetBackColor(colorStart);
     timer:SetPosition(borderWidth, borderHeight + 5);
     timer.StartColor = colorStart;
@@ -75,7 +75,7 @@ function MakeTimerControl(
         if (isPrecise) then updateInterval = 0.05; end
 
         if (elapsedTime > timer.Duration) then
-            TimerStop(control);
+            HobnanigansTimerStop(control);
         elseif (currentTime > (timer.PreviousUpdateTime + updateInterval)) then
             -- Don't bother updating the timer every frame.
             timer.PreviousUpdateTime = currentTime;
@@ -93,14 +93,14 @@ function MakeTimerControl(
                 timer:SetBackColor(colorEnd);
             end
 
-            timerText:SetText(FormatTime(remainingTime));
+            timerText:SetText(FormatHobnanigansTime(remainingTime));
         end
     end
 
     return control;
 end
 
-function FormatTime(timeInSeconds)
+function FormatHobnanigansTime(timeInSeconds)
     if (timeInSeconds > 60) then
         local minutes = math.floor(timeInSeconds / 60);
         local seconds = math.floor(timeInSeconds - minutes * 60);
@@ -115,13 +115,13 @@ function FormatTime(timeInSeconds)
     end
 end
 
-function TimerSetSize(control, width, height)
+function HobnanigansTimerSetSize(control, width, height)
     local timer = control.timer;
     timer:SetSize(width, height);
     timer.TimerWidth = width;
 end
 
-function TimerStart(control)
+function HobnanigansTimerStart(control)
     local timer = control.timer;
     timer.StartTime = Turbine.Engine.GetGameTime();
     timer.IsStopped = false;
@@ -130,7 +130,7 @@ function TimerStart(control)
     control:SetVisible(true);
 end
 
-function TimerStop(control)
+function HobnanigansTimerStop(control)
     local timer = control.timer;
     timer.IsStopped = true;
     timer:SetWantsUpdates(false);
@@ -138,7 +138,7 @@ function TimerStop(control)
 end
 
 -- Override timer when referee says 2 minutes, 6 minutes
-function TimerSetTimeRemaining(control, secondsRemaining)
+function HobnanigansTimerSetTimeRemaining(control, secondsRemaining)
     local timer = control.timer;
     local currentTime = Turbine.Engine.GetGameTime();
     timer.StartTime = currentTime - (timer.Duration - secondsRemaining);

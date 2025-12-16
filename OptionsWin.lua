@@ -613,7 +613,7 @@ function DrawHobnanigansDebug_Time(options, x, y, secondsRemaining)
     gameTime:SetParent(options)
     gameTime:SetText(time .. timeMarker);
     gameTime.Click = function(sender, args)
-        TimerSetTimeRemaining(hobnanigansTimer, secondsRemaining + 2);
+        HobnanigansTimerSetTimeRemaining(hobnanigansTimer, secondsRemaining + 2);
     end
     gameTime:SetWidth(50);
     gameTime:SetPosition(x, y);
