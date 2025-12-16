@@ -25,7 +25,7 @@ import "CubePlugins.FestivalBuddyII.Globals";
 --import "CubePlugins.FestivalBuddyII.Libraries.Tooltip";
 import "CubePlugins.FestivalBuddyII.ChatLogger";
 import "CubePlugins.FestivalBuddyII.BarterItems";
-import "CubePlugins.FestivalBuddyII.TimerControl";
+import "CubePlugins.FestivalBuddyII.HobnanigansTimerControl";
 import "CubePlugins.FestivalBuddyII.QuickGuides.QuickGuides";
 import "CubePlugins.FestivalBuddyII.QuickGuides.InnLeagueAleAssociation.QuickGuideStrings_InnLeagueAleAssociation";
 import "CubePlugins.FestivalBuddyII.QuickGuides.Midsummer.QuickGuideStrings_Midsummer";
