@@ -201,7 +201,11 @@ function QuickGuidWinHandleCheckedEntry(treeNode)
 
     local index = treeNode.index;
     if (_QUICK_GUIDE[SELECTEDFESTIVAL][index]) then
-        QuickGuideWinSetCompleted(index);
+        if (checkBox:IsChecked()) then
+            QuickGuideWinSetCompleted(index);
+        else
+            QuickGuideWinUnsetCompleted(index);
+        end
     end
 
 end
@@ -283,6 +287,10 @@ end
 
 function QuickGuideWinSetCompleted(index)
     SETTINGS.QUICK_GUIDE_PROGRESS[SELECTEDFESTIVAL][index] = true;
+end
+
+function QuickGuideWinUnsetCompleted(index)
+    SETTINGS.QUICK_GUIDE_PROGRESS[SELECTEDFESTIVAL][index] = nil;
 end
 
 function QuickGuideWinClearCompleted()
