@@ -108,6 +108,20 @@ function CreateNpcTimer(npcName, cooldownInSeconds)
     if (wNpcCooldownWinParent.ActiveTimers[npcName]) then
         return;
     end
+
+    -- Don't create a timer for an NPC if there are 
+    -- no more objectives remaining:
+    local moveObjective = _NPC_OBJECTIVES["MOVE"][npcName];
+    local moveIndex = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_INDICIES[YULE][moveObjective];
+    local moveIsComplete = QuickGuideWinIsCompleted(moveIndex);
+    local charitableObjective = _NPC_OBJECTIVES["CHARITABLE"][npcName];
+    local charitableIndex = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_INDICIES[YULE][charitableObjective];
+    local charitableIsComplete = QuickGuideWinIsCompleted(charitableIndex);
+
+    if (moveIsComplete and charitableIsComplete) then
+        return;
+    end
+
     wNpcCooldownWinParent.ActiveTimers[npcName] = true;
 
     local controlWidth = wNpcCooldownWinParent.NpcCooldownControl:GetWidth();
@@ -195,6 +209,23 @@ function HandleSayChat_WinterHomeBeggars(message)
             seconds);
     end
 end
+
+_NPC_OBJECTIVES = {
+    ["MOVE"] = {
+        ["BARRETT"] = "MOVING_THEM_OFF_BARRETTNOWELL";
+        ["TED"] = "MOVING_THEM_OFF_TEDIVES";
+        ["REGINA"] = "MOVING_THEM_OFF_REGINAJUDSON";
+        ["JACK"] = "MOVING_THEM_OFF_JACKJUDSON";
+        ["BILL"] = "MOVING_THEM_OFF_BILLHYDE";
+    };
+    ["CHARITABLE"] = {
+        ["BARRETT"] = "A_CHARITABLE_SPIRIT_BARRETTNOWELL";
+        ["TED"] = "A_CHARITABLE_SPIRIT_TEDIVES";
+        ["REGINA"] = "A_CHARITABLE_SPIRIT_REGINAJUDSON";
+        ["JACK"] = "A_CHARITABLE_SPIRIT_JACKJUDSON";
+        ["BILL"] = "A_CHARITABLE_SPIRIT_BILLHYDE";
+    };
+};
 
 _NPC_COOLDOWNS = {
     ["MOVE"] = {
