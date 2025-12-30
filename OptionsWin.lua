@@ -1140,7 +1140,10 @@ function DrawSayDebug(options, optionsY)
     messageTextBox:SetPosition(100, y-10);
     messageTextBox:SetSize(300, 30);
     messageTextBox:SetMultiline(true); -- Alert allows multiline messages
-    messageTextBox:SetText("Sample Message");
+    messageTextBox:SetText(SETTINGS.DEBUG_CHAT_MESSAGE);
+    messageTextBox.TextChanged = function(sender, args)
+        SETTINGS.DEBUG_CHAT_MESSAGE = messageTextBox:GetText();
+    end
     y = y + 35;
 
     local appendNewlineCheckBox = Turbine.UI.Lotro.CheckBox();
