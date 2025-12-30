@@ -61,7 +61,7 @@ end
 
 function FilterQuest(cMessage)
     -- Should be first thing in this function
-    QuickGuideFilterQuestBegin();
+    QuickGuideQuestChatProcessingBegin();
 -- Filters here for use with the Quest channel.
 
     local CompQuest = string.find(cMessage,(GetString(_LANG.QUESTS.COMPLETEDQUEST)));
@@ -95,7 +95,7 @@ function FilterQuest(cMessage)
     QuickGuideWinHandleQuestChannelText(cMessage);
 
     -- Should be last thing in this function:
-    QuickGuideFilterQuestEnd();
+    QuickGuideQuestChatProcessingEnd();
 end
 
 -- This label is for stripping markup, do not touch!

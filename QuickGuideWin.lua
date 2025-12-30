@@ -14,7 +14,7 @@ function DrawQuickGuideWin()
     wQuickGuideWinParent:SetText(GetString(_LANG.OTHER.WINDOWS.QUICK_GUIDE.QUICK_GUIDE_TITLE));
     wQuickGuideWinParent:SetVisible(SETTINGS.QUICK_GUIDE_WIN.VISIBLE);
     wQuickGuideWinParent:SetResizable(true);
-    wQuickGuideWinParent.IsFilterQuestHappening = false;
+    wQuickGuideWinParent.IsQuestChatProcessingHappening = false;
     wQuickGuideWinParent.PositionChanged = function(sender, args)
         SETTINGS.QUICK_GUIDE_WIN.X = wQuickGuideWinParent:GetLeft();
         SETTINGS.QUICK_GUIDE_WIN.Y = wQuickGuideWinParent:GetTop();
@@ -71,12 +71,12 @@ function QuickGuideTreeViewFilterFunction(treeNode)
     return isFiltered;
 end
 
-function QuickGuideFilterQuestBegin()
-    wQuickGuideWinParent.IsFilterQuestHappening = true;
+function QuickGuideQuestChatProcessingBegin()
+    wQuickGuideWinParent.IsQuestChatProcessingHappening = true;
 end
 
-function QuickGuideFilterQuestEnd()
-    wQuickGuideWinParent.IsFilterQuestHappening = false;
+function QuickGuideQuestChatProcessingEnd()
+    wQuickGuideWinParent.IsQuestChatProcessingHappening = false;
 end
 
 function QuickGuideWinCreateNode(index)
@@ -170,7 +170,10 @@ end
 
 function QuickGuidWinHandleCheckedEntry(treeNode)
     local checkBox = treeNode.checkBox;
-    if (not wQuickGuideWinParent.IsFilterQuestHappening and
+
+    -- Prevent someone holding down shift while completing a quest objective
+    -- from causing a long list of quick guide entries from being marked complete:
+    if (not wQuickGuideWinParent.IsQuestChatProcessingHappening and
         checkBox:IsShiftKeyDown()) then
         for i=1, treeNode.index - 1 do
             local possibleCheckbox = GetCheckbox(i);
