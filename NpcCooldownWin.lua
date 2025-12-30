@@ -15,6 +15,7 @@ function DrawNpcCooldownWin()
     wNpcCooldownWinParent.RowHeight = 35;
 
     wNpcCooldownWinParent.ActiveTimers = {};
+    wNpcCooldownWinParent.isHudVisible = true;
 
     Onscreen(wNpcCooldownWinParent);
 
@@ -54,11 +55,26 @@ function DrawNpcCooldownWin()
     -- END DEBUG
 end
 
+function ChangeNpcCooldownWinHud(isHudVisible)
+    wNpcCooldownWinParent.isHudVisible = isHudVisible;
+    if (isHudVisible) then
+        if (wNpcCooldownWinParent.ListBox:GetItemCount() > 0) then
+            wNpcCooldownWinParent:SetVisible(true);
+            wNpcCooldownWinParent:Activate();
+        end
+    else
+        wNpcCooldownWinParent:SetVisible(false);
+    end
+
+end
+
 function AddTimer(timerControl)
     wNpcCooldownWinParent.ListBox:AddItem(timerControl);
     UpdateWindowHeight();
-    wNpcCooldownWinParent:SetVisible(true);
-    wNpcCooldownWinParent:Activate();
+    if (wNpcCooldownWinParent.isHudVisible) then
+        wNpcCooldownWinParent:SetVisible(true);
+        wNpcCooldownWinParent:Activate();
+    end
 end
 
 function RemoveTimer(npcName, timerControl)

@@ -195,6 +195,7 @@ function DrawMainWin()
                 SetBarterWinVisible(SETTINGS.BARTERWIN.VISIBLE, true);
                 wDanceParent:SetVisible(SETTINGS.DANCEWIN.VISIBLE);
                 wQuickGuideWinParent:SetVisible(SETTINGS.QUICK_GUIDE_WIN.VISIBLE);
+                ChangeNpcCooldownWinHud(true);
 
                 if wMainWinParent:IsVisible() == true then
                     EmotesAssistSetVisible(SETTINGS.EMOTEWIN.VISIBLE);
@@ -206,6 +207,7 @@ function DrawMainWin()
                 SetBarterWinVisible(false);
                 wDanceParent:SetVisible(false);
                 wQuickGuideWinParent:SetVisible(false);
+                ChangeNpcCooldownWinHud(false);
 
                 EmotesAssistSetVisible(false);
                 QSAssistSetVisible(false);
@@ -230,6 +232,9 @@ function DrawMainWin()
 
                 EmotesAssistSetVisible(false);
                 QSAssistSetVisible(false);
+
+                -- todo: is it a problem that the "closed" window will come back if you hide and show the HUD?
+                wNpcCooldownWinParent:SetVisible(false);
 
                 print(GetString(_LANG.OTHER.COMMAND));
             end
