@@ -58,6 +58,7 @@ function AddTimer(timerControl)
     wNpcCooldownWinParent.ListBox:AddItem(timerControl);
     UpdateWindowHeight();
     wNpcCooldownWinParent:SetVisible(true);
+    wNpcCooldownWinParent:Activate();
 end
 
 function RemoveTimer(npcName, timerControl)
