@@ -28,6 +28,11 @@ _IMAGES = {
     ["OPTIONS_ROLLOVER"] = 0x41101832;
     ["OPTIONS_PRESSED"] = 0x41101834;
 
+    ["PROGRESS"] = {
+        ["PROGRESS_BACK"] = RESOURCEDIR .. "ProgressBar_Back.tga";
+        ["PROGRESS_BAR"] = RESOURCEDIR .. "ProgressBar.tga";
+    };
+
     -- 292 x 360:
     [SPRING] = {
         ["BACKGROUND"] = RESOURCEDIR .. "MainWin_Back_Spring.tga";

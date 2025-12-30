@@ -563,6 +563,25 @@ _LANG = {
             ["FRENCH"] = "^<Select:IID:0x[%dA-F]+>Will Piedblanc<\\Select> dit: ''(.*)''"; -- Needs verification
         };
 
+        ["YULE_NPC_COOLDOWN_LABELS"] = {
+            ["BARRETT"] = {
+                ["ENGLISH"] = "Barrett Nowell\n  (next to Mara Sandydowns)";
+            };
+            ["TED"] = {
+                ["ENGLISH"] = "Ted Ives\n  (midway between Ona Kay and Daley Utteridge)";
+            };
+            ["REGINA"] = {
+                ["ENGLISH"] = "Regina Judson\n  (midway between Daley Utteridge and the Theatre)";
+            };
+            ["JACK"] = {
+                ["ENGLISH"] = "Jack Judson\n  (next to Theatre entrance)";
+            };
+            ["BILL"] = {
+                ["ENGLISH"] = "Bill Hyde\n  (next to final Biggest Stomach table)";
+            };
+
+        };
+
         ["WINDOWS"] = {
             ["HARVESTMATH_MAZE_ID_WIN_TITLE"] = {
                 ["ENGLISH"] = "Tanglecorn ID";
@@ -590,7 +609,13 @@ _LANG = {
                     ["GERMAN"] = "Liste zurücksetzen";
                     ["FRENCH"] = "Réinitialiser ce guide rapide";
                 };
-            }
+            };
+
+            ["NPC_COOLDOWN_WIN"] = {
+                ["TITLE"] = {
+                    ["ENGLISH"] = "NPC Cooldown Window";
+                };
+            };
 
 
         };

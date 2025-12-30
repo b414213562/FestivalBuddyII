@@ -173,6 +173,11 @@ DEFAULT_SETTINGS = {
         ["HEIGHT"] = 320;
     };
 
+    ["NPC_COOLDOWN_WIN"] = {
+        ["X"] = SCREENWIDTH/2;
+        ["Y"] = SCREENHEIGHT/3;
+    };
+
     ["QSWIN"] = {
         ["VISIBLE"] = false;
         ["X"] = SCREENWIDTH/2;

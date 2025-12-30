@@ -16,25 +16,24 @@ end
 function InitiateChatLogger()
 
     CHATLOG = Turbine.Chat;
-    CHATLOG.Received = function (sender, args)
-
-        local tempMessage = tostring(args.Message);
-
-        if args.ChatType == Turbine.ChatType.Standard then
-            FilterStandard(tempMessage);
-        end
-
-        if args.ChatType == Turbine.ChatType.Say then
-            FilterSay(tempMessage);
-        end
-
-        if args.ChatType == Turbine.ChatType.Quest then
-            FilterQuest(tempMessage);
-        end
-
-    end
+    CHATLOG.Received = ChatReceived;
 end
 
+function ChatReceived(sender, args)
+    local tempMessage = tostring(args.Message);
+
+    if args.ChatType == Turbine.ChatType.Standard then
+        FilterStandard(tempMessage);
+    end
+
+    if args.ChatType == Turbine.ChatType.Say then
+        FilterSay(tempMessage);
+    end
+
+    if args.ChatType == Turbine.ChatType.Quest then
+        FilterQuest(tempMessage);
+    end
+end
 
 function FilterStandard(cMessage)
 -- Filters here for use with the Standard channel.
@@ -187,6 +186,10 @@ function FilterSay(cMessage)
     -- Hobnanigans uses say to track the beginning of play, points, and the end of play:
     if (SELECTEDFESTIVAL == HOBNANIGANS) then
         HandleSayChat_HobnanigansTracker(GetRawText(cMessage));
+    end
+
+    if (SELECTEDFESTIVAL == YULE) then
+        HandleSayChat_WinterHomeBeggars(GetRawText(cMessage));
     end
 
     -- Other filters
