@@ -1110,10 +1110,66 @@ function DrawAlertDebug(options, optionsY)
 
     y = y + 30;
 
-
-
     alertDebugControl:SetHeight(y);
     return optionsY + alertDebugControl:GetHeight();
+end
+
+function DrawSayDebug(options, optionsY)
+    local y = 0;
+    
+    local sayDebugControl = Turbine.UI.Control();
+    sayDebugControl:SetParent(options);
+    sayDebugControl:SetSize(options:GetWidth(), 100);
+    sayDebugControl:SetTop(optionsY);
+    
+    local sayDebugLabel = Turbine.UI.Label();
+    sayDebugLabel:SetParent(sayDebugControl);
+    sayDebugLabel:SetWidth(200);
+    sayDebugLabel:SetPosition(0, y);
+    sayDebugLabel:SetText("Simulated Chat Messages");
+    y = y + 30;
+
+    local messageLabel = Turbine.UI.Label();
+    messageLabel:SetParent(sayDebugControl);
+    messageLabel:SetWidth(200);
+    messageLabel:SetPosition(20, y);
+    messageLabel:SetText("Message:");
+
+    local messageTextBox = Turbine.UI.Lotro.TextBox();
+    messageTextBox:SetParent(sayDebugControl);
+    messageTextBox:SetPosition(100, y-10);
+    messageTextBox:SetSize(300, 30);
+    messageTextBox:SetMultiline(true); -- Alert allows multiline messages
+    messageTextBox:SetText("Sample Message");
+    y = y + 35;
+
+    local appendNewlineCheckBox = Turbine.UI.Lotro.CheckBox();
+    appendNewlineCheckBox:SetParent(sayDebugControl);
+    appendNewlineCheckBox:SetSize(200, 20);
+    appendNewlineCheckBox:SetPosition(20, y);
+    appendNewlineCheckBox:SetText("Add newline after message");
+    appendNewlineCheckBox:SetChecked(true);
+    y = y + 30;
+
+    local sayButton = Turbine.UI.Lotro.Button();
+    sayButton:SetParent(sayDebugControl);
+    sayButton:SetText("Say");
+    sayButton:SetWidth(100);
+    sayButton:SetPosition(75, y);
+    sayButton.Click = function(sender, args)
+        local newline = "";
+        if (appendNewlineCheckBox:IsChecked()) then newline = "\n"; end
+        local args = {
+            ["Message"] = messageTextBox:GetText() .. newline;
+            ["ChatType"] = Turbine.ChatType.Say;
+        };
+        ChatReceived(nil, args)
+    end
+    y = y + 30;
+
+    sayDebugControl:SetHeight(y);
+
+    return optionsY + sayDebugControl:GetHeight();
 end
 
 function CreateColorPickerWindow()
@@ -1337,6 +1393,7 @@ function DrawOptionsWin()
     DrawFireworksDebug(debugOptions);
     y = DrawFarmersFaireFatMayorDebug(debugOptions);
     y = DrawAlertDebug(debugOptions, y);
+    y = DrawSayDebug(debugOptions, y);
 
     debugOptions:SetHeight(y);
     options:SetHeight(nonDebugOptions:GetHeight() + debugOptions:GetHeight());
