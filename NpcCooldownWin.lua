@@ -14,6 +14,8 @@ function DrawNpcCooldownWin()
     end
     wNpcCooldownWinParent.RowHeight = 35;
 
+    wNpcCooldownWinParent.ActiveTimers = {};
+
     Onscreen(wNpcCooldownWinParent);
 
     local npcCooldownControl = Turbine.UI.Control();
@@ -58,7 +60,8 @@ function AddTimer(timerControl)
     wNpcCooldownWinParent:SetVisible(true);
 end
 
-function RemoveTimer(timerControl)
+function RemoveTimer(npcName, timerControl)
+    wNpcCooldownWinParent.ActiveTimers[npcName] = nil;
     wNpcCooldownWinParent.ListBox:RemoveItem(timerControl);
     UpdateWindowHeight();
     if (wNpcCooldownWinParent.ListBox:GetItemCount() == 0) then
@@ -84,6 +87,12 @@ end
 
 --- Creates a row containing an NPC label and Progress Bar. Automatically starts the row's timer.
 function CreateNpcTimer(npcName, cooldownInSeconds)
+    -- Don't create more than one timer per NPC:
+    if (wNpcCooldownWinParent.ActiveTimers[npcName]) then
+        return;
+    end
+    wNpcCooldownWinParent.ActiveTimers[npcName] = true;
+
     local controlWidth = wNpcCooldownWinParent.NpcCooldownControl:GetWidth();
     local progressBarImageWidth = 200;
     local progressBarImageHeight = 18;
@@ -101,7 +110,7 @@ function CreateNpcTimer(npcName, cooldownInSeconds)
     local npcLabelWidth = controlWidth - progressBarImageWidth;
     local npcLabel = Turbine.UI.Label();
     npcLabel:SetParent(npcControl);
-    npcLabel:SetText(npcName);
+    npcLabel:SetText(GetString(_LANG.OTHER.YULE_NPC_COOLDOWN_LABELS[npcName]));
     npcLabel:SetSize(npcLabelWidth, rowHeight)
     -- npcLabel:SetBackColor(Turbine.UI.Color.DarkGreen);
 
@@ -150,7 +159,7 @@ function CreateNpcTimer(npcName, cooldownInSeconds)
 
         if (currentTime > npcControl.StopTime) then
             npcControl:SetWantsUpdates(false);
-            RemoveTimer(npcControl);
+            RemoveTimer(npcName, npcControl);
         end
 
     end
@@ -165,7 +174,7 @@ function HandleSayChat_WinterHomeBeggars(message)
         local type = entry["TYPE"];
         local seconds = _NPC_COOLDOWNS[type][npc];
         CreateNpcTimer(
-            GetString(_LANG.OTHER.YULE_NPC_COOLDOWN_LABELS[npc]),
+            npc,
             seconds);
     end
 end
