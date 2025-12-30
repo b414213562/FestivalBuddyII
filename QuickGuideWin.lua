@@ -171,7 +171,10 @@ end
 function QuickGuidWinHandleCheckedEntry(treeNode)
     local checkBox = treeNode.checkBox;
 
-    -- Prevent someone holding down shift while completing a quest objective
+    -- Holding down shift and clicking an ojbective will mark all previous objectives complete.
+    -- However, we don't want this to happen from a quest chat message, 
+    --   only from the user checking off an objective.
+    -- This if prevents someone holding down shift while completing a quest objective
     -- from causing a long list of quick guide entries from being marked complete:
     if (not wQuickGuideWinParent.IsQuestChatProcessingHappening and
         checkBox:IsShiftKeyDown()) then
