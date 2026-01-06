@@ -897,6 +897,8 @@ _LANG = {
 
         ["ESCAPE_KEY_CLOSES_WINDOWS"] = { ["ENGLISH"] = "Escape key closes Festival Buddy windows"; ["GERMAN"] = "ESC-Taste schließt Festival Buddy"; };
 
+        ["USE_NPC_COOLDOWN"] = { ["ENGLISH"] = "Use NPC Cooldown Window"; };
+
         ["WHAT_IS_LOCAL_TIME_OFFSET"] = {
             ["ENGLISH"] = "What is your local time difference from server time?";
             ["GERMAN"] = "Wie groß ist der Zeitunterschied zwischen deiner lokalen Uhrzeit und der Serverzeit?";

@@ -114,6 +114,7 @@ DEFAULT_SETTINGS = {
     ["QSASSIST"] = true;
     ["SHOWSCREEN"] = true;
     ["ESCAPE_KEY_CLOSES_WINDOWS"] = true;
+    ["USE_NPC_COOLDOWN"] = true;
     ["QUICK_GUIDE_REMOVE_COMPLETED"] = true;
     ["QUICK_GUIDE_CLEAR_DELAY"] = 5;
     ["QUICK_GUIDE_USE_TIMER"] = true;

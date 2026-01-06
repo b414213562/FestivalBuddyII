@@ -42,6 +42,31 @@ function DrawGenericOptions(options, y)
     return y + 20;
 end
 
+function DrawNpcCooldownOptions(options, optionsY)
+    local indent = 10;
+    local y = 0;
+    
+    local drawNpcCooldownOptionsControl = Turbine.UI.Control();
+    drawNpcCooldownOptionsControl:SetParent(options);
+    drawNpcCooldownOptionsControl:SetSize(options:GetWidth(), 100);
+    drawNpcCooldownOptionsControl:SetTop(optionsY);
+
+    local useNpcCooldown = Turbine.UI.Lotro.CheckBox();
+    useNpcCooldown:SetParent(drawNpcCooldownOptionsControl);
+    useNpcCooldown:SetText(GetString(_LANG.OPTIONS.USE_NPC_COOLDOWN))
+    useNpcCooldown:SetSize(drawNpcCooldownOptionsControl:GetWidth(), 20);
+    useNpcCooldown:SetPosition(indent, y);
+    useNpcCooldown:SetChecked(SETTINGS.USE_NPC_COOLDOWN);
+    useNpcCooldown.CheckedChanged = function(sender, args)
+        SETTINGS.USE_NPC_COOLDOWN = useNpcCooldown:IsChecked();
+    end
+    y = y + 50;
+
+    drawNpcCooldownOptionsControl:SetHeight(y);
+
+    return optionsY + drawNpcCooldownOptionsControl:GetHeight();
+end
+
 function DrawMainWindowScaling(options, y)
     -- Calculate size information:
     local screenWidth = Turbine.UI.Display:GetWidth(); -- e.g. 1920
@@ -1364,6 +1389,7 @@ function DrawOptionsWin()
 
     local y = topMargin;
     y = DrawGenericOptions(nonDebugOptions, y);
+    y = DrawNpcCooldownOptions(nonDebugOptions, y);
     y = DrawQuickGuideOptions(nonDebugOptions, y);
     y = DrawMapOptions(nonDebugOptions, y);
     nonDebugOptions:SetHeight(y);

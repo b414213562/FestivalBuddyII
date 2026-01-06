@@ -202,6 +202,9 @@ function CreateNpcTimer(npcName, cooldownInSeconds)
 end
 
 function HandleSayChat_WinterHomeBeggars(message)
+
+    if (not SETTINGS.USE_NPC_COOLDOWN) then return; end
+
     if (_NPC_COOLDOWN_STRINGS[CLIENTLANG][message]) then
         local entry = _NPC_COOLDOWN_STRINGS[CLIENTLANG][message];
         local npc = entry["NPC"];
