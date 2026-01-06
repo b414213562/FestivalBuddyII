@@ -111,14 +111,17 @@ function CreateNpcTimer(npcName, cooldownInSeconds)
 
     -- Don't create a timer for an NPC if there are 
     -- no more objectives remaining:
+    local isMoveChainUsed = SETTINGS.QUICK_GUIDE_QUESTS_TO_USE[YULE][_NPC_CHAINS["MOVE"]];
     local moveObjective = _NPC_OBJECTIVES["MOVE"][npcName];
     local moveIndex = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_INDICIES[YULE][moveObjective];
     local moveIsComplete = QuickGuideWinIsCompleted(moveIndex);
+    local isCharitableChainUsed = SETTINGS.QUICK_GUIDE_QUESTS_TO_USE[YULE][_NPC_CHAINS["CHARITABLE"]];
     local charitableObjective = _NPC_OBJECTIVES["CHARITABLE"][npcName];
     local charitableIndex = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_INDICIES[YULE][charitableObjective];
     local charitableIsComplete = QuickGuideWinIsCompleted(charitableIndex);
 
-    if (moveIsComplete and charitableIsComplete) then
+    if ((not isMoveChainUsed or moveIsComplete) and 
+        (not isCharitableChainUsed or charitableIsComplete)) then
         return;
     end
 
@@ -225,6 +228,11 @@ _NPC_OBJECTIVES = {
         ["JACK"] = "A_CHARITABLE_SPIRIT_JACKJUDSON";
         ["BILL"] = "A_CHARITABLE_SPIRIT_BILLHYDE";
     };
+};
+
+_NPC_CHAINS = {
+    ["MOVE"] = "MOVING_THEM_OFF";
+    ["CHARITABLE"] = "A_CHARITABLE_SPIRIT";
 };
 
 _NPC_COOLDOWNS = {
