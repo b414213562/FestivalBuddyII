@@ -230,13 +230,13 @@ _NPC_OBJECTIVES = {
 _NPC_COOLDOWNS = {
     ["MOVE"] = {
         ["BARRETT"] = 48;
-        ["TED"] = 20;
+        ["TED"] = 21;
         ["REGINA"] = 20;
         ["JACK"] = 20;
         ["BILL"] = 30;
     };
     ["SUPPORT"] = {
-        ["BARRETT"] = 25;
+        ["BARRETT"] = 20;
         ["TED"] = 15;
         ["REGINA"] = 20;
         ["JACK"] = 20;
