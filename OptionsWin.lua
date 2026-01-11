@@ -523,7 +523,7 @@ function DrawFireworksDebug(options)
     -- Fireworks in Bree:
     local fireworksHeaderLabel = Turbine.UI.Label();
     fireworksHeaderLabel:SetParent(options);
-    fireworksHeaderLabel:SetText("Fireworks in Bree:");
+    fireworksHeaderLabel:SetText("Anniversary Event - Fireworks in Bree:");
     fireworksHeaderLabel:SetSize(200, 20);
     fireworksHeaderLabel:SetTop(fireworksY);
 
@@ -1010,6 +1010,98 @@ function DrawFarmersFaireFatMayorDebug(options)
     return y;
 end
 
+function DrawYuleTheBiggestStomach(options, optionsY)
+    local y = 0;
+
+    local biggestStomachControl = Turbine.UI.Control();
+    biggestStomachControl:SetParent(options);
+    biggestStomachControl:SetSize(options:GetWidth(), 100);
+    biggestStomachControl:SetTop(optionsY);
+    biggestStomachControl:SetBackColor(Turbine.UI.Color.Green);
+
+    local fatMayorDebugLabel = Turbine.UI.Label();
+    fatMayorDebugLabel:SetParent(biggestStomachControl);
+    fatMayorDebugLabel:SetPosition(0, y);
+    fatMayorDebugLabel:SetWidth(options:GetWidth());
+    fatMayorDebugLabel:SetText("Yule - The Biggest Stomach of Them All:")
+    y = y + 20;
+
+    -- Ona Kay says, ''One minute until the eating contest begins! I hope you have plenty of room....''
+    local button1 = Turbine.UI.Lotro.Button();
+    button1:SetParent(biggestStomachControl);
+    button1:SetText("One minute");
+    button1:SetPosition(10, 20);
+    button1:SetWidth(100);
+    button1.Click = function(sender, args)
+        local args = {
+            ["Message"] = "Ona Kay says, ''One minute until the eating contest begins! I hope you have plenty of room....''\n";
+            ["ChatType"] = Turbine.ChatType.Say;
+        };
+        ChatReceived(nil, args);
+    end
+
+    local button2 = Turbine.UI.Lotro.Button();
+    button2:SetParent(biggestStomachControl);
+    button2:SetText("10 sec");
+    button2:SetPosition(button1:GetLeft() + button1:GetWidth() + 10, 20);
+    button2:SetWidth(75);
+    button2.Click = function(sender, args)
+        local args = {
+            ["Message"] = "Ona Kay says, ''Ten seconds, everyone!''\n";
+            ["ChatType"] = Turbine.ChatType.Say;
+        };
+        ChatReceived(nil, args);
+    end
+
+    local button3 = Turbine.UI.Lotro.Button();
+    button3:SetParent(biggestStomachControl);
+    button3:SetText("Ready...");
+    button3:SetPosition(button2:GetLeft() + button2:GetWidth() + 10, 20);
+    button3:SetWidth(75);
+    button3.Click = function(sender, args)
+        local args = {
+            ["Message"] = "Ona Kay says, ''Ready....''\n";
+            ["ChatType"] = Turbine.ChatType.Say;
+        };
+        ChatReceived(nil, args);
+    end
+
+    local button4 = Turbine.UI.Lotro.Button();
+    button4:SetParent(biggestStomachControl);
+    button4:SetText("Set...");
+    button4:SetPosition(button3:GetLeft() + button3:GetWidth() + 10, 20);
+    button4:SetWidth(75);
+    button4.Click = function(sender, args)
+        local args = {
+            ["Message"] = "Ona Kay says, ''Set....''\n";
+            ["ChatType"] = Turbine.ChatType.Say;
+        };
+        ChatReceived(nil, args);
+    end
+
+    local button5 = Turbine.UI.Lotro.Button();
+    button5:SetParent(biggestStomachControl);
+    button5:SetText("Eat!");
+    button5:SetPosition(button4:GetLeft() + button4:GetWidth() + 10, 20);
+    button5:SetWidth(75);
+    button5.Click = function(sender, args)
+        local args = {
+            ["Message"] = "Ona Kay says, ''Eat!''\n";
+            ["ChatType"] = Turbine.ChatType.Say;
+        };
+        ChatReceived(nil, args);
+    end
+
+    y = y + 30;
+
+    -- Ona Kay says, ''Ready....''
+    -- Ona Kay says, ''Set....''
+    -- Ona Kay says, ''Eat!''
+
+    biggestStomachControl:SetHeight(y);
+    return optionsY + biggestStomachControl:GetHeight();
+end
+
 function HandleFarmersFaireFatMayorItemClick(item)
     local mayorSayBegin = "<Select:IID:0x03400000702501C3>Will Whitfoot<\\Select> says, ''";
     local mayorSayEnd = "''";
@@ -1421,6 +1513,7 @@ function DrawOptionsWin()
     DrawHobnanigansDebug(debugOptions);
     DrawFireworksDebug(debugOptions);
     y = DrawFarmersFaireFatMayorDebug(debugOptions);
+    y = DrawYuleTheBiggestStomach(debugOptions, y);
     y = DrawAlertDebug(debugOptions, y);
     y = DrawSayDebug(debugOptions, y);
 

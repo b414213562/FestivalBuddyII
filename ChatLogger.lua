@@ -189,7 +189,9 @@ function FilterSay(cMessage)
     end
 
     if (SELECTEDFESTIVAL == YULE) then
-        HandleSayChat_WinterHomeBeggars(GetRawText(cMessage));
+        local rawText = GetRawText(cMessage);
+        HandleSayChat_WinterHomeBeggars(rawText);
+        HandleSayChat_OnaKay(rawText);
     end
 
     -- Other filters
@@ -230,6 +232,16 @@ function HandleFarmersFaireWillWhitfootRequest(request)
         showRemaningTime,
         callback,
         alert_cancellation_token);
+end
+
+function HandleSayChat_OnaKay(message)
+    if (_LANG.OTHER.YULE_ONA_KAY_SAYS[CLIENTLANG][message]) then
+        local step = _LANG.OTHER.YULE_ONA_KAY_SAYS[CLIENTLANG][message];
+        local timing = _LANG.OTHER.YULE_ONA_KAY_SAYS.TIMINGS[step];
+        local gameTime = Turbine.Engine.GetGameTime();
+        SetMainWinYuleCurrentTime(gameTime, timing);
+    end
+
 end
 
 function CheckStandardChatForServerTime(message)

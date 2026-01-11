@@ -400,6 +400,101 @@ function FillMainWin(FESTIVAL)
 
     cDebuffHolder:SetVerticalScrollBar(scDebuffHolder);
 
+    -- Timer for events like the Yule eating competition:
+    if (FESTIVAL == YULE) then
+        local timerHeight = 40;
+        local timerControl = Turbine.UI.Control();
+        timerControl:SetParent(wMainWinHolder);
+        timerControl:SetSize(wMainWinHolder:GetWidth()-31, timerHeight);
+        timerControl:SetPosition(16, cDebuffHolder:GetTop() + cDebuffHolder:GetHeight() - timerHeight);
+        -- timerControl:SetBackColor(Turbine.UI.Color.DarkGreen);
+
+        local labelHeight = 15;
+        local timerLabel = Turbine.UI.Label();
+        timerLabel:SetParent(timerControl);
+        timerLabel:SetSize(timerControl:GetWidth(), labelHeight);
+        timerLabel:SetText(GetString(_LANG.OTHER.YULE_EATING_CONTEST));
+        -- timerLabel:SetBackColor(Turbine.UI.Color.Blue);
+
+        local timerMargin = 1;
+        local timerBackground = Turbine.UI.Control();
+        timerBackground:SetParent(timerControl);
+        timerBackground:SetSize(timerControl:GetWidth() - timerMargin * 2, timerHeight - labelHeight - timerMargin * 2);
+        timerBackground:SetBackColor(Turbine.UI.Color.White);
+        timerBackground:SetPosition(timerMargin, labelHeight + timerMargin);
+
+        local timerForeground = Turbine.UI.Control();
+        timerForeground:SetParent(timerBackground);
+        timerForeground:SetSize(timerBackground:GetWidth() - timerMargin * 2, timerBackground:GetHeight() - timerMargin * 2);
+        timerForeground:SetPosition(timerMargin, timerMargin);
+
+        -- Quest available: ~2 minutes 50 seconds (170 seconds)
+        -- 10 seconds left: ~10 seconds
+        -- Eating time: ~6 minutes (360 seconds)
+        -- Total time: 9 minutes (540 seconds)
+
+        local pixels = timerForeground:GetWidth();
+        local totalSeconds = 540;
+        local questSeconds = 170;
+        local lastCallSeconds = 10;
+        local eatingSeconds = 360;
+
+        local pixelsPerSecond = pixels / totalSeconds;
+        
+        local questPixels = pixelsPerSecond * questSeconds;
+        local lastCallPixels = pixelsPerSecond * lastCallSeconds;
+        local eatingPixels = pixelsPerSecond * eatingSeconds;
+
+        local timerForgeroundQuestAvailable = Turbine.UI.Control();
+        timerForgeroundQuestAvailable:SetParent(timerForeground);
+        timerForgeroundQuestAvailable:SetSize(questPixels, timerForeground:GetHeight());
+        timerForgeroundQuestAvailable:SetPosition(0, 0);
+        timerForgeroundQuestAvailable:SetBackColor(Turbine.UI.Color.Green);
+
+        local timerForegroundLastCall = Turbine.UI.Control();
+        timerForegroundLastCall:SetParent(timerForeground);
+        timerForegroundLastCall:SetSize(lastCallPixels, timerForeground:GetHeight());
+        timerForegroundLastCall:SetPosition(questPixels, 0);
+        timerForegroundLastCall:SetBackColor(Turbine.UI.Color.Yellow);
+
+        local timerForegroundEating = Turbine.UI.Control();
+        timerForegroundEating:SetParent(timerForeground);
+        timerForegroundEating:SetSize(eatingPixels, timerForeground:GetHeight());
+        timerForegroundEating:SetPosition(questPixels + lastCallPixels, 0);
+        timerForegroundEating:SetBackColor(Turbine.UI.Color.Red);
+
+        local currentTimeWidth = 1;
+        local currentTime = Turbine.UI.Control();
+        currentTime:SetParent(timerForeground);
+        currentTime:SetSize(currentTimeWidth, timerForeground:GetHeight());
+        currentTime:SetPosition(0,0);
+        currentTime:SetBackColor(Turbine.UI.Color.Black);
+        currentTime:SetVisible(false);
+        currentTime.Update = function(sender, args)
+            local startTime = SETTINGS_SERVER.YULE_BIGGEST_STOMACH_START_TIME;
+            local gameTime = Turbine.Engine.GetGameTime();
+            local seconds = math.fmod(gameTime - startTime, totalSeconds);
+            local left = pixelsPerSecond * seconds;
+
+            currentTime:SetLeft(left);
+        end
+        wMainWinParent.YuleBiggestStomachCurrentTime = currentTime;
+
+        -- Only trust a recent YULE_BIGGEST_STOMACH_START_TIME
+        local gameTime = Turbine.Engine.GetGameTime();
+        local secondsInHour = 3600;
+        if (gameTime - SETTINGS_SERVER.YULE_BIGGEST_STOMACH_START_TIME < secondsInHour) then
+            currentTime:SetVisible(true);
+            currentTime:SetWantsUpdates(true);
+            -- SETTINGS_SERVER.YULE_BIGGEST_STOMACH_START_TIME = nil;
+            -- local timing = math.fmod(gameTime - SETTINGS_SERVER.YULE_BIGGEST_STOMACH_START_TIME, totalSeconds);
+            -- SetMainWinYuleCurrentTime(SETTINGS_SERVER.YULE_BIGGEST_STOMACH_START_TIME, timing);
+        else
+        end
+
+    end
+
+
     -- QUEST GUIDE -----------------------------------------------------------------------
     local _REFORMATQUESTS = {};
 
@@ -498,6 +593,14 @@ function FillMainWin(FESTIVAL)
     end
 
     RefreshDebuffView();
+end
+
+function SetMainWinYuleCurrentTime(gameTime, timing)
+    SETTINGS_SERVER.YULE_BIGGEST_STOMACH_START_TIME = gameTime - timing;
+
+    local currentTime = wMainWinParent.YuleBiggestStomachCurrentTime;
+    currentTime:SetVisible(true);
+    currentTime:SetWantsUpdates(true);
 end
 
 function SetMainWinVisible(newIsVisible)

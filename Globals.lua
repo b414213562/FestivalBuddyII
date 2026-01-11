@@ -278,6 +278,11 @@ DEFAULT_SETTINGS_SERVER = {
         ["ID_DATE"] = {};
     };
 
+    -- The Turbine.Engine.GetGameTime() corresponding to when the 
+    -- The Biggest Stomach of Them All quest became available.
+    -- When loading, if this value is recent, it will be used, otherwise discarded.
+    ["YULE_BIGGEST_STOMACH_START_TIME"] = 0;
+
 };
 
 -- Default Account-wide Settings

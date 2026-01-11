@@ -582,6 +582,46 @@ _LANG = {
 
         };
 
+        ["YULE_EATING_CONTEST"] = {
+            ["ENGLISH"] = "Eating Contest";
+            ["GERMAN"] = "Wettessen";
+            ["FRENCH"] = "Concours Culinaires";
+        };
+
+        ["YULE_ONA_KAY_SAYS"] = {
+            ["TIMINGS"] = {
+                ["ONE_MINUTE"] = 120;
+                ["TEN_SECONDS"] = 170;
+                ["READY"] = 174;
+                ["SET"] = 177;
+                ["EAT"] = 180;
+            };
+
+            ["ENGLISH"] = {
+                ["Ona Kay says, ''One minute until the eating contest begins! I hope you have plenty of room....''\n"] = "ONE_MINUTE";
+                ["Ona Kay says, ''Ten seconds, everyone!''\n"] = "TEN_SECONDS";
+                ["Ona Kay says, ''Ready....''\n"] = "READY";
+                ["Ona Kay says, ''Set....''\n"] = "SET";
+                ["Ona Kay says, ''Eat!''\n"] = "EAT";
+            };
+
+            ["GERMAN"] = {
+                ["Ona Kay sagt: ''In einer Minute beginnt das Wettessen! Hoffentlich habt Ihr genügend Platz ...''\n"] = "ONE_MINUTE";
+                ["Ona Kay sagt: ''Noch zehn Sekunden, Leute!''\n"] = "TEN_SECONDS";
+                ["Ona Kay sagt: ''Auf die Plätze ...''\n"] = "READY";
+                ["Ona Kay sagt: ''Fertig ...''\n"] = "SET";
+                ["Ona Kay sagt: ''Schmaus!''\n"] = "EAT";
+            };
+
+            ["FRENCH"] = {
+                ["Ona Kay dit : ''Plus qu'une minute avant le lancement du concours ! J'espère que vous aurez suffisamment de place...''\n"] = "ONE_MINUTE";
+                ["Ona Kay dit : ''Dix secondes !''\n"] = "TEN_SECONDS";
+                ["Ona Kay dit : ''A vos marques...''\n"] = "READY";
+                ["Ona Kay dit : ''Prêts ?''\n"] = "SET";
+                ["Ona Kay dit : ''Mangez !''\n"] = "EAT";
+            };
+        };
+
         ["WINDOWS"] = {
             ["HARVESTMATH_MAZE_ID_WIN_TITLE"] = {
                 ["ENGLISH"] = "Tanglecorn ID";
