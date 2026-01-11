@@ -1,3 +1,8 @@
+v2.1.6 changes:
+
+    Festivals:
+        Added X button to clear the selected quest.
+
 v2.1.5 changes:
     Festivals:
         Anniversary:

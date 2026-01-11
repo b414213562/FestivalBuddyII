@@ -422,6 +422,26 @@ function FillMainWin(FESTIVAL)
         RefreshQuestGuide(Args.Text);
     end
 
+    clearQuestButton = Turbine.UI.Control();
+    clearQuestButton:SetParent(wMainWinHolder);
+    clearQuestButton:SetSize(16,16);
+    clearQuestButton:SetPosition(cDebuffHolder:GetWidth() - 12, cDebuffHolder:GetTop()+cDebuffHolder:GetHeight() + 12);
+    clearQuestButton:SetBackground(_IMAGES.CLOSE_NORMAL);
+
+    clearQuestButton.MouseEnter = function ()
+        clearQuestButton:SetBackground(_IMAGES.CLOSE_OVER);
+    end
+
+    clearQuestButton.MouseLeave = function ()
+        clearQuestButton:SetBackground(_IMAGES.CLOSE_NORMAL);
+    end
+
+    clearQuestButton.MouseClick = function ()
+        RefreshQuestGuide("");
+        LoadQuest("");
+    end
+
+
     questMapImage = Turbine.UI.Control();
     questMapImage:SetParent(wMainWinHolder);
     questMapImage:SetPosition(15, 52);
@@ -549,8 +569,11 @@ function LoadQuest(questKey)
 
         if SETTINGS.EMOTESASSIST == true and _QUESTSTRINGS[SELECTEDFESTIVAL][questKey].EMOTES ~= nil then CreateEmotesAssist(GetString(_QUESTSTRINGS[SELECTEDFESTIVAL][questKey].EMOTES)) end;
         if SETTINGS.QSASSIST == true and _QUESTSTRINGS[SELECTEDFESTIVAL][questKey].QUICKSLOTS ~= nil then CreateQuickSlotAssit(GetString(_QUESTSTRINGS[SELECTEDFESTIVAL][questKey].QUICKSLOTS)) end;
+
+        clearQuestButton:SetVisible(true);
     else
         questMapImage:SetVisible(false);
+        clearQuestButton:SetVisible(false);
     end
 
     -- Put a special case here for GetString(_LANG.QUESTS[ANNIVERSARY].BREEFIREWORKS):
@@ -582,6 +605,7 @@ function RefreshQuestGuide(QUESTNAME)
     CloseHelperWindows();
     -- Clear any existing text:
     lblQuestGuide:SetText("");
+    clearQuestButton:SetVisible(false);
 
     for k,v in pairs (_QUESTS) do
 
