@@ -64,7 +64,8 @@ function QuickGuideTreeViewFilterFunction(treeNode)
     local questChain = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAIN_LOOKUP[SELECTEDFESTIVAL][index];
 
     local isChainUsed = SETTINGS.QUICK_GUIDE_QUESTS_TO_USE[SELECTEDFESTIVAL][questChain];
-    local isEntryComplete = treeNode.complete;
+    -- Only pay attention to the complete status if that should be taken into account:
+    local isEntryComplete = treeNode.complete and SETTINGS.QUICK_GUIDE_REMOVE_COMPLETED;
     local isReset = treeNode.isReset;
 
     local isFiltered = not isReset and (isEntryComplete or not isChainUsed);
@@ -104,6 +105,7 @@ function QuickGuideWinCreateNode(index)
     checkBox:SetText(objectivetext);
     checkBox:SetSize(treeView:GetWidth() - ScrollbarWidth, 40);
     checkBox:SetMarkupEnabled(true);
+    checkBox:SetChecked(isCompleted);
     checkBox.CheckedChanged = function(sender, args)
         QuickGuidWinHandleCheckedEntry(treeNode);
         if (checkBox:IsChecked() and objective.CHAIN_END ~= nil) then
