@@ -1,7 +1,11 @@
 v2.1.6 changes:
 
     Festivals:
-        Added X button to clear the selected quest.
+        General:
+            Added X button to clear the selected quest.
+        Yule:
+            Added a window that shows how long each of the five beggars is expected to be away from their post.
+            Add visual timer for eating contest. If the black "now" marker is in green it means the quest can be picked up. Yellow is the 10 second countdown before the round begins. Red means the quest cannot be picked up.
 
 v2.1.5 changes:
     Festivals:

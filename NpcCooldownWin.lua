@@ -104,8 +104,14 @@ end
 
 --- Creates a row containing an NPC label and Progress Bar. Automatically starts the row's timer.
 function CreateNpcTimer(npcName, cooldownInSeconds)
-    -- Don't create more than one timer per NPC:
+    -- Don't create more than one timer per NPC.
+    -- If they emote more than once, use the last one.
     if (wNpcCooldownWinParent.ActiveTimers[npcName]) then
+        local control = wNpcCooldownWinParent.ActiveTimers[npcName];
+        local gameTime = Turbine.Engine.GetGameTime();
+        control.CooldownInSeconds = cooldownInSeconds;
+        control.StartTime = gameTime;
+        control.StopTime = gameTime + cooldownInSeconds;
         return;
     end
 
@@ -125,8 +131,6 @@ function CreateNpcTimer(npcName, cooldownInSeconds)
         return;
     end
 
-    wNpcCooldownWinParent.ActiveTimers[npcName] = true;
-
     local controlWidth = wNpcCooldownWinParent.NpcCooldownControl:GetWidth();
     local progressBarImageWidth = 200;
     local progressBarImageHeight = 18;
@@ -138,7 +142,10 @@ function CreateNpcTimer(npcName, cooldownInSeconds)
     npcControl.StartTime = Turbine.Engine.GetGameTime();
     npcControl.StopTime = npcControl.StartTime + cooldownInSeconds;
     npcControl.PreviousUpdateTime = 0;
+    npcControl.CooldownInSeconds = cooldownInSeconds;
     npcControl:SetWantsUpdates(true);
+
+    wNpcCooldownWinParent.ActiveTimers[npcName] = npcControl;
 
     -- Label for NPC name:
     local npcLabelWidth = controlWidth - progressBarImageWidth;
@@ -180,11 +187,11 @@ function CreateNpcTimer(npcName, cooldownInSeconds)
     npcControl.Update = function(sender, args)
         local currentTime = Turbine.Engine.GetGameTime();
         local elapsedTime = currentTime - npcControl.StartTime;
-        local remainingTime = cooldownInSeconds - elapsedTime;
+        local remainingTime = npcControl.CooldownInSeconds - elapsedTime;
 
         local updateInterval = 0.1;
         if (currentTime > (npcControl.PreviousUpdateTime + updateInterval)) then
-            local proportionCompleted = elapsedTime / cooldownInSeconds;
+            local proportionCompleted = elapsedTime / npcControl.CooldownInSeconds;
             local pixels = proportionCompleted * 179;
             progressBar:SetWidth(pixels);
 
