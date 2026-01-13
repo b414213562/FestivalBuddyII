@@ -161,6 +161,7 @@ _G.AddNextQuickguideValue = AddNextQuickguideValue;
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_INDICIES = {};
 
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_PROGRESS = {};
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS = {};
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS = {};
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS = {};

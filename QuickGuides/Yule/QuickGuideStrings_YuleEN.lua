@@ -65,6 +65,29 @@ QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_4].DISPLAY = function(
 QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION5].DISPLAY = function() return Continue("The Biggest Stomach of Them All (Part V)", "Eat food at the fifth station"); end
 QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_5].DISPLAY = function() return TurnInTo("The Biggest Stomach of Them All (Part V)", "Ian Prudholm"); end
 
+-- Note: Could switch to storing each incremental progress string instead? Performance vs memory tradeoff?
+-- TODO: Check if \n is needed for quest progression entries
+-- TODO: Add German and French versions of this table
+QG_YULE_PROGRESS = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_PROGRESS[YULE];
+QG_YULE_PROGRESS = {
+    ["Collected unwilling firewood %((%d+)/(%d+)%)"] = QG_YULE_INDEX.UNWILLING_FIREWOOD_COLLECT;
+    ["Brought cheer to the snow-beasts %((%d+)/(%d+)%)"] = QG_YULE_INDEX.THE_ABOMINABLE_SNOW_BEASTS_CHEER;
+    ["Dispersed Wintry Weather %((%d+)/(%d+)%)"] = QG_YULE_INDEX.COLD_AS_ICE_DISPERSE;
+    ["Looted a distracted patron %((%d+)/(%d+)%)"] = QG_YULE_INDEX.MAKING_MISCHIEF_LOOT;
+    ["Picked up dirty dishes %((%d+)/(%d+)%)"] = QG_YULE_INDEX.TIDYING_UP_DISHES;
+    ["Cleaned up liquid spills %((%d+)/(%d+)%)"] = QG_YULE_INDEX.TIDYING_UP_SPILLS;
+    ["Cleaned up reeking garbage %((%d+)/(%d+)%)"] = QG_YULE_INDEX.TIDYING_UP_GARBAGE;
+    ["Baked bread %((%d+)/(%d+)%)"] = QG_YULE_INDEX.STUFFING_THE_STUFFED_BREAD;
+    ["Collected eggs %((%d+)/(%d+)%)"] = QG_YULE_INDEX.STUFFING_THE_STUFFED_EGGS;
+    ["Collected berries %((%d+)/(%d+)%)"] = QG_YULE_INDEX.STUFFING_THE_STUFFED_BERRIES;
+    ["Collected mushrooms %((%d+)/(%d+)%)"] = QG_YULE_INDEX.STUFFING_THE_STUFFED_MUSHROOMS;
+    ["Ate food at the first station %((%d+)/(%d+)%)"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION1;
+    ["Ate food at the second station %((%d+)/(%d+)%)"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION2;
+    ["Ate food at the third station %((%d+)/(%d+)%)"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION3;
+    ["Ate food at the fourth station %((%d+)/(%d+)%)"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION4;
+    ["Ate food at the fifth station %((%d+)/(%d+)%)"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION5;
+};
+
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[YULE] = {
     ["New Quest: In the Spirit of Yule"] = QG_YULE_INDEX.IN_THE_SPIRIT_OF_YULE_PICKUP;
     ["New Quest: Moving Them Off"] = QG_YULE_INDEX.MOVING_THEM_OFF_PICKUP;

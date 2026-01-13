@@ -80,15 +80,16 @@ function QuickGuideQuestChatProcessingEnd()
     wQuickGuideWinParent.IsQuestChatProcessingHappening = false;
 end
 
-function QuickGuideWinCreateNode(index)
-    local treeView = wQuickGuideWinParent.treeView;
-    local isCompleted = QuickGuideWinIsCompleted(index);
-    local treeNode = Turbine.UI.TreeNode();
-    treeNode:SetSize(treeView:GetWidth() - ScrollbarWidth, 40);
-    treeNode.complete = isCompleted;
-    treeNode.index = index;
-
+function UpdateNodeText(treeNode)
+    local checkBox = treeNode.checkBox;
+    local index = treeNode.index;
     local objective = _QUICK_GUIDE[SELECTEDFESTIVAL][index];
+
+    local progressText = "";
+    if (objective.TOTAL) then
+        local current = objective.CURRENT or 0;
+        progressText = string.format(" (%d/%d)", current, objective.TOTAL);
+    end
 
     -- In order to support colorization of quick guide objectives,
     -- the DISPLAY string can't be statically initialized.
@@ -100,9 +101,28 @@ function QuickGuideWinCreateNode(index)
         objectivetext = objective.DISPLAY();
     end
 
+    checkBox:SetText(objectivetext .. progressText);
+end
+
+function UpdateAllNodesText()
+    local treeView = wQuickGuideWinParent.treeView;
+
+    for i = 1, treeView:GetNodes():GetCount() do
+        UpdateNodeText(treeView:GetNodes():Get(i));
+    end
+end
+
+function QuickGuideWinCreateNode(index)
+    local treeView = wQuickGuideWinParent.treeView;
+    local isCompleted = QuickGuideWinIsCompleted(index);
+    local treeNode = Turbine.UI.TreeNode();
+    treeNode:SetSize(treeView:GetWidth() - ScrollbarWidth, 40);
+    treeNode.complete = isCompleted;
+    treeNode.index = index;
+
+    local objective = _QUICK_GUIDE[SELECTEDFESTIVAL][index];
     local checkBox = Turbine.UI.Lotro.CheckBox();
     checkBox:SetParent(treeNode);
-    checkBox:SetText(objectivetext);
     checkBox:SetSize(treeView:GetWidth() - ScrollbarWidth, 40);
     checkBox:SetMarkupEnabled(true);
     checkBox:SetChecked(isCompleted);
@@ -127,6 +147,9 @@ function QuickGuideWinCreateNode(index)
         end
     end
     treeNode.checkBox = checkBox;
+
+    UpdateNodeText(treeNode);
+
     return treeNode;
 end
 
@@ -228,14 +251,22 @@ function QuickGuideWinSetVisible(newIsVisible)
 
 end
 
----@return CheckBox
-function GetCheckbox(index)
+---@return TreeNode|nil
+function GetTreeNodeFromIndex(index)
     local treeView = wQuickGuideWinParent.treeView;
     for i = 1, treeView:GetNodes():GetCount() do
         local treeNode = treeView:GetNodes():Get(i);
         if (treeNode.index == index) then
-            return treeNode.checkBox;
+            return treeNode;
         end
+    end
+end
+
+---@return CheckBox|nil
+function GetCheckbox(index)
+    local treeNode = GetTreeNodeFromIndex(index);
+    if (treeNode) then
+        return treeNode.checkbox;
     end
 
     return nil;
@@ -338,11 +369,38 @@ function QuickGuideWinHandleQuestChainBeginOrEnd(index)
 end
 
 function QuickGuideWinHandleQuestChannelText(cMessage)
+    QuickGuideWinHandleQuestChannelText_Objectives(cMessage);
+    QuickGuideWinHandleQuestChannelText_Progress(cMessage);
+end
+
+function QuickGuideWinHandleQuestChannelText_Objectives(cMessage)
     -- If there's a quick guide and a corresponding quest objective, mark the objective complete:
     local index = QuickGuideWinGetIndexFromChat(cMessage, _QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS);
     if (index) then
         QuickGuideWinHandleQuestChainBeginOrEnd(index);
         QuickGuideWinMarkComplete(index);
+    end
+end
+
+function QuickGuideWinHandleQuestChannelText_Progress(cMessage)
+    -- If this is an incremental objective, update its stored values and refresh the text.
+    -- E.g. Collected unwilling firewood (5/9)
+    local progress = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_PROGRESS;
+    if (not progress) then return; end
+    local festivalProgress = progress[SELECTEDFESTIVAL];
+    if (not festivalProgress) then return; end
+
+    for pattern,index in pairs(festivalProgress) do
+        local current, total = string.match(cMessage, pattern);
+        if (current and total) then
+            local treeNode = GetTreeNodeFromIndex(index);
+            local objective = _QUICK_GUIDE[SELECTEDFESTIVAL][index];
+
+            objective.CURRENT = current;
+            objective.TOTAL = total;
+            UpdateNodeText(treeNode);
+            return;
+        end
     end
 end
 

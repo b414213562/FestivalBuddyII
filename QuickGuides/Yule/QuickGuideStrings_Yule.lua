@@ -287,6 +287,7 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[YULE] = {
     };
     [QG_YULE_INDEX.MAKING_MISCHIEF_LOOT] = {
         ["LOAD_QUEST"] = "STUFFING_THE_STUFFED";
+        ["TOTAL"] = 8;
     };
     [QG_YULE_INDEX.STUFFING_THE_STUFFED_PICKUP] = {
         ["CHAIN_BEGIN"] = "STUFFING_THE_STUFFED";
@@ -305,10 +306,13 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[YULE] = {
         ["LOAD_QUEST"] = "STUFFING_THE_STUFFED";
     };
     [QG_YULE_INDEX.TIDYING_UP_DISHES] = {
+        ["TOTAL"] = 10;
     };
     [QG_YULE_INDEX.TIDYING_UP_SPILLS] = {
+        ["TOTAL"] = 10;
     };
     [QG_YULE_INDEX.TIDYING_UP_GARBAGE] = {
+        ["TOTAL"] = 10;
     };
     [QG_YULE_INDEX.TIDYING_UP_END] = {
         ["CHAIN_END"] = "TIDYING_UP";
@@ -333,21 +337,27 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[YULE] = {
     };
     [QG_YULE_INDEX.STUFFING_THE_STUFFED_EGGS] = {
         ["LOAD_QUEST"] = "UNWILLING_FIREWOOD";
+        ["TOTAL"] = 5;
     };
     [QG_YULE_INDEX.UNWILLING_FIREWOOD_COLLECT] = {
         ["LOAD_QUEST"] = "COLD_AS_ICE";
+        ["TOTAL"] = 9;
     };
     [QG_YULE_INDEX.COLD_AS_ICE_DISPERSE] = {
         ["LOAD_QUEST"] = "STUFFING_THE_STUFFED";
+        ["TOTAL"] = 4;
     };
     [QG_YULE_INDEX.STUFFING_THE_STUFFED_BERRIES] = {
         ["LOAD_QUEST"] = "THE_ABOMINABLE_SNOW_BEASTS";
+        ["TOTAL"] = 5;
     };
     [QG_YULE_INDEX.THE_ABOMINABLE_SNOW_BEASTS_CHEER] = {
         ["LOAD_QUEST"] = "STUFFING_THE_STUFFED";
+        ["TOTAL"] = 3;
     };
     [QG_YULE_INDEX.STUFFING_THE_STUFFED_MUSHROOMS] = {
         ["LOAD_QUEST"] = "MOVING_THEM_OFF";
+        ["TOTAL"] = 5;
     };
 
     [QG_YULE_INDEX.MOVING_THEM_OFF_END] = {
@@ -382,6 +392,7 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[YULE] = {
     };
     [QG_YULE_INDEX.STUFFING_THE_STUFFED_BREAD] = {
         ["LOAD_QUEST"] = "EMPTY_KEG_EMERGENCY";
+        ["TOTAL"] = 3;
     };
     [QG_YULE_INDEX.EMPTY_KEG_EMERGENCY_AVERT] = {
     };
@@ -420,31 +431,38 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[YULE] = {
         ["TIMER_STOP"] = true;
     };
     [QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION1] = {
+        ["TOTAL"] = 5;
     };
     [QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END] = {
         ["CHAIN_END"] = "THE_BIGGEST_STOMACH_OF_THEM_ALL";
     };
     [QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION2] = {
+        ["TOTAL"] = 5;
     };
     [QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_2] = {
         ["CHAIN_END"] = "THE_BIGGEST_STOMACH_OF_THEM_ALL_2";
     };
     [QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION3] = {
+        ["TOTAL"] = 5;
     };
     [QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_3] = {
         ["CHAIN_END"] = "THE_BIGGEST_STOMACH_OF_THEM_ALL_3";
     };
     [QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION4] = {
+        ["TOTAL"] = 5;
     };
     [QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_4] = {
         ["CHAIN_END"] = "THE_BIGGEST_STOMACH_OF_THEM_ALL_4";
     };
     [QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION5] = {
+        ["TOTAL"] = 5;
     };
     [QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_5] = {
         ["CHAIN_END"] = "THE_BIGGEST_STOMACH_OF_THEM_ALL_5";
     };
-}
+};
+
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_PROGRESS[YULE] = {};
 
 if (CLIENTLANG == "FRENCH") then
     import "CubePlugins.FestivalBuddyII.QuickGuides.Yule.QuickGuideStrings_YuleFR";
