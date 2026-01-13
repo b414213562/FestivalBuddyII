@@ -157,7 +157,7 @@ function CreateColorRow(colorSetting)
     quickGuideLocationColorCheckbox:SetChecked(SETTINGS_ACCOUNT.QUICK_GUIDE.COLORS[colorSetting].USE);
     quickGuideLocationColorCheckbox.CheckedChanged = function(sender, args)
         SETTINGS_ACCOUNT.QUICK_GUIDE.COLORS[colorSetting].USE = not SETTINGS_ACCOUNT.QUICK_GUIDE.COLORS[colorSetting].USE;
-        QuickGuideWinLoadFestival();
+        UpdateAllNodesText();
     end
 
     local setting = SETTINGS_ACCOUNT.QUICK_GUIDE.COLORS[colorSetting];
@@ -178,7 +178,7 @@ function CreateColorRow(colorSetting)
             setting.G = green;
             setting.B = blue;
             quickGuideLocationColor:SetBackColor(Turbine.UI.Color(setting.R / 255, setting.G / 255, setting.B / 255));
-            QuickGuideWinLoadFestival();
+            UpdateAllNodesText();
         end);
     end
 
@@ -193,7 +193,7 @@ function CreateColorRow(colorSetting)
         setting.G = defaultSetting.G;
         setting.B = defaultSetting.B;
         quickGuideLocationColor:SetBackColor(Turbine.UI.Color(setting.R / 255, setting.G / 255, setting.B / 255));
-        QuickGuideWinLoadFestival();
+        UpdateAllNodesText();
     end
 
     return colorRow;
@@ -276,7 +276,7 @@ function DrawQuickGuideOptions(options, y)
     quickGuideUseColors:SetChecked(SETTINGS_ACCOUNT.QUICK_GUIDE.USE_COLORS);
     quickGuideUseColors.CheckedChanged = function (sender, args)
         SETTINGS_ACCOUNT.QUICK_GUIDE.USE_COLORS = not SETTINGS_ACCOUNT.QUICK_GUIDE.USE_COLORS;
-        QuickGuideWinLoadFestival();
+        UpdateAllNodesText();
     end
     y = y + 30;
 
