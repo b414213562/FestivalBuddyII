@@ -62,6 +62,7 @@ end
 function FilterQuest(cMessage)
     -- Should be first thing in this function
     QuickGuideQuestChatProcessingBegin();
+
 -- Filters here for use with the Quest channel.
 
     local CompQuest = string.find(cMessage,(GetString(_LANG.QUESTS.COMPLETEDQUEST)));
