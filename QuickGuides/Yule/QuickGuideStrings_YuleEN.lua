@@ -68,8 +68,7 @@ QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_5].DISPLAY = function(
 -- Note: Could switch to storing each incremental progress string instead? Performance vs memory tradeoff?
 -- TODO: Check if \n is needed for quest progression entries
 -- TODO: Add German and French versions of this table
-QG_YULE_PROGRESS = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_PROGRESS[YULE];
-QG_YULE_PROGRESS = {
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_PROGRESS[YULE] = {
     ["Collected unwilling firewood %((%d+)/(%d+)%)"] = QG_YULE_INDEX.UNWILLING_FIREWOOD_COLLECT;
     ["Brought cheer to the snow-beasts %((%d+)/(%d+)%)"] = QG_YULE_INDEX.THE_ABOMINABLE_SNOW_BEASTS_CHEER;
     ["Dispersed Wintry Weather %((%d+)/(%d+)%)"] = QG_YULE_INDEX.COLD_AS_ICE_DISPERSE;
