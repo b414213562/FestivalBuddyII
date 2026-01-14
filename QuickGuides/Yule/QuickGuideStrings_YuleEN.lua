@@ -69,17 +69,17 @@ QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_5].DISPLAY = function(
 -- TODO: Check if \n is needed for quest progression entries
 -- TODO: Add German and French versions of this table
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_PROGRESS[YULE] = {
-    ["Collected unwilling firewood %((%d+)/(%d+)%)"] = QG_YULE_INDEX.UNWILLING_FIREWOOD_COLLECT;
-    ["Brought cheer to the snow%-beasts %((%d+)/(%d+)%)"] = QG_YULE_INDEX.THE_ABOMINABLE_SNOW_BEASTS_CHEER;
-    ["Dispersed Wintry Weather %((%d+)/(%d+)%)"] = QG_YULE_INDEX.COLD_AS_ICE_DISPERSE;
     ["Looted a distracted patron %((%d+)/(%d+)%)"] = QG_YULE_INDEX.MAKING_MISCHIEF_LOOT;
     ["Picked up dirty dishes %((%d+)/(%d+)%)"] = QG_YULE_INDEX.TIDYING_UP_DISHES;
     ["Cleaned up liquid spills %((%d+)/(%d+)%)"] = QG_YULE_INDEX.TIDYING_UP_SPILLS;
     ["Cleaned up reeking garbage %((%d+)/(%d+)%)"] = QG_YULE_INDEX.TIDYING_UP_GARBAGE;
-    ["Baked bread %((%d+)/(%d+)%)"] = QG_YULE_INDEX.STUFFING_THE_STUFFED_BREAD;
     ["Collected eggs %((%d+)/(%d+)%)"] = QG_YULE_INDEX.STUFFING_THE_STUFFED_EGGS;
+    ["Collected unwilling firewood %((%d+)/(%d+)%)"] = QG_YULE_INDEX.UNWILLING_FIREWOOD_COLLECT;
+    ["Dispersed Wintry Weather %((%d+)/(%d+)%)"] = QG_YULE_INDEX.COLD_AS_ICE_DISPERSE;
     ["Collected berries %((%d+)/(%d+)%)"] = QG_YULE_INDEX.STUFFING_THE_STUFFED_BERRIES;
+    ["Brought cheer to the snow%-beasts %((%d+)/(%d+)%)"] = QG_YULE_INDEX.THE_ABOMINABLE_SNOW_BEASTS_CHEER;
     ["Collected mushrooms %((%d+)/(%d+)%)"] = QG_YULE_INDEX.STUFFING_THE_STUFFED_MUSHROOMS;
+    ["Baked bread %((%d+)/(%d+)%)"] = QG_YULE_INDEX.STUFFING_THE_STUFFED_BREAD;
     ["Ate food at the first station %((%d+)/(%d+)%)"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION1;
     ["Ate food at the second station %((%d+)/(%d+)%)"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION2;
     ["Ate food at the third station %((%d+)/(%d+)%)"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION3;
