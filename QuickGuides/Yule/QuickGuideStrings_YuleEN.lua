@@ -70,7 +70,7 @@ QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_5].DISPLAY = function(
 -- TODO: Add German and French versions of this table
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_PROGRESS[YULE] = {
     ["Collected unwilling firewood %((%d+)/(%d+)%)"] = QG_YULE_INDEX.UNWILLING_FIREWOOD_COLLECT;
-    ["Brought cheer to the snow-beasts %((%d+)/(%d+)%)"] = QG_YULE_INDEX.THE_ABOMINABLE_SNOW_BEASTS_CHEER;
+    ["Brought cheer to the snow%-beasts %((%d+)/(%d+)%)"] = QG_YULE_INDEX.THE_ABOMINABLE_SNOW_BEASTS_CHEER;
     ["Dispersed Wintry Weather %((%d+)/(%d+)%)"] = QG_YULE_INDEX.COLD_AS_ICE_DISPERSE;
     ["Looted a distracted patron %((%d+)/(%d+)%)"] = QG_YULE_INDEX.MAKING_MISCHIEF_LOOT;
     ["Picked up dirty dishes %((%d+)/(%d+)%)"] = QG_YULE_INDEX.TIDYING_UP_DISHES;
