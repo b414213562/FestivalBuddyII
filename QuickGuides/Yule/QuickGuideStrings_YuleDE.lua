@@ -65,6 +65,25 @@ QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_4].DISPLAY =      "Gib
 QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION5].DISPLAY =   "I\195\159 am f\195\188nften Tisch";
 QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_5].DISPLAY =      "Gib 'Der allergr\195\182\195\159te Bauch (Teil V)' bei Jan Stolzhelm ab";
 
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_PROGRESS[YULE] = {
+    ["Ihr habt eine abgelenkte Person bestohlen %((%d+)/(%d+)%)"] = QG_YULE_INDEX.MAKING_MISCHIEF_LOOT;
+    ["Menge aufgesammelten dreckigen Geschirrs %((%d+)/(%d+)%)"] = QG_YULE_INDEX.TIDYING_UP_DISHES;
+    ["Anzahl gesäuberter Flecke von verschütteten Getränken %((%d+)/(%d+)%)"] = QG_YULE_INDEX.TIDYING_UP_SPILLS;
+    ["Menge aufgesammelten stinkenden Mülls %((%d+)/(%d+)%)"] = QG_YULE_INDEX.TIDYING_UP_GARBAGE;
+    ["Anzahl gesammelter Eier %((%d+)/(%d+)%)"] = QG_YULE_INDEX.STUFFING_THE_STUFFED_EGGS;
+    ["Anzahl gesammelten widerwilligen Feuerholzes %((%d+)/(%d+)%)"] = QG_YULE_INDEX.UNWILLING_FIREWOOD_COLLECT;
+    ["Ihr habt Winterwetter zerstreut %((%d+)/(%d+)%)"] = QG_YULE_INDEX.COLD_AS_ICE_DISPERSE;
+    ["Anzahl gesammelter Beeren %((%d+)/(%d+)%)"] = QG_YULE_INDEX.STUFFING_THE_STUFFED_BERRIES;
+    ["Schneekreaturen Fröhlichkeit entgegengebracht %((%d+)/(%d+)%)"] = QG_YULE_INDEX.THE_ABOMINABLE_SNOW_BEASTS_CHEER;
+    ["Anzahl gesammelter Pilze %((%d+)/(%d+)%)"] = QG_YULE_INDEX.STUFFING_THE_STUFFED_MUSHROOMS;
+    ["Anzahl gebackener Brote %((%d+)/(%d+)%)"] = QG_YULE_INDEX.STUFFING_THE_STUFFED_BREAD;
+    ["Gegessene Mahlzeiten an der ersten Station %((%d+)/(%d+)%)"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION1;
+    ["Gegessene Mahlzeiten an der zweiten Station %((%d+)/(%d+)%)"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION2;
+    ["Gegessene Mahlzeiten an der dritten Station %((%d+)/(%d+)%)"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION3;
+    ["Gegessene Mahlzeiten an der vierten Station %((%d+)/(%d+)%)"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION4;
+    ["Gegessene Mahlzeiten an der fünften Station %((%d+)/(%d+)%)"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION5;
+};
+
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[YULE] = {
     ["Neue Aufgabe: Im Geiste des Julfests"] =                 QG_YULE_INDEX.IN_THE_SPIRIT_OF_YULE_PICKUP;
     ["Neue Aufgabe: Vertreibt sie"] =                         QG_YULE_INDEX.MOVING_THEM_OFF_PICKUP;

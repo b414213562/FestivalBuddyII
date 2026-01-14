@@ -64,6 +64,25 @@ QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_4].DISPLAY = "Turn in 
 QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION5].DISPLAY = "Mangez au cinquième poste";
 QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_5].DISPLAY = "Turn in 'Le plus gros estomac du monde (partie V)' to Ian Prudhomme";
 
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_PROGRESS[YULE] = {
+    ["Vous avez fait les poches d'un visiteur fortuné %((%d+)/(%d+)%)"] = QG_YULE_INDEX.MAKING_MISCHIEF_LOOT;
+    ["Assiettes sales ramassées %((%d+)/(%d+)%)"] = QG_YULE_INDEX.TIDYING_UP_DISHES;
+    ["Liquides renversés nettoyés %((%d+)/(%d+)%)"] = QG_YULE_INDEX.TIDYING_UP_SPILLS;
+    ["Déchets pestilentiels ramassés %((%d+)/(%d+)%)"] = QG_YULE_INDEX.TIDYING_UP_GARBAGE;
+    ["Œufs ramassés %((%d+)/(%d+)%)"] = QG_YULE_INDEX.STUFFING_THE_STUFFED_EGGS;
+    ["Fagots récalcitrants récupérés %((%d+)/(%d+)%)"] = QG_YULE_INDEX.UNWILLING_FIREWOOD_COLLECT;
+    ["Temps glacial dispersé %((%d+)/(%d+)%)"] = QG_YULE_INDEX.COLD_AS_ICE_DISPERSE;
+    ["Baies cueillies %((%d+)/(%d+)%)"] = QG_YULE_INDEX.STUFFING_THE_STUFFED_BERRIES;
+    ["Joie apportée aux bêtes des neiges %((%d+)/(%d+)%)"] = QG_YULE_INDEX.THE_ABOMINABLE_SNOW_BEASTS_CHEER;
+    ["Champignons ramassés %((%d+)/(%d+)%)"] = QG_YULE_INDEX.STUFFING_THE_STUFFED_MUSHROOMS;
+    ["Pains cuits %((%d+)/(%d+)%)"] = QG_YULE_INDEX.STUFFING_THE_STUFFED_BREAD;
+    ["Nourriture avalée au premier poste %((%d+)/(%d+)%)"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION1;
+    ["Nourriture avalée au deuxième poste %((%d+)/(%d+)%)"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION2;
+    ["Nourriture avalée au troisième poste %((%d+)/(%d+)%)"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION3;
+    ["Nourriture avalée au quatrième poste %((%d+)/(%d+)%)"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION4;
+    ["Nourriture avalée au cinquième poste %((%d+)/(%d+)%)"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION5;
+};
+
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[YULE] = {
     ["Nouvelle quête : L'esprit de Yule"] = QG_YULE_INDEX.IN_THE_SPIRIT_OF_YULE_PICKUP;
     ["Nouvelle quête : Circulez"] = QG_YULE_INDEX.MOVING_THEM_OFF_PICKUP;
