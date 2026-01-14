@@ -266,7 +266,7 @@ end
 function GetCheckbox(index)
     local treeNode = GetTreeNodeFromIndex(index);
     if (treeNode) then
-        return treeNode.checkbox;
+        return treeNode.checkBox;
     end
 
     return nil;
