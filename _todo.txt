@@ -5,13 +5,6 @@ Add Option to try and account for Daylight Saving Time (US / EU only).
 
 Warn if the maze will change sooner than the end of the maze quest.
 
-if cornerCoordinates is empty, then instead of processing /loc raise the maze # selector window.
-    OR - since we default to maze map 1, why aren't we populating the coordinates since it's always the same?
-    Changing of the Festival drop down should trigger this.
-
-
-barter window: tree instead of list
-
 [19:42] Talyrion1003: but.... my FB II does not seem to update the tokens in its window...
 [19:44] Talyrion1003: I logged into my character, and it shows 22 anniversary tokens... after doing a quest the wallet count is 25, but FB II still shows 22... (may it be from the save-file changes?) might be an old save file, it seems to update the numbers on load...
 
