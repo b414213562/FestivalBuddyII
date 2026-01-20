@@ -22,7 +22,7 @@ import "CubePlugins.FestivalBuddyII.Images";
 import "CubePlugins.FestivalBuddyII.QuestStrings";
 import "CubePlugins.FestivalBuddyII.FestivalFunctions";
 import "CubePlugins.FestivalBuddyII.Globals";
---import "CubePlugins.FestivalBuddyII.Libraries.Tooltip";
+import "CubePlugins.FestivalBuddyII.Libraries.Tooltip";
 import "CubePlugins.FestivalBuddyII.ChatLogger";
 import "CubePlugins.FestivalBuddyII.BarterItems";
 import "CubePlugins.FestivalBuddyII.HobnanigansTimerControl";
