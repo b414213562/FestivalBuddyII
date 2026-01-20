@@ -71,10 +71,44 @@ function DrawAltWin()
 
         cCooldownHolder:SetVerticalScrollBar(scCooldownHolder);
 
+        -- Control to center buttons at bottom of window:
+        local centeredButtons = Turbine.UI.Control();
+        centeredButtons:SetParent(wAltWinParent);
+        centeredButtons:SetSize(16 * 3, 16);
+        centeredButtons:SetPosition((tempWidth/2)-centeredButtons:GetWidth() / 2, tempHeight-35);
+
+
+        -- Button to remove this alt's data:
+        btnDeleteAltData = Turbine.UI.Control();
+        btnDeleteAltData:SetParent(centeredButtons);
+        btnDeleteAltData:SetSize(16,16);
+        btnDeleteAltData:SetPosition(32, 0);
+        btnDeleteAltData:SetBackground(_IMAGES.CLOSE_NORMAL);
+
+        btnDeleteAltData.MouseEnter = function ()
+            btnDeleteAltData:SetBackground(_IMAGES.CLOSE_OVER);
+        end
+
+        btnDeleteAltData.MouseLeave = function ()
+            btnDeleteAltData:SetBackground(_IMAGES.CLOSE_NORMAL);
+        end
+
+        btnDeleteAltData.MouseClick = function ()
+            -- Remove this character data from _CHARDATA.CHARS
+            _CHARDATA.CHARS[ddAltNames:GetText()] = nil;
+
+            -- Instead of trying to mimic the ctor code in setting up the window,
+            -- just hide the current window so we can't tell how long it takes the GC to get rid of it,
+            -- and make a new one that will not contain the deleted data.
+            wAltWinParent:SetVisible(false);
+            DrawAltWin();
+        end
+
+        -- Button to refresh this alt's display:
         btnRefreshAltDisplay = Turbine.UI.Control();
-        btnRefreshAltDisplay:SetParent(wAltWinParent);
+        btnRefreshAltDisplay:SetParent(centeredButtons);
         btnRefreshAltDisplay:SetSize(16,16);
-        btnRefreshAltDisplay:SetPosition((tempWidth/2)-8,tempHeight-35);
+        btnRefreshAltDisplay:SetPosition(0, 0);
         btnRefreshAltDisplay:SetBlendMode(4);
         btnRefreshAltDisplay:SetBackground(_IMAGES.REFRESH_NORMAL);
 
@@ -123,6 +157,9 @@ end
 function RefreshAltDisplay(NAME)
 
     if NAME == nil then return end;
+
+    -- Update the delete button:
+    btnDeleteAltData:SetToolTip("Delete data for " .. NAME);
 
     -- This function updates the window display with the selected alt.
 
