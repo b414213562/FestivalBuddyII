@@ -137,6 +137,86 @@ function MakeDividerLabel(parent, barterItemData, rowWidth, rowHeight)
     dividerLabel:SetText(GetString(barterItemData[DIVIDER_TEXT]));
 end
 
+function MakeBarterItemRow(parent, barterItemData, rowWidth, rowHeight)
+    local item = nil; ---@type Item|nil
+    if type(barterItemData[ITEM_ID]) == 'string' then
+        item = GetItemFromID(barterItemData[ITEM_ID],true);
+    else
+        item = GetItemFromID(barterItemData[ITEM_ID]);
+    end
+
+    if (item == nil) then
+        -- When adding new items, if an item name resolves to multiple IDs
+        -- some of those IDs might not work:
+        if (item == nil and SHOW_DEBUG_OPTIONS) then
+            Turbine.Shell.WriteLine("Couldn't resolve item #" .. dump(barterItemData[ITEM_ID]));
+        end
+
+        return;
+    end
+
+    local rowBottomMargin = 5;
+    local ROWBACK = Turbine.UI.Control();
+    ROWBACK:SetParent(parent);
+    ROWBACK:SetSize(rowWidth,rowHeight-rowBottomMargin);
+    ROWBACK:SetBackground(_IMAGES.BARTERITEMSBACK);
+    ROWBACK:SetBlendMode(Turbine.UI.BlendMode.AlphaBlend);
+
+    local cItemInspect = Turbine.UI.Lotro.ItemInfoControl();
+    cItemInspect:SetParent(ROWBACK);
+    cItemInspect:SetSize(36,36);
+    cItemInspect:SetPosition(1,1);
+    cItemInspect:SetItemInfo(item:GetItemInfo());
+    cItemInspect:SetQuantity(1);
+
+    if (barterItemData[ITEM_QUANTITY]) then
+        cItemInspect:SetQuantity(barterItemData[ITEM_QUANTITY])
+    end;
+
+    local lblItemName = Turbine.UI.Label();
+    lblItemName:SetParent(ROWBACK);
+    lblItemName:SetPosition(40,2);
+    lblItemName:SetSize(rowWidth-150,36);
+    lblItemName:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleLeft);
+    lblItemName:SetForeColor(_QUALITYCOLORS[item:GetItemInfo():GetQuality()]);
+    --lblItemName:SetBackColor(Turbine.UI.Color.Red);
+    lblItemName:SetFont(TrajanPro14);
+    lblItemName:SetText(item:GetItemInfo():GetName());
+
+    local iconWidth = 32;
+    local iconMargin = 2;
+    local iconRowLeftRightMargin = 1;
+
+    local iconRowHeight = iconWidth + (iconMargin * 2);
+    -- This comes out to 110, wide enough for three tokens which is needed for some Spring barter items:
+    local iconRowWidth = (iconRowLeftRightMargin * 2) + ((iconWidth + (iconMargin * 2)) * 3);
+
+    local lstTokensNeeded = Turbine.UI.ListBox();
+    lstTokensNeeded:SetParent(ROWBACK);
+    lstTokensNeeded:SetSize(iconRowWidth, iconRowHeight);
+    lstTokensNeeded:SetPosition(rowWidth-lstTokensNeeded:GetWidth(),0);
+    lstTokensNeeded:SetOrientation(Turbine.UI.Orientation.Horizontal);
+    --lstTokensNeeded:SetBackColor(Turbine.UI.Color.Red);
+
+    if type(barterItemData[ITEM_COST_TABLE])=='table' then
+        for token_key,token_count in pairs (barterItemData[ITEM_COST_TABLE]) do
+            local token_id = GetTokenID(SELECTEDFESTIVAL, token_key);
+            local tokenItem = GetItemFromID(token_id);
+
+            if tokenItem ~= nil then
+                local cTokenInspect = Turbine.UI.Lotro.ItemInfoControl();
+                cTokenInspect:SetParent(ROWBACK);
+                cTokenInspect:SetSize(36,36);
+                cTokenInspect:SetPosition(1,1);
+                cTokenInspect:SetItemInfo(tokenItem:GetItemInfo());
+                cTokenInspect:SetQuantity(token_count);
+
+                lstTokensNeeded:AddItem(cTokenInspect);
+            end
+        end
+    end
+end
+
 function RefreshBarterList()
     if (SELECTEDFESTIVAL == wBarterWinParent.LoadedFestival) then
         return;
@@ -160,69 +240,7 @@ function RefreshBarterList()
         if (v[1] == "DIVIDER1" or v[1] == "DIVIDER2") then
             MakeDividerLabel(ROWHOLDER, v, ROWWIDTH, ROWHEIGHT);
         else
-            local ROWBACK = Turbine.UI.Control();
-            ROWBACK:SetParent(ROWHOLDER);
-            ROWBACK:SetSize(ROWWIDTH,ROWHEIGHT-5);
-            ROWBACK:SetBackground(_IMAGES.BARTERITEMSBACK);
-            ROWBACK:SetBlendMode(4);
-
-            local item = 0;
-            if type(v[1]) == 'string' then
-                item = GetItemFromID(v[1],true);
-            else
-                item = GetItemFromID(v[1]);
-            end
-
-            -- When adding new items, if an item name resolves to multiple IDs
-            -- some of those IDs might not work. Uncomment when adding items
-            -- to catch that case:
---            if (item == nil) then
---                Turbine.Shell.WriteLine("Couldn't resolve item #" .. dump(v[1]));
---            end
-
-            local cItemInspect = Turbine.UI.Lotro.ItemInfoControl();
-            cItemInspect:SetParent(ROWBACK);
-            cItemInspect:SetSize(36,36);
-            cItemInspect:SetPosition(1,1);
-            cItemInspect:SetItemInfo(item:GetItemInfo());
-            cItemInspect:SetQuantity(1);
-
-            if v[3] ~= nil then cItemInspect:SetQuantity(v[3]) end;
-
-            local lblItemName = Turbine.UI.Label();
-            lblItemName:SetParent(ROWBACK);
-            lblItemName:SetPosition(40,2);
-            lblItemName:SetSize(ROWWIDTH-150,36);
-            lblItemName:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleLeft);
-            lblItemName:SetForeColor(_QUALITYCOLORS[item:GetItemInfo():GetQuality()]);
-            --lblItemName:SetBackColor(Turbine.UI.Color.Red);
-            lblItemName:SetFont(TrajanPro14);
-            lblItemName:SetText(item:GetItemInfo():GetName());
-
-            local lstTokensNeeded = Turbine.UI.ListBox();
-            lstTokensNeeded:SetParent(ROWBACK);
-            lstTokensNeeded:SetSize(110,36);
-            lstTokensNeeded:SetPosition(ROWWIDTH-lstTokensNeeded:GetWidth(),0);
-            lstTokensNeeded:SetOrientation(Turbine.UI.Orientation.Horizontal);
-            --lstTokensNeeded:SetBackColor(Turbine.UI.Color.Red);
-
-            if type(v[2])=='table' then
-                for token_key,token_count in pairs (v[2]) do
-                    local token_id = GetTokenID(SELECTEDFESTIVAL, token_key);
-                    local tokenItem = GetItemFromID(token_id);
-
-                    if tokenItem ~= nil then
-                        local cTokenInspect = Turbine.UI.Lotro.ItemInfoControl();
-                        cTokenInspect:SetParent(ROWBACK);
-                        cTokenInspect:SetSize(36,36);
-                        cTokenInspect:SetPosition(1,1);
-                        cTokenInspect:SetItemInfo(tokenItem:GetItemInfo());
-                        cTokenInspect:SetQuantity(token_count);
-
-                        lstTokensNeeded:AddItem(cTokenInspect);
-                    end
-                end
-            end
+            MakeBarterItemRow(ROWHOLDER, v, ROWWIDTH, ROWHEIGHT);
         end
 
         lstBarterItems:AddItem(ROWHOLDER);
