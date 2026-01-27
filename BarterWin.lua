@@ -224,8 +224,8 @@ function RefreshBarterList()
 
     lstBarterItems:ClearItems();
 
-    local ROWWIDTH = 422;
-    local ROWHEIGHT = 45;
+    local rowWidth = 422;
+    local rowHeight = 45;
 
     local _FESTIVALITEMS = _BARTER[SELECTEDFESTIVAL];
     wBarterWinParent.LoadedFestival = SELECTEDFESTIVAL;
@@ -234,16 +234,16 @@ function RefreshBarterList()
 
     for _,barterItemData in ipairs (_FESTIVALITEMS) do
 
-        local ROWHOLDER = Turbine.UI.Control();
-        ROWHOLDER:SetSize(ROWWIDTH,ROWHEIGHT);
+        local rowHolder = Turbine.UI.Control();
+        rowHolder:SetSize(rowWidth,rowHeight);
 
         if (barterItemData[DIVIDER_TYPE] == "DIVIDER1" or barterItemData[DIVIDER_TYPE] == "DIVIDER2") then
-            MakeDividerLabel(ROWHOLDER, barterItemData, ROWWIDTH, ROWHEIGHT);
+            MakeDividerLabel(rowHolder, barterItemData, rowWidth, rowHeight);
         else
-            MakeBarterItemRow(ROWHOLDER, barterItemData, ROWWIDTH, ROWHEIGHT);
+            MakeBarterItemRow(rowHolder, barterItemData, rowWidth, rowHeight);
         end
 
-        lstBarterItems:AddItem(ROWHOLDER);
+        lstBarterItems:AddItem(rowHolder);
     end
 
     lstBarterItems:SetSelectedIndex(1);
