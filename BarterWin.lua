@@ -42,20 +42,21 @@ function DrawBarterWin()
     lblBarterFestival:SetForeColor(YELLOW);
     --lblBarterFestival:SetBackColor(Turbine.UI.Color.White);
 
-    lstBarterItems = Turbine.UI.ListBox();
-    lstBarterItems:SetParent(wBarterWinParent);
-    lstBarterItems:SetSize(422,SETTINGS.BARTERWIN.HEIGHT - 120);
-    lstBarterItems:SetPosition(25,80);
+    local barterItems = Turbine.UI.ListBox();
+    barterItems:SetParent(wBarterWinParent);
+    barterItems:SetSize(422,SETTINGS.BARTERWIN.HEIGHT - 120);
+    barterItems:SetPosition(25,80);
+    wBarterWinParent.BarterItems = barterItems;
 
-    slstBarterItems = Turbine.UI.Lotro.ScrollBar();
-    slstBarterItems:SetParent(wBarterWinParent);
-    slstBarterItems:SetSize(8,lstBarterItems:GetHeight());
-    slstBarterItems:SetPosition(lstBarterItems:GetLeft()+lstBarterItems:GetWidth()+2,lstBarterItems:GetTop());
-    slstBarterItems:SetOrientation(Turbine.UI.Orientation.Vertical);
-    slstBarterItems:SetZOrder(200000);
-    slstBarterItems:SetVisible(false);
+    local barterItemsScrollbar = Turbine.UI.Lotro.ScrollBar();
+    barterItemsScrollbar:SetParent(wBarterWinParent);
+    barterItemsScrollbar:SetSize(8,barterItems:GetHeight());
+    barterItemsScrollbar:SetPosition(barterItems:GetLeft()+barterItems:GetWidth()+2,barterItems:GetTop());
+    barterItemsScrollbar:SetOrientation(Turbine.UI.Orientation.Vertical);
+    barterItemsScrollbar:SetZOrder(200000);
+    barterItemsScrollbar:SetVisible(false);
 
-    lstBarterItems:SetVerticalScrollBar(slstBarterItems);
+    barterItems:SetVerticalScrollBar(barterItemsScrollbar);
 
     -- Events
     wBarterWinParent.PositionChanged = function()
@@ -83,8 +84,8 @@ function DrawBarterWin()
             newListHeight = newListHeight + 20;
         end
 
-        lstBarterItems:SetHeight(newListHeight);
-        slstBarterItems:SetHeight(newListHeight);
+        wBarterWinParent.BarterItems:SetHeight(newListHeight);
+        wBarterWinParent.BarterItems:GetVerticalScrollBar():SetHeight(newListHeight);
 
         SETTINGS.BARTERWIN.HEIGHT = newWindowHeight;
     end
@@ -222,7 +223,7 @@ function RefreshBarterList()
         return;
     end
 
-    lstBarterItems:ClearItems();
+    wBarterWinParent.BarterItems:ClearItems();
 
     local rowWidth = 422;
     local rowHeight = 45;
@@ -243,10 +244,10 @@ function RefreshBarterList()
             MakeBarterItemRow(rowHolder, barterItemData, rowWidth, rowHeight);
         end
 
-        lstBarterItems:AddItem(rowHolder);
+        wBarterWinParent.BarterItems:AddItem(rowHolder);
     end
 
-    lstBarterItems:SetSelectedIndex(1);
+    wBarterWinParent.BarterItems:SetSelectedIndex(1);
 end
 
 
