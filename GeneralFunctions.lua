@@ -27,7 +27,7 @@ end
 
 -- This function takes an item ID value (eg. 1879230113) and returns an instance of the item
 function GetItemFromID(itemID,IsHex)
-    if itemID == nil then return end;
+    if itemID == nil then return nil; end
     local function GetHex(IN)
         local B,K,OUT,I,D=16,"0123456789ABCDEF","",0,0;
         if IN == 0 or IN == "0" then return "00" end;
