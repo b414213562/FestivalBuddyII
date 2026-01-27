@@ -18,7 +18,7 @@ _BARTER =
     -- SPRING ------------------------------------------------------------------------------------------
     [SPRING] =
     {
-        [1]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Cosmetics - Part 1"; }; };
+        [1]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Cosmetics - Part 1"; }; };
         [2]={[2]={["SPRING_FESTIVAL"]=15;};[1]=0x7006A6D4;}; --Boots of the Perfect Curl
         [3]={[2]={["SPRING_FESTIVAL"]=15;};[1]=0x7006A6D3;}; --Helmet of the Perfect Curl
         [4]={[2]={["SPRING_FESTIVAL"]=15;};[1]=0x7006A6D2;}; --Shoulder-guards of the Perfect Curl
@@ -38,7 +38,7 @@ _BARTER =
         [18]={[2]={["SPRING_FESTIVAL"]=13;};[1]=0x70052BE6;}; --Hooded Cloak of the Mountain Meadow
         [19]={[2]={["SPRING_FESTIVAL"]=10;};[1]=0x7004D879;}; --Lonely Mountain Fiddle
         [20]={[2]={["SPRING_FESTIVAL"]=25;};[1]=0x7004D87A;}; --Sprightly Fiddle
-        [21]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Cosmetics - Part 2"; }; };
+        [21]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Cosmetics - Part 2"; }; };
         [22]={[2]={["SPRING_FESTIVAL"]=13;};[1]=0x70052BE2;}; --Tunic Set of the Mountain Meadow
         [23]={[2]={["SPRING_FESTIVAL"]=13;};[1]=0x70052BE7;}; --Long-sleeved Dress of the Mountain Meadow
         [24]={[2]={["SPRING_FESTIVAL"]=13;};[1]=0x70052BE3;}; --Sleeveless Dress of the Mountain Meadow
@@ -59,7 +59,7 @@ _BARTER =
         [39]={[2]={["SPRING_FESTIVAL"]=13;};[1]=0x7003FC33;}; --Trellis-weave Cloak
         [40]={[2]={["SPRING_FESTIVAL"]=13;};[1]=0x7003FDD2;}; --Hooded Trellis-weave Cloak
         [41]={[2]={["SPRING_FESTIVAL"]=13;};[1]=0x7003FC30;}; --Trellis-weave Robe
-        [42]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Cosmetics - Part 3"; }; };
+        [42]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Cosmetics - Part 3"; }; };
         [43]={[2]={["SPRING_FESTIVAL"]=13;};[1]=0x70019475;}; --Spring Adventurer's Quiver
         [44]={[2]={["SPRING_FESTIVAL"]=13;};[1]=0x70019A3B;}; --White Rose Circlet
         [45]={[2]={["SPRING_FESTIVAL"]=13;};[1]=0x70026969;}; --Spring Dandy Cloak
@@ -80,14 +80,14 @@ _BARTER =
         [60]={[2]={["SPRING_FESTIVAL"]=13;};[1]=0x7003660C;}; --Lissuin Hooded Cloak
         [61]={[2]={["SPRING_FESTIVAL"]=13;};[1]=0x7003660D;}; --Lissuin Robe
         [62]={[2]={["SPRING_FESTIVAL"]=13;};[1]=0x7003660E;}; --Lissuin Dress
-        [63]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Recipes"; }; };
+        [63]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Recipes"; }; };
         [64]={[2]={["SPRING_FESTIVAL"]=15;};[1]=0x70036346;}; --Strawberry-rhubarb Tart Recipe
         [65]={[2]={["SPRING_FESTIVAL"]=15;};[1]=0x70036347;}; --Bilberry Tart Recipe
         [66]={[2]={["SPRING_FESTIVAL"]=15;};[1]=0x70036355;}; --Cherry Tart Recipe
         [67]={[2]={["SPRING_FESTIVAL"]=8;};[1]=0x700194B9;}; --Potted Lily-of-the-Valley Recipe
         [68]={[2]={["SPRING_FESTIVAL"]=8;};[1]=0x700194BA;}; --Potted Iris Recipe
         [69]={[2]={["SPRING_FESTIVAL"]=8;};[1]=0x700194BE;}; --Potted Bluebottle Recipe
-        [70]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Housing Items"; }; };
+        [70]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Housing Items"; }; };
         [71]={[2]={["SPRING_FESTIVAL"]=25;};[1]=0x7006A6DE;}; --Tasty Herb Patch
         [72]={[2]={["SPRING_FESTIVAL"]=8;};[1]=0x70064A3D;}; --Cozy Teapot
         [73]={[2]={["SPRING_FESTIVAL"]=13;};[1]=0x70064A3E;}; --Wall-mounted Shield of New Growth
@@ -109,7 +109,7 @@ _BARTER =
         [89]={[2]={["SPRING_FESTIVAL"]=13;};[1]=0x7001947E;}; --Dwarf Hedge Sculpture
         [90]={[2]={["SPRING_FESTIVAL"]=13;};[1]=0x7001947D;}; --Hobbit Hedge Sculpture
         [91]={[2]={["SPRING_FESTIVAL"]=13;};[1]=0x7001947A;}; --Garden Boar Sculpture
-        [92]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Housing Items 2"; }; };
+        [92]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Housing Items 2"; }; };
         [93]={[2]={["SPRING_FESTIVAL"]=40;};[1]=0x70057392;}; --Shrewmouse House
         [94]={[2]={["SPRING_FESTIVAL"]=13;};[1]=0x7005A419;}; --Elegant Green Burning Sconce
         [95]={[2]={["SPRING_FESTIVAL"]=13;};[1]=0x70019476;}; --Garden-dwarf
@@ -130,7 +130,7 @@ _BARTER =
         [110]={[2]={["SPRING_FESTIVAL"]=18;};[1]=0x700568AC;}; --Glittering Stone Floor
         [111]={[2]={["SPRING_FESTIVAL"]=18;};[1]=0x700568A2;}; --Intricate Flagstone Floor
         [112]={[2]={["SPRING_FESTIVAL"]=18;};[1]=0x70062679;}; --Decorative Glittering Stone Floor
-        [113]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Other"; }; };
+        [113]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Other"; }; };
         [114]={[3]=5;[2]={["SPRING_FESTIVAL"]=2;};[1]=0x7002D485;}; --Pile of Mysterious Powder
         [115]={[3]=5;[2]={["SPRING_FESTIVAL"]=3;};[1]=0x70020E69;}; --D.R.A.G.O.N.
         [116]={[3]=5;[2]={["SPRING_FESTIVAL"]=3;};[1]=0x70020E78;}; --Doom-shroom
@@ -139,7 +139,7 @@ _BARTER =
         [119]={[3]=2;[2]={["SPRING_FESTIVAL"]=3;};[1]=0x70020E58;}; --Extra Deliciously Tasty Biscuit
         [120]={[2]={["SPRING_FESTIVAL"]=13;};[1]=0x7001980F;}; --Cold Fish
         [121]={[2]={["SPRING_FESTIVAL"]=13;};[1]=0x700195AE;}; --Slapper Fish
-        [122]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Spring Festival Steeds"; }; };
+        [122]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Spring Festival Steeds"; }; };
         [123]={[2]={["SPRING_FESTIVAL"]=40;};[1]=0x7006A6E1;}; --Steed of the Perfect Curl
         [124]={[2]={["SPRING_FESTIVAL"]=15;};[1]=0x7006A6E6;}; --Perfect Curl Accessory
         [125]={[2]={["SPRING_FESTIVAL"]=25;};[1]=0x7006A6EB;}; --Perfect Curl Caparison
@@ -151,7 +151,7 @@ _BARTER =
         [131]={[2]={["SPRING_FESTIVAL"]=25;};[1]=0x7005A40A;}; --Head-piece of the Forest Spring
         [132]={[2]={["SPRING_FESTIVAL"]=20;};[1]=0x7005A411;}; --Saddle of the Forest Spring
         [133]={[2]={["SPRING_FESTIVAL"]=30;};[1]=0x700568BB;}; --Elk of the Spring Wood
-        [134]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Spring Festival Steeds - Mithril"; }; };
+        [134]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Spring Festival Steeds - Mithril"; }; };
         [135]={[2]={["GENERIC_MITHRIL"]=70;};[1]=0x7002E91A;}; --Simbelmynë Steed
         [136]={[2]={["GENERIC_MITHRIL"]=70;};[1]=0x700267A1;}; --Springtime Steed
         [137]={[2]={["GENERIC_MITHRIL"]=70;};[1]=0x70020548;}; --Blue Roan Steed
@@ -180,9 +180,9 @@ _BARTER =
         [160]={[2]={["GENERIC_MITHRIL"]=70;};[1]=0x7005A411;}; --Saddle of the Forest Spring
         [161]={[2]={["GENERIC_MITHRIL"]=70;};[1]=0x7006A6E1;}; --Steed of the Perfect Curl
         [162]={[2]={["GENERIC_MITHRIL"]=70;};[1]=0x7006A6F0;}; --Perfect Curl War-steed Cosmetics
-        [163]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Essences"; }; };
+        [163]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Essences"; }; };
         [164]={[2]={["SPRING_FESTIVAL"]=90;};[1]=0x7005F84B;}; --Essence Reclamation Scroll
-        [165]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Dyes"; }; };
+        [165]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Dyes"; }; };
         [166]={[3]=6;[2]={["GENERIC_MITHRIL"]=10;};[1]=0x70044B8E;}; --Shire-plum Dye
         [167]={[3]=6;[2]={["GENERIC_MITHRIL"]=10;};[1]=0x70044B93;}; --Bullroarer's Green Dye
         [168]={[3]=6;[2]={["SPRING_FESTIVAL"]=15;};[1]=0x70044B96;}; --Lavender Dye
@@ -195,7 +195,7 @@ _BARTER =
         [175]={[3]=5;[2]={["SPRING_FESTIVAL"]=5;};[1]=0x70052CDD;}; --Orange Dwarf-candle
         [176]={[3]=5;[2]={["SPRING_FESTIVAL"]=5;};[1]=0x70052CDE;}; --White Dwarf-candle
         [177]={[3]=5;[2]={["SPRING_FESTIVAL"]=5;};[1]=0x70052CDF;}; --Purple Dwarf-candle
-        [178]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Cosmetic Pets"; }; };
+        [178]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Cosmetic Pets"; }; };
         [179]={[2]={["GENERIC_MITHRIL"]=30;};[1]=0x7006A6DD;}; --Tome of the Perfect Curl Garden Snail
         [180]={[2]={["SPRING_FESTIVAL"]=25;};[1]=0x70064AC5;}; --Tome of the White Puppy
         [181]={[2]={["SPRING_FESTIVAL"]=25;};[1]=0x70058C2B;}; --Tome of the Wild Spotted Donkey
@@ -211,7 +211,7 @@ _BARTER =
         [191]={[2]={["SPRING_FESTIVAL"]=250;};[1]=0x7003F388;}; --Tome of the Dusty Shrew
         [192]={[2]={["SPRING_FESTIVAL"]=50;};[1]=0x7003F38C;}; --Tome of the Plain Shrew
         [193]={[2]={["SPRING_FESTIVAL"]=50;};[1]=0x7003F387;}; --Tome of the Spotted Shrew
-        [194]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Gift Boxes"; }; };
+        [194]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Gift Boxes"; }; };
         [195]={[2]={["SPRING_FESTIVAL"]=15;};[1]=0x7006A6D7;}; --Garments of the Perfect Curl - Gift-wrapped Selection Box
         [196]={[2]={["SPRING_FESTIVAL"]=15;};[1]=0x70064D70;}; --Cloaks of New Growth - Gift-wrapped Selection Box
         [197]={[2]={["SPRING_FESTIVAL"]=15;};[1]=0x7005A414;}; --Merry Fellow and Spring Maid Garments - Gift-wrapped selection box
@@ -226,7 +226,7 @@ _BARTER =
         [206]={[2]={["SPRING_FESTIVAL"]=13;};[1]=0x0700486FC;}; --Short-sleeved Dress of the Moth - Gift Wrapped
         [207]={[2]={["SPRING_FESTIVAL"]=13;};[1]=0x0700487AF;}; --Long-sleeved Dress of the Moth - Gift Wrapped
         [208]={[2]={["SPRING_FESTIVAL"]=13;};[1]=0x0700487B4;}; --Sleeveless Dress of the Moth - Gift Wrapped
-        [209]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Spring Festivity Token Vendor"; }; };
+        [209]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Spring Festivity Token Vendor"; }; };
         [210]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=0x07006A6DD;}; --Tome of the Perfect Curl Garden Snail
         [211]={[2]={["GENERIC_FESTIVITY"]=25;};[1]=0x070064AC3;}; --Cosmetic Shield of New Growth
         [212]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=0x070064193;}; --Tome of the Adorable Sickle-fly
@@ -250,7 +250,7 @@ _BARTER =
         [230]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=0x07005A3F0;}; --Gammer's Best Small Footstool
         [231]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=0x07005A3F6;}; --Gammer's Hall Table
         [232]={[2]={["GENERIC_FESTIVITY"]=5;};[1]=0x07005A3ED;}; --Gammer's Trinket Stand
-        [233]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Curious Novelties"; }; };
+        [233]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Curious Novelties"; }; };
         [234]={[2]={["SPRING_VIOLET"]=80;["SPRING_MARIGOLD"]=80;["SPRING_PRIMROSE"]=80;};[1]=0x70036643;}; --Spring Lissuin Halter
         [235]={[2]={["SPRING_VIOLET"]=80;["SPRING_MARIGOLD"]=80;["SPRING_PRIMROSE"]=80;};[1]=0x70036644;}; --Spring Lissuin Saddle
         [236]={[2]={["SPRING_VIOLET"]=100;["SPRING_MARIGOLD"]=100;["SPRING_PRIMROSE"]=100;};[1]=0x7002CBE9;}; --Steed of the Jester
@@ -264,8 +264,8 @@ _BARTER =
     -- FARMERS FAIRE --------------------------------------------------------------------------------------------
     [FARMERSFAIRE] =
     {
-        [1]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Dill Goodchild, Festival Rewards"; }; };
-        [2]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Emotes and Cosmetic Pets"; }; };
+        [1]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Dill Goodchild, Festival Rewards"; }; };
+        [2]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Emotes and Cosmetic Pets"; }; };
         [3]={[2]={["FARMERSFAIRE_FESTIVAL"]=80;};[1]=1879335454;}; -- Grant Hobbit Dance 4 Emote
         [4]={[2]={["FARMERSFAIRE_FESTIVAL"]=80;};[1]=1879335493;}; -- Grant the Fountain Emote
         [5]={[2]={["FARMERSFAIRE_FESTIVAL"]=60;};[1]=1879335548;}; -- Tome of the Sunny Summer Kite
@@ -275,7 +275,7 @@ _BARTER =
         [9]={[2]={["FARMERSFAIRE_FESTIVAL"]=80;};[1]=1879351567;}; -- Grant the Bubbling Fish Pipe Emote
         [10]={[2]={["FARMERSFAIRE_FESTIVAL"]=60;};[1]=1879368656;}; -- Tome of the Blue Peahen
         [11]={[2]={["FARMERSFAIRE_FESTIVAL"]=60;};[1]=1879368669;}; -- Tome of the Blue Peacock
-        [12]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cosmetic Rewards - 1 Year Old"; }; };
+        [12]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Cosmetic Rewards - 1 Year Old"; }; };
         [13]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879389979;}; -- Cloak of the Light-wisps
         [14]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879389971;}; -- Hooded Cloak of the Light-wisps
         [15]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879389976;}; -- Cap of Summer's Night
@@ -287,7 +287,7 @@ _BARTER =
         [21]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879368209;}; -- Peacock Dress
         [22]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879368210;}; -- Picnic Dress
         [23]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879368211;}; -- Peacock Trousers
-        [24]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cosmetic Rewards - Classic Rewards Part 2"; }; };
+        [24]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Cosmetic Rewards - Classic Rewards Part 2"; }; };
         [25]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879313833;}; -- Robe of the Wedmath Celebration
         [26]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879313834;}; -- Cloak of the Wedmath Celebration
         [27]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879313835;}; -- Hooded Cloak of the Wedmath Celebration
@@ -299,7 +299,7 @@ _BARTER =
         [33]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879249070;}; -- Summerdays Cloak
         [34]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879249068;}; -- Summerdays Hooded Cloak
         [35]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879249072;}; -- Summerdays Hat
-        [36]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cosmetic Rewards - Classic Rewards Part 1"; }; };
+        [36]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Cosmetic Rewards - Classic Rewards Part 1"; }; };
         [37]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879351473;}; -- Short-sleeved Sunflower Tunic and Trousers
         [38]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879351472;}; -- Long-sleeved Sunflower Tunic and Trousers
         [39]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879357560;}; -- Sunflower Cloak
@@ -312,7 +312,7 @@ _BARTER =
         [46]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879326027;}; -- Cloak of Nárië
         [47]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879326026;}; -- Hooded Cloak of Nárië
         [48]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879326023;}; -- Surcoat of Nárië
-        [49]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cosmetic Rewards - Special"; }; };
+        [49]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Cosmetic Rewards - Special"; }; };
         [50]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879104057;}; -- Turquoise Summer Circlet
         [51]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879104078;}; -- Sleeveless Elven Tunic
         [52]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879185942;}; -- Long-sleeved Summer Dress
@@ -324,7 +324,7 @@ _BARTER =
         [58]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879185951;}; -- Summer Travelling Cloak
         [59]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879159561;}; -- Cloak of the Summer Sun
         [60]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879159581;}; -- Sun Hat
-        [61]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Housing Rewards - General"; }; };
+        [61]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Housing Rewards - General"; }; };
         [62]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879249578;}; -- Glowing Bonfire
         [63]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879249577;}; -- Smoky Bonfire
         [64]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879249579;}; -- Modest Cookfire
@@ -334,12 +334,12 @@ _BARTER =
         [68]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879185962;}; -- Mossy Wicker Chair
         [69]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879159513;}; -- Summerfest Painting
         [70]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879159507;}; -- Summerfest Bed
-        [71]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Housing Rewards - Maps"; }; };
+        [71]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Housing Rewards - Maps"; }; };
         [72]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879205540;}; -- Map of Lothlórien
         [73]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879205564;}; -- Map of the Ettenmoors
         [74]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879205567;}; -- Map of Caras Galadhon
         [75]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879205544;}; -- Map of the Northern Barrow-downs
-        [76]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Consumables"; }; };
+        [76]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Consumables"; }; };
         [77]={[3]=5;[2]={["FARMERSFAIRE_FESTIVAL"]=9;};[1]=1879159373;}; -- Monster Fare
         [78]={[3]=5;[2]={["FARMERSFAIRE_FESTIVAL"]=9;};[1]=1879159383;}; -- Foul Blasts
         [79]={[3]=5;[2]={["FARMERSFAIRE_FESTIVAL"]=9;};[1]=1879159304;}; -- Fire-breathing Potions
@@ -349,12 +349,12 @@ _BARTER =
         [83]={[3]=5;[2]={["FARMERSFAIRE_FESTIVAL"]=9;};[1]=1879159367;}; -- Saffron's Lipstick
         [84]={[3]=5;[2]={["FARMERSFAIRE_FESTIVAL"]=9;};[1]=1879159235;}; -- Vile Vittles
         [85]={[3]=5;[2]={["FARMERSFAIRE_FESTIVAL"]=6;};[1]=1879233669;}; -- Piles of Mysterious Powder
-        [86]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Summer Festival Steeds"; }; };
+        [86]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Summer Festival Steeds"; }; };
         [87]={[2]={["FARMERSFAIRE_FESTIVAL"]=80;};[1]=1879390708;}; -- Steed of Summer's Night
         [88]={[2]={["FARMERSFAIRE_FESTIVAL"]=80;};[1]=1879390718;}; -- Lamp of Summer's Night
         [89]={[2]={["FARMERSFAIRE_FESTIVAL"]=80;};[1]=1879390717;}; -- Caparison of Summer's Night
         [90]={[2]={["FARMERSFAIRE_FESTIVAL"]=80;};[1]=1879390719;}; -- Saddle of Summer's Night
-        [91]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Summer Festival Steeds - Mithril"; }; };
+        [91]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Summer Festival Steeds - Mithril"; }; };
         [92]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879249514;}; -- Summerdays Steed
         [93]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879115711;}; -- Lithe Festival Steed
         [94]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879185142;}; -- Pale Golden Summer Steed
@@ -381,7 +381,7 @@ _BARTER =
         [115]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879390718;}; -- Lamp of Summer's Night
         [116]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879390717;}; -- Caparison of Summer's Night
         [117]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879390719;}; -- Saddle of Summer's Night
-        [118]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Gift Boxes of Past Years"; }; };
+        [118]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Gift Boxes of Past Years"; }; };
         [119]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879351749;}; -- Short-sleeved Sunflower Tunic and Trousers - Gift-wrapped
         [120]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879351746;}; -- Long-sleeved Sunflower Tunic and Trousers - Gift-wrapped
         [121]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879358044;}; -- Sunflower Cloak - Gift-wrapped
@@ -396,10 +396,10 @@ _BARTER =
         [130]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879368613;}; -- Picnic Dress - Gift Wrapped
         [131]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879368614;}; -- Peacock Trousers - Gift Wrapped
         [132]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879390720;}; -- Garments of Summer's Night - Gift-wrapped selection box
-        [133]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Dill Goodchild, Festival Rewards and Caltha Tunnelly, Festival Announcer & Rewards Vendor"; }; };
-        [134]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Essences"; }; };
+        [133]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Dill Goodchild, Festival Rewards and Caltha Tunnelly, Festival Announcer & Rewards Vendor"; }; };
+        [134]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Essences"; }; };
         [135]={[2]={["FARMERSFAIRE_FESTIVAL"]=180;};[1]=1879439435;}; -- Essence Reclamation Scroll
-        [136]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Dyes"; }; };
+        [136]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Dyes"; }; };
         [137]={[3]=6;[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879329685;}; -- Rohan Green Dye
         [138]={[3]=6;[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879329676;}; -- Sunset Orange Dye
         [139]={[3]=6;[2]={["GENERIC_MITHRIL"]=10;};[1]=1879329684;}; -- Shire Peach Dye
@@ -412,8 +412,8 @@ _BARTER =
         [146]={[3]=5;[2]={["FARMERSFAIRE_FESTIVAL"]=10;};[1]=1879387357;}; -- Orange Dwarf-candle
         [147]={[3]=5;[2]={["FARMERSFAIRE_FESTIVAL"]=10;};[1]=1879387358;}; -- White Dwarf-candle
         [148]={[3]=5;[2]={["FARMERSFAIRE_FESTIVAL"]=10;};[1]=1879387359;}; -- Purple Dwarf-candle
-        [149]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Caltha Tunnelly, Festival Announcer & Rewards Vendor"; }; };
-        [150]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "New Cosmetics"; }; };
+        [149]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Caltha Tunnelly, Festival Announcer & Rewards Vendor"; }; };
+        [150]={[1]=DIVIDER2; [2]={["ENGLISH"] = "New Cosmetics"; }; };
         [151]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879490789;}; -- Fine Boots of the Potato Farmer
         [152]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879490792;}; -- Fine Hat of the Potato Farmer
         [153]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879490782;}; -- Fine Mantle of the Potato Farmer
@@ -435,7 +435,7 @@ _BARTER =
         [169]={[2]={["FARMERSFAIRE_FESTIVAL"]=25;};[1]=1879491238;}; -- Decorative Wall - 20m (Farmer's Fine Wall)
         [170]={[2]={["FARMERSFAIRE_FESTIVAL"]=25;};[1]=1879491236;}; -- Tall Decorative Wall - 10m (Farmer's Fine Wall)
         [171]={[2]={["FARMERSFAIRE_FESTIVAL"]=25;};[1]=1879491239;}; -- Tall Decorative Wall - 20m (Farmer's Fine Wall)
-        [172]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cosmetics - Part 1"; }; };
+        [172]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Cosmetics - Part 1"; }; };
         [173]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879335478;}; -- Mantle of the Farmer's Table
         [174]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879335481;}; -- Cloak of the Farmer's Table
         [175]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879326024;}; -- Surcoat of the Yield
@@ -455,7 +455,7 @@ _BARTER =
         [189]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879242708;}; -- Farmer's Fancy Tunic and Trousers
         [190]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879242301;}; -- Farmer's Fancy Dress
         [191]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879242274;}; -- Farmer's Fancy Wide-brimmed Hat
-        [192]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cosmetics - Part 2"; }; };
+        [192]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Cosmetics - Part 2"; }; };
         [193]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879242278;}; -- Chicken Mask
         [194]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879242276;}; -- Donkey Mask
         [195]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879242268;}; -- Duckling Mask
@@ -476,7 +476,7 @@ _BARTER =
         [210]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879369947;}; -- Hooded Cloak of the Farmers Feast
         [211]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879358785;}; -- Cloak of the Harvest Sky
         [212]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879358784;}; -- Hooded Cloak of the Harvest Sky
-        [213]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cosmetics - Part 3"; }; };
+        [213]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Cosmetics - Part 3"; }; };
         [214]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879490789;}; -- Fine Boots of the Potato Farmer
         [215]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879490792;}; -- Fine Hat of the Potato Farmer
         [216]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879490782;}; -- Fine Mantle of the Potato Farmer
@@ -491,7 +491,7 @@ _BARTER =
         [225]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879422340;}; -- Cloak of the Green Grocer
         [226]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879422339;}; -- Tunic of the Green Grocer
         [227]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879422338;}; -- Boots of the Green Grocer
-        [228]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Housing Rewards"; }; };
+        [228]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Housing Rewards"; }; };
         [229]={[2]={["FARMERSFAIRE_FESTIVAL"]=25;};[1]=1879491033;}; -- Farmer's Fine Walls
         [230]={[2]={["FARMERSFAIRE_FESTIVAL"]=25;};[1]=1879491032;}; -- Farmer's Fine Floor
         [231]={[2]={["FARMERSFAIRE_FESTIVAL"]=25;};[1]=1879491235;}; -- Decorative Farmer's Fine Floor
@@ -526,7 +526,7 @@ _BARTER =
         [260]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879242713;}; -- Produce Stall
         [261]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879242716;}; -- Golden Egg
         [262]={[2]={["FARMERSFAIRE_FESTIVAL"]=60;};[1]=1879242712;}; -- Chicken Coop
-        [263]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cosmetic Pets"; }; };
+        [263]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Cosmetic Pets"; }; };
         [264]={[2]={["FARMERSFAIRE_FESTIVAL"]=60;};[1]=1879368661;}; -- Tome of the Black Peahen
         [265]={[2]={["FARMERSFAIRE_FESTIVAL"]=60;};[1]=1879368667;}; -- Tome of the Black Peacock
         [266]={[2]={["FARMERSFAIRE_FESTIVAL"]=60;};[1]=1879368666;}; -- Tome of the Big Goat Kid
@@ -541,7 +541,7 @@ _BARTER =
         [275]={[2]={["GENERIC_MITHRIL"]=30;};[1]=1879468685;}; -- Tome of the Fire-fox Bandit
         [276]={[2]={["FARMERSFAIRE_FESTIVAL"]=60;};[1]=1879490987;}; -- Tome of the Potato Farmer's Fine Cow
         [277]={[2]={["GENERIC_MITHRIL"]=30;};[1]=1879485346;}; -- Tome of the Heather Hamster
-        [278]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Farmers Faire Steeds"; }; };
+        [278]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Farmers Faire Steeds"; }; };
         [279]={[2]={["FARMERSFAIRE_FESTIVAL"]=80;};[1]=1879490847;}; -- Potato Farmer's Fine Steed
         [280]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879490814;}; -- Potato Farmer's Fine Accessory
         [281]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879490817;}; -- Potato Farmer's Fine Caparison
@@ -563,7 +563,7 @@ _BARTER =
         [297]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879410878;}; -- Shimmering Breeze Saddle
         [298]={[2]={["FARMERSFAIRE_FESTIVAL"]=80;};[1]=1879369985;}; -- Farmers Feast Steed
         [299]={[2]={["FARMERSFAIRE_FESTIVAL"]=80;};[1]=1879369988;}; -- Farmers Feast Caparison
-        [300]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Farmers Faire Steeds - Mithril"; }; };
+        [300]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Farmers Faire Steeds - Mithril"; }; };
         [301]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879490847;}; -- Potato Farmer's Fine Steed
         [302]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879490840;}; -- Potato Farmer's Fine War-steed Cosmetics
         [303]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879468697;}; -- Steed of the Blazing Firmament
@@ -584,7 +584,7 @@ _BARTER =
         [318]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879242573;}; -- Farmers Faire Steed
         [319]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879315038;}; -- Caparison of Bounty
         [320]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879273555;}; -- Caparison of Plenty
-        [321]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Summer Festival Steeds - Mithril"; }; };
+        [321]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Summer Festival Steeds - Mithril"; }; };
         [322]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879249514;}; -- Summerdays Steed
         [323]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879115711;}; -- Lithe Festival Steed
         [324]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879185142;}; -- Pale Golden Summer Steed
@@ -611,7 +611,7 @@ _BARTER =
         [345]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879390718;}; -- Lamp of Summer's Night
         [346]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879390717;}; -- Caparison of Summer's Night
         [347]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879390719;}; -- Saddle of Summer's Night
-        [348]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Farmers Faire Gift Boxes"; }; };
+        [348]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Farmers Faire Gift Boxes"; }; };
         [349]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879490841;}; -- Fine Garments of the Potato Farmer -  Gift-wrapped Selection Box
         [350]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879468710;}; -- Blazing Firmament Garments - Gift-wrapped Selection Box
         [351]={[2]={["FARMERSFAIRE_FESTIVAL"]=45;};[1]=1879449495;}; -- Innkeeper's Dress - Gift Wrapped
@@ -624,12 +624,12 @@ _BARTER =
         [358]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879358790;}; -- Cloak of the Harvest Sky - Gift Wrapped
         [359]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879358791;}; -- Hooded Cloak of the Harvest Sky - Gift Wrapped
         [360]={[2]={["FARMERSFAIRE_FESTIVAL"]=35;};[1]=1879358810;}; -- Basket of Freshly Picked Apples - Gift Wrapped
-        [361]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Other"; }; };
+        [361]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Other"; }; };
         [362]={[3]=5;[2]={["FARMERSFAIRE_FESTIVAL"]=6;};[1]=1879233669;}; -- Pile of Mysterious Powder
         [363]={[3]=5;[2]={["FARMERSFAIRE_FESTIVAL"]=9;};[1]=1879182968;}; -- Doom-shroom
         [364]={[2]={["FARMERSFAIRE_FESTIVAL"]=15;};[1]=1879103661;}; -- Blueberry Tart Recipe
-        [365]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Ernwyd Brandybuck, Quartermaster (The Party Tree)"; }; };
-        [366]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Page 1"; }; };
+        [365]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Ernwyd Brandybuck, Quartermaster (The Party Tree)"; }; };
+        [366]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Page 1"; }; };
         [367]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879115678;}; -- Celebhal
         [368]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879115925;}; -- Silver Haddock
         [369]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879115929;}; -- Golden Redfish
@@ -650,7 +650,7 @@ _BARTER =
         [384]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879138059;}; -- 'Festival of Enedhin' Wall
         [385]={[2]={["FARMERSFAIRE_FESTIVAL"]=15;["FARMERSFAIRE_CELEBHAL"]=1;};[1]=1879117675;}; -- Green Ceremonial Dress
         [386]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879443008;}; -- Decorative Wall - 10m (Festival of Enedhin)
-        [387]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Page 2"; }; };
+        [387]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Page 2"; }; };
         [388]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879442975;}; -- Tall Decorative Wall - 10m (Festival of Enedhin)
         [389]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879443094;}; -- Decorative Wall - 20m (Festival of Enedhin)
         [390]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879443080;}; -- Tall Decorative Wall - 20m (Festival of Enedhin)
@@ -671,12 +671,12 @@ _BARTER =
         [405]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879138058;}; -- 'Summerdays' Wall
         [406]={[2]={["FARMERSFAIRE_FESTIVAL"]=15;["FARMERSFAIRE_GOLDRED"]=1;};[1]=1879103151;}; -- White Ceremonial Dress
         [407]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879443087;}; -- Decorative Wall - 10m (Summerdays)
-        [408]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Page 3"; }; };
+        [408]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Page 3"; }; };
         [409]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879443007;}; -- Tall Decorative Wall - 10m (Summerdays)
         [410]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879443085;}; -- Decorative Wall - 20m (Summerdays)
         [411]={[2]={["FARMERSFAIRE_FESTIVAL"]=30;};[1]=1879443068;}; -- Tall Decorative Wall - 20m (Summerdays)
-        [412]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Fishing Quartermasters:\n* Gaellien at Celondim (Elf)\n* Láfi at Thorin's Hall (Dwarf)\n* Neddie Grubb at Bywater Pool (Hobbit)\n* Will Hindmarsh at Pierson's Farm (Man)"; }; ["DIVIDER_HEIGHT"] = 120;};
-        [413]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Page 1"; }; };
+        [412]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Fishing Quartermasters:\n* Gaellien at Celondim (Elf)\n* Láfi at Thorin's Hall (Dwarf)\n* Neddie Grubb at Bywater Pool (Hobbit)\n* Will Hindmarsh at Pierson's Farm (Man)"; }; ["DIVIDER_HEIGHT"] = 120;};
+        [413]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Page 1"; }; };
         [414]={[3]=3;[2]={["FARMERSFAIRE_LUILLIM"]=4;};[1]=1879223715;}; -- Farmers Faire Tokens
         [415]={[3]=3;[2]={["FARMERSFAIRE_AMBERJACK"]=4;};[1]=1879223715;}; -- Farmers Faire Tokens
         [416]={[3]=3;[2]={["FARMERSFAIRE_DRUM"]=4;};[1]=1879223715;}; -- Farmers Faire Tokens
@@ -685,8 +685,8 @@ _BARTER =
         [419]={[3]=6;[2]={["FARMERSFAIRE_GOLDRED"]=1;};[1]=1879223715;}; -- Farmers Faire Tokens
         [420]={[3]=6;[2]={["FARMERSFAIRE_FLOUNDER"]=1;};[1]=1879223715;}; -- Farmers Faire Tokens
         [421]={[3]=3;[2]={["FARMERSFAIRE_SMALLFISH"]=4;};[1]=1879223715;}; -- Farmers Faire Tokens
-        [422]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Verbena Greenhand, Farmers Festivity Token Vendor"; }; };
-        [423]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Seasonal Skirmish Rewards - Summer"; }; };
+        [422]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Verbena Greenhand, Farmers Festivity Token Vendor"; }; };
+        [423]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Seasonal Skirmish Rewards - Summer"; }; };
         [424]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879368659;}; -- Tome of the Green Peahen
         [425]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879368664;}; -- Tome of the Green Peacock
         [426]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879368810;}; -- Perfect Picnic Steed
@@ -703,8 +703,8 @@ _BARTER =
         [437]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879449493;}; -- Robe of Leisure
         [438]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879468685;}; -- Tome of the Fire-fox Bandit
         [439]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879485346;}; -- Tome of the Heather Hamster
-        [440]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Vault Quartermaster"; }; };
-        [441]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Thrâng Cosmetic Weapons"; }; };
+        [440]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Vault Quartermaster"; }; };
+        [441]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Thrâng Cosmetic Weapons"; }; };
         [442]={[2]={["FARMERSFAIRE_THRANG"]=1;};[1]=1879369113;}; -- Replica of Bone-splitter
         [443]={[2]={["FARMERSFAIRE_THRANG"]=1;};[1]=1879369109;}; -- Replica Great Hammer of Moria
         [444]={[2]={["FARMERSFAIRE_THRANG"]=1;};[1]=1879369112;}; -- Gleaming Staff
@@ -713,7 +713,7 @@ _BARTER =
         [447]={[2]={["FARMERSFAIRE_THRANG"]=1;};[1]=1879369107;}; -- Great Club of Valour
         [448]={[2]={["FARMERSFAIRE_THRANG"]=1;};[1]=1879094727;}; -- Heavy Axe of the Righteous
         [449]={[2]={["FARMERSFAIRE_THRANG"]=1;};[1]=1879369106;}; -- Thrâng's Sword
-        [450]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Thrâng Cosmetic Armour"; }; };
+        [450]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Thrâng Cosmetic Armour"; }; };
         [451]={[2]={["FARMERSFAIRE_THRANG"]=1;};[1]=1879370037;}; -- Reforged Rift-defender's Helm
         [452]={[2]={["FARMERSFAIRE_THRANG"]=1;};[1]=1879370052;}; -- Reforged Rift-defender's Shoulder-guards
         [453]={[2]={["FARMERSFAIRE_THRANG"]=1;};[1]=1879370041;}; -- Reforged Rift-defender's Breastplate
@@ -738,8 +738,8 @@ _BARTER =
     -- HARVESTMATH -------------------------------------------------------------------------------------
     [HARVESTMATH] =
     {
-        [1]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Rosa Hornblower, Fall Festival Trader"; }; };
-        [2]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "New Items"; }; };
+        [1]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Rosa Hornblower, Fall Festival Trader"; }; };
+        [2]={[1]=DIVIDER2; [2]={["ENGLISH"] = "New Items"; }; };
         [3]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879516968;}; -- Cobweb Garments - Gift-wrapped Selection Box
         [4]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879516614;}; -- Cobweb Robe
         [5]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879516876;}; -- Cobweb Hat
@@ -759,7 +759,7 @@ _BARTER =
         [19]={[2]={["HARVESTMATH_FESTIVAL"]=10;};[1]=1879518295;}; -- 'Haunted Yard' Ambience
         [20]={[2]={["HARVESTMATH_FESTIVAL"]=8;};[1]=1879501058;}; -- Webbed Thorny Hedge
         [21]={[2]={["HARVESTMATH_FESTIVAL"]=8;};[1]=1879501055;}; -- Wild Webbed Hedge
-        [22]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Fall Festival Steeds"; }; };
+        [22]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Fall Festival Steeds"; }; };
         [23]={[2]={["HARVESTMATH_FESTIVAL"]=60;};[1]=1879517201;}; -- Fall Hobby-broom
         [24]={[2]={["HARVESTMATH_FESTIVAL"]=60;};[1]=1879470559;}; -- Elk of the Forest-spirit
         [25]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879412855;}; -- Caparison of the Autumn Sage's Bearance
@@ -767,7 +767,7 @@ _BARTER =
         [27]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879412858;}; -- Saddle of the Autumn Sage's Bearance
         [28]={[2]={["HARVESTMATH_FESTIVAL"]=60;};[1]=1879412852;}; -- Steed of the Autumn Sage
         [29]={[2]={["HARVESTMATH_FESTIVAL"]=60;};[1]=1879394566;}; -- Steed of the Autumn Traveller
-        [30]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cosmetic Pets"; }; };
+        [30]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Cosmetic Pets"; }; };
         [31]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879516874;}; -- Tome of the Pumpkin Huorn
         [32]={[2]={["GENERIC_MITHRIL"]=30;};[1]=1879516874;}; -- Tome of the Pumpkin Huorn
         [33]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879463033;}; -- Tome of the Autumn Aurochs
@@ -787,7 +787,7 @@ _BARTER =
         [47]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879361467;}; -- Tome of the Lantern Gourd-lurker
         [48]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879396938;}; -- Tome of the Black Marble Wolf-dog
         [49]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879412830;}; -- Tome of the Night Sky Craban
-        [50]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Dyes"; }; };
+        [50]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Dyes"; }; };
         [51]={[3]=6;[2]={["GENERIC_MITHRIL"]=10;};[1]=1879329680;}; -- 6 Imladris Fallen Leaf Dyes
         [52]={[3]=6;[2]={["GENERIC_MITHRIL"]=10;};[1]=1879329688;}; -- 6 Ashenslades Green Dyes
         [53]={[3]=6;[2]={["HARVESTMATH_FESTIVAL"]=20;};[1]=1879337947;}; -- 6 Autumn Leaf Dyes
@@ -800,7 +800,7 @@ _BARTER =
         [60]={[3]=5;[2]={["HARVESTMATH_FESTIVAL"]=8;};[1]=1879387357;}; -- 5 Orange Dwarf-candles
         [61]={[3]=5;[2]={["HARVESTMATH_FESTIVAL"]=8;};[1]=1879387358;}; -- 5 White Dwarf-candles
         [62]={[3]=5;[2]={["HARVESTMATH_FESTIVAL"]=8;};[1]=1879387359;}; -- 5 Purple Dwarf-candles
-        [63]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cosmetic Clothing - Gift Boxes"; }; };
+        [63]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Cosmetic Clothing - Gift Boxes"; }; };
         [64]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879516968;}; -- Cobweb Garments - Gift-wrapped Selection Box
         [65]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879494444;}; -- Garments of Masked Wisdom - Gift-wrapped Selection Box
         [66]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879470570;}; -- Garments of the Forest-spirit - Gift-wrapped Selection Box
@@ -815,7 +815,7 @@ _BARTER =
         [75]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879381551;}; -- Hooded Cloak of the Autumn Wanderer - Gift Wrapped
         [76]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879381545;}; -- Travelling Robes of the Autumn Wanderer - Gift Wrapped
         [77]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879381549;}; -- Mask of the Autumn Wanderer - Gift Wrapped
-        [78]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Fall Festival Steeds - Mithril I"; }; };
+        [78]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Fall Festival Steeds - Mithril I"; }; };
         [79]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879517201;}; -- Fall Hobby-broom
         [80]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879470559;}; -- Elk of the Forest-spirit
         [81]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879412855;}; -- Caparison of the Autumn Sage's Bearance
@@ -830,7 +830,7 @@ _BARTER =
         [90]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879381564;}; -- Tattered Feathers of the Harbinger
         [91]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879381565;}; -- Saddle of the Harbinger
         [92]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879360378;}; -- Steed of Eldar Autumn
-        [93]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Fall Festival Steeds - Mithril II"; }; };
+        [93]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Fall Festival Steeds - Mithril II"; }; };
         [94]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879360375;}; -- Caparison of Eldar Autumn
         [95]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879360370;}; -- Head-piece of Eldar Autumn
         [96]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879360372;}; -- Saddle of Eldar Autumn
@@ -851,9 +851,9 @@ _BARTER =
         [111]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879099081;}; -- Harvestmath Steed
         [112]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879173351;}; -- Sable Harvestmath Steed
         [113]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879220550;}; -- Autumnfest Steed
-        [114]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Essences"; }; };
+        [114]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Essences"; }; };
         [115]={[2]={["HARVESTMATH_FESTIVAL"]=140;};[1]=1879439435;}; -- Essence Reclamation Scroll
-        [116]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Tunics, Trousers, Dresses, and Outfits"; }; };
+        [116]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Tunics, Trousers, Dresses, and Outfits"; }; };
         [117]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879516614;}; -- Cobweb Robe
         [118]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879493402;}; -- Robe of Masked Wisdom
         [119]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879470524;}; -- Tunic of the Forest-spirit
@@ -872,16 +872,16 @@ _BARTER =
         [132]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879255509;}; -- Harvest-brew Dress
         [133]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879220548;}; -- Tunic & Trousers of Autumn Nights
         [134]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879220545;}; -- Gown of Autumn Nights
-        [135]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cosmetic Weapons and Shields"; }; };
+        [135]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Cosmetic Weapons and Shields"; }; };
         [136]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879361367;}; -- Shield of Eldar Autumn
-        [137]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Shoulder-pieces and Footwear"; }; };
+        [137]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Shoulder-pieces and Footwear"; }; };
         [138]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879493389;}; -- Boots of Masked Wisdom
         [139]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879470525;}; -- Mantle of the Forest-spirit
         [140]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879470523;}; -- Boots of the Forest-spirit
         [141]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879412782;}; -- Cowl and Hat of the Autumn Sage
         [142]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879361263;}; -- Autumn Leafmail Shoulder-guards
         [143]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879338598;}; -- Mantle of the Gloaming Autumn
-        [144]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cloaks and Back Items"; }; };
+        [144]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Cloaks and Back Items"; }; };
         [145]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879516604;}; -- Cobweb Cloak
         [146]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879516602;}; -- Hooded Cobweb Cloak
         [147]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879470527;}; -- Cloak of the Forest-spirit
@@ -908,7 +908,7 @@ _BARTER =
         [168]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879191232;}; -- Cloak of the Falling Leaves
         [169]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879181901;}; -- Cloak of the Boar
         [170]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879181904;}; -- Cloak of the Raven
-        [171]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Hats and Masks"; }; };
+        [171]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Hats and Masks"; }; };
         [172]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879516876;}; -- Cobweb Hat
         [173]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879493388;}; -- Wisdom's Mask
         [174]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879470526;}; -- Mask of the Forest-spirit
@@ -920,13 +920,13 @@ _BARTER =
         [180]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879119390;}; -- Pipe Festival Mask
         [181]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879255516;}; -- Harvest-brew Hat
         [182]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879255510;}; -- Harvest-brew Circlet
-        [183]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Handheld Cosmetics"; }; };
+        [183]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Handheld Cosmetics"; }; };
         [184]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879516932;}; -- Harvestmath Cauldron
         [185]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879255481;}; -- Beer Stein
         [186]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879208609;}; -- Basket of Apples
         [187]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879255479;}; -- Fall Gourd
         [188]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879255482;}; -- Pretzel
-        [189]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Housing Items - 1"; }; };
+        [189]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Housing Items - 1"; }; };
         [190]={[2]={["HARVESTMATH_FESTIVAL"]=30;};[1]=1879516933;}; -- Heating Cauldron
         [191]={[2]={["HARVESTMATH_FESTIVAL"]=30;};[1]=1879508822;}; -- Small Potions Table
         [192]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879498938;}; -- Pumpkins
@@ -935,7 +935,7 @@ _BARTER =
         [195]={[2]={["HARVESTMATH_FESTIVAL"]=10;};[1]=1879518295;}; -- 'Haunted Yard' Ambience
         [196]={[2]={["HARVESTMATH_FESTIVAL"]=8;};[1]=1879501058;}; -- Webbed Thorny Hedge
         [197]={[2]={["HARVESTMATH_FESTIVAL"]=8;};[1]=1879501055;}; -- Wild Webbed Hedge
-        [198]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Housing Items - 2"; }; };
+        [198]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Housing Items - 2"; }; };
         [199]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879460528;}; -- Small Grove of Fiery Fall Trees
         [200]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879493558;}; -- Harvest Pumpkin Planter
         [201]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879361890;}; -- Pillar of Hay
@@ -976,7 +976,7 @@ _BARTER =
         [236]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879112727;}; -- Map of Eregion
         [237]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879205553;}; -- Map of Enedwaith
         [238]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879205559;}; -- Map of Mirkwood
-        [239]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Consumables"; }; };
+        [239]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Consumables"; }; };
         [240]={[3]=5;[2]={["HARVESTMATH_FESTIVAL"]=3;};[1]=1879161463;}; -- 5 Specimen Jars: Gross Bugs
         [241]={[3]=5;[2]={["HARVESTMATH_FESTIVAL"]=3;};[1]=1879161496;}; -- 5 Applications of 'Coveritol'
         [242]={[3]=5;[2]={["HARVESTMATH_FESTIVAL"]=3;};[1]=1879161620;}; -- 5 Buckets of Fear
@@ -984,9 +984,9 @@ _BARTER =
         [244]={[3]=5;[2]={["HARVESTMATH_FESTIVAL"]=3;};[1]=1879161765;}; -- 5 Candles and Mirrors
         [245]={[3]=5;[2]={["HARVESTMATH_FESTIVAL"]=3;};[1]=1879161781;}; -- 5 Black Silk Gloves
         [246]={[3]=5;[2]={["HARVESTMATH_FESTIVAL"]=3;};[1]=1879161779;}; -- 5 Spider Legs
-        [247]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Emotes"; }; };
+        [247]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Emotes"; }; };
         [248]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879190618;}; -- BOO!
-        [249]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Instruments"; }; };
+        [249]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Instruments"; }; };
         [250]={[2]={["HARVESTMATH_FESTIVAL"]=4;};[1]=1879097472;}; -- Guide to the Cowbell
         [251]={[2]={["HARVESTMATH_FESTIVAL"]=20;};[1]=1879378382;}; -- Lonely Mountain Bassoon
 
@@ -995,8 +995,8 @@ _BARTER =
     -- YULE --------------------------------------------------------------------------------------------
     [YULE] =
     {
-        [1]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Jeffrey Bloomer, Barter Vendor"; }; };
-        [2]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Consumables"; }; };
+        [1]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Jeffrey Bloomer, Barter Vendor"; }; };
+        [2]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Consumables"; }; };
         [3]={[2]={["YULE_FESTIVAL"]=1;};[1]=1879302499;}; -- Map to Winter-home
         [4]={[3]=5;[2]={["YULE_FESTIVAL"]=5;};[1]=1879173156;}; -- 5 Frosty Beverages
         [5]={[3]=5;[2]={["YULE_FESTIVAL"]=5;};[1]=1879173157;}; -- 5 Snow-jars
@@ -1005,7 +1005,7 @@ _BARTER =
         [8]={[3]=5;[2]={["YULE_FESTIVAL"]=5;};[1]=1879199287;}; -- 5 Perfect Snowballs
         [9]={[3]=5;[2]={["YULE_FESTIVAL"]=5;};[1]=1879199969;}; -- 5 Pieces of Rotten Fruit
         [10]={[3]=5;[2]={["YULE_FESTIVAL"]=5;};[1]=1879199971;}; -- 5 Bags of Flower Petals
-        [11]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cosmetic Clothing"; }; };
+        [11]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Cosmetic Clothing"; }; };
         [12]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879174375;}; -- Snow-dusted Travelling Robe
         [13]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879174376;}; -- Snow-dusted Travelling Gloves
         [14]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879174377;}; -- Snow-dusted Travelling Hat
@@ -1016,20 +1016,20 @@ _BARTER =
         [19]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879199305;}; -- Yule Scarf
         [20]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879199306;}; -- Yule Stocking Cap
         [21]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879230030;}; -- Snowy Tunic and Trousers
-        [22]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cosmetic Cloaks"; }; };
+        [22]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Cosmetic Cloaks"; }; };
         [23]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879220544;}; -- Fancy Winter Cloak
         [24]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879220543;}; -- Warm Winter Cloak
         [25]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879199299;}; -- Yule Hoodless Cloak
         [26]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879199295;}; -- Yule Hooded Cloak
         [27]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879230031;}; -- Snowy Hoodless Cloak
         [28]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879230029;}; -- Brisk Yule Cloak
-        [29]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Gift Boxes"; }; };
+        [29]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Gift Boxes"; }; };
         [30]={[2]={["YULE_FESTIVAL"]=10;};[1]=1879149782;}; -- Elf Gift Box
         [31]={[2]={["YULE_FESTIVAL"]=10;};[1]=1879149762;}; -- Bree-land Gift Box
         [32]={[2]={["YULE_FESTIVAL"]=10;};[1]=1879149778;}; -- Dwarf Gift Box
         [33]={[2]={["YULE_FESTIVAL"]=10;};[1]=1879149758;}; -- Hobbit Gift Box
         [34]={[2]={["YULE_FESTIVAL"]=1;};[1]=1879173117;}; -- 'Supreme Legendary Gift' Box
-        [35]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Housing Decoration"; }; };
+        [35]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Housing Decoration"; }; };
         [36]={[2]={["YULE_FESTIVAL"]=20;};[1]=1879498312;}; -- Snowy Evening Walls
         [37]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879498311;}; -- Decorative Wall - 10m (Snowy Evening)
         [38]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879498310;}; -- Tall Decorative Wall - 10m (Snowy Evening)
@@ -1066,20 +1066,20 @@ _BARTER =
         [69]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879199293;}; -- Yule Flag
         [70]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879199294;}; -- Yule Banner
         [71]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879149574;}; -- Mistletoe
-        [72]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Housing Maps"; }; };
+        [72]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Housing Maps"; }; };
         [73]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879205565;}; -- Map of Thorin's Gate
         [74]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879205568;}; -- Map of Forochel
         [75]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879205545;}; -- Map of Frostbluff
         [76]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879205550;}; -- Map of the Southern Barrow-downs
-        [77]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Titles"; }; };
+        [77]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Titles"; }; };
         [78]={[2]={["YULE_FESTIVAL"]=10;};[1]=1879200192;}; -- Title Writ - Thespian
         [79]={[2]={["YULE_FESTIVAL"]=10;};[1]=1879200230;}; -- Title Writ - Star of the Show
         [80]={[2]={["YULE_FESTIVAL"]=10;};[1]=1879200231;}; -- Title Writ - Protagonist
         [81]={[2]={["YULE_FESTIVAL"]=10;};[1]=1879200232;}; -- Title Writ - Villain
         [82]={[2]={["YULE_FESTIVAL"]=10;};[1]=1879200233;}; -- Title Writ - Extra
         [83]={[2]={["YULE_FESTIVAL"]=10;};[1]=1879200229;}; -- Title Writ - Laughing-stock
-        [84]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Alex Grey, Barter Vendor"; }; };
-        [85]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "New Rewards (2024)"; }; };
+        [84]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Alex Grey, Barter Vendor"; }; };
+        [85]={[1]=DIVIDER2; [2]={["ENGLISH"] = "New Rewards (2024)"; }; };
         [86]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879498097;}; -- Cloak of a Snowy Evening
         [87]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879498105;}; -- Hooded Cloak of a Snowy Evening
         [88]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879498094;}; -- Boots of a Snowy Evening
@@ -1100,7 +1100,7 @@ _BARTER =
         [103]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879498308;}; -- Tall Decorative Wall - 20m (Snowy Evening)
         [104]={[2]={["GENERIC_FESTIVITY"]=30;};[1]=1879498320;}; -- Tome of the Snowy Evening Pig
         [105]={[2]={["GENERIC_MITHRIL"]=30;};[1]=1879498320;}; -- Tome of the Snowy Evening Pig
-        [106]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Festival Gifts"; }; };
+        [106]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Festival Gifts"; }; };
         [107]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879498346;}; -- Snowy Evening Garments - Gift-wrapped Selection Box
         [108]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879479170;}; -- Garments of Icy Expeditions - Gift-wrapped Selection Box
         [109]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879457009;}; -- Snow-strider's Garments - Gift-wrapped Selection Box
@@ -1116,13 +1116,13 @@ _BARTER =
         [119]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879342506;}; -- Hooded Cloak of Winter's Light - Gift Wrapped
         [120]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879342503;}; -- Cloak of Winter's Light - Gift Wrapped
         [121]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879342508;}; -- Robe of Winter's Light - Gift-wrapped
-        [122]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "The More the Merrier Steeds"; }; };
+        [122]={[1]=DIVIDER2; [2]={["ENGLISH"] = "The More the Merrier Steeds"; }; };
         [123]={[2]={["YULE_FESTIVAL"]=80;};[1]=1879498325;}; -- Snowy Evening Steed
         [124]={[2]={["YULE_FESTIVAL"]=80;};[1]=1879479318;}; -- Icy Expeditions Steed
         [125]={[2]={["YULE_FESTIVAL"]=80;};[1]=1879479318;}; -- Snow-strider's Steed
         [126]={[2]={["YULE_FESTIVAL"]=80;};[1]=1879442109;}; -- Shire Holly Steed
         [127]={[2]={["YULE_FESTIVAL"]=60;};[1]=1879414302;}; -- Yule Gala Steed
-        [128]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "The More the Merrier Warsteed"; }; };
+        [128]={[1]=DIVIDER2; [2]={["ENGLISH"] = "The More the Merrier Warsteed"; }; };
         [129]={[2]={["YULE_FESTIVAL"]=70;};[1]=1879498352;}; -- Snowy Evening Caparison
         [130]={[2]={["YULE_FESTIVAL"]=50;};[1]=1879498351;}; -- Snowy Evening Head-piece
         [131]={[2]={["YULE_FESTIVAL"]=40;};[1]=1879498334;}; -- Snowy Evening Saddle
@@ -1141,7 +1141,7 @@ _BARTER =
         [144]={[2]={["YULE_FESTIVAL"]=50;};[1]=1879399247;}; -- Caparison of the Ice Flower
         [145]={[2]={["YULE_FESTIVAL"]=50;};[1]=1879399246;}; -- Head-piece of the Ice Flower
         [146]={[2]={["YULE_FESTIVAL"]=50;};[1]=1879399248;}; -- Saddle of the Ice Flower
-        [147]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cosmetic Pets and Emotes"; }; };
+        [147]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Cosmetic Pets and Emotes"; }; };
         [148]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879479307;}; -- Tome of the Icy Expeditions Sheep
         [149]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879414199;}; -- Tome of the Festive Yule Goat Kid
         [150]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879414272;}; -- Tome of the Poinsettia Huorn
@@ -1156,7 +1156,7 @@ _BARTER =
         [159]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879316484;}; -- Tome of the Fire Grim
         [160]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879316487;}; -- Tome of the Shadow Grim
         [161]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879396921;}; -- Tome of the White Wolf-dog
-        [162]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Rewards of Yules Past - Part 1"; }; };
+        [162]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Rewards of Yules Past - Part 1"; }; };
         [163]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879479164;}; -- Cloak of Icy Expeditions
         [164]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879479157;}; -- Hooded Cloak of Icy Expeditions
         [165]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879479162;}; -- Boots of Icy Expeditions
@@ -1184,7 +1184,7 @@ _BARTER =
         [187]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879414528;}; -- Bountiful Red Poinsettia Wreath
         [188]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879414529;}; -- White Poinsettia Wreath
         [189]={[2]={["YULE_FESTIVAL"]=15;};[1]=1879414524;}; -- Bountiful White Poinsettia Wreath
-        [190]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Rewards of Yules Past - Part 2"; }; };
+        [190]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Rewards of Yules Past - Part 2"; }; };
         [191]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879414272;}; -- Tome of the Poinsettia Huorn
         [192]={[2]={["YULE_FESTIVAL"]=75;};[1]=1879414271;}; -- Tome of the Brown Bear Cub
         [193]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879414241;}; -- Gala-worthy Tunic and Jacket
@@ -1223,7 +1223,7 @@ _BARTER =
         [226]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879385118;}; -- Vestments of the Northern Sky
         [227]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879385119;}; -- Shoulder-guards of the Northern Sky
         [228]={[2]={["YULE_FESTIVAL"]=35;};[1]=1879385117;}; -- Hood of the Northern Sky
-        [229]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "The More the Merrier Rewards"; }; };
+        [229]={[1]=DIVIDER2; [2]={["ENGLISH"] = "The More the Merrier Rewards"; }; };
         [230]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879301209;}; -- Wintertide Robe
         [231]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879301208;}; -- Wintertide Cloak
         [232]={[2]={["YULE_FESTIVAL"]=25;};[1]=1879301207;}; -- Wintertide Hooded Cloak
@@ -1236,7 +1236,7 @@ _BARTER =
         [239]={[3]=25;[2]={};[1]=1879256449;}; -- Yule Festival Token
         [240]={[2]={["YULE_FESTIVAL"]=50;["YULE_GOLDFESTIVAL"]=1;};[1]=1879233702;}; -- Horned Snow-beast Cloak
         [241]={[2]={["YULE_FESTIVAL"]=50;["YULE_GOLDFESTIVAL"]=1;};[1]=1879233699;}; -- Snow-beast Boots
-        [242]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Dyes"; }; };
+        [242]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Dyes"; }; };
         [243]={[3]=6;[2]={["YULE_FESTIVAL"]=30;};[1]=1879329689;}; -- Moria Silver Dye
         [244]={[3]=6;[2]={["YULE_FESTIVAL"]=30;};[1]=1879329677;}; -- Belegaer Blue Dye
         [245]={[3]=6;[2]={["GENERIC_MITHRIL"]=10;};[1]=1879329679;}; -- Dark Mossy Green Dye
@@ -1249,8 +1249,8 @@ _BARTER =
         [252]={[3]=5;[2]={["YULE_FESTIVAL"]=10;};[1]=1879387357;}; -- Orange Dwarf-candle
         [253]={[3]=5;[2]={["YULE_FESTIVAL"]=10;};[1]=1879387358;}; -- White Dwarf-candle
         [254]={[3]=5;[2]={["YULE_FESTIVAL"]=10;};[1]=1879387359;}; -- Purple Dwarf-candle
-        [255]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Verbena Greenhand, Yule Festivity Token Vendor"; }; };
-        [256]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Yule Festivities"; }; };
+        [255]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Verbena Greenhand, Yule Festivity Token Vendor"; }; };
+        [256]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Yule Festivities"; }; };
         [257]={[2]={["GENERIC_FESTIVITY"]=30;};[1]=1879498320;}; -- Tome of the Snowy Evening Pig
         [258]={[2]={["GENERIC_MITHRIL"]=30;};[1]=1879498320;}; -- Tome of the Snowy Evening Pig
         [259]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879479289;}; -- Wintry Outdoor Fire-pit
@@ -1277,8 +1277,8 @@ _BARTER =
         [280]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879385160;}; -- Tome of the Snow Not-so-grim
         [281]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879385120;}; -- Battle at Frostbluff Cloak
         [282]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879385121;}; -- Hooded Battle at Frostbluff Cloak
-        [283]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Mount Vendor, Mithril Trader"; }; };
-        [284]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Yule Festival Steeds - Mithril"; }; };
+        [283]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Mount Vendor, Mithril Trader"; }; };
+        [284]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Yule Festival Steeds - Mithril"; }; };
         [285]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879498325;}; -- Snowy Evening Steed
         [286]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879479318;}; -- Icy Expeditions Steed
         [287]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879456973;}; -- Snow-strider's Steed
@@ -1297,7 +1297,7 @@ _BARTER =
         [300]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879173352;}; -- Yule Festival Snow Steed
         [301]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879149787;}; -- Yule Festival Steed
         [302]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879256859;}; -- Wintry Yule Steed
-        [303]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Yule Festival War-steed - Mithril"; }; };
+        [303]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Yule Festival War-steed - Mithril"; }; };
         [304]={[2]={};[1]=1879498373;}; -- Snowy Evening War-steed Cosmetics
         [305]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879479332;}; -- Icy Expeditions War-steed Cosmetics
         [306]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879456976;}; -- Snow-strider's Caparison
@@ -1331,8 +1331,8 @@ _BARTER =
     -- ANNIVERSARY --------------------------------------------------------------------------------------------
     [ANNIVERSARY] =
     {
-        [1]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Frithbert, Games-master"; }; };
-        [2]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Current Anniversary Rewards"; }; };
+        [1]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Frithbert, Games-master"; }; };
+        [2]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Current Anniversary Rewards"; }; };
         [3]={[2]={["ANNIVERSARY_FESTIVAL"]=40;};[1]=1879503804;}; -- Elk of Baker's Delight
         [4]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879503804;}; -- Elk of Baker's Delight
         [5]={[2]={["ANNIVERSARY_FESTIVAL"]=20;};[1]=1879503799;}; -- Tome of the Baker's Delight Cub
@@ -1351,7 +1351,7 @@ _BARTER =
         [18]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879503815;}; -- Ceremonial Bow of the Hills
         [19]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879503819;}; -- Ceremonial Cleaver Halberd
         [20]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879503820;}; -- Ceremonial Great Hammer of Runes
-        [21]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cosmetic Rewards - Older"; }; };
+        [21]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Cosmetic Rewards - Older"; }; };
         [22]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879406734;}; -- Plated Ceremonial Greaves
         [23]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879406735;}; -- Layered Ceremonial Bracers
         [24]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879406733;}; -- Flourished Ceremonial Helm
@@ -1392,7 +1392,7 @@ _BARTER =
         [59]={[2]={["ANNIVERSARY_FESTIVAL"]=4;};[1]=1879202457;}; -- Silken Gown of Golden Splendour
         [60]={[2]={["ANNIVERSARY_FESTIVAL"]=4;};[1]=1879202465;}; -- Silken Robe of Golden Splendour
         [61]={[2]={["ANNIVERSARY_FESTIVAL"]=4;};[1]=1879202454;}; -- Cloak of the Shining Star
-        [62]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cosmetic Rewards"; }; };
+        [62]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Cosmetic Rewards"; }; };
         [63]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879503811;}; -- Hat of Baker's Delight
         [64]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879503810;}; -- Jacket and Leggings of Baker's Delight
         [65]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879503809;}; -- Shoes of Baker's Delight
@@ -1418,7 +1418,7 @@ _BARTER =
         [85]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879417795;}; -- Ceremonial Boots of Remembrance
         [86]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879406736;}; -- Tasselled Ceremonial Cloak
         [87]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879406730;}; -- Hooded Tasselled Ceremonial Cloak
-        [88]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Other Rewards"; }; };
+        [88]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Other Rewards"; }; };
         [89]={[2]={["ANNIVERSARY_FESTIVAL"]=40;};[1]=1879463969;}; -- Mighty Ram Fireworks
         [90]={[3]=5;[2]={["ANNIVERSARY_FESTIVAL"]=5;};[1]=1879418733;}; -- Finely Wrought Carrying Torch
         [91]={[2]={["ANNIVERSARY_FESTIVAL"]=40;};[1]=1879387670;}; -- Eagle Fireworks
@@ -1426,7 +1426,7 @@ _BARTER =
         [93]={[3]=5;[2]={["ANNIVERSARY_FESTIVAL"]=1;};[1]=1879233669;}; -- Pile of Mysterious Powder
         [94]={[3]=5;[2]={["ANNIVERSARY_FESTIVAL"]=5;};[1]=1879270565;}; -- White Anniversary Fireworks
         [95]={[3]=5;[2]={["ANNIVERSARY_FESTIVAL"]=5;};[1]=1879270566;}; -- Rainbow Anniversary Fireworks
-        [96]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Housing Items"; }; };
+        [96]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Housing Items"; }; };
         [97]={[3]=5;[2]={};[1]=1879205547;}; -- Map of The Walls of Moria
         [98]={[3]=5;[2]={};[1]=1879205569;}; -- Map of The Silvertine Lodes
         [99]={[3]=5;[2]={};[1]=1879205562;}; -- Map of Durin's Way
@@ -1467,7 +1467,7 @@ _BARTER =
         [134]={[3]=25;[2]={};[1]=1879503812;}; -- Dining Table of Baker's Delight
         [135]={[3]=10;[2]={};[1]=1879503814;}; -- Dining Chair of Baker's Delight
         [136]={[3]=10;[2]={};[1]=1879503813;}; -- Banner of Baker's Delight
-        [137]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Seasonal Skirmish Rewards - Anniversary"; }; };
+        [137]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Seasonal Skirmish Rewards - Anniversary"; }; };
         [138]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879503816;}; -- Ceremonial Staff of the Searcher
         [139]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879503821;}; -- Ceremonial Spear of Battle
         [140]={[2]={["GENERIC_FESTIVITY"]=20;};[1]=1879503818;}; -- Ceremonial Boar-tooth Dagger
@@ -1494,7 +1494,7 @@ _BARTER =
         [161]={[2]={["GENERIC_FESTIVITY"]=10;};[1]=1879447549;}; -- Celebratory Yellow Long Banner Wall Hanging
         [162]={[2]={["GENERIC_FESTIVITY"]=5;};[1]=1879447546;}; -- Teal Ceiling Streamers
         [163]={[2]={["GENERIC_FESTIVITY"]=5;};[1]=1879447545;}; -- Green Ceiling Streamers
-        [164]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Anniversary Steeds"; }; };
+        [164]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Anniversary Steeds"; }; };
         [165]={[2]={["ANNIVERSARY_FESTIVAL"]=40;};[1]=1879503804;}; -- Elk of Baker's Delight
         [166]={[2]={["ANNIVERSARY_FESTIVAL"]=40;};[1]=1879485250;}; -- Steed of the Green Dragon Inn
         [167]={[2]={["ANNIVERSARY_FESTIVAL"]=40;};[1]=1879485265;}; -- Green Dragon Inn Caparison
@@ -1520,10 +1520,10 @@ _BARTER =
         [187]={[2]={["ANNIVERSARY_FESTIVAL"]=40;};[1]=1879367994;}; -- Sea-ward Caparison
         [188]={[2]={["ANNIVERSARY_FESTIVAL"]=30;};[1]=1879367991;}; -- Sea-ward Head-piece
         [189]={[2]={["ANNIVERSARY_FESTIVAL"]=20;};[1]=1879367992;}; -- Sea-ward Legs
-        [190]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Essences"; }; };
+        [190]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Essences"; }; };
         [191]={[2]={["ANNIVERSARY_FESTIVAL"]=60;};[1]=1879439435;}; -- Essence Reclamation Scroll
         [192]={[2]={};[1]=1879439435;}; -- Essence Reclamation Scroll
-        [193]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cosmetic Pets"; }; };
+        [193]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Cosmetic Pets"; }; };
         [194]={[2]={["ANNIVERSARY_FESTIVAL"]=20;};[1]=1879503799;}; -- Tome of the Baker's Delight Cub
         [195]={[2]={["GENERIC_MITHRIL"]=30;};[1]=1879503799;}; -- Tome of the Baker's Delight Cub
         [196]={[2]={["ANNIVERSARY_FESTIVAL"]=20;};[1]=1879485343;}; -- Tome of the Sienna Hamster
@@ -1536,7 +1536,7 @@ _BARTER =
         [203]={[2]={["ANNIVERSARY_FESTIVAL"]=20;};[1]=1879351564;}; -- Tome of the Sky of a Perfect Day Kite
         [204]={[2]={["ANNIVERSARY_FESTIVAL"]=15;};[1]=1879344572;}; -- Tome of the Golden Dragon Kite
         [205]={[2]={["ANNIVERSARY_FESTIVAL"]=15;};[1]=1879344582;}; -- Tome of the Silver Dragon Kite
-        [206]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Gift Boxes"; }; };
+        [206]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Gift Boxes"; }; };
         [207]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879503833;}; -- Baker's Delight Garments - Gift-wrapped Selection Box
         [208]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879485351;}; -- Garments of the Green Dragon Inn - Gift-wrapped Selection Box
         [209]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879463514;}; -- Illumination Garments - Gift-wrapped Selection Box
@@ -1555,7 +1555,7 @@ _BARTER =
         [222]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879344894;}; -- Boots of the Unflagging Dragon - Gift Wrapped
         [223]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879344897;}; -- Cloak of the Unflagging Dragon - Gift Wrapped
         [224]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879344878;}; -- Hooded Cloak of the Unflagging Dragon - Gift Wrapped
-        [225]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Anniversary Steeds - Mithril"; }; };
+        [225]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Anniversary Steeds - Mithril"; }; };
         [226]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879503804;}; -- Elk of Baker's Delight
         [227]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879485250;}; -- Steed of the Green Dragon Inn
         [228]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879485326;}; -- Green Dragon Inn War-steed Cosmetics
@@ -1589,8 +1589,8 @@ _BARTER =
         [256]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879344555;}; -- Legs of the Unflagging Dragon
         [257]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879344552;}; -- Saddle of the Unflagging Dragon
         [258]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879344556;}; -- Tail of the Unflagging Dragon
-        [259]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Henry Peartree, Anniversary Horse Trader"; }; };
-        [260]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Anniversary Steeds"; }; };
+        [259]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Henry Peartree, Anniversary Horse Trader"; }; };
+        [260]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Anniversary Steeds"; }; };
         [261]={[2]={["ANNIVERSARY_FESTIVAL"]=40;};[1]=1879503804;}; -- Elk of Baker's Delight
         [262]={[2]={["ANNIVERSARY_FESTIVAL"]=40;};[1]=1879485250;}; -- Steed of the Green Dragon Inn
         [263]={[2]={["ANNIVERSARY_FESTIVAL"]=40;};[1]=1879485265;}; -- Green Dragon Inn Caparison
@@ -1616,7 +1616,7 @@ _BARTER =
         [283]={[2]={["ANNIVERSARY_FESTIVAL"]=40;};[1]=1879367994;}; -- Sea-ward Caparison
         [284]={[2]={["ANNIVERSARY_FESTIVAL"]=30;};[1]=1879367991;}; -- Sea-ward Head-piece
         [285]={[2]={["ANNIVERSARY_FESTIVAL"]=20;};[1]=1879367992;}; -- Sea-ward Legs
-        [286]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Anniversary Steeds - Mithril"; }; };
+        [286]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Anniversary Steeds - Mithril"; }; };
         [287]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879503804;}; -- Elk of Baker's Delight
         [288]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879485250;}; -- Steed of the Green Dragon Inn
         [289]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879485326;}; -- Green Dragon Inn War-steed Cosmetics
@@ -1650,8 +1650,8 @@ _BARTER =
         [317]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879344555;}; -- Legs of the Unflagging Dragon
         [318]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879344552;}; -- Saddle of the Unflagging Dragon
         [319]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879344556;}; -- Tail of the Unflagging Dragon
-        [320]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Angeline Greenpasture, Keeper of Gifts"; }; };
-        [321]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Misc. Gifts"; }; };
+        [320]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Angeline Greenpasture, Keeper of Gifts"; }; };
+        [321]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Misc. Gifts"; }; };
         [322]={[3]=5;[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879503823;}; -- Baker's delight Fireworks - consumable
         [323]={[3]=5;[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879485287;}; -- Green Dragon Inn Fireworks - consumable
         [324]={[3]=5;[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879463384;}; -- Incandescent Lightning Fireworks - consumable
@@ -1664,10 +1664,10 @@ _BARTER =
         [331]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879233685;}; -- Orange Fireworks Recipe
         [332]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879233686;}; -- Red Fireworks Recipe
         [333]={[3]=20;[2]={["ANNIVERSARY_FESTIVAL"]=1;};[1]=1879224343;}; -- Mark
-        [334]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Anniversary Gifts"; }; };
+        [334]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Anniversary Gifts"; }; };
         [335]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879303552;}; -- Battle Gift Box
         [336]={[2]={["ANNIVERSARY_FESTIVAL"]=25;};[1]=1879303554;}; -- Legendary Gift Box
-        [337]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cosmetics 1"; }; };
+        [337]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Cosmetics 1"; }; };
         [338]={[3]=5;[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879418732;}; -- Simple Carrying Torch
         [339]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879103337;}; -- Simple Hauberk
         [340]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879103339;}; -- Plain Hauberk
@@ -1687,7 +1687,7 @@ _BARTER =
         [354]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879104082;}; -- Short-sleeved Corsair's Tunic and Trousers
         [355]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879104075;}; -- Common Waistcoat
         [356]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879104076;}; -- Fancy Waistcoat
-        [357]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cosmetics 2"; }; };
+        [357]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Cosmetics 2"; }; };
         [358]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879103330;}; -- Forester's Hauberk
         [359]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879103335;}; -- Scaled Hauberk
         [360]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879103332;}; -- Mariner's Hauberk
@@ -1706,7 +1706,7 @@ _BARTER =
         [373]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879104085;}; -- Short-sleeved Elven Tunic and Trousers
         [374]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879104077;}; -- Fine Waistcoat
         [375]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879104078;}; -- Sleeveless Elven Tunic
-        [376]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Festival Token Exchange"; }; };
+        [376]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Festival Token Exchange"; }; };
         [377]={[2]={["ANNIVERSARY_FESTIVAL"]=10;};[1]=1879331992;}; -- Box of Festival Tokens        
     };
 
@@ -1714,7 +1714,7 @@ _BARTER =
     [HOBNANIGANS] =
     {
         -- Quartermaster (Consumables) [25.6S, 52.3W]
-         [1]={[1]="DIVIDER1";[2]={["ENGLISH"] = "Quartermaster (Consumables) [25.6S, 52.3W]";};};
+         [1]={[1]=DIVIDER1;[2]={["ENGLISH"] = "Quartermaster (Consumables) [25.6S, 52.3W]";};};
          [2]={[1]=1879305705;[2]={["HOBNANIGANS_TOKEN"]=5;};};    -- White Carrying Chicken
          [3]={[1]=1879305701;[2]={["HOBNANIGANS_TOKEN"]=6;};};    -- Red Carrying Chicken
          [4]={[1]=1879305706;[2]={["HOBNANIGANS_TOKEN"]=7;};};    -- Dorking Carrying Chicken
@@ -1724,10 +1724,10 @@ _BARTER =
          [8]={[1]=1879305991;[2]={["HOBNANIGANS_TOKEN"]=5;};};    -- Map to Hobnanigans
 
         -- Quartermaster (Cosmetic Equipment) [25.9S, 51.5W]
-         [9]={[1]="DIVIDER1";[2]={["ENGLISH"] = "Quartermaster (Cosmetic Equipment) [25.9S, 51.5W]";};};
+         [9]={[1]=DIVIDER1;[2]={["ENGLISH"] = "Quartermaster (Cosmetic Equipment) [25.9S, 51.5W]";};};
 
         -- Cosmetic Equipment
-        [10]={[1]="DIVIDER2";[2]={["ENGLISH"] = "Cosmetic Equipment";};};
+        [10]={[1]=DIVIDER2;[2]={["ENGLISH"] = "Cosmetic Equipment";};};
         [11]={[1]=1879242278;[2]={["HOBNANIGANS_WHITE_CHICKEN_TOKEN"]=1;};};  -- Chicken Mask
         [12]={[1]=1879242278;[2]={["HOBNANIGANS_TOKEN"]=100;};};              -- Chicken Mask
         [13]={[1]=1879305824;[2]={["HOBNANIGANS_TOKEN"]=200;};};              -- Red Chicken Cloak
@@ -1741,7 +1741,7 @@ _BARTER =
         [21]={[1]=1879305822;[2]={["HOBNANIGANS_TOKEN"]=150;};};              -- Hobnanigans Club
 
         -- Chicken Nest Hats
-        [22]={[1]="DIVIDER2";[2]={["ENGLISH"] = "Chicken Nest Hats";};};
+        [22]={[1]=DIVIDER2;[2]={["ENGLISH"] = "Chicken Nest Hats";};};
         [23]={[1]=1879305830;[2]={["HOBNANIGANS_WHITE_CHICKEN_TOKEN"]=1;};};      -- Nest Hat with White Chicken
         [24]={[1]=1879305830;[2]={["HOBNANIGANS_TOKEN"]=150;};};                  -- Nest Hat with White Chicken
         [25]={[1]=1879305832;[2]={["HOBNANIGANS_RED_CHICKEN_TOKEN"]=1;};};        -- Nest Hat with Red Chicken
@@ -1756,7 +1756,7 @@ _BARTER =
         [34]={[1]=1879305826;[2]={["HOBNANIGANS_TOKEN"]=525;};};                  -- Nest Hat with Orange Wyandotte Chicken
 
         -- Quartermaster (Emotes) [26.0S, 52.3W]
-        [35]={[1]="DIVIDER1";[2]={["ENGLISH"] = "Quartermaster (Emotes) [26.0S, 52.3W]";};};
+        [35]={[1]=DIVIDER1;[2]={["ENGLISH"] = "Quartermaster (Emotes) [26.0S, 52.3W]";};};
         [36]={[1]=1879305657;[2]={["HOBNANIGANS_TOKEN"]=300;};}; -- Grant Chicken Drive Emote
         [37]={[1]=1879305658;[2]={["HOBNANIGANS_TOKEN"]=300;};}; -- Grant Chicken Chip Emote
         [38]={[1]=1879305656;[2]={["HOBNANIGANS_TOKEN"]=300;};}; -- Grant Chicken Putt Emote
@@ -1764,7 +1764,7 @@ _BARTER =
         [40]={[1]=1879305654;[2]={["HOBNANIGANS_TOKEN"]=150;};}; -- Grant Throw Feathers Emote
 
         -- Quartermaster (Facepainting) [25.7S, 51.9W]
-        [41]={[1]="DIVIDER1";[2]={["ENGLISH"] = "Quartermaster (Facepainting) [25.7S, 51.9W]";};};
+        [41]={[1]=DIVIDER1;[2]={["ENGLISH"] = "Quartermaster (Facepainting) [25.7S, 51.9W]";};};
         [42]={[1]=1879305619;[2]={["HOBNANIGANS_TOKEN"]=5;};}; -- Facepaint Stencil - Flower
         [43]={[1]=1879305622;[2]={["HOBNANIGANS_TOKEN"]=5;};}; -- Facepaint Stencil - Butterfly
         [44]={[1]=1879305616;[2]={["HOBNANIGANS_TOKEN"]=5;};}; -- Facepaint Stencil - Bee
@@ -1775,10 +1775,10 @@ _BARTER =
         [49]={[1]=1879305617;[2]={["HOBNANIGANS_TOKEN"]=5;};}; -- Facepaint Stencil - Pipe
 
         -- Quartermaster (Housing Decorations) [25.4S, 51.7W]
-        [50]={[1]="DIVIDER1";[2]={["ENGLISH"] = "Quartermaster (Housing Decorations) [25.4S, 51.7W]";};};
+        [50]={[1]=DIVIDER1;[2]={["ENGLISH"] = "Quartermaster (Housing Decorations) [25.4S, 51.7W]";};};
 
         -- Housing Decorations
-        [51]={[1]="DIVIDER2";[2]={["ENGLISH"] = "Housing Decorations";};};
+        [51]={[1]=DIVIDER2;[2]={["ENGLISH"] = "Housing Decorations";};};
         [52]={[1]=1879305730;[2]={["HOBNANIGANS_TOKEN"]=180;};};  -- Red Standing Banner
         [53]={[1]=1879305719;[2]={["HOBNANIGANS_TOKEN"]=180;};};  -- Blue Standing Banner
         [54]={[1]=1879305716;[2]={["HOBNANIGANS_TOKEN"]=120;};};  -- Red Wall Banner
@@ -1792,7 +1792,7 @@ _BARTER =
         [62]={[1]=1879305712;[2]={["HOBNANIGANS_TOKEN"]=30;};};   -- Broken Hobbit Waggon
 
         -- Lawn Chickens
-        [63]={[1]="DIVIDER2";[2]={["ENGLISH"] = "Lawn Chickens";};};
+        [63]={[1]=DIVIDER2;[2]={["ENGLISH"] = "Lawn Chickens";};};
         [64]={[1]=1879305715;[2]={["HOBNANIGANS_WHITE_CHICKEN_TOKEN"]=1;};};      -- White Lawn Chicken
         [65]={[1]=1879305715;[2]={["HOBNANIGANS_TOKEN"]=75;};};                   -- White Lawn Chicken
         [66]={[1]=1879305735;[2]={["HOBNANIGANS_RED_CHICKEN_TOKEN"]=1;};};        -- Red Lawn Chicken
@@ -1807,7 +1807,7 @@ _BARTER =
         [75]={[1]=1879305727;[2]={["HOBNANIGANS_TOKEN"]=450;};};                  -- Orange Wyandotte Lawn Chicken
 
         -- Small Hobnanigans Field
-        [76]={[1]="DIVIDER2";[2]={["ENGLISH"] = "Small Hobnanigans Field";};};
+        [76]={[1]=DIVIDER2;[2]={["ENGLISH"] = "Small Hobnanigans Field";};};
         [77]={[1]=1879305726;[2]={["HOBNANIGANS_WHITE_CHICKEN_TOKEN"]=1;};};      -- Small Hobnanigans Field with White Chicken
         [78]={[1]=1879305726;[2]={["HOBNANIGANS_TOKEN"]=75;};};                   -- Small Hobnanigans Field with White Chicken
         [79]={[1]=1879305710;[2]={["HOBNANIGANS_RED_CHICKEN_TOKEN"]=1;};};        -- Small Hobnanigans Field with Red Chicken
@@ -1822,7 +1822,7 @@ _BARTER =
         [88]={[1]=1879305711;[2]={["HOBNANIGANS_TOKEN"]=450;};};                  -- Small Hobnanigans Field with Orange Wyandotte Chicken
 
         -- Large Hobnanigans Field
-        [89]={[1]="DIVIDER2";[2]={["ENGLISH"] = "Large Hobnanigans Field";};};
+        [89]={[1]=DIVIDER2;[2]={["ENGLISH"] = "Large Hobnanigans Field";};};
         [90]={[1]=1879305722;[2]={["HOBNANIGANS_WHITE_CHICKEN_TOKEN"]=1;};};      -- Large Hobnanigans Field with White Chicken
         [91]={[1]=1879305722;[2]={["HOBNANIGANS_TOKEN"]=100;};};                  -- Large Hobnanigans Field with White Chicken
         [92]={[1]=1879305731;[2]={["HOBNANIGANS_RED_CHICKEN_TOKEN"]=1;};};        -- Large Hobnanigans Field with Red Chicken
@@ -1837,7 +1837,7 @@ _BARTER =
         [101]={[1]=1879305734;[2]={["HOBNANIGANS_TOKEN"]=600;};};                 -- Large Hobnanigans Field with Orange Wyandotte Chicken
 
         -- Quartermaster (Pets) [25.4S, 51.2W]
-        [102]={[1]="DIVIDER1";[2]={["ENGLISH"] = "Quartermaster (Pets) [25.4S, 51.2W]";};};
+        [102]={[1]=DIVIDER1;[2]={["ENGLISH"] = "Quartermaster (Pets) [25.4S, 51.2W]";};};
         [103]={[1]=1879305771;[2]={["HOBNANIGANS_WHITE_CHICKEN_TOKEN"]=1;};};     -- Tome of the White Chicken
         [104]={[1]=1879305771;[2]={["HOBNANIGANS_TOKEN"]=150;};};                 -- Tome of the White Chicken
         [105]={[1]=1879305770;[2]={["HOBNANIGANS_RED_CHICKEN_TOKEN"]=1;};};       -- Tome of the Red Chicken
@@ -1852,10 +1852,10 @@ _BARTER =
         [114]={[1]=1879305773;[2]={["HOBNANIGANS_TOKEN"]=525;};};                 -- Tome of the Orange Wyandotte Chicken
 
         -- Quartermaster (Recipes) [25.8S, 51.0W]
-        [115]={[1]="DIVIDER1";[2]={["ENGLISH"] = "Quartermaster (Recipes) [25.8S, 51.0W]";};};
+        [115]={[1]=DIVIDER1;[2]={["ENGLISH"] = "Quartermaster (Recipes) [25.8S, 51.0W]";};};
 
         -- Food Recipes
-        [116]={[1]="DIVIDER2";[2]={["ENGLISH"] = "Food Recipes";};};
+        [116]={[1]=DIVIDER2;[2]={["ENGLISH"] = "Food Recipes";};};
         [117]={[1]=1879305869;[2]={["HOBNANIGANS_TOKEN"]=10;};};  -- Oliphaunt Ear Recipe
         [118]={[1]=1879305870;[2]={["HOBNANIGANS_TOKEN"]=10;};};  -- Roasted Coney on a Stick Recipe
         [119]={[1]=1879305864;[2]={["HOBNANIGANS_TOKEN"]=10;};};  -- Chicken Wing Recipe
@@ -1866,7 +1866,7 @@ _BARTER =
         [124]={[1]=1879305867;[2]={["HOBNANIGANS_TOKEN"]=2;};};   -- Bottle of 'Sticky Apple' Cider Recipe
 
         -- Banquet Recipes
-        [125]={[1]="DIVIDER2";[2]={["ENGLISH"] = "Banquet Recipes";};};
+        [125]={[1]=DIVIDER2;[2]={["ENGLISH"] = "Banquet Recipes";};};
         [126]={[1]=1879305936;[2]={["HOBNANIGANS_TOKEN"]=5;};}; -- Oliphaunt Ear Banquet Recipe
         [127]={[1]=1879305934;[2]={["HOBNANIGANS_TOKEN"]=5;};}; -- Roasted Coney on a Stick Banquet Recipe
         [128]={[1]=1879305932;[2]={["HOBNANIGANS_TOKEN"]=5;};}; -- Chicken Wing Banquet Recipe
@@ -1875,7 +1875,7 @@ _BARTER =
         [131]={[1]=1879305937;[2]={["HOBNANIGANS_TOKEN"]=5;};}; -- Hobnanigans Banquet Recipe
 
         -- Quartermaster (Token Boost) [25.7S, 51.8W]
-        [132]={[1]="DIVIDER1";[2]={["ENGLISH"] = "Quartermaster (Token Boost) [25.7S, 51.8W]";};};
+        [132]={[1]=DIVIDER1;[2]={["ENGLISH"] = "Quartermaster (Token Boost) [25.7S, 51.8W]";};};
         [133]={[1]=1879305819;[2]={["GENERIC_MITHRIL"]=2;};}; -- Hobnanigans Reward Boost
 
 
@@ -1883,7 +1883,7 @@ _BARTER =
 
     [MIDSUMMER] =
     {
-        [1]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "New Items (2024)"; ["GERMAN"] = "Neue Gegenstände (2024)"; }; };
+        [1]={[1]=DIVIDER1; [2]={["ENGLISH"] = "New Items (2024)"; ["GERMAN"] = "Neue Gegenstände (2024)"; }; };
         [2]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879408621;}; -- Circlet of Hanging Blooms
         [3]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879487482;}; -- Ceremonial Staff of the Eternal Sun
         [4]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879487483;}; -- Hanging Blooms Circlet or Eternal Sun Staff - Gift-wrapped Selection Box
@@ -1904,7 +1904,7 @@ _BARTER =
         [19]={[2]={["MIDSUMMER_TOKEN"]=12;};[1]=1879486647;}; -- Medium Potted Jacaranda
         [20]={[2]={["MIDSUMMER_TOKEN"]=12;};[1]=1879486649;}; -- Tall Potted Umbari Palm
         [21]={[2]={["MIDSUMMER_TOKEN"]=15;};[1]=1879486629;}; -- Large Potted Sago Palm
-        [22]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Midsummer Garb"; ["GERMAN"] = "Mittsommer-Gewand"; }; };
+        [22]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Midsummer Garb"; ["GERMAN"] = "Mittsommer-Gewand"; }; };
         [23]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879487483;}; -- Hanging Blooms Circlet or Eternal Sun Staff - Gift-wrapped Selection Box
         [24]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879408621;}; -- Circlet of Hanging Blooms
         [25]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879487482;}; -- Ceremonial Staff of the Eternal Sun
@@ -1933,7 +1933,7 @@ _BARTER =
         [48]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879408622;}; -- Bride's Dress
         [49]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879408620;}; -- Galadriel's Dress
         [50]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879408618;}; -- Arwen's Dinner Dress
-        [51]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Cosmetic Pets"; ["GERMAN"] = "Zierwerk-Begleiter"; }; };
+        [51]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Cosmetic Pets"; ["GERMAN"] = "Zierwerk-Begleiter"; }; };
         [52]={[2]={["MIDSUMMER_TOKEN"]=30;};[1]=1879409168;}; -- Tome of the Wedding Celebration Pony
         [53]={[2]={["GENERIC_MITHRIL"]=30;};[1]=1879409168;}; -- Tome of the Wedding Celebration Pony
         [54]={[2]={["MIDSUMMER_TOKEN"]=20;};[1]=1879411763;}; -- Tome of the Wild Chocolate Donkey
@@ -1945,7 +1945,7 @@ _BARTER =
         [60]={[2]={["MIDSUMMER_TOKEN"]=20;};[1]=1879408150;}; -- Tome of the Purple Firefly
         [61]={[2]={["MIDSUMMER_TOKEN"]=20;};[1]=1879408152;}; -- Tome of the Red Firefly
         [62]={[2]={["MIDSUMMER_TOKEN"]=20;};[1]=1879409019;}; -- Tome of the Gondor Midsummer Kite
-        [63]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Midsummer Steeds"; ["GERMAN"] = "Mittsommer-Rösser"; }; };
+        [63]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Midsummer Steeds"; ["GERMAN"] = "Mittsommer-Rösser"; }; };
         [64]={[2]={["MIDSUMMER_TOKEN"]=25;};[1]=1879465461;}; -- Summer Concert Steed
         [65]={[2]={["MIDSUMMER_TOKEN"]=20;};[1]=1879465477;}; -- Summer Concert Accessory
         [66]={[2]={["MIDSUMMER_TOKEN"]=15;};[1]=1879465479;}; -- Summer Concert Caparison
@@ -1958,7 +1958,7 @@ _BARTER =
         [73]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879420901;}; -- Saddle of Entwining Blossoms
         [74]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879420895;}; -- Steed of Entwining Blossoms
         [75]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879420902;}; -- Entwining Blossoms War-steed Cosmetics
-        [76]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Instruments"; ["GERMAN"] = "Instrumente"; }; };
+        [76]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Instruments"; ["GERMAN"] = "Instrumente"; }; };
         [77]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879421116;}; -- Summer Celebration Lute
         [78]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879421111;}; -- Summer Celebration Horn
         [79]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879421112;}; -- Summer Celebration Clarinet
@@ -1972,16 +1972,16 @@ _BARTER =
         [87]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879421118;}; -- Summer Celebration Mountain Harp
         [88]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879421109;}; -- Summer Celebration Fiddle
         [89]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879421115;}; -- Summer Celebration Bassoon
-        [90]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Fireworks"; ["GERMAN"] = "Feuerwerkskörper"; }; };
+        [90]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Fireworks"; ["GERMAN"] = "Feuerwerkskörper"; }; };
         [91]={[2]={["MIDSUMMER_TOKEN"]=2;};[1]=1879408775;}; -- Elanor Fireworks
         [92]={[2]={["MIDSUMMER_TOKEN"]=2;};[1]=1879408779;}; -- Green and White Niphredil Fireworks
         [93]={[2]={["MIDSUMMER_TOKEN"]=2;};[1]=1879408777;}; -- Wedding Ring Fireworks
         [94]={[2]={["MIDSUMMER_TOKEN"]=2;};[1]=1879408776;}; -- White Niphredil Fireworks
-        [95]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Emotes"; ["GERMAN"] = "Emotes"; }; };
+        [95]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Emotes"; ["GERMAN"] = "Emotes"; }; };
         [96]={[2]={["MIDSUMMER_TOKEN"]=30;};[1]=1879408986;}; -- Grant the Coin Toss Emote
         [97]={[2]={["MIDSUMMER_TOKEN"]=30;};[1]=1879408989;}; -- Grant the Wine Tasting Emote
         [98]={[2]={["MIDSUMMER_TOKEN"]=30;};[1]=1879408916;}; -- Golden Wedding Fireworks
-        [99]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Housing Items"; ["GERMAN"] = "Wohngegenstände"; }; };
+        [99]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Housing Items"; ["GERMAN"] = "Wohngegenstände"; }; };
         [100]={[2]={["MIDSUMMER_TOKEN"]=15;};[1]=1879448044;}; -- Brimful Quiver Inn Signpost
         [101]={[2]={["MIDSUMMER_TOKEN"]=25;};[1]=1879486669;}; -- Large Tree Garden
         [102]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879486631;}; -- Potted Wisteria
@@ -2005,7 +2005,7 @@ _BARTER =
         [120]={[2]={["MIDSUMMER_TOKEN"]=20;};[1]=1879457522;}; -- Pristine Eregion Gazebo Tower
         [121]={[2]={["MIDSUMMER_TOKEN"]=15;};[1]=1879448522;}; -- Hobbit Dais
         [122]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879408190;}; -- Purple Firefly Lantern
-        [123]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "More Housing Items"; ["GERMAN"] = "Weitere Wohngegenstände"; }; };
+        [123]={[1]=DIVIDER1; [2]={["ENGLISH"] = "More Housing Items"; ["GERMAN"] = "Weitere Wohngegenstände"; }; };
         [124]={[2]={["MIDSUMMER_TOKEN"]=20;};[1]=1879420817;}; -- Midsummer Stable
         [125]={[2]={["MIDSUMMER_TOKEN"]=15;};[1]=1879420816;}; -- Silver Pedestal
         [126]={[2]={["MIDSUMMER_TOKEN"]=15;};[1]=1879408591;}; -- Ornate Planter
@@ -2045,9 +2045,9 @@ _BARTER =
         [160]={[2]={["MIDSUMMER_TOKEN"]=15;};[1]=1879409075;}; -- Floating Lantern - Closed
         [161]={[2]={["MIDSUMMER_TOKEN"]=15;};[1]=1879409074;}; -- Floating Lantern - Half-open
         [162]={[2]={["MIDSUMMER_TOKEN"]=15;};[1]=1879409073;}; -- Floating Lantern - Open
-        [163]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Essences"; ["GERMAN"] = "Essenzen"; }; };
+        [163]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Essences"; ["GERMAN"] = "Essenzen"; }; };
         [164]={[2]={["MIDSUMMER_TOKEN"]=60;};[1]=1879439435;}; -- Essence Reclamation Scroll
-        [165]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Blackroot Steed"; ["GERMAN"] = "Schwarzgrund-Ross"; }; };
+        [165]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Blackroot Steed"; ["GERMAN"] = "Schwarzgrund-Ross"; }; };
         [166]={[2]={["MIDSUMMER_TOKEN"]=20;};[1]=1879408656;}; -- Blackroot Steed
         [167]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879408735;}; -- Flag of Blackroot
         [168]={[2]={["MIDSUMMER_TOKEN"]=16;};[1]=1879408748;}; -- Caparison of Blackroot
@@ -2055,7 +2055,7 @@ _BARTER =
         [170]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879408727;}; -- Saddle of Blackroot
         [171]={[2]={["GENERIC_FESTIVITY"]=70;};[1]=1879408656;}; -- Blackroot Steed
         [172]={[2]={["GENERIC_FESTIVITY"]=70;};[1]=1879408769;}; -- Blackroot War-steed Cosmetics
-        [173]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Lamedon Steed"; ["GERMAN"] = "Lamedon-Ross"; }; };
+        [173]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Lamedon Steed"; ["GERMAN"] = "Lamedon-Ross"; }; };
         [174]={[2]={["MIDSUMMER_TOKEN"]=20;};[1]=1879408669;}; -- Lamedon Steed
         [175]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879408739;}; -- Flag of Lamedon
         [176]={[2]={["MIDSUMMER_TOKEN"]=16;};[1]=1879408743;}; -- Caparison of Lamedon
@@ -2063,7 +2063,7 @@ _BARTER =
         [178]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879408729;}; -- Saddle of Lamedon
         [179]={[2]={["GENERIC_FESTIVITY"]=70;};[1]=1879408669;}; -- Lamedon Steed
         [180]={[2]={["GENERIC_FESTIVITY"]=70;};[1]=1879408766;}; -- Lamedon War-steed Cosmetics
-        [181]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Lebennin Steed"; ["GERMAN"] = "Lebennin-Ross"; }; };
+        [181]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Lebennin Steed"; ["GERMAN"] = "Lebennin-Ross"; }; };
         [182]={[2]={["MIDSUMMER_TOKEN"]=20;};[1]=1879408673;}; -- Lebennin Steed
         [183]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879408742;}; -- Flag of Lebennin
         [184]={[2]={["MIDSUMMER_TOKEN"]=16;};[1]=1879408731;}; -- Caparison of Lebennin
@@ -2071,7 +2071,7 @@ _BARTER =
         [186]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879408745;}; -- Saddle of Lebennin
         [187]={[2]={["GENERIC_FESTIVITY"]=70;};[1]=1879408673;}; -- Lebennin Steed
         [188]={[2]={["GENERIC_FESTIVITY"]=70;};[1]=1879408762;}; -- Lebennin War-steed Cosmetics
-        [189]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Lossarnach Steed"; ["GERMAN"] = "Lossarnach-Ross"; }; };
+        [189]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Lossarnach Steed"; ["GERMAN"] = "Lossarnach-Ross"; }; };
         [190]={[2]={["MIDSUMMER_TOKEN"]=20;};[1]=1879408651;}; -- Lossarnach Steed
         [191]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879408738;}; -- Flag of Lossarnach
         [192]={[2]={["MIDSUMMER_TOKEN"]=16;};[1]=1879408728;}; -- Caparison of Lossarnach
