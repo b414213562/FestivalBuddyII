@@ -232,15 +232,15 @@ function RefreshBarterList()
 
     lblBarterFestival:SetText(GetString(_LANG.OTHER.BARTERITEMS)..": "..GetString(_LANG.FESTIVALS[SELECTEDFESTIVAL]));
 
-    for k,v in ipairs (_FESTIVALITEMS) do
+    for _,barterItemData in ipairs (_FESTIVALITEMS) do
 
         local ROWHOLDER = Turbine.UI.Control();
         ROWHOLDER:SetSize(ROWWIDTH,ROWHEIGHT);
 
-        if (v[1] == "DIVIDER1" or v[1] == "DIVIDER2") then
-            MakeDividerLabel(ROWHOLDER, v, ROWWIDTH, ROWHEIGHT);
+        if (barterItemData[DIVIDER_TYPE] == "DIVIDER1" or barterItemData[DIVIDER_TYPE] == "DIVIDER2") then
+            MakeDividerLabel(ROWHOLDER, barterItemData, ROWWIDTH, ROWHEIGHT);
         else
-            MakeBarterItemRow(ROWHOLDER, v, ROWWIDTH, ROWHEIGHT);
+            MakeBarterItemRow(ROWHOLDER, barterItemData, ROWWIDTH, ROWHEIGHT);
         end
 
         lstBarterItems:AddItem(ROWHOLDER);
