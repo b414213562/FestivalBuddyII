@@ -2,6 +2,17 @@
 -- Barter items.
 -- KEY: 1=ID        2=TOKENS {}            3=QTY
 
+DIVIDER1 = "DIVIDER1";
+DIVIDER2 = "DIVIDER2";
+
+-- Constants for what the data of a row means:
+DIVIDER_TYPE = 1;
+DIVIDER_TEXT = 2;
+
+ITEM_ID = 1;
+ITEM_COST_TABLE = 2;
+ITEM_QUANTITY = 3;
+
 _BARTER =
 {
     -- SPRING ------------------------------------------------------------------------------------------
