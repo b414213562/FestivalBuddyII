@@ -1,4 +1,9 @@
 
+DividerFonts = {
+    [DIVIDER1] = Turbine.UI.Lotro.Font.BookAntiquaBold22;
+    [DIVIDER2] = Turbine.UI.Lotro.Font.BookAntiqua22;
+}
+
 function DrawBarterWin()
 
     -- Initialize window height to a good default, if it's not present:
@@ -105,6 +110,33 @@ function SetBarterWinVisible(isVisible, skipRefresh)
     end
 end
 
+--- Makes a label and adds it to the parent, if the divider type is valid.
+---@param parent Control
+---@param barterItemData table
+---@param rowWidth number
+---@param rowHeight number
+function MakeDividerLabel(parent, barterItemData, rowWidth, rowHeight)
+    local dividerType = barterItemData[DIVIDER_TYPE];
+    if (not (dividerType == DIVIDER1 or dividerType == DIVIDER2)) then
+        -- Can't make a divider label if it's not a divider.
+        return;
+    end
+
+    local dividerLabel = Turbine.UI.Label();
+    dividerLabel:SetParent(parent);
+    dividerLabel:SetSize(rowWidth, rowHeight);
+
+    dividerLabel:SetFont(DividerFonts[dividerType]);
+
+    local dividerHeight = barterItemData.DIVIDER_HEIGHT or rowHeight;
+    parent:SetHeight(dividerHeight);
+    dividerLabel:SetHeight(dividerHeight);
+
+    dividerLabel:SetFontStyle(Turbine.UI.FontStyle.Outline);
+    dividerLabel:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleCenter);
+    dividerLabel:SetText(GetString(barterItemData[DIVIDER_TEXT]));
+end
+
 function RefreshBarterList()
     if (SELECTEDFESTIVAL == wBarterWinParent.LoadedFestival) then
         return;
@@ -126,24 +158,7 @@ function RefreshBarterList()
         ROWHOLDER:SetSize(ROWWIDTH,ROWHEIGHT);
 
         if (v[1] == "DIVIDER1" or v[1] == "DIVIDER2") then
-            local dividerLabel = Turbine.UI.Label();
-            dividerLabel:SetParent(ROWHOLDER);
-            dividerLabel:SetSize(ROWWIDTH, ROWHEIGHT);
-
-            if (v[1] == "DIVIDER1") then
-                dividerLabel:SetFont(Turbine.UI.Lotro.Font.BookAntiquaBold22);
-            elseif (v[1] == "DIVIDER2") then
-                dividerLabel:SetFont(Turbine.UI.Lotro.Font.BookAntiqua22);
-            end
-
-            if (v.DIVIDER_HEIGHT) then
-                ROWHOLDER:SetHeight(v.DIVIDER_HEIGHT);
-                dividerLabel:SetHeight(v.DIVIDER_HEIGHT);
-            end
-
-            dividerLabel:SetFontStyle(Turbine.UI.FontStyle.Outline);
-            dividerLabel:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleCenter);
-            dividerLabel:SetText(GetString(v[2]));
+            MakeDividerLabel(ROWHOLDER, v, ROWWIDTH, ROWHEIGHT);
         else
             local ROWBACK = Turbine.UI.Control();
             ROWBACK:SetParent(ROWHOLDER);
