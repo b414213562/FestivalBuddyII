@@ -95,7 +95,7 @@ end
 
 function BarterWinFestivalChanged()
     if (SETTINGS.BARTERWIN.VISIBLE) then
-        RefreshBarterList();
+        RefreshBarterItems();
     end
 end
 
@@ -107,7 +107,7 @@ function SetBarterWinVisible(isVisible, skipRefresh)
     wBarterWinParent:SetVisible(isVisible);
 
     if (isVisible and not skipRefresh) then
-        RefreshBarterList();
+        RefreshBarterItems();
     end
 end
 
@@ -218,7 +218,7 @@ function MakeBarterItemRow(parent, barterItemData, rowWidth, rowHeight)
     end
 end
 
-function RefreshBarterList()
+function RefreshBarterItems()
     if (SELECTEDFESTIVAL == wBarterWinParent.LoadedFestival) then
         return;
     end
