@@ -222,6 +222,7 @@ function RefreshBarterItems()
     if (SELECTEDFESTIVAL == wBarterWinParent.LoadedFestival) then
         return;
     end
+    wBarterWinParent.LoadedFestival = SELECTEDFESTIVAL;
 
     wBarterWinParent.BarterItems:ClearItems();
 
@@ -229,7 +230,6 @@ function RefreshBarterItems()
     local rowHeight = 45;
 
     local _FESTIVALITEMS = _BARTER[SELECTEDFESTIVAL];
-    wBarterWinParent.LoadedFestival = SELECTEDFESTIVAL;
 
     lblBarterFestival:SetText(GetString(_LANG.OTHER.BARTERITEMS)..": "..GetString(_LANG.FESTIVALS[SELECTEDFESTIVAL]));
 
