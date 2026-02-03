@@ -42,7 +42,7 @@ function DrawBarterWin()
     lblBarterFestival:SetForeColor(YELLOW);
     --lblBarterFestival:SetBackColor(Turbine.UI.Color.White);
 
-    local barterItems = Turbine.UI.ListBox();
+    local barterItems = Turbine.UI.TreeView();
     barterItems:SetParent(wBarterWinParent);
     barterItems:SetSize(422,SETTINGS.BARTERWIN.HEIGHT - 120);
     barterItems:SetPosition(25,80);
@@ -224,29 +224,53 @@ function RefreshBarterItems()
     end
     wBarterWinParent.LoadedFestival = SELECTEDFESTIVAL;
 
-    wBarterWinParent.BarterItems:ClearItems();
     lblBarterFestival:SetText(GetString(_LANG.OTHER.BARTERITEMS)..": "..GetString(_LANG.FESTIVALS[SELECTEDFESTIVAL]));
+
+    local barterItems = wBarterWinParent.BarterItems;
+    barterItems:GetNodes():Clear();
 
     local rowWidth = 422;
     local rowHeight = 45;
 
-
+    local rootNodes = barterItems:GetNodes();
+    local currentBarter1Nodes = nil; ---@type TreeNodeList|nil
+    local currentBarter2Nodes = nil; ---@type TreeNodeList|nil
 
     for _,barterItemData in ipairs (_BARTER[SELECTEDFESTIVAL]) do
-
-        local rowHolder = Turbine.UI.Control();
+        local rowHolder = Turbine.UI.TreeNode();
         rowHolder:SetSize(rowWidth,rowHeight);
 
-        if (barterItemData[DIVIDER_TYPE] == "DIVIDER1" or barterItemData[DIVIDER_TYPE] == "DIVIDER2") then
+        local type = barterItemData[DIVIDER_TYPE];
+        if (type == DIVIDER1 or type == DIVIDER2) then
+            if (type == DIVIDER1) then
+                rootNodes:Add(rowHolder);
+                currentBarter1Nodes = rowHolder:GetChildNodes();
+                currentBarter2Nodes = nil;
+            elseif (type == DIVIDER2) then
+                if (currentBarter1Nodes) then
+                    currentBarter1Nodes:Add(rowHolder);
+                else
+                    rootNodes:Add(rowHolder);
+                end
+                currentBarter2Nodes = rowHolder:GetChildNodes();
+            end
+
             MakeDividerLabel(rowHolder, barterItemData, rowWidth, rowHeight);
         else
             MakeBarterItemRow(rowHolder, barterItemData, rowWidth, rowHeight);
+            if (currentBarter2Nodes) then
+                currentBarter2Nodes:Add(rowHolder);
+            elseif (currentBarter1Nodes) then
+                currentBarter1Nodes:Add(rowHolder);
+            else
+                rootNodes:Add(rowHolder);
+            end
         end
 
-        wBarterWinParent.BarterItems:AddItem(rowHolder);
     end
 
-    wBarterWinParent.BarterItems:SetSelectedIndex(1);
+    barterItems:SetSelectedNode(barterItems:GetNodes():Get(1));
+    barterItems:ExpandAll();
 end
 
 
