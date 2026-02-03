@@ -230,10 +230,9 @@ function RefreshBarterItems()
     local rowWidth = 422;
     local rowHeight = 45;
 
-    local _FESTIVALITEMS = _BARTER[SELECTEDFESTIVAL];
 
 
-    for _,barterItemData in ipairs (_FESTIVALITEMS) do
+    for _,barterItemData in ipairs (_BARTER[SELECTEDFESTIVAL]) do
 
         local rowHolder = Turbine.UI.Control();
         rowHolder:SetSize(rowWidth,rowHeight);
