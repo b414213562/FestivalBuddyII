@@ -260,6 +260,8 @@ function RefreshBarterItems()
             MakeBarterItemRow(rowHolder, barterItemData, rowWidth, rowHeight);
         end
 
+        -- Note: The following code is accomodating if the barter items only use Divider1 and BarterItems,
+        --   The missing Divider2s will not cause any observed problems.
         if (currentBarter2Nodes) then
             -- If we have seen a Divider2, this is expected to be one of its BarterItems:
             currentBarter2Nodes:Add(rowHolder);
