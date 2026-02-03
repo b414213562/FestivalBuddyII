@@ -266,11 +266,15 @@ function RefreshBarterItems()
         elseif (currentBarter1Nodes) then
             -- Otherwise, if we have seen a Divider1, this is expected to be one of its Divider2s or BarterItems:
             currentBarter1Nodes:Add(rowHolder);
-            currentBarter2Nodes = rowHolder:GetChildNodes();
+            if (type == DIVIDER1 or type == DIVIDER2) then
+                currentBarter2Nodes = rowHolder:GetChildNodes();
+            end
         else
             -- Otherwise, this is expected to be a Divider or BarterItem at the root level:
             rootNodes:Add(rowHolder);
-            currentBarter1Nodes = rowHolder:GetChildNodes();
+            if (type == DIVIDER1 or type == DIVIDER2) then
+                currentBarter1Nodes = rowHolder:GetChildNodes();
+            end
         end
     end
 
