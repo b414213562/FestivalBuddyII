@@ -236,6 +236,8 @@ function RefreshBarterItems()
     local currentBarter1Nodes = nil; ---@type TreeNodeList|nil
     local currentBarter2Nodes = nil; ---@type TreeNodeList|nil
 
+    -- The following code assumes Divider2s always appear under Divider1s,
+    -- and dividers never appear under BarterItems.
     for _,barterItemData in ipairs (_BARTER[SELECTEDFESTIVAL]) do
         local rowHolder = Turbine.UI.TreeNode();
         rowHolder:SetSize(rowWidth,rowHeight);
@@ -243,30 +245,33 @@ function RefreshBarterItems()
         local type = barterItemData[DIVIDER_TYPE];
         if (type == DIVIDER1 or type == DIVIDER2) then
             if (type == DIVIDER1) then
-                rootNodes:Add(rowHolder);
-                currentBarter1Nodes = rowHolder:GetChildNodes();
+                -- The code below will set up the new Divider1 tracker.
+                -- Reset the existing Divider1 and Divider2 trackers:
+                currentBarter1Nodes = nil;
                 currentBarter2Nodes = nil;
             elseif (type == DIVIDER2) then
-                if (currentBarter1Nodes) then
-                    currentBarter1Nodes:Add(rowHolder);
-                else
-                    rootNodes:Add(rowHolder);
-                end
-                currentBarter2Nodes = rowHolder:GetChildNodes();
+                -- The code below will set up the new Divider2 tracker.
+                -- Reset the existing Divider2 tracker.
+                currentBarter2Nodes = nil;
             end
 
             MakeDividerLabel(rowHolder, barterItemData, rowWidth, rowHeight);
         else
             MakeBarterItemRow(rowHolder, barterItemData, rowWidth, rowHeight);
-            if (currentBarter2Nodes) then
-                currentBarter2Nodes:Add(rowHolder);
-            elseif (currentBarter1Nodes) then
-                currentBarter1Nodes:Add(rowHolder);
-            else
-                rootNodes:Add(rowHolder);
-            end
         end
 
+        if (currentBarter2Nodes) then
+            -- If we have seen a Divider2, this is expected to be one of its BarterItems:
+            currentBarter2Nodes:Add(rowHolder);
+        elseif (currentBarter1Nodes) then
+            -- Otherwise, if we have seen a Divider1, this is expected to be one of its Divider2s or BarterItems:
+            currentBarter1Nodes:Add(rowHolder);
+            currentBarter2Nodes = rowHolder:GetChildNodes();
+        else
+            -- Otherwise, this is expected to be a Divider or BarterItem at the root level:
+            rootNodes:Add(rowHolder);
+            currentBarter1Nodes = rowHolder:GetChildNodes();
+        end
     end
 
     barterItems:SetSelectedNode(barterItems:GetNodes():Get(1));
