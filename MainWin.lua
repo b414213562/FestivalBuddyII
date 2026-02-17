@@ -522,6 +522,7 @@ function FillMainWin(FESTIVAL)
     clearQuestButton:SetSize(16,16);
     clearQuestButton:SetPosition(cDebuffHolder:GetWidth() - 12, cDebuffHolder:GetTop()+cDebuffHolder:GetHeight() + 12);
     clearQuestButton:SetBackground(_IMAGES.CLOSE_NORMAL);
+    clearQuestButton:SetVisible(false);
 
     clearQuestButton.MouseEnter = function ()
         clearQuestButton:SetBackground(_IMAGES.CLOSE_OVER);
