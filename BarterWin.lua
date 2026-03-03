@@ -204,7 +204,8 @@ function MakeDividerLabel(parent, barterItemData, rowWidth, rowHeight)
 
     local dividerLabel = Turbine.UI.Label();
     dividerLabel:SetParent(parent);
-    dividerLabel:SetSize(rowWidth, rowHeight);
+    dividerLabel:SetSize(rowWidth - 20, rowHeight);
+    dividerLabel:SetLeft(20);
 
     dividerLabel:SetFont(DividerFonts[dividerType]);
 
@@ -213,7 +214,7 @@ function MakeDividerLabel(parent, barterItemData, rowWidth, rowHeight)
     dividerLabel:SetHeight(dividerHeight);
 
     dividerLabel:SetFontStyle(Turbine.UI.FontStyle.Outline);
-    dividerLabel:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleCenter);
+    dividerLabel:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleLeft);
     dividerLabel:SetText(GetString(barterItemData[DIVIDER_TEXT]));
 end
 
