@@ -90,7 +90,84 @@ function DrawBarterWin()
         SETTINGS.BARTERWIN.HEIGHT = newWindowHeight;
     end
 
+    MakeExpandCollapseAllButton();
     SetBarterWinVisible(SETTINGS.BARTERWIN.VISIBLE);
+end
+
+function MakeExpandCollapseAllButton()
+    
+    -- Expand All buttons:
+    local expandAll = Turbine.UI.Control();
+    expandAll:SetParent(wBarterWinParent);
+    expandAll:SetSize(16, 16);
+    expandAll:SetPosition(30, 40);
+    expandAll:SetBackground(_IMAGES.EXPAND_ALL_BUTTON);
+    expandAll:SetBlendMode(Turbine.UI.BlendMode.Overlay);
+    expandAll.MouseEnter = function(sender, args)
+        expandAll:SetBackground(_IMAGES.EXPAND_ALL_BUTTON_ROLLOVER);
+    end
+    expandAll.MouseLeave = function(sender, args)
+        -- MouseLeave is triggered when the tooltip appears.
+        -- Check if the mouse is still over the button:
+        local width, height = expandAll:GetSize();
+        local mouseX, mouseY = expandAll:GetMousePosition();
+        if (mouseX > 0 and mouseX < width and 
+            mouseY > 0 and mouseY < height) then
+            return;
+        end
+        expandAll:SetBackground(_IMAGES.EXPAND_ALL_BUTTON);
+    end
+    expandAll.MouseDown = function(sender, args)
+        expandAll:SetBackground(_IMAGES.EXPAND_ALL_BUTTON_PRESSED);
+    end
+    expandAll.MouseUp = function(sender, args)
+        expandAll:SetBackground(_IMAGES.EXPAND_ALL_BUTTON_ROLLOVER);
+        -- If the cursor is still over the control, do it:
+        local mouseX, mouseY = expandAll:GetMousePosition();
+        if (mouseX >= 0 and mouseX <= expandAll:GetWidth() and 
+            mouseY >= 0 and mouseY <= expandAll:GetHeight()) then
+                wBarterWinParent.BarterItems:ExpandAll();
+        end
+    end
+    expandAll:SetToolTip(GetString(_LANG.TOOLTIPS.GENERIC.EXPAND_ALL_TOOLTIP));
+
+    -- Collapse All buttons:
+    local collapseAll = Turbine.UI.Control();
+    collapseAll:SetParent(wBarterWinParent);
+    collapseAll:SetSize(16, 16);
+    collapseAll:SetPosition(50, 40);
+    collapseAll:SetBackground(_IMAGES.COLLAPSE_ALL_BUTTON);
+    collapseAll:SetBlendMode(Turbine.UI.BlendMode.Overlay);
+    collapseAll.MouseEnter = function(sender, args)
+        collapseAll:SetBackground(_IMAGES.COLLAPSE_ALL_BUTTON_ROLLOVER);
+    end
+    collapseAll.MouseLeave = function(sender, args)
+        -- MouseLeave is triggered when the tooltip appears.
+        -- Check if the mouse is still over the button:
+        local width, height = collapseAll:GetSize();
+        local mouseX, mouseY = collapseAll:GetMousePosition();
+        if (mouseX > 0 and mouseX < width and 
+            mouseY > 0 and mouseY < height) then
+            return;
+        end
+        collapseAll:SetBackground(_IMAGES.COLLAPSE_ALL_BUTTON);
+    end
+    collapseAll.MouseDown = function(sender, args)
+        collapseAll:SetBackground(_IMAGES.COLLAPSE_ALL_BUTTON_PRESSED);
+    end
+    collapseAll.MouseUp = function(sender, args)
+        collapseAll:SetBackground(_IMAGES.COLLAPSE_ALL_BUTTON_ROLLOVER);
+        -- If the cursor is still over the control, do it:
+        local mouseX, mouseY = collapseAll:GetMousePosition();
+        if (mouseX >= 0 and mouseX <= collapseAll:GetWidth() and 
+            mouseY >= 0 and mouseY <= collapseAll:GetHeight()) then
+                wBarterWinParent.BarterItems:CollapseAll();
+        end
+    end
+    collapseAll:SetToolTip(GetString(_LANG.TOOLTIPS.GENERIC.COLLAPSE_ALL_TOOLTIP)); -- todo: translate this!
+
+    -- End Expand / Collapse All buttons
+
 end
 
 function BarterWinFestivalChanged()

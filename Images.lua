@@ -28,6 +28,14 @@ _IMAGES = {
     ["OPTIONS_ROLLOVER"] = 0x41101832;
     ["OPTIONS_PRESSED"] = 0x41101834;
 
+    -- Expand All / Collapse All Buttons ([++], [--])
+    ["EXPAND_ALL_BUTTON"] = 0x4100027B;
+    ["EXPAND_ALL_BUTTON_PRESSED"] = 0x4100027A;
+    ["EXPAND_ALL_BUTTON_ROLLOVER"] = 0x4100027C;
+    ["COLLAPSE_ALL_BUTTON"] = 0x4100027E;
+    ["COLLAPSE_ALL_BUTTON_PRESSED"] = 0x4100027D;
+    ["COLLAPSE_ALL_BUTTON_ROLLOVER"] = 0x4100027F;
+
     ["PROGRESS"] = {
         ["PROGRESS_BACK"] = RESOURCEDIR .. "ProgressBar_Back.tga";
         ["PROGRESS_BAR"] = RESOURCEDIR .. "ProgressBar.tga";

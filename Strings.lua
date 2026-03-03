@@ -60,6 +60,19 @@ _LANG = {
         };
     };
 
+    ["TOOLTIPS"] = {
+        ["GENERIC"] = {
+            ["EXPAND_ALL_TOOLTIP"] = {
+                ["ENGLISH"] = "Expand All";
+                ["GERMAN"] = "Alle ausklappen";
+            };
+            ["COLLAPSE_ALL_TOOLTIP"] = {
+                ["ENGLISH"] = "Collapse All";
+                ["GERMAN"] = "Alle zusammenklappen";
+            };
+        }
+    };
+
     ["FESTIVALS"] = {
         [SPRING]       = {["ENGLISH"] = "Spring";           ["FRENCH"] = "Printemps";           ["GERMAN"] = "Frühling";    };
         [HARVESTMATH]  = {["ENGLISH"] = "Harvestmath";      ["FRENCH"] = "Moissines";           ["GERMAN"] = "Ernte";       };
