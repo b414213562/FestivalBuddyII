@@ -17,17 +17,18 @@ function DrawBarterWin()
         SETTINGS.BARTERWIN.HEIGHT = displayHeight - SETTINGS.BARTERWIN.Y;
     end
 
+    local windowWidth = 496;
     wBarterWinParent = Turbine.UI.Lotro.Window();
-    wBarterWinParent:SetSize(480,SETTINGS.BARTERWIN.HEIGHT);
+    wBarterWinParent:SetSize(windowWidth,SETTINGS.BARTERWIN.HEIGHT);
     wBarterWinParent:SetPosition(SETTINGS.BARTERWIN.X,SETTINGS.BARTERWIN.Y);
     wBarterWinParent:SetText(GetString(_LANG.OTHER.BARTER));
     wBarterWinParent:SetResizable(true);
-    wBarterWinParent:SetMinimumWidth(480);
-    wBarterWinParent:SetMaximumWidth(480);
+    wBarterWinParent:SetMinimumWidth(windowWidth);
+    wBarterWinParent:SetMaximumWidth(windowWidth);
 
     wBarterWinBack = Turbine.UI.Control();
     wBarterWinBack:SetParent(wBarterWinParent);
-    wBarterWinBack:SetSize(480,SETTINGS.BARTERWIN.HEIGHT);
+    wBarterWinBack:SetSize(windowWidth,SETTINGS.BARTERWIN.HEIGHT);
     wBarterWinBack:SetPosition(1,-2);
     wBarterWinBack:SetBackground(_IMAGES.BARTERBACK);
     wBarterWinBack:SetBlendMode(4);
@@ -35,8 +36,8 @@ function DrawBarterWin()
 
     lblBarterFestival = Turbine.UI.Label();
     lblBarterFestival:SetParent(wBarterWinParent);
-    lblBarterFestival:SetPosition(30,40);
-    lblBarterFestival:SetSize(420,30);
+    lblBarterFestival:SetSize(windowWidth - 60,30);
+    lblBarterFestival:SetPosition((windowWidth / 2) - (lblBarterFestival:GetWidth() / 2),40);
     lblBarterFestival:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleCenter);
     lblBarterFestival:SetFont(TrajanPro16);
     lblBarterFestival:SetForeColor(YELLOW);
@@ -44,8 +45,9 @@ function DrawBarterWin()
 
     local barterItems = Turbine.UI.TreeView();
     barterItems:SetParent(wBarterWinParent);
-    barterItems:SetSize(422,SETTINGS.BARTERWIN.HEIGHT - 120);
+    barterItems:SetSize(windowWidth - 58,SETTINGS.BARTERWIN.HEIGHT - 120);
     barterItems:SetPosition(25,80);
+    barterItems:SetIndentationWidth(8);
     wBarterWinParent.BarterItems = barterItems;
 
     local barterItemsScrollbar = Turbine.UI.Lotro.ScrollBar();
