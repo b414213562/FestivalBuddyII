@@ -206,6 +206,7 @@ function MakeDividerLabel(parent, barterItemData, rowWidth, rowHeight)
     dividerLabel:SetParent(parent);
     dividerLabel:SetSize(rowWidth - 20, rowHeight);
     dividerLabel:SetLeft(20);
+    dividerLabel:SetMouseVisible(false);
 
     dividerLabel:SetFont(DividerFonts[dividerType]);
 
