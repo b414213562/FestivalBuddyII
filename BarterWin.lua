@@ -369,9 +369,5 @@ function RefreshBarterItems()
     if (barterItems:GetNodes():GetCount() > 0) then
         barterItems:SetSelectedNode(barterItems:GetNodes():Get(1));
         barterItems:ExpandAll();
-    end 
+    end
 end
-
-
-
-
