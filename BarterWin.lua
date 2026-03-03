@@ -191,7 +191,7 @@ function SetBarterWinVisible(isVisible, skipRefresh)
 end
 
 --- Makes a label and adds it to the parent, if the divider type is valid.
----@param parent Control
+---@param parent TreeNode
 ---@param barterItemData table
 ---@param rowWidth number
 ---@param rowHeight number
@@ -217,6 +217,11 @@ function MakeDividerLabel(parent, barterItemData, rowWidth, rowHeight)
     dividerLabel:SetText(GetString(barterItemData[DIVIDER_TEXT]));
 end
 
+--- Makes a label and adds it to the parent, if the divider type is valid.
+---@param parent TreeNode
+---@param barterItemData table
+---@param rowWidth number
+---@param rowHeight number
 function MakeBarterItemRow(parent, barterItemData, rowWidth, rowHeight)
     local item = nil; ---@type Item|nil
     if type(barterItemData[ITEM_ID]) == 'string' then
