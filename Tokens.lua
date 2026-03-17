@@ -88,8 +88,11 @@ TOKEN_UI_ORDER = {
         [1] = "SPRING_FESTIVAL";
         [2] = "SPRING_RACE"; -- no longer used?
         [3] = "SPRING_MARIGOLD";
-        [4] = "SPRING_VIOLET";
-        [5] = "SPRING_PRIMROSE";
+        [4] = "SPRING_PRIMROSE";
+        [5] = "SPRING_VIOLET";
+
+        [6] = "GENERIC_FESTIVITY";
+        [7] = "GENERIC_MITHRIL";
     };
     [HARVESTMATH] = {
         [1] = "HARVESTMATH_RACE";
@@ -110,18 +113,27 @@ TOKEN_UI_ORDER = {
         [12] = "HARVESTMATH_SMALLPUMPKIN";
         [13] = "HARVESTMATH_MEDIUMPUMPKIN";
         [14] = "HARVESTMATH_LARGEPUMPKIN";
+
+        [15] = "GENERIC_FESTIVITY";
+        [16] = "GENERIC_MITHRIL";
     };
     [YULE] = {
         [1] = "YULE_FESTIVAL";
         [2] = "YULE_GOLDFESTIVAL";
         [3] = "YULE_TICKET";
         [4] = "YULE_RACE";
+
+        [5] = "GENERIC_FESTIVITY";
+        [6] = "GENERIC_MITHRIL";
     };
     [ANNIVERSARY] = {
         [1] = "ANNIVERSARY_RACE";
         [2] = "ANNIVERSARY_FESTIVAL";
 
         [3] = "ANNIVERSARY_STEEL";
+
+        [4] = "GENERIC_FESTIVITY";
+        [5] = "GENERIC_MITHRIL";
     };
     [FARMERSFAIRE] = {
         [1] = "SUMMER_RACE";
@@ -136,6 +148,9 @@ TOKEN_UI_ORDER = {
         [10] = "FARMERSFAIRE_FLOUNDER";
         [11] = "FARMERSFAIRE_SMALLFISH";
         [12] = "FARMERSFAIRE_THRANG";
+
+        [13] = "GENERIC_FESTIVITY";
+        [14] = "GENERIC_MITHRIL";
     };
     [HOBNANIGANS] = {
         [1] = "HOBNANIGANS_TOKEN";
@@ -145,17 +160,22 @@ TOKEN_UI_ORDER = {
         [5] = "HOBNANIGANS_SCRAPPER_CHICKEN_TOKEN";
         [6] = "HOBNANIGANS_BLACKFOOT_CHICKEN_TOKEN";
         [7] = "HOBNANIGANS_ORANGE_WYANDOTTE_TOKEN";
+        [8] = "GENERIC_MITHRIL";
     };
     [MIDSUMMER] = {
         [1] = "MIDSUMMER_TOKEN";
+
+        [2] = "GENERIC_FESTIVITY";
+        [3] = "GENERIC_MITHRIL";
     };
     [ILAA] = {
         [1] = "ILAA_BADGE_OF_TASTE";
         [2] = "ILAA_BADGE_OF_DISHONOUR";
     };
-    [GENERIC] = {
-        [1] = "GENERIC_MITHRIL";
-        [2] = "GENERIC_FESTIVITY";
+    [GENERIC] = { -- Commented these out after adding entries into the UI list, 
+                  -- to avoid the same token appearing twice in the top bar of the main window.
+--        [1] = "GENERIC_MITHRIL"; 
+--        [2] = "GENERIC_FESTIVITY";
     };
 };
 

@@ -285,20 +285,38 @@ function MakeBarterItemRow(parent, barterItemData, rowWidth, rowHeight)
     lstTokensNeeded:SetOrientation(Turbine.UI.Orientation.Horizontal);
     --lstTokensNeeded:SetBackColor(Turbine.UI.Color.Red);
 
+    local xor = false;
+    if (barterItemData[ITEM_COST_TABLE]["XOR"]) then
+        xor = true;
+    end
+
     if type(barterItemData[ITEM_COST_TABLE])=='table' then
-        for token_key,token_count in pairs (barterItemData[ITEM_COST_TABLE]) do
-            local token_id = GetTokenID(SELECTEDFESTIVAL, token_key);
-            local tokenItem = GetItemFromID(token_id);
+        for _, token_key in ipairs(TOKEN_UI_ORDER[SELECTEDFESTIVAL]) do
+            if (barterItemData[ITEM_COST_TABLE][token_key]) then
+                local token_count = barterItemData[ITEM_COST_TABLE][token_key];
 
-            if tokenItem ~= nil then
-                local cTokenInspect = Turbine.UI.Lotro.ItemInfoControl();
-                cTokenInspect:SetParent(ROWBACK);
-                cTokenInspect:SetSize(36,36);
-                cTokenInspect:SetPosition(1,1);
-                cTokenInspect:SetItemInfo(tokenItem:GetItemInfo());
-                cTokenInspect:SetQuantity(token_count);
+                local token_id = GetTokenID(SELECTEDFESTIVAL, token_key);
+                local tokenItem = GetItemFromID(token_id);
 
-                lstTokensNeeded:AddItem(cTokenInspect);
+                if tokenItem ~= nil then
+                    local cTokenInspect = Turbine.UI.Lotro.ItemInfoControl();
+                    cTokenInspect:SetParent(ROWBACK);
+                    cTokenInspect:SetSize(36,36);
+                    cTokenInspect:SetPosition(1,1);
+                    cTokenInspect:SetItemInfo(tokenItem:GetItemInfo());
+                    cTokenInspect:SetQuantity(token_count);
+
+                    lstTokensNeeded:AddItem(cTokenInspect);
+                end
+
+                if (xor and lstTokensNeeded:GetItemCount() == 1) then
+                    local orLabel = Turbine.UI.Label();
+                    orLabel:SetText("OR");
+                    orLabel:SetSize(36, 36);
+                    --orLabel:SetBackColor(Turbine.UI.Color.DarkBlue);
+                    orLabel:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleCenter);
+                    lstTokensNeeded:AddItem(orLabel);
+                end
             end
         end
     end

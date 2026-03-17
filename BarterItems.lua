@@ -252,10 +252,10 @@ _BARTER =
         [232]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Essences"; }; };
         [233]={[2]={["SPRING_FESTIVAL"]=90;};[1]=0x7005F84B;}; --Essence Reclamation Scroll
         [234]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Dyes"; }; };
-        [235]={[3]=6;[2]={["SPRING_FESTIVAL"]=15;};[1]=0x70044B8E;}; --Shire-plum Dye
-        [236]={[3]=6;[2]={["SPRING_FESTIVAL"]=15;};[1]=0x70044B93;}; --Bullroarer's Green Dye
-        [237]={[3]=6;[2]={["GENERIC_MITHRIL"]=10;};[1]=0x70044B96;}; --Lavender Dye
-        [238]={[3]=6;[2]={["GENERIC_MITHRIL"]=10;};[1]=0x70044B91;}; --Dark Purple Dye
+        [235]={[3]=6;[2]={["SPRING_FESTIVAL"]=15;["GENERIC_MITHRIL"]=10;["XOR"]=true;};[1]=0x70044B8E;}; --Shire-plum Dye
+        [236]={[3]=6;[2]={["SPRING_FESTIVAL"]=15;["GENERIC_MITHRIL"]=10;["XOR"]=true;};[1]=0x70044B93;}; --Bullroarer's Green Dye
+        [237]={[3]=6;[2]={["SPRING_FESTIVAL"]=15;["GENERIC_MITHRIL"]=10;["XOR"]=true;};[1]=0x70044B96;}; --Lavender Dye
+        [238]={[3]=6;[2]={["SPRING_FESTIVAL"]=15;["GENERIC_MITHRIL"]=10;["XOR"]=true;};[1]=0x70044B91;}; --Dark Purple Dye
         [239]={[2]={["SPRING_FESTIVAL"]=10;};[1]=0x700553A2;}; --Assortment of Dwarf-candle
         [240]={[3]=5;[2]={["SPRING_FESTIVAL"]=5;};[1]=0x70052CE1;}; --Yellow Dwarf-candle
         [241]={[3]=5;[2]={["SPRING_FESTIVAL"]=5;};[1]=0x70052CE2;}; --Red Dwarf-candle
