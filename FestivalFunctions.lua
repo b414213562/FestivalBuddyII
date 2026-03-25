@@ -40,6 +40,18 @@ function ClearSelectedQuest()
     questMapImage:SetVisible(false);
 end
 
+
+function FilterTarget(newTargetName)
+    if (_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_TARGETS[SELECTEDFESTIVAL] and
+        newTargetName) then
+        -- If the user is holding down shift while changing targets, we don't want
+        -- to initiate a cascade completion.
+        QuickGuideQuestChatProcessingBegin();
+        QuickGuideWinHandleTargetChanged(newTargetName)
+        QuickGuideQuestChatProcessingEnd();
+    end
+end
+
 function GetFestivalKeyAndQuestKeyFromNewQuest(cMessage)
     -- loop through quest names to see if there's a match in the table
     for festivalKey in pairs (_LANG.FESTIVALS) do

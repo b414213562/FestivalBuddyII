@@ -8,6 +8,12 @@ _CHARDATA = {}; -- Table used when loading saved character data.
 blSAVED = false;
 
 MYCHAR = Turbine.Gameplay.LocalPlayer.GetInstance();
+MYCHAR.TargetChanged = function(sender, args)
+    local target = MYCHAR:GetTarget();
+    if (target) then
+        FilterTarget(target:GetName());
+    end
+end
 MYWALLET = MYCHAR:GetWallet();
 EFFECTS = MYCHAR:GetEffects();
 MYBACKPACK = MYCHAR:GetBackpack();
