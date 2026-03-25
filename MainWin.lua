@@ -66,8 +66,6 @@ function DrawMainWin()
     wMainWinHolder:SetSize(tempWidth-9,tempHeight-160);
     wMainWinHolder:SetPosition(5,70);
 
-    FillMainWin(SELECTEDFESTIVAL);
-
     -- Common elements
 
     wMainCommonHolder = Turbine.UI.Control();
@@ -249,6 +247,8 @@ function DrawMainWin()
         end
 
     end
+
+    FillMainWin(SELECTEDFESTIVAL);
 
     -- Load whatever festival & quest was in the UI last time, if any:
     if (SETTINGS.FESTIVAL) then
