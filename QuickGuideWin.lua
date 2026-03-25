@@ -432,3 +432,17 @@ function QuickGuideWinHandleQuestCompleted(cMessage)
         QuickGuideWinHandleQuestChainBeginOrEnd(index);
     end
 end
+
+function QuickGuideWinHandleTargetChanged(newTargetName)
+    local targets = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_TARGETS[SELECTEDFESTIVAL];
+    if (targets) then
+        for _, target in ipairs(targets) do
+            if (not target.DONE and target.NAME == newTargetName) then
+                -- Is the next one to do the one we're talking to?
+                target.DONE = true;
+                QuickGuideWinMarkComplete(target.INDEX);
+                return;
+            end
+        end
+    end
+end
