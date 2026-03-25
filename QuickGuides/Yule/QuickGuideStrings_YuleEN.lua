@@ -66,9 +66,6 @@ QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_4].DISPLAY = function(
 QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION5].DISPLAY = function() return Continue("The Biggest Stomach of Them All (Part V)", "Eat food at the fifth station"); end
 QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_5].DISPLAY = function() return TurnInTo("The Biggest Stomach of Them All (Part V)", "Ian Prudholm"); end
 
--- Note: Could switch to storing each incremental progress string instead? Performance vs memory tradeoff?
--- TODO: Check if \n is needed for quest progression entries
--- TODO: Add German and French versions of this table
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_PROGRESS[YULE] = {
     ["Looted a distracted patron %((%d+)/(%d+)%)"] = QG_YULE_INDEX.MAKING_MISCHIEF_LOOT;
     ["Picked up dirty dishes %((%d+)/(%d+)%)"] = QG_YULE_INDEX.TIDYING_UP_DISHES;
