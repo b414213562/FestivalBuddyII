@@ -1,0 +1,31 @@
+Festival Buddy II version v2.2.1 is now available at [URL='https://www.lotrointerface.com/downloads/info1218-FestivalBuddyII.html']lotrointerface.com[/URL].
+
+This update adds a Quick Guide for Spring Festival (Clegur), adds visual timers for Yule eating contest and beggars, and numerous UI improvements.
+
+Version 2.2.1 release notes:
+
+General:
+[list]
+    [*] Added X button to clear the selected quest.
+    [*] Added button to delete data for an alt.
+[/list]
+
+Barter Window:
+[list]
+    [*] List is now a tree. Each section can be expanded or collapsed. Also added Expand All and Collapse All buttons at top.
+    [*] The last item you click on is now highlighted.
+    [*] Updated Spring Barter items from 2024 to 2026.
+[/list]
+
+Quick Guides:
+[list]
+    [*] Fixed a bug when "Remove completed items from list" is not selected where completed items are not correctly shown after reloading the plugin.
+    [*] Added timer that shows how long it takes to complete the quick guide. (Can be disabled via Options)
+    [*] Added support to show progress on numerical quests [e.g. (1/8), (3/6)]
+    [*] Added Spring Festival (Clegur) quick guide.
+
+Yule Festival:
+[list]
+    [*] Added a window that shows how long each of the five beggars is expected to be away from their post. (Can be disabled via Options)
+    [*] Add visual timer for eating contest. If the black "now" marker is in green it means the quest can be picked up. Yellow is the 10 second countdown before the round begins. Red means the quest cannot be picked up.
+[/list]
