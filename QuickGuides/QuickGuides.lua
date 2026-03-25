@@ -88,6 +88,7 @@ QUICK_GUIDES_FORMAT_STRINGS = {
     ["CollectFromLocation"] = { ["ENGLISH"] = "Collect %s from %s"; ["GERMAN"] = "Besorge %s aus %s"; };
     ["TravelCollectFrom"] = { ["ENGLISH"] = "Travel to %s, collect %s from %s"; ["GERMAN"] = "Reise nach %s, besorge %s von %s"; };
     ["TakeFrom"] = { ["ENGLISH"] = "Take %s from %s"; ["GERMAN"] = "Nimm %s bei %s an"; };
+    ["TakeFromIn"] = { ["ENGLISH"] = "Take %s from %s in %s"; ["GERMAN"] = "Nimm %s bei %s an"; ["FRENCH"] = "Prenez %s de %s dans %s."; };
 }
 
 ---Helper for travelling to an objective, turning in a quest to an NPC.
@@ -154,6 +155,10 @@ end
 ---@return string
 function _G.TakeFrom(quest, npc)
     return string.format(GetString(QUICK_GUIDES_FORMAT_STRINGS.TakeFrom), HighlightQuest(quest), HighlightNpc(npc));
+end
+
+function _G.TakeFromIn(quest, npc, location)
+    return string.format(GetString(QUICK_GUIDES_FORMAT_STRINGS.TakeFromIn), HighlightQuest(quest), HighlightNpc(npc), HighlightLocation(location));
 end
 
 _G.AddNextQuickguideValue = AddNextQuickguideValue;
