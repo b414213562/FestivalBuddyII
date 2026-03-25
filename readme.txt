@@ -1,12 +1,19 @@
-v2.1.6 changes:
-
+v2.2.1 changes:
     Festivals:
         General:
             Added X button to clear the selected quest.
+            Added button to delete data for an alt.
+        Barter Window:
+            List is now a tree. Each section can be expanded or collapsed. Also added Expand All and Collapse All buttons at top.
+            The last item you click on is now highlighted.
+            Updated Spring Barter items from 2024 to 2026.
         Quick Guides:
             Fixed a bug when "Remove completed items from list" is not selected where completed items are not correctly shown after reloading the plugin.
+            Added timer that shows how long it takes to complete the quick guide. (Can be disabled via Options)
+            Added support to show progress on numerical quests [e.g. (1/8), (3/6)]
+            Added Spring Festival (Clegur) quick guide.
         Yule:
-            Added a window that shows how long each of the five beggars is expected to be away from their post.
+            Added a window that shows how long each of the five beggars is expected to be away from their post. (Can be disabled via Options)
             Add visual timer for eating contest. If the black "now" marker is in green it means the quest can be picked up. Yellow is the 10 second countdown before the round begins. Red means the quest cannot be picked up.
 
 v2.1.5 changes:
