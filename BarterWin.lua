@@ -26,6 +26,11 @@ function DrawBarterWin()
     wBarterWinParent:SetMinimumWidth(windowWidth);
     wBarterWinParent:SetMaximumWidth(windowWidth);
 
+    -- If you call UpdatedExandedIcon directly, the states get wonky, 
+    -- especially if you double-click. Come back in a few ms.
+    wBarterWinParent.treeNodesTimer = Libraries.Timer(50, false, function() UpdatedExandedIcon(); end);
+
+
     wBarterWinBack = Turbine.UI.Control();
     wBarterWinBack:SetParent(wBarterWinParent);
     wBarterWinBack:SetSize(windowWidth,SETTINGS.BARTERWIN.HEIGHT);
@@ -47,6 +52,7 @@ function DrawBarterWin()
     barterItems:SetParent(wBarterWinParent);
     barterItems:SetSize(windowWidth - 58,SETTINGS.BARTERWIN.HEIGHT - 120);
     barterItems:SetPosition(25,80);
+    barterItems.clickedNode = nil;
     barterItems:SetIndentationWidth(8);
     wBarterWinParent.BarterItems = barterItems;
 
@@ -128,7 +134,7 @@ function MakeExpandCollapseAllButton()
         local mouseX, mouseY = expandAll:GetMousePosition();
         if (mouseX >= 0 and mouseX <= expandAll:GetWidth() and 
             mouseY >= 0 and mouseY <= expandAll:GetHeight()) then
-                wBarterWinParent.BarterItems:ExpandAll();
+                BarterWinExpandAll();
         end
     end
     expandAll:SetToolTip(GetString(_LANG.TOOLTIPS.GENERIC.EXPAND_ALL_TOOLTIP));
@@ -163,13 +169,39 @@ function MakeExpandCollapseAllButton()
         local mouseX, mouseY = collapseAll:GetMousePosition();
         if (mouseX >= 0 and mouseX <= collapseAll:GetWidth() and 
             mouseY >= 0 and mouseY <= collapseAll:GetHeight()) then
-                wBarterWinParent.BarterItems:CollapseAll();
+                BarterWinCollapseAll();
         end
     end
     collapseAll:SetToolTip(GetString(_LANG.TOOLTIPS.GENERIC.COLLAPSE_ALL_TOOLTIP));
 
     -- End Expand / Collapse All buttons
 
+end
+
+function BarterWinUpdateAllExpandedIcons()
+    local nodes = wBarterWinParent.BarterItems:GetNodes();
+    for i=1, nodes:GetCount() do
+        local node = nodes:Get(i);
+        UpdatedExandedIcon(node);
+
+        local subNodes = node:GetChildNodes();
+        for j=1, subNodes:GetCount() do
+            local subNode = subNodes:Get(j);
+            if (subNode:GetChildNodes():GetCount() > 0) then
+                UpdatedExandedIcon(subNode);
+            end
+        end
+    end
+end
+
+function BarterWinExpandAll()
+    wBarterWinParent.BarterItems:ExpandAll();
+    BarterWinUpdateAllExpandedIcons();
+end
+
+function BarterWinCollapseAll()
+    wBarterWinParent.BarterItems:CollapseAll();
+    BarterWinUpdateAllExpandedIcons();
 end
 
 function BarterWinFestivalChanged()
@@ -217,6 +249,18 @@ function MakeDividerLabel(parent, barterItemData, rowWidth, rowHeight)
     dividerLabel:SetFontStyle(Turbine.UI.FontStyle.Outline);
     dividerLabel:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleLeft);
     dividerLabel:SetText(GetString(barterItemData[DIVIDER_TEXT]));
+    --dividerLabel:SetBackColor(Turbine.UI.Color(math.random() / 2, math.random() / 2, math.random() / 2))
+
+    local expandCollapseIcon = Turbine.UI.Control();
+    expandCollapseIcon:SetParent(parent);
+    expandCollapseIcon:SetSize(16, 16);
+    expandCollapseIcon:SetPosition(0, 14);
+    expandCollapseIcon:SetMouseVisible(false);
+    -- Rows are always created collapsed:
+    expandCollapseIcon:SetBackground(_IMAGES.EXPAND_BUTTON);
+    expandCollapseIcon:SetBlendMode(Turbine.UI.BlendMode.Overlay);
+
+    parent.expandCollapseIcon = expandCollapseIcon;
 end
 
 --- Makes a label and adds it to the parent, if the divider type is valid.
@@ -335,6 +379,16 @@ function BarterItemRowSelectionChanged(sender, args)
     end
 end
 
+function UpdatedExandedIcon(node)
+    if (not node) then node = wBarterWinParent.clickedNode; end
+
+    if (node:IsExpanded()) then
+        node.expandCollapseIcon:SetBackground(_IMAGES.COLLAPSE_BUTTON);
+    else
+        node.expandCollapseIcon:SetBackground(_IMAGES.EXPAND_BUTTON);
+    end
+end
+
 function RefreshBarterItems()
     if (SELECTEDFESTIVAL == wBarterWinParent.LoadedFestival) then
         return;
@@ -373,6 +427,11 @@ function RefreshBarterItems()
             end
 
             MakeDividerLabel(rowHolder, barterItemData, rowWidth, rowHeight);
+            rowHolder.MouseDown = function(sender, args)
+                wBarterWinParent.clickedNode = rowHolder;
+                wBarterWinParent.treeNodesTimer:Start();
+            end
+
         else
             MakeBarterItemRow(rowHolder, barterItemData, rowWidth, rowHeight);
         end
@@ -399,6 +458,6 @@ function RefreshBarterItems()
 
     if (barterItems:GetNodes():GetCount() > 0) then
         barterItems:SetSelectedNode(barterItems:GetNodes():Get(1));
-        barterItems:ExpandAll();
+        BarterWinExpandAll();
     end
 end
