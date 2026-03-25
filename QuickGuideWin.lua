@@ -182,14 +182,15 @@ function QuickGuideWinLoadFestival()
         QuickGuideTimerReset(wQuickGuideWinParent.timer);
     end
 
+    local height = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDIT_HEIGHTS[SELECTEDFESTIVAL] or 70;
     local creditNode = Turbine.UI.TreeNode();
-    creditNode:SetSize(treeView:GetWidth() - ScrollbarWidth, 70);
+    creditNode:SetSize(treeView:GetWidth() - ScrollbarWidth, height);
     creditNode.isReset = true;
 
     local creditLabel = Turbine.UI.Label();
     creditLabel:SetParent(creditNode);
     creditLabel:SetText(_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[SELECTEDFESTIVAL]);
-    creditLabel:SetSize(treeView:GetWidth() - ScrollbarWidth, 70);
+    creditLabel:SetSize(treeView:GetWidth() - ScrollbarWidth, height);
     treeView:GetNodes():Add(creditNode);
 end
 

@@ -175,3 +175,4 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAINS = {};
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAIN_LOOKUP = {};
 
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDIT_HEIGHTS = {};

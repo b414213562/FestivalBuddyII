@@ -1,5 +1,6 @@
 
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[YULE] = "\nThis guide created by Cube during the 2023 Yule.";
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDIT_HEIGHTS[YULE] = 40;
 
 QG_YULE = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[YULE];
 QG_YULE[QG_YULE_INDEX.IN_THE_SPIRIT_OF_YULE_PICKUP].DISPLAY = function() return string.format("Take %s from %s in %s", HighlightQuest("In the Spirit of Yule"), HighlightNpc("Mara Sandydowns"), HighlightLocation("Winterhome")); end
