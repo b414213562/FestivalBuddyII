@@ -209,6 +209,8 @@ DEFAULT_SETTINGS = {
         };
         [ILAA] = {
         };
+        [SPRING] = {
+        };
     };
 
     ["QUICK_GUIDE_QUESTS_TO_USE"] = {
@@ -275,6 +277,18 @@ DEFAULT_SETTINGS = {
             ["A_DARK_PRANK"] = true;
             ["NOT_ATLIS_FAVOURITE"] = true;
         };
+        [SPRING] = {
+            ["A_TASTE_OF_SPRING"] = true;
+            ["DAFFODIL_DAYS_DAILY"] = true;
+            ["THE_GIFT_OF_SPRING"] = true;
+            ["PROMOTING_PIE"] = true;
+            ["FLOWER_ENVY"] = true;
+            ["THE_MUSICIANS_MISFORTUNE"] = true;
+            ["SPRINGTIMES_COLOURS"] = true;
+            ["STRETCHED_TOO_THIN"] = true;
+            ["WELL_WATERED_BLOOMS"] = true;
+            ["FAMILY_FEAST"] = true;
+        }
     };
 };
 
@@ -364,6 +378,7 @@ QUICK_GUIDES = {
     [MIDSUMMER] = true;
     [YULE] = true;
     [ILAA] = true;
+    [SPRING] = true;
 }
 
 -- The default UI Order for the Festivals Drop Down
