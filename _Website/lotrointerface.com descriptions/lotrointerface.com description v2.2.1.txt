@@ -34,7 +34,7 @@ When the Plugin Manager opens, find Festival Buddy II in the list on the left si
 [SIZE="4"][COLOR="DeepSkyBlue"]Revision History[/COLOR][/SIZE]
 
 [list]
-[*] 2026-03-25 version 2.2.1: Added Quick Guide for Spring Festival (Clegur). Added visual timers for Yule eating contest and beggars. Numerous UI improvements. Release notes [url=https://forums.lotro.com/index.php?threads/plugin-festival-buddy-ii.1514/post-215694]here[/url].
+[*] 2026-03-25 version 2.2.1: Added Quick Guide for Spring Festival (Clegur). Added visual timers for Yule eating contest and beggars. Numerous UI improvements. Release notes [url=https://forums.lotro.com/index.php?threads/plugin-festival-buddy-ii.1514/post-235386]here[/url].
 [*] 2025-11-01 version 2.1.5: Updated Anniversary and Harvestmath barter items and fixes two bugs. Release notes [url=https://forums.lotro.com/index.php?threads/plugin-festival-buddy-ii.1514/post-215694]here[/url].
 [*] 2024-12-24 version 2.1.4: Updated Yule 2024 barter items, added local time offset support, and a few other fixes. Release notes [url=https://forums.lotro.com/index.php?threads/plugin-festival-buddy-ii.1514/post-135437]here[/url].
 [*] 2024-09-03 version 2.1.3: Fixed Hobnanigans play on Field 1, and in French and German. Updated Anniversary, Farmers Faire, and Yule barter items. Made alerts better. Release notes [url=https://forums.lotro.com/index.php?threads/plugin-festival-buddy-ii.1514/post-110521]here[/url].

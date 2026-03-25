@@ -23,6 +23,7 @@ Quick Guides:
     [*] Added timer that shows how long it takes to complete the quick guide. (Can be disabled via Options)
     [*] Added support to show progress on numerical quests [e.g. (1/8), (3/6)]
     [*] Added Spring Festival (Clegur) quick guide.
+[/list]
 
 Yule Festival:
 [list]
