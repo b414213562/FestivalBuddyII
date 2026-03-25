@@ -292,6 +292,7 @@ function MakeBarterItemRow(parent, barterItemData, rowWidth, rowHeight)
     ROWBACK:SetSize(rowWidth,rowHeight-rowBottomMargin);
     ROWBACK:SetBackground(_IMAGES.BARTERITEMSBACK);
     ROWBACK:SetBlendMode(Turbine.UI.BlendMode.AlphaBlend);
+    parent.rowBack = ROWBACK;
 
     local cItemInspect = Turbine.UI.Lotro.ItemInfoControl();
     cItemInspect:SetParent(ROWBACK);
