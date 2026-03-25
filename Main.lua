@@ -3,10 +3,9 @@ import "Turbine";
 import "Turbine.Gameplay";
 import "Turbine.UI";
 import "Turbine.UI.Lotro";
-import "CubePlugins.FestivalBuddyII.TurbineFiles.Class";
 
-
--- Plugin Imports..
+-- Libraries
+import "CubePlugins.FestivalBuddyII.Libraries.TurbineFiles.Class";
 import "CubePlugins.FestivalBuddyII.Libraries.VindarPatch";
 import "CubePlugins.FestivalBuddyII.Libraries.DisplaySizeListener";
 import "CubePlugins.FestivalBuddyII.Libraries.Onscreen";
@@ -14,6 +13,11 @@ import "CubePlugins.FestivalBuddyII.Libraries.DropDown";
 import "CubePlugins.FestivalBuddyII.Libraries.Alert";
 import "CubePlugins.FestivalBuddyII.Libraries.CallBack";
 import "CubePlugins.FestivalBuddyII.Libraries.DragBar";
+import "CubePlugins.FestivalBuddyII.Libraries.Tooltip";
+import "CubePlugins.FestivalBuddyII.Libraries.ColorPicker";
+import "CubePlugins.FestivalBuddyII.Libraries.Timer";
+
+-- Plugin Imports..
 import "CubePlugins.FestivalBuddyII.GeneralFunctions";
 import "CubePlugins.FestivalBuddyII.TimeFunctions";
 import "CubePlugins.FestivalBuddyII.Strings";
@@ -22,7 +26,6 @@ import "CubePlugins.FestivalBuddyII.Images";
 import "CubePlugins.FestivalBuddyII.QuestStrings";
 import "CubePlugins.FestivalBuddyII.FestivalFunctions";
 import "CubePlugins.FestivalBuddyII.Globals";
-import "CubePlugins.FestivalBuddyII.Libraries.Tooltip";
 import "CubePlugins.FestivalBuddyII.ChatLogger";
 import "CubePlugins.FestivalBuddyII.BarterItems";
 import "CubePlugins.FestivalBuddyII.HobnanigansTimerControl";
@@ -34,7 +37,6 @@ import "CubePlugins.FestivalBuddyII.QuickGuides.Yule.QuickGuideStrings_Yule";
 
 -- Windows --
 import "CubePlugins.FestivalBuddyII.TimeOffsetControl";
-import "CubePlugins.FestivalBuddyII.Libraries.ColorPicker";
 import "CubePlugins.FestivalBuddyII.OptionsWin";
 import "CubePlugins.FestivalBuddyII.BarterWin";
 import "CubePlugins.FestivalBuddyII.MainWin";
