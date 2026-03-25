@@ -1,3 +1,32 @@
+Quick Guide:
+    Reset button and save/load do not take the new target system into account. :(
+
+Main Window idea from Snafuto:
+    Track how many of the daily wrappers (e.g. A Taste of Spring) each character has completed, and show:
+        a) How many more days it will take to complete.
+        b) How many days total.
+            e.g. : "4/12 Wrappers completed for The Splendor of Spring."
+        Optional extra:
+        c) Allow user to set start & stop dates for a festival in options. Then:
+            Show how many more days in the festival.
+            e.g. : "4/12 Wrappers completed for The Splendor of Spring, 6 days remaining."
+        Another extra:
+            Call out if the festival wrapper rewards cyan or gold tracery tokens.
+
+Barter window improvements:
+    Save off expanded state of each node when plugin unloads.
+    Pay attention to saved expanded state of each node when plugin loads.
+        -- TODO: Load expand/collapse state from save file:
+        --   Where is this saved? Some people say: Account
+        -- local expanded = true;
+        -- rowHolder:SetExpanded(expanded);
+
+    Add a search box
+
+Anniversary Housing Items missing costs
+
+The whole TOKEN_FESTIVAL_USES_GENERIC_TOKEN vs sorting tokens via UI_ORDER has some redundancy. What can we do about that?
+
 2024-12-31 19:54: GnarGnar: feature request for festival buddy II, link to FibroJedi pages
 
 Maybe change storedTienUur to English? Or all the way Dutch?
