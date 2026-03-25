@@ -476,6 +476,14 @@ Platziert Narzissentage-Banner
             ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Spring/Family Feast.tga";
         };
 
+        ["BEES_BIG_BUSINESS"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = "";
+                ["FRENCH"] = "";
+                ["GERMAN"] = "";
+            };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Spring/Bee's Big Business.tga";
+        };
 
     };
 

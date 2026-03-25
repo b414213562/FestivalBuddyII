@@ -774,6 +774,8 @@ _LANG = {
             ["STRETCHED_TOO_THIN"]   = {["ENGLISH"] = "Stretched Too Thin";                         ["FRENCH"] = "Trop d'éparpillement";                                ["GERMAN"] = "Zu wenig";                                            };
             ["WELL_WATERED_BLOOMS"]  = {["ENGLISH"] = "Well-watered Blooms";                        ["FRENCH"] = "Fleurs bien arrosées";                                ["GERMAN"] = "Ordentlich gegossene Blumen";                         };
             ["FAMILY_FEAST"]         = {["ENGLISH"] = "Family Feast";                               ["FRENCH"] = "Festin familial";                                     ["GERMAN"] = "Familienfestmahl";                                    };
+
+            ["BEES_BIG_BUSINESS"]    = {["ENGLISH"] = "Bee's Big Business";                         ["FRENCH"] = "Un travail d'abeilles";                               ["GERMAN"] = "Fleißiges Bienchen";                                  };
         };
 
         [HARVESTMATH] = {
