@@ -762,6 +762,18 @@ _LANG = {
             ["MISPLACED_COMPANIONS"] = {["ENGLISH"] = "Misplaced Companions";                       ["FRENCH"] = "Les compagnons égarés";                               ["GERMAN"] = "Am falschen Ort";                                     };
             ["A_LAUGH_AT_THE_LOST"]  = {["ENGLISH"] = "A Laugh at the Lost";                        ["FRENCH"] = "Une farce aux perdus";                                ["GERMAN"] = "Ein Witz auf Kosten der Verirrten";                   };
             ["TERRIBLE_TWEENS"]      = {["ENGLISH"] = "Terrible Tweens";                            ["FRENCH"] = "Terribles jeunes";                                    ["GERMAN"] = "Fürchterliche Zwanziger";                             };
+
+            ["A_TASTE_OF_SPRING"]    = {["ENGLISH"] = "A Taste of Spring";                          ["FRENCH"] = "Un goût de printemps";                                ["GERMAN"] = "Ein Hauch von Frühling";                              };
+            ["DAFFODIL_DAYS_DAILY"]  = {["ENGLISH"] = "Daffodil Days (Daily)";                      ["FRENCH"] = "Jours de la jonquille (quotidien)";                   ["GERMAN"] = "Narzissentage (Täglich)";                             };
+
+            ["THE_GIFT_OF_SPRING"]   = {["ENGLISH"] = "The Gift of Spring";                         ["FRENCH"] = "Le cadeau du printemps";                              ["GERMAN"] = "Das Geschenk des Frühlings";                          };
+            ["PROMOTING_PIE"]        = {["ENGLISH"] = "Promoting Pie";                              ["FRENCH"] = "Promotion des tartes";                                ["GERMAN"] = "Kuchenwerbung";                                       };
+            ["FLOWER_ENVY"]          = {["ENGLISH"] = "Flower Envy";                                ["FRENCH"] = "Envie de fleurs";                                     ["GERMAN"] = "Blumenneid";                                          };
+            ["THE_MUSICIANS_MISFORTUNE"] = {["ENGLISH"] = "The Musicians' Misfortune";              ["FRENCH"] = "Les déboires des musiciens";                          ["GERMAN"] = "Das Pech der Musiker";                                };
+            ["SPRINGTIMES_COLOURS"]  = {["ENGLISH"] = "Springtime's Colours";                       ["FRENCH"] = "Couleurs du printemps";                               ["GERMAN"] = "Frühlingsfest-Farben";                                };
+            ["STRETCHED_TOO_THIN"]   = {["ENGLISH"] = "Stretched Too Thin";                         ["FRENCH"] = "Trop d'éparpillement";                                ["GERMAN"] = "Zu wenig";                                            };
+            ["WELL_WATERED_BLOOMS"]  = {["ENGLISH"] = "Well-watered Blooms";                        ["FRENCH"] = "Fleurs bien arrosées";                                ["GERMAN"] = "Ordentlich gegossene Blumen";                         };
+            ["FAMILY_FEAST"]         = {["ENGLISH"] = "Family Feast";                               ["FRENCH"] = "Festin familial";                                     ["GERMAN"] = "Familienfestmahl";                                    };
         };
 
         [HARVESTMATH] = {

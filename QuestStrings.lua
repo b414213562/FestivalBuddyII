@@ -233,6 +233,249 @@ _QUESTSTRINGS = {
             };
         };
 
+        ["A_TASTE_OF_SPRING"] = {
+            ["HIDDEN"] = true;
+        };
+
+        ["DAFFODIL_DAYS_DAILY"] = {
+            ["HIDDEN"] = true;
+        };
+
+        ["THE_GIFT_OF_SPRING"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = "Pick daffodils around Clegur.\n\nPlant daffodils in containers.";
+                ["FRENCH"] = "Cueillez des jonquilles autour de Clegur.\n\nPlantez des jonquilles dans des pots.";
+                ["GERMAN"] = "Pflückt Narzissen in Clegur.\n\nPflanzt Narzissen in Behältern ein.";
+            };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Spring/The Gift of Spring.tga";
+        };
+
+        ["PROMOTING_PIE"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = "Give fliers to visiting hobbits.";
+                ["FRENCH"] = "Distribuez des prospectus aux Hobbits en visite.";
+                ["GERMAN"] = "Verteilt Flugblätter an Hobbitgäste.";
+            };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Spring/Promoting Pie.tga";
+        };
+
+        ["FLOWER_ENVY"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = [[
+1. Pick up quest from Naffa Blodven
+2. Talk to Welduth Lhush
+3. Talk to Gloron Magimrud
+4. Talk to Malmadog Torlan
+5. Place the banner in front of the barn
+3. Talk to Gloron Magimrud
+2. Talk to Welduth Lhush,
+    Collect the prized daffodil bulbs
+1. Give the bulbs to Naffa Blodven
+]];
+                ["FRENCH"] = [[
+1. Récupérez la quête auprès du Naffa Sanvin
+2. Allez parler à Velda Luche
+3. Parlez à Gloron Magirouge
+4. Parlez à Malmadog Torlan
+5. Placez la bannière devant la grange
+3. Parlez à Gloron Magirouge
+2. Allez parler à Velda Luche,
+    Récoltez les précieux bulbes de jonquilles
+1. Donnez les bulbes à Naffa Sanvin
+]];
+                ["GERMAN"] = [[
+1. Nimm die Aufgabe von Naffa Blodven
+2. Sprecht mit Welduth Lhush
+3. Sprecht mit Gloron Magimrud
+4. Sprecht mit Malmadog Torlan
+5. Platziert das Banner vor der Scheune
+3. Sprecht mit Gloron Magimrud
+2. Sprecht mit Welduth Lhush,
+    Sammelt die begehrten Narzissenzwiebeln ein
+1. Gebt die Blumenzwiebeln Naffa Blodven
+]];
+            };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Spring/Flower Envy.tga";
+        };
+
+        ["THE_MUSICIANS_MISFORTUNE"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = [[
+1. Pick up quest from Lutenist
+2. Find the lute
+3. Find the fiddle
+4. Find the bagpipes
+5. Find the bodhran
+6. Find the flute
+1. Return the instruments
+]];
+                ["FRENCH"] = [[
+1. Récupérez la quête auprès du Luthiste
+2. Trouvez le luth
+3. Trouvez le violon
+4. Trouvez la cornemuse
+5. Trouvez le bodhrán
+6. Trouvez la flûte
+1. Rendez les instruments aux musiciens.
+]];
+                ["GERMAN"] = [[
+1. Nimm die Aufgabe von Lautenspieler
+2. Findet die Laute
+3. Findet die Fiedel
+4. Findet den Dudelsack
+5. Findet die Bodhran
+6. Findet die Flöte
+1. Bringt die Instrumente zu den Spielern
+]];
+            };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Spring/The Musicians' Misfortune.tga";
+        };
+
+        ["SPRINGTIMES_COLOURS"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = [[
+1. Pick up quest from Malmadog Torlan
+2. Pick up Daffodil Days banners
+Place Daffodil Days banners
+1. Talk to Mayor Malmadog
+]];
+                ["FRENCH"] = [[
+1. Récupérez la quête auprès du Malmadog Torlan
+2. Ramassez les bannières des Jours de la jonquille
+Installez des bannières pour les Jours des jonquilles
+1. Parlez au maire Malmadog Torlan à Clegur
+]];
+                ["GERMAN"] = [[
+1. Nimm die Aufgabe von Malmadog Torlan
+2. Nehmt Narzissentage-Banner auf
+Platziert Narzissentage-Banner
+1. Sprecht mit Bürgermeister Malmadog Torlan in Clegur
+]];
+
+            };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Spring/Springtime's Colours.tga";
+        };
+
+        ["STRETCHED_TOO_THIN"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = [[
+1. Pick up quest from Cunedda Moltgig
+    Pick up the packaged lamb meat
+2. Deliver lamb meat to Leri Grudd
+3. Deliver lamb meat to Mayor Malmadog Torlan
+4. Deliver lamb meat to Delyth Saethur
+5. Deliver lamb meat to Drudwen
+6. Deliver lamb meat to Gloron Magimrud
+7. Deliver lamb meat to Welduth Lhush
+1. Talk to Cunedda Moltgig
+]];
+                ["FRENCH"] = [[
+1. Récupérez la quête auprès du Cunedda Muguigue
+    Ramassez le paquet de viande d'agneau
+2. Livrez la viande d'agneau à Leri Grudd
+3. Livrez la viande d'agneau au maire Malmadog Torlan
+4. Livrez la viande d'agneau à Delyth Saethur
+5. Livrez la viande d'agneau à Drudwen
+6. Livrez la viande d'agneau à Gloron Magirouge
+7. Livrez la viande d'agneau à Velda Luche
+1. Parlez à Cunedda Muguigue
+]];
+                ["GERMAN"] = [[
+1. Nimm die Aufgabe von Cunedda Moltgig
+    Nehmt das eingepackte Lammfleisch
+2. Bringt Leri Grudd Lammfleisch
+3. Bringt Bürgermeister Malmadog Lammfleisch
+4. Bringt Delyth Saethur Lammfleisch
+5. Bringt Drudwen Lammfleisch
+6. Bringt Gloron Magimrud Lammfleisch
+7. Bringt Welduth Lhush Lammfleisch
+1. Sprecht mit Cunedda Moltgig
+]];
+
+            };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Spring/Stretched Too Thin.tga";
+        };
+
+        ["WELL_WATERED_BLOOMS"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = [[
+1. Pick up quest from Leri Grudd
+2. Find the water buckets near the pond
+1. Water the daffodils near Leri Grudd's house
+2. Collect another water bucket
+3. Water the daffodils near the stable-master
+2. Collect another water bucket
+4. Water the daffodils in front of Delyth Saethur's smial
+2. Collect yet another water bucket
+5. Water the daffodils by the oven
+1. Talk to Leri Grudd
+]];
+                ["FRENCH"] = [[
+1. Récupérez la quête auprès du Pick up quest from Leri Grudd
+2. Trouvez les seaux d'eau près de l'étang
+1. Water the daffodils near Leri Grudd's house
+2. Récupérez un autre seau d'eau
+3. Water the daffodils near the stable-master
+2. Récupérez un autre seau d'eau
+4. Water the daffodils in front of Delyth Saethur's smial
+2. Récupérez un autre seau d'eau, encore
+5. Water the daffodils by the oven
+1. Parlez à Leri Grudd
+]];
+                ["GERMAN"] = [[
+1. Nimm die Aufgabe von Leri Grudd
+2. Findet die Wassereimer in der Nähe des Teichs
+1. Water the daffodils near Leri Grudd's house
+2. Beschafft einen weiteren Wassereimer
+3. Water the daffodils near the stable-master
+2. Beschafft einen weiteren Wassereimer
+4. Water the daffodils in front of Delyth Saethur's smial
+2. Beschafft noch einen weiteren Wassereimer
+5. Water the daffodils by the oven
+1. Sprecht mit Leri Grudd
+]];
+
+            };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Spring/Well-watered Blooms.tga";
+        };
+
+        ["FAMILY_FEAST"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = [[
+1. Pick up quest from Rosentyl Flutch
+2. Talk to Cunedda Moltgig
+    Collect a package of lamb meat
+3. Talk to Gloron Magimrud
+    Collect carrots; Collect potatoes
+4. Talk to Bortho Bishel, the Provisioner's Assistant
+    Collect leeks
+1. Bring the ingredients to Rosentyl Flutch
+]];
+                ["FRENCH"] = [[
+1. Récupérez la quête auprès du Rosentyl Flutch
+2. Parlez à Cunedda Muguigue
+    Récupérez un colis de viande d'agneau
+3. Parlez à Gloron Magirouge
+    Récoltez des carottes; Récupérer des pommes de terre
+4. Parlez à Bortho Bichelle, l'assistant de l'approvisionneur
+    Récoltez des poireaux
+1. Apportez les ingrédients à Rosentyl Flutch
+]];
+                ["GERMAN"] = [[
+1. Nimm die Aufgabe von Rosentyl Flutch
+2. Sprecht mit Cunedda Moltgig
+    Sammelt ein Paket Lammfleisch
+3. Sprecht mit Gloron Magimrud
+    Sammelt Karotten; Sammelt Kartoffeln
+4. Sprecht mit Bortho Bishel, dem Gehilfen der Vorratshändlerin
+    Sammelt Lauch
+1. Bringt die Zutaten zu Rosentyl Flutsch
+]];
+
+            };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Spring/Family Feast.tga";
+        };
+
 
     };
 
