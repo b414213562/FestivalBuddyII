@@ -593,6 +593,19 @@ function FillMainWin(FESTIVAL)
         btnMazeMap:SetVisible(_QUESTSTRINGS[FESTIVAL].MAP ~= nil);
     end
 
+    local quickGuideLeft = MainWindowWidth / 6;
+    local mapLeft = MainWindowWidth / 6;
+    local altsLeft = MainWindowWidth / 2;
+    if (QUICK_GUIDES[SELECTEDFESTIVAL] and _QUESTSTRINGS[SELECTEDFESTIVAL].MAP) then
+        -- All three buttons are visible, change their locations:
+        mapLeft = 0;
+        quickGuideLeft = 100;
+        altsLeft = 200;
+    end
+    if (btnMazeMap) then btnMazeMap:SetLeft(mapLeft); end
+    if (btnQuickGuides) then btnQuickGuides:SetLeft(quickGuideLeft); end
+    if (btnAlts) then btnAlts:SetLeft(altsLeft); end
+
     RefreshDebuffView();
 end
 
