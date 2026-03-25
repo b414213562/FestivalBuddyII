@@ -320,6 +320,19 @@ function MakeBarterItemRow(parent, barterItemData, rowWidth, rowHeight)
             end
         end
     end
+
+    parent.SelectedChanged = BarterItemRowSelectionChanged;
+
+end
+
+function BarterItemRowSelectionChanged(sender, args)
+    if (sender:IsSelected()) then
+        -- Show border around edge
+        sender.rowBack:SetBackground(_IMAGES.BARTERITEMSBACK_HIGHLIGHTED);
+    else
+        -- Hide border around edge
+        sender.rowBack:SetBackground(_IMAGES.BARTERITEMSBACK);
+    end
 end
 
 function RefreshBarterItems()

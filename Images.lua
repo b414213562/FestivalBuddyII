@@ -16,6 +16,7 @@ _IMAGES = {
     ["REFRESH_OVER"] = RESOURCEDIR .. "button_refresh_highlight.tga";
     ["COMMONBACK"] = RESOURCEDIR .. "CommonBack.tga";
     ["BARTERITEMSBACK"] = RESOURCEDIR .. "BarterItems.tga";
+    ["BARTERITEMSBACK_HIGHLIGHTED"] = RESOURCEDIR .. "BarterItems_Highlighted.tga";
     ["BARTERBACK"] = RESOURCEDIR .. "BarterBackNoTopWide.tga";
     ["ALTBACK"] = RESOURCEDIR .. "Alt_Back.tga";
 
