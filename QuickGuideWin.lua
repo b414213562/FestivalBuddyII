@@ -334,7 +334,17 @@ end
 function QuickGuideWinGetIndexFromChat(cMessage, objectiveTable)
     local index = nil;
     if (_QUICK_GUIDE[SELECTEDFESTIVAL]) then
-        index = objectiveTable[SELECTEDFESTIVAL][cMessage];
+        local indexOrTable = objectiveTable[SELECTEDFESTIVAL][cMessage];
+        if (type(indexOrTable) == "table") then
+            for _, entry in ipairs(indexOrTable) do
+                if (not entry.DONE) then
+                    entry.DONE = true;
+                    return entry.INDEX;
+                end
+            end
+        else
+            index = objectiveTable[SELECTEDFESTIVAL][cMessage];
+        end
     end
     return index;
 end
