@@ -166,7 +166,7 @@ function MakeExpandCollapseAllButton()
                 wBarterWinParent.BarterItems:CollapseAll();
         end
     end
-    collapseAll:SetToolTip(GetString(_LANG.TOOLTIPS.GENERIC.COLLAPSE_ALL_TOOLTIP)); -- todo: translate this!
+    collapseAll:SetToolTip(GetString(_LANG.TOOLTIPS.GENERIC.COLLAPSE_ALL_TOOLTIP));
 
     -- End Expand / Collapse All buttons
 
