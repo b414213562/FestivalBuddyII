@@ -1,6 +1,7 @@
 v2.2.2 changes:
     Barter Window:
         Added "last updated" entry for each festival
+        Updated Anniversary barter items
 
 v2.2.1 changes:
     General:
