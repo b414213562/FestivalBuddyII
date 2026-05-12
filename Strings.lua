@@ -1014,6 +1014,11 @@ _LANG = {
             ["ENGLISH"] = "Main Window Scaling: %.1fx";
             ["GERMAN"] = "Haupt-Fenster Vergrößerung: %.1fx";
         };
+
+        ["TOOLBAR_SCALING"] = {
+            ["ENGLISH"] = "UI Settings: UI Scale: Toolbar: %.2fx";
+            ["GERMAN"] = "UI Settings: UI Scale: Werkzeugleiste: %.2fx";
+        };
     };
 };
 

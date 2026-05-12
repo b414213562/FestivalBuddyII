@@ -131,6 +131,12 @@ DEFAULT_SETTINGS = {
         ["Y"] = SCREENHEIGHT/3;
     };
 
+    -- Toolbar goes from 0.40 to 4.00, incremented by 0.05.
+    -- We'll store it in hundreths, so from 40 to 400.
+    ["SCALE"] = {
+        ["TOOLBAR"] = 100; -- 1.00 => 100
+    };
+
     ["MINIMIZED_ICON"] = {
         ["X"] = SCREENWIDTH/2;
         ["Y"] = SCREENHEIGHT/2;

@@ -2,8 +2,11 @@
 function DrawFireworksEventQuickslotWin()
     ---@class Window
     wQuickslot = Turbine.UI.Window();
+    wQuickslot.OriginalWidth = 194;
+    wQuickslot.OriginalHeight = 41;
     wQuickslot:SetBackground(_IMAGES.EVENT_QUICKSLOT_FIREWORKS_BREE);
     wQuickslot:SetSize(194, 41);
+    wQuickslot:SetStretchMode(1);
     wQuickslot:SetPosition(SETTINGS.EVENT_QUICKSLOT.X,SETTINGS.EVENT_QUICKSLOT.Y);
     wQuickslot:SetMouseVisible(false);
     wQuickslot:SetZOrder(1);
@@ -15,6 +18,14 @@ function DrawFireworksEventQuickslotWin()
     wQuickslot.wBorder2 = CreateBorder(2);
     wQuickslot.wBorder3 = CreateBorder(3);
     wQuickslot.wBorder4 = CreateBorder(4);
+
+    UpdateFireworksEventQuickslotsWinScaling();
+end
+
+function UpdateFireworksEventQuickslotsWinScaling()
+    local scale = SETTINGS.SCALE.TOOLBAR / 100; -- Store in hundreths (e.g. 100), we need the value (e.g. 1.00)
+
+    wQuickslot:SetSize(wQuickslot.OriginalWidth * scale, wQuickslot.OriginalHeight * scale);
 end
 
 local leftMargin = 28;

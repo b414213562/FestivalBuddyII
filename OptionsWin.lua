@@ -32,6 +32,7 @@ function DrawGenericOptions(options, y)
     y = y + 30;
 
     y = DrawMainWindowScaling(options, y);
+    y = DrawToolbarScaling(options, y);
 
     local timeOffsetSection = TimeOffsetControl();
     timeOffsetSection:SetParent(options);
@@ -143,6 +144,85 @@ function DrawMainWindowScaling(options, y)
     end)
 
     return y;
+end
+
+function DrawToolbarScaling(options, y)
+    ---Convert Setting to scrollbar Value (e.g. 400 => 72)
+    ---@param setting number
+    ---@return number
+    local ScrollbarValueFromSetting = function(setting)
+        -- For setting 400 we need to get 72 (4.0)
+        -- For setting 40 we need to get 0 (0.4)
+        -- etc.
+
+        -- 400 / 100 => 4, -0.4 => 3.6, /= .05 => 72
+        -- 40 / 100 => 0.4, -0.4 => 0, /= .05 => 0
+        -- 100 / 100 => 1.0, -0.4 => 0.6, /= .05 => 12
+        local scale = setting / 100;
+        local scrollbarValue = (scale - 0.4) / 0.05;
+        return scrollbarValue;
+    end
+
+    ---Convert scrollbar value to Setting (e.g. 72 => 400)
+    ---@param scrollbarValue number
+    ---@return number
+    local SettingFromScrollbarValue = function(scrollbarValue)
+        -- For value 72 we need 400
+        -- For value 0 we need 40
+
+        -- 72 * .05 = 3.6, + 0.4 = 4, *= 100 = 400
+        -- 0 * 0.05 = 0, +0.4 = 0.4, *= 100 = 40
+        -- 12 * 0.05 = 0.6, +0.4 = 1, *= 100 = 100
+        local scale = (scrollbarValue * 0.05) + 0.4;
+        local setting = scale * 100;
+        return setting;
+    end
+
+    ---Update a percent label from a setting
+    ---@param label Label
+    ---@param setting number
+    local SetLabelPercentFromSetting = function(label, setting)
+        label:SetText(string.format(GetString(_LANG.OPTIONS.TOOLBAR_SCALING), setting / 100));
+    end
+
+    -- Label for the Main Window scaling scrollbar 
+    options.toolbarScalingLabel = Turbine.UI.Label();
+    options.toolbarScalingLabel:SetParent(options);
+    options.toolbarScalingLabel:SetSize(300, 25);
+    SetLabelPercentFromSetting(options.toolbarScalingLabel, SETTINGS.SCALE.TOOLBAR);
+    options.toolbarScalingLabel:SetPosition(10, y);
+    y = y + 20;
+
+    -- Scrollbar to adjust the Main Window scaling
+    options.toolbarScalingScrollbar = Turbine.UI.Lotro.ScrollBar();
+    options.toolbarScalingScrollbar:SetParent(options);
+    options.toolbarScalingScrollbar:SetOrientation(Turbine.UI.Orientation.Horizontal);
+    options.toolbarScalingScrollbar:SetSize(250, 10);
+    options.toolbarScalingScrollbar:SetPosition(10, y);
+    options.toolbarScalingScrollbar:SetMinimum(0);
+    options.toolbarScalingScrollbar:SetMaximum(72);
+    options.toolbarScalingScrollbar:SetSmallChange(1);
+    options.toolbarScalingScrollbar:SetLargeChange(10);
+
+    options.HideWindowTimer = Libraries.Timer(3000, false, function() if (not wQuickslot.isWindowVisible) then wQuickslot:SetVisible(false); end end);
+    options.toolbarScalingScrollbar:SetValue(ScrollbarValueFromSetting(SETTINGS.SCALE.TOOLBAR));
+    options.toolbarScalingScrollbar.ValueChanged = function(sender, args)
+        local scrollbarValue = options.toolbarScalingScrollbar:GetValue();
+        SETTINGS.SCALE.TOOLBAR = SettingFromScrollbarValue(scrollbarValue);
+
+        SetLabelPercentFromSetting(options.toolbarScalingLabel, SETTINGS.SCALE.TOOLBAR);
+        UpdateFireworksEventQuickslotsWinScaling();
+
+        -- If the window is not currently visible, make it visible for a few seconds:
+        if (not wQuickslot.isWindowVisible) then
+            wQuickslot:SetVisible(true);
+            options.HideWindowTimer:Start();
+        end
+
+    end
+    y = y + 25;
+    return y;
+
 end
 
 function CreateColorRow(colorSetting)
