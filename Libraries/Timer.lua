@@ -2,6 +2,10 @@
 
 Timer = class(Turbine.UI.Control);
 
+---Create a timer
+---@param timeoutMS number
+---@param autoRepeat boolean
+---@param callback function
 function Timer:Constructor(timeoutMS, autoRepeat, callback)
     Turbine.UI.Control.Constructor(self);
 
