@@ -43,7 +43,7 @@ function DrawBarterWin()
     lblBarterFestival:SetParent(wBarterWinParent);
     lblBarterFestival:SetSize(windowWidth - 60,30);
     lblBarterFestival:SetPosition((windowWidth / 2) - (lblBarterFestival:GetWidth() / 2),40);
-    lblBarterFestival:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleCenter);
+    lblBarterFestival:SetTextAlignment(Turbine.UI.ContentAlignment.TopCenter);
     lblBarterFestival:SetFont(TrajanPro16);
     lblBarterFestival:SetForeColor(YELLOW);
     --lblBarterFestival:SetBackColor(Turbine.UI.Color.White);
@@ -396,7 +396,22 @@ function RefreshBarterItems()
     end
     wBarterWinParent.LoadedFestival = SELECTEDFESTIVAL;
 
-    lblBarterFestival:SetText(GetString(_LANG.OTHER.BARTERITEMS)..": "..GetString(_LANG.FESTIVALS[SELECTEDFESTIVAL]));
+    local lastUpdated = "";
+    local lableHeight = 20;
+    if (_BARTER[SELECTEDFESTIVAL].LAST_UPDATED) then
+        lastUpdated = "\n(" ..
+            GetString(_LANG.OTHER.LAST_UPDATED) ..
+            _BARTER[SELECTEDFESTIVAL].LAST_UPDATED ..
+            ")";
+        lableHeight = 40;
+    end
+
+    local festivalLabelText =
+        GetString(_LANG.OTHER.BARTERITEMS) .. ": " ..
+        GetString(_LANG.FESTIVALS[SELECTEDFESTIVAL]) ..
+        lastUpdated;
+    lblBarterFestival:SetText(festivalLabelText);
+    lblBarterFestival:SetHeight(lableHeight);
 
     local barterItems = wBarterWinParent.BarterItems;
     barterItems:GetNodes():Clear();

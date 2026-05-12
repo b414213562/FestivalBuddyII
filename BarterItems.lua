@@ -18,6 +18,7 @@ _BARTER =
     -- SPRING ------------------------------------------------------------------------------------------
     [SPRING] =
     {
+        ["LAST_UPDATED"] = "2026-03";
         [1]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Sergeant Tom (Festival Grounds) /\n    Rhudamer Hirtul (Clegur)"; }; };
         [2]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Fresh Rewards"; }; };
         [3]={[2]={["SPRING_FESTIVAL"]=15;};[1]=0x70074432;}; --Daffodil Celebration Garments - Gift-wrapped Selection Box
@@ -344,6 +345,7 @@ _BARTER =
     -- FARMERS FAIRE --------------------------------------------------------------------------------------------
     [FARMERSFAIRE] =
     {
+        ["LAST_UPDATED"] = "2024-08";
         [1]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Dill Goodchild, Festival Rewards"; }; };
         [2]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Emotes and Cosmetic Pets"; }; };
         [3]={[2]={["FARMERSFAIRE_FESTIVAL"]=80;};[1]=1879335454;}; -- Grant Hobbit Dance 4 Emote
@@ -818,6 +820,7 @@ _BARTER =
     -- HARVESTMATH -------------------------------------------------------------------------------------
     [HARVESTMATH] =
     {
+        ["LAST_UPDATED"] = "2025-11";
         [1]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Rosa Hornblower, Fall Festival Trader"; }; };
         [2]={[1]=DIVIDER2; [2]={["ENGLISH"] = "New Items"; }; };
         [3]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879516968;}; -- Cobweb Garments - Gift-wrapped Selection Box
@@ -1075,6 +1078,7 @@ _BARTER =
     -- YULE --------------------------------------------------------------------------------------------
     [YULE] =
     {
+        ["LAST_UPDATED"] = "2024-12";
         [1]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Jeffrey Bloomer, Barter Vendor"; }; };
         [2]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Consumables"; }; };
         [3]={[2]={["YULE_FESTIVAL"]=1;};[1]=1879302499;}; -- Map to Winter-home
@@ -1793,6 +1797,7 @@ _BARTER =
     -- HOBNANIGANS ----------------------------
     [HOBNANIGANS] =
     {
+        ["LAST_UPDATED"] = "before 2023-06";
         -- Quartermaster (Consumables) [25.6S, 52.3W]
          [1]={[1]=DIVIDER1;[2]={["ENGLISH"] = "Quartermaster (Consumables) [25.6S, 52.3W]";};};
          [2]={[1]=1879305705;[2]={["HOBNANIGANS_TOKEN"]=5;};};    -- White Carrying Chicken
@@ -1963,6 +1968,7 @@ _BARTER =
 
     [MIDSUMMER] =
     {
+        ["LAST_UPDATED"] = "2024-06";
         [1]={[1]=DIVIDER1; [2]={["ENGLISH"] = "New Items (2024)"; ["GERMAN"] = "Neue Gegenstände (2024)"; }; };
         [2]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879408621;}; -- Circlet of Hanging Blooms
         [3]={[2]={["MIDSUMMER_TOKEN"]=10;};[1]=1879487482;}; -- Ceremonial Staff of the Eternal Sun

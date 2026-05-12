@@ -87,6 +87,7 @@ _LANG = {
     ["OTHER"] = {
         ["BARTER"]      = {["ENGLISH"] = "Barter";          ["FRENCH"] = "Troqueur";            ["GERMAN"] = "Tausch";          };
         ["BARTERITEMS"] = {["ENGLISH"] = "Barter Items";    ["FRENCH"] = "Articles de troc";    ["GERMAN"] = "Tauschobjekte";   };
+        ["LAST_UPDATED"]= {["ENGLISH"] = "Last updated: ";  ["FRENCH"] = "Dernière mise à jour : "; ["GERMAN"] = "Letzte Aktualisierung: "; };
         ["SORT"]        = {["ENGLISH"] = "Sort";            ["FRENCH"] = "Trier";               ["GERMAN"] = "Sortieren";       };
         ["QUICK_GUIDE"] = {["ENGLISH"] = "Quick Guide";     ["FRENCH"] = "Guide Rapide";        ["GERMAN"] = "Kurzanleitung";   };
         ["ALTS"]        = {["ENGLISH"] = "Alts";            ["FRENCH"] = "Alts";                ["GERMAN"] = "Twinks";          };

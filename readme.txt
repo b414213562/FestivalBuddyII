@@ -1,3 +1,7 @@
+v2.2.2 changes:
+    Barter Window:
+        Added "last updated" entry for each festival
+
 v2.2.1 changes:
     General:
         Added X button to clear the selected quest.
