@@ -1,0 +1,16 @@
+Festival Buddy II version v2.2.2 is now available at [URL='https://www.lotrointerface.com/downloads/info1218-FestivalBuddyII.html']lotrointerface.com[/URL].
+
+This update adds a "last updated" note to the barter window, updates barter items for Anniversary, and adds a scaling option for the Fireworks in Bree helper window.
+
+Version 2.2.2 release notes:
+
+Barter Window:
+[list]
+    [*] Added "last updated" entry for each festival
+    [*] Updated Anniversary barter items
+[/list]
+
+Options:
+[list]
+    [*] Added scaling setting for Toolbars. (Currently used by Fireworks in Bree helper.)
+[/list]
