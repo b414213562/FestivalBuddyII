@@ -2,6 +2,7 @@ v2.2.2 changes:
     Barter Window:
         Added "last updated" entry for each festival
         Updated Anniversary barter items
+        Added scaling setting for Toolbars. (Currently used by Fireworks in Bree helper.)
 
 v2.2.1 changes:
     General:
