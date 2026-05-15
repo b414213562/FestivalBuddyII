@@ -1017,7 +1017,8 @@ _LANG = {
 
         ["TOOLBAR_SCALING"] = {
             ["ENGLISH"] = "UI Settings: UI Scale: Toolbar: %.2fx";
-            ["GERMAN"] = "UI Settings: UI Scale: Werkzeugleiste: %.2fx";
+            ["GERMAN"] = "Oberfläche: Anzeigegrösse: Werkzeugleiste: %.2fx";
+            ["FRENCH"] = "Paramètres IU: Echelle IU: Barre d'outils: %.2fx";
         };
     };
 };
