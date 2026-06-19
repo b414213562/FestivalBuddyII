@@ -3,6 +3,9 @@ v2.2.2 changes:
         Added "last updated" entry for each festival
         Updated Anniversary barter items
     
+    Quick Guides:
+        Added initial Midsummer (Furtherholm) quick guide
+    
     Options:
         Added scaling setting for Toolbars. (Currently used by Fireworks in Bree helper.)
 

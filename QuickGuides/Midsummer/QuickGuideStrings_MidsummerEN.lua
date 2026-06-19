@@ -77,6 +77,102 @@ QG_MIDSUMMER[QG_MIDSUMMER_INDEX.WHAT_ALES_YOU_END].DISPLAY = "Turn in 'What Ales
 QG_MIDSUMMER[QG_MIDSUMMER_INDEX.TASTY_MORSELS_END].DISPLAY = "Turn in 'Tasty Morsels' to Othnoron.";
 QG_MIDSUMMER[QG_MIDSUMMER_INDEX.FLORAL_CROWNS_END].DISPLAY = "Turn in 'Floral Crowns' to Florist.";
 
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.HOUSEKEEPING_PICKUP].DISPLAY = function() return TakeFrom("Housekeeping", "Darôma"); end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.HOUSEKEEPING_BEDS].DISPLAY = function() return "Make the beds"; end
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.HOUSEKEEPING_FLOORS].DISPLAY = function() return "Scrub the floors"; end
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.HOUSEKEEPING_END].DISPLAY = function() return TurnInTo("Housekeeping", "Darôma"); end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.TIDAL_TREASURES_PICKUP].DISPLAY = function() return TakeFrom("Tidal Treasures", "Darôma"); end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.TIDAL_TREASURES_SEASHELLS].DISPLAY = function() return "Collect seashells"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.TIDAL_TREASURES_END].DISPLAY = function() return TurnInTo("Tidal Treasures", "Darôma"); end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.ASSISTING_THE_COOK_PICKUP].DISPLAY = function() return TakeFrom("Assisting the Cook", "Sâghlem"); end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.ASSISTING_THE_COOK_HERB_1].DISPLAY = function() return "Collect fresh herb on slope up"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.ASSISTING_THE_COOK_HERB_2].DISPLAY = function() return "Collect fresh herb on right"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.ASSISTING_THE_COOK_HERB_3].DISPLAY = function() return "Collect fresh herb on left, going up"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.ASSISTING_THE_COOK_HERB_4].DISPLAY = function() return "Collect fresh herb behind olive tree"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.ASSISTING_THE_COOK_LEMON_1].DISPLAY = function() return "Collect juicy lemon"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.ASSISTING_THE_COOK_LEMON_2].DISPLAY = function() return "Collect juicy lemon across the road"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.ASSISTING_THE_COOK_LEMON_3].DISPLAY = function() return "Collect juicy lemon beyond olive tree"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.ASSISTING_THE_COOK_LEMON_4].DISPLAY = function() return "Follow path up and Collect juicy lemon from tree on left"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.ASSISTING_THE_COOK_OLIVE_1].DISPLAY = function() return "Collect olives from tree on right"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.ASSISTING_THE_COOK_OLIVE_2].DISPLAY = function() return "Collect olives from left side of path"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.ASSISTING_THE_COOK_OLIVE_3].DISPLAY = function() return "Collect olives near fishing spot"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.ASSISTING_THE_COOK_OLIVE_4].DISPLAY = function() return "Continue north-east and collect olives at base of cliffs"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.ASSISTING_THE_COOK_END].DISPLAY = function() return TurnInTo("Assisting the Cook", "Sâghlem"); end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.BUILDING_CASTLES_PICKUP].DISPLAY = function() return TakeFrom("Building Castles", "Merkhâma"); end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.BUILDING_CASTLES_1].DISPLAY = function() return "Build sand-castle next to Thirsty Beachgoer"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.BUILDING_CASTLES_2].DISPLAY = function() return "Build sand-castle next to Relaxing Holidayer"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.BUILDING_CASTLES_3].DISPLAY = function() return "Build sand-castle west of Queer Merrymaker"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.BUILDING_CASTLES_4].DISPLAY = function() return "Build sand-castle by the cove"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.BUILDING_CASTLES_END].DISPLAY = function() return TurnInTo("Building Castles", "Merkhâma"); end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.FISHING_FOR_ADVICE_PICKUP].DISPLAY = function() return TakeFrom("Fishing for Advice", "Merkhâma"); end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.FISHING_FOR_ADVICE_1_FOUND].DISPLAY = function() return "Find a place to fish in the harbour"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.FISHING_FOR_ADVICE_1_CAUGHT].DISPLAY = function() return "Fish from the pier in the harbour"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.FISHING_FOR_ADVICE_2_FOUND].DISPLAY = function() return "Find a place to fish at the west side of the harbour"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.FISHING_FOR_ADVICE_2_CAUGHT].DISPLAY = function() return "Fish off the pier in the west side of the harbour"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.FISHING_FOR_ADVICE_3_FOUND].DISPLAY = function() return "Find a place to fish near the waterfall above the harbour"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.FISHING_FOR_ADVICE_3_CAUGHT].DISPLAY = function() return "Catch a fish near the waterfall above the harbour"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.FISHING_FOR_ADVICE_4_FOUND].DISPLAY = function() return "Find a place to fish from the sandbar in the north"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.FISHING_FOR_ADVICE_4_CAUGHT].DISPLAY = function() return "Catch a fish from the sandbar in the north"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.FISHING_FOR_ADVICE_END].DISPLAY = function() return TurnInTo("Fishing for Advice", "Merkhâma"); end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.OFFERING_TO_HELP_PICKUP].DISPLAY = function() return TakeFrom("Offering to Help", "Merkhâma"); end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.OFFERING_TO_HELP_BEACHGOER_1].DISPLAY = function() return "Talk to the thirsty beachgoer"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.OFFERING_TO_HELP_BEACHGOER_2].DISPLAY = function() return "Find a refreshing beverage inside The Cracked Flagon"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.OFFERING_TO_HELP_BEACHGOER_3].DISPLAY = function() return "Bring the refreshing beverage to the thirsty beachgoer"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.OFFERING_TO_HELP_HOLIDAYER_1].DISPLAY = function() return "Talk to the Relaxing Holidayer"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.OFFERING_TO_HELP_HOLIDAYER_2].DISPLAY = function() return "Find the relaxing holidayer's book"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.OFFERING_TO_HELP_HOLIDAYER_3].DISPLAY = function() return "Bring the book to the relaxing holidayer"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.OFFERING_TO_HELP_SIGHTSEER_1].DISPLAY = function() return "Talk to the unsettled sightseer"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.OFFERING_TO_HELP_SIGHTSEER_2].DISPLAY = function() return "Find a cushion for the unsettled sightseer"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.OFFERING_TO_HELP_SIGHTSEER_3].DISPLAY = function() return "Bring the cushion to the unsettled sightseer"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.OFFERING_TO_HELP_SUITOR_1].DISPLAY = function() return "Talk to the hopeful suitor"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.OFFERING_TO_HELP_SUITOR_2].DISPLAY = function() return "Find a picnic basket, bring it to Sâghlem and pick up the filled basket"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.OFFERING_TO_HELP_SUITOR_3].DISPLAY = function() return "Bring the filled picnic basket to the hopeful suitor"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.OFFERING_TO_HELP_MERRYMAKER_1].DISPLAY = function() return "Talk to the queer merrymaker"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.OFFERING_TO_HELP_MERRYMAKER_2].DISPLAY = function() return "Bury the queer merrymaker in the sand"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.OFFERING_TO_HELP_MERRYMAKER_3].DISPLAY = function() return "Bury the queer merrymaker some more"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.OFFERING_TO_HELP_END].DISPLAY = function() return TurnInTo("Offering to Help", "Merkhâma"); end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.SEARCHING_FOR_SWIMMING_SPOTS_PICKUP].DISPLAY = function() return TakeFrom("Searching for Swimming Spots", "Merkhâma"); end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.SEARCHING_FOR_SWIMMING_SPOTS_WEST_HARBOR].DISPLAY = function() return "Swim at the west side of the harbour"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.SEARCHING_FOR_SWIMMING_SPOTS_SOUTHERN_COVE].DISPLAY = function() return "Swim in the southern cove"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.SEARCHING_FOR_SWIMMING_SPOTS_NORTHERN_CHANNEL].DISPLAY = function() return "Swim in the northern channel"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.SEARCHING_FOR_SWIMMING_SPOTS_WESTERN_BEACH].DISPLAY = function() return "Swim off the western beach"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.SEARCHING_FOR_SWIMMING_SPOTS_SOUTH_WESTERN_BEACH].DISPLAY = function() return "Swim off the south-western beach"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.SEARCHING_FOR_SWIMMING_SPOTS_END].DISPLAY = function() return TurnInTo("Searching for Swimming Spots", "Merkhâma"); end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.A_FLOCK_OF_SEAGULLS_PICKUP].DISPLAY = function() return TakeFrom("A Flock of Seagulls", "Maghôrdo"); end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.A_FLOCK_OF_SEAGULLS_END].DISPLAY = function() return TurnInTo("A Flock of Seagulls", "Maghôrdo"); end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.CAT_CONUNDRUM_PICKUP].DISPLAY = function() return TakeFrom("Cat Conundrum", "Maghôrdo"); end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.CAT_CONUNDRUM_QUEST].DISPLAY = function() return TakeFrom("Yes to Cats or No to Cats", "Maghôrdo"); end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.CAT_CONUNDRUM_SCRUFFY].DISPLAY = function() return "Feed the scruffy cat OR Shoo the scruffy cat"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.CAT_CONUNDRUM_SKINNY].DISPLAY = function() return "Feed the skinny cat OR Shoo the skinny cat"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.CAT_CONUNDRUM_SLINKY].DISPLAY = function() return "Feed the slinky cat OR Shoo the slinky cat"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.CAT_CONUNDRUM_SMELLY].DISPLAY = function() return "Feed the smelly cat OR Shoo the smelly cat"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.CAT_CONUNDRUM_SASSY].DISPLAY = function() return "Feed the sassy cat OR Shoo the sassy cat"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.CAT_CONUNDRUM_SLEEPY].DISPLAY = function() return "Feed the sleepy cat OR Shoo the sleepy cat"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.CAT_CONUNDRUM_END].DISPLAY = function() return TurnInTo("Cat Conundrum", "Maghôrdo"); end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.EYESORES_DRIFTED_ASHORE_PICKUP].DISPLAY = function() return TakeFrom("Eyesores Drifted Ashore", "Maghôrdo"); end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.EYESORES_DRIFTED_ASHORE_1].DISPLAY = function() return "Clean up the flotsam east of the Unsettled Sightseer"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.EYESORES_DRIFTED_ASHORE_2].DISPLAY = function() return "Clean up the flotsam west of the Unsettled Sightseer"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.EYESORES_DRIFTED_ASHORE_3].DISPLAY = function() return "Clean up the flotsam next to sand castle"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.EYESORES_DRIFTED_ASHORE_4].DISPLAY = function() return "Clean up the flotsam past the race gate"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.EYESORES_DRIFTED_ASHORE_5].DISPLAY = function() return "Clean up the flotsam next to sand castle"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.EYESORES_DRIFTED_ASHORE_6].DISPLAY = function() return "Clean up the flotsam by the cove"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.EYESORES_DRIFTED_ASHORE_END].DISPLAY = function() return TurnInTo("Eyesores Drifted Ashore", "Maghôrdo"); end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.LETS_GO_FLY_A_KITE_PICKUP].DISPLAY = function() return TakeFrom("Let's Go Fly a Kite", "Darôma"); end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.LETS_GO_FLY_A_KITE_SOUTHERN_BEACH].DISPLAY = function() return "Fly a kite on the southern beach"; end
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.LETS_GO_FLY_A_KITE_SOUTHERN_COVE].DISPLAY = function() return "Fly a kite near the southern cove"; end
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.LETS_GO_FLY_A_KITE_WEST_END_OF_HARBOUR].DISPLAY = function() return "Fly a kite at the west end of the harbour"; end
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.LETS_GO_FLY_A_KITE_EASTERN_BRIDGE].DISPLAY = function() return "Fly a kite atop the eastern bridge"; end
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.LETS_GO_FLY_A_KITE_SAND_IN_FRONT_OF_INN].DISPLAY = function() return "Fly a kite on the sand in front of the inn"; end
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.LETS_GO_FLY_A_KITE_END].DISPLAY = function() return TurnInTo("Let's Go Fly a Kite", "Darôma"); end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.A_FLOCK_OF_SEAGULLS_1].DISPLAY = function() return "Chase off irksome seagull by north end of west bridge"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.A_FLOCK_OF_SEAGULLS_2].DISPLAY = function() return "Chase off irksome seagull near Merkhâma"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.A_FLOCK_OF_SEAGULLS_3].DISPLAY = function() return "Chase off irksome seagull on eastern bridge"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.A_FLOCK_OF_SEAGULLS_4].DISPLAY = function() return "Chase off irksome seagull by Darôma"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.A_FLOCK_OF_SEAGULLS_5].DISPLAY = function() return "Chase off irksome seagull by relaxing holidayer"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.A_FLOCK_OF_SEAGULLS_6].DISPLAY = function() return "Chase off irksome seagull by west fishing point"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.A_FLOCK_OF_SEAGULLS_7].DISPLAY = function() return "Chase off irksome seagull by sound end of west bridge"; end;
+QG_MIDSUMMER[QG_MIDSUMMER_INDEX.A_FLOCK_OF_SEAGULLS_8].DISPLAY = function() return "Chase off irksome seagull by smelly cat"; end;
+
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[MIDSUMMER] = {
     ["New Quest: In Celebration of Midsummer"] = QG_MIDSUMMER_INDEX.IN_CELEBRATION_OF_MIDSUMMER_PICKUP;
     ["New Quest: Something Floral"] = QG_MIDSUMMER_INDEX.SOMETHING_FLORAL_PICKUP;
@@ -96,6 +192,19 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[MIDSUMMER] = {
     ["New Quest: Something Misplaced, Something Blue"] = QG_MIDSUMMER_INDEX.SOMETHING_MISPLACED_PICKUP;
     ["New Quest: A Cure For All Ills"] = QG_MIDSUMMER_INDEX.A_CURE_FOR_ALL_ILLS_PICKUP;
     ["New Quest: Love Is In the Air"] = QG_MIDSUMMER_INDEX.LOVE_IS_IN_THE_AIR_PICKUP;
+    ["New Quest: Housekeeping"] = QG_MIDSUMMER_INDEX.HOUSEKEEPING_PICKUP;
+    ["New Quest: Tidal Treasures"] = QG_MIDSUMMER_INDEX.TIDAL_TREASURES_PICKUP;
+    ["New Quest: Assisting the Cook"] = QG_MIDSUMMER_INDEX.ASSISTING_THE_COOK_PICKUP;
+    ["New Quest: Building Castles"] = QG_MIDSUMMER_INDEX.BUILDING_CASTLES_PICKUP;
+    ["New Quest: Fishing for Advice"] = QG_MIDSUMMER_INDEX.FISHING_FOR_ADVICE_PICKUP;
+    ["New Quest: Offering to Help"] = QG_MIDSUMMER_INDEX.OFFERING_TO_HELP_PICKUP;
+    ["New Quest: Searching for Swimming Spots"] = QG_MIDSUMMER_INDEX.SEARCHING_FOR_SWIMMING_SPOTS_PICKUP;
+    ["New Quest: A Flock of Seagulls"] = QG_MIDSUMMER_INDEX.A_FLOCK_OF_SEAGULLS_PICKUP;
+    ["New Quest: Cat Conundrum"] = QG_MIDSUMMER_INDEX.CAT_CONUNDRUM_PICKUP;
+    ["New Quest: Cat Conundrum: Yes to Cats"] = QG_MIDSUMMER_INDEX.CAT_CONUNDRUM_QUEST;
+    ["New Quest: Cat Conundrum: No to Cats"] = QG_MIDSUMMER_INDEX.CAT_CONUNDRUM_QUEST;
+    ["New Quest: Eyesores Drifted Ashore"] = QG_MIDSUMMER_INDEX.EYESORES_DRIFTED_ASHORE_PICKUP;
+    ["New Quest: Let's Go Fly a Kite"] = QG_MIDSUMMER_INDEX.LETS_GO_FLY_A_KITE_PICKUP;
 };
 
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[MIDSUMMER] = {
@@ -116,6 +225,18 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[MIDSUMMER] =
     ["Completed:\nWhat Ales You\n"] = QG_MIDSUMMER_INDEX.WHAT_ALES_YOU_END;
     ["Completed:\nTasty Morsels\n"] = QG_MIDSUMMER_INDEX.TASTY_MORSELS_END;
     ["Completed:\nFloral Crowns\n"] = QG_MIDSUMMER_INDEX.FLORAL_CROWNS_END;
+    ["Completed:\nHousekeeping\n"] = QG_MIDSUMMER_INDEX.HOUSEKEEPING_END;
+    ["Completed:\nTidal Treasures\n"] = QG_MIDSUMMER_INDEX.TIDAL_TREASURES_END;
+    ["Completed:\nAssisting the Cook\n"] = QG_MIDSUMMER_INDEX.ASSISTING_THE_COOK_END;
+    ["Completed:\nBuilding Castles\n"] = QG_MIDSUMMER_INDEX.BUILDING_CASTLES_END;
+    ["Completed:\nFishing for Advice\n"] = QG_MIDSUMMER_INDEX.FISHING_FOR_ADVICE_END;
+    ["Completed:\nOffering to Help\n"] = QG_MIDSUMMER_INDEX.OFFERING_TO_HELP_END;
+    ["Completed:\nSearching for Swimming Spots\n"] = QG_MIDSUMMER_INDEX.SEARCHING_FOR_SWIMMING_SPOTS_END;
+    ["Completed:\nA Flock of Seagulls\n"] = QG_MIDSUMMER_INDEX.A_FLOCK_OF_SEAGULLS_END;
+    ["Completed:\nCat Conundrum\n"] = QG_MIDSUMMER_INDEX.CAT_CONUNDRUM_END;
+    ["Completed:\nEyesores Drifted Ashore\n"] = QG_MIDSUMMER_INDEX.EYESORES_DRIFTED_ASHORE_END;
+    ["Completed:\nLet's Go Fly a Kite\n"] = QG_MIDSUMMER_INDEX.LETS_GO_FLY_A_KITE_END;
+
 };
 
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[MIDSUMMER] = {
@@ -150,4 +271,123 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[MIDSUMMER] =
     ["Caught wayward verses (6/6)"] = QG_MIDSUMMER_INDEX.LOVE_IS_IN_THE_AIR_COMPLETE;
     ["Collected barrels of ale (4/4)"] = QG_MIDSUMMER_INDEX.WHAT_ALES_YOU_4;
     --No count: 'The reveller says nothing, but departs with a sour look', need it 6 times.
+
+    ["The scruffy cat hisses and scampers away"] = QG_MIDSUMMER_INDEX.CAT_CONUNDRUM_SCRUFFY;
+    ["The scruffy cat nips your finger as it greedily takes the treat"] = QG_MIDSUMMER_INDEX.CAT_CONUNDRUM_SCRUFFY;
+    ["The skinny cat protests before running away"] = QG_MIDSUMMER_INDEX.CAT_CONUNDRUM_SKINNY;
+    ["The skinny cat eyes you suspiciously but purrs as it takes your offering"] = QG_MIDSUMMER_INDEX.CAT_CONUNDRUM_SKINNY;
+    ["The slinky cat complains and slinks away"] = QG_MIDSUMMER_INDEX.CAT_CONUNDRUM_SLINKY;
+    ["The slinky cat takes the treat followed by a quick bath"] = QG_MIDSUMMER_INDEX.CAT_CONUNDRUM_SLINKY;
+    ["The smelly cat hisses and scurries off"] = QG_MIDSUMMER_INDEX.CAT_CONUNDRUM_SMELLY;
+    ["The smelly cat swallows the treat whole and rubs on your leg"] = QG_MIDSUMMER_INDEX.CAT_CONUNDRUM_SMELLY;
+    ["The sassy cat hisses at you and slowly walks away, tail held high"] = QG_MIDSUMMER_INDEX.CAT_CONUNDRUM_SASSY;
+    ["The sassy cat snaps up the treat, hisses, and runs away"] = QG_MIDSUMMER_INDEX.CAT_CONUNDRUM_SASSY;
+    ["The sleepy cat growls at you and dashes away"] = QG_MIDSUMMER_INDEX.CAT_CONUNDRUM_SLEEPY;
+    ["The sleepy cat purrs as it takes the treat and goes back to sleep"] = QG_MIDSUMMER_INDEX.CAT_CONUNDRUM_SLEEPY;
+
+    ["Built sand-castles on the beach (1/4)"] = QG_MIDSUMMER_INDEX.BUILDING_CASTLES_1;
+    ["Built sand-castles on the beach (2/4)"] = QG_MIDSUMMER_INDEX.BUILDING_CASTLES_2;
+    ["Built sand-castles on the beach (3/4)"] = QG_MIDSUMMER_INDEX.BUILDING_CASTLES_3;
+    ["Built sand-castles on the beach (4/4)"] = QG_MIDSUMMER_INDEX.BUILDING_CASTLES_4;
+
+    ["Chased off the irksome seagulls (1/8)"] = QG_MIDSUMMER_INDEX.A_FLOCK_OF_SEAGULLS_1;
+    ["Chased off the irksome seagulls (2/8)"] = QG_MIDSUMMER_INDEX.A_FLOCK_OF_SEAGULLS_2;
+    ["Chased off the irksome seagulls (3/8)"] = QG_MIDSUMMER_INDEX.A_FLOCK_OF_SEAGULLS_3;
+    ["Chased off the irksome seagulls (4/8)"] = QG_MIDSUMMER_INDEX.A_FLOCK_OF_SEAGULLS_4;
+    ["Chased off the irksome seagulls (5/8)"] = QG_MIDSUMMER_INDEX.A_FLOCK_OF_SEAGULLS_5;
+    ["Chased off the irksome seagulls (6/8)"] = QG_MIDSUMMER_INDEX.A_FLOCK_OF_SEAGULLS_6;
+    ["Chased off the irksome seagulls (7/8)"] = QG_MIDSUMMER_INDEX.A_FLOCK_OF_SEAGULLS_7;
+    ["Chased off the irksome seagulls (8/8)"] = QG_MIDSUMMER_INDEX.A_FLOCK_OF_SEAGULLS_8;
+
+    ["This looks refreshing!"] = QG_MIDSUMMER_INDEX.OFFERING_TO_HELP_BEACHGOER_2;
+
+    ["This looks like a good spot"] = { -- NAME is only used for debugging purposes.
+        [1] = { ["NAME"] = "Fish 1 found"; ["INDEX"] = QG_MIDSUMMER_INDEX.FISHING_FOR_ADVICE_1_FOUND; };
+        [2] = { ["NAME"] = "Fish 2 found"; ["INDEX"] = QG_MIDSUMMER_INDEX.FISHING_FOR_ADVICE_2_FOUND; };
+        [3] = { ["NAME"] = "Fish 3 found"; ["INDEX"] = QG_MIDSUMMER_INDEX.FISHING_FOR_ADVICE_3_FOUND; };
+        [4] = { ["NAME"] = "Fish 4 found"; ["INDEX"] = QG_MIDSUMMER_INDEX.FISHING_FOR_ADVICE_4_FOUND; };
+    };
+
+    ["Caught a fish!"] = { -- NAME is only used for debugging purposes.
+        [1] = { ["NAME"] = "Fish 1 caught"; ["INDEX"] = QG_MIDSUMMER_INDEX.FISHING_FOR_ADVICE_1_CAUGHT; };
+        [2] = { ["NAME"] = "Fish 2 caught"; ["INDEX"] = QG_MIDSUMMER_INDEX.FISHING_FOR_ADVICE_2_CAUGHT; };
+        [3] = { ["NAME"] = "Fish 3 caught"; ["INDEX"] = QG_MIDSUMMER_INDEX.FISHING_FOR_ADVICE_3_CAUGHT; };
+        [4] = { ["NAME"] = "Fish 4 caught"; ["INDEX"] = QG_MIDSUMMER_INDEX.FISHING_FOR_ADVICE_4_CAUGHT; };
+    };
+
+    ["People here don't seem to notice your kite"] = QG_MIDSUMMER_INDEX.LETS_GO_FLY_A_KITE_WEST_END_OF_HARBOUR;
+    ["Many people should see you from here!"] = QG_MIDSUMMER_INDEX.LETS_GO_FLY_A_KITE_EASTERN_BRIDGE;
+
+    ["People here seem impressed with your kite!"] = QG_MIDSUMMER_INDEX.LETS_GO_FLY_A_KITE_SOUTHERN_BEACH;
+    ["Do the people here appreciate your kite?"] = QG_MIDSUMMER_INDEX.LETS_GO_FLY_A_KITE_SOUTHERN_COVE;
+    ["Was that kite-envy you just saw?"] = QG_MIDSUMMER_INDEX.LETS_GO_FLY_A_KITE_SAND_IN_FRONT_OF_INN;
+
+    ["Picked up \"A Memory of Mûmakil\" by J.F. Ugsha-imri"] = QG_MIDSUMMER_INDEX.OFFERING_TO_HELP_HOLIDAYER_2;
+
+    ["Beds made (4/4)"] = QG_MIDSUMMER_INDEX.HOUSEKEEPING_BEDS;
+    ["Floors scrubbed (4/4)"] = QG_MIDSUMMER_INDEX.HOUSEKEEPING_FLOORS;
+
+    ["The water is deep and people are just watching you possibly drown!"] = QG_MIDSUMMER_INDEX.SEARCHING_FOR_SWIMMING_SPOTS_WEST_HARBOR;
+    ["Not a bad place to swim, but it is quite public"] = QG_MIDSUMMER_INDEX.SEARCHING_FOR_SWIMMING_SPOTS_WEST_HARBOR;
+
+    ["This would be a lot nicer if the water was more shallow"] = QG_MIDSUMMER_INDEX.SEARCHING_FOR_SWIMMING_SPOTS_SOUTHERN_COVE;
+    ["The water is warm and perfect for swimming"] = QG_MIDSUMMER_INDEX.SEARCHING_FOR_SWIMMING_SPOTS_SOUTHERN_COVE;
+
+    ["It's all right here, but way too deep"] = QG_MIDSUMMER_INDEX.SEARCHING_FOR_SWIMMING_SPOTS_NORTHERN_CHANNEL;
+    ["The water in the channel is calm and warm"] = QG_MIDSUMMER_INDEX.SEARCHING_FOR_SWIMMING_SPOTS_NORTHERN_CHANNEL;
+
+    ["What a dangerous place - this was a mistake!"] = QG_MIDSUMMER_INDEX.SEARCHING_FOR_SWIMMING_SPOTS_WESTERN_BEACH;
+    ["The water is cold and the waves are a bit much"] = QG_MIDSUMMER_INDEX.SEARCHING_FOR_SWIMMING_SPOTS_WESTERN_BEACH;
+
+    ["There is entirely too much water here!"] = QG_MIDSUMMER_INDEX.SEARCHING_FOR_SWIMMING_SPOTS_SOUTH_WESTERN_BEACH;
+    ["This is a nice, quiet place to swim"] = QG_MIDSUMMER_INDEX.SEARCHING_FOR_SWIMMING_SPOTS_SOUTH_WESTERN_BEACH;
+
+    ["Cleaned up the flotsam on the beach (1/6)"] = QG_MIDSUMMER_INDEX.EYESORES_DRIFTED_ASHORE_1;
+    ["Cleaned up the flotsam on the beach (2/6)"] = QG_MIDSUMMER_INDEX.EYESORES_DRIFTED_ASHORE_2;
+    ["Cleaned up the flotsam on the beach (3/6)"] = QG_MIDSUMMER_INDEX.EYESORES_DRIFTED_ASHORE_3;
+    ["Cleaned up the flotsam on the beach (4/6)"] = QG_MIDSUMMER_INDEX.EYESORES_DRIFTED_ASHORE_4;
+    ["Cleaned up the flotsam on the beach (5/6)"] = QG_MIDSUMMER_INDEX.EYESORES_DRIFTED_ASHORE_5;
+    ["Cleaned up the flotsam on the beach (6/6)"] = QG_MIDSUMMER_INDEX.EYESORES_DRIFTED_ASHORE_6;
+
+    ["This cushion will do"] = QG_MIDSUMMER_INDEX.OFFERING_TO_HELP_SIGHTSEER_2;
+
+    ["'More!', the strange man demands"] = QG_MIDSUMMER_INDEX.OFFERING_TO_HELP_MERRYMAKER_2;
+    ["He thanks you with a sigh of happiness"] = QG_MIDSUMMER_INDEX.OFFERING_TO_HELP_MERRYMAKER_3;
+
+    ["Collected fresh herbs (1/4)"] = QG_MIDSUMMER_INDEX.ASSISTING_THE_COOK_HERB_1;
+    ["Collected fresh herbs (2/4)"] = QG_MIDSUMMER_INDEX.ASSISTING_THE_COOK_HERB_2;
+    ["Collected fresh herbs (3/4)"] = QG_MIDSUMMER_INDEX.ASSISTING_THE_COOK_HERB_3;
+    ["Collected fresh herbs (4/4)"] = QG_MIDSUMMER_INDEX.ASSISTING_THE_COOK_HERB_4;
+    ["Collected juicy lemons (1/4)"] = QG_MIDSUMMER_INDEX.ASSISTING_THE_COOK_LEMON_1;
+    ["Collected juicy lemons (2/4)"] = QG_MIDSUMMER_INDEX.ASSISTING_THE_COOK_LEMON_2;
+    ["Collected juicy lemons (3/4)"] = QG_MIDSUMMER_INDEX.ASSISTING_THE_COOK_LEMON_3;
+    ["Collected juicy lemons (4/4)"] = QG_MIDSUMMER_INDEX.ASSISTING_THE_COOK_LEMON_4;
+    ["Collected handfuls of olives (1/4)"] = QG_MIDSUMMER_INDEX.ASSISTING_THE_COOK_OLIVE_1;
+    ["Collected handfuls of olives (2/4)"] = QG_MIDSUMMER_INDEX.ASSISTING_THE_COOK_OLIVE_2;
+    ["Collected handfuls of olives (3/4)"] = QG_MIDSUMMER_INDEX.ASSISTING_THE_COOK_OLIVE_3;
+    ["Collected handfuls of olives (4/4)"] = QG_MIDSUMMER_INDEX.ASSISTING_THE_COOK_OLIVE_4;
+
+    ["Seashells collected (8/8)"] = QG_MIDSUMMER_INDEX.TIDAL_TREASURES_SEASHELLS;
+
+};
+
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_PROGRESS[MIDSUMMER] = {
+--    ["Chased off the irksome seagulls %((%d+)/(%d+)%)"] = QG_MIDSUMMER_INDEX.A_FLOCK_OF_SEAGULLS_PROGRESS;
+    ["Beds made %((%d+)/(%d+)%)"] = QG_MIDSUMMER_INDEX.HOUSEKEEPING_BEDS;
+    ["Floors scrubbed %((%d+)/(%d+)%)"] = QG_MIDSUMMER_INDEX.HOUSEKEEPING_FLOORS;
+    ["Seashells collected %((%d+)/(%d+)%)"] = QG_MIDSUMMER_INDEX.TIDAL_TREASURES_SEASHELLS;
+};
+
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_TARGETS[MIDSUMMER] = {
+    [1] = { ["NAME"] = "Thirsty Beachgoer"; ["INDEX"] = QG_MIDSUMMER_INDEX.OFFERING_TO_HELP_BEACHGOER_1; };
+    [2] = { ["NAME"] = "Thirsty Beachgoer"; ["INDEX"] = QG_MIDSUMMER_INDEX.OFFERING_TO_HELP_BEACHGOER_3; };
+    [3] = { ["NAME"] = "Relaxing Holidayer"; ["INDEX"] = QG_MIDSUMMER_INDEX.OFFERING_TO_HELP_HOLIDAYER_1; };
+    [4] = { ["NAME"] = "Relaxing Holidayer"; ["INDEX"] = QG_MIDSUMMER_INDEX.OFFERING_TO_HELP_HOLIDAYER_3; };
+    [5] = { ["NAME"] = "Unsettled Sightseer"; ["INDEX"] = QG_MIDSUMMER_INDEX.OFFERING_TO_HELP_SIGHTSEER_1; };
+    [6] = { ["NAME"] = "Unsettled Sightseer"; ["INDEX"] = QG_MIDSUMMER_INDEX.OFFERING_TO_HELP_SIGHTSEER_3; };
+    [7] = { ["NAME"] = "Hopeful Suitor"; ["INDEX"] = QG_MIDSUMMER_INDEX.OFFERING_TO_HELP_SUITOR_1; };
+    [8] = { ["NAME"] = "Filled Picnic Basket"; ["INDEX"] = QG_MIDSUMMER_INDEX.OFFERING_TO_HELP_SUITOR_2; };
+    [9] = { ["NAME"] = "Hopeful Suitor"; ["INDEX"] = QG_MIDSUMMER_INDEX.OFFERING_TO_HELP_SUITOR_3; };
+   [10] = { ["NAME"] = "Queer Merrymaker"; ["INDEX"] = QG_MIDSUMMER_INDEX.OFFERING_TO_HELP_MERRYMAKER_1; };
+
 };

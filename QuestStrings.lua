@@ -1459,6 +1459,64 @@ Kehre zu Cora Braunlock zurück.
             };
             ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Midsummer/Sapphire Firefly Lanterns.tga";
         };
+
+        ["HOUSEKEEPING"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = "HOUSEKEEPING";
+            };
+        };
+        ["TIDAL_TREASURES"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = "TIDAL_TREASURES";
+            };
+        };
+        ["ASSISTING_THE_COOK"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = "ASSISTING_THE_COOK";
+            };
+        };
+        ["BUILDING_CASTLES"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = "BUILDING_CASTLES";
+            };
+        };
+        ["FISHING_FOR_ADVICE"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = "FISHING_FOR_ADVICE";
+            };
+        };
+        ["OFFERING_TO_HELP"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = "OFFERING_TO_HELP";
+            };
+        };
+        ["SEARCHING_FOR_SWIMMING_SPOTS"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = "SEARCHING_FOR_SWIMMING_SPOTS";
+            };
+        };
+        ["A_FLOCK_OF_SEAGULLS"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = "A Flock of Seagulls";
+            };
+        };
+        ["CAT_CONUNDRUM"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = "Cat Conundrum";
+            };
+        };
+        ["EYESORES_DRIFTED_ASHORE"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = "Eyesores Drifted Ashore";
+            };
+        };
+        ["LETS_GO_FLY_A_KITE"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = "Cat Conundrum: Yes to Cats";
+            };
+        };
+
+
     };
 
     [ILAA] = {

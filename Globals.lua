@@ -239,6 +239,19 @@ DEFAULT_SETTINGS = {
             ["UNHELPFUL_HOUNDS"] = true;
             ["WEDDING_SUPPLIES"] = true;
             ["WHAT_ALES_YOU"] = true;
+
+            ["HOUSEKEEPING"] = true;
+            ["TIDAL_TREASURES"] = true;
+            ["ASSISTING_THE_COOK"] = true;
+            ["BUILDING_CASTLES"] = true;
+            ["FISHING_FOR_ADVICE"] = true;
+            ["OFFERING_TO_HELP"] = true;
+            ["SEARCHING_FOR_SWIMMING_SPOTS"] = true;
+            ["A_FLOCK_OF_SEAGULLS"] = true;
+            ["CAT_CONUNDRUM"] = true;
+            ["EYESORES_DRIFTED_ASHORE"] = true;
+            ["LETS_GO_FLY_A_KITE"] = true;
+
         };
         [YULE] = {
             ["A_BROKEN_SNOWMAN"] = true;

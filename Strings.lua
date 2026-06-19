@@ -897,6 +897,19 @@ _LANG = {
             ["EMERALD_FIREFLY_LANTERNS"]    = { ["ENGLISH"] = "Emerald Firefly Lanterns";               ["FRENCH"] = "Lanternes à libellule émeraude";      ["GERMAN"] = "Smaragdgrüne Glühwürmchenlaternen";       };
             ["RUBY_FIREFLY_LANTERNS"]       = { ["ENGLISH"] = "Ruby Firefly Lanterns";                  ["FRENCH"] = "Lanternes à libellule rubis";         ["GERMAN"] = "Rubinrote Glühwürmchenlaternen";          };
             ["SAPPHIRE_FIREFLY_LANTERNS"]   = { ["ENGLISH"] = "Sapphire Firefly Lanterns";              ["FRENCH"] = "Lanternes à libellule saphir";        ["GERMAN"] = "Saphirblaue Glühwürmchenlaternen";        };
+
+            ["HOUSEKEEPING"]                 = { ["ENGLISH"] = "Housekeeping";                          ["FRENCH"] = "Faire le ménage";                     ["GERMAN"] = "Reinigungsdienst";                 };
+            ["TIDAL_TREASURES"]              = { ["ENGLISH"] = "Tidal Treasures";                       ["FRENCH"] = "Trésors de la marée";                 ["GERMAN"] = "Schätze der Gezeiten";             };
+            ["ASSISTING_THE_COOK"]           = { ["ENGLISH"] = "Assisting the Cook";                    ["FRENCH"] = "Assistance en cuisine";               ["GERMAN"] = "Hilfe für den Koch";               };
+            ["BUILDING_CASTLES"]             = { ["ENGLISH"] = "Building Castles";                      ["FRENCH"] = "Bâtir des châteaux";                  ["GERMAN"] = "Burgenbau";                        };
+            ["FISHING_FOR_ADVICE"]           = { ["ENGLISH"] = "Fishing for Advice";                    ["FRENCH"] = "Pêche aux conseils";                  ["GERMAN"] = "Auf der Suche nach Angelplätzen";  };
+            ["OFFERING_TO_HELP"]             = { ["ENGLISH"] = "Offering to Help";                      ["FRENCH"] = "Offrir de l'aide";                    ["GERMAN"] = "Hilfsangebot";                     };
+            ["SEARCHING_FOR_SWIMMING_SPOTS"] = { ["ENGLISH"] = "Searching for Swimming Spots";          ["FRENCH"] = "À la recherche de lieux de baignade"; ["GERMAN"] = "Suche nach Badestellen";           };
+            ["A_FLOCK_OF_SEAGULLS"]          = { ["ENGLISH"] = "A Flock of Seagulls";                   ["FRENCH"] = "Une volée de mouettes";               ["GERMAN"] = "Möwenschar";                       };
+            ["CAT_CONUNDRUM"]                = { ["ENGLISH"] = "Cat Conundrum";                         ["FRENCH"] = "Casse-tête félin";                    ["GERMAN"] = "Katzenfrage";                      };
+            ["EYESORES_DRIFTED_ASHORE"]      = { ["ENGLISH"] = "Eyesores Drifted Ashore";               ["FRENCH"] = "Déchets échoués";                     ["GERMAN"] = "Verschandelte Strände";            };
+            ["LETS_GO_FLY_A_KITE"]           = { ["ENGLISH"] = "Let's Go Fly a Kite";                   ["FRENCH"] = "Vol de cerfs-volants";                ["GERMAN"] = "Drachen steigen lassen";           };
+
         };
 
         [ILAA] = {
