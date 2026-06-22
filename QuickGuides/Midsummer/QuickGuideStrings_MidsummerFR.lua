@@ -1,7 +1,8 @@
 
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[MIDSUMMER] = "\nThis guide is based on LilRedHead's excellent LOTRO Midsummer Festival - Quick Guide at https://lifebeyondtheshire.com/lotro-midsummer-festival-quick-guide/. Thank you LRH!";
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[MIDSUMMER] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[MIDSUMMER][DEFAULT_QUICK_GUIDE] = "\nThis guide is based on LilRedHead's excellent LOTRO Midsummer Festival - Quick Guide at https://lifebeyondtheshire.com/lotro-midsummer-festival-quick-guide/. Thank you LRH!";
 
-QG_MIDSUMMER = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[MIDSUMMER];
+QG_MIDSUMMER = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[MIDSUMMER][DEFAULT_QUICK_GUIDE];
 QG_MIDSUMMER[QG_MIDSUMMER_INDEX.IN_CELEBRATION_OF_MIDSUMMER_PICKUP].DISPLAY = "Take 'En célébration du Solstice d'été' from Faeleth outside <rgb=#ffc000>City Stables</rgb>";
 QG_MIDSUMMER[QG_MIDSUMMER_INDEX.SOMETHING_FLORAL_PICKUP].DISPLAY = "Take 'Comme une fleur' from Merilien on the Citadel";
 QG_MIDSUMMER[QG_MIDSUMMER_INDEX.TO_THE_LAST_DROP_PICKUP].DISPLAY = "Take 'Jusqu'à la dernière goutte' from Merilien";
@@ -77,7 +78,8 @@ QG_MIDSUMMER[QG_MIDSUMMER_INDEX.WHAT_ALES_YOU_END].DISPLAY = "Turn in 'Pas de la
 QG_MIDSUMMER[QG_MIDSUMMER_INDEX.TASTY_MORSELS_END].DISPLAY = "Turn in 'Amuse-bouche savoureux' to Othnoron.";
 QG_MIDSUMMER[QG_MIDSUMMER_INDEX.FLORAL_CROWNS_END].DISPLAY = "Turn in 'Couronnes florales' to Florist.";
 
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[MIDSUMMER] = {
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[MIDSUMMER] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[MIDSUMMER][DEFAULT_QUICK_GUIDE] = {
     ["Nouvelle quête : En célébration du Solstice d'été"] = QG_MIDSUMMER_INDEX.IN_CELEBRATION_OF_MIDSUMMER_PICKUP;
     ["Nouvelle quête : Comme une fleur"] = QG_MIDSUMMER_INDEX.SOMETHING_FLORAL_PICKUP;
     ["Nouvelle quête : Jusqu'à la dernière goutte"] = QG_MIDSUMMER_INDEX.TO_THE_LAST_DROP_PICKUP;
@@ -98,7 +100,8 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[MIDSUMMER] = {
     ["Nouvelle quête : Vraie romance"] = QG_MIDSUMMER_INDEX.LOVE_IS_IN_THE_AIR_PICKUP;
 };
 
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[MIDSUMMER] = {
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[MIDSUMMER] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[MIDSUMMER][DEFAULT_QUICK_GUIDE] = {
     ["Terminé :\nL'aide aux palefreniers\n"] = QG_MIDSUMMER_INDEX.AIDING_THE_STABLE_HANDS_END;
     ["Terminé :\nUne petite pièce\n"] = QG_MIDSUMMER_INDEX.TOSS_A_COIN_END;
     ["Terminé :\nChiens peu dociles\n"] = QG_MIDSUMMER_INDEX.UNHELPFUL_HOUNDS_END;
@@ -118,7 +121,8 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[MIDSUMMER] =
     ["Terminé :\nCouronnes florales\n"] = QG_MIDSUMMER_INDEX.FLORAL_CROWNS_END;
 };
 
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[MIDSUMMER] = {
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[MIDSUMMER] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[MIDSUMMER][DEFAULT_QUICK_GUIDE] = {
     ["Vous avez trouvé une étrille"] = QG_MIDSUMMER_INDEX.AIDING_THE_STABLE_HANDS_BRUSH;
     ["Pommes récupérées"] = QG_MIDSUMMER_INDEX.AIDING_THE_STABLE_HANDS_APPLES;
     ["Chevaux pansés (3/3)"] = QG_MIDSUMMER_INDEX.AIDING_THE_STABLE_HANDS_GROOM;

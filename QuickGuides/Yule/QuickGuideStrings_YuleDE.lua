@@ -1,7 +1,8 @@
 
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[YULE] = "\nDiese Anleitung wurde beim Jul-Fest 2023 von Cube erstellt, und übersetzt von Mandraval";
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[YULE] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[YULE][DEFAULT_QUICK_GUIDE] = "\nDiese Anleitung wurde beim Jul-Fest 2023 von Cube erstellt, und übersetzt von Mandraval";
 
-QG_YULE = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[YULE];
+QG_YULE = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[YULE][DEFAULT_QUICK_GUIDE];
 QG_YULE[QG_YULE_INDEX.IN_THE_SPIRIT_OF_YULE_PICKUP].DISPLAY =               "Nimm 'Im Geiste des Julfests' von Mara Sandh\195\182hen in Winterheim an.";
 QG_YULE[QG_YULE_INDEX.MOVING_THEM_OFF_PICKUP].DISPLAY =                     "Nimm 'Vertreibt sie' von W\195\164chter Kember an";
 QG_YULE[QG_YULE_INDEX.THE_ABOMINABLE_SNOW_BEASTS_PICKUP].DISPLAY =          "Nimm 'Die abscheulichen Schneekreaturen' von W\195\164chter Kember an";
@@ -65,7 +66,8 @@ QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_4].DISPLAY =      "Gib
 QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION5].DISPLAY =   "I\195\159 am f\195\188nften Tisch";
 QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_5].DISPLAY =      "Gib 'Der allergr\195\182\195\159te Bauch (Teil V)' bei Jan Stolzhelm ab";
 
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_PROGRESS[YULE] = {
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_PROGRESS[YULE] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_PROGRESS[YULE][DEFAULT_QUICK_GUIDE] = {
     ["Ihr habt eine abgelenkte Person bestohlen %((%d+)/(%d+)%)"] = QG_YULE_INDEX.MAKING_MISCHIEF_LOOT;
     ["Menge aufgesammelten dreckigen Geschirrs %((%d+)/(%d+)%)"] = QG_YULE_INDEX.TIDYING_UP_DISHES;
     ["Anzahl gesäuberter Flecke von verschütteten Getränken %((%d+)/(%d+)%)"] = QG_YULE_INDEX.TIDYING_UP_SPILLS;
@@ -84,7 +86,8 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_PROGRESS[YULE] = {
     ["Gegessene Mahlzeiten an der fünften Station %((%d+)/(%d+)%)"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION5;
 };
 
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[YULE] = {
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[YULE] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[YULE][DEFAULT_QUICK_GUIDE] = {
     ["Neue Aufgabe: Im Geiste des Julfests"] =                 QG_YULE_INDEX.IN_THE_SPIRIT_OF_YULE_PICKUP;
     ["Neue Aufgabe: Vertreibt sie"] =                         QG_YULE_INDEX.MOVING_THEM_OFF_PICKUP;
     ["Neue Aufgabe: Die abscheulichen Schneekreaturen"] =     QG_YULE_INDEX.THE_ABOMINABLE_SNOW_BEASTS_PICKUP;
@@ -100,7 +103,8 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[YULE] = {
     ["Neue Aufgabe: Der allergr\195\182\195\159te Magen"] =                 QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_PICKUP;
 };
 
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[YULE] = {
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[YULE] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[YULE][DEFAULT_QUICK_GUIDE] = {
     ["Abgeschlossen:\nAufr\195\164umen\n"] =                             QG_YULE_INDEX.TIDYING_UP_END;
     ["Abgeschlossen:\nJulfest (t\195\164glich)\n"] =                     QG_YULE_INDEX.YULE_FESTIVAL_DAILY_END;
     ["Abgeschlossen:\nVertreibt sie\n"] =                         QG_YULE_INDEX.MOVING_THEM_OFF_END;
@@ -121,7 +125,8 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[YULE] = {
     ["Abgeschlossen:\nDer allergr\195\182\195\159te Bauch (Teil V)\n"] =         QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_5;
 };
 
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[YULE] = {
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[YULE] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[YULE][DEFAULT_QUICK_GUIDE] = {
     ["Benno Niebrunn bewegt sich zur\195\188ckhaltend und ist sich unsicher, wohin er gehen soll"] =     QG_YULE_INDEX.MOVING_THEM_OFF_BARRETTNOWELL;
     ["Theo Iwo sieht Euch entt\195\164uscht an, geht aber fort"] =                                         QG_YULE_INDEX.MOVING_THEM_OFF_TEDIVES;
     ["Regina Iudson flitzt sehr traurig davon"] =                                                         QG_YULE_INDEX.MOVING_THEM_OFF_REGINAJUDSON;

@@ -30,6 +30,11 @@ import "CubePlugins.FestivalBuddyII.ChatLogger";
 import "CubePlugins.FestivalBuddyII.BarterItems";
 import "CubePlugins.FestivalBuddyII.HobnanigansTimerControl";
 import "CubePlugins.FestivalBuddyII.QuickGuideTimerControl";
+
+-- Quick Guides, need to come after Globals
+DEFAULT_QUICK_GUIDE = 1;
+SELECTED_QUICK_GUIDE = DEFAULT_QUICK_GUIDE;
+
 import "CubePlugins.FestivalBuddyII.QuickGuides.QuickGuides";
 import "CubePlugins.FestivalBuddyII.QuickGuides.InnLeagueAleAssociation.QuickGuideStrings_InnLeagueAleAssociation";
 import "CubePlugins.FestivalBuddyII.QuickGuides.Midsummer.QuickGuideStrings_Midsummer";

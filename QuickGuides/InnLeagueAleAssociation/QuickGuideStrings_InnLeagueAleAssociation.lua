@@ -1,7 +1,8 @@
 -- Inn League / Ale Association Quest Indexes:
 
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_INDICIES[ILAA] = {};
-QG_ILAA_INDEX = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_INDICIES[ILAA];
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_INDICIES[ILAA][DEFAULT_QUICK_GUIDE] = {};
+QG_ILAA_INDEX = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_INDICIES[ILAA][DEFAULT_QUICK_GUIDE];
 
 local i = 1;
 i = AddNextQuickguideValue(QG_ILAA_INDEX, i, "A_BIT_OF_WHITE_PICKUP");
@@ -77,8 +78,8 @@ i = AddNextQuickguideValue(QG_ILAA_INDEX, i, "A_REMINDER_OF_RIVENDELL_PICKUP");
 i = AddNextQuickguideValue(QG_ILAA_INDEX, i, "A_REMINDER_OF_RIVENDELL_DRINK");
 i = AddNextQuickguideValue(QG_ILAA_INDEX, i, "A_REMINDER_OF_RIVENDELL_END");
 
-
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAINS[ILAA] = {
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAINS[ILAA] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAINS[ILAA][DEFAULT_QUICK_GUIDE] = {
     ["ALL_BUT_THE_GOOD_CIDER"] = {
         [QG_ILAA_INDEX.ALL_BUT_THE_GOOD_CIDER_PICKUP] = true;
         [QG_ILAA_INDEX.ALL_BUT_THE_GOOD_CIDER_DRINK] = true;
@@ -191,7 +192,8 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAINS[ILAA] = {
     };
 };
 
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAIN_LOOKUP[ILAA] = {
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAIN_LOOKUP[ILAA] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAIN_LOOKUP[ILAA][DEFAULT_QUICK_GUIDE] = {
     [QG_ILAA_INDEX.ALL_BUT_THE_GOOD_CIDER_PICKUP] = "ALL_BUT_THE_GOOD_CIDER";
     [QG_ILAA_INDEX.ALL_BUT_THE_GOOD_CIDER_DRINK] = "ALL_BUT_THE_GOOD_CIDER";
     [QG_ILAA_INDEX.ALL_BUT_THE_GOOD_CIDER_END] = "ALL_BUT_THE_GOOD_CIDER";
@@ -281,7 +283,8 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAIN_LOOKUP[ILAA] = {
     [QG_ILAA_INDEX.ATLIS_FAVOURITE_END] = "ATLIS_FAVOURITE";
 };
 
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[ILAA] = {
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[ILAA] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[ILAA][DEFAULT_QUICK_GUIDE] = {
     [QG_ILAA_INDEX.ALL_BUT_THE_GOOD_CIDER_PICKUP] = {
         ["CHAIN_BEGIN"] = "ALL_BUT_THE_GOOD_CIDER";
     };

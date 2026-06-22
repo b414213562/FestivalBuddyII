@@ -1,7 +1,8 @@
 
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[ILAA] = "\nCe guide est basé sur l'excellent guide de LilRedHead sur https://lifebeyondtheshire.com/inn-league-and-ale-association-hunter-assisted-speedy-delivery-run/. Merci LRH !";
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[ILAA] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[ILAA][DEFAULT_QUICK_GUIDE] = "\nCe guide est basé sur l'excellent guide de LilRedHead sur https://lifebeyondtheshire.com/inn-league-and-ale-association-hunter-assisted-speedy-delivery-run/. Merci LRH !";
 
-QG_ILAA = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[ILAA];
+QG_ILAA = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[ILAA][DEFAULT_QUICK_GUIDE];
 QG_ILAA[QG_ILAA_INDEX.A_BIT_OF_WHITE_PICKUP].DISPLAY = function() return string.format("In %s, take %s from %s", HighlightLocation("l'Auberge du Palais de Thorin"), HighlightQuest("Un soupçon de blanc"), HighlightNpc("Aubergiste de la Confrérie de la cervoise")); end
 QG_ILAA[QG_ILAA_INDEX.A_CONVOLUTED_WINE_PICKUP].DISPLAY = function() return string.format("Take %s", HighlightQuest("Un vin alambiqué")); end
 QG_ILAA[QG_ILAA_INDEX.A_DARK_PRANK_PICKUP].DISPLAY = function() return string.format("Take %s", HighlightQuest("Une sombre farce")); end
@@ -74,7 +75,8 @@ QG_ILAA[QG_ILAA_INDEX.A_REMINDER_OF_RIVENDELL_PICKUP].DISPLAY = function() retur
 QG_ILAA[QG_ILAA_INDEX.A_REMINDER_OF_RIVENDELL_DRINK].DISPLAY = function() return CollectFromLocation("Verre de vin blanc de Dorwinion", "Dernière Maison Simple, La Trouée des Trolls"); end
 QG_ILAA[QG_ILAA_INDEX.A_REMINDER_OF_RIVENDELL_END].DISPLAY = function() return TurnInTo("Un souvenir de Fondcombe", "Lendasil"); end
 
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[ILAA] = {
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[ILAA] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[ILAA][DEFAULT_QUICK_GUIDE] = {
     ["Nouvelle quête : Tout sauf le bon cidre"] = QG_ILAA_INDEX.ALL_BUT_THE_GOOD_CIDER_PICKUP;
     ["Nouvelle quête : Tout sauf le cidre"] = QG_ILAA_INDEX.ALL_BUT_THE_CIDER_PICKUP;
 
@@ -109,7 +111,8 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[ILAA] = {
     ["Nouvelle quête : La préférée d'Atli"] = QG_ILAA_INDEX.ATLIS_FAVOURITE_PICKUP;
 };
 
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[ILAA] = {
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[ILAA] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[ILAA][DEFAULT_QUICK_GUIDE] = {
     ["Terminé :\nTout sauf le bon cidre\n"] = QG_ILAA_INDEX.ALL_BUT_THE_GOOD_CIDER_END;
     ["Terminé :\nTout sauf le cidre\n"] = QG_ILAA_INDEX.ALL_BUT_THE_CIDER_END;
 
@@ -144,7 +147,8 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[ILAA] = {
     ["Terminé :\nLa préférée d'Atli\n"] = QG_ILAA_INDEX.ATLIS_FAVOURITE_END;
 };
 
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[ILAA] = {
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[ILAA] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[ILAA][DEFAULT_QUICK_GUIDE] = {
     ["Vous avez récupéré du Faux cidre des Etoiles d'Antan"] = QG_ILAA_INDEX.ALL_BUT_THE_GOOD_CIDER_DRINK;
     ["Vous avez récupéré du cidre des Etoiles d'Antan"] = QG_ILAA_INDEX.ALL_BUT_THE_CIDER_DRINK;
 

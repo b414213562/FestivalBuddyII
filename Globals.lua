@@ -210,103 +210,123 @@ DEFAULT_SETTINGS = {
 
     ["QUICK_GUIDE_PROGRESS"] = {
         [MIDSUMMER] = {
+            [1] = {
+            };
+            [2] = {
+            };
         };
         [YULE] = {
+            [1] = {
+            };
         };
         [ILAA] = {
+            [1] = {
+            };
         };
         [SPRING] = {
+            [1] = {
+            };
         };
     };
 
     ["QUICK_GUIDE_QUESTS_TO_USE"] = {
         [MIDSUMMER] = {
-            ["A_CURE_FOR_ALL_ILLS"] = true;
-            ["AIDING_THE_STABLE_HANDS"] = true;
-            ["ARRANGING_ARRANGEMENTS"] = true;
-            ["ARTISTIC_DIRECTION"] = true;
-            ["FLORAL_CROWNS"] = true;
-            ["GROWING_PAINS"] = true;
-            ["HONOURING_HEALERS"] = true;
-            ["IN_CELEBRATION_OF_MIDSUMMER"] = true;
-            ["LOVE_IS_IN_THE_AIR"] = true;
-            ["SOMETHING_FLORAL"] = true;
-            ["SOMETHING_MISPLACED"] = true;
-            ["SWEET_TREATS"] = true;
-            ["TASTY_MORSELS"] = true;
-            ["TO_THE_LAST_DROP"] = true;
-            ["TOSS_A_COIN"] = true;
-            ["UNHELPFUL_HOUNDS"] = true;
-            ["WEDDING_SUPPLIES"] = true;
-            ["WHAT_ALES_YOU"] = true;
-
-            ["HOUSEKEEPING"] = true;
-            ["TIDAL_TREASURES"] = true;
-            ["ASSISTING_THE_COOK"] = true;
-            ["BUILDING_CASTLES"] = true;
-            ["FISHING_FOR_ADVICE"] = true;
-            ["OFFERING_TO_HELP"] = true;
-            ["SEARCHING_FOR_SWIMMING_SPOTS"] = true;
-            ["A_FLOCK_OF_SEAGULLS"] = true;
-            ["CAT_CONUNDRUM"] = true;
-            ["EYESORES_DRIFTED_ASHORE"] = true;
-            ["LETS_GO_FLY_A_KITE"] = true;
+            [1] = {
+                ["A_CURE_FOR_ALL_ILLS"] = true;
+                ["AIDING_THE_STABLE_HANDS"] = true;
+                ["ARRANGING_ARRANGEMENTS"] = true;
+                ["ARTISTIC_DIRECTION"] = true;
+                ["FLORAL_CROWNS"] = true;
+                ["GROWING_PAINS"] = true;
+                ["HONOURING_HEALERS"] = true;
+                ["IN_CELEBRATION_OF_MIDSUMMER"] = true;
+                ["LOVE_IS_IN_THE_AIR"] = true;
+                ["SOMETHING_FLORAL"] = true;
+                ["SOMETHING_MISPLACED"] = true;
+                ["SWEET_TREATS"] = true;
+                ["TASTY_MORSELS"] = true;
+                ["TO_THE_LAST_DROP"] = true;
+                ["TOSS_A_COIN"] = true;
+                ["UNHELPFUL_HOUNDS"] = true;
+                ["WEDDING_SUPPLIES"] = true;
+                ["WHAT_ALES_YOU"] = true;
+            };
+            [2] = {
+                ["HOUSEKEEPING"] = true;
+                ["TIDAL_TREASURES"] = true;
+                ["ASSISTING_THE_COOK"] = true;
+                ["BUILDING_CASTLES"] = true;
+                ["FISHING_FOR_ADVICE"] = true;
+                ["IN_CELEBRATION_OF_MIDSUMMER"] = true;
+                ["OFFERING_TO_HELP"] = true;
+                ["SEARCHING_FOR_SWIMMING_SPOTS"] = true;
+                ["A_FLOCK_OF_SEAGULLS"] = true;
+                ["CAT_CONUNDRUM"] = true;
+                ["EYESORES_DRIFTED_ASHORE"] = true;
+                ["LETS_GO_FLY_A_KITE"] = true;
+            };
 
         };
         [YULE] = {
-            ["A_BROKEN_SNOWMAN"] = true;
-            ["A_CHARITABLE_SPIRIT"] = true;
-            ["COLD_AS_ICE"] = true;
-            ["EMPTY_KEG_EMERGENCY"] = true;
-            ["FILLING_THE_FIELD"] = true;
-            ["IN_THE_SPIRIT_OF_YULE"] = true;
-            ["MAKING_MISCHIEF"] = true;
-            ["MOVING_THEM_OFF"] = true;
-            ["STUFFING_THE_STUFFED"] = true;
-            ["THE_ABOMINABLE_SNOW_BEASTS"] = true;
-            ["THE_BIGGEST_STOMACH_OF_THEM_ALL"] = true;
-            ["THE_BIGGEST_STOMACH_OF_THEM_ALL_2"] = true;
-            ["THE_BIGGEST_STOMACH_OF_THEM_ALL_3"] = true;
-            ["THE_BIGGEST_STOMACH_OF_THEM_ALL_4"] = true;
-            ["THE_BIGGEST_STOMACH_OF_THEM_ALL_5"] = true;
-            ["TIDYING_UP"] = true;
-            ["UNWILLING_FIREWOOD"] = true;
+            [1] = {
+                ["A_BROKEN_SNOWMAN"] = true;
+                ["A_CHARITABLE_SPIRIT"] = true;
+                ["COLD_AS_ICE"] = true;
+                ["EMPTY_KEG_EMERGENCY"] = true;
+                ["FILLING_THE_FIELD"] = true;
+                ["IN_THE_SPIRIT_OF_YULE"] = true;
+                ["MAKING_MISCHIEF"] = true;
+                ["MOVING_THEM_OFF"] = true;
+                ["STUFFING_THE_STUFFED"] = true;
+                ["THE_ABOMINABLE_SNOW_BEASTS"] = true;
+                ["THE_BIGGEST_STOMACH_OF_THEM_ALL"] = true;
+                ["THE_BIGGEST_STOMACH_OF_THEM_ALL_2"] = true;
+                ["THE_BIGGEST_STOMACH_OF_THEM_ALL_3"] = true;
+                ["THE_BIGGEST_STOMACH_OF_THEM_ALL_4"] = true;
+                ["THE_BIGGEST_STOMACH_OF_THEM_ALL_5"] = true;
+                ["TIDYING_UP"] = true;
+                ["UNWILLING_FIREWOOD"] = true;
+            };
         };
         [ILAA] = {
-            ["ALL_BUT_THE_CIDER"] = true;
-            ["NEVER_FAR_FROM_HOME"] = true;
-            ["ONE_DRINK_TOO_MANY"] = true;
-            ["QUITE_A_PICKLE"] = true;
-            ["A_BIT_OF_BROWN"] = true;
-            ["A_REMINDER_OF_RIVENDELL"] = true;
-            ["A_MEMBER_IN_NEED"] = true;
-            ["A_DRINK_OF_THE_WORST_CHARACTER"] = true;
-            ["A_SIMPLE_WINE"] = true;
-            ["A_DARK_DAY"] = true;
-            ["ATLIS_FAVOURITE"] = true;
-            ["ALL_BUT_THE_GOOD_CIDER"] = true;
-            ["NEVER_FURTHER_FROM_HOME"] = true;
-            ["ONE_DRINK_TOO_FEW"] = true;
-            ["QUITE_A_TICKLE"] = true;
-            ["A_BIT_OF_WHITE"] = true;
-            ["BOMBURS_BREATH"] = true;
-            ["A_DIFFERENT_REMINDER_OF_RIVENDELL"] = true;
-            ["A_DRINK_OF_THE_BEST_CHARACTER"] = true;
-            ["A_CONVOLUTED_WINE"] = true;
-            ["A_DARK_PRANK"] = true;
-            ["NOT_ATLIS_FAVOURITE"] = true;
+            [1] = {
+                ["ALL_BUT_THE_CIDER"] = true;
+                ["NEVER_FAR_FROM_HOME"] = true;
+                ["ONE_DRINK_TOO_MANY"] = true;
+                ["QUITE_A_PICKLE"] = true;
+                ["A_BIT_OF_BROWN"] = true;
+                ["A_REMINDER_OF_RIVENDELL"] = true;
+                ["A_MEMBER_IN_NEED"] = true;
+                ["A_DRINK_OF_THE_WORST_CHARACTER"] = true;
+                ["A_SIMPLE_WINE"] = true;
+                ["A_DARK_DAY"] = true;
+                ["ATLIS_FAVOURITE"] = true;
+                ["ALL_BUT_THE_GOOD_CIDER"] = true;
+                ["NEVER_FURTHER_FROM_HOME"] = true;
+                ["ONE_DRINK_TOO_FEW"] = true;
+                ["QUITE_A_TICKLE"] = true;
+                ["A_BIT_OF_WHITE"] = true;
+                ["BOMBURS_BREATH"] = true;
+                ["A_DIFFERENT_REMINDER_OF_RIVENDELL"] = true;
+                ["A_DRINK_OF_THE_BEST_CHARACTER"] = true;
+                ["A_CONVOLUTED_WINE"] = true;
+                ["A_DARK_PRANK"] = true;
+                ["NOT_ATLIS_FAVOURITE"] = true;
+            };
         };
         [SPRING] = {
-            ["A_TASTE_OF_SPRING"] = true;
-            ["DAFFODIL_DAYS_DAILY"] = true;
-            ["THE_GIFT_OF_SPRING"] = true;
-            ["PROMOTING_PIE"] = true;
-            ["FLOWER_ENVY"] = true;
-            ["THE_MUSICIANS_MISFORTUNE"] = true;
-            ["SPRINGTIMES_COLOURS"] = true;
-            ["STRETCHED_TOO_THIN"] = true;
-            ["WELL_WATERED_BLOOMS"] = true;
-            ["FAMILY_FEAST"] = true;
+            [1] = {
+                ["A_TASTE_OF_SPRING"] = true;
+                ["DAFFODIL_DAYS_DAILY"] = true;
+                ["THE_GIFT_OF_SPRING"] = true;
+                ["PROMOTING_PIE"] = true;
+                ["FLOWER_ENVY"] = true;
+                ["THE_MUSICIANS_MISFORTUNE"] = true;
+                ["SPRINGTIMES_COLOURS"] = true;
+                ["STRETCHED_TOO_THIN"] = true;
+                ["WELL_WATERED_BLOOMS"] = true;
+                ["FAMILY_FEAST"] = true;
+            };
         }
     };
 };

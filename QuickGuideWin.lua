@@ -61,7 +61,7 @@ function QuickGuideTreeViewFilterFunction(treeNode)
     if (not QUICK_GUIDES[SELECTEDFESTIVAL]) then return false; end
 
     local index = treeNode.index;
-    local questChain = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAIN_LOOKUP[SELECTEDFESTIVAL][index];
+    local questChain = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAIN_LOOKUP[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE][index];
 
     local isChainUsed = SETTINGS.QUICK_GUIDE_QUESTS_TO_USE[SELECTEDFESTIVAL][questChain];
     -- Only pay attention to the complete status if that should be taken into account:
@@ -83,9 +83,12 @@ end
 function UpdateNodeText(treeNode)
     local checkBox = treeNode.checkBox;
     local index = treeNode.index;
-    local objective = _QUICK_GUIDE[SELECTEDFESTIVAL][index];
+    local objective = _QUICK_GUIDE[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE][index];
 
     local progressText = "";
+    if (not objective) then
+        Turbine.Shell.WriteLine("Failed to look up index " .. dump(index) .. ": " .. checkBox:GetText() );
+    end
     if (objective.TOTAL) then
         local current = objective.CURRENT or 0;
         progressText = string.format(" (%d/%d)", current, objective.TOTAL);
@@ -120,7 +123,7 @@ function QuickGuideWinCreateNode(index)
     treeNode.complete = isCompleted;
     treeNode.index = index;
 
-    local objective = _QUICK_GUIDE[SELECTEDFESTIVAL][index];
+    local objective = _QUICK_GUIDE[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE][index];
     local checkBox = Turbine.UI.Lotro.CheckBox();
     checkBox:SetParent(treeNode);
     checkBox:SetSize(treeView:GetWidth() - ScrollbarWidth, 40);
@@ -157,11 +160,11 @@ function QuickGuideWinLoadFestival()
     local treeView = wQuickGuideWinParent.treeView;
     treeView:GetNodes():Clear();
 
-    if (_QUICK_GUIDE[SELECTEDFESTIVAL] == nil) then
+    if (_QUICK_GUIDE[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE] == nil) then
         return;
     end
 
-    for i = 1, #_QUICK_GUIDE[SELECTEDFESTIVAL] do
+    for i = 1, #_QUICK_GUIDE[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE] do
         local treeNode = QuickGuideWinCreateNode(i);
         treeView:GetNodes():Add(treeNode);
     end
@@ -182,14 +185,18 @@ function QuickGuideWinLoadFestival()
         QuickGuideTimerReset(wQuickGuideWinParent.timer);
     end
 
-    local height = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDIT_HEIGHTS[SELECTEDFESTIVAL] or 70;
+    local height = 70;
+    if (_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDIT_HEIGHTS[SELECTEDFESTIVAL] and
+        _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDIT_HEIGHTS[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE]) then
+        height = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDIT_HEIGHTS[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE];
+    end
     local creditNode = Turbine.UI.TreeNode();
     creditNode:SetSize(treeView:GetWidth() - ScrollbarWidth, height);
     creditNode.isReset = true;
 
     local creditLabel = Turbine.UI.Label();
     creditLabel:SetParent(creditNode);
-    creditLabel:SetText(_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[SELECTEDFESTIVAL]);
+    creditLabel:SetText(_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE]);
     creditLabel:SetSize(treeView:GetWidth() - ScrollbarWidth, height);
     treeView:GetNodes():Add(creditNode);
 end
@@ -226,7 +233,7 @@ function QuickGuidWinHandleCheckedEntry(treeNode)
     end
 
     local index = treeNode.index;
-    if (_QUICK_GUIDE[SELECTEDFESTIVAL][index]) then
+    if (_QUICK_GUIDE[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE][index]) then
         if (checkBox:IsChecked()) then
             QuickGuideWinSetCompleted(index);
         else
@@ -282,24 +289,24 @@ function QuickGuideWinMarkComplete(index)
         --Turbine.Shell.WriteLine("Tried to get index \"" .. index .. "\", but didn't find anything");
     end
 
-    if (_QUICK_GUIDE[SELECTEDFESTIVAL][index]) then
-        if (_QUICK_GUIDE[SELECTEDFESTIVAL][index]["ALSO_COMPLETES"]) then
-            for i=1, #_QUICK_GUIDE[SELECTEDFESTIVAL][index]["ALSO_COMPLETES"] do
-                local alsoIndex = _QUICK_GUIDE[SELECTEDFESTIVAL][index]["ALSO_COMPLETES"][i];
+    if (_QUICK_GUIDE[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE][index]) then
+        if (_QUICK_GUIDE[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE][index]["ALSO_COMPLETES"]) then
+            for i=1, #_QUICK_GUIDE[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE][index]["ALSO_COMPLETES"] do
+                local alsoIndex = _QUICK_GUIDE[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE][index]["ALSO_COMPLETES"][i];
                 QuickGuideWinMarkComplete(alsoIndex);
             end
         end
 
         -- only override the quest selection if they're actively using the quick guide:
         local isUsingQuickGuide = wQuickGuideWinParent:IsVisible();
-        local loadQuestDirective = _QUICK_GUIDE[SELECTEDFESTIVAL][index]["LOAD_QUEST"];
+        local loadQuestDirective = _QUICK_GUIDE[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE][index]["LOAD_QUEST"];
         if (isUsingQuickGuide and
             loadQuestDirective) then
 
             -- make sure this chain isn't already completed:
             local chainName = loadQuestDirective;
             local chainEndName = chainName .. "_END";
-            local chainEndIndex = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_INDICIES[SELECTEDFESTIVAL][chainEndName];
+            local chainEndIndex = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_INDICIES[SELECTEDFESTIVAL][DEFAULT_QUICK_GUIDE][chainEndName];
             local checkBox = GetCheckbox(chainEndIndex);
             local isChainComplete = checkBox:IsChecked();
 
@@ -316,24 +323,24 @@ function QuickGuideWinMarkComplete(index)
 end
 
 function QuickGuideWinIsCompleted(index)
-    return SETTINGS.QUICK_GUIDE_PROGRESS[SELECTEDFESTIVAL][index] ~= nil;
+    return SETTINGS.QUICK_GUIDE_PROGRESS[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE][index] ~= nil;
 end
 
 function QuickGuideWinSetCompleted(index)
-    SETTINGS.QUICK_GUIDE_PROGRESS[SELECTEDFESTIVAL][index] = true;
+    SETTINGS.QUICK_GUIDE_PROGRESS[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE][index] = true;
 end
 
 function QuickGuideWinUnsetCompleted(index)
-    SETTINGS.QUICK_GUIDE_PROGRESS[SELECTEDFESTIVAL][index] = nil;
+    SETTINGS.QUICK_GUIDE_PROGRESS[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE][index] = nil;
 end
 
 function QuickGuideWinClearCompleted()
-    SETTINGS.QUICK_GUIDE_PROGRESS[SELECTEDFESTIVAL] = {};
+    SETTINGS.QUICK_GUIDE_PROGRESS[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE] = {};
 end
 
 function QuickGuideWinGetIndexFromChat(cMessage, objectiveTable)
     local index = nil;
-    if (_QUICK_GUIDE[SELECTEDFESTIVAL]) then
+    if (_QUICK_GUIDE[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE]) then
         local indexOrTable = objectiveTable[SELECTEDFESTIVAL][cMessage];
         if (type(indexOrTable) == "table") then
             for _, entry in ipairs(indexOrTable) do
@@ -350,7 +357,7 @@ function QuickGuideWinGetIndexFromChat(cMessage, objectiveTable)
 end
 
 function QuickGuideWinHandleQuestChainBeginOrEnd(index)
-    local objective = _QUICK_GUIDE[SELECTEDFESTIVAL][index];
+    local objective = _QUICK_GUIDE[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE][index];
     local isChainBegin = objective.CHAIN_BEGIN ~= nil;
     local isChainEnd = objective.CHAIN_END ~= nil;
     if (isChainBegin or isChainEnd) then
@@ -358,8 +365,8 @@ function QuickGuideWinHandleQuestChainBeginOrEnd(index)
         if (isChainEnd) then state = true; end
 
         local chain = nil;
-        if (isChainBegin) then chain = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAINS[SELECTEDFESTIVAL][objective.CHAIN_BEGIN];
-        elseif (isChainEnd) then chain = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAINS[SELECTEDFESTIVAL][objective.CHAIN_END];
+        if (isChainBegin) then chain = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAINS[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE][objective.CHAIN_BEGIN];
+        elseif (isChainEnd) then chain = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAINS[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE][objective.CHAIN_END];
         end
         if (chain) then
             local treeView = wQuickGuideWinParent.treeView;
@@ -386,7 +393,7 @@ end
 
 function QuickGuideWinHandleQuestChannelText_Objectives(cMessage)
     -- If there's a quick guide and a corresponding quest objective, mark the objective complete:
-    local index = QuickGuideWinGetIndexFromChat(cMessage, _QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS);
+    local index = QuickGuideWinGetIndexFromChat(cMessage, _QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[SELECTED_QUICK_GUIDE]);
     if (index) then
         QuickGuideWinHandleQuestChainBeginOrEnd(index);
         QuickGuideWinMarkComplete(index);
@@ -400,12 +407,14 @@ function QuickGuideWinHandleQuestChannelText_Progress(cMessage)
     if (not progress) then return; end
     local festivalProgress = progress[SELECTEDFESTIVAL];
     if (not festivalProgress) then return; end
+    local guideProgress = festivalProgress[SELECTED_QUICK_GUIDE];
+    if (not guideProgress) then return; end
 
-    for pattern,index in pairs(festivalProgress) do
+    for pattern,index in pairs(guideProgress) do
         local current, total = string.match(cMessage, pattern);
         if (current and total) then
             local treeNode = GetTreeNodeFromIndex(index);
-            local objective = _QUICK_GUIDE[SELECTEDFESTIVAL][index];
+            local objective = _QUICK_GUIDE[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE][index];
 
             objective.CURRENT = current;
             objective.TOTAL = total;
@@ -416,7 +425,7 @@ function QuickGuideWinHandleQuestChannelText_Progress(cMessage)
 end
 
 function QuickGuideWinHandleQuestAccept(cMessage)
-    local index = QuickGuideWinGetIndexFromChat(cMessage, _QUICK_GUIDE_NEW_QUEST_STRINGS);
+    local index = QuickGuideWinGetIndexFromChat(cMessage, _QUICK_GUIDE_NEW_QUEST_STRINGS[SELECTED_QUICK_GUIDE]);
     -- If there's a quick guide and a corresponding quest, mark the quest chain picked up:
     if (index) then
         QuickGuideWinHandleQuestChainBeginOrEnd(index);
@@ -426,7 +435,7 @@ end
 
 function QuickGuideWinHandleQuestCompleted(cMessage)
     -- If there's a quick guide and a corresponding quest, mark the quest chain:
-    local index = QuickGuideWinGetIndexFromChat(cMessage, _QUICK_GUIDE_COMPLETED_QUEST_STRINGS);
+    local index = QuickGuideWinGetIndexFromChat(cMessage, _QUICK_GUIDE_COMPLETED_QUEST_STRINGS[SELECTED_QUICK_GUIDE]);
     if (index) then
         QuickGuideWinMarkComplete(index);
         QuickGuideWinHandleQuestChainBeginOrEnd(index);
@@ -434,7 +443,7 @@ function QuickGuideWinHandleQuestCompleted(cMessage)
 end
 
 function QuickGuideWinHandleTargetChanged(newTargetName)
-    local targets = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_TARGETS[SELECTEDFESTIVAL];
+    local targets = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_TARGETS[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE];
     if (targets) then
         for _, target in ipairs(targets) do
             if (not target.DONE and target.NAME == newTargetName) then

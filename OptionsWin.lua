@@ -395,43 +395,45 @@ function DrawQuickGuideOptions(options, y)
     -- iterate through festivals table so guides appear in same order here:
     for k,festival in ipairs(FESTIVALS_UI_ORDER) do
         if (QUICK_GUIDES[festival]) then
+            for guideId, name in ipairs(_G.CubePlugins.FestivalBuddyII._QUICK_GUIDES[festival]) do
 
-            local quickGuideFestivalLabel = Turbine.UI.Label();
-            quickGuideFestivalLabel:SetParent(options);
-            quickGuideFestivalLabel:SetText(GetString(_LANG.FESTIVALS[festival]) .. ":");
-            quickGuideFestivalLabel:SetSize(400, 20);
-            quickGuideFestivalLabel:SetPosition(20, y);
-            y = y + 20;
+                local quickGuideFestivalLabel = Turbine.UI.Label();
+                quickGuideFestivalLabel:SetParent(options);
+                quickGuideFestivalLabel:SetText(GetString(_LANG.FESTIVALS[festival]) .. ": " .. name);
+                quickGuideFestivalLabel:SetSize(400, 20);
+                quickGuideFestivalLabel:SetPosition(20, y);
+                y = y + 20;
 
-            -- We want to present the quest chains alphabetically.
-            -- Put them into a table with numerical indicies (questNames) and sort that table.
-            -- Then iterate through that table, looking up the keys in questNameToKey
-            local questNameToKey = {};
-            local questNames = {};
-            for k,v in pairs(_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAINS[festival]) do
-                local name = GetString(_LANG.QUESTS[festival][k]);
-                questNameToKey[name] = k;
-                table.insert(questNames, name);
-            end
-            table.sort(questNames);
+                -- We want to present the quest chains alphabetically.
+                -- Put them into a table with numerical indicies (questNames) and sort that table.
+                -- Then iterate through that table, looking up the keys in questNameToKey
+                local questNameToKey = {};
+                local questNames = {};
+                    for k,v in pairs(_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAINS[festival][guideId]) do
+                        local name = GetString(_LANG.QUESTS[festival][k]);
+                        questNameToKey[name] = k;
+                        table.insert(questNames, name);
+                    end
+                table.sort(questNames);
 
-            -- Make a checkbox for each quest:
-            for i=1, #questNames do
-                local questName = questNames[i];
-                local questKey = questNameToKey[questName];
-                local questCheckbox = Turbine.UI.Lotro.CheckBox();
-                questCheckbox:SetParent(options);
-                questCheckbox:SetText(questName);
-                questCheckbox:SetSize(325, 20);
-                questCheckbox:SetPosition(30, y);
-                questCheckbox:SetChecked(SETTINGS.QUICK_GUIDE_QUESTS_TO_USE[festival][questKey]);
-                questCheckbox.CheckedChanged = function (sender, args)
-                    SETTINGS.QUICK_GUIDE_QUESTS_TO_USE[festival][questKey] = not SETTINGS.QUICK_GUIDE_QUESTS_TO_USE[festival][questKey];
-                    wQuickGuideWinParent.treeView:Refresh();
+                -- Make a checkbox for each quest:
+                for i=1, #questNames do
+                    local questName = questNames[i];
+                    local questKey = questNameToKey[questName];
+                    local questCheckbox = Turbine.UI.Lotro.CheckBox();
+                    questCheckbox:SetParent(options);
+                    questCheckbox:SetText(questName);
+                    questCheckbox:SetSize(325, 20);
+                    questCheckbox:SetPosition(30, y);
+                    questCheckbox:SetChecked(SETTINGS.QUICK_GUIDE_QUESTS_TO_USE[festival][questKey]);
+                    questCheckbox.CheckedChanged = function (sender, args)
+                        SETTINGS.QUICK_GUIDE_QUESTS_TO_USE[festival][questKey] = not SETTINGS.QUICK_GUIDE_QUESTS_TO_USE[festival][questKey];
+                        wQuickGuideWinParent.treeView:Refresh();
+                    end
+                    y = y + 20;
                 end
                 y = y + 20;
             end
-            y = y + 20;
         end
     end
 

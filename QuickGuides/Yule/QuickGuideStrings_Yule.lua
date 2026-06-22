@@ -1,7 +1,8 @@
 -- Yule Quest Indexes:
 
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_INDICIES[YULE] = {};
-QG_YULE_INDEX = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_INDICIES[YULE];
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_INDICIES[YULE][DEFAULT_QUICK_GUIDE] = {};
+QG_YULE_INDEX = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_INDICIES[YULE][DEFAULT_QUICK_GUIDE];
 
 local i = 1;
 i = AddNextQuickguideValue(QG_YULE_INDEX, i, "IN_THE_SPIRIT_OF_YULE_PICKUP");
@@ -67,8 +68,8 @@ i = AddNextQuickguideValue(QG_YULE_INDEX, i, "THE_BIGGEST_STOMACH_OF_THEM_ALL_EN
 i = AddNextQuickguideValue(QG_YULE_INDEX, i, "THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION5");
 i = AddNextQuickguideValue(QG_YULE_INDEX, i, "THE_BIGGEST_STOMACH_OF_THEM_ALL_END_5");
 
-
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAINS[YULE] = {
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAINS[YULE] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAINS[YULE][DEFAULT_QUICK_GUIDE] = {
     ["IN_THE_SPIRIT_OF_YULE"] = {
         [QG_YULE_INDEX.IN_THE_SPIRIT_OF_YULE_END] = true;
         [QG_YULE_INDEX.IN_THE_SPIRIT_OF_YULE_PICKUP] = true;
@@ -183,7 +184,8 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAINS[YULE] = {
 
 };
 
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAIN_LOOKUP[YULE] = {
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAIN_LOOKUP[YULE] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAIN_LOOKUP[YULE][DEFAULT_QUICK_GUIDE] = {
     [QG_YULE_INDEX.A_BROKEN_SNOWMAN_COAL] = "A_BROKEN_SNOWMAN";
     [QG_YULE_INDEX.A_BROKEN_SNOWMAN_END] = "A_BROKEN_SNOWMAN";
     [QG_YULE_INDEX.A_BROKEN_SNOWMAN_PICKUP] = "A_BROKEN_SNOWMAN";
@@ -249,7 +251,8 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAIN_LOOKUP[YULE] = {
     [QG_YULE_INDEX.YULE_FESTIVAL_DAILY_END] = "YULE_FESTIVAL_DAILY";
 };
 
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[YULE] = {
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[YULE] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[YULE][DEFAULT_QUICK_GUIDE] = {
     [QG_YULE_INDEX.IN_THE_SPIRIT_OF_YULE_PICKUP] = {
         ["CHAIN_BEGIN"] = "IN_THE_SPIRIT_OF_YULE";
         ["LOAD_QUEST"] = "MOVING_THEM_OFF";
@@ -463,6 +466,7 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[YULE] = {
 };
 
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_PROGRESS[YULE] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_PROGRESS[YULE][DEFAULT_QUICK_GUIDE] = {};
 
 if (CLIENTLANG == "FRENCH") then
     import "CubePlugins.FestivalBuddyII.QuickGuides.Yule.QuickGuideStrings_YuleFR";

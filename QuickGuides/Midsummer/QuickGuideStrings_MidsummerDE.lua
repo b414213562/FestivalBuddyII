@@ -1,7 +1,8 @@
 
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[MIDSUMMER] = "\nDiese Anleitung basiert auf LilRedHeads herausragendem 'LOTRO Midsummer Festival - Quick Guide', nachzulesen bei https://lifebeyondtheshire.com/lotro-midsummer-festival-quick-guide/. Vielen Dank LRH!";
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[MIDSUMMER] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[MIDSUMMER][DEFAULT_QUICK_GUIDE] = "\nDiese Anleitung basiert auf LilRedHeads herausragendem 'LOTRO Midsummer Festival - Quick Guide', nachzulesen bei https://lifebeyondtheshire.com/lotro-midsummer-festival-quick-guide/. Vielen Dank LRH!";
 
-QG_MIDSUMMER = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[MIDSUMMER];
+QG_MIDSUMMER = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[MIDSUMMER][DEFAULT_QUICK_GUIDE];
 QG_MIDSUMMER[QG_MIDSUMMER_INDEX.IN_CELEBRATION_OF_MIDSUMMER_PICKUP].DISPLAY = "Nimm 'Zur Feier von Mittsommer' von Faeleth vor den <rgb=#ffc000>Städtischen Ställen</rgb> an!";
 QG_MIDSUMMER[QG_MIDSUMMER_INDEX.SOMETHING_FLORAL_PICKUP].DISPLAY = "Nimm 'Etwas blumig' von Merilien in der Zitadelle an";
 QG_MIDSUMMER[QG_MIDSUMMER_INDEX.TO_THE_LAST_DROP_PICKUP].DISPLAY = "Nimm 'Bis zum letzten Tropfen' von Merilien in der Zitadelle an";
@@ -77,7 +78,8 @@ QG_MIDSUMMER[QG_MIDSUMMER_INDEX.WHAT_ALES_YOU_END].DISPLAY = "Gib 'Die Bier-Jahr
 QG_MIDSUMMER[QG_MIDSUMMER_INDEX.TASTY_MORSELS_END].DISPLAY = "Gib 'Köstliche Häppchen' bei Othnoron ab.";
 QG_MIDSUMMER[QG_MIDSUMMER_INDEX.FLORAL_CROWNS_END].DISPLAY = "Gib 'Blumenkronen' bei der Blumenhändlerin ab.";
 
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[MIDSUMMER] = {
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[MIDSUMMER] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[MIDSUMMER][DEFAULT_QUICK_GUIDE] = {
     ["Neue Aufgabe: Zur Feier von Mittsommer"] = QG_MIDSUMMER_INDEX.IN_CELEBRATION_OF_MIDSUMMER_PICKUP;
     ["Neue Aufgabe: Etwas blumig"] = QG_MIDSUMMER_INDEX.SOMETHING_FLORAL_PICKUP;
     ["Neue Aufgabe: Bis zum letzten Tropfen"] = QG_MIDSUMMER_INDEX.TO_THE_LAST_DROP_PICKUP;
@@ -98,7 +100,8 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[MIDSUMMER] = {
     ["Neue Aufgabe: Liebe liegt in der Luft"] = QG_MIDSUMMER_INDEX.LOVE_IS_IN_THE_AIR_PICKUP;
 };
 
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[MIDSUMMER] = {
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[MIDSUMMER] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[MIDSUMMER][DEFAULT_QUICK_GUIDE] = {
     ["Abgeschlossen:\nHilfe für die Stallhelfer\n"] = QG_MIDSUMMER_INDEX.AIDING_THE_STABLE_HANDS_END;
     ["Abgeschlossen:\nMünzwurf\n"] = QG_MIDSUMMER_INDEX.TOSS_A_COIN_END;
     ["Abgeschlossen:\nUnnütze Hunde\n"] = QG_MIDSUMMER_INDEX.UNHELPFUL_HOUNDS_END;
@@ -118,7 +121,8 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[MIDSUMMER] =
     ["Abgeschlossen:\nBlumenkronen\n"] = QG_MIDSUMMER_INDEX.FLORAL_CROWNS_END;
 };
 
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[MIDSUMMER] = {
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[MIDSUMMER] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[MIDSUMMER][DEFAULT_QUICK_GUIDE] = {
     ["Ihr habt einen Striegel gefunden."] = QG_MIDSUMMER_INDEX.AIDING_THE_STABLE_HANDS_BRUSH;
     ["Ihr habt Äpfel an Euch genommen."] = QG_MIDSUMMER_INDEX.AIDING_THE_STABLE_HANDS_APPLES;
     ["Anzahl gestriegelter Pferde (3/3)"] = QG_MIDSUMMER_INDEX.AIDING_THE_STABLE_HANDS_GROOM;

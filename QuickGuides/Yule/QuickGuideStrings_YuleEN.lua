@@ -1,8 +1,14 @@
 
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[YULE] = "\nThis guide created by Cube during the 2023 Yule.";
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDIT_HEIGHTS[YULE] = 40;
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDES[YULE] = {
+    [DEFAULT_QUICK_GUIDE] = "Winterhome";
+};
 
-QG_YULE = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[YULE];
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[YULE] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[YULE][DEFAULT_QUICK_GUIDE] = "\nThis guide created by Cube during the 2023 Yule.";
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDIT_HEIGHTS[YULE] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDIT_HEIGHTS[YULE][DEFAULT_QUICK_GUIDE] = 40;
+
+QG_YULE = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[YULE][DEFAULT_QUICK_GUIDE];
 QG_YULE[QG_YULE_INDEX.IN_THE_SPIRIT_OF_YULE_PICKUP].DISPLAY = function() return string.format("Take %s from %s in %s", HighlightQuest("In the Spirit of Yule"), HighlightNpc("Mara Sandydowns"), HighlightLocation("Winterhome")); end
 QG_YULE[QG_YULE_INDEX.MOVING_THEM_OFF_PICKUP].DISPLAY = function() return TakeFrom("Moving Them Off", "Guard Kember"); end
 QG_YULE[QG_YULE_INDEX.THE_ABOMINABLE_SNOW_BEASTS_PICKUP].DISPLAY = function() return TakeFrom("The Abominable Snow-beasts", "Guard Kember"); end
@@ -66,7 +72,8 @@ QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_4].DISPLAY = function(
 QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION5].DISPLAY = function() return Continue("The Biggest Stomach of Them All (Part V)", "Eat food at the fifth station"); end
 QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_5].DISPLAY = function() return TurnInTo("The Biggest Stomach of Them All (Part V)", "Ian Prudholm"); end
 
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_PROGRESS[YULE] = {
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_PROGRESS[YULE] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_PROGRESS[YULE][DEFAULT_QUICK_GUIDE] = {
     ["Looted a distracted patron %((%d+)/(%d+)%)"] = QG_YULE_INDEX.MAKING_MISCHIEF_LOOT;
     ["Picked up dirty dishes %((%d+)/(%d+)%)"] = QG_YULE_INDEX.TIDYING_UP_DISHES;
     ["Cleaned up liquid spills %((%d+)/(%d+)%)"] = QG_YULE_INDEX.TIDYING_UP_SPILLS;
@@ -85,7 +92,8 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_PROGRESS[YULE] = {
     ["Ate food at the fifth station %((%d+)/(%d+)%)"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION5;
 };
 
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[YULE] = {
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[YULE] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[YULE][DEFAULT_QUICK_GUIDE] = {
     ["New Quest: In the Spirit of Yule"] = QG_YULE_INDEX.IN_THE_SPIRIT_OF_YULE_PICKUP;
     ["New Quest: Moving Them Off"] = QG_YULE_INDEX.MOVING_THEM_OFF_PICKUP;
     ["New Quest: The Abominable Snow-beasts"] = QG_YULE_INDEX.THE_ABOMINABLE_SNOW_BEASTS_PICKUP;
@@ -101,7 +109,8 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[YULE] = {
     ["New Quest: The Biggest Stomach of Them All"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_PICKUP;
 };
 
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[YULE] = {
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[YULE] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[YULE][DEFAULT_QUICK_GUIDE] = {
     ["Completed:\nTidying Up\n"] = QG_YULE_INDEX.TIDYING_UP_END;
     ["Completed:\nYule Festival (Daily)\n"] = QG_YULE_INDEX.YULE_FESTIVAL_DAILY_END;
     ["Completed:\nMoving Them Off\n"] = QG_YULE_INDEX.MOVING_THEM_OFF_END;
@@ -122,7 +131,8 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[YULE] = {
     ["Completed:\nThe Biggest Stomach of Them All (Part V)\n"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_5;
 };
 
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[YULE] = {
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[YULE] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[YULE][DEFAULT_QUICK_GUIDE] = {
     ["Barrett Nowell reluctantly moves along, unsure of where to go"] = QG_YULE_INDEX.MOVING_THEM_OFF_BARRETTNOWELL;
     ["Ted Ives gives you a disappointed look, but moves along"] = QG_YULE_INDEX.MOVING_THEM_OFF_TEDIVES;
     ["Regina Judson looks very sorrowful as she dashes away"] = QG_YULE_INDEX.MOVING_THEM_OFF_REGINAJUDSON;

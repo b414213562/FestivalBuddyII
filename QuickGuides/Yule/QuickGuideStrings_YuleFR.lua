@@ -1,6 +1,8 @@
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[YULE] = "\nThis guide created by Cube during the 2023 Yule.";
 
-QG_YULE = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[YULE];
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[YULE] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[YULE][DEFAULT_QUICK_GUIDE] = "\nThis guide created by Cube during the 2023 Yule.";
+
+QG_YULE = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[YULE][DEFAULT_QUICK_GUIDE];
 QG_YULE[QG_YULE_INDEX.IN_THE_SPIRIT_OF_YULE_PICKUP].DISPLAY = "Take 'L'esprit de Yule' from Mara Bassableux in Hibernaville";
 QG_YULE[QG_YULE_INDEX.MOVING_THEM_OFF_PICKUP].DISPLAY = "Take 'Circulez' from Garde Kember";
 QG_YULE[QG_YULE_INDEX.THE_ABOMINABLE_SNOW_BEASTS_PICKUP].DISPLAY = "Take 'Les abominables bêtes des neiges' from Garde Kember";
@@ -64,7 +66,8 @@ QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_4].DISPLAY = "Turn in 
 QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION5].DISPLAY = "Mangez au cinquième poste";
 QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_5].DISPLAY = "Turn in 'Le plus gros estomac du monde (partie V)' to Ian Prudhomme";
 
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_PROGRESS[YULE] = {
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_PROGRESS[YULE] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_PROGRESS[YULE][DEFAULT_QUICK_GUIDE] = {
     ["Vous avez fait les poches d'un visiteur fortuné %((%d+)/(%d+)%)"] = QG_YULE_INDEX.MAKING_MISCHIEF_LOOT;
     ["Assiettes sales ramassées %((%d+)/(%d+)%)"] = QG_YULE_INDEX.TIDYING_UP_DISHES;
     ["Liquides renversés nettoyés %((%d+)/(%d+)%)"] = QG_YULE_INDEX.TIDYING_UP_SPILLS;
@@ -83,7 +86,8 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_PROGRESS[YULE] = {
     ["Nourriture avalée au cinquième poste %((%d+)/(%d+)%)"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION5;
 };
 
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[YULE] = {
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[YULE] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[YULE][DEFAULT_QUICK_GUIDE] = {
     ["Nouvelle quête : L'esprit de Yule"] = QG_YULE_INDEX.IN_THE_SPIRIT_OF_YULE_PICKUP;
     ["Nouvelle quête : Circulez"] = QG_YULE_INDEX.MOVING_THEM_OFF_PICKUP;
     ["Nouvelle quête : Les abominables bêtes des neiges"] = QG_YULE_INDEX.THE_ABOMINABLE_SNOW_BEASTS_PICKUP;
@@ -99,7 +103,8 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[YULE] = {
     ["Nouvelle quête : Le plus gros estomac du monde"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_PICKUP;
 };
 
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[YULE] = {
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[YULE] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[YULE][DEFAULT_QUICK_GUIDE] = {
     ["Terminé :\nGrand nettoyage\n"] = QG_YULE_INDEX.TIDYING_UP_END;
     ["Terminé :\nFestival de Yule (Quotidien)\n"] = QG_YULE_INDEX.YULE_FESTIVAL_DAILY_END;
     ["Terminé :\nCirculez\n"] = QG_YULE_INDEX.MOVING_THEM_OFF_END;
@@ -120,7 +125,8 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[YULE] = {
     ["Terminé :\nLe plus gros estomac du monde (partie V)\n"] = QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_5;
 };
 
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[YULE] = {
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[YULE] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[YULE][DEFAULT_QUICK_GUIDE] = {
     ["Barrett Patraque s'en va à contrecœur, ne sachant où aller"] = QG_YULE_INDEX.MOVING_THEM_OFF_BARRETTNOWELL; -- key:620872121:136263297
     ["Ted Fermeron vous lance un regard déçu, mais finit par s'en aller"] = QG_YULE_INDEX.MOVING_THEM_OFF_TEDIVES;
     ["Régine Latombe s'éloigne, l'air triste"] = QG_YULE_INDEX.MOVING_THEM_OFF_REGINAJUDSON;

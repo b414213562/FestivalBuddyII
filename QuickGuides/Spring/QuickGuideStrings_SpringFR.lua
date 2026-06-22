@@ -1,8 +1,10 @@
 
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[SPRING] = "\nCe guide a été créé par Cube durant le Festival du Printemps 2026.\n\nRemarque : Plusieurs objectifs, notamment celui de « Jalousie florale », ne donnent pas de résultats visibles. L'option « Compagnon du festival » utilise la personne que vous ciblez comme indicateur pour simuler une interaction. Si vous sélectionnez des PNJ au hasard, les objectifs risquent d'être validés prématurément.";
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDIT_HEIGHTS[SPRING] = 140;
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[SPRING] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[SPRING][DEFAULT_QUICK_GUIDE] = "\nCe guide a été créé par Cube durant le Festival du Printemps 2026.\n\nRemarque : Plusieurs objectifs, notamment celui de « Jalousie florale », ne donnent pas de résultats visibles. L'option « Compagnon du festival » utilise la personne que vous ciblez comme indicateur pour simuler une interaction. Si vous sélectionnez des PNJ au hasard, les objectifs risquent d'être validés prématurément.";
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDIT_HEIGHTS[SPRING] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDIT_HEIGHTS[SPRING][DEFAULT_QUICK_GUIDE] = 140;
 
-QG_SPRING = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[SPRING];
+QG_SPRING = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[SPRING][DEFAULT_QUICK_GUIDE];
 QG_SPRING[QG_SPRING_INDEX.A_TASTE_OF_SPRING_PICKUP].DISPLAY = function() return TakeFrom("Un goût de printemps", "Rhudamer Hirtul"); end;
 QG_SPRING[QG_SPRING_INDEX.A_TASTE_OF_SPRING_END].DISPLAY = function() return TurnInTo("Un goût de printemps", "Rhudamer Hirtul"); end;
 QG_SPRING[QG_SPRING_INDEX.DAFFODIL_DAYS_DAILY_PICKUP].DISPLAY = function() return TakeFromIn("Jours de la jonquille (quotidien)", "Avra Devistère", "Clegur"); end
@@ -61,15 +63,15 @@ QG_SPRING[QG_SPRING_INDEX.FAMILY_FEAST_LEEKS_TALK].DISPLAY = function() return "
 QG_SPRING[QG_SPRING_INDEX.FAMILY_FEAST_LEEKS].DISPLAY = function() return "Récoltez des poireaux"; end
 QG_SPRING[QG_SPRING_INDEX.FAMILY_FEAST_END].DISPLAY = function() return TurnInTo("Festin familial", "Rosentyl Flutch"); end
 
--- What is the difference between _QUICK_GUIDE_PROGRESS and _QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS?
-
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_PROGRESS[SPRING] = {
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_PROGRESS[SPRING] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_PROGRESS[SPRING][DEFAULT_QUICK_GUIDE] = {
     ["Jonquilles cueillies %((%d+)/(%d+)%)"] = QG_SPRING_INDEX.THE_GIFT_OF_SPRING_DAFFODILS_PICKED;
     ["Jonquilles plantées %((%d+)/(%d+)%)"] = QG_SPRING_INDEX.THE_GIFT_OF_SPRING_DAFFODILS_PLANTED;
     ["Bannières installées %((%d+)/(%d+)%)"] = QG_SPRING_INDEX.SPRINGTIMES_COLOURS_BANNERS_PLACED;
 };
 
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[SPRING] = {
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[SPRING] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[SPRING][DEFAULT_QUICK_GUIDE] = {
     ["Nouvelle quête : Un goût de printemps"] = QG_SPRING_INDEX.A_TASTE_OF_SPRING_PICKUP;
     ["Nouvelle quête : Jours de la jonquille (quotidien)"] = QG_SPRING_INDEX.DAFFODIL_DAYS_DAILY_PICKUP;
     ["Nouvelle quête : Le cadeau du printemps"] = QG_SPRING_INDEX.THE_GIFT_OF_SPRING_PICKUP;
@@ -82,7 +84,8 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[SPRING] = {
     ["Nouvelle quête : Fleurs bien arrosées"] = QG_SPRING_INDEX.WELL_WATERED_BLOOMS_PICKUP;
 };
 
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[SPRING] = {
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[SPRING] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[SPRING][DEFAULT_QUICK_GUIDE] = {
     ["Terminé :\nUn goût de printemps\n"] = QG_SPRING_INDEX.A_TASTE_OF_SPRING_END;
     ["Terminé :\nJours de la jonquille (quotidien)\n"] = QG_SPRING_INDEX.DAFFODIL_DAYS_DAILY_END;
     ["Terminé :\nLe cadeau du printemps\n"] = QG_SPRING_INDEX.THE_GIFT_OF_SPRING_END;
@@ -96,7 +99,8 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[SPRING] = {
 
 };
 
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[SPRING] = {
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[SPRING] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[SPRING][DEFAULT_QUICK_GUIDE] = {
     ["Jonquilles cueillies (8/8)"] = QG_SPRING_INDEX.THE_GIFT_OF_SPRING_DAFFODILS_PICKED;
     ["Jonquilles plantées (8/8)"] = QG_SPRING_INDEX.THE_GIFT_OF_SPRING_DAFFODILS_PLANTED;
     ["Prospectus distribués (1/5)"] = QG_SPRING_INDEX.PROMOTING_PIE_FLIER_1;
@@ -131,7 +135,8 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[SPRING] = {
     };
 };
 
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_TARGETS[SPRING] = {
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_TARGETS[SPRING] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_TARGETS[SPRING][DEFAULT_QUICK_GUIDE] = {
     [1] = { ["NAME"] = "Velda Luche"; ["INDEX"] = QG_SPRING_INDEX.FLOWER_ENVY_TALK_1; };
     [2] = { ["NAME"] = "Agneau emballé"; ["INDEX"] = QG_SPRING_INDEX.STRETCHED_TOO_THIN_LAMB; };
     [3] = { ["NAME"] = "Gloron Magirouge"; ["INDEX"] = QG_SPRING_INDEX.FLOWER_ENVY_TALK_2; };

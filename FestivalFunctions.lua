@@ -42,7 +42,7 @@ end
 
 
 function FilterTarget(newTargetName)
-    if (_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_TARGETS[SELECTEDFESTIVAL] and
+    if (_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_TARGETS[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE] and
         newTargetName) then
         -- If the user is holding down shift while changing targets, we don't want
         -- to initiate a cascade completion.

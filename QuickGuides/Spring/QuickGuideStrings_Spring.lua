@@ -1,7 +1,8 @@
 -- Spring Quest Indexes:
 
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_INDICIES[SPRING] = {};
-QG_SPRING_INDEX = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_INDICIES[SPRING];
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_INDICIES[SPRING][DEFAULT_QUICK_GUIDE] = {};
+QG_SPRING_INDEX = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_INDICIES[SPRING][DEFAULT_QUICK_GUIDE];
 
 -- Quests to add:
 -- Family Feast
@@ -72,7 +73,8 @@ i = AddNextQuickguideValue(QG_SPRING_INDEX, i, "THE_GIFT_OF_SPRING_END");
 i = AddNextQuickguideValue(QG_SPRING_INDEX, i, "DAFFODIL_DAYS_DAILY_END");
 i = AddNextQuickguideValue(QG_SPRING_INDEX, i, "A_TASTE_OF_SPRING_END");
 
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAINS[SPRING] = {
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAINS[SPRING] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAINS[SPRING][DEFAULT_QUICK_GUIDE] = {
     ["A_TASTE_OF_SPRING"] = {
         [QG_SPRING_INDEX.A_TASTE_OF_SPRING_PICKUP] = true;
         [QG_SPRING_INDEX.A_TASTE_OF_SPRING_END] = true;
@@ -152,7 +154,8 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAINS[SPRING] = {
     };
 };
 
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAIN_LOOKUP[SPRING] = {
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAIN_LOOKUP[SPRING] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAIN_LOOKUP[SPRING][DEFAULT_QUICK_GUIDE] = {
     [QG_SPRING_INDEX.A_TASTE_OF_SPRING_PICKUP] = "A_TASTE_OF_SPRING";
     [QG_SPRING_INDEX.A_TASTE_OF_SPRING_END] = "A_TASTE_OF_SPRING";
 
@@ -221,7 +224,8 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAIN_LOOKUP[SPRING] = {
     [QG_SPRING_INDEX.FAMILY_FEAST_END] = "FAMILY_FEAST";
 };
 
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[SPRING] = {
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[SPRING] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[SPRING][DEFAULT_QUICK_GUIDE] = {
     [QG_SPRING_INDEX.A_TASTE_OF_SPRING_PICKUP] = {
         ["CHAIN_BEGIN"] = "A_TASTE_OF_SPRING";
     };
@@ -333,6 +337,7 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[SPRING] = {
 };
 
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_PROGRESS[SPRING] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_PROGRESS[SPRING][DEFAULT_QUICK_GUIDE] = {};
 
 if (CLIENTLANG == "FRENCH") then
     import "CubePlugins.FestivalBuddyII.QuickGuides.Spring.QuickGuideStrings_SpringFR";
