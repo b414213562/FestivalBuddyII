@@ -89,7 +89,7 @@ _LANG = {
         ["BARTERITEMS"] = {["ENGLISH"] = "Barter Items";    ["FRENCH"] = "Articles de troc";    ["GERMAN"] = "Tauschobjekte";   };
         ["LAST_UPDATED"]= {["ENGLISH"] = "Last updated: ";  ["FRENCH"] = "Dernière mise à jour : "; ["GERMAN"] = "Letzte Aktualisierung: "; };
         ["SORT"]        = {["ENGLISH"] = "Sort";            ["FRENCH"] = "Trier";               ["GERMAN"] = "Sortieren";       };
-        ["QUICK_GUIDE"] = {["ENGLISH"] = "Quick Guide";     ["FRENCH"] = "Guide Rapide";        ["GERMAN"] = "Kurzanleitung";   };
+        ["QUICK_GUIDE"] = {["ENGLISH"] = "Quick Guides";    ["FRENCH"] = "Guides Rapides";      ["GERMAN"] = "Kurzanleitungen"; };
         ["ALTS"]        = {["ENGLISH"] = "Alts";            ["FRENCH"] = "Alts";                ["GERMAN"] = "Twinks";          };
         ["MAP"]         = {["ENGLISH"] = "Map";             ["FRENCH"] = "Map";                 ["GERMAN"] = "Karte";           };
         ["RESETS"]      = {["ENGLISH"] = "Resets";          ["FRENCH"] = "Remettre \195\160 0"; ["GERMAN"] = "Rücksetzungen";   };
