@@ -163,6 +163,8 @@ end
 
 _G.AddNextQuickguideValue = AddNextQuickguideValue;
 
+_G.CubePlugins.FestivalBuddyII.MAX_QUICK_GUIDES = 3;
+
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDES = {}; -- Each guide for each festival listed here, e.g. _QUICK_GUIDES[MIDSUMMER][MIDSUMMER_MINAS_TIRITH_QUICK_GUIDE] = "Minas Tirith";
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_INDICIES = {};
 
