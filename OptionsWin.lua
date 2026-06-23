@@ -425,9 +425,9 @@ function DrawQuickGuideOptions(options, y)
                     questCheckbox:SetText(questName);
                     questCheckbox:SetSize(325, 20);
                     questCheckbox:SetPosition(30, y);
-                    questCheckbox:SetChecked(SETTINGS.QUICK_GUIDE_QUESTS_TO_USE[festival][questKey]);
+                    questCheckbox:SetChecked(SETTINGS.QUICK_GUIDE_QUESTS_TO_USE[festival][guideId][questKey]);
                     questCheckbox.CheckedChanged = function (sender, args)
-                        SETTINGS.QUICK_GUIDE_QUESTS_TO_USE[festival][questKey] = not SETTINGS.QUICK_GUIDE_QUESTS_TO_USE[festival][questKey];
+                        SETTINGS.QUICK_GUIDE_QUESTS_TO_USE[festival][guideId][questKey] = not SETTINGS.QUICK_GUIDE_QUESTS_TO_USE[festival][guideId][questKey];
                         wQuickGuideWinParent.treeView:Refresh();
                     end
                     y = y + 20;

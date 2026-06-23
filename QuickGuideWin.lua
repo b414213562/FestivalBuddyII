@@ -63,7 +63,7 @@ function QuickGuideTreeViewFilterFunction(treeNode)
     local index = treeNode.index;
     local questChain = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAIN_LOOKUP[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE][index];
 
-    local isChainUsed = SETTINGS.QUICK_GUIDE_QUESTS_TO_USE[SELECTEDFESTIVAL][questChain];
+    local isChainUsed = SETTINGS.QUICK_GUIDE_QUESTS_TO_USE[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE][questChain];
     -- Only pay attention to the complete status if that should be taken into account:
     local isEntryComplete = treeNode.complete and SETTINGS.QUICK_GUIDE_REMOVE_COMPLETED;
     local isReset = treeNode.isReset;
@@ -163,7 +163,8 @@ function QuickGuideWinLoadFestival()
         -- Update based on the (possibly-)new festival:
     SELECTED_QUICK_GUIDE = SETTINGS.SELECTED_QUICK_GUIDE[SELECTEDFESTIVAL];
 
-    if (_QUICK_GUIDE[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE] == nil) then
+    if (not _QUICK_GUIDE[SELECTEDFESTIVAL] or
+        _QUICK_GUIDE[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE] == nil) then
         return;
     end
 
@@ -314,7 +315,7 @@ function QuickGuideWinMarkComplete(index)
             local isChainComplete = checkBox:IsChecked();
 
             -- make sure this chain is included:
-            local isChainUsed = SETTINGS.QUICK_GUIDE_QUESTS_TO_USE[SELECTEDFESTIVAL][chainName];
+            local isChainUsed = SETTINGS.QUICK_GUIDE_QUESTS_TO_USE[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE][chainName];
 
             if (isChainUsed and not isChainComplete) then
                 local questName = GetString(_LANG.QUESTS[SELECTEDFESTIVAL][loadQuestDirective]);
@@ -344,7 +345,7 @@ end
 function QuickGuideWinGetIndexFromChat(cMessage, objectiveTable)
     local index = nil;
     if (_QUICK_GUIDE[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE]) then
-        local indexOrTable = objectiveTable[SELECTEDFESTIVAL][cMessage];
+        local indexOrTable = objectiveTable[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE][cMessage];
         if (type(indexOrTable) == "table") then
             for _, entry in ipairs(indexOrTable) do
                 if (not entry.DONE) then
@@ -353,7 +354,7 @@ function QuickGuideWinGetIndexFromChat(cMessage, objectiveTable)
                 end
             end
         else
-            index = objectiveTable[SELECTEDFESTIVAL][cMessage];
+            index = objectiveTable[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE][cMessage];
         end
     end
     return index;
@@ -396,7 +397,7 @@ end
 
 function QuickGuideWinHandleQuestChannelText_Objectives(cMessage)
     -- If there's a quick guide and a corresponding quest objective, mark the objective complete:
-    local index = QuickGuideWinGetIndexFromChat(cMessage, _QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[SELECTED_QUICK_GUIDE]);
+    local index = QuickGuideWinGetIndexFromChat(cMessage, _QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS);
     if (index) then
         QuickGuideWinHandleQuestChainBeginOrEnd(index);
         QuickGuideWinMarkComplete(index);
@@ -428,7 +429,7 @@ function QuickGuideWinHandleQuestChannelText_Progress(cMessage)
 end
 
 function QuickGuideWinHandleQuestAccept(cMessage)
-    local index = QuickGuideWinGetIndexFromChat(cMessage, _QUICK_GUIDE_NEW_QUEST_STRINGS[SELECTED_QUICK_GUIDE]);
+    local index = QuickGuideWinGetIndexFromChat(cMessage, _QUICK_GUIDE_NEW_QUEST_STRINGS);
     -- If there's a quick guide and a corresponding quest, mark the quest chain picked up:
     if (index) then
         QuickGuideWinHandleQuestChainBeginOrEnd(index);
@@ -438,7 +439,7 @@ end
 
 function QuickGuideWinHandleQuestCompleted(cMessage)
     -- If there's a quick guide and a corresponding quest, mark the quest chain:
-    local index = QuickGuideWinGetIndexFromChat(cMessage, _QUICK_GUIDE_COMPLETED_QUEST_STRINGS[SELECTED_QUICK_GUIDE]);
+    local index = QuickGuideWinGetIndexFromChat(cMessage, _QUICK_GUIDE_COMPLETED_QUEST_STRINGS);
     if (index) then
         QuickGuideWinMarkComplete(index);
         QuickGuideWinHandleQuestChainBeginOrEnd(index);

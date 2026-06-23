@@ -117,11 +117,11 @@ function CreateNpcTimer(npcName, cooldownInSeconds)
 
     -- Don't create a timer for an NPC if there are 
     -- no more objectives remaining:
-    local isMoveChainUsed = SETTINGS.QUICK_GUIDE_QUESTS_TO_USE[YULE][_NPC_CHAINS["MOVE"]];
+    local isMoveChainUsed = SETTINGS.QUICK_GUIDE_QUESTS_TO_USE[YULE][DEFAULT_QUICK_GUIDE][_NPC_CHAINS["MOVE"]];
     local moveObjective = _NPC_OBJECTIVES["MOVE"][npcName];
     local moveIndex = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_INDICIES[YULE][DEFAULT_QUICK_GUIDE][moveObjective];
     local moveIsComplete = QuickGuideWinIsCompleted(moveIndex);
-    local isCharitableChainUsed = SETTINGS.QUICK_GUIDE_QUESTS_TO_USE[YULE][_NPC_CHAINS["CHARITABLE"]];
+    local isCharitableChainUsed = SETTINGS.QUICK_GUIDE_QUESTS_TO_USE[YULE][DEFAULT_QUICK_GUIDE][_NPC_CHAINS["CHARITABLE"]];
     local charitableObjective = _NPC_OBJECTIVES["CHARITABLE"][npcName];
     local charitableIndex = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_INDICIES[YULE][DEFAULT_QUICK_GUIDE][charitableObjective];
     local charitableIsComplete = QuickGuideWinIsCompleted(charitableIndex);
