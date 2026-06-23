@@ -25,11 +25,41 @@ function DrawQuickGuideWin()
 
     Onscreen(wQuickGuideWinParent);
 
+    local y = 32;
+    local remainingHeight = tempHeight - 50;
+    local switchControlHeight = 30;
+
+    -- Create a switching mechanism at the top of the window for festivals with more than one quickguide
+    local switchControl = Turbine.UI.Control();
+    switchControl:SetParent(wQuickGuideWinParent);
+    switchControl:SetSize(tempWidth - 40, switchControlHeight);
+    switchControl:SetPosition(20, y);
+    --switchControl:SetBackColor(Turbine.UI.Color.DarkViolet);
+    wQuickGuideWinParent.switchControl = switchControl;
+
+    -- For now, create a button for each of three possible guides:
+    switchControl.buttons = {};
+    for i=1,3 do
+        local button = Turbine.UI.Lotro.Button();
+        button:SetParent(switchControl);
+        button:SetText("" .. i);
+        button:SetLeft(125 * (i -1));
+        button:SetWidth(100);
+        button.Click = function(sender, args)
+            SwitchQuickGuide(i);
+        end
+        switchControl.buttons[i] = button;
+    end
+
+    y = y + switchControlHeight;
+    remainingHeight = remainingHeight - switchControlHeight;
+
     local treeView = Turbine.UI.TreeView();
     treeView:SetParent(wQuickGuideWinParent);
-    treeView:SetPosition(20, 32);
-    treeView:SetSize(tempWidth - 40, tempHeight - 50);
+    treeView:SetPosition(20, y);
+    treeView:SetSize(tempWidth - 40, remainingHeight);
     treeView:SetFilter(QuickGuideTreeViewFilterFunction);
+    --treeView:SetBackColor(Turbine.UI.Color.DarkRed);
     wQuickGuideWinParent.treeView = treeView;
 
     local scrollbar = Turbine.UI.Lotro.ScrollBar();
@@ -45,15 +75,57 @@ function DrawQuickGuideWin()
 
     wQuickGuideWinParent.SizeChanged = function(sender, args)
         SETTINGS.QUICK_GUIDE_WIN.HEIGHT = wQuickGuideWinParent:GetHeight();
-        local newHeight = SETTINGS.QUICK_GUIDE_WIN.HEIGHT - 50;
-        treeView:SetHeight(newHeight);
-        scrollbar:SetHeight(newHeight);
+
+        AdjustSwitchAndTreeview();
     end
 
     local timer = MakeQuickGuideTimerControl(60, 20);
     timer:SetParent(wQuickGuideWinParent);
     timer:SetPosition(320, 17);
     wQuickGuideWinParent.timer = timer;
+end
+
+function SwitchQuickGuide(index)
+    SELECTED_QUICK_GUIDE = index;
+    SETTINGS.SELECTED_QUICK_GUIDE[SELECTEDFESTIVAL] = SELECTED_QUICK_GUIDE;
+    QuickGuideWinLoadFestival();
+end
+
+function AdjustSwitchAndTreeview()
+    local treeView = wQuickGuideWinParent.treeView;
+    local switchControl = wQuickGuideWinParent.switchControl;
+
+    local switchIsVisible = false;
+    local treeY = 32;
+    local treeHeight = wQuickGuideWinParent:GetHeight() - 50;
+
+    local guideCount = 1;
+    if (_G.CubePlugins.FestivalBuddyII._QUICK_GUIDES[SELECTEDFESTIVAL]) then guideCount = #_G.CubePlugins.FestivalBuddyII._QUICK_GUIDES[SELECTEDFESTIVAL]; end
+
+    if (guideCount > 1) then
+        switchIsVisible = true;
+        treeY = treeY + switchControl:GetHeight();
+        treeHeight = treeHeight - switchControl:GetHeight();
+
+        -- Only show the switching options available for this festival.
+        -- Currenctly the system is one button per guide. If we ever get to more than 3 guides for a festival,
+        -- We'll need to switch to something like a combo box.
+
+        for i=1,3 do
+            local button = switchControl.buttons[i];
+            button:SetVisible(true);
+            button:SetEnabled(i ~= SELECTED_QUICK_GUIDE);
+            button:SetVisible(guideCount >= i); -- if there are 2 guides, hide any buttons higher than that.
+            button:SetText(_G.CubePlugins.FestivalBuddyII._QUICK_GUIDES[SELECTEDFESTIVAL][i]);
+        end
+
+    end
+
+    switchControl:SetVisible(switchIsVisible);
+    treeView:SetTop(treeY);
+    treeView:SetHeight(treeHeight);
+    treeView.scrollbar:SetHeight(treeHeight);
+
 end
 
 function QuickGuideTreeViewFilterFunction(treeNode)
@@ -162,6 +234,8 @@ function QuickGuideWinLoadFestival()
 
         -- Update based on the (possibly-)new festival:
     SELECTED_QUICK_GUIDE = SETTINGS.SELECTED_QUICK_GUIDE[SELECTEDFESTIVAL];
+
+    AdjustSwitchAndTreeview();
 
     if (not _QUICK_GUIDE[SELECTEDFESTIVAL] or
         _QUICK_GUIDE[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE] == nil) then
