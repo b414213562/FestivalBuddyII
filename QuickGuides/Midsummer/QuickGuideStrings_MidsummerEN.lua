@@ -84,6 +84,7 @@ QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.TASTY_MORSELS_END].DISPLAY = "Turn in 'Tas
 QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.FLORAL_CROWNS_END].DISPLAY = "Turn in 'Floral Crowns' to Florist.";
 
 QG_MIDSUMMER_FH = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[MIDSUMMER][MIDSUMMER_FURTHERHOLM_QUICK_GUIDE];
+QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.IN_CELEBRATION_OF_MIDSUMMER_PICKUP].DISPLAY = "Take 'In Celebration of Midsummer' from Captain Khâtaphos in the <rgb=#ffc000>Cracked Flagon</rgb>";
 QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.HOUSEKEEPING_PICKUP].DISPLAY = function() return TakeFrom("Housekeeping", "Darôma"); end;
 QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.HOUSEKEEPING_BEDS].DISPLAY = function() return "Make the beds"; end
 QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.HOUSEKEEPING_FLOORS].DISPLAY = function() return "Scrub the floors"; end
@@ -179,6 +180,7 @@ QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.A_FLOCK_OF_SEAGULLS_5].DISPLAY = function(
 QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.A_FLOCK_OF_SEAGULLS_6].DISPLAY = function() return "Chase off irksome seagull by west fishing point"; end;
 QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.A_FLOCK_OF_SEAGULLS_7].DISPLAY = function() return "Chase off irksome seagull by sound end of west bridge"; end;
 QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.A_FLOCK_OF_SEAGULLS_8].DISPLAY = function() return "Chase off irksome seagull by smelly cat"; end;
+QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.IN_CELEBRATION_OF_MIDSUMMER_END].DISPLAY = "Turn in 'In Celebration of Midsummer' to Captain Khâtaphos.";
 
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[MIDSUMMER] = {};
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[MIDSUMMER][MIDSUMMER_MINAS_TIRITH_QUICK_GUIDE] = {
