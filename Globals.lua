@@ -115,6 +115,16 @@ DEFAULT_SETTINGS = {
 
     ["MSGCOLOR"] = "FFFFFF";
     ["FESTIVAL"] = "SPRING";
+    ["SELECTED_QUICK_GUIDE"] = {
+        [SPRING] = 1;
+        [HARVESTMATH] = 1;
+        [YULE] = 1;
+        [ANNIVERSARY] = 1;
+        [FARMERSFAIRE] = 1;
+        [HOBNANIGANS] = 1;
+        [MIDSUMMER] = 1;
+        [ILAA] = 1;
+    };
     ["QUEST"] = nil;
     ["EMOTESASSIST"] = true;
     ["QSASSIST"] = true;

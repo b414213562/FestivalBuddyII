@@ -160,6 +160,9 @@ function QuickGuideWinLoadFestival()
     local treeView = wQuickGuideWinParent.treeView;
     treeView:GetNodes():Clear();
 
+        -- Update based on the (possibly-)new festival:
+    SELECTED_QUICK_GUIDE = SETTINGS.SELECTED_QUICK_GUIDE[SELECTEDFESTIVAL];
+
     if (_QUICK_GUIDE[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE] == nil) then
         return;
     end

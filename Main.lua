@@ -195,6 +195,8 @@ function LoadSettingsFileCharacter()
     end
     SELECTEDFESTIVAL = SETTINGS.FESTIVAL;
 
+    SELECTED_QUICK_GUIDE = SETTINGS.SELECTED_QUICK_GUIDE[SELECTEDFESTIVAL];
+
 end
 
 function LoadSettingsFileServer()
