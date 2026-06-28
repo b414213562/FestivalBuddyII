@@ -80,15 +80,15 @@ function _G.HighlightQuestItem(questItem)
 end
 
 QUICK_GUIDES_FORMAT_STRINGS = {
-    ["TravelTurnInTo"] = { ["ENGLISH"] = "Travel to %s, turn in %s to %s"; ["GERMAN"] = "Reise nach %s, gib %s bei %s ab"; };
-    ["TurnInTo"] = { ["ENGLISH"] = "Turn in %s to %s"; ["GERMAN"] = "Gib %s bei %s ab"; };
-    ["Continue"] = { ["ENGLISH"] = "%s: %s"; };
-    ["ContinueWith"] = { ["ENGLISH"] = "%s: Continue quest with %s"; ["GERMAN"] = "%s: Setze Aufgabe bei %s fort"; }; -- or "Setze Aufgabe %s bei %s fort"
-    ["CollectFromNpc"] = { ["ENGLISH"] = "Collect %s from %s"; ["GERMAN"] = "Besorge %s von %s"; };
-    ["CollectFromLocation"] = { ["ENGLISH"] = "Collect %s from %s"; ["GERMAN"] = "Besorge %s aus %s"; };
-    ["TravelCollectFrom"] = { ["ENGLISH"] = "Travel to %s, collect %s from %s"; ["GERMAN"] = "Reise nach %s, besorge %s von %s"; };
-    ["TakeFrom"] = { ["ENGLISH"] = "Take %s from %s"; ["GERMAN"] = "Nimm %s bei %s an"; };
-    ["TakeFromIn"] = { ["ENGLISH"] = "Take %s from %s in %s"; ["GERMAN"] = "Nimm %s bei %s an"; ["FRENCH"] = "Prenez %s de %s dans %s."; };
+    ["TravelTurnInTo"] =        { ["ENGLISH"] = "Travel to %s, turn in %s to %s";   ["GERMAN"] = "Reise nach %s, gib %s bei %s ab";     ["FRENCH"] = "Voyage vers %s, remettez %s au %s"};
+    ["TurnInTo"] =              { ["ENGLISH"] = "Turn in %s to %s";                 ["GERMAN"] = "Gib %s bei %s ab";                    ["FRENCH"] = "Remettez %s au %s"; };
+    ["Continue"] =              { ["ENGLISH"] = "%s: %s"; };
+    ["ContinueWith"] =          { ["ENGLISH"] = "%s: Continue quest with %s";       ["GERMAN"] = "%s: Setze Aufgabe bei %s fort";       ["FRENCH"] = "%s: Poursuivez la quête avec %s"}; -- or "Setze Aufgabe %s bei %s fort"
+    ["CollectFromNpc"] =        { ["ENGLISH"] = "Collect %s from %s";               ["GERMAN"] = "Besorge %s von %s";                   ["FRENCH"] = "Récupérez %s auprès %s"};
+    ["CollectFromLocation"] =   { ["ENGLISH"] = "Collect %s from %s";               ["GERMAN"] = "Besorge %s aus %s";                   ["FRENCH"] = "Récupérez %s en %s"};
+    ["TravelCollectFrom"] =     { ["ENGLISH"] = "Travel to %s, collect %s from %s"; ["GERMAN"] = "Reise nach %s, besorge %s von %s";    ["FRENCH"] = "Rendez-vous à %s, récupérez %s auprès %s"; };
+    ["TakeFrom"] =              { ["ENGLISH"] = "Take %s from %s";                  ["GERMAN"] = "Nimm %s bei %s an";                   ["FRENCH"] = "Prenez %s de %s"; };
+    ["TakeFromIn"] =            { ["ENGLISH"] = "Take %s from %s in %s";            ["GERMAN"] = "Nimm %s bei %s an";                   ["FRENCH"] = "Prenez %s de %s dans %s."; };
 }
 
 ---Helper for travelling to an objective, turning in a quest to an NPC.
