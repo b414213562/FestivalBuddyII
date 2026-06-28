@@ -1,4 +1,8 @@
 
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDES[ILAA] = {
+    [DEFAULT_QUICK_GUIDE] = "LRH Hunter-enabled";
+};
+
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[ILAA] = {};
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[ILAA][DEFAULT_QUICK_GUIDE] = "\nCe guide est basé sur l'excellent guide de LilRedHead sur https://lifebeyondtheshire.com/inn-league-and-ale-association-hunter-assisted-speedy-delivery-run/. Merci LRH !";
 

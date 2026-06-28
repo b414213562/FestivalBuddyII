@@ -1,3 +1,7 @@
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDES[MIDSUMMER] = {
+    [MIDSUMMER_MINAS_TIRITH_QUICK_GUIDE] = "Minas Tirith";
+    [MIDSUMMER_FURTHERHOLM_QUICK_GUIDE] = "Îlaulointain";
+};
 
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[MIDSUMMER] = {};
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[MIDSUMMER][DEFAULT_QUICK_GUIDE] = "\nThis guide is based on LilRedHead's excellent LOTRO Midsummer Festival - Quick Guide at https://lifebeyondtheshire.com/lotro-midsummer-festival-quick-guide/. Thank you LRH!";

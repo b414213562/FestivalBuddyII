@@ -1,4 +1,8 @@
 
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDES[YULE] = {
+    [DEFAULT_QUICK_GUIDE] = "Winterhome";
+};
+
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[YULE] = {};
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[YULE][DEFAULT_QUICK_GUIDE] = "\nDiese Anleitung wurde beim Jul-Fest 2023 von Cube erstellt, und übersetzt von Mandraval";
 

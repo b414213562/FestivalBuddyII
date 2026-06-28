@@ -1,4 +1,8 @@
 
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDES[SPRING] = {
+    [DEFAULT_QUICK_GUIDE] = "Clegur";
+};
+
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[SPRING] = {};
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[SPRING][DEFAULT_QUICK_GUIDE] = "\nCe guide a été créé par Cube durant le Festival du Printemps 2026.\n\nRemarque : Plusieurs objectifs, notamment celui de « Jalousie florale », ne donnent pas de résultats visibles. L'option « Compagnon du festival » utilise la personne que vous ciblez comme indicateur pour simuler une interaction. Si vous sélectionnez des PNJ au hasard, les objectifs risquent d'être validés prématurément.";
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDIT_HEIGHTS[SPRING] = {};

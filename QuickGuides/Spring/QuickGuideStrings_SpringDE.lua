@@ -1,4 +1,8 @@
 
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDES[SPRING] = {
+    [DEFAULT_QUICK_GUIDE] = "Clegur";
+};
+
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[SPRING] = {};
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[SPRING][DEFAULT_QUICK_GUIDE] = "\nDieser Leitfaden wurde von Cube während des Frühlingsfestes 2026 erstellt.\n\nHinweis: Einige Ziele, insbesondere bei „Blumenneid“, führen nicht zu sichtbaren Ergebnissen. Festival Buddy nutzt die anvisierte Person als Stellvertreter für ein tatsächliches Gespräch. Wenn Sie zufällig verschiedene NPCs auswählen, können Ziele vorzeitig abgeschlossen werden.";
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDIT_HEIGHTS[SPRING] = {};
