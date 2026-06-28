@@ -126,9 +126,9 @@ QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.OFFERING_TO_HELP_PICKUP].DISPLAY = functio
 QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.OFFERING_TO_HELP_BEACHGOER_1].DISPLAY = function() return "Talk to the thirsty beachgoer"; end;
 QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.OFFERING_TO_HELP_BEACHGOER_2].DISPLAY = function() return "Find a refreshing beverage inside The Cracked Flagon"; end;
 QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.OFFERING_TO_HELP_BEACHGOER_3].DISPLAY = function() return "Bring the refreshing beverage to the thirsty beachgoer"; end;
-QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.OFFERING_TO_HELP_HOLIDAYER_1].DISPLAY = function() return "Talk to the Relaxing Holidayer"; end;
+QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.OFFERING_TO_HELP_HOLIDAYER_1].DISPLAY = function() return "Talk to the relaxing holidayer"; end;
 QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.OFFERING_TO_HELP_HOLIDAYER_2].DISPLAY = function() return "Find the relaxing holidayer's book"; end;
-QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.OFFERING_TO_HELP_HOLIDAYER_3].DISPLAY = function() return "Bring the book to the relaxing holidayer"; end;
+QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.OFFERING_TO_HELP_HOLIDAYER_3].DISPLAY = function() return "Bring the relaxing holidayer her book"; end;
 QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.OFFERING_TO_HELP_SIGHTSEER_1].DISPLAY = function() return "Talk to the unsettled sightseer"; end;
 QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.OFFERING_TO_HELP_SIGHTSEER_2].DISPLAY = function() return "Find a cushion for the unsettled sightseer"; end;
 QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.OFFERING_TO_HELP_SIGHTSEER_3].DISPLAY = function() return "Bring the cushion to the unsettled sightseer"; end;
@@ -175,10 +175,10 @@ QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.LETS_GO_FLY_A_KITE_END].DISPLAY = function
 QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.A_FLOCK_OF_SEAGULLS_1].DISPLAY = function() return "Chase off irksome seagull by north end of west bridge"; end;
 QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.A_FLOCK_OF_SEAGULLS_2].DISPLAY = function() return "Chase off irksome seagull near Merkhâma"; end;
 QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.A_FLOCK_OF_SEAGULLS_3].DISPLAY = function() return "Chase off irksome seagull on eastern bridge"; end;
-QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.A_FLOCK_OF_SEAGULLS_4].DISPLAY = function() return "Chase off irksome seagull by Darôma"; end;
+QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.A_FLOCK_OF_SEAGULLS_4].DISPLAY = function() return "Chase off irksome seagull by the Skinny Cat"; end;
 QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.A_FLOCK_OF_SEAGULLS_5].DISPLAY = function() return "Chase off irksome seagull by relaxing holidayer"; end;
 QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.A_FLOCK_OF_SEAGULLS_6].DISPLAY = function() return "Chase off irksome seagull by west fishing point"; end;
-QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.A_FLOCK_OF_SEAGULLS_7].DISPLAY = function() return "Chase off irksome seagull by sound end of west bridge"; end;
+QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.A_FLOCK_OF_SEAGULLS_7].DISPLAY = function() return "Chase off irksome seagull by south end of west bridge"; end;
 QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.A_FLOCK_OF_SEAGULLS_8].DISPLAY = function() return "Chase off irksome seagull by smelly cat"; end;
 QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.IN_CELEBRATION_OF_MIDSUMMER_END].DISPLAY = "Turn in 'In Celebration of Midsummer' to Captain Khâtaphos.";
 
@@ -253,7 +253,6 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[MIDSUMMER][M
     ["Completed:\nCat Conundrum\n"] = QG_MIDSUMMER_FH_INDEX.CAT_CONUNDRUM_END;
     ["Completed:\nEyesores Drifted Ashore\n"] = QG_MIDSUMMER_FH_INDEX.EYESORES_DRIFTED_ASHORE_END;
     ["Completed:\nLet's Go Fly a Kite\n"] = QG_MIDSUMMER_FH_INDEX.LETS_GO_FLY_A_KITE_END;
-
 };
 
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[MIDSUMMER] = {};
@@ -337,7 +336,6 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[MIDSUMMER][M
 
     ["People here don't seem to notice your kite"] = QG_MIDSUMMER_FH_INDEX.LETS_GO_FLY_A_KITE_WEST_END_OF_HARBOUR;
     ["Many people should see you from here!"] = QG_MIDSUMMER_FH_INDEX.LETS_GO_FLY_A_KITE_EASTERN_BRIDGE;
-
     ["People here seem impressed with your kite!"] = QG_MIDSUMMER_FH_INDEX.LETS_GO_FLY_A_KITE_SOUTHERN_BEACH;
     ["Do the people here appreciate your kite?"] = QG_MIDSUMMER_FH_INDEX.LETS_GO_FLY_A_KITE_SOUTHERN_COVE;
     ["Was that kite-envy you just saw?"] = QG_MIDSUMMER_FH_INDEX.LETS_GO_FLY_A_KITE_SAND_IN_FRONT_OF_INN;
