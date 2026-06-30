@@ -424,7 +424,8 @@ end
 
 function QuickGuideWinGetIndexFromChat(cMessage, objectiveTable)
     local index = nil;
-    if (_QUICK_GUIDE[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE]) then
+    if (_QUICK_GUIDE[SELECTEDFESTIVAL] and
+        _QUICK_GUIDE[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE]) then
         local indexOrTable = objectiveTable[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE][cMessage];
         if (type(indexOrTable) == "table") then
             for _, entry in ipairs(indexOrTable) do
@@ -527,6 +528,9 @@ function QuickGuideWinHandleQuestCompleted(cMessage)
 end
 
 function QuickGuideWinHandleTargetChanged(newTargetName)
+    -- We should only be called after a festival-has-quickguide check, but just in case:
+    if (not _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_TARGETS[SELECTEDFESTIVAL]) then return; end
+
     local targets = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_TARGETS[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE];
     if (targets) then
         for _, target in ipairs(targets) do
