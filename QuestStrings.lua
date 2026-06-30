@@ -1364,7 +1364,7 @@ Kehre zu Cora Braunlock zurück.
         };
         ["IN_CELEBRATION_OF_MIDSUMMER"] = {
             ["STRING"] = {
-                ["ENGLISH"] = "1. Take 'In Celebration of Midsummer' from Faeleth outside City Stables.\n\n2. Take 7 quests on the Citadel.";
+                ["ENGLISH"] = "Take 'In Celebration of Midsummer' from\n(1) Faeleth outside City Stables or\n(2) Captain Khâtaphos in Furtherholm.\n\nComplete 10 Midsummer quests.";
             };
             ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Midsummer/In Celebration of Midsummer.tga";
         };
@@ -1462,58 +1462,70 @@ Kehre zu Cora Braunlock zurück.
 
         ["HOUSEKEEPING"] = {
             ["STRING"] = {
-                ["ENGLISH"] = "HOUSEKEEPING";
+                ["ENGLISH"] = "1. Pick up quest from Darôma in the Cracked Flagon\nMake the beds\nScrub the floors\n1. Turn in quest";
             };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Midsummer/Housekeeping.tga";
         };
         ["TIDAL_TREASURES"] = {
             ["STRING"] = {
-                ["ENGLISH"] = "TIDAL_TREASURES";
+                ["ENGLISH"] = "1. Pick up quest from Darôma in the Cracked Flagon\nCollect seashells\n1. Turn in quest";
             };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Midsummer/Tidal Treasures.tga";
         };
         ["ASSISTING_THE_COOK"] = {
             ["STRING"] = {
-                ["ENGLISH"] = "ASSISTING_THE_COOK";
+                ["ENGLISH"] = "1. Pick up quest from Sâghlem in the Cracked Flagon\nCollect fresh herbs (green)\nCollect juicy lemons (yellow)\nCollect handfuls of olives (black)\n1. Turn in quest";
             };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Midsummer/Assisting the Cook.tga";
         };
         ["BUILDING_CASTLES"] = {
             ["STRING"] = {
-                ["ENGLISH"] = "BUILDING_CASTLES";
+                ["ENGLISH"] = "1. Pick up quest from Merkhâma\nBuild sand-castles on the beach\n1. Turn in quest";
             };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Midsummer/Building Castles.tga";
         };
         ["FISHING_FOR_ADVICE"] = {
             ["STRING"] = {
-                ["ENGLISH"] = "FISHING_FOR_ADVICE";
+                ["ENGLISH"] = "1. Pick up quest from Merkhâma\n2. Fish from the pier in the harbour\n3. Fish off the pier in the west side of the harbour\n4. Catch a fish near the waterfall above the harbour\n5. Catch a fish from the sandbar in the north\n1. Turn in quest";
             };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Midsummer/Fishing for Advice.tga";
         };
         ["OFFERING_TO_HELP"] = {
             ["STRING"] = {
-                ["ENGLISH"] = "OFFERING_TO_HELP";
+                ["ENGLISH"] = "1. Pick up quest from Merkhâma\n1. Talk to the thirsty beachgoer, Find a refreshing beverage inside the Cracked Flagon, Bring the refreshing beverage to the thirsty beachgoer\n2. Talk to the relaxing holidayer, Find the relaxing holidayer's book, Bring the relaxing holidayer her book\n3. Talk to the unsettled sightseer, Find a cushion for the unsettled sightseer, Bring the cushion to the unsettled sightseer\n4. Talk to the hopeful suitor, Find a picnic basket, Bring the empty basket to the cook, Sâghlem, Pick up the filled basket, Bring the filled picnic basket to the hopeful suitor\n5. Talk to the queer merrymaker, Bury the queer merrymaker in the sand, Bury the queer merrymaker some more\n1. Turn in quest";
             };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Midsummer/Offering to Help.tga";
         };
         ["SEARCHING_FOR_SWIMMING_SPOTS"] = {
             ["STRING"] = {
-                ["ENGLISH"] = "SEARCHING_FOR_SWIMMING_SPOTS";
+                ["ENGLISH"] = "1. Pick up quest from Merkhâma\n2. Swim at the west side of the harbour\n3. Swim in the southern cove\n4. Swim in the northern channel\n5. Swim off the western beach\n6. Swim off the south-western beach\n1. Turn in quest";
             };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Midsummer/Searching For Swimming Spots.tga";
         };
         ["A_FLOCK_OF_SEAGULLS"] = {
             ["STRING"] = {
-                ["ENGLISH"] = "A Flock of Seagulls";
+                ["ENGLISH"] = "1. Pick up quest from Maghôrdo\nChase off the irksome seagulls\n1. Turn in quest";
             };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Midsummer/A Flock of Seagulls.tga";
         };
         ["CAT_CONUNDRUM"] = {
             ["STRING"] = {
-                ["ENGLISH"] = "Cat Conundrum";
+                ["ENGLISH"] = "1. Pick up quest from Maghôrdo\n2. scruffy cat\n3. slinky cat\n4. skinny cat\n5. smelly cat\n6. sleepy cat\n7. sassy cat\n1. Turn in quest";
             };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Midsummer/Cat Conundrum.tga";
         };
         ["EYESORES_DRIFTED_ASHORE"] = {
             ["STRING"] = {
-                ["ENGLISH"] = "Eyesores Drifted Ashore";
+                ["ENGLISH"] = "1. Pick up quest from Maghôrdo\nClean up the flotsam on the beach\n1. Turn in quest";
             };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Midsummer/Eyesores Drifted Ashore.tga";
+
         };
         ["LETS_GO_FLY_A_KITE"] = {
             ["STRING"] = {
-                ["ENGLISH"] = "Cat Conundrum: Yes to Cats";
+                ["ENGLISH"] = "1. Pick up quest from Tâlugar\n2. Fly a kite on the southern beach\n3. Fly a kite near the southern cove\n4. Fly a kite at the west end of the harbour\n5. Fly a kite atop the eastern bridge\n6. Fly a kite on the sand in front of the inn\n1. Turn in quest";
             };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Midsummer/Let's Go Fly a Kite.tga";
         };
 
 
