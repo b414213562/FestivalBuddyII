@@ -19,6 +19,9 @@ function Update_FestivalBuddySettings_from_v21_to_v22(settings)
 
             for guideId, guideName in ipairs(_G.CubePlugins.FestivalBuddyII._QUICK_GUIDES[festival]) do
                 settings.QUICK_GUIDE_QUESTS_TO_USE[festival][guideId] = {};
+                if (oldSettings[guideId]) then
+                    settings.QUICK_GUIDE_QUESTS_TO_USE[festival][guideId] = deepcopy(oldSettings[guideId]);
+                end
             end
 
             for questName, value in pairs(oldSettings) do
