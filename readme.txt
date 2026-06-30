@@ -4,7 +4,9 @@ v2.2.2 changes:
         Updated Anniversary barter items
     
     Quick Guides:
-        Added initial Midsummer (Furtherholm) quick guide
+        Midsummer:
+            Minas Tirith: Updated Minas Tirith Midsummer guide with newer features and conventions.
+            Futherholm:Added initial Midsummer (Furtherholm) quick guide
     
     Options:
         Added scaling setting for Toolbars. (Currently used by Fireworks in Bree helper.)

@@ -8,83 +8,87 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[MIDSUMMER][MIDSUMMER_MINAS_T
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[MIDSUMMER][MIDSUMMER_FURTHERHOLM_QUICK_GUIDE] = "\nThis guide created by b414213562 during the 2026 Midsummer Festival";
 
 QG_MIDSUMMER_MT = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[MIDSUMMER][MIDSUMMER_MINAS_TIRITH_QUICK_GUIDE];
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.IN_CELEBRATION_OF_MIDSUMMER_PICKUP].DISPLAY = "Take 'In Celebration of Midsummer' from Faeleth outside <rgb=#ffc000>City Stables</rgb>";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.SOMETHING_FLORAL_PICKUP].DISPLAY = "Take 'Something Floral' from Merilien on the Citadel";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.TO_THE_LAST_DROP_PICKUP].DISPLAY = "Take 'To the Last Drop' from Merilien";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.WEDDING_SUPPLIES_PICKUP].DISPLAY = "Take 'Wedding Supplies' from Merilien";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.WHAT_ALES_YOU_PICKUP].DISPLAY = "Take 'What Ales You' from Merilien";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.TASTY_MORSELS_PICKUP].DISPLAY = "Take 'Tasty Morsels' from Othnoron on the Citadel";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.ARRANGING_ARRANGEMENTS_PICKUP].DISPLAY = "Take 'Arranging Arrangements' from Florist on the Citadel";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.FLORAL_CROWNS_PICKUP].DISPLAY = "Take 'Floral Crowns' from Florist";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.AIDING_THE_STABLE_HANDS_PICKUP].DISPLAY = "Take 'Aiding the Stable-hands' from Loborís in City Stables";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.AIDING_THE_STABLE_HANDS_BRUSH].DISPLAY = "Aiding the Stable-hands: Take brush from Equipment Crate";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.AIDING_THE_STABLE_HANDS_APPLES].DISPLAY = "Aiding the Stable-hands: Take apples from Crate of Apples";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.AIDING_THE_STABLE_HANDS_GROOM].DISPLAY = "Aiding the Stable-hands: Groom 3 horses"
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.AIDING_THE_STABLE_HANDS_FEED].DISPLAY = "Aiding the Stable-hands: Feed 3 horses"
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.AIDING_THE_STABLE_HANDS_END].DISPLAY = "Turn in 'Aiding the Stable-hands' to Loborís in City Stables";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.FLORAL_CROWNS_COLLECT].DISPLAY = "Floral Crowns: Continue quest with Florist's Daughter, collect 10 summer blossoms";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.FLORAL_CROWNS_CRAFT].DISPLAY = "Floral Crowns: Continue quest with Florist's Daughter, craft floral crown. [Check manually]";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.ARTISTIC_DIRECTION_PICKUP].DISPLAY = "Take stable-master to <rgb=#ffc000>Soldiers' Tier</rgb>, Take 'Artistic Direction' from Borlach";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.TOSS_A_COIN_PICKUP].DISPLAY = "Go south/left to Splintered Shield, Take 'Toss a Coin' from Ulthir upstairs";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.TOSS_A_COIN_COMPLETE].DISPLAY = "Toss a Coin: Toss coins to 6 noisy minstrels.";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.WHAT_ALES_YOU_1].DISPLAY = "What Ales You: Get Barrel of Ale in The Splintered Shield.";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.TO_THE_LAST_DROP_COMPLETE].DISPLAY = "To the Last Drop: Take correct Barrel of Wine in The Splintered Shield.";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.TOSS_A_COIN_END].DISPLAY = "Turn in 'Toss a Coin' to Ulthir upstairs";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.WHAT_ALES_YOU_2].DISPLAY = "Go south to Mûmak and Keep for 2nd 'What Ales You' Barrel, next to mûmak";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.ARTISTIC_DIRECTION_LEBADAR].DISPLAY = "[Milestone] Take stable-master to <rgb=#ffc000>Craftsmen's Tier</rgb>. At bottom of ramp, continue 'Artistic Direction' with Lebadar";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.GROWING_PAINS_PICKUP].DISPLAY = "Take 'Growing Pains' from Lebadar";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.UNHELPFUL_HOUNDS_PICKUP].DISPLAY = "Take 'Unhelpful Hounds' from Worried Woman in the square";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.UNHELPFUL_HOUNDS_CONTINUE].DISPLAY = "Unhelpful Hounds: Find the missing ring";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.UNHELPFUL_HOUNDS_END].DISPLAY = "Turn in 'Unhelpful Hounds' to Worried Woman";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.WEDDING_SUPPLIES_1].DISPLAY = "Ride up ramp, turn right, grab Wedding Supplies";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.ARTISTIC_DIRECTION_POTTER].DISPLAY = "Continue 'Artistic Direction' with Potter";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.WEDDING_SUPPLIES_3].DISPLAY = "Go into House of Craft, grab two more Wedding Supplies";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.HONOURING_HEALERS_PICKUP].DISPLAY = "Take 'Honouring Healers' from the Postmaster";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.GROWING_PAINS_WATER].DISPLAY = "'Growing Pains' (In garden at north end): Water 4 bushes";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.GROWING_PAINS_WEEDS].DISPLAY = "'Growing Pains': Pull out 5 weeds";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.GROWING_PAINS_END].DISPLAY = "[Milestone] Take stable-master to <rgb=#ffc000>Craftsmen's Tier</rgb>. At bottom of ramp, turn in 'Growing Pains'";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.ARTISTIC_DIRECTION_CIRIEL].DISPLAY = "Ride up ramp, take stable-master to <rgb=#ffc000>Players' Tier</rgb>. At bottom of ramp, continue 'Artistic Direction' with Ciriel.";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.SWEET_TREATS_PICKUP].DISPLAY = "Take 'Sweet Treats' from Ciriel";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.SWEET_TREATS_2].DISPLAY = "Find the two guards to the north of Ciriel, continue 'Sweet Treats' with each.";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.WEDDING_SUPPLIES_4].DISPLAY = "Grab Wedding Supplies around the corner of Ciriel.";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.SWEET_TREATS_4].DISPLAY = "Find the two guards to the south of Ciriel, continue 'Sweet Treats' with each.";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.WEDDING_SUPPLIES_5].DISPLAY = "Grab final Wedding Supplies between two south guards."; 
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.ARRANGING_ARRANGEMENTS_2].DISPLAY = "Go to Merry Swan, place two floral arrangements on stage for 'Arranging Arrangements'.";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.WHAT_ALES_YOU_3].DISPLAY = "What Ales You: Get Barrel of Ale in The Merry Swan.";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.SWEET_TREATS_END].DISPLAY = "Turn in 'Sweet Treats' to Ciriel";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.ARTISTIC_DIRECTION_END].DISPLAY = "Go up ramp, take stable-master to <rgb=#ffc000>Soldiers' Tier</rgb>, turn in 'Artistic Direction' to Borlach of Rimmon.";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.TASTY_MORSELS_COMPLETE].DISPLAY = "Take stable-master to <rgb=#ffc000>Players' Tier</rgb>. Continue 'Tasty Morsels' with five loftier citizens. [Check manually]";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.SOMETHING_MISPLACED_PICKUP].DISPLAY = "Go to Blue Theater. Pick up 'Something Misplaced, Something Blue' from Duillam.";
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.IN_CELEBRATION_OF_MIDSUMMER_PICKUP].DISPLAY = function() return TakeFromAt("In Celebration of Midsummer", "Faeleth", "City Stables"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.SOMETHING_FLORAL_PICKUP].DISPLAY = function() return TakeFromAt("Something Floral", "Merilien", "the Citadel"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.TO_THE_LAST_DROP_PICKUP].DISPLAY = function() return TakeFrom("To the Last Drop", "Merilien"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.WEDDING_SUPPLIES_PICKUP].DISPLAY = function() return TakeFrom("Wedding Supplies", "Merilien"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.WHAT_ALES_YOU_PICKUP].DISPLAY = function() return TakeFrom("What Ales You", "Merilien"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.TASTY_MORSELS_PICKUP].DISPLAY = function() return TakeFromAt("Tasty Morsels", "Othnoron", "the Citadel"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.ARRANGING_ARRANGEMENTS_PICKUP].DISPLAY = function() return TakeFromAt("Arranging Arrangements", "Florist", "the Citadel"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.FLORAL_CROWNS_PICKUP].DISPLAY = function() return TakeFrom("Floral Crowns", "Florist"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.AIDING_THE_STABLE_HANDS_PICKUP].DISPLAY = function() return TakeFromIn("Aiding the Stable-hands", "Loborís", "the City Stables"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.AIDING_THE_STABLE_HANDS_BRUSH].DISPLAY = function() return Continue("Aiding the Stable-hands", "Take brush from Equipment Crate"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.AIDING_THE_STABLE_HANDS_APPLES].DISPLAY = function() return Continue("Aiding the Stable-hands", "Take apples from Crate of Apples"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.AIDING_THE_STABLE_HANDS_GROOM].DISPLAY = function() return Continue("Aiding the Stable-hands", "Groom 3 horses"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.AIDING_THE_STABLE_HANDS_FEED].DISPLAY = function() return Continue("Aiding the Stable-hands", "Feed 3 horses"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.AIDING_THE_STABLE_HANDS_END].DISPLAY = function() return TurnInTo("Aiding the Stable-hands", "Loborís"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.FLORAL_CROWNS_COLLECT].DISPLAY = function() return Continue("Floral Crowns", "Continue quest with Florist's Daughter, collect 10 summer blossoms"); end
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.FLORAL_CROWNS_CRAFT].DISPLAY = function() return Continue("Floral Crowns", "Continue quest with Florist's Daughter, craft floral crown."); end
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.ARTISTIC_DIRECTION_PICKUP].DISPLAY = function() return TravelToTakeQuestFrom("Take stable-master", "Soldiers' Tier", "Artistic Direction", "Borlach"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.TOSS_A_COIN_PICKUP].DISPLAY = function() return TravelToTakeQuestFrom("Go south/left to", "Splintered Shield", "Toss a Coin", "Ulthir upstairs"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.TOSS_A_COIN_COMPLETE].DISPLAY = function() return Continue("Toss a Coin", "Toss coins to 6 noisy minstrels."); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.WHAT_ALES_YOU_1].DISPLAY = function() return Continue("What Ales You", "Get Barrel of Ale in The Splintered Shield."); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.TO_THE_LAST_DROP_COMPLETE].DISPLAY = function() return Continue("To the Last Drop", "Take correct Barrel of Wine in The Splintered Shield."); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.TOSS_A_COIN_END].DISPLAY = function() return TurnInTo("Toss a Coin", "Ulthir upstairs"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.WHAT_ALES_YOU_2].DISPLAY = function() return "Go south to " .. HighlightLocation("Mûmak and Keep") .. " for " .. HighlightQuestItem("the 2nd Barrel") .. " for " .. HighlightQuest("What Ales You") .. ", next to mûmak"; end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.ARTISTIC_DIRECTION_LEBADAR].DISPLAY = function() return "[Milestone] Take stable-master to " .. HighlightLocation("Craftsmen's Tier") .. ". At bottom of ramp, continue " .. HighlightQuest("Artistic Direction") .. " with " .. HighlightNpc("Lebadar"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.GROWING_PAINS_PICKUP].DISPLAY = function() return TakeFrom("Growing Pains", "Lebadar"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.UNHELPFUL_HOUNDS_PICKUP].DISPLAY = function() return TakeFromIn("Unhelpful Hounds", "Worried Woman", "the square"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.UNHELPFUL_HOUNDS_CONTINUE].DISPLAY = function() return Continue("Unhelpful Hounds", "Find the missing ring"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.UNHELPFUL_HOUNDS_END].DISPLAY = function() return TurnInTo("Unhelpful Hounds", "Worried Woman"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.WEDDING_SUPPLIES_1].DISPLAY = function() return "Ride up ramp, turn right, grab " .. HighlightQuestItem("Wedding Supplies"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.ARTISTIC_DIRECTION_POTTER].DISPLAY = function() return ContinueWith("Artistic Direction", "Potter"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.WEDDING_SUPPLIES_3].DISPLAY = function() return "Go into " .. HighlightLocation("House of Craft") .. ", grab two more " .. HighlightQuestItem("Wedding Supplies"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.HONOURING_HEALERS_PICKUP].DISPLAY = function() return TakeFrom("Honouring Healers", "Postmaster"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.GROWING_PAINS_WATER].DISPLAY = function() return Continue("Growing Pains", "Water 4 bushes in garden at north end"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.GROWING_PAINS_WEEDS].DISPLAY = function() return Continue("Growing Pains", "Pull out 5 weeds"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.GROWING_PAINS_END].DISPLAY = function() return "[Milestone] Take stable-master to " .. HighlightLocation("Craftsmen's Tier") .. ". At bottom of ramp, turn in " .. HighlightQuest("Growing Pains") .. "."; end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.ARTISTIC_DIRECTION_CIRIEL].DISPLAY = function() return "Ride up ramp, take stable-master to " .. HighlightLocation("Players' Tier") .. ". At bottom of ramp, continue " .. HighlightQuest("Artistic Direction") .. " with Ciriel" .. "."; end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.SWEET_TREATS_PICKUP].DISPLAY = function() return TakeFrom("Sweet Treats", "Ciriel"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.SWEET_TREATS_2].DISPLAY = function() return "Find the two guards to the north of " .. HighlightNpc("Ciriel") .. ", continue " .. HighlightQuest("Sweet Treats") .. " with each."; end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.WEDDING_SUPPLIES_4].DISPLAY = function() return "Grab " .. HighlightQuestItem("Wedding Supplies") .. " around the corner of " .. HighlightNpc("Ciriel") .. "."; end
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.SWEET_TREATS_4].DISPLAY = function() return "Find the two guards to the south of " .. HighlightNpc("Ciriel") .. ", continue " .. HighlightQuest("Sweet Treats") .. " with each."; end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.WEDDING_SUPPLIES_5].DISPLAY = function() return "Grab final " .. HighlightQuestItem("Wedding Supplies") .. " between two south guards."; end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.ARRANGING_ARRANGEMENTS_2].DISPLAY = function() return "Go to " .. HighlightLocation("Merry Swan") .. ", place two " .. HighlightQuestItem("floral arrangements") .. " on stage for " .. HighlightQuest("Arranging Arrangements") .. "."; end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.WHAT_ALES_YOU_3].DISPLAY = function() return Continue("What Ales You", "Get Barrel of Ale in The Merry Swan."); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.SWEET_TREATS_END].DISPLAY = function() return TurnInTo("Sweet Treats", "Ciriel"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.ARTISTIC_DIRECTION_END].DISPLAY = function() return "Go up ramp, take stable-master to " .. HighlightLocation("Soldiers' Tier") .. ". " .. TurnInTo("Artistic Direction", "Borlach of Rimmon"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.TASTY_MORSELS_DAGHIR].DISPLAY = function() return "Take stable-master to " .. HighlightLocation("Players' Tier") .. ". Continue " .. HighlightQuest("Tasty Morsels") .. " by offering sample to " .. HighlightNpc("Daghir"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.TASTY_MORSELS_PELNEN].DISPLAY = function() return Continue("Tasty Morsels", "Offer sample to " .. HighlightNpc("Pelnen")); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.TASTY_MORSELS_GWARBEN].DISPLAY = function() return Continue("Tasty Morsels", "Offer sample to " .. HighlightNpc("Gwárben")); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.TASTY_MORSELS_ARASTIL].DISPLAY = function() return Continue("Tasty Morsels", "Offer sample to " .. HighlightNpc("Arastil")); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.TASTY_MORSELS_BRANDION].DISPLAY = function() return Continue("Tasty Morsels", "Offer sample to " .. HighlightNpc("Brandion")); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.SOMETHING_MISPLACED_PICKUP].DISPLAY = function() return TravelToTakeQuestFrom("Go", "the Blue Theatre", "Something Misplaced, Something Blue", "Duillam"); end;
 QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.SOMETHING_MISPLACED_HOLLUR].DISPLAY = "Find Hollur [Check manually]";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.SOMETHING_MISPLACED_POLLA].DISPLAY = "Find Polla [Check manually]";
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.SOMETHING_MISPLACED_POLLA].DISPLAY = "Find Polla Feist [Check manually]";
 QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.SOMETHING_MISPLACED_FROKI].DISPLAY = "Find Fróki [Check manually]";
 QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.SOMETHING_MISPLACED_DAENAR].DISPLAY = "Find Daenar [Check manually]";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.SOMETHING_MISPLACED_ROBBO].DISPLAY = "Find Robbo [Check manually]";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.SOMETHING_MISPLACED_GORD].DISPLAY = "Find Gord [Check manually]";
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.SOMETHING_MISPLACED_ROBBO].DISPLAY = "Find Robbo Schrotrücken [Check manually]";
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.SOMETHING_MISPLACED_GORD].DISPLAY = "Find Gord Dunkel [Check manually]";
 QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.SOMETHING_MISPLACED_COMPLETE].DISPLAY = "Continue 'Something Misplaced, Something Blue' with Hollur, Polla, Fróki, Gord, Robbo, and Daenar.";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.ARRANGING_ARRANGEMENTS_END].DISPLAY = "In the Blue Theater, place three floral arrangements on stage for 'Arranging Arrangements'.";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.SOMETHING_MISPLACED_END].DISPLAY = "Turn in 'Something Misplaced, Something Blue' to Duillam";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.A_CURE_FOR_ALL_ILLS_PICKUP].DISPLAY = "[Milestone] Take stable-master to <rgb=#ffc000>High Stables</rgb>, go to Houses of Healing, High Hall, and take 'A Cure For All Ills' from Ioreth.";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.A_CURE_FOR_ALL_ILLS_BOTTLES].DISPLAY = "A Cure For All Ills: Dispose of 10 half-emptied bottles";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.A_CURE_FOR_ALL_ILLS_REVELLERS].DISPLAY = "A Cure For All Ills: Remove 6 noisy revellers [Check manually]";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.A_CURE_FOR_ALL_ILLS_END].DISPLAY = "Turn in 'A Cure For All Ills' to Ioreth";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.HONOURING_HEALERS_COMPLETE].DISPLAY = "Go to Houses of Healing, House of Remedies and continue 'Honouring Healers' with 6 Healers.";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.SOMETHING_FLORAL_COMPLETE].DISPLAY = "Take ramp down to <rgb=#ffc000>Sages' Tier</rgb>, go to Houses of Lore on the right, and place 6 floral arrangements for 'Something Floral'.";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.LOVE_IS_IN_THE_AIR_PICKUP].DISPLAY = "Take 'Love Is In the Air' from Colladan.";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.LOVE_IS_IN_THE_AIR_COMPLETE].DISPLAY = "Love Is In the Air: Catch 6 wayward verses";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.LOVE_IS_IN_THE_AIR_END].DISPLAY = "Turn in 'Love Is In the Air' to Colladan";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.WHAT_ALES_YOU_4].DISPLAY = "Exit Houses of Lore, turn right and go to The Thirsty Seer. Go forward, then right. Get Barrel of Ale for 'What Ales You'.";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.IN_CELEBRATION_OF_MIDSUMMER_END].DISPLAY = "[Milestone] Turn in 'In Celebration of Midsummer' to Faeleth.";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.HONOURING_HEALERS_END].DISPLAY = "Take stable-master to <rgb=#ffc000>Craftsmen's Tier</rgb>. Enter House of Craft. Turn in 'Honouring Healers' to Postmaster.";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.SOMETHING_FLORAL_END].DISPLAY = "Take stable-master to <rgb=#ffc000>High Stables</rgb>. Run to square on the Citadel. Turn in 'Something Floral' to Merilien.";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.TO_THE_LAST_DROP_END].DISPLAY = "Turn in 'To the Last Drop' to Merilien.";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.WEDDING_SUPPLIES_END].DISPLAY = "Turn in 'Wedding Supplies' to Merilien.";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.WHAT_ALES_YOU_END].DISPLAY = "Turn in 'What Ales You' to Merilien.";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.TASTY_MORSELS_END].DISPLAY = "Turn in 'Tasty Morsels' to Othnoron.";
-QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.FLORAL_CROWNS_END].DISPLAY = "Turn in 'Floral Crowns' to Florist.";
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.ARRANGING_ARRANGEMENTS_END].DISPLAY = function() return "In the " .. HighlightLocation("Blue Theatre") .. ", place three " .. HighlightQuestItem("floral arrangements") .. " on stage for " .. HighlightQuest("Arranging Arrangements"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.SOMETHING_MISPLACED_END].DISPLAY = function() return TurnInTo("Something Misplaced, Something Blue", "Duillam"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.A_CURE_FOR_ALL_ILLS_PICKUP].DISPLAY = function() return "[Milestone] Take stable-master to " .. HighlightLocation("High Stables") .. ". " .. TravelToTakeQuestFrom("go", "Houses of Healing, High Hall", "A Cure For All Ills", "Ioreth"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.A_CURE_FOR_ALL_ILLS_BOTTLES].DISPLAY = function() return Continue("A Cure For All Ills", "Dispose of 10 half-emptied bottles"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.A_CURE_FOR_ALL_ILLS_REVELLERS].DISPLAY = function() return Continue("A Cure For All Ills", "Remove 6 noisy revellers"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.A_CURE_FOR_ALL_ILLS_END].DISPLAY = function() return TurnInTo("A Cure For All Ills", "Ioreth"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.HONOURING_HEALERS_COMPLETE].DISPLAY = function() return "Go to " .. HighlightLocation("Houses of Healing, House of Remedies") .. " and continue " .. HighlightQuest("Honouring Healers") .. " with 6 Healers."; end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.SOMETHING_FLORAL_COMPLETE].DISPLAY = function() return "Take ramp down to " .. HighlightLocation("Sages' Tier") .. ", go to " .. HighlightLocation("Houses of Lore") .. " on the right, and place 6 " .. HighlightNpc("floral arrangements") .. " for " .. HighlightQuest("Something Floral"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.LOVE_IS_IN_THE_AIR_PICKUP].DISPLAY = function() return TakeFrom("Love Is In the Air", "Colladan"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.LOVE_IS_IN_THE_AIR_COMPLETE].DISPLAY = function() return Continue("Love Is In the Air", "Catch 6 wayward verses"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.LOVE_IS_IN_THE_AIR_END].DISPLAY = function() return TurnInTo("Love Is In the Air", "Colladan"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.WHAT_ALES_YOU_4].DISPLAY = function() return "Exit Houses of Lore, turn right and go to " .. HighlightLocation("The Thirsty Seer") .. ". Go forward, then right. Get " .. HighlightNpc("Barrel of Ale") .. " for " .. HighlightQuest("What Ales You"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.IN_CELEBRATION_OF_MIDSUMMER_END].DISPLAY = function() return "[Milestone] " .. TurnInTo("In Celebration of Midsummer", "Faeleth"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.HONOURING_HEALERS_END].DISPLAY = function() return "Take stable-master to " .. HighlightLocation("Craftsmen's Tier") .. ". Enter " .. HighlightLocation("House of Craft") .. ". " .. TurnInTo("Honouring Healers", "Postmaster"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.SOMETHING_FLORAL_END].DISPLAY = function() return "Take stable-master to " .. HighlightLocation("High Stables") .. ". Run to square on the Citadel. " .. TurnInTo("Something Floral", "Merilien"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.TO_THE_LAST_DROP_END].DISPLAY = function() return TurnInTo("To the Last Drop", "Merilien"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.WEDDING_SUPPLIES_END].DISPLAY = function() return TurnInTo("Wedding Supplies", "Merilien"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.WHAT_ALES_YOU_END].DISPLAY = function() return TurnInTo("What Ales You", "Merilien"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.TASTY_MORSELS_END].DISPLAY = function() return TurnInTo("Tasty Morsels", "Othnoron"); end;
+QG_MIDSUMMER_MT[QG_MIDSUMMER_MT_INDEX.FLORAL_CROWNS_END].DISPLAY = function() return TurnInTo("Floral Crowns", "Florist"); end;
 
 QG_MIDSUMMER_FH = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[MIDSUMMER][MIDSUMMER_FURTHERHOLM_QUICK_GUIDE];
-QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.IN_CELEBRATION_OF_MIDSUMMER_PICKUP].DISPLAY = "Take 'In Celebration of Midsummer' from Captain Khâtaphos in the <rgb=#ffc000>Cracked Flagon</rgb>";
+QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.IN_CELEBRATION_OF_MIDSUMMER_PICKUP].DISPLAY = function() return TakeFromIn("In Celebration of Midsummer", "Captain Khâtaphos", "the Cracked Flagon"); end;
 QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.HOUSEKEEPING_PICKUP].DISPLAY = function() return TakeFrom("Housekeeping", "Darôma"); end;
 QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.HOUSEKEEPING_BEDS].DISPLAY = function() return "Make the beds"; end
 QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.HOUSEKEEPING_FLOORS].DISPLAY = function() return "Scrub the floors"; end
@@ -287,7 +291,15 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[MIDSUMMER][M
     ["Placed floral arrangements (6/6)"] = QG_MIDSUMMER_MT_INDEX.SOMETHING_FLORAL_COMPLETE;
     ["Caught wayward verses (6/6)"] = QG_MIDSUMMER_MT_INDEX.LOVE_IS_IN_THE_AIR_COMPLETE;
     ["Collected barrels of ale (4/4)"] = QG_MIDSUMMER_MT_INDEX.WHAT_ALES_YOU_4;
-    --No count: 'The reveller says nothing, but departs with a sour look', need it 6 times.
+
+    ["The reveller says nothing, but departs with a sour look"] = { -- NAME is only used for debugging purposes.
+        [1] = { ["NAME"] = "Reveller 1"; };
+        [2] = { ["NAME"] = "Reveller 2"; };
+        [3] = { ["NAME"] = "Reveller 3"; };
+        [4] = { ["NAME"] = "Reveller 4"; };
+        [5] = { ["NAME"] = "Reveller 5"; };
+        [6] = { ["NAME"] = "Reveller 6"; ["INDEX"] = QG_MIDSUMMER_MT_INDEX.A_CURE_FOR_ALL_ILLS_REVELLERS; };
+    };
 };
 
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[MIDSUMMER][MIDSUMMER_FURTHERHOLM_QUICK_GUIDE] = {
@@ -390,6 +402,24 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[MIDSUMMER][M
 };
 
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_PROGRESS[MIDSUMMER] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_PROGRESS[MIDSUMMER][MIDSUMMER_MINAS_TIRITH_QUICK_GUIDE] = {
+    ["Groomed horse %((%d+)/(%d+)%)"] = QG_MIDSUMMER_MT_INDEX.AIDING_THE_STABLE_HANDS_GROOM;
+    ["Fed horse %((%d+)/(%d+)%)"] = QG_MIDSUMMER_MT_INDEX.AIDING_THE_STABLE_HANDS_FEED;
+    ["Collected summer blossoms %((%d+)/(%d+)%)"] = QG_MIDSUMMER_MT_INDEX.FLORAL_CROWNS_COLLECT;
+    ["Tossed a coin to a noisy minstrel %((%d+)/(%d+)%)"] = QG_MIDSUMMER_MT_INDEX.TOSS_A_COIN_COMPLETE;
+    ["Watered bushes %((%d+)/(%d+)%)"] = QG_MIDSUMMER_MT_INDEX.GROWING_PAINS_WATER;
+    ["Pulled out weeds %((%d+)/(%d+)%)"] = QG_MIDSUMMER_MT_INDEX.GROWING_PAINS_WEEDS;
+    ["Delivered pastries %((%d+)/(%d+)%)"] = QG_MIDSUMMER_MT_INDEX.SWEET_TREATS_4;
+    ["Collected wedding supply crates %((%d+)/(%d+)%)"] = QG_MIDSUMMER_MT_INDEX.WEDDING_SUPPLIES_5;
+    ["Delivered thank you notes %((%d+)/(%d+)%)"] = QG_MIDSUMMER_MT_INDEX.HONOURING_HEALERS_COMPLETE;
+    ["Placed floral arrangements %((%d+)/(5)%)"] = QG_MIDSUMMER_MT_INDEX.ARRANGING_ARRANGEMENTS_END;
+    ["Placed floral arrangements %((%d+)/(6)%)"] = QG_MIDSUMMER_MT_INDEX.SOMETHING_FLORAL_COMPLETE;
+    ["Disposed of half%-emptied bottles in the High Hall %((%d+)/(%d+)%)"] = QG_MIDSUMMER_MT_INDEX.A_CURE_FOR_ALL_ILLS_BOTTLES;
+    ["Caught wayward verses %((%d+)/(%d+)%)"] = QG_MIDSUMMER_MT_INDEX.LOVE_IS_IN_THE_AIR_COMPLETE;
+    ["Collected barrels of ale %((%d+)/(%d+)%)"] = QG_MIDSUMMER_MT_INDEX.WHAT_ALES_YOU_4;
+
+};
+
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_PROGRESS[MIDSUMMER][MIDSUMMER_FURTHERHOLM_QUICK_GUIDE] = {
     ["Beds made %((%d+)/(%d+)%)"] = QG_MIDSUMMER_FH_INDEX.HOUSEKEEPING_BEDS;
     ["Floors scrubbed %((%d+)/(%d+)%)"] = QG_MIDSUMMER_FH_INDEX.HOUSEKEEPING_FLOORS;
@@ -397,6 +427,15 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_PROGRESS[MIDSUMMER][MIDSUMMER_FURTHE
 };
 
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_TARGETS[MIDSUMMER] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_TARGETS[MIDSUMMER][MIDSUMMER_MINAS_TIRITH_QUICK_GUIDE] = {
+     [1] = { ["NAME"] = "Checkered Blanket"; ["INDEX"] = QG_MIDSUMMER_MT_INDEX.FLORAL_CROWNS_CRAFT; };
+     [2] = { ["NAME"] = "Daghir"; ["INDEX"] = QG_MIDSUMMER_MT_INDEX.TASTY_MORSELS_DAGHIR; };
+     [3] = { ["NAME"] = "Pelnen"; ["INDEX"] = QG_MIDSUMMER_MT_INDEX.TASTY_MORSELS_PELNEN; };
+     [4] = { ["NAME"] = "Gwárben"; ["INDEX"] = QG_MIDSUMMER_MT_INDEX.TASTY_MORSELS_GWARBEN; };
+     [5] = { ["NAME"] = "Arastil"; ["INDEX"] = QG_MIDSUMMER_MT_INDEX.TASTY_MORSELS_ARASTIL; };
+     [6] = { ["NAME"] = "Brandion"; ["INDEX"] = QG_MIDSUMMER_MT_INDEX.TASTY_MORSELS_BRANDION; };
+};
+
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_TARGETS[MIDSUMMER][MIDSUMMER_FURTHERHOLM_QUICK_GUIDE] = {
     [1] = { ["NAME"] = "Thirsty Beachgoer"; ["INDEX"] = QG_MIDSUMMER_FH_INDEX.OFFERING_TO_HELP_BEACHGOER_1; };
     [2] = { ["NAME"] = "Thirsty Beachgoer"; ["INDEX"] = QG_MIDSUMMER_FH_INDEX.OFFERING_TO_HELP_BEACHGOER_3; };

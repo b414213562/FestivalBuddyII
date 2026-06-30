@@ -175,8 +175,14 @@ function UpdateNodeText(treeNode)
     elseif (type(objective.DISPLAY) == "function") then
         objectivetext = objective.DISPLAY();
     end
+    local height = 40;
+    if (objective.HEIGHT) then
+        height = objective.HEIGHT;
+    end
 
     checkBox:SetText(objectivetext .. progressText);
+    treeNode:SetHeight(height);
+    checkBox:SetHeight(height);
 end
 
 function UpdateAllNodesText()

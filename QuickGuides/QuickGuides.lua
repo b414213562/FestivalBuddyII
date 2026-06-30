@@ -87,8 +87,10 @@ QUICK_GUIDES_FORMAT_STRINGS = {
     ["CollectFromNpc"] =        { ["ENGLISH"] = "Collect %s from %s";               ["GERMAN"] = "Besorge %s von %s";                   ["FRENCH"] = "Récupérez %s auprès %s"};
     ["CollectFromLocation"] =   { ["ENGLISH"] = "Collect %s from %s";               ["GERMAN"] = "Besorge %s aus %s";                   ["FRENCH"] = "Récupérez %s en %s"};
     ["TravelCollectFrom"] =     { ["ENGLISH"] = "Travel to %s, collect %s from %s"; ["GERMAN"] = "Reise nach %s, besorge %s von %s";    ["FRENCH"] = "Rendez-vous à %s, récupérez %s auprès %s"; };
-    ["TakeFrom"] =              { ["ENGLISH"] = "Take %s from %s";                  ["GERMAN"] = "Nimm %s bei %s an";                   ["FRENCH"] = "Prenez %s de %s"; };
-    ["TakeFromIn"] =            { ["ENGLISH"] = "Take %s from %s in %s";            ["GERMAN"] = "Nimm %s bei %s an";                   ["FRENCH"] = "Prenez %s de %s dans %s."; };
+    ["TakeFrom"] =              { ["ENGLISH"] = "Take %s from %s";                  ["GERMAN"] = "Nimm %s von %s an";                   ["FRENCH"] = "Prenez %s de %s"; };
+    ["TakeFromIn"] =            { ["ENGLISH"] = "Take %s from %s in %s";            ["GERMAN"] = "Nimm %s von %s in %s an";             ["FRENCH"] = "Prenez %s de %s dans %s."; };
+    ["TakeFromAt"] =            { ["ENGLISH"] = "Take %s from %s at %s";            ["GERMAN"] = "Nimm %s von %s bij %s an";            ["FRENCH"] = "Prenez %s de %s à %s."; };
+    ["TravelToTakeQuestFrom"] = { ["ENGLISH"] = "%s to %s, take %s from %s";        ["GERMAN"] = "%s zum %s, nimm %s von %s an";        ["FRENCH"] = "%s to %s, take %s from %s"; };
 }
 
 ---Helper for travelling to an objective, turning in a quest to an NPC.
@@ -159,6 +161,14 @@ end
 
 function _G.TakeFromIn(quest, npc, location)
     return string.format(GetString(QUICK_GUIDES_FORMAT_STRINGS.TakeFromIn), HighlightQuest(quest), HighlightNpc(npc), HighlightLocation(location));
+end
+
+function _G.TakeFromAt(quest, npc, location)
+    return string.format(GetString(QUICK_GUIDES_FORMAT_STRINGS.TakeFromAt), HighlightQuest(quest), HighlightNpc(npc), HighlightLocation(location));
+end
+
+function _G.TravelToTakeQuestFrom(travel, location, quest, npc)
+    return string.format(GetString(QUICK_GUIDES_FORMAT_STRINGS.TravelToTakeQuestFrom), travel, HighlightLocation(location), HighlightQuest(quest), HighlightNpc(npc));
 end
 
 _G.AddNextQuickguideValue = AddNextQuickguideValue;
