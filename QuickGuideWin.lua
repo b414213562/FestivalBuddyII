@@ -157,10 +157,21 @@ function UpdateNodeText(treeNode)
     local index = treeNode.index;
     local objective = _QUICK_GUIDE[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE][index];
 
+    -- Do some initial checks:
+    if (treeNode.isReset)
+        then return;
+    end;
+    if (not checkBox) then
+        Turbine.Shell.WriteLine("Tried to access treeNode.checkBox, found nothing!");
+        return;
+    end
     local progressText = "";
     if (not objective) then
         Turbine.Shell.WriteLine("Failed to look up index " .. dump(index) .. ": " .. checkBox:GetText() );
+        return;
     end
+
+    -- Continue with the logic to add (X/Y) if appropriate:
     if (objective.TOTAL) then
         local current = objective.CURRENT or 0;
         progressText = string.format(" (%d/%d)", current, objective.TOTAL);
