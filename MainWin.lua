@@ -339,7 +339,7 @@ function MainWinDrawOptionsButton()
     optionsButton:SetSize(24, 24);
     optionsButton:SetBlendMode(Turbine.UI.BlendMode.AlphaBlend);
     optionsButton.MouseClick = function()
-        Turbine.PluginManager.ShowOptions(Plugins[PLUGIN_NAME]);
+        ShowPluginOptions();
     end
     optionsButton.MouseEnter = function()
         optionsButton:SetBackground(_IMAGES.OPTIONS_ROLLOVER);

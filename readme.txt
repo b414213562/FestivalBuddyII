@@ -10,6 +10,7 @@ v2.2.2 changes:
     
     Options:
         Added scaling setting for Toolbars. (Currently used by Fireworks in Bree helper.)
+        Right-clicking the mini icon now opens the Festival Buddy II options page in the Plugin Manager.
 
 v2.2.1 changes:
     General:

@@ -482,3 +482,7 @@ else
         return tonumber((string.gsub(value, ",", ".")));
     end
 end
+
+function ShowPluginOptions()
+    Turbine.PluginManager.ShowOptions(Plugins[PLUGIN_NAME]);
+end
