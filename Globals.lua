@@ -110,6 +110,20 @@ relY = 0;
 -- Detect client lang.
 CLIENTLANG = GetClientLanguage();
 
+-- CLIENTLANG = "GERMAN";
+-- CLIENTLANG = "FRENCH";
+
+-- Festivals lookup keys:
+SPRING = "SPRING";
+HARVESTMATH = "HARVESTMATH";
+YULE = "YULE";
+ANNIVERSARY = "ANNIVERSARY";
+FARMERSFAIRE = "FARMERSFAIRE";
+HOBNANIGANS = "HOBNANIGANS";
+MIDSUMMER = "MIDSUMMER";
+ILAA = "ILAA"; -- Inn League / Ale Association
+GENERIC = "GENERIC";
+
 -- Default Character Settings
 DEFAULT_SETTINGS = {
 
