@@ -17,19 +17,8 @@ import "CubePlugins.FestivalBuddyII.Libraries.Tooltip";
 import "CubePlugins.FestivalBuddyII.Libraries.ColorPicker";
 import "CubePlugins.FestivalBuddyII.Libraries.Timer";
 
--- Plugin Imports..
 import "CubePlugins.FestivalBuddyII.GeneralFunctions";
-import "CubePlugins.FestivalBuddyII.TimeFunctions";
-import "CubePlugins.FestivalBuddyII.Strings";
-import "CubePlugins.FestivalBuddyII.Tokens";
-import "CubePlugins.FestivalBuddyII.Images";
-import "CubePlugins.FestivalBuddyII.QuestStrings";
-import "CubePlugins.FestivalBuddyII.FestivalFunctions";
 import "CubePlugins.FestivalBuddyII.Globals";
-import "CubePlugins.FestivalBuddyII.ChatLogger";
-import "CubePlugins.FestivalBuddyII.BarterItems";
-import "CubePlugins.FestivalBuddyII.HobnanigansTimerControl";
-import "CubePlugins.FestivalBuddyII.QuickGuideTimerControl";
 
 -- Quick Guides, need to come after Globals
 DEFAULT_QUICK_GUIDE = 1;
@@ -40,6 +29,18 @@ import "CubePlugins.FestivalBuddyII.QuickGuides.InnLeagueAleAssociation.QuickGui
 import "CubePlugins.FestivalBuddyII.QuickGuides.Midsummer.QuickGuideStrings_Midsummer";
 import "CubePlugins.FestivalBuddyII.QuickGuides.Spring.QuickGuideStrings_Spring";
 import "CubePlugins.FestivalBuddyII.QuickGuides.Yule.QuickGuideStrings_Yule";
+
+-- Plugin Imports..
+import "CubePlugins.FestivalBuddyII.TimeFunctions";
+import "CubePlugins.FestivalBuddyII.Strings";
+import "CubePlugins.FestivalBuddyII.Tokens";
+import "CubePlugins.FestivalBuddyII.Images";
+import "CubePlugins.FestivalBuddyII.QuestStrings"; -- Needs to come after QuickGuides, uses formatting functions that currently live there
+import "CubePlugins.FestivalBuddyII.FestivalFunctions";
+import "CubePlugins.FestivalBuddyII.ChatLogger";
+import "CubePlugins.FestivalBuddyII.BarterItems";
+import "CubePlugins.FestivalBuddyII.HobnanigansTimerControl";
+import "CubePlugins.FestivalBuddyII.QuickGuideTimerControl";
 
 -- Windows --
 import "CubePlugins.FestivalBuddyII.TimeOffsetControl";
