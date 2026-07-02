@@ -91,6 +91,11 @@ QUICK_GUIDES_FORMAT_STRINGS = {
     ["TakeFromIn"] =            { ["ENGLISH"] = "Take %s from %s in %s";            ["GERMAN"] = "Nimm %s von %s in %s an";             ["FRENCH"] = "Prenez %s de %s dans %s."; };
     ["TakeFromAt"] =            { ["ENGLISH"] = "Take %s from %s at %s";            ["GERMAN"] = "Nimm %s von %s bij %s an";            ["FRENCH"] = "Prenez %s de %s à %s."; };
     ["TravelToTakeQuestFrom"] = { ["ENGLISH"] = "%s to %s, take %s from %s";        ["GERMAN"] = "%s zum %s, nimm %s von %s an";        ["FRENCH"] = "%s to %s, take %s from %s"; };
+
+    -- Quest Strings-focused strings:
+    ["TakeQuestFrom"] =         { ["ENGLISH"] = "Take quest from %s";               ["GERMAN"] = "Nimm Aufgabe von %s an";              ["FRENCH"] = "Prenez la quête de %s."; };
+    ["TakeQuestFromIn"] =       { ["ENGLISH"] = "Take quest from %s in %s";         ["GERMAN"] = "Nimm Aufgabe von %s in %s an";        ["FRENCH"] = "Prenez la quête de %s dans %s."; };
+    ["TurnInQuestTo"] =         { ["ENGLISH"] = "Turn in quest to %s";              ["GERMAN"] = "Gib Aufgabe bei %s ab";               ["FRENCH"] = "Remettez la quête au %s"; };
 }
 
 ---Helper for travelling to an objective, turning in a quest to an NPC.
@@ -159,6 +164,10 @@ function _G.TakeFrom(quest, npc)
     return string.format(GetString(QUICK_GUIDES_FORMAT_STRINGS.TakeFrom), HighlightQuest(quest), HighlightNpc(npc));
 end
 
+---Helper for taking a quest from an NPC in a location
+---@param quest string
+---@param npc string
+---@return string
 function _G.TakeFromIn(quest, npc, location)
     return string.format(GetString(QUICK_GUIDES_FORMAT_STRINGS.TakeFromIn), HighlightQuest(quest), HighlightNpc(npc), HighlightLocation(location));
 end
@@ -169,6 +178,27 @@ end
 
 function _G.TravelToTakeQuestFrom(travel, location, quest, npc)
     return string.format(GetString(QUICK_GUIDES_FORMAT_STRINGS.TravelToTakeQuestFrom), travel, HighlightLocation(location), HighlightQuest(quest), HighlightNpc(npc));
+end
+
+---Helper for turning in a non-specified quest to an NPC
+---@param npc string
+---@return string
+function _G.TurnInQuestTo(npc)
+    return string.format(GetString(QUICK_GUIDES_FORMAT_STRINGS.TurnInQuestTo), HighlightNpc(npc));
+end
+
+---Helper for taking a non-specified quest from an NPC
+---@param npc string
+---@return string
+function _G.TakeQuestFrom(npc)
+    return string.format(GetString(QUICK_GUIDES_FORMAT_STRINGS.TakeQuestFrom), HighlightNpc(npc));
+end
+
+---Helper for taking a non-specified quest from an NPC in a location
+---@param npc string
+---@return string
+function _G.TakeQuestFromIn(npc, location)
+    return string.format(GetString(QUICK_GUIDES_FORMAT_STRINGS.TakeQuestFromIn), HighlightNpc(npc), HighlightLocation(location));
 end
 
 _G.AddNextQuickguideValue = AddNextQuickguideValue;
