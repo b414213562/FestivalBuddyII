@@ -1462,68 +1462,90 @@ Kehre zu Cora Braunlock zurück.
 
         ["HOUSEKEEPING"] = {
             ["STRING"] = {
-                ["ENGLISH"] = "1. Pick up quest from Darôma in the Cracked Flagon\nMake the beds\nScrub the floors\n1. Turn in quest";
+                ["ENGLISH"] = "1. " .. TakeQuestFromIn("Darôma", "the Cracked Flagon") .. "\nMake the beds\nScrub the floors\n1. " .. TurnInQuestTo("Darôma");
+                ["GERMAN"]  = "1. " .. TakeQuestFromIn("Darôma", "der gesprungene Krug") .. "\nMacht die Betten\nSchrubbt die Böden\n1. " .. TurnInQuestTo("Darôma");
+                ["FRENCH"]  = "1. " .. TakeQuestFromIn("Darôma", "la Cruche fendue") .. "\nFaites les lits\nLavez le sol\n1. " .. TurnInQuestTo("Darôma");
             };
             ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Midsummer/Housekeeping.tga";
         };
         ["TIDAL_TREASURES"] = {
             ["STRING"] = {
-                ["ENGLISH"] = "1. Pick up quest from Darôma in the Cracked Flagon\nCollect seashells\n1. Turn in quest";
+                ["ENGLISH"] = "1. " .. TakeQuestFromIn("Darôma", "the Cracked Flagon") .. "\nCollect seashells\n1. " .. TurnInQuestTo("Darôma");
+                ["GERMAN"]  = "1. " .. TakeQuestFromIn("Darôma", "der gesprungene Krug") .. "\nSammelt Muscheln\n1. " .. TurnInQuestTo("Darôma");
+                ["FRENCH"]  = "1. " .. TakeQuestFromIn("Darôma", "la Cruche fendue") .. "\nRécupérez des coquillages\n1. " .. TurnInQuestTo("Darôma");
             };
             ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Midsummer/Tidal Treasures.tga";
         };
         ["ASSISTING_THE_COOK"] = {
             ["STRING"] = {
-                ["ENGLISH"] = "1. Pick up quest from Sâghlem in the Cracked Flagon\nCollect fresh herbs (green)\nCollect juicy lemons (yellow)\nCollect handfuls of olives (black)\n1. Turn in quest";
+                ["ENGLISH"] = "1. " .. TakeQuestFromIn("Sâghlem", "the Cracked Flagon") .. "\nCollect fresh herbs (green)\nCollect juicy lemons (yellow)\nCollect handfuls of olives (black)\n1. " .. TurnInQuestTo("Sâghlem");
+                ["GERMAN"]  = "1. " .. TakeQuestFromIn("Sâghlem", "der gesprungene Krug") .. "\nSammelt frische Kräuter (Grün)\nSammelt saftige Zitronen (Gelb)\nSammelt mehrere Handvoll Oliven (Schwarz)\n1. " .. TurnInQuestTo("Sâghlem");
+                ["FRENCH"]  = "1. " .. TakeQuestFromIn("Sâghlem", "la Cruche fendue") .. "\nRécoltez des herbes fraîches (verte)\nRécupérez des citrons juteux (jaune)\nRécupérez des poignées d'olives (noire)\n1. " .. TurnInQuestTo("Sâghlem");
             };
             ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Midsummer/Assisting the Cook.tga";
         };
         ["BUILDING_CASTLES"] = {
             ["STRING"] = {
-                ["ENGLISH"] = "1. Pick up quest from Merkhâma\nBuild sand-castles on the beach\n1. Turn in quest";
+                ["ENGLISH"] = "1. " .. TakeQuestFrom("Merkhâma") .. "\nBuild sand-castles on the beach\n1. " .. TurnInQuestTo("Merkhâma");
+                ["GERMAN"]  = "1. " .. TakeQuestFrom("Merkhâma") .. "\nBaut Sandburgen am Strand\n1. " .. TurnInQuestTo("Merkhâma");
+                ["FRENCH"]  = "1. " .. TakeQuestFrom("Merkhâma") .. "\nBâtissez des châteaux de sable sur la plage\n1. " .. TurnInQuestTo("Merkhâma");
             };
             ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Midsummer/Building Castles.tga";
         };
         ["FISHING_FOR_ADVICE"] = {
             ["STRING"] = {
-                ["ENGLISH"] = "1. Pick up quest from Merkhâma\n2. Fish from the pier in the harbour\n3. Fish off the pier in the west side of the harbour\n4. Catch a fish near the waterfall above the harbour\n5. Catch a fish from the sandbar in the north\n1. Turn in quest";
+                ["ENGLISH"] = "1. " .. TakeQuestFrom("Merkhâma") .. "\n2. Fish from the pier in the harbour\n3. Fish off the pier in the west side of the harbour\n4. Catch a fish near the waterfall above the harbour\n5. Catch a fish from the sandbar in the north\n1. " .. TurnInQuestTo("Merkhâma");
+                ["GERMAN"]  = "1. " .. TakeQuestFrom("Merkhâma") .. "\n2. Angelt am Anleger des Hafens\n3. Angelt am Anleger auf der Westseite des Hafens\n4. Fangt bei dem Wasserfall über dem Hafen einen Fisch\n5. Fangt bei der Sandbank im Norden einen Fisch\n1. " .. TurnInQuestTo("Merkhâma");
+                ["FRENCH"]  = "1. " .. TakeQuestFrom("Merkhâma") .. "\n2. Pêchez sur la jetée dans le port\n3. Pêchez sur la jetée sur le côté ouest du port\n4. Attrapez un poisson près de la cascade au-dessus du port\n5. Attrapez un poisson sur le banc de sable au nord\n1. " .. TurnInQuestTo("Merkhâma");
             };
             ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Midsummer/Fishing for Advice.tga";
         };
         ["OFFERING_TO_HELP"] = {
             ["STRING"] = {
-                ["ENGLISH"] = "1. Pick up quest from Merkhâma\n1. Talk to the thirsty beachgoer, Find a refreshing beverage inside the Cracked Flagon, Bring the refreshing beverage to the thirsty beachgoer\n2. Talk to the relaxing holidayer, Find the relaxing holidayer's book, Bring the relaxing holidayer her book\n3. Talk to the unsettled sightseer, Find a cushion for the unsettled sightseer, Bring the cushion to the unsettled sightseer\n4. Talk to the hopeful suitor, Find a picnic basket, Bring the empty basket to the cook, Sâghlem, Pick up the filled basket, Bring the filled picnic basket to the hopeful suitor\n5. Talk to the queer merrymaker, Bury the queer merrymaker in the sand, Bury the queer merrymaker some more\n1. Turn in quest";
+                ["ENGLISH"] = "1. " .. TakeQuestFrom("Merkhâma") .. "\n1. Talk to the thirsty beachgoer, Find a refreshing beverage inside The Cracked Flagon, Bring the refreshing beverage to the thirsty beachgoer\n2. Talk to the relaxing holidayer, Find the relaxing holidayer's book, Bring the relaxing holidayer her book\n3. Talk to the unsettled sightseer, Find a cushion for the unsettled sightseer, Bring the cushion to the unsettled sightseer\n4. Talk to the hopeful suitor; Find a picnic basket; Bring the empty basket to the cook, Sâghlem; Pick up the filled basket; Bring the filled picnic basket to the hopeful suitor\n5. Talk to the queer merrymaker, Bury the queer merrymaker in the sand, Bury the queer merrymaker some more\n1. " .. TurnInQuestTo("Merkhâma");
+                ["GERMAN"]  = "1. " .. TakeQuestFrom("Merkhâma") .. "\n1. Redet mit der durstigen Strandspaziergängerin, Findet ein erfrischendes Getränk im Gesprungenen Krug, Bringt das erfrischende Getränk zur durstigen Strandspaziergängerin\n2. Sprecht mit der entspannten Urlauberin, Findet das Buch der entspannten Urlauberin, Bringt der entspannten Urlauberin ihr Buch\n3. Sprecht mit dem unruhigen Ausflügler, Findet ein Kissen für den unruhigen Ausflügler, Bringt dem unruhigen Ausflügler das Kissen\n4. Sprecht mit dem hoffnungsvollen Freier, Findet einen Picknickkorb, Bringt den Korb zum Koch Sâghlem, Füllt den Picknickkorb, Bringt den gefüllten Picknickkorb zum hoffnungsvollen Freier\n5. Sprecht mit dem ausgelassenen Gast, Grabt den wunderlichen ausgelassenen Gast im Sand ein, Grabt den wunderlichen ausgelassenen Gast tiefer im Sand ein\n1. " .. TurnInQuestTo("Merkhâma");
+                ["FRENCH"]  = "1. " .. TakeQuestFrom("Merkhâma") .. "\n1. Parlez à l'adepte de la plage assoiffé, Trouvez une boisson rafraîchissante à la Cruche fendue, Apportez la boisson rafraîchissante à l'adepte de la plage assoiffé\n2. Parlez à la vacancière détendue, Trouvez le livre de la vacancière détendue, Apportez son livre à la vacancière détendue\n3. Parlez au touriste perturbé, Trouvez un coussin pour le touriste perturbé, Apporte le coussin au touriste perturbé\n4. Parlez au soupirant plein d'espoir; Trouvez un panier de pique-nique; Apportez le panier vide à Sâghlem, le cuisinier; Récupérez le panier rempli; Apportez le panier rempli au soupirant plein d'espoir\n5. Parlez au Fêtard étrange, Enterrez le fêtard étrange dans le sable, Enterrez le fêtard étrange encore plus profondément\n1. " .. TurnInQuestTo("Merkhâma");
             };
             ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Midsummer/Offering to Help.tga";
         };
         ["SEARCHING_FOR_SWIMMING_SPOTS"] = {
             ["STRING"] = {
-                ["ENGLISH"] = "1. Pick up quest from Merkhâma\n2. Swim at the west side of the harbour\n3. Swim in the southern cove\n4. Swim in the northern channel\n5. Swim off the western beach\n6. Swim off the south-western beach\n1. Turn in quest";
+                ["ENGLISH"] = "1. " .. TakeQuestFrom("Merkhâma") .. "\n2. Swim at the west side of the harbour\n3. Swim in the southern cove\n4. Swim in the northern channel\n5. Swim off the western beach\n6. Swim off the south-western beach\n1. " .. TurnInQuestTo("Merkhâma");
+                ["GERMAN"]  = "1. " .. TakeQuestFrom("Merkhâma") .. "\n2. Schwimmt auf der Westseite des Hafens\n3. Schwimmt in der südlichen Bucht\n4. Schwimmt im nördlichen Kanal\n5. Schwimmt vom Weststrand aus\n6. Schwimmt vom Südweststrand aus\n1. " .. TurnInQuestTo("Merkhâma");
+                ["FRENCH"]  = "1. " .. TakeQuestFrom("Merkhâma") .. "\n2. Nagez sur le côté ouest du port\n3. Nagez dans la baie au sud\n4. Nagez dans le bras de mer au nord\n5. Nagez sur la plage à l'ouest\n6. Nagez sur la plage au sud-ouest\n1. " .. TurnInQuestTo("Merkhâma");
             };
             ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Midsummer/Searching For Swimming Spots.tga";
         };
         ["A_FLOCK_OF_SEAGULLS"] = {
             ["STRING"] = {
-                ["ENGLISH"] = "1. Pick up quest from Maghôrdo\nChase off the irksome seagulls\n1. Turn in quest";
+                ["ENGLISH"] = "1. " .. TakeQuestFrom("Maghôrdo") .. "\nChase off the irksome seagulls\n1. " .. TurnInQuestTo("Maghôrdo");
+                ["GERMAN"]  = "1. " .. TakeQuestFrom("Maghôrdo") .. "\nVerjagt die Möwen\n1. " .. TurnInQuestTo("Maghôrdo");
+                ["FRENCH"]  = "1. " .. TakeQuestFrom("Maghôrdo") .. "\nChassez les mouettes agaçantes\n1. " .. TurnInQuestTo("Maghôrdo");
             };
             ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Midsummer/A Flock of Seagulls.tga";
         };
         ["CAT_CONUNDRUM"] = {
             ["STRING"] = {
-                ["ENGLISH"] = "1. Pick up quest from Maghôrdo\n2. scruffy cat\n3. slinky cat\n4. skinny cat\n5. smelly cat\n6. sleepy cat\n7. sassy cat\n1. Turn in quest";
+                ["ENGLISH"] = "1. " .. TakeQuestFrom("Maghôrdo") .. "\n2. Scruffy Cat\n3. Slinky Cat\n4. Skinny Cat\n5. Smelly Cat\n6. Sleepy Cat\n7. Sassy Cat\n1. " .. TurnInQuestTo("Maghôrdo");
+                ["GERMAN"]  = "1. " .. TakeQuestFrom("Maghôrdo") .. "\n2. Schmutziger Kater\n3. Schleichender Kater\n4. Dürrer Kater\n5. Stinkende Katze\n6. Müde Katze\n7. Aufmüpfige Katze\n1. " .. TurnInQuestTo("Maghôrdo");
+                ["FRENCH"]  = "1. " .. TakeQuestFrom("Maghôrdo") .. "\n2. Chat peu soigné\n3. Chat discret\n4. Chat maigre\n5. Chat puant\n6. sChat paresseux\n7. Chat insolent\n1. " .. TurnInQuestTo("Maghôrdo");
             };
             ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Midsummer/Cat Conundrum.tga";
         };
         ["EYESORES_DRIFTED_ASHORE"] = {
             ["STRING"] = {
-                ["ENGLISH"] = "1. Pick up quest from Maghôrdo\nClean up the flotsam on the beach\n1. Turn in quest";
+                ["ENGLISH"] = "1. " .. TakeQuestFrom("Maghôrdo") .. "\nClean up the flotsam on the beach\n1. " .. TurnInQuestTo("Maghôrdo");
+                ["GERMAN"]  = "1. " .. TakeQuestFrom("Maghôrdo") .. "\nRäumt am Strand Treibgut auf\n1. " .. TurnInQuestTo("Maghôrdo");
+                ["FRENCH"]  = "1. " .. TakeQuestFrom("Maghôrdo") .. "\nRamassez les déchets sur la plage\n1. " .. TurnInQuestTo("Maghôrdo");
             };
             ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Midsummer/Eyesores Drifted Ashore.tga";
 
         };
         ["LETS_GO_FLY_A_KITE"] = {
             ["STRING"] = {
-                ["ENGLISH"] = "1. Pick up quest from Tâlugar\n2. Fly a kite on the southern beach\n3. Fly a kite near the southern cove\n4. Fly a kite at the west end of the harbour\n5. Fly a kite atop the eastern bridge\n6. Fly a kite on the sand in front of the inn\n1. Turn in quest";
+                ["ENGLISH"] = "1. " .. TakeQuestFrom("Tâlugar") .. "\n2. Fly a kite on the southern beach\n3. Fly a kite near the southern cove\n4. Fly a kite at the west end of the harbour\n5. Fly a kite atop the eastern bridge\n6. Fly a kite on the sand in front of the inn\n1. " .. TurnInQuestTo("Tâlugar");
+                ["GERMAN"]  = "1. " .. TakeQuestFrom("Tâlugar") .. "\n2. Lasst einen Drachen am Südstrand steigen\n3. Lasst einen Drachen in der Bucht im Süden steigen\n4. Lasst einen Drachen am Westende des Hafens steigen\n5. Lasst einen Drachen auf der östlichen Brücke steigen\n6. Lasst einen Drachen im Sand vor dem Gasthaus steigen\n1. " .. TurnInQuestTo("Tâlugar");
+                ["FRENCH"]  = "1. " .. TakeQuestFrom("Tâlugar") .. "\n2. Faites voler un cerf-volant sur la plage du sud\n3. Faites voler un cerf-volant près de la baie au sud\n4. Faites voler un cerf-volant à l'ouest du port\n5. Faites voler un cerf-volant sur le pont à l'est\n6. Faites voler un cerf-volant sur le sable devant l'auberge\n1. " .. TurnInQuestTo("Tâlugar");
             };
             ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/Midsummer/Let's Go Fly a Kite.tga";
         };
