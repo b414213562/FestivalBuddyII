@@ -184,7 +184,7 @@ QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.A_FLOCK_OF_SEAGULLS_5].DISPLAY = function(
 QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.A_FLOCK_OF_SEAGULLS_6].DISPLAY = function() return "Chase off irksome seagull by west fishing point"; end;
 QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.A_FLOCK_OF_SEAGULLS_7].DISPLAY = function() return "Chase off irksome seagull by south end of west bridge"; end;
 QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.A_FLOCK_OF_SEAGULLS_8].DISPLAY = function() return "Chase off irksome seagull by smelly cat"; end;
-QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.IN_CELEBRATION_OF_MIDSUMMER_END].DISPLAY = "Turn in 'In Celebration of Midsummer' to Captain Khâtaphos.";
+QG_MIDSUMMER_FH[QG_MIDSUMMER_FH_INDEX.IN_CELEBRATION_OF_MIDSUMMER_END].DISPLAY = function() return TurnInTo("In Celebration of Midsummer", "Captain Khâtaphos"); end;
 
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[MIDSUMMER] = {};
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[MIDSUMMER][MIDSUMMER_MINAS_TIRITH_QUICK_GUIDE] = {
