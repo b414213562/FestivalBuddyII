@@ -110,9 +110,6 @@ relY = 0;
 -- Detect client lang.
 CLIENTLANG = GetClientLanguage();
 
--- CLIENTLANG = "GERMAN";
--- CLIENTLANG = "FRENCH";
-
 -- Festivals lookup keys:
 SPRING = "SPRING";
 HARVESTMATH = "HARVESTMATH";
