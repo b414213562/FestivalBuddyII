@@ -1,0 +1,23 @@
+Festival Buddy II version v2.3.1 is now available at [URL='https://www.lotrointerface.com/downloads/info1218-FestivalBuddyII.html']lotrointerface.com[/URL].
+
+This update adds a Furtherholm quick guide and updates the Minas Tirith guide for Midsummer, and now opens options when you right-click the mini icon.
+
+Version 2.3.1 release notes:
+
+[list]
+    [*] Midsummer:
+    [list]
+        [*]     Minas Tirith: Updated Minas Tirith Midsummer guide with newer features and conventions.
+        [*]     Futherholm: Added initial Midsummer (Furtherholm) quick guide
+    [/list]
+[/list]
+
+Options:
+[list]
+    [*] Right-clicking the mini icon now opens the Festival Buddy II options page in the Plugin Manager.
+[/list]
+
+Save File Format:
+[list]
+    [*] Note: In order to support multiple quick guides for Midsummer, the character save file format has been updated from v2.1 to v2.2.
+[/list]

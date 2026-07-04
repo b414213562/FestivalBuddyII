@@ -1,17 +1,21 @@
+v2.3.1 changes:
+    Quick Guides:
+        Midsummer:
+            Minas Tirith: Updated Minas Tirith Midsummer guide with newer features and conventions.
+            Futherholm: Added initial Midsummer (Furtherholm) quick guide
+    Options:
+        Right-clicking the mini icon now opens the Festival Buddy II options page in the Plugin Manager.
+    Save File Format:
+        Note: In order to support multiple quick guides for Midsummer, the character save file format has been updated from v2.1 to v2.2.
+
 v2.2.2 changes:
     Barter Window:
         Added "last updated" entry for each festival
         Updated Anniversary barter items
-    
-    Quick Guides:
-        Midsummer:
-            Minas Tirith: Updated Minas Tirith Midsummer guide with newer features and conventions.
-            Futherholm:Added initial Midsummer (Furtherholm) quick guide
-    
+        
     Options:
         Added scaling setting for Toolbars. (Currently used by Fireworks in Bree helper.)
-        Right-clicking the mini icon now opens the Festival Buddy II options page in the Plugin Manager.
-
+    
 v2.2.1 changes:
     General:
         Added X button to clear the selected quest.
