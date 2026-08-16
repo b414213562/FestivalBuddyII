@@ -6,7 +6,7 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[FARMERSFAIRE] = {};
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[FARMERSFAIRE][DEFAULT_QUICK_GUIDE] = "\nThis guide created by Cube during Farmers Faire 2026.";
 
 QG_FARMERSFAIRE = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[FARMERSFAIRE][DEFAULT_QUICK_GUIDE];
-QG_FARMERSFAIRE[QG_FARMERSFAIRE_INDEX.A_SUNNY_FAIRE_DAY_PICKUP].DISPLAY = function() return TakeFromAt("A Sunny Faire Day", "Campanula Chubb", "The Party Tree"); end;
+QG_FARMERSFAIRE[QG_FARMERSFAIRE_INDEX.A_SUNNY_FAIRE_DAY_PICKUP].DISPLAY = function() return TakeFromAt("A Sunny Faire Day", "Campanula Chubb", "Bywater"); end;
 QG_FARMERSFAIRE[QG_FARMERSFAIRE_INDEX.A_SUNNY_FAIRE_DAY_END].DISPLAY = function() return TurnInTo("A Sunny Faire Day", "Campanula Chubb"); end;
 
 QG_FARMERSFAIRE[QG_FARMERSFAIRE_INDEX.GOING_HUNGRY_PICKUP].DISPLAY = function() return TakeFrom("Going Hungry", "Melilot Hayward"); end;
@@ -137,6 +137,8 @@ QG_FARMERSFAIRE[QG_FARMERSFAIRE_INDEX.FRESH_SAVOURY_MUSHROOM_STEW_MUSHROOMS].DIS
 QG_FARMERSFAIRE[QG_FARMERSFAIRE_INDEX.FRESH_SAVOURY_MUSHROOM_STEW_COOK].DISPLAY = function() return "Use the stew-pot to cook the Savoury Mushroom Stew"; end -- key:620890264:84765781
 QG_FARMERSFAIRE[QG_FARMERSFAIRE_INDEX.FRESH_SAVOURY_MUSHROOM_STEW_END].DISPLAY = function() return TurnInTo("Fresh Savoury Mushroom Stew", "Daisy Sandyman"); end
 
+QG_FARMERSFAIRE[QG_FARMERSFAIRE_INDEX.THE_GREAT_MATHOM_FISHING_SWAP_PICKUP].DISPLAY = function() return TakeFromAt("The Great Mathom Fishing Swap", "Melia Pott", "Hobbiton-Bywater fishing-hole"); end
+QG_FARMERSFAIRE[QG_FARMERSFAIRE_INDEX.THE_GREAT_MATHOM_FISHING_SWAP_END].DISPLAY = function() return ""; end
 
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[FARMERSFAIRE] = {};
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[FARMERSFAIRE][DEFAULT_QUICK_GUIDE] = {
@@ -159,6 +161,7 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[FARMERSFAIRE][DEFA
     ["New Quest: A Vendor List"] = QG_FARMERSFAIRE_INDEX.A_VENDOR_LIST_PICKUP;
     ["New Quest: Apple-shopping"] = QG_FARMERSFAIRE_INDEX.APPLE_SHOPPING_PICKUP;
     ["New Quest: Fresh Savoury Mushroom Stew"] = QG_FARMERSFAIRE_INDEX.FRESH_SAVOURY_MUSHROOM_STEW_PICKUP;
+    ["New Quest: The Great Mathom Fishing Swap"] = QG_FARMERSFAIRE_INDEX.THE_GREAT_MATHOM_FISHING_SWAP_PICKUP;
 };
 
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[FARMERSFAIRE] = {};
@@ -182,6 +185,7 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[FARMERSFAIRE
     ["Completed:\nA Vendor List\n"] = QG_FARMERSFAIRE_INDEX.A_VENDOR_LIST_END;
     ["Completed:\nApple-shopping\n"] = QG_FARMERSFAIRE_INDEX.APPLE_SHOPPING_END;
     ["Completed:\nFresh Savoury Mushroom Stew\n"] = QG_FARMERSFAIRE_INDEX.FRESH_SAVOURY_MUSHROOM_STEW_END;
+    ["Completed:\nThe Great Mathom Fishing Swap\n"] = QG_FARMERSFAIRE_INDEX.THE_GREAT_MATHOM_FISHING_SWAP_END;
 };
 
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[FARMERSFAIRE] = {};
