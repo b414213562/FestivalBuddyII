@@ -390,6 +390,9 @@ DEFAULT_SETTINGS_SERVER = {
     -- When loading, if this value is recent, it will be used, otherwise discarded.
     ["YULE_BIGGEST_STOMACH_START_TIME"] = 0;
 
+    ["QUICK_GUIDE_START_BONUS_ITEM"] = false;
+    ["QUICK_GUIDE_STOP_BONUS_ITEM"] = false;
+
 };
 
 -- Default Account-wide Settings

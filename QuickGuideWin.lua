@@ -572,7 +572,19 @@ function QuickGuideWinHandleTargetChanged(newTargetName)
     local targets = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_TARGETS[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE];
     if (targets) then
         for _, target in ipairs(targets) do
-            if (not target.DONE and target.NAME == newTargetName) then
+            -- Skip targets that are already done.
+            -- Also skip targets that belong to chains that aren't in use:
+            -- Also skip targets that require the quest to be active but the quest isn't
+
+            local targetNotYetDone = not target.DONE;
+            local questChain = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAIN_LOOKUP[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE][target.INDEX];
+            local isChainUsed = SETTINGS.QUICK_GUIDE_QUESTS_TO_USE[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE][questChain];
+
+            local requireQuest = target.REQUIRE_ACTIVE_QUEST;
+            local questActive = SETTINGS.IN_PROGRESS_QUESTS[questChain];
+            local requireQuestAndQuestActive = (not requireQuest) or (requireQuest and questActive);
+
+            if (targetNotYetDone and isChainUsed and requireQuestAndQuestActive and (target.NAME == newTargetName)) then
                 -- Is the next one to do the one we're talking to?
                 target.DONE = true;
                 QuickGuideWinMarkComplete(target.INDEX);

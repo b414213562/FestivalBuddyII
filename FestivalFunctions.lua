@@ -72,15 +72,31 @@ function GetFestivalKeyAndQuestKeyFromNewQuest(cMessage)
     return nil, nil;
 end
 
+--- 
+---@param questKey string Internal key for a quest
+---@return boolean "true if any targets match this quest chain and require the quest to be active, false otherwise"
+function DoesQuestHaveTargetsWithRequire(questKey)
+    for _, target in ipairs(_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_TARGETS[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE]) do
+        local questChain = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAIN_LOOKUP[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE][target.INDEX];
+        local require = target.REQUIRE_ACTIVE_QUEST;
+        local hasQuestTargets = (questChain == questKey) and require;
+        if (hasQuestTargets) then return true; end
+    end
+    return false;
+end
+
 function FilterNewQuests(cMessage)
     local festivalKey, questKey = GetFestivalKeyAndQuestKeyFromNewQuest(cMessage);
     if (questKey) then
         RefreshFestival(festivalKey);
         RefreshQuestGuide(GetString(_LANG.QUESTS[festivalKey][questKey]));
 
-        -- Only add to IN_PROGRESS_QUESTS if the associated quest is backgroundable.
+        -- Only add to IN_PROGRESS_QUESTS if the associated quest is backgroundable
+        -- or it has targets that require the quest to be active.
         local isQuestBackgroundable = BACKROUNDABLE_QUESTS[questKey];
-        if (isQuestBackgroundable) then
+        local hasQuestTargets = DoesQuestHaveTargetsWithRequire(questKey);
+
+        if (isQuestBackgroundable or hasQuestTargets) then
             SETTINGS.IN_PROGRESS_QUESTS[questKey] = festivalKey;
         end
     end
