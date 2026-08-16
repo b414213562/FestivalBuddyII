@@ -585,10 +585,18 @@ _LANG = {
 
         };
 
-        ["YULE_EATING_CONTEST"] = {
-            ["ENGLISH"] = "Eating Contest";
-            ["GERMAN"] = "Wettessen";
-            ["FRENCH"] = "Concours Culinaires";
+        ["FESTIVAL_TIMER"] = {
+            ["FARMERSFAIRE"] = {
+
+                ["ENGLISH"] = "Fat Mayor";
+                ["GERMAN"] = "Ein dicker Bürgermeister";
+                ["FRENCH"] = "Gros maire";
+            };
+            ["YULE"] = {
+                ["ENGLISH"] = "Eating Contest";
+                ["GERMAN"] = "Wettessen";
+                ["FRENCH"] = "Concours Culinaires";
+            };
         };
 
         ["YULE_ONA_KAY_SAYS"] = {
@@ -878,6 +886,7 @@ _LANG = {
             ["BOUNDER_ROUNDS"] = { ["ENGLISH"] = "Bounder Rounds";  ["FRENCH"] = "Les rondes du frontalier";    ["GERMAN"] = "Grenzerstreife";              };
             ["REVENGE_OF_THE_DRUNKARDS"] = { ["ENGLISH"] = "Revenge of the Drunkards"; ["FRENCH"] = "La vengeance des ivrognes"; ["GERMAN"] = "Die Rache der Trunkenbolde"; };
             ["FROZEN_SWEET_CREAM"] = { ["ENGLISH"] = "Frozen Sweet-cream"; ["FRENCH"] = "Crème glacée"; ["GERMAN"] = "Süße Eiscreme"; };
+            ["THE_GREAT_MATHOM_FISHING_SWAP"] = { ["ENGLISH"] = "The Great Mathom Fishing Swap"; ["FRENCH"] = "La grande pêche d'échange de mathoms"; ["GERMAN"] = "Der große Mathom-Tauschangeln"; };
 
             -- Staffing the Market quests in Bywater with Daisy Sandyman, left-to-right:
             ["MANNING_THE_MARKET"] = { ["ENGLISH"] = "Manning the Market"; ["FRENCH"] = "S'occuper du marché"; ["GERMAN"] = "Den Markt bemannen"; };

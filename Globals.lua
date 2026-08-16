@@ -276,6 +276,7 @@ DEFAULT_SETTINGS = {
                 ["A_VENDOR_LIST"] = true;
                 ["APPLE_SHOPPING"] = true;
                 ["FRESH_SAVOURY_MUSHROOM_STEW"] = true;
+                ["THE_GREAT_MATHOM_FISHING_SWAP"] = true;
             };
         };
         [MIDSUMMER] = {
@@ -386,8 +387,12 @@ DEFAULT_SETTINGS_SERVER = {
     };
 
     -- The Turbine.Engine.GetGameTime() corresponding to when the 
-    -- The Biggest Stomach of Them All quest became available.
+    --   Yule / The Biggest Stomach of Them All
+    --   Farmers Faire / Fat Mayor
+    -- quests became available.
     -- When loading, if this value is recent, it will be used, otherwise discarded.
+    -- For historical reasons, this is specifically named for Yule,
+    --   but it is generally used by all Festival-level timers.
     ["YULE_BIGGEST_STOMACH_START_TIME"] = 0;
 
     ["QUICK_GUIDE_START_BONUS_ITEM"] = false;
@@ -470,6 +475,28 @@ QUICK_GUIDES = {
     [ILAA] = true;
     [SPRING] = true;
     [FARMERSFAIRE] = true;
+}
+
+FESTIVAL_TIMER = {
+    [FARMERSFAIRE] = {
+        ["LOOP"] = false;
+        ["GREEN_SECONDS"] = 19;
+        ["YELLOW_SECONDS"] = 1;
+        ["RED_SECONDS"] = 25;
+        ["GREY_SECONDS"] = 15;
+    };
+    [YULE] = {
+        ["LOOP"] = true;
+        -- Quest available: ~2 minutes 50 seconds (170 seconds)
+        -- 10 seconds left: ~10 seconds
+        -- Eating time: ~6 minutes (360 seconds)
+        -- Total time: 9 minutes (540 seconds)
+        ["GREEN_SECONDS"] = 170; -- 
+        ["YELLOW_SECONDS"] = 10; -- 
+        ["RED_SECONDS"] = 360;  -- 
+        ["GREY_SECONDS"] = 0; -- variability
+
+    };
 }
 
 -- The default UI Order for the Festivals Drop Down

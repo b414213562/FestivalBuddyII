@@ -160,13 +160,16 @@ function FilterSay(cMessage)
     if (SELECTEDFESTIVAL == FARMERSFAIRE) then
 
         -- Farmers Faire - Fat Hobbit / Will Whitfoot
-        if (ShouldProcessChat("FAT_MAYOR")) then
-            local pattern = _LANG.OTHER.FARMERS_FAIRE_WILL_WHITFOOT_PARSE[CLIENTLANG];
-            local request = string.match(cMessage, pattern);
+        local pattern = _LANG.OTHER.FARMERS_FAIRE_WILL_WHITFOOT_PARSE[CLIENTLANG];
+        local request = string.match(cMessage, pattern);
 
-            if (request) then
+        if (request) then
+            if (ShouldProcessChat("FAT_MAYOR")) then
                 HandleFarmersFaireWillWhitfootRequest(request);
             end
+
+            -- Always update the timer:
+            SetFestivalTimerCurrentTime(Turbine.Engine.GetGameTime(), 0);
         end
 
         -- Farmers Faire - Bounder Rounds
@@ -240,7 +243,7 @@ function HandleSayChat_OnaKay(message)
         local step = _LANG.OTHER.YULE_ONA_KAY_SAYS[CLIENTLANG][message];
         local timing = _LANG.OTHER.YULE_ONA_KAY_SAYS.TIMINGS[step];
         local gameTime = Turbine.Engine.GetGameTime();
-        SetMainWinYuleCurrentTime(gameTime, timing);
+        SetFestivalTimerCurrentTime(gameTime, timing);
     end
 
 end
