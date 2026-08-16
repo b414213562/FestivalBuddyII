@@ -248,9 +248,36 @@ DEFAULT_SETTINGS = {
             [1] = {
             };
         };
+        [FARMERSFAIRE] = {
+            [1] = {
+            };
+        };
     };
 
     ["QUICK_GUIDE_QUESTS_TO_USE"] = {
+        [FARMERSFAIRE] = {
+            [1] = {
+                ["A_SUNNY_FAIRE_DAY"] = true;
+                ["GOING_HUNGRY"] = true;
+                ["TOO_MUCH_FESTIVAL"] = true;
+                ["FLYING_HIGH"] = true;
+                ["CRASH_LANDING"] = true;
+                ["COOLING_OFF"] = true;
+                ["DEFEAT_THE_HEAT"] = true;
+                ["ICE_DELIVERY"] = true;
+                ["BOUNDER_ROUNDS"] = false;
+                ["REVENGE_OF_THE_DRUNKARDS"] = false;
+                ["FAT_MAYOR"] = true;
+                ["FROZEN_SWEET_CREAM"] = true;
+                ["MANNING_THE_MARKET"] = true;
+                ["A_MARKET_LIST"] = true;
+                ["A_NOSEY_REQUEST"] = true;
+                ["A_SHOPPING_LIST"] = true;
+                ["A_VENDOR_LIST"] = true;
+                ["APPLE_SHOPPING"] = true;
+                ["FRESH_SAVOURY_MUSHROOM_STEW"] = true;
+            };
+        };
         [MIDSUMMER] = {
             [1] = {
                 ["A_CURE_FOR_ALL_ILLS"] = true;
@@ -439,6 +466,7 @@ QUICK_GUIDES = {
     [YULE] = true;
     [ILAA] = true;
     [SPRING] = true;
+    [FARMERSFAIRE] = true;
 }
 
 -- The default UI Order for the Festivals Drop Down

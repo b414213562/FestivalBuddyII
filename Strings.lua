@@ -837,10 +837,15 @@ _LANG = {
         };
 
         [FARMERSFAIRE] = {
+            ["A_SUNNY_FAIRE_DAY"] = { ["ENGLISH"] = "A Sunny Faire Day"; ["FRENCH"] = "Un día soleado de feria"; ["GERMAN"] = "Ein sonniger Festtag"; };
+
             ["FAT_MAYOR"]      = { ["ENGLISH"] = "Fat Mayor";       ["FRENCH"] = "Gros maire";                  ["GERMAN"] = "Ein dicker Bürgermeister";    };
             ["BOUNDER_ROUNDS"] = { ["ENGLISH"] = "Bounder Rounds";  ["FRENCH"] = "Les rondes du frontalier";    ["GERMAN"] = "Grenzerstreife";              };
+            ["REVENGE_OF_THE_DRUNKARDS"] = { ["ENGLISH"] = "Revenge of the Drunkards"; ["FRENCH"] = "La vengeance des ivrognes"; ["GERMAN"] = "Die Rache der Trunkenbolde"; };
+            ["FROZEN_SWEET_CREAM"] = { ["ENGLISH"] = "Frozen Sweet-cream"; ["FRENCH"] = "Crème glacée"; ["GERMAN"] = "Süße Eiscreme"; };
 
             -- Staffing the Market quests in Bywater with Daisy Sandyman, left-to-right:
+            ["MANNING_THE_MARKET"] = { ["ENGLISH"] = "Manning the Market"; ["FRENCH"] = "S'occuper du marché"; ["GERMAN"] = "Den Markt bemannen"; };
             ["APPLE_SHOPPING"]              = { ["ENGLISH"] = "Apple-shopping";                 ["FRENCH"] = "Achat de pommes";                         ["GERMAN"] = "Apfelkauf";                           };
             ["FRESH_SAVOURY_MUSHROOM_STEW"] = { ["ENGLISH"] = "Fresh Savoury Mushroom Stew";    ["FRENCH"] = "Ragoût de champignons frais savoureux";   ["GERMAN"] = "Frischer schmackhafter Pilzeintopf";  };
             ["A_NOSEY_REQUEST"]             = { ["ENGLISH"] = "A Nosey Request";                ["FRENCH"] = "Requête d'une fouineuse";                 ["GERMAN"] = "Eine naseweise Bitte";                };
@@ -849,13 +854,19 @@ _LANG = {
             ["A_VENDOR_LIST"]               = { ["ENGLISH"] = "A Vendor List";                  ["FRENCH"] = "Une liste de marchands";                  ["GERMAN"] = "Eine Händlerliste";                   };
 
             --- Added from Summer:
-            ["TOOMUCHFESTIVAL"]  = {["ENGLISH"] = "Too Much Festival";          ["FRENCH"] = "Trop de festivités";                  ["GERMAN"] = "Zu viel Feierei";                 };
-            ["GOINGHUNGRY"]      = {["ENGLISH"] = "Going Hungry";               ["FRENCH"] = "La faim qui vous tenaille";           ["GERMAN"] = "Hunger schieben";                 };
+            ["TOO_MUCH_FESTIVAL"]  = {["ENGLISH"] = "Too Much Festival";          ["FRENCH"] = "Trop de festivités";                  ["GERMAN"] = "Zu viel Feierei";                 };
+            ["GOING_HUNGRY"]      = {["ENGLISH"] = "Going Hungry";               ["FRENCH"] = "La faim qui vous tenaille";           ["GERMAN"] = "Hunger schieben";                 };
             ["BELONGINGS"]       = {["ENGLISH"] = "Belongings Gone Fishing";    ["FRENCH"] = "A la pêche aux effets personnels";    ["GERMAN"] = "Ins Wasser gefallen";             };
-            ["STOCKINGPOND"]     = {["ENGLISH"] = "Stocking the Pond";          ["FRENCH"] = "Un étang à remplir";                  ["GERMAN"] = "Bestücken des Teichs";            };
-            ["FORGOTTENERRANDS"] = {["ENGLISH"] = "Forgotten Errands";          ["FRENCH"] = "Les objets égarés";                   ["GERMAN"] = "Vergessene Besorgungen";          };
+            ["STOCKING_POND"]     = {["ENGLISH"] = "Stocking the Pond";          ["FRENCH"] = "Un étang à remplir";                  ["GERMAN"] = "Bestücken des Teichs";            };
+            ["FORGOTTEN_ERRANDS"] = {["ENGLISH"] = "Forgotten Errands";          ["FRENCH"] = "Les objets égarés";                   ["GERMAN"] = "Vergessene Besorgungen";          };
             ["WAGER"]            = {["ENGLISH"] = "Losing More Than a Wager";   ["FRENCH"] = "Plus qu'un simple pari";              ["GERMAN"] = "Nicht nur den Einsatz verloren";  };
-            ["MISSINGTHINGS"]    = {["ENGLISH"] = "Missing Things";             ["FRENCH"] = "Les objets perdus";                   ["GERMAN"] = "Verlorene Dinge";                 };
+            ["MISSING_THINGS"]    = {["ENGLISH"] = "Missing Things";             ["FRENCH"] = "Les objets perdus";                   ["GERMAN"] = "Verlorene Dinge";                 };
+            ["FLYING_HIGH"]     = {["ENGLISH"] = "Flying High"; ["FRENCH"] = "Haut dans le ciel"; ["GERMAN"] = "Hoch hinaus"; };
+            ["CRASH_LANDING"]   = {["ENGLISH"] = "Crash Landing"; ["FRENCH"] = "Atterrissage en catastrophe"; ["GERMAN"] = "Bruchlandung"; };
+            ["COOLING_OFF"]     = {["ENGLISH"] = "Cooling Off"; ["FRENCH"] = "Rafraîchissement"; ["GERMAN"] = "Abkühlung"; };
+            ["DEFEAT_THE_HEAT"] = {["ENGLISH"] = "Defeat the Heat"; ["FRENCH"] = "S'occuper du problème de chaleur"; ["GERMAN"] = "Besiegt die Hitze."; };
+            ["ICE_DELIVERY"] = {["ENGLISH"] = "Ice Delivery"; ["FRENCH"] = "Livraison de glace"; ["GERMAN"] = "Eislieferung"; };
+
         };
 
         [HOBNANIGANS] = {

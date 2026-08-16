@@ -27,6 +27,7 @@ SELECTED_QUICK_GUIDE = DEFAULT_QUICK_GUIDE;
 import "CubePlugins.FestivalBuddyII.QuickGuides.QuickGuides";
 import "CubePlugins.FestivalBuddyII.QuickGuides.InnLeagueAleAssociation.QuickGuideStrings_InnLeagueAleAssociation";
 import "CubePlugins.FestivalBuddyII.QuickGuides.Midsummer.QuickGuideStrings_Midsummer";
+import "CubePlugins.FestivalBuddyII.QuickGuides.FarmersFaire.QuickGuideStrings_FarmersFaire";
 import "CubePlugins.FestivalBuddyII.QuickGuides.Spring.QuickGuideStrings_Spring";
 import "CubePlugins.FestivalBuddyII.QuickGuides.Yule.QuickGuideStrings_Yule";
 

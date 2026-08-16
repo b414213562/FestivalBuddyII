@@ -1256,7 +1256,7 @@ Kehre zu Cora Braunlock zurück.
 
         
         --- Moved from Summer:
-        ["TOOMUCHFESTIVAL"] = {
+        ["TOO_MUCH_FESTIVAL"] = {
             ["STRING"] = {
                 ["ENGLISH"] = "Find all 5 of Foxglove's items. They can all be found about the festival area.\n\nTeapot - 29.7s, 71.5w \nParasol - 30.2s, 71.5w \nWine - 29.9s, 71.1w \nBook - 29.7s, 71.2w \nTwine - 29.9s, 71.5w \n";
                 ["FRENCH"] = "Find all 5 of Foxglove's items. They can all be found about the festival area.\n\nTeapot - 29.7s, 71.5w \nParasol - 30.2s, 71.5w \nWine - 29.9s, 71.1w \nBook - 29.7s, 71.2w \nTwine - 29.9s, 71.5w \n";
@@ -1264,7 +1264,7 @@ Kehre zu Cora Braunlock zurück.
             };
         };
 
-        ["GOINGHUNGRY"] = {
+        ["GOING_HUNGRY"] = {
             ["STRING"] = {
                 ["ENGLISH"] = "Find all 5 of Melilot's items.\n\nPorridge - 29.4s, 71.4w \nCheese - 29.7s, 72.0w \nBread - 30.9s, 71.2w \nEggs - 30.4s, 71.4w \nMushrooms - 29.4s, 70.5w \n";
                 ["FRENCH"] = "Find all 5 of Melilot's items.\n\nPorridge - 29.4s, 71.4w \nCheese - 29.7s, 72.0w \nBread - 30.9s, 71.2w \nEggs - 30.4s, 71.4w \nMushrooms - 29.4s, 70.5w \n";
@@ -1280,7 +1280,7 @@ Kehre zu Cora Braunlock zurück.
             };
         };
 
-        ["STOCKINGPOND"] = {
+        ["STOCKING_POND"] = {
             ["STRING"] = {
                 ["ENGLISH"] = "1) The best place to catch amberjacks is inside Thorin's Hall near the waterfall.\n\n2) The best place to catch luillim is in Celondim by the docks.\n\n3) The best place to catch drum is near Bree, at the pond by Pierson's Farm (33.0s, 49.8w).";
                 ["FRENCH"] = "1) The best place to catch amberjacks is inside Thorin's Hall near the waterfall.\n\n2) The best place to catch luillim is in Celondim by the docks.\n\n3) The best place to catch drum is near Bree, at the pond by Pierson's Farm (33.0s, 49.8w).";
@@ -1288,7 +1288,7 @@ Kehre zu Cora Braunlock zurück.
             };
         };
 
-        ["FORGOTTENERRANDS"] = {
+        ["FORGOTTEN_ERRANDS"] = {
             ["STRING"] = {
                 ["ENGLISH"] = "Find all 5 of Ambi's items.\n\nRed Jar - auction room by Farmann \nGreen Jar - vault by Escrow Broker Tuki \nBlue Bottle - main hall by minstrel trainer \nNote - eastern slope to the tavern \nPack - next to the bridge by the waterfall";
                 ["FRENCH"] = "Find all 5 of Ambi's items.\n\nRed Jar - auction room by Farmann \nGreen Jar - vault by Escrow Broker Tuki \nBlue Bottle - main hall by minstrel trainer \nNote - eastern slope to the tavern \nPack - next to the bridge by the waterfall";
@@ -1304,13 +1304,26 @@ Kehre zu Cora Braunlock zurück.
             };
         };
 
-        ["MISSINGTHINGS"] = {
+        ["MISSING_THINGS"] = {
             ["STRING"] = {
                 ["ENGLISH"] = "Find all 5 of Lalfor's items about Duillon.\n\nGoblet - 24.1s, 93.2w \nJewellery Box - 23.9s, 93.0w \nBlue Book - 23.8s, 92.9w \nBrown Book - 23.8s, 92.7w \nBundle of Books - 23.9s, 92.7w \n";
                 ["FRENCH"] = "Find all 5 of Lalfor's items about Duillon.\n\nGoblet - 24.1s, 93.2w \nJewellery Box - 23.9s, 93.0w \nBlue Book - 23.8s, 92.9w \nBrown Book - 23.8s, 92.7w \nBundle of Books - 23.9s, 92.7w \n";
                 ["GERMAN"] = "Finde alle 5 Gegenstände für Lalfor um Duillon.\n\nKelch - 24.1s, 93.2w \nJuwelenkiste - 23.9s, 93.0w \nblaues Buch - 23.8s, 92.9w \nbraunes Buch - 23.8s, 92.7w \nBücherbündel - 23.9s, 92.7w \n";
             };
         };
+
+        ["FLYING_HIGH"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = "Fly kites in Hobbiton";
+                ["FRENCH"] = "Faire voler des cerfs-volants à Hobbitebourg";
+                ["GERMAN"] = "Lasst Drachen in Hobbingen steigen.";
+            };
+        };
+
+        -- ["CRASH_LANDING"]
+        -- ["COOLING_OFF"]
+        -- ["DEFEAT_THE_HEAT"]
+
     };
 
     [HOBNANIGANS] = {
