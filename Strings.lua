@@ -654,6 +654,21 @@ _LANG = {
                 };
             };
 
+            ["BONUS_ITEM"] = {
+                ["BONUS_ITEM_TITLE"] = {
+                    ["ENGLISH"] = "Bonus Token Item Reminder";
+                };
+                ["BONUS_ITEM_START_TEXT"] = {
+                    ["ENGLISH"] = "Reminder: equip a bonus token item.";
+                };
+                ["BONUS_ITEM_STOP_TEXT"] = {
+                    ["ENGLISH"] = "Reminder: return bonus token item to shared storage.";
+                };
+                ["BONUS_ITEM_EXAMPLE"] = {
+                    ["ENGLISH"] = "Fateful Toolkit\nFlowing Silver Stone\nFlowing Silver Stone of the Tortoise";
+                };
+            };
+
             ["NPC_COOLDOWN_WIN"] = {
                 ["TITLE"] = {
                     ["ENGLISH"] = "NPC Cooldown Window";
@@ -661,6 +676,26 @@ _LANG = {
             };
 
 
+        };
+
+        ["BONUS_TOKEN_ITEMS"] = {
+            ["FATEFUL_TOOLKIT"] = { -- 1879441000
+                ["ENGLISH"] = "Fateful Toolkit";
+                ["FRENCH"] = "Boîte à outils fatidique";
+                ["GERMAN"] = "Schicksalhafter Werkzeugsatz";
+            };
+
+            ["FLOWING_SILVER_STONE"] = { -- 1879452728
+                ["ENGLISH"] = "Flowing Silver Stone";
+                ["FRENCH"] = "Pierre d'Argent flottant";
+                ["GERMAN"] = "Stein des fließenden Silbers";
+            };
+
+            ["FLOWING_SILVER_STONE_OF_THE_TORTOISE"] = { -- 1879452699
+                ["ENGLISH"] = "Flowing Silver Stone of the Tortoise";
+                ["FRENCH"] = "Pierre de la tortue de l'Argent flottant";
+                ["GERMAN"] = "Schildkröten-Stein des fließenden Silbers";
+            };
         };
 
     };
@@ -998,6 +1033,8 @@ _LANG = {
         ["QUICK_GUIDE_REMOVE_COMPLETED"]  = { ["ENGLISH"] = "Remove completed items from list";                     ["GERMAN"] = "Fertige Punkte aus der Liste entfernen";              };
         ["QUICK_GUIDE_CLEAR_DELAY"]       = { ["ENGLISH"] = "Delay in seconds before completed items are removed:"; ["GERMAN"] = "Verzögerung in Sekunden bis Punkte entfernt werden";  };
         ["QUICK_GUIDE_USE_TIMER"]  =        { ["ENGLISH"] = "Use Quick Guide timer"; };
+        ["QUICK_GUIDE_START_BONUS_ITEM"]  = { ["ENGLISH"] = "Warn if bonus item missing at start of quick guide"; };
+        ["QUICK_GUIDE_STOP_BONUS_ITEM"]   = { ["ENGLISH"] = "Reminder to return bonus item missing at end of quick guide"; };
         ["QUICK_GUIDE_QUESTS_TO_INCLUED"] = { ["ENGLISH"] = "Quests to include in quick guide:";                    ["GERMAN"] = "Aufgaben, die in die Schnell-Liste sollen";           };
         ["QUICK_GUIDE_COLORS"]            = { ["ENGLISH"] = "Quick Guide Colors:"; ["GERMAN"] = "Farben in der Kurzanleitung:";};
         ["QUICK_GUIDE_USE_COLORS"]        = { ["ENGLISH"] = "Enable Colors"; ["GERMAN"] = "Farben benutzen";};

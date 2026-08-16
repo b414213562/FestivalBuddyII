@@ -486,3 +486,49 @@ end
 function ShowPluginOptions()
     Turbine.PluginManager.ShowOptions(Plugins[PLUGIN_NAME]);
 end
+
+-- Item functions:
+
+BONUS_ITEM_DATA = {
+    ["1091779117-1090519044-1091779116-1091779118"] = "FATEFUL_TOOLKIT";
+    ["1092751396-1090519044-1091947416"] = "FLOWING_SILVER_STONE";
+};
+
+---comment
+---@param item Item
+---@return string "icon string"
+function GetItemIds(item)
+    local image = item:GetIconImageID();
+    local quality = item:GetQualityImageID();
+    local shadow = item:GetShadowImageID();
+    local underlay = item:GetUnderlayImageID();
+
+    local background = "" .. shadow;
+    if (shadow ~= underlay) then background = background .. "-" .. underlay; end
+
+    return image .. "-" .. quality .. "-" .. background;
+end
+
+---comment
+---@param item Item
+---@return boolean
+function IsItemBonusItem(item)
+    if (item == nil) then return false; end
+
+    local itemIds = GetItemIds(item);
+    local isBonusItem = BONUS_ITEM_DATA[itemIds] ~= nil;
+    return isBonusItem;
+end
+
+--- Helper function to identify if an equipped item exists and matches our possible item.
+---@return boolean, boolean, boolean -- true if a match, false otherwise; isToolBonusItem; isPocketBonusItem
+function IsBonusItemEquipped()
+    local localPlayer = Turbine.Gameplay.LocalPlayer.GetInstance();
+    local equipment = localPlayer:GetEquipment();
+
+    local isToolBonusItem = IsItemBonusItem(equipment:GetItem(Turbine.Gameplay.Equipment.CraftTool));
+    local isPocketBonusItem = IsItemBonusItem(equipment:GetItem(Turbine.Gameplay.Equipment.Pocket));
+
+    return isToolBonusItem or isPocketBonusItem, isToolBonusItem, isPocketBonusItem;
+end
+

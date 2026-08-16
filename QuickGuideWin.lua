@@ -225,9 +225,11 @@ function QuickGuideWinCreateNode(index)
         end
         if (checkBox:IsChecked() and objective.TIMER_START) then
             QuickGuideTimerStart(wQuickGuideWinParent.timer);
+            QuickGuideWinBonusItemStart();
         end
         if (checkBox:IsChecked() and objective.TIMER_STOP) then
             QuickGuideTimerStop(wQuickGuideWinParent.timer);
+            QuickGuideWinBonusItemStop();
         end
     end
     checkBox.Update = function(sender, args)
@@ -243,6 +245,31 @@ function QuickGuideWinCreateNode(index)
     UpdateNodeText(treeNode);
 
     return treeNode;
+end
+
+function QuickGuideWinBonusItemStart()
+    if (SETTINGS_SERVER.QUICK_GUIDE_START_BONUS_ITEM) then
+        -- Check if a bonus item is present:
+        local isBonusItemEquipped = IsBonusItemEquipped();
+        if (not isBonusItemEquipped) then
+            -- If not, let the user know:
+            ShowBonusItemStart();
+        end
+    end
+end
+
+function QuickGuideWinBonusItemStop()
+    if (SETTINGS_SERVER.QUICK_GUIDE_STOP_BONUS_ITEM) then
+        -- Check if bonus item is still present:
+        local isBonusItemEquipped = IsBonusItemEquipped();
+
+        if (isBonusItemEquipped) then
+            -- If so, remind the user to put it in shared storage
+            ShowBonusItemStop();
+
+            -- Close the reminder if we detect the bonus item moving
+        end
+    end
 end
 
 function QuickGuideWinLoadFestival()

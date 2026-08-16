@@ -340,6 +340,29 @@ function DrawQuickGuideOptions(options, y)
     end
     y = y + 30;
 
+    -- Bonus token item section:
+    local warnMissingItemCheckbox =Turbine.UI.Lotro.CheckBox();
+    warnMissingItemCheckbox:SetParent(options);
+    warnMissingItemCheckbox:SetText(GetString(_LANG.OPTIONS.QUICK_GUIDE_START_BONUS_ITEM));
+    warnMissingItemCheckbox:SetSize(300, 30);
+    warnMissingItemCheckbox:SetPosition(10, y);
+    warnMissingItemCheckbox:SetChecked(SETTINGS_SERVER.QUICK_GUIDE_START_BONUS_ITEM);
+    warnMissingItemCheckbox.CheckedChanged = function(sender, args)
+        SETTINGS_SERVER.QUICK_GUIDE_START_BONUS_ITEM = not SETTINGS_SERVER.QUICK_GUIDE_START_BONUS_ITEM;
+    end
+    y = y + 40;
+
+    local remindReturnItemCheckbox =Turbine.UI.Lotro.CheckBox();
+    remindReturnItemCheckbox:SetParent(options);
+    remindReturnItemCheckbox:SetText(GetString(_LANG.OPTIONS.QUICK_GUIDE_STOP_BONUS_ITEM));
+    remindReturnItemCheckbox:SetSize(300, 30);
+    remindReturnItemCheckbox:SetPosition(10, y);
+    remindReturnItemCheckbox:SetChecked(SETTINGS_SERVER.QUICK_GUIDE_STOP_BONUS_ITEM);
+    remindReturnItemCheckbox.CheckedChanged = function(sender, args)
+        SETTINGS_SERVER.QUICK_GUIDE_STOP_BONUS_ITEM = not SETTINGS_SERVER.QUICK_GUIDE_STOP_BONUS_ITEM;
+    end
+    y = y + 40;
+
     -- Colors section:
     local quickGuideColors = Turbine.UI.Label();
     quickGuideColors:SetParent(options);

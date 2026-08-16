@@ -53,6 +53,7 @@ import "CubePlugins.FestivalBuddyII.HarvestmathMazeIdWin";
 import "CubePlugins.FestivalBuddyII.MazeMapWin";
 import "CubePlugins.FestivalBuddyII.FireworksEventQuickslotWin";
 import "CubePlugins.FestivalBuddyII.HobnanigansWin";
+import "CubePlugins.FestivalBuddyII.BonusToolReminderWin";
 import "CubePlugins.FestivalBuddyII.QuickGuideWin";
 import "CubePlugins.FestivalBuddyII.NpcCooldownWin";
 import "CubePlugins.FestivalBuddyII.MinimizedIcon";
@@ -417,6 +418,7 @@ function DrawWindows()
     DrawMazeMapWin();
     DrawMainWin();
     DrawAltWin();
+    DrawBonusToolReminderWin();
     DrawQuickGuideWin();
     DrawNpcCooldownWin();
 
