@@ -524,9 +524,28 @@ end
 ---@param treeNode TreeNode
 ---@param state boolean
 function QuickGuideSetNodeCompletion(treeNode, state)
-    Turbine.Shell.WriteLine("Setting check state of '" .. treeNode.checkBox:GetText() .. "' to " .. dump(state));
     treeNode.checkBox:SetChecked(state);
     treeNode.complete = state;
+
+    if (not state) then
+        UnsetTargetIfNecessary(treeNode.index);
+    end
+
+end
+
+function UnsetTargetIfNecessary(index)
+    -- If we are unchecking a Target objective, clear the corresponding saved setting:
+    local isTarget = false;
+    for _, target in ipairs(_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_TARGETS[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE]) do
+        if (target.INDEX == index) then
+            isTarget = true;
+        end
+    end
+
+    -- if not state and it's a target
+    if (isTarget) then
+        SetSetting(SETTINGS.QUICK_GUIDE_TARGETS, SELECTEDFESTIVAL, SELECTED_QUICK_GUIDE, index, nil);
+    end
 end
 
 function QuickGuideWinHandleQuestChannelText(cMessage)
