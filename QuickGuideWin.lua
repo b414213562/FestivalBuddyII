@@ -492,22 +492,39 @@ function QuickGuideWinHandleQuestChainBeginOrEnd(index)
         elseif (isChainEnd) then chain = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAINS[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE][objective.CHAIN_END];
         end
         if (chain) then
-            local treeView = wQuickGuideWinParent.treeView;
-            local nodeChanged = false;
-            for i = 1, treeView:GetNodes():GetCount() do
-                local treeNode = treeView:GetNodes():Get(i);
-                if (chain[treeNode.index]) then
-                    nodeChanged = true;
-                    treeNode.checkBox:SetChecked(state);
-                    treeNode.complete = state;
-                end
-            end
-            if (nodeChanged and isChainBegin) then
-                treeView:Refresh();
-            end
+            local shouldRefreshTree = isChainBegin;
+            QuickGuideSetChainCompletion(chain, state, shouldRefreshTree);
         end
     end
 
+end
+
+---Set all members of a chain to completed or not based on state.
+---@param chain table
+---@param state boolean
+---@param shouldRefreshTree boolean
+function QuickGuideSetChainCompletion(chain, state, shouldRefreshTree)
+    local treeView = wQuickGuideWinParent.treeView;
+    local nodeChanged = false;
+    for i = 1, treeView:GetNodes():GetCount() do
+        local treeNode = treeView:GetNodes():Get(i);
+        if (chain[treeNode.index]) then
+            nodeChanged = true;
+            QuickGuideSetNodeCompletion(treeNode, state);
+        end
+    end
+    if (nodeChanged and shouldRefreshTree) then
+        treeView:Refresh();
+    end
+end
+
+---Set node to completed or not based on state.
+---@param treeNode TreeNode
+---@param state boolean
+function QuickGuideSetNodeCompletion(treeNode, state)
+    Turbine.Shell.WriteLine("Setting check state of '" .. treeNode.checkBox:GetText() .. "' to " .. dump(state));
+    treeNode.checkBox:SetChecked(state);
+    treeNode.complete = state;
 end
 
 function QuickGuideWinHandleQuestChannelText(cMessage)
@@ -564,6 +581,19 @@ function QuickGuideWinHandleQuestCompleted(cMessage)
         QuickGuideWinMarkComplete(index);
         QuickGuideWinHandleQuestChainBeginOrEnd(index);
     end
+end
+
+function QuickGuideWinHandleQuestFailed(cMessage)
+    -- Convert the Failed message to a New Quest message so we can find the relevent chain:
+    local accept = string.gsub(cMessage, GetString(_LANG.QUESTS.FAILEDQUEST), GetString(_LANG.QUESTS.NEWQUEST));
+
+    -- Find the chain:
+    local index = QuickGuideWinGetIndexFromChat(accept, _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS);
+    local questChainKey = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAIN_LOOKUP[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE][index];
+    local chain = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAINS[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE][questChainKey];
+
+    -- Mark all members of the chain not completed:
+    QuickGuideSetChainCompletion(chain, false, true);
 end
 
 function QuickGuideWinHandleTargetChanged(newTargetName)

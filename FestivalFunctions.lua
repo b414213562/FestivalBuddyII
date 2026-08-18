@@ -142,6 +142,8 @@ function FilterFailedQuests(cMessage)
     if FindSelectedQuestInChatText(cMessage) then
         ClearSelectedQuest();
     end
+
+    QuickGuideWinHandleQuestFailed(cMessage);
 end
 
 -- Inspired by this answer: https://stackoverflow.com/a/2705804
