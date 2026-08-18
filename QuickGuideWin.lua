@@ -499,6 +499,7 @@ function QuickGuideWinHandleQuestChainBeginOrEnd(index)
                 if (chain[treeNode.index]) then
                     nodeChanged = true;
                     treeNode.checkBox:SetChecked(state);
+                    treeNode.complete = state;
                 end
             end
             if (nodeChanged and isChainBegin) then
