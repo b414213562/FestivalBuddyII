@@ -445,19 +445,21 @@ function QuickGuideWinMarkComplete(index)
 end
 
 function QuickGuideWinIsCompleted(index)
-    return SETTINGS.QUICK_GUIDE_PROGRESS[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE][index] ~= nil;
+    local setting = GetSetting(SETTINGS.QUICK_GUIDE_PROGRESS, SELECTEDFESTIVAL, SELECTED_QUICK_GUIDE, index);
+    local result = setting ~= nil;
+    return result
 end
 
 function QuickGuideWinSetCompleted(index)
-    SETTINGS.QUICK_GUIDE_PROGRESS[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE][index] = true;
+    SetSetting(SETTINGS.QUICK_GUIDE_PROGRESS, SELECTEDFESTIVAL, SELECTED_QUICK_GUIDE, index, true);
 end
 
 function QuickGuideWinUnsetCompleted(index)
-    SETTINGS.QUICK_GUIDE_PROGRESS[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE][index] = nil;
+    SetSetting(SETTINGS.QUICK_GUIDE_PROGRESS, SELECTEDFESTIVAL, SELECTED_QUICK_GUIDE, index, nil);
 end
 
 function QuickGuideWinClearCompleted()
-    SETTINGS.QUICK_GUIDE_PROGRESS[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE] = {};
+    ClearSettings(SETTINGS.QUICK_GUIDE_PROGRESS, SELECTEDFESTIVAL, SELECTED_QUICK_GUIDE);
 end
 
 function QuickGuideWinGetIndexFromChat(cMessage, objectiveTable)
@@ -607,7 +609,8 @@ function QuickGuideWinHandleTargetChanged(newTargetName)
             -- Also skip targets that belong to chains that aren't in use:
             -- Also skip targets that require the quest to be active but the quest isn't
 
-            local targetNotYetDone = not target.DONE;
+            local targetNotYetDone = not GetSetting(SETTINGS.QUICK_GUIDE_TARGETS, SELECTEDFESTIVAL, SELECTED_QUICK_GUIDE, target.INDEX);
+
             local questChain = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAIN_LOOKUP[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE][target.INDEX];
             local isChainUsed = SETTINGS.QUICK_GUIDE_QUESTS_TO_USE[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE][questChain];
 
@@ -617,7 +620,7 @@ function QuickGuideWinHandleTargetChanged(newTargetName)
 
             if (targetNotYetDone and isChainUsed and requireQuestAndQuestActive and (target.NAME == newTargetName)) then
                 -- Is the next one to do the one we're talking to?
-                target.DONE = true;
+                SetSetting(SETTINGS.QUICK_GUIDE_TARGETS, SELECTEDFESTIVAL, SELECTED_QUICK_GUIDE, target.INDEX, true);
                 QuickGuideWinMarkComplete(target.INDEX);
                 return;
             end

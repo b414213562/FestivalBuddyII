@@ -201,6 +201,55 @@ function _G.TakeQuestFromIn(npc, location)
     return string.format(GetString(QUICK_GUIDES_FORMAT_STRINGS.TakeQuestFromIn), HighlightNpc(npc), HighlightLocation(location));
 end
 
+---Helper for getting values for a quick guide whose hierarchy may not exist.
+---@param settingTable table e.g. SETTINGS.QUICK_GUIDE_TARGETS
+---@param festival string e.g. "YULE"
+---@param quick_guide number e.g. 1
+---@param objectiveIndex number
+---@return boolean | nil
+function _G.GetSetting(settingTable, festival, quick_guide, objectiveIndex)
+    if (not settingTable[festival]) then
+        settingTable[festival] = {};
+    end
+    if (not settingTable[festival][quick_guide]) then
+        settingTable[festival][quick_guide] = {};
+    end
+
+    local setting = settingTable[festival][quick_guide][objectiveIndex];
+    return setting;
+end
+
+---Helper for setting values for a quick guide whose hierarchy may not exist.
+---@param settingTable table
+---@param festival string
+---@param quick_guide number
+---@param objectiveIndex number
+---@param setting boolean|nil
+function _G.SetSetting(settingTable, festival, quick_guide, objectiveIndex, setting)
+    if (not settingTable[festival]) then
+        settingTable[festival] = {};
+    end
+    if (not settingTable[festival][quick_guide]) then
+        settingTable[festival][quick_guide] = {};
+    end
+
+    settingTable[festival][quick_guide][objectiveIndex] = setting;
+end
+
+---Helper to clear settings for a quick guide that may not exist.
+---@param settingTable table
+---@param festival string
+---@param quick_guide number
+function _G.ClearSettings(settingTable, festival, quick_guide)
+    if (not settingTable[festival]) then
+        return;
+    end
+    if (not settingTable[festival][quick_guide]) then
+        return;
+    end
+    settingTable[festival][quick_guide] = nil;
+end
+
 _G.AddNextQuickguideValue = AddNextQuickguideValue;
 
 _G.CubePlugins.FestivalBuddyII.MAX_QUICK_GUIDES = 3;

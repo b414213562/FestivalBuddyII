@@ -230,28 +230,14 @@ DEFAULT_SETTINGS = {
     };
 
     ["QUICK_GUIDE_PROGRESS"] = {
-        [MIDSUMMER] = {
-            [1] = {
-            };
-            [2] = {
-            };
-        };
-        [YULE] = {
-            [1] = {
-            };
-        };
-        [ILAA] = {
-            [1] = {
-            };
-        };
-        [SPRING] = {
-            [1] = {
-            };
-        };
-        [FARMERSFAIRE] = {
-            [1] = {
-            };
-        };
+    };
+
+    ["QUICK_GUIDE_TARGETS"] = {
+
+    };
+
+    ["QUICK_GUIDE_REPEAT_OBJECTIVES"] = {
+
     };
 
     ["QUICK_GUIDE_QUESTS_TO_USE"] = {
