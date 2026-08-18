@@ -1043,7 +1043,7 @@ _LANG = {
         ["QUICK_GUIDE_CLEAR_DELAY"]       = { ["ENGLISH"] = "Delay in seconds before completed items are removed:"; ["GERMAN"] = "Verzögerung in Sekunden bis Punkte entfernt werden";  };
         ["QUICK_GUIDE_USE_TIMER"]  =        { ["ENGLISH"] = "Use Quick Guide timer"; };
         ["QUICK_GUIDE_START_BONUS_ITEM"]  = { ["ENGLISH"] = "Warn if bonus item missing at start of quick guide"; };
-        ["QUICK_GUIDE_STOP_BONUS_ITEM"]   = { ["ENGLISH"] = "Reminder to return bonus item missing at end of quick guide"; };
+        ["QUICK_GUIDE_STOP_BONUS_ITEM"]   = { ["ENGLISH"] = "Reminder to return bonus item at end of quick guide"; };
         ["QUICK_GUIDE_QUESTS_TO_INCLUED"] = { ["ENGLISH"] = "Quests to include in quick guide:";                    ["GERMAN"] = "Aufgaben, die in die Schnell-Liste sollen";           };
         ["QUICK_GUIDE_COLORS"]            = { ["ENGLISH"] = "Quick Guide Colors:"; ["GERMAN"] = "Farben in der Kurzanleitung:";};
         ["QUICK_GUIDE_USE_COLORS"]        = { ["ENGLISH"] = "Enable Colors"; ["GERMAN"] = "Farben benutzen";};
