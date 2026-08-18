@@ -138,7 +138,8 @@ QG_FARMERSFAIRE[QG_FARMERSFAIRE_INDEX.FRESH_SAVOURY_MUSHROOM_STEW_COOK].DISPLAY 
 QG_FARMERSFAIRE[QG_FARMERSFAIRE_INDEX.FRESH_SAVOURY_MUSHROOM_STEW_END].DISPLAY = function() return TurnInTo("Fresh Savoury Mushroom Stew", "Daisy Sandyman"); end
 
 QG_FARMERSFAIRE[QG_FARMERSFAIRE_INDEX.THE_GREAT_MATHOM_FISHING_SWAP_PICKUP].DISPLAY = function() return TakeFromAt("The Great Mathom Fishing Swap", "Melia Pott", "Hobbiton-Bywater fishing-hole"); end
-QG_FARMERSFAIRE[QG_FARMERSFAIRE_INDEX.THE_GREAT_MATHOM_FISHING_SWAP_END].DISPLAY = function() return ""; end
+QG_FARMERSFAIRE[QG_FARMERSFAIRE_INDEX.THE_GREAT_MATHOM_FISHING_SWAP_PROGRESS].DISPLAY = function() return "Continue quest with Melia Pott"; end
+QG_FARMERSFAIRE[QG_FARMERSFAIRE_INDEX.THE_GREAT_MATHOM_FISHING_SWAP_END].DISPLAY = function() return "Wait 10 minutes for The Great Mathom Fishing Swap to auto-complete."; end
 
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[FARMERSFAIRE] = {};
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[FARMERSFAIRE][DEFAULT_QUICK_GUIDE] = {
@@ -261,6 +262,7 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[FARMERSFAIRE
     ["Convinced Opalessa Sandheaver to return to work"] = QG_FARMERSFAIRE_INDEX.A_NOSEY_REQUEST_OPALESSA; -- key:620891465:136263298
     ["Convinced Alric Hornblower to return to work"] = QG_FARMERSFAIRE_INDEX.A_NOSEY_REQUEST_ALRIC; -- key:620891465:136263299
 
+    ["Time to fish for mathoms!"] = QG_FARMERSFAIRE_INDEX.THE_GREAT_MATHOM_FISHING_SWAP_PROGRESS;
     -- ["The reveller says nothing, but departs with a sour look"] = { -- NAME is only used for debugging purposes.
     --     [1] = { ["NAME"] = "Reveller 1"; };
     --     [2] = { ["NAME"] = "Reveller 2"; };
