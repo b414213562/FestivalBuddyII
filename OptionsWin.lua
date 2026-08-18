@@ -5,6 +5,7 @@ local topMargin = 10;
 
 local debugY = 200;
 
+-- See below for where these are populated
 local questAcceptCompleteFailY = debugY;
 local hobnanigansY = questAcceptCompleteFailY + 100;
 local fireworksY = hobnanigansY + 240;
@@ -590,6 +591,17 @@ function DrawQuestAcceptCompleteFail(options)
     buttonObjective:SetText("Objective");
     buttonObjective.Click = function(sender, args)
         FilterQuest(questName:GetText());
+    end
+
+    y = y + buttonObjective:GetHeight() + 5;
+
+    local buttonTarget = Turbine.UI.Lotro.Button();
+    buttonTarget:SetParent(options);
+    buttonTarget:SetWidth(75);
+    buttonTarget:SetPosition(10 + 75*0, y);
+    buttonTarget:SetText("Target");
+    buttonTarget.Click = function(sender, args)
+        FilterTarget(questName:GetText());
     end
 
 end
@@ -1598,7 +1610,7 @@ function DrawOptionsWin()
 
     -- Calculate where all the debug sections should be:
     questAcceptCompleteFailY = 0;
-    hobnanigansY = questAcceptCompleteFailY + 100;
+    hobnanigansY = questAcceptCompleteFailY + 120;
     fireworksY = hobnanigansY + 480;
     fireworksColumnLeftMargin = 75;
     fireworksColumnWidth = 50;
