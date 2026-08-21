@@ -83,13 +83,11 @@ function FilterQuest(cMessage)
     end
 
     -- Farmers Faire - Fat Mayor / Will Whitfoot
-    if (SELECTEDFESTIVAL == FARMERSFAIRE) then
-        if SELECTEDQUEST == GetString(_LANG.QUESTS[FARMERSFAIRE].FAT_MAYOR) then
-            if (string.find(cMessage, GetString(_LANG.OTHER.FARMERS_FAIRE_WILL_WHITFOOT_SUCCESS_FAIL.SUCCESS))) then
-                CancelAlert();
-            elseif (string.find(cMessage, GetString(_LANG.OTHER.FARMERS_FAIRE_WILL_WHITFOOT_SUCCESS_FAIL.FAILURE))) then
-                CancelAlert();
-            end
+    if (ShouldProcessChat("FAT_MAYOR")) then
+        if (string.find(cMessage, GetString(_LANG.OTHER.FARMERS_FAIRE_WILL_WHITFOOT_SUCCESS_FAIL.SUCCESS))) then
+            CancelAlert();
+        elseif (string.find(cMessage, GetString(_LANG.OTHER.FARMERS_FAIRE_WILL_WHITFOOT_SUCCESS_FAIL.FAILURE))) then
+            CancelAlert();
         end
     end
 
