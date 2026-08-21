@@ -231,6 +231,9 @@ function QuickGuideWinCreateNode(index)
             QuickGuideTimerStop(wQuickGuideWinParent.timer);
             QuickGuideWinBonusItemStop();
         end
+        if (not checkBox:IsChecked()) then
+            UnsetTargetIfNecessary(index);
+        end
     end
     checkBox.Update = function(sender, args)
         local time = Turbine.Engine.GetGameTime();
