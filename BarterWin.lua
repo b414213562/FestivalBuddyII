@@ -97,6 +97,8 @@ function DrawBarterWin()
 
         SETTINGS.BARTERWIN.HEIGHT = newWindowHeight;
     end
+    -- If the barter window loads taller than the default background allows, fix it here:
+    wBarterWinParent.SizeChanged(nil, nil);
 
     MakeExpandCollapseAllButton();
     SetBarterWinVisible(SETTINGS.BARTERWIN.VISIBLE);
