@@ -1,4 +1,4 @@
-if (not SHOW_DEBUG_OPTIONS) then return; end
+if (not RUN_TEST_FUNCTIONS) then return; end
 
 Sunday = 1;
 Monday = 2;

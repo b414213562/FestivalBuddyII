@@ -1,5 +1,6 @@
 
 SHOW_DEBUG_OPTIONS = false;
+RUN_TEST_FUNCTIONS = false;
 
 local topMargin = 10;
 
