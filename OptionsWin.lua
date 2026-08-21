@@ -1265,7 +1265,7 @@ function DrawAlertDebug(options, optionsY)
 --        secondsToShow,
 --        showRemaningTime,
 --        callback,
---        alert_cancellation_token);
+--        fat_mayor_alert_cancellation_token);
     -- Support changing message, secondsToShow, showRemainingTime.
 
     local alertDebugLabel = Turbine.UI.Label();
@@ -1331,7 +1331,7 @@ function DrawAlertDebug(options, optionsY)
             seconds,
             showRemainingCheckBox:IsChecked(),
             nil,
-            alert_cancellation_token);
+            fat_mayor_alert_cancellation_token);
     end
 
     local cancelButton = Turbine.UI.Lotro.Button();

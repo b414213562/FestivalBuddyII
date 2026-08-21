@@ -1,15 +1,15 @@
 
 -- Chat log filter.
 -- Controls chat messages and actions the appropriate functions based on the message.
-alert_cancellation_token = {};
+fat_mayor_alert_cancellation_token = {};
 
 function ResetCancellationToken()
-    alert_cancellation_token = {};
+    fat_mayor_alert_cancellation_token = {};
 end
 
 function CancelAlert()
-    if (alert_cancellation_token) then
-        DoCallbacks(alert_cancellation_token, "Cancel");
+    if (fat_mayor_alert_cancellation_token) then
+        DoCallbacks(fat_mayor_alert_cancellation_token, "Cancel");
     end
 end
 
@@ -235,7 +235,7 @@ function HandleFarmersFaireWillWhitfootRequest(request)
         secondsToShow,
         showRemaningTime,
         callback,
-        alert_cancellation_token);
+        fat_mayor_alert_cancellation_token);
 end
 
 function HandleSayChat_OnaKay(message)
