@@ -1258,9 +1258,9 @@ Kehre zu Cora Braunlock zurück.
         --- Moved from Summer:
         ["TOO_MUCH_FESTIVAL"] = {
             ["STRING"] = {
-                ["ENGLISH"] = "Find all 5 of Foxglove's items. They can all be found about the festival area.\n\nTeapot - 29.7s, 71.5w \nParasol - 30.2s, 71.5w \nWine - 29.9s, 71.1w \nBook - 29.7s, 71.2w \nTwine - 29.9s, 71.5w \n";
-                ["FRENCH"] = "Find all 5 of Foxglove's items. They can all be found about the festival area.\n\nTeapot - 29.7s, 71.5w \nParasol - 30.2s, 71.5w \nWine - 29.9s, 71.1w \nBook - 29.7s, 71.2w \nTwine - 29.9s, 71.5w \n";
-                ["GERMAN"] = "Finde alle 5 Gegenstände für Fuchsia. \n\nTeekanne - 29.7s, 71.5w \nSchirm - 30.2s, 71.5w \nWein - 29.9s, 71.1w \nBuch - 29.7s, 71.2w \nZwirn - 29.9s, 71.5w\n";
+                ["ENGLISH"] = "Find all 5 of Foxglove's items. They can all be found about the festival area.\n\nTeapot - 29.7s, 71.5w \nParasol - 30.2s, 71.5w \nWine - 29.9s, 71.7w \nBook - 29.7s, 71.2w \nTwine - 29.9s, 71.5w \n";
+                ["FRENCH"] = "Find all 5 of Foxglove's items. They can all be found about the festival area.\n\nTeapot - 29.7s, 71.5w \nParasol - 30.2s, 71.5w \nWine - 29.9s, 71.7w \nBook - 29.7s, 71.2w \nTwine - 29.9s, 71.5w \n";
+                ["GERMAN"] = "Finde alle 5 Gegenstände für Fuchsia. \n\nTeekanne - 29.7s, 71.5w \nSchirm - 30.2s, 71.5w \nWein - 29.9s, 71.7w \nBuch - 29.7s, 71.2w \nZwirn - 29.9s, 71.5w\n";
             };
         };
 
