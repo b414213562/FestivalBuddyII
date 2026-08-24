@@ -218,6 +218,9 @@ function QuickGuideWinCreateNode(index)
     checkBox:SetSize(treeView:GetWidth() - ScrollbarWidth, 40);
     checkBox:SetMarkupEnabled(true);
     checkBox:SetChecked(isCompleted);
+    if (CLIENTLANG == "FRENCH") then
+        checkBox:SetFont(Turbine.UI.Lotro.Font.Verdana16);
+    end
     checkBox.CheckedChanged = function(sender, args)
         QuickGuidWinHandleCheckedEntry(treeNode);
         if (checkBox:IsChecked() and objective.CHAIN_END ~= nil) then

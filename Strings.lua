@@ -502,6 +502,29 @@ _LANG = {
                 ["Dieses Brot ist zu trocken!"] = BUTTER;
                 ["Diese Mahlzeit war viel zu gut, um sie ohne musikalische Begleitung zu genießen."] = WINE;
             };
+            ["FRENCH"] = {
+                ["Ah ! Ça brûle, ça brûle !!"] = MILK;
+                ["C'était un mélange de goûts plutôt agréable."] = NOTHING;
+                ["Ce n'était pas un trop mauvais repas, j'imagine."] = NOTHING;
+                ["Ce pain est trop sec !"] = BUTTER;
+                ["Ce plat était trop bon pour être mangé sans accompagnement."] = WINE;
+                ["D'abord sucré, puis salé, puis épicé - les différents goûts se marient très bien ensemble !"] = NOTHING;
+                ["Eurk ! C'est... pouah... C'est fort ! Au secours !"] = MILK;
+                ["Fade, fade, fade."] = SALT;
+                ["Hm. Pas assez riche, si vous voulez mon avis."] = BUTTER;
+                ["Houlà ! Trop de poivre !"] = MILK;
+                ["Je dois me rincer le palais."] = WINE;
+                ["Manger tout ça, c'est un dur labeur, vous savez. Je dois reprendre des forces."] = WATER;
+                ["Miam ! Quiconque a préparé ça mérite toute notre admiration."] = NOTHING;
+                ["Quelque chose d'un peu acide serait parfait maintenant."] = WINE;
+                ["Salé à la perfection, mais maintenant j'ai la gorge sèche."] = WATER;
+                ["Tellement... soif..."] = WATER;
+                ["Très bon, vraiment."] = NOTHING;
+                ["Une saveur fraîche, forte en bouche, et pas d'arrière-goût !"] = NOTHING;
+                ["Ça manque de quelque chose..."] = SALT;
+                ["Ça manque juste d'une pointe de quelque chose..."] = BUTTER;
+                ["Est-ce qu'Opale aurait oublié d'assaisonner ce plat ?"] = SALT;
+            };
         };
 
         ["FARMERS_FAIRE_BOUNDER_ROUNDS_PARTY_GOERS"] = {
@@ -527,6 +550,17 @@ _LANG = {
                 ["'Das Bauernfest ist mein Lieblingsfest! Ich mag es, wenn die Schweine die hiesigen Bauern begutachten.'\n"] = "Schweine begutachten";
                 ["'Dieses Fest kann der Feier zum 111. Geburtstag des alten verrückten Veutlin nicht das Wasser reichen!'\n"] = "verrückten Veutlin";
             };
+            ["FRENCH"] = {
+                ["'Ah, c'est une belle journée pour fêter les moissons. Un ciel bleu et de l'herbe verte à perte de vue... l'odeur des légumes fraîchement léchés...'\n"] = "légumes fraîchement léchés";
+                ["'Cette foire ne vaut pas la fête organisée pour les onze ans du vieux Sacquet !'\n"] = "les onze ans du vieux Sacquet";
+                ["'J'ai eu un renvoi. Hahaha !'\n"] = "Hahaha";
+                ["'J'ai eu une drosse gispute avec Ted Rouquin quand il m'a dit que les patates de l'Ancien étaient moins grosses que les siennes !'\n"] = "drosse gispute";
+                -- 'J'ai pris mon courage à deux mains pour aller au champ du Père Maggotte et voler quelques champignons... mais ses chiens m'en ont chassé.'
+                ["'J'arrive de Lagrenouillère pour bouter à tout ce que la Foire propose !'\n"] = "pour bouter";
+                ["'Je lève mon verre aux fermiers grâce à qui cette Foire est aussi délicieuse ! Que les orteils de vos poils poussent aussi épais que bouclés !'\n"] = "les orteils";
+                ["'La Foire des fermiers est mon festival préféré ! J'aime quand les cochons jugent les meilleurs fermiers du village.'\n"] = "les cochons jugent";
+                ["'Le maire n'arrête pas de manger ! C'est dégoûtant à voir. Mais ça me rappelle... j'ai faim moi ! Où est le souper ?'\n"] = "souper";
+            };
         };
 
         ["FARMERS_FAIRE_WILL_WHITFOOT_ITEMS"] = {
@@ -546,6 +580,14 @@ _LANG = {
                 [WATER] = "Nimm Wasser!";
                 [WINE] = "Nimm Wein!";
             };
+            ["FRENCH"] = {
+                [NOTHING] = "N'utilisez rien !";
+                [BUTTER] = "Utilisez du beurre !";
+                [MILK] = "Utilisez du seau de lait !";
+                [SALT] = "Utilisez du poignée de sel !";
+                [WATER] = "Utilisez de seau d'eau !";
+                [WINE] = "Utilisez du seau de vin !";
+            };
         };
 
         ["FARMERS_FAIRE_WILL_WHITFOOT_SUCCESS_FAIL"] = {
@@ -563,7 +605,7 @@ _LANG = {
         ["FARMERS_FAIRE_WILL_WHITFOOT_PARSE"] = {
             ["ENGLISH"] = "^<Select:IID:0x[%dA-F]+>Will Whitfoot<\\Select> says, ''(.*)''";
             ["GERMAN"] = "^<Select:IID:0x[%dA-F]+>Willi Weißfuß<\\Select> sagt: ''(.*)''";
-            ["FRENCH"] = "^<Select:IID:0x[%dA-F]+>Will Piedblanc<\\Select> dit: ''(.*)''"; -- Needs verification
+            ["FRENCH"] = "^<Select:IID:0x[%dA-F]+>Will Piedblanc<\\Select> dit : ''(.*)''"; -- Needs verification
         };
 
         ["YULE_NPC_COOLDOWN_LABELS"] = {
@@ -880,7 +922,7 @@ _LANG = {
         };
 
         [FARMERSFAIRE] = {
-            ["A_SUNNY_FAIRE_DAY"] = { ["ENGLISH"] = "A Sunny Faire Day"; ["FRENCH"] = "Un día soleado de feria"; ["GERMAN"] = "Ein sonniger Festtag"; };
+            ["A_SUNNY_FAIRE_DAY"] = { ["ENGLISH"] = "A Sunny Faire Day"; ["FRENCH"] = "Une belle journée de foire"; ["GERMAN"] = "Ein sonniger Festtag"; };
 
             ["FAT_MAYOR"]      = { ["ENGLISH"] = "Fat Mayor";       ["FRENCH"] = "Gros maire";                  ["GERMAN"] = "Ein dicker Bürgermeister";    };
             ["BOUNDER_ROUNDS"] = { ["ENGLISH"] = "Bounder Rounds";  ["FRENCH"] = "Les rondes du frontalier";    ["GERMAN"] = "Grenzerstreife";              };
