@@ -24,6 +24,10 @@ import "CubePlugins.FestivalBuddyII.Globals";
 DEFAULT_QUICK_GUIDE = 1;
 SELECTED_QUICK_GUIDE = DEFAULT_QUICK_GUIDE;
 
+import "CubePlugins.FestivalBuddyII.Strings";
+
+-- Quick Guides (must come after .Strings):
+import "CubePlugins.FestivalBuddyII.QuickGuides.QuickGuideStrings";
 import "CubePlugins.FestivalBuddyII.QuickGuides.QuickGuides";
 import "CubePlugins.FestivalBuddyII.QuickGuides.InnLeagueAleAssociation.QuickGuideStrings_InnLeagueAleAssociation";
 import "CubePlugins.FestivalBuddyII.QuickGuides.Midsummer.QuickGuideStrings_Midsummer";
@@ -33,7 +37,6 @@ import "CubePlugins.FestivalBuddyII.QuickGuides.Yule.QuickGuideStrings_Yule";
 
 -- Plugin Imports..
 import "CubePlugins.FestivalBuddyII.TimeFunctions";
-import "CubePlugins.FestivalBuddyII.Strings";
 import "CubePlugins.FestivalBuddyII.Tokens";
 import "CubePlugins.FestivalBuddyII.Images";
 import "CubePlugins.FestivalBuddyII.QuestStrings"; -- Needs to come after QuickGuides, uses formatting functions that currently live there

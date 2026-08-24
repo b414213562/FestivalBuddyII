@@ -98,6 +98,90 @@ QUICK_GUIDES_FORMAT_STRINGS = {
     ["TurnInQuestTo"] =         { ["ENGLISH"] = "Turn in quest to %s";              ["GERMAN"] = "Gib Aufgabe bei %s ab";               ["FRENCH"] = "Remettez la quête au %s"; };
 }
 
+---Make the "new quest" text we should expect for the current language
+---@param langQuestTable table
+---@return string "The exact text we should see in the quest channel"
+function _G.MakeNewQuestString(langQuestTable)
+    -- "New Quest: In the Spirit of Yule"
+    -- "Neue Aufgabe: Im Geiste des Julfests"
+    -- "Nouvelle quête : L'esprit de Yule"
+
+    local newQuest = GetString(_LANG.QUESTS.NEWQUEST) .. " " .. GetString(langQuestTable);
+    return newQuest;
+end
+
+---Make the "completed quest" text we should expect for the current language
+---@param langQuestTable table
+---@return string "The exact text we should see in the quest channel"
+function _G.MakeCompletedQuestString(langQuestTable)
+    -- "Completed:\nIn the Spirit of Yule\n"
+    -- "Abgeschlossen:\nIm Geiste des Julfests\n"
+    -- "Terminé :\nL'esprit de Yule\n"
+
+    local completedQUest = GetString(_LANG.QUESTS.COMPLETEDQUEST) .. "\n" .. GetString(langQuestTable) .. "\n";
+    return completedQUest;
+end
+
+function _G.GetObjectiveString(key, festival, min, max)
+    local objective = GetString(_OBJECTIVES[festival][key]);
+    if (not objective) then
+        return "FAILED TO LOOK UP OBJECTIVE: " .. dump(key);
+    end
+
+    if (min and max) then
+        objective = string.format(objective, min, max);
+    end
+    return objective;
+end
+
+function _G.GetProgressString(key, festival)
+    local progress = GetString(_PROGRESS[festival][key]);
+    if (not progress) then
+        return "FAILED TO LOOK UP PROGRESS: " .. dump(key);
+    end
+
+    return progress;
+end
+
+function _G.GetTargetString(key, festival)
+    local target = GetString(_TARGETS[festival][key]);
+    if (not target) then
+        return "FAILED TO LOOK UP TARGET: " .. dump(key);
+    end
+
+    return target;
+end
+
+function _G.GetQuestString(key, festival)
+    if (not festival) then festival = SELECTEDFESTIVAL; end
+    local quest = GetString(_LANG.QUESTS[festival][key]);
+    if (not quest) then
+        return "FAILED TO LOOK UP QUEST: " .. dump(key);
+    end
+
+    return quest;
+end
+
+function _G.GetNpcString(key, festival)
+    if (not festival) then festival = SELECTEDFESTIVAL; end
+    local npc = GetString(_NPCS[festival][key]);
+    if (not npc) then
+        return "FAILED TO LOOK UP NPC: " .. dump(key);
+    end
+
+    return npc;
+end
+
+function _G.GetDisplayString(key, festival)
+    if (not festival) then festival = SELECTEDFESTIVAL; end
+    local display = GetString(_DISPLAY[festival][key]);
+    if (not display) then
+        return "FAILED TO LOOK UP DISPLAY: " .. dump(key);
+    end
+
+    return display;
+end
+
 ---Helper for travelling to an objective, turning in a quest to an NPC.
 ---@param location string
 ---@param quest string
@@ -107,12 +191,29 @@ function _G.TravelTurnInTo(location, quest, npc)
     return string.format(GetString(QUICK_GUIDES_FORMAT_STRINGS.TravelTurnInTo), HighlightLocation(location), HighlightQuest(quest), HighlightNpc(npc));
 end
 
+---Helper for travelling to an objective, turning in a quest to an NPC.
+---@param location string
+---@param quest string
+---@param npc string
+---@return string
+function _G.TravelTurnInTo2(location, quest, npc)
+    return string.format(GetString(QUICK_GUIDES_FORMAT_STRINGS.TravelTurnInTo), HighlightLocation(location), HighlightQuest(GetQuestString(quest)), HighlightNpc(GetNpcString(npc)));
+end
+
 ---Helper for turning in a quest to an NPC
 ---@param quest string
 ---@param npc string
 ---@return string
 function _G.TurnInTo(quest, npc)
     return string.format(GetString(QUICK_GUIDES_FORMAT_STRINGS.TurnInTo), HighlightQuest(quest), HighlightNpc(npc));
+end
+
+---Helper for turning in a quest to an NPC
+---@param quest string
+---@param npc string
+---@return string
+function _G.TurnInTo2(quest, npc)
+    return string.format(GetString(QUICK_GUIDES_FORMAT_STRINGS.TurnInTo), HighlightQuest(GetQuestString(quest)), HighlightNpc(GetNpcString(npc)));
 end
 
 ---Helper for continuing a quest with an action
@@ -164,6 +265,14 @@ function _G.TakeFrom(quest, npc)
     return string.format(GetString(QUICK_GUIDES_FORMAT_STRINGS.TakeFrom), HighlightQuest(quest), HighlightNpc(npc));
 end
 
+---Helper for taking a quest from an NPC
+---@param quest string
+---@param npc string
+---@return string
+function _G.TakeFrom2(quest, npc)
+    return string.format(GetString(QUICK_GUIDES_FORMAT_STRINGS.TakeFrom), HighlightQuest(GetQuestString(quest)), HighlightNpc(GetNpcString(npc)));
+end
+
 ---Helper for taking a quest from an NPC in a location
 ---@param quest string
 ---@param npc string
@@ -174,6 +283,10 @@ end
 
 function _G.TakeFromAt(quest, npc, location)
     return string.format(GetString(QUICK_GUIDES_FORMAT_STRINGS.TakeFromAt), HighlightQuest(quest), HighlightNpc(npc), HighlightLocation(location));
+end
+
+function _G.TakeFromAt2(quest, npc, location)
+    return string.format(GetString(QUICK_GUIDES_FORMAT_STRINGS.TakeFromAt), HighlightQuest(GetQuestString(quest)), HighlightNpc(GetNpcString(npc)), HighlightLocation(location));
 end
 
 function _G.TravelToTakeQuestFrom(travel, location, quest, npc)
