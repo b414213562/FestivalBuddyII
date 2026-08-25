@@ -455,52 +455,62 @@ _LANG = {
 
         ["FARMERS_FAIRE_WILL_WHITFOOT_ANNOUNCEMENTS"] = {
             ["ENGLISH"] = {
-                ["Ack! Ss... spuh... spicy! Save me!"] = MILK;
-                ["Adding to this dish would spoil its taste."] = NOTHING;
-                ["All this eating is hard work -- exercise, if you ask me. I need to replenish."] = WATER;
-                ["Bland, bland, bland."] = SALT;
-                ["Crisp flavour, hearty, and a clean aftertaste!"] = NOTHING;
-                ["Dear me. It burns, it burns!!"] = MILK;
-                ["Did Opal forget to season this?"] = SALT;
-                ["First sweet, then salty, then savoury -- the flavours complement each other well!"] = NOTHING;
-                ["Hmm. Not quite rich enough, if you ask me."] = BUTTER;
-                ["I must cleanse my palate."] = WINE;
                 ["It just needs a dab of something...."] = BUTTER;
+                ["Hmm. Not quite rich enough, if you ask me."] = BUTTER;
+                ["This bread is too dry!"] = BUTTER;
+
+                ["Ack! Ss... spuh... spicy! Save me!"] = MILK;
+                ["Dear me. It burns, it burns!!"] = MILK;
+                ["Ouch!! Too much pepper!"] = MILK;
+
+                ["Bland, bland, bland."] = SALT;
+                ["Did Opal forget to season this?"] = SALT;
                 ["It's missing a little something..."] = SALT;
+
+                ["All this eating is hard work -- exercise, if you ask me. I need to replenish."] = WATER;
+                ["Nice and salty, but now my mouth is dry."] = WATER;
+                ["So... thirsty...."] = WATER;
+
+                ["I must cleanse my palate."] = WINE;
+                ["Something tart will do nicely right now."] = WINE;
+                ["This was too fine a dish to be eaten without an accompaniment."] = WINE;
+
+                ["Adding to this dish would spoil its taste."] = NOTHING;
+                ["Crisp flavour, hearty, and a clean aftertaste!"] = NOTHING;
+                ["First sweet, then salty, then savoury -- the flavours complement each other well!"] = NOTHING;
                 ["Lovely, lovely."] = NOTHING;
                 ["Mmm! Whoever made this is worthy of great admiration."] = NOTHING;
-                ["Nice and salty, but now my mouth is dry."] = WATER;
-                ["Ouch!! Too much pepper!"] = MILK;
-                ["So... thirsty...."] = WATER;
-                ["Something tart will do nicely right now."] = WINE;
                 ["That was a nice set of flavours."] = NOTHING;
                 ["That was a passable meal, I suppose."] = NOTHING;
-                ["This bread is too dry!"] = BUTTER;
-                ["This was too fine a dish to be eaten without an accompaniment."] = WINE;
             };
             ["GERMAN"] = {
-                ["Argh! Sch-Scha-Scharf! Rettet mich!"] = MILK;
-                ["An diesem schmackhaften Gericht sollte man nichts mehr ändern."] = NOTHING;
-                ["All dieses Essen ist schwere Arbeit, wenn Ihr mich fragt. Ich muss mich ausruhen."] = WATER;
-                ["Öde, öde, öde."] = SALT;
-                ["Knusprig, herzhaft und ein einwandfreier Nachgeschmack!"] = NOTHING;
-                ["Oh je. Es brennt, es brennt!!!"] = MILK;
-                ["Hat Opal das Würzen vergessen?"] = SALT;
-                ["Erst süß, dann salzig, dann pikant – die Geschmäcker ergänzen einander wirklich gut!"] = NOTHING;
-                ["Hmm. Nicht reichhaltig genug, wenn Ihr mich fragt."] = BUTTER;
-                ["Ich muss meinen Gaumen neutralisieren."] = WINE;
-                ["Es bräuchte nur ein kleines bisschen ..."] = BUTTER;
-                ["Irgendetwas fehlt ..."] = SALT;
-                ["Wunderbar, wunderbar."] = NOTHING;
-                ["Mmm! Wer auch immer dies gemacht hat, verdient große Bewunderung."] = NOTHING; -- need to watch a bit more to get the german translation
-                ["Schön salzig, aber jetzt ist mein Mund ganz trocken."] = WATER;
-                ["Uh!!! Zu viel Pfeffer!"] = MILK;
-                ["So ... durstig ..."] = WATER;
-                ["Etwas Herbes würde jetzt gut passen."] = WINE;
-                ["Das war eine nette Geschmacksmischung."] = NOTHING;
-                ["Das war ein annehmbares Gericht, würde ich sagen."] = NOTHING;
                 ["Dieses Brot ist zu trocken!"] = BUTTER;
+                ["Es bräuchte nur ein kleines bisschen ..."] = BUTTER;
+                ["Hmm. Nicht reichhaltig genug, wenn Ihr mich fragt."] = BUTTER;
+
+                ["Argh! Sch-Scha-Scharf! Rettet mich!"] = MILK;
+                ["Oh je. Es brennt, es brennt!!!"] = MILK;
+                ["Uh!!! Zu viel Pfeffer!"] = MILK;
+
+                ["Hat Opal das Würzen vergessen?"] = SALT;
+                ["Irgendetwas fehlt ..."] = SALT;
+                ["Öde, öde, öde."] = SALT;
+
+                ["All dieses Essen ist schwere Arbeit, wenn Ihr mich fragt. Ich muss mich ausruhen."] = WATER;
+                ["Schön salzig, aber jetzt ist mein Mund ganz trocken."] = WATER;
+                ["So ... durstig ..."] = WATER;
+
                 ["Diese Mahlzeit war viel zu gut, um sie ohne musikalische Begleitung zu genießen."] = WINE;
+                ["Etwas Herbes würde jetzt gut passen."] = WINE;
+                ["Ich muss meinen Gaumen neutralisieren."] = WINE;
+
+                ["An diesem schmackhaften Gericht sollte man nichts mehr ändern."] = NOTHING;
+                ["Das war ein annehmbares Gericht, würde ich sagen."] = NOTHING;
+                ["Das war eine nette Geschmacksmischung."] = NOTHING;
+                ["Erst süß, dann salzig, dann pikant – die Geschmäcker ergänzen einander wirklich gut!"] = NOTHING;
+                ["Knusprig, herzhaft und ein einwandfreier Nachgeschmack!"] = NOTHING;
+                ["Mmm! Wer auch immer dies gemacht hat, verdient große Bewunderung."] = NOTHING; -- need to watch a bit more to get the german translation
+                ["Wunderbar, wunderbar."] = NOTHING;
             };
             ["FRENCH"] = {
                 ["Ça manque juste d'une pointe de quelque chose..."] = BUTTER;
