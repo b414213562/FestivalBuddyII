@@ -1,3 +1,17 @@
+v2.4.1 changes:
+    Festivals:
+        Farmers Faire:
+            Added timer for Fat Mayor. Note: Timing is somewhat random. Mayor can start anywhere in the grey region.
+            Added additional quest guides.
+            Added additional maps for Party Tree quests.
+            Updated barter items
+            Bug fix: Current Fat Mayor alert will now be cleared when bringing the item to the mayor or turning in the quest.
+    Quick Guides:
+        Farmers Faire:
+            Added The Party Tree and Hobbiton Bywater-focused Quick Guide.
+        Added an option to remind the player to equip their Fateful Toolkit.
+        Added an option to remind the player to return their Fateful Tookkit to shared storage.
+
 v2.3.1 changes:
     Quick Guides:
         Midsummer:
