@@ -74,6 +74,11 @@ function FilterQuest(cMessage)
         CheckForInProgressThatIsCompletedOrFailed(cMessage);
     end
 
+    -- When we complete Fat Mayor, clear any Fat Mayor alerts:
+    if (CompQuest and cMessage == MakeCompletedQuestString(_LANG.QUESTS.FARMERSFAIRE.FAT_MAYOR)) then
+        CancelFatMayorAlert();
+    end
+
     local NewQuest = string.find(cMessage,(GetString(_LANG.QUESTS.NEWQUEST)));
     if NewQuest ~= nil then FilterNewQuests(cMessage) end;
 
