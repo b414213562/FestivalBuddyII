@@ -1340,7 +1340,7 @@ function DrawAlertDebug(options, optionsY)
     cancelButton:SetWidth(100);
     cancelButton:SetPosition(200, y);
     cancelButton.Click = function(sender, args)
-        CancelAlert();
+        CancelFatMayorAlert();
     end
 
     y = y + 30;

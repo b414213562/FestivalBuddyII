@@ -7,7 +7,7 @@ function ResetCancellationToken()
     fat_mayor_alert_cancellation_token = {};
 end
 
-function CancelAlert()
+function CancelFatMayorAlert()
     if (fat_mayor_alert_cancellation_token) then
         DoCallbacks(fat_mayor_alert_cancellation_token, "Cancel");
     end
@@ -85,9 +85,9 @@ function FilterQuest(cMessage)
     -- Farmers Faire - Fat Mayor / Will Whitfoot
     if (ShouldProcessChat("FAT_MAYOR")) then
         if (string.find(cMessage, GetString(_LANG.OTHER.FARMERS_FAIRE_WILL_WHITFOOT_SUCCESS_FAIL.SUCCESS))) then
-            CancelAlert();
+            CancelFatMayorAlert();
         elseif (string.find(cMessage, GetString(_LANG.OTHER.FARMERS_FAIRE_WILL_WHITFOOT_SUCCESS_FAIL.FAILURE))) then
-            CancelAlert();
+            CancelFatMayorAlert();
         end
     end
 
