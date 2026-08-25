@@ -3,7 +3,7 @@ function DrawBonusToolReminderWin()
     BonusToolReminderWin = Turbine.UI.Lotro.Window();
 
     local window = BonusToolReminderWin;
-    window:SetSize(500, 200);
+    window:SetSize(500, 150);
     window:SetText(GetString(_LANG.OTHER.WINDOWS.BONUS_ITEM.BONUS_ITEM_TITLE));
 
     local displayWidth, displayHeight = Turbine.UI.Display.GetSize();
@@ -29,17 +29,6 @@ function DrawBonusToolReminderWin()
     mainLabel:SetPosition(marginLeft, marginTop);
     --mainLabel:SetBackColor(Turbine.UI.Color.DarkRed);
     BonusToolReminderWin.Label = mainLabel;
-
-    local exampleLabel = Turbine.UI.Label();
-    exampleLabel:SetParent(window);
-    exampleLabel:SetFont(Turbine.UI.Lotro.Font.TrajanPro16);
-    exampleLabel:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleCenter);
-    exampleLabel:SetSize(
-        window:GetWidth() - marginLeft - marginRight,
-        75);
-    exampleLabel:SetPosition(marginLeft, marginTop + mainLabel:GetHeight());
-    --exampleLabel:SetBackColor(Turbine.UI.Color.DarkRed);
-    exampleLabel:SetText(GetString(_LANG.OTHER.WINDOWS.BONUS_ITEM.BONUS_ITEM_EXAMPLE));
 
 end
 

@@ -346,7 +346,7 @@ function DrawQuickGuideOptions(options, y)
     local warnMissingItemCheckbox =Turbine.UI.Lotro.CheckBox();
     warnMissingItemCheckbox:SetParent(options);
     warnMissingItemCheckbox:SetText(GetString(_LANG.OPTIONS.QUICK_GUIDE_START_BONUS_ITEM));
-    warnMissingItemCheckbox:SetSize(300, 30);
+    warnMissingItemCheckbox:SetSize(325, 30);
     warnMissingItemCheckbox:SetPosition(10, y);
     warnMissingItemCheckbox:SetChecked(SETTINGS_SERVER.QUICK_GUIDE_START_BONUS_ITEM);
     warnMissingItemCheckbox.CheckedChanged = function(sender, args)
