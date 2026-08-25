@@ -503,27 +503,32 @@ _LANG = {
                 ["Diese Mahlzeit war viel zu gut, um sie ohne musikalische Begleitung zu genießen."] = WINE;
             };
             ["FRENCH"] = {
-                ["Ah ! Ça brûle, ça brûle !!"] = MILK;
-                ["C'était un mélange de goûts plutôt agréable."] = NOTHING;
-                ["Ce n'était pas un trop mauvais repas, j'imagine."] = NOTHING;
+                ["Ça manque juste d'une pointe de quelque chose..."] = BUTTER;
                 ["Ce pain est trop sec !"] = BUTTER;
-                ["Ce plat était trop bon pour être mangé sans accompagnement."] = WINE;
-                ["D'abord sucré, puis salé, puis épicé - les différents goûts se marient très bien ensemble !"] = NOTHING;
-                ["Eurk ! C'est... pouah... C'est fort ! Au secours !"] = MILK;
-                ["Fade, fade, fade."] = SALT;
                 ["Hm. Pas assez riche, si vous voulez mon avis."] = BUTTER;
+
+                ["Ah ! Ça brûle, ça brûle !!"] = MILK;
+                ["Eurk ! C'est... pouah... C'est fort ! Au secours !"] = MILK;
                 ["Houlà ! Trop de poivre !"] = MILK;
-                ["Je dois me rincer le palais."] = WINE;
+
+                ["Ça manque de quelque chose..."] = SALT;
+                ["Est-ce qu'Opale aurait oublié d'assaisonner ce plat ?"] = SALT;
+                ["Fade, fade, fade."] = SALT;
+
                 ["Manger tout ça, c'est un dur labeur, vous savez. Je dois reprendre des forces."] = WATER;
-                ["Miam ! Quiconque a préparé ça mérite toute notre admiration."] = NOTHING;
-                ["Quelque chose d'un peu acide serait parfait maintenant."] = WINE;
                 ["Salé à la perfection, mais maintenant j'ai la gorge sèche."] = WATER;
                 ["Tellement... soif..."] = WATER;
+
+                ["Ce plat était trop bon pour être mangé sans accompagnement."] = WINE;
+                ["Je dois me rincer le palais."] = WINE;
+                ["Quelque chose d'un peu acide serait parfait maintenant."] = WINE;
+
+                ["C'était un mélange de goûts plutôt agréable."] = NOTHING;
+                ["Ce n'était pas un trop mauvais repas, j'imagine."] = NOTHING;
+                ["D'abord sucré, puis salé, puis épicé - les différents goûts se marient très bien ensemble !"] = NOTHING;
+                ["Miam ! Quiconque a préparé ça mérite toute notre admiration."] = NOTHING;
                 ["Très bon, vraiment."] = NOTHING;
                 ["Une saveur fraîche, forte en bouche, et pas d'arrière-goût !"] = NOTHING;
-                ["Ça manque de quelque chose..."] = SALT;
-                ["Ça manque juste d'une pointe de quelque chose..."] = BUTTER;
-                ["Est-ce qu'Opale aurait oublié d'assaisonner ce plat ?"] = SALT;
             };
         };
 
