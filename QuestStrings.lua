@@ -1203,17 +1203,31 @@ Kehre zu Cora Braunlock zurück.
 
     -- FARMERS FAIRE ----------------------------------------------------------------------------------------------------------------
     [FARMERSFAIRE] = {
+        ["A_SUNNY_FAIRE_DAY"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = "Pick up quest from and turn quest in to Campanula Chubb at the Party Tree or in Bywater";
+            };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/FarmersFaire/A Sunny Faire Day.tga";
+        };
         ["FAT_MAYOR"] = {
             ["STRING"] = {
                 ["ENGLISH"] = "not rich enough / a dab / bread dry:  Butter\nSpicy / it burns / pepper:  Milk\nBland / forgot seasoning / missing: Salt\nReplenish / mouth is dry / thirsty: Water\nCleanse palate / something tart / too fine: Wine\n\nEverything else: Do nothing";
                 ["GERMAN"] = "nicht reichhaltig / bißchen / Brot trocken: Butter\nScharf / es brennt / Pfeffer: Milch\nöde / würzen vergessen / etwas fehlt: Salz\nausruhen / Mund trocken / durstig: Wasser\nGaumen / etwas Herbes / Musikalisch: Wein\n\nAlles andere: Warten";
+                ["FRENCH"] = "beurre: pain sec / Pas assez riche / manque juste d'une\nlait: Ça brûle / C'est fort / Trop de poivre\nsel: Fade / manque de quelque / oublié d'assaisonner\neau: reprendre des forces / j'ai la gorge sèche / soif...\nvin: sans accompagnement / rincer le palais / peu acide";
             };
         };
         ["BOUNDER_ROUNDS"] = {
             ["STRING"] = {
                 ["ENGLISH"] = "A toast: toes in your hair\nAh, a beautiful day: fresh-licked vegebles\nI burped: Ha ha ha!\nI came: all the day\nI got into: quite a squirrel\nI made a daring trip: munchroom\nThat mayor: slupper\nThe Farmers Faire: pigs judge\nThis Faire: Old Bad Maggins";
                 ["GERMAN"] = "Zehen in eurem Haar\nGrauer Himmel\nHa ha ha!\nKöstlichkeiten vernichten\nVOM Ohm\nPelze\nAbendstück\nSchweine begutachten\nverrückten Veutlin";
+                ["FRENCH"] = "légumes fraîchement léchés\nles onze ans du vieux Sacquet\nHahaha\ndrosse gispute\npour bouter\nles orteils\nles cochons jugent\nsouper";
             };
+        };
+        ["ICE_DELIVERY"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = "1. Pick up quest from Tansy Tighfield by the Party Tree. Pick up ice block.\n\n2. Deliver ice block to Bluet Goldworthy. Turn in quest.";
+            };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/FarmersFaire/Ice Delivery.tga";
         };
 
         -- Staffing the Market quests in Bywater with Daisy Sandyman, left-to-right:
@@ -1262,6 +1276,7 @@ Kehre zu Cora Braunlock zurück.
                 ["FRENCH"] = "Find all 5 of Foxglove's items. They can all be found about the festival area.\n\nTeapot - 29.7s, 71.5w \nParasol - 30.2s, 71.5w \nWine - 29.9s, 71.7w \nBook - 29.7s, 71.2w \nTwine - 29.9s, 71.5w \n";
                 ["GERMAN"] = "Finde alle 5 Gegenstände für Fuchsia. \n\nTeekanne - 29.7s, 71.5w \nSchirm - 30.2s, 71.5w \nWein - 29.9s, 71.7w \nBuch - 29.7s, 71.2w \nZwirn - 29.9s, 71.5w\n";
             };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/FarmersFaire/Too Much Festival.tga";
         };
 
         ["GOING_HUNGRY"] = {
@@ -1270,6 +1285,7 @@ Kehre zu Cora Braunlock zurück.
                 ["FRENCH"] = "Find all 5 of Melilot's items.\n\nPorridge - 29.4s, 71.4w \nCheese - 29.7s, 72.0w \nBread - 30.9s, 71.2w \nEggs - 30.4s, 71.4w \nMushrooms - 29.4s, 70.5w \n";
                 ["GERMAN"] = "Finde alle 5 Gegenstände für Melilot.\n\nHaferbrei - 29.4s, 71.4w \nKäse - 29.7s, 72.0w \nBrot - 30.9s, 71.2w \nEier - 30.4s, 71.4w \nPilze - 29.4s, 70.5w \n";
             };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/FarmersFaire/Going Hungry.tga";
         };
 
         ["BELONGINGS"] = {
@@ -1314,15 +1330,30 @@ Kehre zu Cora Braunlock zurück.
 
         ["FLYING_HIGH"] = {
             ["STRING"] = {
-                ["ENGLISH"] = "Fly kites in Hobbiton";
+                ["ENGLISH"] = "1. Pick up quest from Hargold Hardbottle near the Party Tree.\n\nFly kites near the Party Tree.\n\n1. Turn in quest to Hargold Hardbottle.";
                 ["FRENCH"] = "Faire voler des cerfs-volants à Hobbitebourg";
                 ["GERMAN"] = "Lasst Drachen in Hobbingen steigen.";
             };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/FarmersFaire/Flying High.tga";
         };
 
-        -- ["CRASH_LANDING"]
-        -- ["COOLING_OFF"]
-        -- ["DEFEAT_THE_HEAT"]
+        ["CRASH_LANDING"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = "1. Pick up quest from Lila Roper near the Party Tree.\n\nRecover crashed kites near The Party Tree\n\n1. Turn in quest to Lila Roper.";
+            };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/FarmersFaire/Crash Landing.tga";
+        };
+        ["COOLING_OFF"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = "1. Pick up quest from Tansy Tighfield\n2-6. Cool off overheated patrons\n1. Turn in quest to Tansy Tighfield";
+            };
+            ["IMAGE"] = RESOURCEDIR .. "/QuestMaps/FarmersFaire/Cooling Off.tga";
+        };
+        ["DEFEAT_THE_HEAT"] = {
+            ["STRING"] = {
+                ["ENGLISH"] = "Defeat heat waves by The Party Tree";
+            };
+        };
 
     };
 
