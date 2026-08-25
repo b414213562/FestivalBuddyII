@@ -618,11 +618,14 @@ function QuickGuideWinHandleQuestFailed(cMessage)
 
     -- Find the chain:
     local index = QuickGuideWinGetIndexFromChat(accept, _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS);
-    local questChainKey = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAIN_LOOKUP[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE][index];
-    local chain = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAINS[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE][questChainKey];
+    -- If the failed quest is in the quick guide:
+    if (index) then
+        local questChainKey = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAIN_LOOKUP[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE][index];
+        local chain = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAINS[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE][questChainKey];
 
-    -- Mark all members of the chain not completed:
-    QuickGuideSetChainCompletion(chain, false, true);
+        -- Mark all members of the chain not completed:
+        QuickGuideSetChainCompletion(chain, false, true);
+    end
 end
 
 function QuickGuideWinHandleTargetChanged(newTargetName)
