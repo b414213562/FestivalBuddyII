@@ -1,0 +1,27 @@
+Festival Buddy II version v2.4.1 is now available at [URL='https://www.lotrointerface.com/downloads/info1218-FestivalBuddyII.html']lotrointerface.com[/URL].
+
+Farmers Faire: Added quick guide, added timer for Fat Mayor, updated barter items, added quest guides and maps. Also added opt-in Fateful Toolkit reminders.
+
+Version 2.4.1 release notes:
+
+Festivals:
+[list]
+    [*] Farmers Faire:
+    [list]
+        [*] Added timer for Fat Mayor. Note: Timing is somewhat random. Mayor can start anywhere in the grey region.
+        [*] Added additional quest guides.
+        [*] Added additional maps for Party Tree quests.
+        [*] Updated barter items
+        [*] Bug fix: Current Fat Mayor alert will now be cleared when bringing the item to the mayor or turning in the quest.
+    [/list]
+[/list]
+
+Quick Guides:
+[list]
+    [*] Farmers Faire:
+    [list]
+        [*] Added The Party Tree and Hobbiton Bywater-focused Quick Guide.
+    [/list]
+    [*] Added an option to remind the player to equip their Fateful Toolkit.
+    [*] Added an option to remind the player to return their Fateful Tookkit to shared storage.
+[/list]
