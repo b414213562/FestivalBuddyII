@@ -946,6 +946,10 @@ _LANG = {
             ["FROZEN_SWEET_CREAM"] = { ["ENGLISH"] = "Frozen Sweet-cream"; ["FRENCH"] = "Crème glacée"; ["GERMAN"] = "Süße Eiscreme"; };
             ["THE_GREAT_MATHOM_FISHING_SWAP"] = { ["ENGLISH"] = "The Great Mathom Fishing Swap"; ["FRENCH"] = "La grande pêche d'échange de mathoms"; ["GERMAN"] = "Der große Mathom-Tauschangeln"; };
 
+            -- Restocking the Market quests in Bywarter with Sperling Took:
+            ["RESTOCKING_THE_MARKET"] = { ["ENGLISH"] = "Restocking the Market"; ["FRENCH"] = "Regarnir les stocks du marché"; ["GERMAN"] = "Den Markt mit Nachschub versorgen"; };
+            ["RESTOCKING_CABBAGES"] = { ["ENGLISH"] = "To Cotton's Farm: Restocking Cabbages"; ["FRENCH"] = "A la ferme de Chaumine : Réapprovisionnement de choux"; ["GERMAN"] = "Zu Hüttingers Hof: Die Kohlköpfe wieder auffüllen"; };
+
             -- Staffing the Market quests in Bywater with Daisy Sandyman, left-to-right:
             ["MANNING_THE_MARKET"] = { ["ENGLISH"] = "Manning the Market"; ["FRENCH"] = "S'occuper du marché"; ["GERMAN"] = "Den Markt bemannen"; };
             ["APPLE_SHOPPING"]              = { ["ENGLISH"] = "Apple-shopping";                 ["FRENCH"] = "Achat de pommes";                         ["GERMAN"] = "Apfelkauf";                           };

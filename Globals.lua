@@ -263,6 +263,8 @@ DEFAULT_SETTINGS = {
                 ["APPLE_SHOPPING"] = true;
                 ["FRESH_SAVOURY_MUSHROOM_STEW"] = true;
                 ["THE_GREAT_MATHOM_FISHING_SWAP"] = true;
+                ["RESTOCKING_THE_MARKET"] = true;
+                ["RESTOCKING_CABBAGES"] = true;
             };
         };
         [MIDSUMMER] = {

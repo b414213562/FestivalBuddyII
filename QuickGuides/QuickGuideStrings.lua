@@ -72,6 +72,7 @@ _OBJECTIVES = {
         ["key:620968341:177082772"] = { ["ENGLISH"] = "Mixed the dessert"; ["FRENCH"] = "Dessert mélangé"; ["GERMAN"] = "Nachtisch gemischt.";  };
         ["key:620968341:177082788"] = { ["ENGLISH"] = "Collected frozen sweet-cream"; ["FRENCH"] = "Crème glacée récupérée"; ["GERMAN"] = "Süße Eiscreme eingesammelt.";  };
         ["key:620968341:177082793"] = { ["ENGLISH"] = "Collected fresh fruit"; ["FRENCH"] = "Fruits frais récupérés"; ["GERMAN"] = "Frisches Obst eingesammelt.";  };
+        ["key:620890089:136263297"] = { ["ENGLISH"] = "Collected the basket of cabbages"; ["FRENCH"] = "Panier de choux récupéré"; ["GERMAN"] = "Ihr habt den Korb voller Kohlköpfe aufgehoben";  };
     };
 };
 
@@ -121,6 +122,7 @@ _NPCS ={
         ["MELILOT_HAYWARD"] = { ["ENGLISH"] = "Melilot Hayward"; ["FRENCH"] = "Melilot Gardeclôture"; ["GERMAN"] = "Melilot Feldhüter";  };
         ["TANSY_TIGHFIELD"] = { ["ENGLISH"] = "Tansy Tighfield"; ["FRENCH"] = "Tansy Champtoron"; ["GERMAN"] = "Floretta Schenkelfeld";  };
         ["WILL_WHITFOOT"] = { ["ENGLISH"] = "Will Whitfoot"; ["FRENCH"] = "Will Piedblanc"; ["GERMAN"] = "Willi Weißfuß";  };
+        ["SPERLING_TOOK"] = { ["ENGLISH"] = "Sperling Took"; ["FRENCH"] = "Simerlin Touque"; ["GERMAN"] = "Sperling Tuk";  };
     };
 };
 
@@ -158,5 +160,6 @@ _DISPLAY ={
         ["key:620890264:84765780"] = { ["ENGLISH"] = "Add mushrooms to the stew"; ["FRENCH"] = "Ajoutez les champignons au ragoût"; ["GERMAN"] = "Fügt dem Eintopf Pilze hinzu";  };
         ["key:620890264:84765781"] = { ["ENGLISH"] = "Use the stew-pot to cook the Savoury Mushroom Stew"; ["FRENCH"] = "Utilisez le chaudron pour cuire le ragoût de champignons savoureux"; ["GERMAN"] = "Nutzt den Topf, um den schmackhaften Pilzeintopf zu kochen";  };
         ["key:620968341:111477427"] = { ["ENGLISH"] = "Mix the dessert"; ["FRENCH"] = "Mélanger le dessert"; ["GERMAN"] = "Mischt den Nachtisch.";  };
+        ["key:620890089:22075073"] = { ["ENGLISH"] = "Collect the basket of cabbages (eat pie for a burst of energy)"; ["FRENCH"] = "Rapportez un panier de choux (mangez de la tarte pour un regain d'énergie)"; ["GERMAN"] = "Hebt einen Korb voller Kohlköpfe auf (esst Kuchen, um einen Energieschub zu erhalten)";  };
     };
 };
