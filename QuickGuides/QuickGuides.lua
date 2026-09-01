@@ -89,7 +89,7 @@ QUICK_GUIDES_FORMAT_STRINGS = {
     ["TravelCollectFrom"] =     { ["ENGLISH"] = "Travel to %s, collect %s from %s"; ["GERMAN"] = "Reise nach %s, besorge %s von %s";    ["FRENCH"] = "Rendez-vous à %s, récupérez %s auprès %s"; };
     ["TakeFrom"] =              { ["ENGLISH"] = "Take %s from %s";                  ["GERMAN"] = "Nimm %s von %s an";                   ["FRENCH"] = "Prenez %s de %s"; };
     ["TakeFromIn"] =            { ["ENGLISH"] = "Take %s from %s in %s";            ["GERMAN"] = "Nimm %s von %s in %s an";             ["FRENCH"] = "Prenez %s de %s dans %s."; };
-    ["TakeFromAt"] =            { ["ENGLISH"] = "Take %s from %s at %s";            ["GERMAN"] = "Nimm %s von %s bij %s an";            ["FRENCH"] = "Prenez %s de %s à %s."; };
+    ["TakeFromAt"] =            { ["ENGLISH"] = "Take %s from %s at %s";            ["GERMAN"] = "Nimm %s von %s bei %s an";            ["FRENCH"] = "Prenez %s de %s à %s."; };
     ["TravelToTakeQuestFrom"] = { ["ENGLISH"] = "%s to %s, take %s from %s";        ["GERMAN"] = "%s zum %s, nimm %s von %s an";        ["FRENCH"] = "%s to %s, take %s from %s"; };
 
     -- Quest Strings-focused strings:
