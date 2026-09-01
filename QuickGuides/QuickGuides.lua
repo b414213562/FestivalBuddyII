@@ -175,7 +175,7 @@ end
 function _G.GetDisplayString(key, festival)
     if (not festival) then festival = SELECTEDFESTIVAL; end
     local display = GetString(_DISPLAY[festival][key]);
-    if (not display) then
+    if (not display or display == "") then
         return "FAILED TO LOOK UP DISPLAY: " .. dump(key);
     end
 
