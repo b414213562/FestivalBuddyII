@@ -1141,6 +1141,19 @@ _LANG = {
             ["GERMAN"] = "Oberfläche: Anzeigegrösse: Werkzeugleiste: %.2fx";
             ["FRENCH"] = "Paramètres IU: Echelle IU: Barre d'outils: %.2fx";
         };
+
+        ["QUICK_GUIDE_ALL"] = {
+            ["ENGLISH"] = "All";
+            ["GERMAN"] = "Alle";
+            ["FRENCH"] = "Toute";
+        };
+
+        ["QUICK_GUIDE_MINIMUM"] = {
+            ["ENGLISH"] = "Fastest";
+            ["GERMAN"] = "Schnellste";
+            ["FRENCH"] = "Le plus rapide";
+        };
+
     };
 };
 

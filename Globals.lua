@@ -487,6 +487,22 @@ FESTIVAL_TIMER = {
     };
 }
 
+QUICK_GUIDES_MINIMUM = {
+    [FARMERSFAIRE] = {
+        ["A_MARKET_LIST"] = true;
+        ["A_NOSEY_REQUEST"] = true;
+        ["A_SHOPPING_LIST"] = true;
+        ["A_SUNNY_FAIRE_DAY"] = true;
+        ["A_VENDOR_LIST"] = true;
+        ["APPLE_SHOPPING"] = true;
+        ["BOUNDER_ROUNDS"] = true;
+        ["MANNING_THE_MARKET"] = true;
+        ["RESTOCKING_CABBAGES"] = true;
+        ["RESTOCKING_THE_MARKET"] = true;
+        ["THE_GREAT_MATHOM_FISHING_SWAP"] = true;
+    };
+};
+
 -- The default UI Order for the Festivals Drop Down
 FESTIVALS_UI_ORDER = {
     [1] = SPRING;       -- 2024:  3/12@10am	4/1@3am

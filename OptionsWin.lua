@@ -429,6 +429,35 @@ function DrawQuickGuideOptions(options, y)
                 quickGuideFestivalLabel:SetPosition(20, y);
                 y = y + 20;
 
+                local allButton = nil;
+                local minimumButton = nil;
+                local noneButton = nil;
+
+                if (QUICK_GUIDES_MINIMUM[festival]) then
+                    -- Add "All" and "Minimum" buttons:
+                    allButton = Turbine.UI.Lotro.Button();
+                    allButton:SetParent(options);
+                    allButton:SetWidth(100);
+                    allButton:SetPosition(20, y);
+                    allButton:SetText(GetString(_LANG.OPTIONS.QUICK_GUIDE_ALL));
+
+                    minimumButton = Turbine.UI.Lotro.Button();
+                    minimumButton:SetParent(options);
+                    minimumButton:SetWidth(100);
+                    minimumButton:SetPosition(130, y);
+                    minimumButton:SetText(GetString(_LANG.OPTIONS.QUICK_GUIDE_MINIMUM));
+
+                    if (SHOW_DEBUG_OPTIONS) then
+                        noneButton = Turbine.UI.Lotro.Button();
+                        noneButton:SetParent(options);
+                        noneButton:SetWidth(100);
+                        noneButton:SetPosition(240, y);
+                        noneButton:SetText("None");
+                    end
+
+                    y = y + 30;
+                end
+
                 -- We want to present the quest chains alphabetically.
                 -- Put them into a table with numerical indicies (questNames) and sort that table.
                 -- Then iterate through that table, looking up the keys in questNameToKey
@@ -441,6 +470,7 @@ function DrawQuickGuideOptions(options, y)
                     end
                 table.sort(questNames);
 
+                local checkboxes = {};
                 -- Make a checkbox for each quest:
                 for i=1, #questNames do
                     local questName = questNames[i];
@@ -455,9 +485,33 @@ function DrawQuickGuideOptions(options, y)
                         SETTINGS.QUICK_GUIDE_QUESTS_TO_USE[festival][guideId][questKey] = not SETTINGS.QUICK_GUIDE_QUESTS_TO_USE[festival][guideId][questKey];
                         wQuickGuideWinParent.treeView:Refresh();
                     end
+                    checkboxes[questKey] = questCheckbox;
                     y = y + 20;
                 end
                 y = y + 20;
+
+                if (QUICK_GUIDES_MINIMUM[festival]) then
+                    allButton.Click = function(sender, args)
+                        for _, checkbox in pairs(checkboxes) do
+                            checkbox:SetChecked(true);
+                        end
+                    end
+
+                    minimumButton.Click = function(sender, args)
+                        for questKey, checkbox in pairs(checkboxes) do
+                            checkbox:SetChecked(QUICK_GUIDES_MINIMUM[festival][questKey]);
+                        end
+                    end
+
+                    if (SHOW_DEBUG_OPTIONS) then
+                        noneButton.Click = function(sender, args)
+                            for _, checkbox in pairs(checkboxes) do
+                                checkbox:SetChecked(false);
+                            end
+                        end
+                    end
+                end
+
             end
         end
     end
