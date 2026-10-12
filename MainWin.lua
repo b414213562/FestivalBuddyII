@@ -33,7 +33,12 @@ function DrawMainWin()
     wHobnanigans:SetVisible(SELECTEDFESTIVAL == HOBNANIGANS);
 
     ddFestivals.ItemChanged = function (Sender,Args)
-        SELECTEDFESTIVAL = FESTIVALS_UI_ORDER[Args.Index];
+        local selectedFestival = FESTIVALS_UI_ORDER[Args.Index];
+        if (selectedFestival ~= SELECTEDFESTIVAL) then
+            -- A timer belongs to its current festival; clear it rather than carrying it to another guide.
+            QuickGuideTimerReset(wQuickGuideWinParent.timer);
+        end
+        SELECTEDFESTIVAL = selectedFestival;
         SETTINGS.FESTIVAL = SELECTEDFESTIVAL;
         SETTINGS.QUEST = nil;
         SELECTEDQUEST = "";
