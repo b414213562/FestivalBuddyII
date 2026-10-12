@@ -511,25 +511,37 @@ function FillMainWin(FESTIVAL)
         timerForgeroundGreen:SetParent(timerForeground);
         timerForgeroundGreen:SetSize(greenPixels, height);
         timerForgeroundGreen:SetPosition(0, 0);
-        timerForgeroundGreen:SetBackColor(Turbine.UI.Color.Green);
+        local timerColors = SETTINGS_ACCOUNT.FESTIVAL_TIMER.COLORS;
+        timerForgeroundGreen:SetBackColor(Turbine.UI.Color(
+            timerColors.GREEN.R / 255, timerColors.GREEN.G / 255, timerColors.GREEN.B / 255));
 
         local timerForegroundYellow = Turbine.UI.Control();
         timerForegroundYellow:SetParent(timerForeground);
         timerForegroundYellow:SetSize(yellowPixels, height);
         timerForegroundYellow:SetPosition(greenPixels, 0);
-        timerForegroundYellow:SetBackColor(Turbine.UI.Color.Yellow);
+        timerForegroundYellow:SetBackColor(Turbine.UI.Color(
+            timerColors.YELLOW.R / 255, timerColors.YELLOW.G / 255, timerColors.YELLOW.B / 255));
 
         local timerForegroundRed = Turbine.UI.Control();
         timerForegroundRed:SetParent(timerForeground);
         timerForegroundRed:SetSize(redPixels, height);
         timerForegroundRed:SetPosition(greenPixels + yellowPixels, 0);
-        timerForegroundRed:SetBackColor(Turbine.UI.Color.Red);
+        timerForegroundRed:SetBackColor(Turbine.UI.Color(
+            timerColors.RED.R / 255, timerColors.RED.G / 255, timerColors.RED.B / 255));
 
         local timerForegroundGrey = Turbine.UI.Control();
         timerForegroundGrey:SetParent(timerForeground);
         timerForegroundGrey:SetSize(greyPixels, height);
         timerForegroundGrey:SetPosition(greenPixels + yellowPixels + redPixels, 0);
-        timerForegroundGrey:SetBackColor(Turbine.UI.Color.DarkSlateGray);
+        timerForegroundGrey:SetBackColor(Turbine.UI.Color(
+            timerColors.GREY.R / 255, timerColors.GREY.G / 255, timerColors.GREY.B / 255));
+
+        wMainWinParent.FestivalTimerColorControls = {
+            ["GREEN"] = timerForgeroundGreen;
+            ["YELLOW"] = timerForegroundYellow;
+            ["RED"] = timerForegroundRed;
+            ["GREY"] = timerForegroundGrey;
+        };
 
         local currentTimeWidth = 1;
         local currentTime = Turbine.UI.Control();
@@ -688,6 +700,15 @@ function FillMainWin(FESTIVAL)
     if (btnAlts) then btnAlts:SetLeft(altsLeft); end
 
     RefreshDebuffView();
+end
+
+function UpdateFestivalTimerColor(colorSetting)
+    local colorControls = wMainWinParent and wMainWinParent.FestivalTimerColorControls;
+    if (colorControls and colorControls[colorSetting]) then
+        local setting = SETTINGS_ACCOUNT.FESTIVAL_TIMER.COLORS[colorSetting];
+        colorControls[colorSetting]:SetBackColor(Turbine.UI.Color(
+            setting.R / 255, setting.G / 255, setting.B / 255));
+    end
 end
 
 function SetFestivalTimerCurrentTime(gameTime, timing)

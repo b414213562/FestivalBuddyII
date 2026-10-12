@@ -227,7 +227,45 @@ function DrawToolbarScaling(options, y)
 
 end
 
-function CreateColorRow(colorSetting)
+function CreateColorPickerControls(colorRow, setting, defaultSetting, onColorChanged, left)
+    local colorSwatch = Turbine.UI.Control();
+    colorSwatch:SetParent(colorRow);
+    colorSwatch:SetBackColor(Turbine.UI.Color(setting.R / 255, setting.G / 255, setting.B / 255));
+    colorSwatch:SetSize(25, 25);
+    colorSwatch:SetPosition(left, 0);
+
+    local changeButton = Turbine.UI.Lotro.Button();
+    changeButton:SetParent(colorRow);
+    changeButton:SetText(GetString(_LANG.OPTIONS.QUICK_GUIDE_COLOR_CHANGE));
+    changeButton:SetWidth(75);
+    changeButton:SetPosition(left + 30, 3);
+    changeButton.Click = function(sender, args)
+        ColorPickerWindow.SetColor(setting.R, setting.G, setting.B, function(red, green, blue)
+            setting.R = red;
+            setting.G = green;
+            setting.B = blue;
+            colorSwatch:SetBackColor(Turbine.UI.Color(setting.R / 255, setting.G / 255, setting.B / 255));
+            onColorChanged();
+        end);
+    end
+
+    local defaultButton = Turbine.UI.Lotro.Button();
+    defaultButton:SetParent(colorRow);
+    defaultButton:SetText(GetString(_LANG.OPTIONS.QUICK_GUIDE_COLOR_DEFAULT));
+    defaultButton:SetWidth(75);
+    defaultButton:SetPosition(left + 110, 3);
+    defaultButton.Click = function(sender, args)
+        setting.R = defaultSetting.R;
+        setting.G = defaultSetting.G;
+        setting.B = defaultSetting.B;
+        colorSwatch:SetBackColor(Turbine.UI.Color(setting.R / 255, setting.G / 255, setting.B / 255));
+        onColorChanged();
+    end
+
+    return colorSwatch;
+end
+
+function CreateQuickGuideColorRow(colorSetting)
     local colorRow = Turbine.UI.Control();
     colorRow:SetSize(350, 30);
 
@@ -242,43 +280,56 @@ function CreateColorRow(colorSetting)
         UpdateAllNodesText();
     end
 
-    local setting = SETTINGS_ACCOUNT.QUICK_GUIDE.COLORS[colorSetting];
-    local quickGuideLocationColor = Turbine.UI.Control();
-    quickGuideLocationColor:SetParent(colorRow);
-    quickGuideLocationColor:SetBackColor(Turbine.UI.Color(setting.R / 255, setting.G / 255, setting.B / 255));
-    quickGuideLocationColor:SetSize(25, 25);
-    quickGuideLocationColor:SetPosition(140, 0);
-
-    local changeButton = Turbine.UI.Lotro.Button();
-    changeButton:SetParent(colorRow);
-    changeButton:SetText(GetString(_LANG.OPTIONS.QUICK_GUIDE_COLOR_CHANGE));
-    changeButton:SetWidth(75);
-    changeButton:SetPosition(170, 3);
-    changeButton.Click = function(sender, args)
-        ColorPickerWindow.SetColor(setting.R, setting.G, setting.B, function(red, green, blue)
-            setting.R = red;
-            setting.G = green;
-            setting.B = blue;
-            quickGuideLocationColor:SetBackColor(Turbine.UI.Color(setting.R / 255, setting.G / 255, setting.B / 255));
-            UpdateAllNodesText();
-        end);
-    end
-
-    local defaultButton = Turbine.UI.Lotro.Button();
-    defaultButton:SetParent(colorRow);
-    defaultButton:SetText(GetString(_LANG.OPTIONS.QUICK_GUIDE_COLOR_DEFAULT));
-    defaultButton:SetWidth(75);
-    defaultButton:SetPosition(250, 3);
-    defaultButton.Click = function(sender, args)
-        local defaultSetting = DefaultHighlightColors[colorSetting];
-        setting.R = defaultSetting.R;
-        setting.G = defaultSetting.G;
-        setting.B = defaultSetting.B;
-        quickGuideLocationColor:SetBackColor(Turbine.UI.Color(setting.R / 255, setting.G / 255, setting.B / 255));
-        UpdateAllNodesText();
-    end
+    CreateColorPickerControls(
+        colorRow,
+        SETTINGS_ACCOUNT.QUICK_GUIDE.COLORS[colorSetting],
+        DefaultHighlightColors[colorSetting],
+        UpdateAllNodesText,
+        140);
 
     return colorRow;
+end
+
+function CreateFestivalTimerColorRow(colorSetting)
+    local colorRow = Turbine.UI.Control();
+    colorRow:SetSize(500, 30);
+
+    local colorLabel = Turbine.UI.Label();
+    colorLabel:SetParent(colorRow);
+    colorLabel:SetText(GetString(_LANG.OPTIONS.FESTIVAL_TIMER_COLOR[colorSetting]));
+    colorLabel:SetSize(180, 30);
+    colorLabel:SetPosition(20, 0);
+    colorLabel:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleLeft);
+
+    local setting = SETTINGS_ACCOUNT.FESTIVAL_TIMER.COLORS[colorSetting];
+    CreateColorPickerControls(
+        colorRow,
+        setting,
+        DEFAULT_SETTINGS_ACCOUNT.FESTIVAL_TIMER.COLORS[colorSetting],
+        function()
+            UpdateFestivalTimerColor(colorSetting);
+        end,
+        200);
+
+    return colorRow;
+end
+
+function DrawFestivalTimerColorOptions(options, y)
+    local timerColorsLabel = Turbine.UI.Label();
+    timerColorsLabel:SetParent(options);
+    timerColorsLabel:SetText(GetString(_LANG.OPTIONS.FESTIVAL_TIMER_COLORS));
+    timerColorsLabel:SetSize(250, 30);
+    timerColorsLabel:SetPosition(10, y);
+    y = y + 20;
+
+    for _, colorSetting in ipairs({ "GREEN", "YELLOW", "RED", "GREY" }) do
+        local colorRow = CreateFestivalTimerColorRow(colorSetting);
+        colorRow:SetParent(options);
+        colorRow:SetPosition(0, y);
+        y = y + 30;
+    end
+
+    return y + 20;
 end
 
 function DrawQuickGuideOptions(options, y)
@@ -385,22 +436,22 @@ function DrawQuickGuideOptions(options, y)
     end
     y = y + 30;
 
-    local colorRow = CreateColorRow("LOCATION");
+    local colorRow = CreateQuickGuideColorRow("LOCATION");
     colorRow:SetParent(options);
     colorRow:SetPosition(0, y);
     y = y + 30;
 
-    colorRow = CreateColorRow("QUEST");
+    colorRow = CreateQuickGuideColorRow("QUEST");
     colorRow:SetParent(options);
     colorRow:SetPosition(0, y);
     y = y + 30;
 
-    colorRow = CreateColorRow("NPC");
+    colorRow = CreateQuickGuideColorRow("NPC");
     colorRow:SetParent(options);
     colorRow:SetPosition(0, y);
     y = y + 30;
 
-    colorRow = CreateColorRow("QUEST_ITEM");
+    colorRow = CreateQuickGuideColorRow("QUEST_ITEM");
     colorRow:SetParent(options);
     colorRow:SetPosition(0, y);
     y = y + 30;
@@ -1649,12 +1700,13 @@ function DrawOptionsWin()
 
     local nonDebugOptions = Turbine.UI.Control();
     nonDebugOptions:SetParent(options);
-    nonDebugOptions:SetWidth(350);
+    nonDebugOptions:SetWidth(500);
 
     local y = topMargin;
     y = DrawGenericOptions(nonDebugOptions, y);
     y = DrawNpcCooldownOptions(nonDebugOptions, y);
     y = DrawQuickGuideOptions(nonDebugOptions, y);
+    y = DrawFestivalTimerColorOptions(nonDebugOptions, y);
     y = DrawMapOptions(nonDebugOptions, y);
     nonDebugOptions:SetHeight(y);
 
@@ -1692,5 +1744,3 @@ function DrawOptionsWin()
     debugOptions:SetHeight(y);
     options:SetHeight(nonDebugOptions:GetHeight() + debugOptions:GetHeight());
 end
-
-

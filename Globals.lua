@@ -442,6 +442,15 @@ DEFAULT_SETTINGS_ACCOUNT = {
         };
     };
 
+    ["FESTIVAL_TIMER"] = {
+        ["COLORS"] = {
+            ["GREEN"] = { ["R"] = 0; ["G"] = 128; ["B"] = 0; };
+            ["YELLOW"] = { ["R"] = 255; ["G"] = 255; ["B"] = 0; };
+            ["RED"] = { ["R"] = 255; ["G"] = 0; ["B"] = 0; };
+            ["GREY"] = { ["R"] = 47; ["G"] = 79; ["B"] = 79; };
+        };
+    };
+
     ["LOCAL_TIME_OFFSET"] = 0;
 };
 

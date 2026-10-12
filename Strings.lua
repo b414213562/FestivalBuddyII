@@ -1117,6 +1117,13 @@ _LANG = {
         };
         ["QUICK_GUIDE_COLOR_CHANGE"]      = { ["ENGLISH"] = "Change"; ["GERMAN"] = "Ändern";};
         ["QUICK_GUIDE_COLOR_DEFAULT"]     = { ["ENGLISH"] = "Default"; ["GERMAN"] = "Standard";};
+        ["FESTIVAL_TIMER_COLORS"]         = { ["ENGLISH"] = "Festival Timer Colors:"; ["GERMAN"] = "Farben des Festivaltimers:";};
+        ["FESTIVAL_TIMER_COLOR"] = {
+            ["GREEN"] = { ["ENGLISH"] = "Quest available:"; };
+            ["YELLOW"] = { ["ENGLISH"] = "Quest availability ending soon:"; };
+            ["RED"] = { ["ENGLISH"] = "Quest unavailable:"; };
+            ["GREY"] = { ["ENGLISH"] = "Variable announcement buffer:"; };
+        };
         ["COLOR_PICKER"]                  = { ["ENGLISH"] = "Color Picker"; ["GERMAN"] = "Farb-Auswahl";};
         ["SAVE_COLOR"]                    = { ["ENGLISH"] = "Save"; ["GERMAN"] = "Speichern";};
         ["UPDATE"]                        = { ["ENGLISH"] = "Update"; ["GERMAN"] = "Aktualisieren";};
