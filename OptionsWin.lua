@@ -725,7 +725,7 @@ function DrawQuestAcceptCompleteFail(options, y)
     buttonTarget.Click = function(sender, args)
         FilterTarget(questName:GetText());
     end
-    return y + buttonTarget:GetHeight() + 5;
+    return y + buttonTarget:GetHeight() + 20;
 end
 
 function DrawFireworksDebug(options, y)
@@ -792,7 +792,7 @@ function DrawFireworksDebug(options, y)
     DrawFireworksButton(options, yellowYesText, 1, 4);
     DrawFireworksButton(options, yellowNoText, 2, 4);
 
-    return y + 170;
+    return y + 185;
 end
 
 function DrawHobnanigansDebug_StartStopQuests(options, y, fieldNumber, debugText)
@@ -1218,7 +1218,7 @@ function DrawHobnanigansDebug(options, y)
         DrawHobnanigansDebug_Winner(options, 60 + i*60, y + 30, "SB", i, debugText);
     end
     y = y + 60;
-    return y;
+    return y + 40;
 end
 
 function CreateFarmersFaireFatMayorButton(options, i, y, text, callback)
@@ -1810,9 +1810,9 @@ function DrawOptionsWin()
             draw = function(page)
                 page:SetBackColor(Turbine.UI.Color.DarkBlue);
 
-                local y = DrawQuestAcceptCompleteFail(page, 0) + 15;
-                y = DrawHobnanigansDebug(page, y) + 40;
-                y = DrawFireworksDebug(page, y) + 15;
+                local y = DrawQuestAcceptCompleteFail(page, 0);
+                y = DrawHobnanigansDebug(page, y);
+                y = DrawFireworksDebug(page, y);
                 y = DrawFarmersFaireFatMayorDebug(page, y);
                 y = DrawYuleTheBiggestStomach(page, y);
                 y = DrawAlertDebug(page, y);
