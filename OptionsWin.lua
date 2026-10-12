@@ -1,5 +1,5 @@
 
-SHOW_DEBUG_OPTIONS = true;
+SHOW_DEBUG_OPTIONS = false;
 RUN_TEST_FUNCTIONS = false;
 
 local topMargin = 10;
@@ -1733,7 +1733,7 @@ local function AddOptionsTab(options, definition)
 
     local button = Turbine.UI.Lotro.Button();
     button:SetParent(options);
-    button:SetText(GetString(_LANG.OPTIONS[definition.label]));
+    button:SetText(GetString(_LANG.OPTIONS.OPTIONS_TABS[definition.label]));
     button:SetPosition((index - 1) * tabWidth, 0);
     button:SetSize(tabWidth, options.tabBarHeight);
 
@@ -1765,7 +1765,7 @@ function DrawOptionsWin()
 
     local tabDefinitions = {
         {
-            label = "OPTIONS_TAB_GENERAL",
+            label = "GENERAL_TAB",
             draw = function(page)
                 local y = DrawGenericOptions(page, topMargin);
                 y = DrawNpcCooldownOptions(page, y);
@@ -1773,19 +1773,19 @@ function DrawOptionsWin()
             end
         },
         {
-            label = "OPTIONS_TAB_QUICK_GUIDES",
+            label = "QUICK_GUIDES_TAB",
             draw = function(page)
                 return DrawQuickGuideOptions(page, topMargin);
             end
         },
         {
-            label = "OPTIONS_TAB_FESTIVAL_TIMERS",
+            label = "FESTIVAL_TIMERS_TAB",
             draw = function(page)
                 return DrawFestivalTimerColorOptions(page, topMargin);
             end
         },
         {
-            label = "OPTIONS_TAB_MAPS",
+            label = "MAPS_TAB",
             draw = function(page)
                 return DrawMapOptions(page, topMargin + 20);
             end
@@ -1794,7 +1794,7 @@ function DrawOptionsWin()
 
     if (SHOW_DEBUG_OPTIONS) then
         table.insert(tabDefinitions, {
-            label = "OPTIONS_TAB_DEBUG",
+            label = "DEBUG_TAB",
             draw = function(page)
                 questAcceptCompleteFailY = 0;
                 hobnanigansY = questAcceptCompleteFailY + 120;
