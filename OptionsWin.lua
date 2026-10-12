@@ -1767,7 +1767,7 @@ function DrawOptionsWin()
     local options = Turbine.UI.Control();
     options:SetWidth(500);
     options.tabRowHeight = 25;
-    options.tabsMaximumRowWidth = 375;
+    options.tabsMaximumRowWidth = 315;
     options.tabsCurrentRow = 1;
     options.tabsCurrentRowWidth = 0;
     options.tabBarHeight = options.tabRowHeight;
