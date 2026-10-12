@@ -355,10 +355,51 @@ function MainWinDrawOptionsButton()
     end
 end
 
+FAT_MAYOR_TIMER_ITEM = nil;
+
+function SetFatMayorTimerImage(itemToUse)
+    FAT_MAYOR_TIMER_ITEM = itemToUse;
+
+    local timerImage = wMainWinParent and wMainWinParent.FatMayorTimerImage;
+    local timerLabel = wMainWinParent and wMainWinParent.FatMayorTimerLabel;
+    if (not timerImage or not timerLabel) then return; end
+
+    local image = _IMAGES[FARMERSFAIRE].FAT_MAYOR[itemToUse];
+    if (image) then
+        timerImage:SetBackground(image);
+        timerImage:SetVisible(true);
+    else
+        timerImage:SetVisible(false);
+    end
+
+    local itemMessage = _LANG.OTHER.FARMERS_FAIRE_WILL_WHITFOOT_ITEMS[CLIENTLANG][itemToUse];
+    if (itemMessage) then
+        timerLabel:SetText(itemMessage);
+        timerLabel:SetVisible(true);
+    else
+        timerLabel:SetText("");
+        timerLabel:SetVisible(false);
+    end
+end
+
+function ClearFatMayorTimerControls()
+    if (not wMainWinParent) then return; end
+
+    if (wMainWinParent.FatMayorTimerImage) then
+        wMainWinParent.FatMayorTimerImage:SetParent(nil);
+        wMainWinParent.FatMayorTimerImage = nil;
+    end
+    if (wMainWinParent.FatMayorTimerLabel) then
+        wMainWinParent.FatMayorTimerLabel:SetParent(nil);
+        wMainWinParent.FatMayorTimerLabel = nil;
+    end
+end
+
 function FillMainWin(FESTIVAL)
 
     if FESTIVAL == nil then return end;
 
+    ClearFatMayorTimerControls();
     wMainWinHolder:GetControls():Clear();
 
     wMainWinHolder:SetBackground(_IMAGES[FESTIVAL].BACKGROUND);
@@ -408,6 +449,24 @@ function FillMainWin(FESTIVAL)
         timerControl:SetSize(wMainWinHolder:GetWidth()-31, timerHeight);
         timerControl:SetPosition(16, cDebuffHolder:GetTop() + cDebuffHolder:GetHeight() - timerHeight);
         -- timerControl:SetBackColor(Turbine.UI.Color.DarkGreen);
+
+        if (FESTIVAL == FARMERSFAIRE) then
+            local timerImage = Turbine.UI.Control();
+            timerImage:SetParent(wMainWinHolder);
+            timerImage:SetSize(32, 32);
+            timerImage:SetPosition(timerControl:GetLeft() + (timerControl:GetWidth() - 32) / 2, timerControl:GetTop() - 32);
+            timerImage:SetVisible(false);
+            wMainWinParent.FatMayorTimerImage = timerImage;
+
+            local timerLabel = Turbine.UI.Label();
+            timerLabel:SetParent(wMainWinHolder);
+            timerLabel:SetSize(120, 32);
+            timerLabel:SetPosition(timerImage:GetLeft() + timerImage:GetWidth(), timerImage:GetTop());
+            timerLabel:SetVisible(false);
+            wMainWinParent.FatMayorTimerLabel = timerLabel;
+
+            SetFatMayorTimerImage(FAT_MAYOR_TIMER_ITEM);
+        end
 
         local labelHeight = 15;
         local timerLabel = Turbine.UI.Label();
@@ -493,6 +552,12 @@ function FillMainWin(FESTIVAL)
             end
 
             currentTime:SetLeft(left);
+
+            if (FESTIVAL == FARMERSFAIRE and
+                FAT_MAYOR_TIMER_ITEM ~= nil and
+                left >= greenPixels + yellowPixels) then
+                SetFatMayorTimerImage(nil);
+            end
         end
         wMainWinParent.FestivalTimerCurrentTime = currentTime;
 

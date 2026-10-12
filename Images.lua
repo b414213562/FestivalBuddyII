@@ -94,6 +94,13 @@ _IMAGES = {
 
     [FARMERSFAIRE] = {
         ["BACKGROUND"] = RESOURCEDIR .. "MainWin_Back_FarmersFaire.tga";
+        ["FAT_MAYOR"] = {
+            [BUTTER] = RESOURCEDIR .. "FatMayor_Butter.tga";
+            [MILK] = RESOURCEDIR .. "FatMayor_Milk.tga";
+            [SALT] = RESOURCEDIR .. "FatMayor_Salt.tga";
+            [WATER] = RESOURCEDIR .. "FatMayor_Water.tga";
+            [WINE] = RESOURCEDIR .. "FatMayor_Wine.tga";
+        };
     };
 
     [HOBNANIGANS] = {

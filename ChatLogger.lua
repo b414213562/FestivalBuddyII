@@ -167,12 +167,15 @@ function FilterSay(cMessage)
         local request = string.match(cMessage, pattern);
 
         if (request) then
-            if (ShouldProcessChat("FAT_MAYOR")) then
-                HandleFarmersFaireWillWhitfootRequest(request);
-            end
+            local itemToUse = _LANG.OTHER.FARMERS_FAIRE_WILL_WHITFOOT_ANNOUNCEMENTS[CLIENTLANG][request];
 
-            -- Always update the timer:
+            -- Always update the timer and its item indicator:
             SetFestivalTimerCurrentTime(Turbine.Engine.GetGameTime(), 0);
+            SetFatMayorTimerImage(itemToUse);
+
+            if (ShouldProcessChat("FAT_MAYOR")) then
+                HandleFarmersFaireWillWhitfootRequest(request, itemToUse);
+            end
         end
 
         -- Farmers Faire - Bounder Rounds
@@ -216,8 +219,7 @@ function HandleFireworksAnnouncerSay(rawText)
     end
 end
 
-function HandleFarmersFaireWillWhitfootRequest(request)
-    local itemToUse = _LANG.OTHER.FARMERS_FAIRE_WILL_WHITFOOT_ANNOUNCEMENTS[CLIENTLANG][request];
+function HandleFarmersFaireWillWhitfootRequest(request, itemToUse)
     if (itemToUse == nil) then
         Turbine.Shell.WriteLine("Could not find item for \"" .. request .. "\"");
         return;
