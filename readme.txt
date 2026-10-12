@@ -1,9 +1,11 @@
 v2.4.2 changes:
     Festivals:
-
+        Festival Timer (Farmers Faire & Yule):
+            Added options to change colors of each section and opacity. Set opacity to 0% to hide the timer.
     Quick Guides:
         Farmers Faire:
             Added "All" and "Fastest" buttons to toggle which quests are included in the Quick Guide.
+
     Bugs:
         Fixed a few places that could produce a "attempt to index field '?' (a nil value)" error.
 
