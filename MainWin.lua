@@ -453,7 +453,7 @@ function FillMainWin(FESTIVAL)
             local timerImage = Turbine.UI.Control();
             timerImage:SetParent(wMainWinHolder);
             timerImage:SetSize(32, 32);
-            timerImage:SetPosition(timerControl:GetLeft() + (timerControl:GetWidth() - 32) / 2, timerControl:GetTop() - 32);
+            timerImage:SetPosition(32, timerControl:GetTop() - 36);
             timerImage:SetVisible(false);
             wMainWinParent.FatMayorTimerImage = timerImage;
 
