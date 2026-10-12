@@ -83,6 +83,8 @@ function DrawQuickGuideWin()
     timer:SetParent(wQuickGuideWinParent);
     timer:SetPosition(320, 17);
     wQuickGuideWinParent.timer = timer;
+    -- The guide is loaded before its timer control exists; check again now that it can be stopped.
+    QuickGuideWinStopTimerIfListIsEmpty();
 end
 
 function SwitchQuickGuide(index)
@@ -226,13 +228,14 @@ function QuickGuideWinCreateNode(index)
         if (checkBox:IsChecked() and objective.CHAIN_END ~= nil) then
             QuickGuideWinHandleQuestChainBeginOrEnd(index);
         end
-        if (checkBox:IsChecked() and objective.TIMER_START) then
+        if (checkBox:IsChecked() and not QuickGuideTimerIsRunning(wQuickGuideWinParent.timer)) then
             QuickGuideTimerStart(wQuickGuideWinParent.timer);
-            QuickGuideWinBonusItemStart();
+            if (QuickGuideTimerIsRunning(wQuickGuideWinParent.timer)) then
+                QuickGuideWinBonusItemStart();
+            end
         end
-        if (checkBox:IsChecked() and objective.TIMER_STOP) then
-            QuickGuideTimerStop(wQuickGuideWinParent.timer);
-            QuickGuideWinBonusItemStop();
+        if (checkBox:IsChecked()) then
+            QuickGuideWinStopTimerIfListIsEmpty();
         end
         if (not checkBox:IsChecked()) then
             UnsetTargetIfNecessary(index);
@@ -289,6 +292,8 @@ function QuickGuideWinLoadFestival()
 
     if (not _QUICK_GUIDE[SELECTEDFESTIVAL] or
         _QUICK_GUIDE[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE] == nil) then
+        -- Switching to a festival/guide with no objectives should stop any restored timer.
+        QuickGuideWinStopTimerIfListIsEmpty();
         return;
     end
 
@@ -327,6 +332,9 @@ function QuickGuideWinLoadFestival()
     creditLabel:SetText(_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE]);
     creditLabel:SetSize(treeView:GetWidth() - ScrollbarWidth, height);
     treeView:GetNodes():Add(creditNode);
+
+    -- Switching guides may leave no enabled, incomplete objectives.
+    QuickGuideWinStopTimerIfListIsEmpty();
 end
 
 function QuickGuidWinHandleCheckedEntry(treeNode)
@@ -468,6 +476,44 @@ function QuickGuideWinClearCompleted()
     ClearSettings(SETTINGS.QUICK_GUIDE_PROGRESS, SELECTEDFESTIVAL, SELECTED_QUICK_GUIDE);
     ClearSettings(SETTINGS.QUICK_GUIDE_TARGETS, SELECTEDFESTIVAL, SELECTED_QUICK_GUIDE);
     ClearSettings(SETTINGS.QUICK_GUIDE_REPEAT_OBJECTIVES, SELECTEDFESTIVAL, SELECTED_QUICK_GUIDE);
+end
+
+function QuickGuideWinHasIncompleteObjectives()
+    local guide = _QUICK_GUIDE[SELECTEDFESTIVAL] and _QUICK_GUIDE[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE];
+    local chainLookup = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAIN_LOOKUP[SELECTEDFESTIVAL]
+        and _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAIN_LOOKUP[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE];
+    local questsToUse = SETTINGS.QUICK_GUIDE_QUESTS_TO_USE[SELECTEDFESTIVAL]
+        and SETTINGS.QUICK_GUIDE_QUESTS_TO_USE[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE];
+
+    if (not guide or not chainLookup or not questsToUse) then
+        return false;
+    end
+
+    for index = 1, #guide do
+        local questChain = chainLookup[index];
+        if (questChain and questsToUse[questChain] and not QuickGuideWinIsCompleted(index)) then
+            return true;
+        end
+    end
+
+    return false;
+end
+
+function QuickGuideWinStopTimer()
+    local timer = wQuickGuideWinParent.timer;
+    local wasRunning = QuickGuideTimerIsRunning(timer);
+    QuickGuideTimerStop(timer);
+    if (wasRunning) then
+        QuickGuideWinBonusItemStop();
+    end
+end
+
+function QuickGuideWinStopTimerIfListIsEmpty()
+    local timer = wQuickGuideWinParent.timer;
+    if (timer and not QuickGuideWinHasIncompleteObjectives() and
+        QuickGuideTimerIsRunning(timer)) then
+        QuickGuideWinStopTimer();
+    end
 end
 
 function QuickGuideWinGetIndexFromChat(cMessage, objectiveTable)

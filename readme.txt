@@ -1,10 +1,13 @@
 v2.4.2 changes:
     Festivals:
         Festival Timer (Farmers Faire & Yule):
+            Added icon and text for Fat Mayor highlighting which item to use.
             Added options to change colors of each section and opacity. Set opacity to 0% to hide the timer.
     Quick Guides:
         Farmers Faire:
             Added "All" and "Fastest" buttons to toggle which quests are included in the Quick Guide.
+        Timer:
+            Starts on the first completed objective, stops when no enabled objectives remain incomplete, and resumes after plugin load if started recently. (Reset and credits rows do not count as objectives.)
 
     Bugs:
         Fixed a few places that could produce a "attempt to index field '?' (a nil value)" error.
@@ -191,4 +194,3 @@ v2.0.1 changes:
 
     Bugs:
         Fixed order of festival tokens at top of window.
-

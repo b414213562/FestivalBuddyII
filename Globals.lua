@@ -145,6 +145,7 @@ DEFAULT_SETTINGS = {
     ["QUICK_GUIDE_REMOVE_COMPLETED"] = true;
     ["QUICK_GUIDE_CLEAR_DELAY"] = 5;
     ["QUICK_GUIDE_USE_TIMER"] = true;
+    ["QUICK_GUIDE_TIMER_START_TIME"] = false;
 
     ["MAINWIN"] = {
         ["VISIBLE"] = true;

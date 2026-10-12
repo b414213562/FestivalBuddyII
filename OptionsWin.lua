@@ -562,6 +562,10 @@ function DrawQuickGuideOptions(options, y)
                     questCheckbox.CheckedChanged = function (sender, args)
                         SETTINGS.QUICK_GUIDE_QUESTS_TO_USE[festival][guideId][questKey] = not SETTINGS.QUICK_GUIDE_QUESTS_TO_USE[festival][guideId][questKey];
                         wQuickGuideWinParent.treeView:Refresh();
+                        if (festival == SELECTEDFESTIVAL and guideId == SELECTED_QUICK_GUIDE) then
+                            -- If this disables the last remaining chain, that means there is nothing left to time:
+                            QuickGuideWinStopTimerIfListIsEmpty();
+                        end
                     end
                     checkboxes[questKey] = questCheckbox;
                     y = y + 20;
