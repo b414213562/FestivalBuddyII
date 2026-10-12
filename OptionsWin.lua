@@ -1729,17 +1729,31 @@ end
 
 local function AddOptionsTab(options, definition)
     local index = #options.tabPages + 1;
-    local tabWidth = options:GetWidth() / options.tabCount;
+    local text = GetString(_LANG.OPTIONS.OPTIONS_TABS[definition.label]);
+    local textLength = 0;
+    for characterIndex = 1, string.len(text) do
+        local characterByte = string.byte(text, characterIndex);
+        if (characterByte < 128 or characterByte >= 192) then
+            textLength = textLength + 1;
+        end
+    end
+    local tabWidth = math.max(70, textLength * 8 + 24);
+
+    if (options.tabsCurrentRowWidth > 0 and
+        options.tabsCurrentRowWidth + tabWidth > options.tabsMaximumRowWidth) then
+        options.tabsCurrentRow = options.tabsCurrentRow + 1;
+        options.tabsCurrentRowWidth = 0;
+    end
 
     local button = Turbine.UI.Lotro.Button();
     button:SetParent(options);
-    button:SetText(GetString(_LANG.OPTIONS.OPTIONS_TABS[definition.label]));
-    button:SetPosition((index - 1) * tabWidth, 0);
-    button:SetSize(tabWidth, options.tabBarHeight);
+    button:SetText(text);
+    button:SetPosition(options.tabsCurrentRowWidth, (options.tabsCurrentRow - 1) * options.tabRowHeight);
+    button:SetSize(tabWidth, options.tabRowHeight);
+    options.tabsCurrentRowWidth = options.tabsCurrentRowWidth + tabWidth;
 
     local page = Turbine.UI.Control();
     page:SetParent(options);
-    page:SetPosition(0, options.tabBarHeight);
     page:SetWidth(options:GetWidth());
     page:SetVisible(false);
 
@@ -1758,7 +1772,11 @@ function DrawOptionsWin()
 
     local options = Turbine.UI.Control();
     options:SetWidth(500);
-    options.tabBarHeight = 25;
+    options.tabRowHeight = 25;
+    options.tabsMaximumRowWidth = 375;
+    options.tabsCurrentRow = 1;
+    options.tabsCurrentRowWidth = 0;
+    options.tabBarHeight = options.tabRowHeight;
     options.tabPages = {};
     options.tabButtons = {};
     plugin.GetOptionsPanel = function(self) return options; end
@@ -1818,9 +1836,12 @@ function DrawOptionsWin()
         });
     end
 
-    options.tabCount = #tabDefinitions;
     for _, definition in ipairs(tabDefinitions) do
         AddOptionsTab(options, definition);
+    end
+    options.tabBarHeight = options.tabsCurrentRow * options.tabRowHeight;
+    for _, page in ipairs(options.tabPages) do
+        page:SetPosition(0, options.tabBarHeight);
     end
     SelectOptionsTab(options, 1);
 end
