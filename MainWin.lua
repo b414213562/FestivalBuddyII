@@ -355,13 +355,12 @@ function MainWinDrawOptionsButton()
     end
 end
 
-FAT_MAYOR_TIMER_ITEM = nil;
-
 function SetFatMayorTimerImage(itemToUse)
-    FAT_MAYOR_TIMER_ITEM = itemToUse;
+    if (not wMainWinParent) then return; end
+    wMainWinParent.FatMayorTimerItem = itemToUse;
 
-    local timerImage = wMainWinParent and wMainWinParent.FatMayorTimerImage;
-    local timerLabel = wMainWinParent and wMainWinParent.FatMayorTimerLabel;
+    local timerImage = wMainWinParent.FatMayorTimerImage;
+    local timerLabel = wMainWinParent.FatMayorTimerLabel;
     if (not timerImage or not timerLabel) then return; end
 
     local image = _IMAGES[FARMERSFAIRE].FAT_MAYOR[itemToUse];
@@ -465,7 +464,7 @@ function FillMainWin(FESTIVAL)
             timerLabel:SetVisible(false);
             wMainWinParent.FatMayorTimerLabel = timerLabel;
 
-            SetFatMayorTimerImage(FAT_MAYOR_TIMER_ITEM);
+            SetFatMayorTimerImage(wMainWinParent.FatMayorTimerItem);
         end
 
         local labelHeight = 15;
@@ -554,7 +553,7 @@ function FillMainWin(FESTIVAL)
             currentTime:SetLeft(left);
 
             if (FESTIVAL == FARMERSFAIRE and
-                FAT_MAYOR_TIMER_ITEM ~= nil and
+                wMainWinParent.FatMayorTimerItem ~= nil and
                 left >= greenPixels + yellowPixels) then
                 SetFatMayorTimerImage(nil);
             end
