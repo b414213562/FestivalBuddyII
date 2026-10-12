@@ -76,6 +76,9 @@ end
 ---@param questKey string Internal key for a quest
 ---@return boolean "true if any targets match this quest chain and require the quest to be active, false otherwise"
 function DoesQuestHaveTargetsWithRequire(questKey)
+    if (not _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_TARGETS[SELECTEDFESTIVAL]) then return false; end
+    if (not _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_TARGETS[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE]) then return false; end
+
     for _, target in ipairs(_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_TARGETS[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE]) do
         local questChain = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAIN_LOOKUP[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE][target.INDEX];
         local require = target.REQUIRE_ACTIVE_QUEST;

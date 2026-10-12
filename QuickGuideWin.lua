@@ -542,6 +542,8 @@ function QuickGuideSetNodeCompletion(treeNode, state)
 end
 
 function UnsetTargetIfNecessary(index)
+    if (not _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_TARGETS[SELECTEDFESTIVAL]) then return; end
+
     -- If we are unchecking a Target objective, clear the corresponding saved setting:
     local isTarget = false;
     for _, target in ipairs(_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_TARGETS[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE]) do
