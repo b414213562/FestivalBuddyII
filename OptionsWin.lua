@@ -4,19 +4,6 @@ RUN_TEST_FUNCTIONS = false;
 
 local topMargin = 10;
 
-local debugY = 200;
-
--- See below for where these are populated
-local questAcceptCompleteFailY = debugY;
-local hobnanigansY = questAcceptCompleteFailY + 100;
-local fireworksY = hobnanigansY + 240;
-local fireworksColumnLeftMargin = 75;
-local fireworksColumnWidth = 50;
-local fireworksRowTopMargin = 50;
-local fireworksRowHeight = 30;
-
-local fatMayorY = fireworksY + 185;
-
 function DrawGenericOptions(options, y)
     local indent = 10;
     local controlWidth = options:GetWidth() - indent * 2;
@@ -669,9 +656,7 @@ function DrawMapOptions(options, y)
     return y + 20;
 end
 
-function DrawQuestAcceptCompleteFail(options)
-    local y = questAcceptCompleteFailY;
-
+function DrawQuestAcceptCompleteFail(options, y)
     -- Quest testing:
     local questTestingLabel = Turbine.UI.Label();
     questTestingLabel:SetParent(options);
@@ -740,30 +725,39 @@ function DrawQuestAcceptCompleteFail(options)
     buttonTarget.Click = function(sender, args)
         FilterTarget(questName:GetText());
     end
-
+    return y + buttonTarget:GetHeight() + 5;
 end
 
--- row and column start at 1
-function DrawFireworksButton(parent, chatText, column, row)
-    local button = Turbine.UI.Lotro.Button();
-    button:SetParent(parent)
-    button:SetText("[ ]");
-    button.Click = function(sender, args) HandleFireworksAnnouncerSay(chatText); end
-    button:SetWidth(30);
-    button:SetPosition(fireworksColumnLeftMargin + (column -1) * fireworksColumnWidth, fireworksY + fireworksRowTopMargin + (row -1) * fireworksRowHeight);
-end
+function DrawFireworksDebug(options, y)
+    local fireworksColumnLeftMargin = 75;
+    local fireworksColumnWidth = 50;
+    local fireworksRowTopMargin = 50;
+    local fireworksRowHeight = 30;
 
-function DrawFireworksLabel(parent, text, column, row)
-    local label = Turbine.UI.Label();
-    label:SetParent(parent);
-    label:SetText(text);
-    label:SetPosition(fireworksColumnLeftMargin + (column - 1) * fireworksColumnWidth, fireworksY + fireworksRowTopMargin + (row - 1) * fireworksRowHeight);
-    label:SetSize(45, 20);
-    label:SetBackColor(Turbine.UI.Color.DarkOliveGreen);
-    label:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleCenter);
-end
+    -- row and column start at 1
+    local DrawFireworksButton = function(parent, chatText, column, row)
+        local button = Turbine.UI.Lotro.Button();
+        button:SetParent(parent)
+        button:SetText("[ ]");
+        button.Click = function(sender, args) HandleFireworksAnnouncerSay(chatText); end
+        button:SetWidth(30);
+        button:SetPosition(
+            fireworksColumnLeftMargin + (column - 1) * fireworksColumnWidth,
+            y + fireworksRowTopMargin + (row - 1) * fireworksRowHeight);
+    end
 
-function DrawFireworksDebug(options)
+    local DrawFireworksLabel = function(parent, text, column, row)
+        local label = Turbine.UI.Label();
+        label:SetParent(parent);
+        label:SetText(text);
+        label:SetPosition(
+            fireworksColumnLeftMargin + (column - 1) * fireworksColumnWidth,
+            y + fireworksRowTopMargin + (row - 1) * fireworksRowHeight);
+        label:SetSize(45, 20);
+        label:SetBackColor(Turbine.UI.Color.DarkOliveGreen);
+        label:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleCenter);
+    end
+
     local blueYesText = "Fireworks Announcer says, ''How about a bright blue one? Launch it now!''\n";
     local greenYesText = "Fireworks Announcer says, ''How about a bright green one? Launch it now!''\n";
     local redYesText = "Fireworks Announcer says, ''How about a bright red one? Launch it now!''\n";
@@ -779,7 +773,7 @@ function DrawFireworksDebug(options)
     fireworksHeaderLabel:SetParent(options);
     fireworksHeaderLabel:SetText("Anniversary Event - Fireworks in Bree:");
     fireworksHeaderLabel:SetSize(200, 20);
-    fireworksHeaderLabel:SetTop(fireworksY);
+    fireworksHeaderLabel:SetTop(y);
 
     DrawFireworksLabel(options, "Yes", 1, 0);
     DrawFireworksLabel(options, "No", 2, 0);
@@ -797,6 +791,8 @@ function DrawFireworksDebug(options)
     DrawFireworksButton(options, blueNoText, 2, 3);
     DrawFireworksButton(options, yellowYesText, 1, 4);
     DrawFireworksButton(options, yellowNoText, 2, 4);
+
+    return y + 170;
 end
 
 function DrawHobnanigansDebug_StartStopQuests(options, y, fieldNumber, debugText)
@@ -925,7 +921,7 @@ function DrawHobnanigansDebug_Winner(options, x, y, team, fieldNumber, debugText
     winner:SetPosition(x, y);
 end
 
-function DrawHobnanigansDebug(options)
+function DrawHobnanigansDebug(options, y)
     local debugText = {
         ["START_FIELD_1"] = {
             ["FF"] = {
@@ -1149,8 +1145,8 @@ function DrawHobnanigansDebug(options)
     hobnanigansHeaderLabel:SetParent(options);
     hobnanigansHeaderLabel:SetText("Hobnanigans:");
     hobnanigansHeaderLabel:SetSize(200, 20);
-    hobnanigansHeaderLabel:SetTop(hobnanigansY);
-    local y = hobnanigansY + 20;
+    hobnanigansHeaderLabel:SetTop(y);
+    y = y + 20;
 
     -- Header Row
     local ffLabel = Turbine.UI.Label();
@@ -1222,7 +1218,7 @@ function DrawHobnanigansDebug(options)
         DrawHobnanigansDebug_Winner(options, 60 + i*60, y + 30, "SB", i, debugText);
     end
     y = y + 60;
-
+    return y;
 end
 
 function CreateFarmersFaireFatMayorButton(options, i, y, text, callback)
@@ -1240,9 +1236,7 @@ function CreateFarmersFaireFatMayorButton(options, i, y, text, callback)
     return itemButton;
 end
 
-function DrawFarmersFaireFatMayorDebug(options)
-    local y = fatMayorY;
-
+function DrawFarmersFaireFatMayorDebug(options, y)
     local fatMayorDebugLabel = Turbine.UI.Label();
     fatMayorDebugLabel:SetParent(options);
     fatMayorDebugLabel:SetPosition(0, y);
@@ -1264,21 +1258,21 @@ function DrawFarmersFaireFatMayorDebug(options)
     return y;
 end
 
-function DrawYuleTheBiggestStomach(options, optionsY)
-    local y = 0;
+function DrawYuleTheBiggestStomach(options, y)
+    local contentY = 0;
 
     local biggestStomachControl = Turbine.UI.Control();
     biggestStomachControl:SetParent(options);
     biggestStomachControl:SetSize(options:GetWidth(), 100);
-    biggestStomachControl:SetTop(optionsY);
+    biggestStomachControl:SetTop(y);
     biggestStomachControl:SetBackColor(Turbine.UI.Color.Green);
 
     local fatMayorDebugLabel = Turbine.UI.Label();
     fatMayorDebugLabel:SetParent(biggestStomachControl);
-    fatMayorDebugLabel:SetPosition(0, y);
+    fatMayorDebugLabel:SetPosition(0, contentY);
     fatMayorDebugLabel:SetWidth(options:GetWidth());
     fatMayorDebugLabel:SetText("Yule - The Biggest Stomach of Them All:")
-    y = y + 20;
+    contentY = contentY + 20;
 
     -- Ona Kay says, ''One minute until the eating contest begins! I hope you have plenty of room....''
     local button1 = Turbine.UI.Lotro.Button();
@@ -1346,14 +1340,14 @@ function DrawYuleTheBiggestStomach(options, optionsY)
         ChatReceived(nil, args);
     end
 
-    y = y + 30;
+    contentY = contentY + 30;
 
     -- Ona Kay says, ''Ready....''
     -- Ona Kay says, ''Set....''
     -- Ona Kay says, ''Eat!''
 
-    biggestStomachControl:SetHeight(y);
-    return optionsY + biggestStomachControl:GetHeight();
+    biggestStomachControl:SetHeight(contentY);
+    return y + biggestStomachControl:GetHeight();
 end
 
 function HandleFarmersFaireFatMayorItemClick(item)
@@ -1384,15 +1378,15 @@ end
 ---@param options Control
 ---@param y number
 ---@return number
-function DrawAlertDebug(options, optionsY)
-    local y = 0;
+function DrawAlertDebug(options, y)
+    local contentY = 0;
     local seconds = 5;
 
     local alertDebugControl = Turbine.UI.Control();
     alertDebugControl:SetParent(options);
     --alertDebugControl:SetBackColor(Turbine.UI.Color.DarkOrange);
     alertDebugControl:SetSize(options:GetWidth(), 100);
-    alertDebugControl:SetTop(optionsY);
+    alertDebugControl:SetTop(y);
 
 
     -- A call to Alert looks like this:
@@ -1407,34 +1401,34 @@ function DrawAlertDebug(options, optionsY)
     local alertDebugLabel = Turbine.UI.Label();
     alertDebugLabel:SetParent(alertDebugControl);
     alertDebugLabel:SetWidth(200);
-    alertDebugLabel:SetPosition(0, y);
+    alertDebugLabel:SetPosition(0, contentY);
     alertDebugLabel:SetText("Alerts:");
-    y = y + 30;
+    contentY = contentY + 30;
 
     local messageLabel = Turbine.UI.Label();
     messageLabel:SetParent(alertDebugControl);
     messageLabel:SetWidth(200);
-    messageLabel:SetPosition(20, y);
+    messageLabel:SetPosition(20, contentY);
     messageLabel:SetText("Message:");
 
     local messageTextBox = Turbine.UI.Lotro.TextBox();
     messageTextBox:SetParent(alertDebugControl);
-    messageTextBox:SetPosition(100, y-10);
+    messageTextBox:SetPosition(100, contentY-10);
     messageTextBox:SetSize(300, 30);
     messageTextBox:SetMultiline(true); -- Alert allows multiline messages
     messageTextBox:SetText("Sample Message");
-    y = y + 35;
+    contentY = contentY + 35;
     -- <rgb=#00FFFF>Sample Message</rgb>
 
     local secondsLabel = Turbine.UI.Label();
     secondsLabel:SetParent(alertDebugControl);
     secondsLabel:SetWidth(200);
-    secondsLabel:SetPosition(20, y);
+    secondsLabel:SetPosition(20, contentY);
     secondsLabel:SetText("Seconds:");
 
     local secondsTextBox = Turbine.UI.Lotro.TextBox();
     secondsTextBox:SetParent(alertDebugControl);
-    secondsTextBox:SetPosition(100, y-10);
+    secondsTextBox:SetPosition(100, contentY-10);
     secondsTextBox:SetSize(100, 30);
     secondsTextBox:SetMultiline(false);
     secondsTextBox:SetText(tostring(seconds));
@@ -1446,21 +1440,21 @@ function DrawAlertDebug(options, optionsY)
             secondsTextBox:SetText(tostring(seconds));
         end
     end
-    y = y + 35;
+    contentY = contentY + 35;
 
     local showRemainingCheckBox = Turbine.UI.Lotro.CheckBox();
     showRemainingCheckBox:SetParent(alertDebugControl);
     showRemainingCheckBox:SetSize(200, 20);
-    showRemainingCheckBox:SetPosition(20, y);
+    showRemainingCheckBox:SetPosition(20, contentY);
     showRemainingCheckBox:SetText("Show Remaining Time");
     showRemainingCheckBox:SetChecked(true);
-    y = y + 30;
+    contentY = contentY + 30;
 
     local showButton = Turbine.UI.Lotro.Button();
     showButton:SetParent(alertDebugControl);
     showButton:SetText("Send Alert");
     showButton:SetWidth(100);
-    showButton:SetPosition(75, y);
+    showButton:SetPosition(75, contentY);
     showButton.Click = function(sender, args)
         Alert(
             messageTextBox:GetText(),
@@ -1474,62 +1468,62 @@ function DrawAlertDebug(options, optionsY)
     cancelButton:SetParent(alertDebugControl);
     cancelButton:SetText("Cancel Alert");
     cancelButton:SetWidth(100);
-    cancelButton:SetPosition(200, y);
+    cancelButton:SetPosition(200, contentY);
     cancelButton.Click = function(sender, args)
         CancelFatMayorAlert();
     end
 
-    y = y + 30;
+    contentY = contentY + 30;
 
-    alertDebugControl:SetHeight(y);
-    return optionsY + alertDebugControl:GetHeight();
+    alertDebugControl:SetHeight(contentY);
+    return y + alertDebugControl:GetHeight();
 end
 
-function DrawSayDebug(options, optionsY)
-    local y = 0;
+function DrawSayDebug(options, y)
+    local contentY = 0;
     
     local sayDebugControl = Turbine.UI.Control();
     sayDebugControl:SetParent(options);
     sayDebugControl:SetSize(options:GetWidth(), 100);
-    sayDebugControl:SetTop(optionsY);
+    sayDebugControl:SetTop(y);
     
     local sayDebugLabel = Turbine.UI.Label();
     sayDebugLabel:SetParent(sayDebugControl);
     sayDebugLabel:SetWidth(200);
-    sayDebugLabel:SetPosition(0, y);
+    sayDebugLabel:SetPosition(0, contentY);
     sayDebugLabel:SetText("Simulated Chat Messages");
-    y = y + 30;
+    contentY = contentY + 30;
 
     local messageLabel = Turbine.UI.Label();
     messageLabel:SetParent(sayDebugControl);
     messageLabel:SetWidth(200);
-    messageLabel:SetPosition(20, y);
+    messageLabel:SetPosition(20, contentY);
     messageLabel:SetText("Message:");
 
     local messageTextBox = Turbine.UI.Lotro.TextBox();
     messageTextBox:SetParent(sayDebugControl);
-    messageTextBox:SetPosition(100, y-10);
+    messageTextBox:SetPosition(100, contentY-10);
     messageTextBox:SetSize(300, 30);
     messageTextBox:SetMultiline(true); -- Alert allows multiline messages
     messageTextBox:SetText(SETTINGS.DEBUG_CHAT_MESSAGE);
     messageTextBox.TextChanged = function(sender, args)
         SETTINGS.DEBUG_CHAT_MESSAGE = messageTextBox:GetText();
     end
-    y = y + 35;
+    contentY = contentY + 35;
 
     local appendNewlineCheckBox = Turbine.UI.Lotro.CheckBox();
     appendNewlineCheckBox:SetParent(sayDebugControl);
     appendNewlineCheckBox:SetSize(200, 20);
-    appendNewlineCheckBox:SetPosition(20, y);
+    appendNewlineCheckBox:SetPosition(20, contentY);
     appendNewlineCheckBox:SetText("Add newline after message");
     appendNewlineCheckBox:SetChecked(true);
-    y = y + 30;
+    contentY = contentY + 30;
 
     local sayButton = Turbine.UI.Lotro.Button();
     sayButton:SetParent(sayDebugControl);
     sayButton:SetText("Say");
     sayButton:SetWidth(100);
-    sayButton:SetPosition(75, y);
+    sayButton:SetPosition(75, contentY);
     sayButton.Click = function(sender, args)
         local newline = "";
         if (appendNewlineCheckBox:IsChecked()) then newline = "\n"; end
@@ -1539,11 +1533,11 @@ function DrawSayDebug(options, optionsY)
         };
         ChatReceived(nil, args)
     end
-    y = y + 30;
+    contentY = contentY + 30;
 
-    sayDebugControl:SetHeight(y);
+    sayDebugControl:SetHeight(contentY);
 
-    return optionsY + sayDebugControl:GetHeight();
+    return y + sayDebugControl:GetHeight();
 end
 
 function CreateColorPickerWindow()
@@ -1814,21 +1808,12 @@ function DrawOptionsWin()
         table.insert(tabDefinitions, {
             label = "DEBUG_TAB",
             draw = function(page)
-                questAcceptCompleteFailY = 0;
-                hobnanigansY = questAcceptCompleteFailY + 120;
-                fireworksY = hobnanigansY + 480;
-                fireworksColumnLeftMargin = 75;
-                fireworksColumnWidth = 50;
-                fireworksRowTopMargin = 50;
-                fireworksRowHeight = 30;
-                fatMayorY = fireworksY + 185;
-
                 page:SetBackColor(Turbine.UI.Color.DarkBlue);
-                DrawQuestAcceptCompleteFail(page);
-                DrawHobnanigansDebug(page);
-                DrawFireworksDebug(page);
 
-                local y = DrawFarmersFaireFatMayorDebug(page);
+                local y = DrawQuestAcceptCompleteFail(page, 0) + 15;
+                y = DrawHobnanigansDebug(page, y) + 40;
+                y = DrawFireworksDebug(page, y) + 15;
+                y = DrawFarmersFaireFatMayorDebug(page, y);
                 y = DrawYuleTheBiggestStomach(page, y);
                 y = DrawAlertDebug(page, y);
                 return DrawSayDebug(page, y);
