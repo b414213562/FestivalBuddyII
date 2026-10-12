@@ -459,9 +459,10 @@ function FillMainWin(FESTIVAL)
 
             local timerLabel = Turbine.UI.Label();
             timerLabel:SetParent(wMainWinHolder);
-            timerLabel:SetSize(120, 32);
-            timerLabel:SetPosition(timerImage:GetLeft() + timerImage:GetWidth(), timerImage:GetTop());
+            timerLabel:SetSize(100, 32);
+            timerLabel:SetPosition(timerImage:GetLeft() + timerImage:GetWidth() + 5, timerImage:GetTop());
             timerLabel:SetVisible(false);
+            timerLabel:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleLeft);
             wMainWinParent.FatMayorTimerLabel = timerLabel;
 
             SetFatMayorTimerImage(wMainWinParent.FatMayorTimerItem);
