@@ -1118,6 +1118,7 @@ _LANG = {
         ["QUICK_GUIDE_COLOR_CHANGE"]      = { ["ENGLISH"] = "Change"; ["GERMAN"] = "Ändern";};
         ["QUICK_GUIDE_COLOR_DEFAULT"]     = { ["ENGLISH"] = "Default"; ["GERMAN"] = "Standard";};
         ["FESTIVAL_TIMER_COLORS"]         = { ["ENGLISH"] = "Festival Timer Colors:"; ["GERMAN"] = "Farben des Festivaltimers:";};
+        ["FESTIVAL_TIMER_OPACITY"]        = { ["ENGLISH"] = "Opacity: %d%%";};
         ["FESTIVAL_TIMER_COLOR"] = {
             ["GREEN"] = { ["ENGLISH"] = "Quest available:"; };
             ["YELLOW"] = { ["ENGLISH"] = "Quest availability ending soon:"; };

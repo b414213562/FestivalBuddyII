@@ -322,6 +322,33 @@ function DrawFestivalTimerColorOptions(options, y)
     timerColorsLabel:SetPosition(10, y);
     y = y + 20;
 
+    local opacityLabel = Turbine.UI.Label();
+    opacityLabel:SetParent(options);
+    opacityLabel:SetSize(480, 20);
+    opacityLabel:SetPosition(10, y);
+    opacityLabel:SetText(string.format(
+        GetString(_LANG.OPTIONS.FESTIVAL_TIMER_OPACITY),
+        SETTINGS_ACCOUNT.FESTIVAL_TIMER.OPACITY));
+    y = y + 20;
+
+    local opacityScrollBar = Turbine.UI.Lotro.ScrollBar();
+    opacityScrollBar:SetParent(options);
+    opacityScrollBar:SetSize(250, 10);
+    opacityScrollBar:SetPosition(10, y);
+    opacityScrollBar:SetOrientation(Turbine.UI.Orientation.Horizontal);
+    opacityScrollBar:SetMinimum(0);
+    opacityScrollBar:SetMaximum(100);
+    opacityScrollBar:SetSmallChange(1);
+    opacityScrollBar:SetLargeChange(10);
+    opacityScrollBar:SetValue(SETTINGS_ACCOUNT.FESTIVAL_TIMER.OPACITY);
+    opacityScrollBar.ValueChanged = function(sender, args)
+        local opacity = sender:GetValue();
+        UpdateFestivalTimerOpacity(opacity);
+        opacityLabel:SetText(string.format(
+            GetString(_LANG.OPTIONS.FESTIVAL_TIMER_OPACITY), opacity));
+    end
+    y = y + opacityScrollBar:GetHeight() + 10;
+
     for _, colorSetting in ipairs({ "GREEN", "YELLOW", "RED", "GREY" }) do
         local colorRow = CreateFestivalTimerColorRow(colorSetting);
         colorRow:SetParent(options);

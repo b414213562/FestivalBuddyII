@@ -443,6 +443,7 @@ DEFAULT_SETTINGS_ACCOUNT = {
     };
 
     ["FESTIVAL_TIMER"] = {
+        ["OPACITY"] = 100;
         ["COLORS"] = {
             ["GREEN"] = { ["R"] = 0; ["G"] = 128; ["B"] = 0; };
             ["YELLOW"] = { ["R"] = 255; ["G"] = 255; ["B"] = 0; };
