@@ -1,5 +1,5 @@
 
-SHOW_DEBUG_OPTIONS = false;
+SHOW_DEBUG_OPTIONS = true;
 RUN_TEST_FUNCTIONS = false;
 
 local topMargin = 10;
@@ -1717,61 +1717,110 @@ function CreateColorPickerWindow()
 
 end
 
+local function SelectOptionsTab(options, selectedIndex)
+    local selectedPage = options.tabPages[selectedIndex];
+    for index, page in ipairs(options.tabPages) do
+        page:SetVisible(index == selectedIndex);
+        options.tabButtons[index]:SetEnabled(index ~= selectedIndex);
+    end
+
+    options:SetHeight(options.tabBarHeight + selectedPage:GetHeight() + topMargin);
+end
+
+local function AddOptionsTab(options, definition)
+    local index = #options.tabPages + 1;
+    local tabWidth = options:GetWidth() / options.tabCount;
+
+    local button = Turbine.UI.Lotro.Button();
+    button:SetParent(options);
+    button:SetText(GetString(_LANG.OPTIONS[definition.label]));
+    button:SetPosition((index - 1) * tabWidth, 0);
+    button:SetSize(tabWidth, options.tabBarHeight);
+
+    local page = Turbine.UI.Control();
+    page:SetParent(options);
+    page:SetPosition(0, options.tabBarHeight);
+    page:SetWidth(options:GetWidth());
+    page:SetVisible(false);
+
+    local contentHeight = definition.draw(page);
+    page:SetHeight(contentHeight + topMargin);
+
+    options.tabButtons[index] = button;
+    options.tabPages[index] = page;
+    button.Click = function()
+        SelectOptionsTab(options, index);
+    end
+end
+
 function DrawOptionsWin()
     CreateColorPickerWindow();
 
-    -- UI hierarchy:
-    -- options
-    --      non-debug options
-    --      debug options
-
     local options = Turbine.UI.Control();
     options:SetWidth(500);
+    options.tabBarHeight = 25;
+    options.tabPages = {};
+    options.tabButtons = {};
     plugin.GetOptionsPanel = function(self) return options; end
 
-    local nonDebugOptions = Turbine.UI.Control();
-    nonDebugOptions:SetParent(options);
-    nonDebugOptions:SetWidth(500);
+    local tabDefinitions = {
+        {
+            label = "OPTIONS_TAB_GENERAL",
+            draw = function(page)
+                local y = DrawGenericOptions(page, topMargin);
+                y = DrawNpcCooldownOptions(page, y);
+                return y;
+            end
+        },
+        {
+            label = "OPTIONS_TAB_QUICK_GUIDES",
+            draw = function(page)
+                return DrawQuickGuideOptions(page, topMargin);
+            end
+        },
+        {
+            label = "OPTIONS_TAB_FESTIVAL_TIMERS",
+            draw = function(page)
+                return DrawFestivalTimerColorOptions(page, topMargin);
+            end
+        },
+        {
+            label = "OPTIONS_TAB_MAPS",
+            draw = function(page)
+                return DrawMapOptions(page, topMargin + 20);
+            end
+        }
+    };
 
-    local y = topMargin;
-    y = DrawGenericOptions(nonDebugOptions, y);
-    y = DrawNpcCooldownOptions(nonDebugOptions, y);
-    y = DrawQuickGuideOptions(nonDebugOptions, y);
-    y = DrawFestivalTimerColorOptions(nonDebugOptions, y);
-    y = DrawMapOptions(nonDebugOptions, y);
-    nonDebugOptions:SetHeight(y);
+    if (SHOW_DEBUG_OPTIONS) then
+        table.insert(tabDefinitions, {
+            label = "OPTIONS_TAB_DEBUG",
+            draw = function(page)
+                questAcceptCompleteFailY = 0;
+                hobnanigansY = questAcceptCompleteFailY + 120;
+                fireworksY = hobnanigansY + 480;
+                fireworksColumnLeftMargin = 75;
+                fireworksColumnWidth = 50;
+                fireworksRowTopMargin = 50;
+                fireworksRowHeight = 30;
+                fatMayorY = fireworksY + 185;
 
-    if (not SHOW_DEBUG_OPTIONS) then
-        options:SetHeight(nonDebugOptions:GetHeight());
-        return;
+                page:SetBackColor(Turbine.UI.Color.DarkBlue);
+                DrawQuestAcceptCompleteFail(page);
+                DrawHobnanigansDebug(page);
+                DrawFireworksDebug(page);
+
+                local y = DrawFarmersFaireFatMayorDebug(page);
+                y = DrawYuleTheBiggestStomach(page, y);
+                y = DrawAlertDebug(page, y);
+                return DrawSayDebug(page, y);
+            end
+        });
     end
 
-    -- Calculate where all the debug sections should be:
-    questAcceptCompleteFailY = 0;
-    hobnanigansY = questAcceptCompleteFailY + 120;
-    fireworksY = hobnanigansY + 480;
-    fireworksColumnLeftMargin = 75;
-    fireworksColumnWidth = 50;
-    fireworksRowTopMargin = 50;
-    fireworksRowHeight = 30;
-    fatMayorY = fireworksY + 185;
-
-    local debugOptions = Turbine.UI.Control();
-    debugOptions:SetTop(y);
-    debugOptions:SetParent(options);
-    debugOptions:SetWidth(options:GetWidth());
-    debugOptions:SetHeight(options:GetHeight());
-    debugOptions:SetBackColor(Turbine.UI.Color.DarkBlue);
-
-    -- Draw the debug sections
-    DrawQuestAcceptCompleteFail(debugOptions);
-    DrawHobnanigansDebug(debugOptions);
-    DrawFireworksDebug(debugOptions);
-    y = DrawFarmersFaireFatMayorDebug(debugOptions);
-    y = DrawYuleTheBiggestStomach(debugOptions, y);
-    y = DrawAlertDebug(debugOptions, y);
-    y = DrawSayDebug(debugOptions, y);
-
-    debugOptions:SetHeight(y);
-    options:SetHeight(nonDebugOptions:GetHeight() + debugOptions:GetHeight());
+    options.tabCount = #tabDefinitions;
+    for _, definition in ipairs(tabDefinitions) do
+        AddOptionsTab(options, definition);
+    end
+    SelectOptionsTab(options, 1);
 end

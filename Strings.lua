@@ -1054,6 +1054,11 @@ _LANG = {
 
     ["OPTIONS"] = {
         --["OPTIONS_BUTTON_TOOLTIP"] = {["ENGLISH"] = "Open the Festival Buddy options."; ["GERMAN"] = "Öffnet Festival Buddy Optionen"; };
+        ["OPTIONS_TAB_GENERAL"] = {["ENGLISH"] = "General"; ["FRENCH"] = "Général"; ["GERMAN"] = "Allgemein"; };
+        ["OPTIONS_TAB_QUICK_GUIDES"] = {["ENGLISH"] = "Guides"; ["FRENCH"] = "Guides"; ["GERMAN"] = "Anleitungen"; };
+        ["OPTIONS_TAB_FESTIVAL_TIMERS"] = {["ENGLISH"] = "Timers"; ["FRENCH"] = "Minuteurs"; ["GERMAN"] = "Timer"; };
+        ["OPTIONS_TAB_MAPS"] = {["ENGLISH"] = "Maps"; ["FRENCH"] = "Cartes"; ["GERMAN"] = "Karten"; };
+        ["OPTIONS_TAB_DEBUG"] = {["ENGLISH"] = "Debug"; ["FRENCH"] = "Debug"; ["GERMAN"] = "Debug"; };
         ["MAP_OPTIONS"]     = {["ENGLISH"] = "Map Options: ";       ["FRENCH"] = "Map Options: ";       ["GERMAN"] = "Kartenoptionen: ";            };
         ["MAP_AUTO_OPEN"]   = {["ENGLISH"] = "Auto-open Map";       ["FRENCH"] = "Auto-open Map";       ["GERMAN"] = "Karte automatisch öffnen";    };
         ["MAP_ORIENTATION"] = {["ENGLISH"] = "Map Up Direction: ";  ["FRENCH"] = "Map Up Direction: ";  ["GERMAN"] = "Karten Orientierung: ";       };
