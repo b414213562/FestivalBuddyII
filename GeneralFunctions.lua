@@ -411,7 +411,23 @@ end
 
 
 function GetTodaysDate()
-    -- return { Year = 2026; Month = 10; Day = 13; DayOfYear = 286; Hour = 0; Minute = 0; Second = 0; };
+    -- local alternateDates = {
+    --     -- Note: For DayOfWeek, Sunday = 1 and Saturday = 7
+    --     [1] = { Year = 2026; Month = 1; Day = 1; DayOfYear = 1; DayOfWeek = 5; Hour = 0; Minute = 0; Second = 0; };
+    --     [2] = { Year = 2026; Month = 2; Day = 1; DayOfYear = 32; DayOfWeek = 1; Hour = 0; Minute = 0; Second = 0; };
+    --     [3] = { Year = 2026; Month = 3; Day = 1; DayOfYear = 60; DayOfWeek = 1; Hour = 0; Minute = 0; Second = 0; };
+    --     [4] = { Year = 2026; Month = 4; Day = 1; DayOfYear = 91; DayOfWeek = 4; Hour = 0; Minute = 0; Second = 0; };
+    --     [5] = { Year = 2026; Month = 5; Day = 1; DayOfYear = 121; DayOfWeek = 6; Hour = 0; Minute = 0; Second = 0; };
+    --     [6] = { Year = 2026; Month = 6; Day = 1; DayOfYear = 152; DayOfWeek = 2; Hour = 0; Minute = 0; Second = 0; };
+    --     [7] = { Year = 2026; Month = 7; Day = 1; DayOfYear = 182; DayOfWeek = 4; Hour = 0; Minute = 0; Second = 0; };
+    --     [8] = { Year = 2026; Month = 8; Day = 1; DayOfYear = 213; DayOfWeek = 7; Hour = 0; Minute = 0; Second = 0; };
+    --     [9] = { Year = 2026; Month = 9; Day = 1; DayOfYear = 244; DayOfWeek = 3; Hour = 0; Minute = 0; Second = 0; };
+    --     [10] = { Year = 2026; Month = 10; Day = 1; DayOfYear = 274; DayOfWeek = 5; Hour = 0; Minute = 0; Second = 0; };
+    --     [11] = { Year = 2026; Month = 11; Day = 1; DayOfYear = 305; DayOfWeek = 1; Hour = 0; Minute = 0; Second = 0; };
+    --     [12] = { Year = 2026; Month = 12; Day = 1; DayOfYear = 335; DayOfWeek = 3; Hour = 0; Minute = 0; Second = 0; };
+    -- }
+    -- return alternateDates[1];
+
     return Turbine.Engine.GetDate();
 end
 
