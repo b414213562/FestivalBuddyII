@@ -411,6 +411,7 @@ end
 
 
 function GetTodaysDate()
+    -- return { Year = 2026; Month = 10; Day = 13; DayOfYear = 286; Hour = 0; Minute = 0; Second = 0; };
     return Turbine.Engine.GetDate();
 end
 
