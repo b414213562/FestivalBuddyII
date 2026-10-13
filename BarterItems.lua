@@ -848,259 +848,313 @@ _BARTER =
     -- HARVESTMATH -------------------------------------------------------------------------------------
     [HARVESTMATH] =
     {
-        ["LAST_UPDATED"] = "2025-11";
-        [1]={[1]=DIVIDER1; [2]={["ENGLISH"] = "Rosa Hornblower, Fall Festival Trader"; }; };
-        [2]={[1]=DIVIDER2; [2]={["ENGLISH"] = "New Items"; }; };
-        [3]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879516968;}; -- Cobweb Garments - Gift-wrapped Selection Box
-        [4]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879516614;}; -- Cobweb Robe
-        [5]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879516876;}; -- Cobweb Hat
-        [6]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879516604;}; -- Cobweb Cloak
-        [7]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879516602;}; -- Hooded Cobweb Cloak
-        [8]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879516932;}; -- Harvestmath Cauldron
-        [9]={[2]={["HARVESTMATH_FESTIVAL"]=60;};[1]=1879517201;}; -- Fall Hobby-broom
-        [10]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879517201;}; -- Fall Hobby-broom
-        [11]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879516874;}; -- Tome of the Pumpkin Huorn
-        [12]={[2]={["GENERIC_MITHRIL"]=30;};[1]=1879516874;}; -- Tome of the Pumpkin Huorn
-        [13]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879463033;}; -- Tome of the Autumn Aurochs
-        [14]={[2]={["HARVESTMATH_FESTIVAL"]=30;};[1]=1879516933;}; -- Heating Cauldron
-        [15]={[2]={["HARVESTMATH_FESTIVAL"]=30;};[1]=1879508822;}; -- Small Potions Table
-        [16]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879498938;}; -- Pumpkins
-        [17]={[2]={["HARVESTMATH_FESTIVAL"]=10;};[1]=1879518296;}; -- 'Spooky' Themes
-        [18]={[2]={["HARVESTMATH_FESTIVAL"]=10;};[1]=1879518294;}; -- 'Haunted House' Ambience
-        [19]={[2]={["HARVESTMATH_FESTIVAL"]=10;};[1]=1879518295;}; -- 'Haunted Yard' Ambience
-        [20]={[2]={["HARVESTMATH_FESTIVAL"]=8;};[1]=1879501058;}; -- Webbed Thorny Hedge
-        [21]={[2]={["HARVESTMATH_FESTIVAL"]=8;};[1]=1879501055;}; -- Wild Webbed Hedge
-        [22]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Fall Festival Steeds"; }; };
-        [23]={[2]={["HARVESTMATH_FESTIVAL"]=60;};[1]=1879517201;}; -- Fall Hobby-broom
-        [24]={[2]={["HARVESTMATH_FESTIVAL"]=60;};[1]=1879470559;}; -- Elk of the Forest-spirit
-        [25]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879412855;}; -- Caparison of the Autumn Sage's Bearance
-        [26]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879412853;}; -- Mask of the Autumn Sage's Bearance
-        [27]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879412858;}; -- Saddle of the Autumn Sage's Bearance
-        [28]={[2]={["HARVESTMATH_FESTIVAL"]=60;};[1]=1879412852;}; -- Steed of the Autumn Sage
-        [29]={[2]={["HARVESTMATH_FESTIVAL"]=60;};[1]=1879394566;}; -- Steed of the Autumn Traveller
-        [30]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Cosmetic Pets"; }; };
-        [31]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879516874;}; -- Tome of the Pumpkin Huorn
-        [32]={[2]={["GENERIC_MITHRIL"]=30;};[1]=1879516874;}; -- Tome of the Pumpkin Huorn
-        [33]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879463033;}; -- Tome of the Autumn Aurochs
-        [34]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879493469;}; -- Tome of the Ghostly Cat
-        [35]={[2]={["GENERIC_MITHRIL"]=30;};[1]=1879493469;}; -- Tome of the Ghostly Cat
-        [36]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879493471;}; -- Tome of the Windfell Owl
-        [37]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879470568;}; -- Tome of the Forest-spirit Goat
-        [38]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879338918;}; -- Tome of the Brown Bat
-        [39]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879339331;}; -- Tome of the Leaf-fall Kite
-        [40]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879339324;}; -- Tome of the Oaken Kite
-        [41]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879361465;}; -- Tome of the Gourd-lurker
-        [42]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879381815;}; -- Tome of the Black Cat
-        [43]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879394584;}; -- Tome of the Badger
-        [44]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879412826;}; -- Tome of the Spooky Jackdaw
-        [45]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879412834;}; -- Tome of the Harbinger of the Sage's Storm
-        [46]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879412828;}; -- Tome of the Soot-feathered Crow
-        [47]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879361467;}; -- Tome of the Lantern Gourd-lurker
-        [48]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879396938;}; -- Tome of the Black Marble Wolf-dog
-        [49]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879412830;}; -- Tome of the Night Sky Craban
-        [50]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Dyes"; }; };
-        [51]={[3]=6;[2]={["GENERIC_MITHRIL"]=10;};[1]=1879329680;}; -- 6 Imladris Fallen Leaf Dyes
-        [52]={[3]=6;[2]={["GENERIC_MITHRIL"]=10;};[1]=1879329688;}; -- 6 Ashenslades Green Dyes
-        [53]={[3]=6;[2]={["HARVESTMATH_FESTIVAL"]=20;};[1]=1879337947;}; -- 6 Autumn Leaf Dyes
-        [54]={[3]=6;[2]={["HARVESTMATH_FESTIVAL"]=20;};[1]=1879337948;}; -- 6 Twilight Purple Dyes
-        [55]={[2]={["HARVESTMATH_FESTIVAL"]=16;};[1]=1879397282;}; -- Assortment of Dwarf-candles
-        [56]={[3]=5;[2]={["HARVESTMATH_FESTIVAL"]=8;};[1]=1879387361;}; -- 5 Yellow Dwarf-candles
-        [57]={[3]=5;[2]={["HARVESTMATH_FESTIVAL"]=8;};[1]=1879387362;}; -- 5 Red Dwarf-candles
-        [58]={[3]=5;[2]={["HARVESTMATH_FESTIVAL"]=8;};[1]=1879387363;}; -- 5 Green Dwarf-candles
-        [59]={[3]=5;[2]={["HARVESTMATH_FESTIVAL"]=8;};[1]=1879387360;}; -- 5 Blue Dwarf-candles
-        [60]={[3]=5;[2]={["HARVESTMATH_FESTIVAL"]=8;};[1]=1879387357;}; -- 5 Orange Dwarf-candles
-        [61]={[3]=5;[2]={["HARVESTMATH_FESTIVAL"]=8;};[1]=1879387358;}; -- 5 White Dwarf-candles
-        [62]={[3]=5;[2]={["HARVESTMATH_FESTIVAL"]=8;};[1]=1879387359;}; -- 5 Purple Dwarf-candles
-        [63]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Cosmetic Clothing - Gift Boxes"; }; };
-        [64]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879516968;}; -- Cobweb Garments - Gift-wrapped Selection Box
-        [65]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879494444;}; -- Garments of Masked Wisdom - Gift-wrapped Selection Box
-        [66]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879470570;}; -- Garments of the Forest-spirit - Gift-wrapped Selection Box
-        [67]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879412795;}; -- Harvestmath Garments - Gift-wrapped selection box
-        [68]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879394569;}; -- Garments of the Autumn Traveller - Gift-wrapped selection box
-        [69]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879361281;}; -- Autumn Leafmail Shoulders - Gift-wrapped
-        [70]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879361284;}; -- Autumn Leafmail Hauberk - Gift-wrapped
-        [71]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879361283;}; -- Autumn Leafmail Dress - Gift-wrapped
-        [72]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879361280;}; -- Autumn Leafmail Cloak - Gift-wrapped
-        [73]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879361282;}; -- Hooded Autumn Leafmail Cloak - Gift-wrapped
-        [74]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879381544;}; -- Cloak of the Autumn Wanderer - Gift Wrapped
-        [75]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879381551;}; -- Hooded Cloak of the Autumn Wanderer - Gift Wrapped
-        [76]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879381545;}; -- Travelling Robes of the Autumn Wanderer - Gift Wrapped
-        [77]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879381549;}; -- Mask of the Autumn Wanderer - Gift Wrapped
-        [78]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Fall Festival Steeds - Mithril I"; }; };
-        [79]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879517201;}; -- Fall Hobby-broom
-        [80]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879470559;}; -- Elk of the Forest-spirit
-        [81]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879412855;}; -- Caparison of the Autumn Sage's Bearance
-        [82]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879412853;}; -- Mask of the Autumn Sage's Bearance
-        [83]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879412858;}; -- Saddle of the Autumn Sage's Bearance
-        [84]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879412852;}; -- Steed of the Autumn Sage
-        [85]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879394566;}; -- Steed of the Autumn Traveller
-        [86]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879381653;}; -- Harbinger of Autumn Night
-        [87]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879381563;}; -- Lamp of the Harbinger
-        [88]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879381562;}; -- Harness of the Harbinger
-        [89]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879381566;}; -- Faceplate of the Harbinger
-        [90]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879381564;}; -- Tattered Feathers of the Harbinger
-        [91]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879381565;}; -- Saddle of the Harbinger
-        [92]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879360378;}; -- Steed of Eldar Autumn
-        [93]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Fall Festival Steeds - Mithril II"; }; };
-        [94]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879360375;}; -- Caparison of Eldar Autumn
-        [95]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879360370;}; -- Head-piece of Eldar Autumn
-        [96]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879360372;}; -- Saddle of Eldar Autumn
-        [97]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879360373;}; -- Tail of Eldar Autumn
-        [98]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879338653;}; -- Steed of the Gloaming Autumn
-        [99]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879338704;}; -- Caparison of the Gloaming Autumn
-        [100]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879338716;}; -- Head of the Gloaming Autumn
-        [101]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879338720;}; -- Leggings of the Gloaming Autumn
-        [102]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879338721;}; -- Saddle of the Gloaming Autumn
-        [103]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879338723;}; -- Tail of the Gloaming Autumn
-        [104]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879328779;}; -- Steed of the Anórien Autumn
-        [105]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879328781;}; -- Caparison of the Anórien Autumn
-        [106]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879315554;}; -- Steed of the Autumn Sun
-        [107]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879315551;}; -- Caparison of the Autumn Sun
-        [108]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879277202;}; -- Spooky Steed of the Bat
-        [109]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879277240;}; -- Spooky Caparison of the Bat
-        [110]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879255353;}; -- Harvest-brew Steed
-        [111]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879099081;}; -- Harvestmath Steed
-        [112]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879173351;}; -- Sable Harvestmath Steed
-        [113]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879220550;}; -- Autumnfest Steed
-        [114]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Essences"; }; };
-        [115]={[2]={["HARVESTMATH_FESTIVAL"]=140;};[1]=1879439435;}; -- Essence Reclamation Scroll
-        [116]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Tunics, Trousers, Dresses, and Outfits"; }; };
-        [117]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879516614;}; -- Cobweb Robe
-        [118]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879493402;}; -- Robe of Masked Wisdom
-        [119]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879470524;}; -- Tunic of the Forest-spirit
-        [120]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879412779;}; -- Vestments of the Autumn Sage
-        [121]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879412785;}; -- Tunic of the Leaf-turner
-        [122]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879394556;}; -- Trousers of the Autumn Traveller
-        [123]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879394559;}; -- Tunic of the Autumn Traveller
-        [124]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879381542;}; -- Travelling Robes of the Autumn Wanderer
-        [125]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879361266;}; -- Autumn Leafmail Hauberk
-        [126]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879361262;}; -- Autumn Leafmail Dress
-        [127]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879328784;}; -- Dress of the Anórien Autumn
-        [128]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879315549;}; -- Robe of the Autumn Sun
-        [129]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879277177;}; -- Spooky Robe of the Bat
-        [130]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879255513;}; -- Harvest-brew Long-sleeved Tunic & Trousers
-        [131]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879255515;}; -- Harvest-brew Short-sleeved Tunic & Trousers
-        [132]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879255509;}; -- Harvest-brew Dress
-        [133]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879220548;}; -- Tunic & Trousers of Autumn Nights
-        [134]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879220545;}; -- Gown of Autumn Nights
-        [135]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Cosmetic Weapons and Shields"; }; };
-        [136]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879361367;}; -- Shield of Eldar Autumn
-        [137]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Shoulder-pieces and Footwear"; }; };
-        [138]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879493389;}; -- Boots of Masked Wisdom
-        [139]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879470525;}; -- Mantle of the Forest-spirit
-        [140]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879470523;}; -- Boots of the Forest-spirit
-        [141]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879412782;}; -- Cowl and Hat of the Autumn Sage
-        [142]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879361263;}; -- Autumn Leafmail Shoulder-guards
-        [143]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879338598;}; -- Mantle of the Gloaming Autumn
-        [144]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Cloaks and Back Items"; }; };
-        [145]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879516604;}; -- Cobweb Cloak
-        [146]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879516602;}; -- Hooded Cobweb Cloak
-        [147]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879470527;}; -- Cloak of the Forest-spirit
-        [148]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879470528;}; -- Hooded Cloak of the Forest-spirit
-        [149]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879412786;}; -- Cosmetic Bee Wings
-        [150]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879412780;}; -- Cosmetic Raven Wings
-        [151]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879412783;}; -- Cloak of the Autumn Sage
-        [152]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879412784;}; -- Hooded Cloak of the Autumn Sage
-        [153]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879394558;}; -- Cloak of the Autumn Traveller
-        [154]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879381541;}; -- Cloak of the Autumn Wanderer
-        [155]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879381543;}; -- Hooded Cloak of the Autumn Wanderer
-        [156]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879361265;}; -- Autumn Leafmail Cloak
-        [157]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879361259;}; -- Hooded Autumn Leafmail Cloak
-        [158]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879338597;}; -- Cloak of the Gloaming Autumn
-        [159]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879328785;}; -- Pack of the Anórien Autumn
-        [160]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879315548;}; -- Cloak of the Autumn Sun
-        [161]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879315550;}; -- Hooded Cloak of the Autumn Sun
-        [162]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879277176;}; -- Spooky Cloak of the Bat
-        [163]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879277175;}; -- Spooky Hooded Cloak of the Bat
-        [164]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879255512;}; -- Harvest-brew Cloak
-        [165]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879255514;}; -- Harvest-brew Hooded Cloak
-        [166]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879220547;}; -- Cloak of Autumn Nights
-        [167]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879220546;}; -- Wrap of the Turning Leaves
-        [168]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879191232;}; -- Cloak of the Falling Leaves
-        [169]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879181901;}; -- Cloak of the Boar
-        [170]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879181904;}; -- Cloak of the Raven
-        [171]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Hats and Masks"; }; };
-        [172]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879516876;}; -- Cobweb Hat
-        [173]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879493388;}; -- Wisdom's Mask
-        [174]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879470526;}; -- Mask of the Forest-spirit
-        [175]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879412781;}; -- Mask of the Leaf-turner
-        [176]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879381540;}; -- Mask of the Autumn Wanderer
-        [177]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879119388;}; -- Goblin Festival Mask
-        [178]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879181902;}; -- Boar-head Festival Mask
-        [179]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879181903;}; -- Raven Festival Mask
-        [180]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879119390;}; -- Pipe Festival Mask
-        [181]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879255516;}; -- Harvest-brew Hat
-        [182]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879255510;}; -- Harvest-brew Circlet
-        [183]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Handheld Cosmetics"; }; };
-        [184]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879516932;}; -- Harvestmath Cauldron
-        [185]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879255481;}; -- Beer Stein
-        [186]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879208609;}; -- Basket of Apples
-        [187]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879255479;}; -- Fall Gourd
-        [188]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879255482;}; -- Pretzel
-        [189]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Housing Items - 1"; }; };
-        [190]={[2]={["HARVESTMATH_FESTIVAL"]=30;};[1]=1879516933;}; -- Heating Cauldron
-        [191]={[2]={["HARVESTMATH_FESTIVAL"]=30;};[1]=1879508822;}; -- Small Potions Table
-        [192]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879498938;}; -- Pumpkins
-        [193]={[2]={["HARVESTMATH_FESTIVAL"]=10;};[1]=1879518296;}; -- 'Spooky' Themes
-        [194]={[2]={["HARVESTMATH_FESTIVAL"]=10;};[1]=1879518294;}; -- 'Haunted House' Ambience
-        [195]={[2]={["HARVESTMATH_FESTIVAL"]=10;};[1]=1879518295;}; -- 'Haunted Yard' Ambience
-        [196]={[2]={["HARVESTMATH_FESTIVAL"]=8;};[1]=1879501058;}; -- Webbed Thorny Hedge
-        [197]={[2]={["HARVESTMATH_FESTIVAL"]=8;};[1]=1879501055;}; -- Wild Webbed Hedge
-        [198]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Housing Items - 2"; }; };
-        [199]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879460528;}; -- Small Grove of Fiery Fall Trees
-        [200]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879493558;}; -- Harvest Pumpkin Planter
-        [201]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879361890;}; -- Pillar of Hay
-        [202]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879361889;}; -- Loosely Packed Pillar of Hay
-        [203]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879101927;}; -- Scarecrow
-        [204]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879381925;}; -- Mounted Warg with Candle
-        [205]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879059596;}; -- Cauldron
-        [206]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879381912;}; -- Wicked Cage
-        [207]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879382084;}; -- Long-burning Candlestand
-        [208]={[2]={["HARVESTMATH_FESTIVAL"]=30;};[1]=1879382035;}; -- Decorative Gourds
-        [209]={[2]={["HARVESTMATH_FESTIVAL"]=30;};[1]=1879382038;}; -- Potions Table
-        [210]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879382105;}; -- Ceiling Bat
-        [211]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879381906;}; -- Ceiling Spider
-        [212]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879382011;}; -- Spooky Chair
-        [213]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879393759;}; -- Ancient Beech Tree
-        [214]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879393756;}; -- Barrel of Gladdens
-        [215]={[2]={["HARVESTMATH_FESTIVAL"]=30;};[1]=1879412863;}; -- Chest of the Spider-queen
-        [216]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879339204;}; -- Ginger Cat on a Cushion
-        [217]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879339214;}; -- Whiteshirt Cat on a Cushion
-        [218]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879339207;}; -- Sleeping Brown Cat
-        [219]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879255491;}; -- Láthbear with Stein
-        [220]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879255493;}; -- Craban Perched on Stein
-        [221]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879255489;}; -- Craban Drinking from Stein
-        [222]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879255490;}; -- Table with Sausage and Pretzels
-        [223]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879255492;}; -- Autumnal Apple Tree
-        [224]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879184533;}; -- Haunted Tree
-        [225]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879101977;}; -- Wooden Beaver Statue
-        [226]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879101957;}; -- Giant Pumpkin
-        [227]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879101942;}; -- Harvest Statue
-        [228]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879101944;}; -- Goblin Statue
-        [229]={[2]={["HARVESTMATH_FESTIVAL"]=8;};[1]=1879101953;}; -- Free Peoples' Flag
-        [230]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879101927;}; -- Scarecrow
-        [231]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879101963;}; -- Sundial
-        [232]={[2]={["HARVESTMATH_FESTIVAL"]=8;};[1]=1879131125;}; -- Autumn Welcome Mat
-        [233]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879191235;}; -- Painting of a Watchful Warg
-        [234]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879191236;}; -- Painting of a Watchful Goblin
-        [235]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879205543;}; -- Map of Rivendell
-        [236]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879112727;}; -- Map of Eregion
-        [237]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879205553;}; -- Map of Enedwaith
-        [238]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879205559;}; -- Map of Mirkwood
-        [239]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Consumables"; }; };
-        [240]={[3]=5;[2]={["HARVESTMATH_FESTIVAL"]=3;};[1]=1879161463;}; -- 5 Specimen Jars: Gross Bugs
-        [241]={[3]=5;[2]={["HARVESTMATH_FESTIVAL"]=3;};[1]=1879161496;}; -- 5 Applications of 'Coveritol'
-        [242]={[3]=5;[2]={["HARVESTMATH_FESTIVAL"]=3;};[1]=1879161620;}; -- 5 Buckets of Fear
-        [243]={[3]=5;[2]={["HARVESTMATH_FESTIVAL"]=3;};[1]=1879161710;}; -- 5 Potent Bird Seed
-        [244]={[3]=5;[2]={["HARVESTMATH_FESTIVAL"]=3;};[1]=1879161765;}; -- 5 Candles and Mirrors
-        [245]={[3]=5;[2]={["HARVESTMATH_FESTIVAL"]=3;};[1]=1879161781;}; -- 5 Black Silk Gloves
-        [246]={[3]=5;[2]={["HARVESTMATH_FESTIVAL"]=3;};[1]=1879161779;}; -- 5 Spider Legs
-        [247]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Emotes"; }; };
-        [248]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879190618;}; -- BOO!
-        [249]={[1]=DIVIDER2; [2]={["ENGLISH"] = "Instruments"; }; };
-        [250]={[2]={["HARVESTMATH_FESTIVAL"]=4;};[1]=1879097472;}; -- Guide to the Cowbell
-        [251]={[2]={["HARVESTMATH_FESTIVAL"]=20;};[1]=1879378382;}; -- Lonely Mountain Bassoon
-
+        ["LAST_UPDATED"] = "2026-10";
+        [1]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Rosa Hornblower, Fall Festival Trader"; }; };
+        [2]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "New Items"; }; };
+        [3]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879536640;}; -- Garments of the Midnight Raven - Gift-wrapped Selection Box
+        [4]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879536594;}; -- Cloak of the Midnight Raven
+        [5]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879536597;}; -- Boots of the Midnight Raven
+        [6]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879536593;}; -- Hood of the Midnight Raven
+        [7]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879536596;}; -- Scarf of the Midnight Raven
+        [8]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879536595;}; -- Robe of the Midnight Raven
+        [9]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879536606;}; -- Tome of the Midnight Raven
+        [10]={[2]={["GENERIC_MITHRIL"]=30;};[1]=1879536606;}; -- Tome of the Midnight Raven
+        [11]={[2]={["HARVESTMATH_FESTIVAL"]=60;};[1]=1879536630;}; -- Steed of the Midnight Raven
+        [12]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879536630;}; -- Steed of the Midnight Raven
+        [13]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879536636;}; -- Accessory of the Midnight Raven
+        [14]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879536638;}; -- Caparison of the Midnight Raven
+        [15]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879536635;}; -- Head-piece of the Midnight Raven
+        [16]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879536637;}; -- Leg-guards of the Midnight Raven
+        [17]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879536642;}; -- War-steed Cosmetics of the Midnight Raven
+        [18]={[2]={["GENERIC_MITHRIL"]=75;};[1]=1879520602;}; -- Guise of Nakási Wave-reaper
+        [19]={[2]={["GENERIC_MITHRIL"]=75;};[1]=1879520611;}; -- Guise of Hármelak Golden-hand
+        [20]={[2]={["HARVESTMATH_FESTIVAL"]=10;};[1]=1879536599;}; -- Chair of the Midnight Raven
+        [21]={[2]={["HARVESTMATH_FESTIVAL"]=15;};[1]=1879536600;}; -- Table of the Midnight Raven
+        [22]={[2]={["HARVESTMATH_FESTIVAL"]=30;};[1]=1879536598;}; -- Working Table of the Midnight Raven
+        [23]={[2]={["HARVESTMATH_FESTIVAL"]=8;};[1]=1879498896;}; -- Small Bonepile
+        [24]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879498897;}; -- Medium Bonepile
+        [25]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879498898;}; -- Large Bonepile
+        [26]={[2]={["HARVESTMATH_FESTIVAL"]=20;};[1]=1879517277;}; -- Dark Ritual Altar
+        [27]={[2]={["HARVESTMATH_FESTIVAL"]=20;};[1]=1879517278;}; -- Blood-stained Dark Ritual Altar
+        [28]={[2]={["HARVESTMATH_FESTIVAL"]=20;};[1]=1879517279;}; -- Marble Ritual Altar
+        [29]={[2]={["HARVESTMATH_FESTIVAL"]=20;};[1]=1879517280;}; -- Blood-stained Marble Ritual Altar
+        [30]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Fall Festival Steeds"; }; };
+        [31]={[2]={["HARVESTMATH_FESTIVAL"]=60;};[1]=1879536630;}; -- Steed of the Midnight Raven
+        [32]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879536636;}; -- Accessory of the Midnight Raven
+        [33]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879536638;}; -- Caparison of the Midnight Raven
+        [34]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879536635;}; -- Head-piece of the Midnight Raven
+        [35]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879536637;}; -- Leg-guards of the Midnight Raven
+        [36]={[2]={["HARVESTMATH_FESTIVAL"]=60;};[1]=1879517201;}; -- Fall Hobby-broom
+        [37]={[2]={["HARVESTMATH_FESTIVAL"]=60;};[1]=1879470559;}; -- Elk of the Forest-spirit
+        [38]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879412855;}; -- Caparison of the Autumn Sage's Bearance
+        [39]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879412853;}; -- Mask of the Autumn Sage's Bearance
+        [40]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879412858;}; -- Saddle of the Autumn Sage's Bearance
+        [41]={[2]={["HARVESTMATH_FESTIVAL"]=60;};[1]=1879412852;}; -- Steed of the Autumn Sage
+        [42]={[2]={["HARVESTMATH_FESTIVAL"]=60;};[1]=1879394566;}; -- Steed of the Autumn Traveller
+        [43]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cosmetic Pets"; }; };
+        [44]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879536606;}; -- Tome of the Midnight Raven
+        [45]={[2]={["GENERIC_MITHRIL"]=30;};[1]=1879536606;}; -- Tome of the Midnight Raven
+        [46]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879516874;}; -- Tome of the Pumpkin Huorn
+        [47]={[2]={["GENERIC_MITHRIL"]=30;};[1]=1879516874;}; -- Tome of the Pumpkin Huorn
+        [48]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879463033;}; -- Tome of the Autumn Aurochs
+        [49]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879493469;}; -- Tome of the Ghostly Cat
+        [50]={[2]={["GENERIC_MITHRIL"]=30;};[1]=1879493469;}; -- Tome of the Ghostly Cat
+        [51]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879493471;}; -- Tome of the Windfell Owl
+        [52]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879470568;}; -- Tome of the Forest-spirit Goat
+        [53]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879338918;}; -- Tome of the Brown Bat
+        [54]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879339331;}; -- Tome of the Leaf-fall Kite
+        [55]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879339324;}; -- Tome of the Oaken Kite
+        [56]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879361465;}; -- Tome of the Gourd-lurker
+        [57]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879381815;}; -- Tome of the Black Cat
+        [58]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879394584;}; -- Tome of the Badger
+        [59]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879412826;}; -- Tome of the Spooky Jackdaw
+        [60]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879412834;}; -- Tome of the Harbinger of the Sage's Storm
+        [61]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879412828;}; -- Tome of the Soot-feathered Crow
+        [62]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879361467;}; -- Tome of the Lantern Gourd-lurker
+        [63]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879396938;}; -- Tome of the Black Marble Wolf-dog
+        [64]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879412830;}; -- Tome of the Night Sky Craban
+        [65]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Dyes"; }; };
+        [66]={[3]=6;[2]={["GENERIC_MITHRIL"]=10;};[1]=1879329680;}; -- 6 Imladris Fallen Leaf Dyes
+        [67]={[3]=6;[2]={["GENERIC_MITHRIL"]=10;};[1]=1879329688;}; -- 6 Ashenslades Green Dyes
+        [68]={[3]=6;[2]={["HARVESTMATH_FESTIVAL"]=20;};[1]=1879337947;}; -- 6 Autumn Leaf Dyes
+        [69]={[3]=6;[2]={["HARVESTMATH_FESTIVAL"]=20;};[1]=1879337948;}; -- 6 Twilight Purple Dyes
+        [70]={[2]={["HARVESTMATH_FESTIVAL"]=16;};[1]=1879397282;}; -- Assortment of Dwarf-candles
+        [71]={[3]=5;[2]={["HARVESTMATH_FESTIVAL"]=8;};[1]=1879387361;}; -- 5 Yellow Dwarf-candles
+        [72]={[3]=5;[2]={["HARVESTMATH_FESTIVAL"]=8;};[1]=1879387362;}; -- 5 Red Dwarf-candles
+        [73]={[3]=5;[2]={["HARVESTMATH_FESTIVAL"]=8;};[1]=1879387363;}; -- 5 Green Dwarf-candles
+        [74]={[3]=5;[2]={["HARVESTMATH_FESTIVAL"]=8;};[1]=1879387360;}; -- 5 Blue Dwarf-candles
+        [75]={[3]=5;[2]={["HARVESTMATH_FESTIVAL"]=8;};[1]=1879387357;}; -- 5 Orange Dwarf-candles
+        [76]={[3]=5;[2]={["HARVESTMATH_FESTIVAL"]=8;};[1]=1879387358;}; -- 5 White Dwarf-candles
+        [77]={[3]=5;[2]={["HARVESTMATH_FESTIVAL"]=8;};[1]=1879387359;}; -- 5 Purple Dwarf-candles
+        [78]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cosmetic Clothing - Gift Boxes"; }; };
+        [79]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879536640;}; -- Garments of the Midnight Raven - Gift-wrapped Selection Box
+        [80]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879516968;}; -- Cobweb Garments - Gift-wrapped Selection Box
+        [81]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879494444;}; -- Garments of Masked Wisdom - Gift-wrapped Selection Box
+        [82]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879470570;}; -- Garments of the Forest-spirit - Gift-wrapped Selection Box
+        [83]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879412795;}; -- Harvestmath Garments - Gift-wrapped selection box
+        [84]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879394569;}; -- Garments of the Autumn Traveller - Gift-wrapped selection box
+        [85]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879361281;}; -- Autumn Leafmail Shoulders - Gift-wrapped
+        [86]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879361284;}; -- Autumn Leafmail Hauberk - Gift-wrapped
+        [87]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879361283;}; -- Autumn Leafmail Dress - Gift-wrapped
+        [88]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879361280;}; -- Autumn Leafmail Cloak - Gift-wrapped
+        [89]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879361282;}; -- Hooded Autumn Leafmail Cloak - Gift-wrapped
+        [90]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879381544;}; -- Cloak of the Autumn Wanderer - Gift Wrapped
+        [91]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879381551;}; -- Hooded Cloak of the Autumn Wanderer - Gift Wrapped
+        [92]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879381545;}; -- Travelling Robes of the Autumn Wanderer - Gift Wrapped
+        [93]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879381549;}; -- Mask of the Autumn Wanderer - Gift Wrapped
+        [94]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Fall Festival Steeds - Mithril I"; }; };
+        [95]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879536630;}; -- Steed of the Midnight Raven
+        [96]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879536642;}; -- War-steed Cosmetics of the Midnight Raven
+        [97]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879517201;}; -- Fall Hobby-broom
+        [98]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879470559;}; -- Elk of the Forest-spirit
+        [99]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879412855;}; -- Caparison of the Autumn Sage's Bearance
+        [100]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879412853;}; -- Mask of the Autumn Sage's Bearance
+        [101]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879412858;}; -- Saddle of the Autumn Sage's Bearance
+        [102]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879412852;}; -- Steed of the Autumn Sage
+        [103]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879394566;}; -- Steed of the Autumn Traveller
+        [104]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879381653;}; -- Harbinger of Autumn Night
+        [105]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879381563;}; -- Lamp of the Harbinger
+        [106]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879381562;}; -- Harness of the Harbinger
+        [107]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879381566;}; -- Faceplate of the Harbinger
+        [108]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879381564;}; -- Tattered Feathers of the Harbinger
+        [109]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879381565;}; -- Saddle of the Harbinger
+        [110]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879360378;}; -- Steed of Eldar Autumn
+        [111]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Fall Festival Steeds - Mithril II"; }; };
+        [112]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879360375;}; -- Caparison of Eldar Autumn
+        [113]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879360370;}; -- Head-piece of Eldar Autumn
+        [114]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879360372;}; -- Saddle of Eldar Autumn
+        [115]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879360373;}; -- Tail of Eldar Autumn
+        [116]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879338653;}; -- Steed of the Gloaming Autumn
+        [117]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879338704;}; -- Caparison of the Gloaming Autumn
+        [118]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879338716;}; -- Head of the Gloaming Autumn
+        [119]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879338720;}; -- Leggings of the Gloaming Autumn
+        [120]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879338721;}; -- Saddle of the Gloaming Autumn
+        [121]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879338723;}; -- Tail of the Gloaming Autumn
+        [122]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879328779;}; -- Steed of the Anórien Autumn
+        [123]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879328781;}; -- Caparison of the Anórien Autumn
+        [124]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879315554;}; -- Steed of the Autumn Sun
+        [125]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879315551;}; -- Caparison of the Autumn Sun
+        [126]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879277202;}; -- Spooky Steed of the Bat
+        [127]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879277240;}; -- Spooky Caparison of the Bat
+        [128]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879255353;}; -- Harvest-brew Steed
+        [129]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879099081;}; -- Harvestmath Steed
+        [130]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879173351;}; -- Sable Harvestmath Steed
+        [131]={[2]={["GENERIC_MITHRIL"]=70;};[1]=1879220550;}; -- Autumnfest Steed
+        [132]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Essences"; }; };
+        [133]={[2]={["HARVESTMATH_FESTIVAL"]=140;};[1]=1879439435;}; -- Essence Reclamation Scroll
+        [134]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Tunics, Trousers, Dresses, and Outfits"; }; };
+        [135]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879536595;}; -- Robe of the Midnight Raven
+        [136]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879516614;}; -- Cobweb Robe
+        [137]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879493402;}; -- Robe of Masked Wisdom
+        [138]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879470524;}; -- Tunic of the Forest-spirit
+        [139]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879412779;}; -- Vestments of the Autumn Sage
+        [140]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879412785;}; -- Tunic of the Leaf-turner
+        [141]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879394556;}; -- Trousers of the Autumn Traveller
+        [142]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879394559;}; -- Tunic of the Autumn Traveller
+        [143]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879381542;}; -- Travelling Robes of the Autumn Wanderer
+        [144]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879361266;}; -- Autumn Leafmail Hauberk
+        [145]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879361262;}; -- Autumn Leafmail Dress
+        [146]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879328784;}; -- Dress of the Anórien Autumn
+        [147]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879315549;}; -- Robe of the Autumn Sun
+        [148]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879277177;}; -- Spooky Robe of the Bat
+        [149]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879255513;}; -- Harvest-brew Long-sleeved Tunic & Trousers
+        [150]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879255515;}; -- Harvest-brew Short-sleeved Tunic & Trousers
+        [151]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879255509;}; -- Harvest-brew Dress
+        [152]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879220548;}; -- Tunic & Trousers of Autumn Nights
+        [153]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879220545;}; -- Gown of Autumn Nights
+        [154]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cosmetic Weapons and Shields"; }; };
+        [155]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879361367;}; -- Shield of Eldar Autumn
+        [156]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Shoulder-pieces and Footwear"; }; };
+        [157]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879536597;}; -- Boots of the Midnight Raven
+        [158]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879536596;}; -- Scarf of the Midnight Raven
+        [159]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879493389;}; -- Boots of Masked Wisdom
+        [160]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879470525;}; -- Mantle of the Forest-spirit
+        [161]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879470523;}; -- Boots of the Forest-spirit
+        [162]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879412782;}; -- Cowl and Hat of the Autumn Sage
+        [163]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879361263;}; -- Autumn Leafmail Shoulder-guards
+        [164]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879338598;}; -- Mantle of the Gloaming Autumn
+        [165]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Cloaks and Back Items"; }; };
+        [166]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879536594;}; -- Cloak of the Midnight Raven
+        [167]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879516604;}; -- Cobweb Cloak
+        [168]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879516602;}; -- Hooded Cobweb Cloak
+        [169]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879470527;}; -- Cloak of the Forest-spirit
+        [170]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879470528;}; -- Hooded Cloak of the Forest-spirit
+        [171]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879412786;}; -- Cosmetic Bee Wings
+        [172]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879412780;}; -- Cosmetic Raven Wings
+        [173]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879412783;}; -- Cloak of the Autumn Sage
+        [174]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879412784;}; -- Hooded Cloak of the Autumn Sage
+        [175]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879394558;}; -- Cloak of the Autumn Traveller
+        [176]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879381541;}; -- Cloak of the Autumn Wanderer
+        [177]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879381543;}; -- Hooded Cloak of the Autumn Wanderer
+        [178]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879361265;}; -- Autumn Leafmail Cloak
+        [179]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879361259;}; -- Hooded Autumn Leafmail Cloak
+        [180]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879338597;}; -- Cloak of the Gloaming Autumn
+        [181]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879328785;}; -- Pack of the Anórien Autumn
+        [182]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879315548;}; -- Cloak of the Autumn Sun
+        [183]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879315550;}; -- Hooded Cloak of the Autumn Sun
+        [184]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879277176;}; -- Spooky Cloak of the Bat
+        [185]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879277175;}; -- Spooky Hooded Cloak of the Bat
+        [186]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879255512;}; -- Harvest-brew Cloak
+        [187]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879255514;}; -- Harvest-brew Hooded Cloak
+        [188]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879220547;}; -- Cloak of Autumn Nights
+        [189]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879220546;}; -- Wrap of the Turning Leaves
+        [190]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879191232;}; -- Cloak of the Falling Leaves
+        [191]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879181901;}; -- Cloak of the Boar
+        [192]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879181904;}; -- Cloak of the Raven
+        [193]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Hats and Masks"; }; };
+        [194]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879536593;}; -- Hood of the Midnight Raven
+        [195]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879516876;}; -- Cobweb Hat
+        [196]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879493388;}; -- Wisdom's Mask
+        [197]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879470526;}; -- Mask of the Forest-spirit
+        [198]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879412781;}; -- Mask of the Leaf-turner
+        [199]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879381540;}; -- Mask of the Autumn Wanderer
+        [200]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879119388;}; -- Goblin Festival Mask
+        [201]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879181902;}; -- Boar-head Festival Mask
+        [202]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879181903;}; -- Raven Festival Mask
+        [203]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879119390;}; -- Pipe Festival Mask
+        [204]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879255516;}; -- Harvest-brew Hat
+        [205]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879255510;}; -- Harvest-brew Circlet
+        [206]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Handheld Cosmetics"; }; };
+        [207]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879516932;}; -- Harvestmath Cauldron
+        [208]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879255481;}; -- Beer Stein
+        [209]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879208609;}; -- Basket of Apples
+        [210]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879255479;}; -- Fall Gourd
+        [211]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879255482;}; -- Pretzel
+        [212]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Housing Items - 1"; }; };
+        [213]={[2]={["HARVESTMATH_FESTIVAL"]=10;};[1]=1879536599;}; -- Chair of the Midnight Raven
+        [214]={[2]={["HARVESTMATH_FESTIVAL"]=15;};[1]=1879536600;}; -- Table of the Midnight Raven
+        [215]={[2]={["HARVESTMATH_FESTIVAL"]=30;};[1]=1879536598;}; -- Working Table of the Midnight Raven
+        [216]={[2]={["HARVESTMATH_FESTIVAL"]=8;};[1]=1879498896;}; -- Small Bonepile
+        [217]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879498897;}; -- Medium Bonepile
+        [218]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879498898;}; -- Large Bonepile
+        [219]={[2]={["HARVESTMATH_FESTIVAL"]=20;};[1]=1879517277;}; -- Dark Ritual Altar
+        [220]={[2]={["HARVESTMATH_FESTIVAL"]=20;};[1]=1879517278;}; -- Blood-stained Dark Ritual Altar
+        [221]={[2]={["HARVESTMATH_FESTIVAL"]=20;};[1]=1879517279;}; -- Marble Ritual Altar
+        [222]={[2]={["HARVESTMATH_FESTIVAL"]=20;};[1]=1879517280;}; -- Blood-stained Marble Ritual Altar
+        [223]={[2]={["HARVESTMATH_FESTIVAL"]=30;};[1]=1879516933;}; -- Heating Cauldron
+        [224]={[2]={["HARVESTMATH_FESTIVAL"]=30;};[1]=1879508822;}; -- Small Potions Table
+        [225]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879498938;}; -- Pumpkins
+        [226]={[2]={["HARVESTMATH_FESTIVAL"]=10;};[1]=1879518296;}; -- 'Spooky' Themes
+        [227]={[2]={["HARVESTMATH_FESTIVAL"]=10;};[1]=1879518294;}; -- 'Haunted House' Ambience
+        [228]={[2]={["HARVESTMATH_FESTIVAL"]=10;};[1]=1879518295;}; -- 'Haunted Yard' Ambience
+        [229]={[2]={["HARVESTMATH_FESTIVAL"]=8;};[1]=1879501058;}; -- Webbed Thorny Hedge
+        [230]={[2]={["HARVESTMATH_FESTIVAL"]=8;};[1]=1879501055;}; -- Wild Webbed Hedge
+        [231]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Housing Items - 2"; }; };
+        [232]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879460528;}; -- Small Grove of Fiery Fall Trees
+        [233]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879493558;}; -- Harvest Pumpkin Planter
+        [234]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879361890;}; -- Pillar of Hay
+        [235]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879361889;}; -- Loosely Packed Pillar of Hay
+        [236]={[2]={["HARVESTMATH_FESTIVAL"]=40;};[1]=1879101927;}; -- Scarecrow
+        [237]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879381925;}; -- Mounted Warg with Candle
+        [238]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879059596;}; -- Cauldron
+        [239]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879381912;}; -- Wicked Cage
+        [240]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879382084;}; -- Long-burning Candlestand
+        [241]={[2]={["HARVESTMATH_FESTIVAL"]=30;};[1]=1879382035;}; -- Decorative Gourds
+        [242]={[2]={["HARVESTMATH_FESTIVAL"]=30;};[1]=1879382038;}; -- Potions Table
+        [243]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879382105;}; -- Ceiling Bat
+        [244]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879381906;}; -- Ceiling Spider
+        [245]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879382011;}; -- Spooky Chair
+        [246]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879393759;}; -- Ancient Beech Tree
+        [247]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879393756;}; -- Barrel of Gladdens
+        [248]={[2]={["HARVESTMATH_FESTIVAL"]=30;};[1]=1879412863;}; -- Chest of the Spider-queen
+        [249]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879339204;}; -- Ginger Cat on a Cushion
+        [250]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879339214;}; -- Whiteshirt Cat on a Cushion
+        [251]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879339207;}; -- Sleeping Brown Cat
+        [252]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879255491;}; -- Láthbear with Stein
+        [253]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879255493;}; -- Craban Perched on Stein
+        [254]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879255489;}; -- Craban Drinking from Stein
+        [255]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879255490;}; -- Table with Sausage and Pretzels
+        [256]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879255492;}; -- Autumnal Apple Tree
+        [257]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879184533;}; -- Haunted Tree
+        [258]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879101977;}; -- Wooden Beaver Statue
+        [259]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879101957;}; -- Giant Pumpkin
+        [260]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879101942;}; -- Harvest Statue
+        [261]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879101944;}; -- Goblin Statue
+        [262]={[2]={["HARVESTMATH_FESTIVAL"]=8;};[1]=1879101953;}; -- Free Peoples' Flag
+        [263]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879101927;}; -- Scarecrow
+        [264]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879101963;}; -- Sundial
+        [265]={[2]={["HARVESTMATH_FESTIVAL"]=8;};[1]=1879131125;}; -- Autumn Welcome Mat
+        [266]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879191235;}; -- Painting of a Watchful Warg
+        [267]={[2]={["HARVESTMATH_FESTIVAL"]=18;};[1]=1879191236;}; -- Painting of a Watchful Goblin
+        [268]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879205543;}; -- Map of Rivendell
+        [269]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879112727;}; -- Map of Eregion
+        [270]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879205553;}; -- Map of Enedwaith
+        [271]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879205559;}; -- Map of Mirkwood
+        [272]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Consumables"; }; };
+        [273]={[3]=5;[2]={["HARVESTMATH_FESTIVAL"]=3;};[1]=1879161463;}; -- 5 Specimen Jars: Gross Bugs
+        [274]={[3]=5;[2]={["HARVESTMATH_FESTIVAL"]=3;};[1]=1879161496;}; -- 5 Applications of 'Coveritol'
+        [275]={[3]=5;[2]={["HARVESTMATH_FESTIVAL"]=3;};[1]=1879161620;}; -- 5 Buckets of Fear
+        [276]={[3]=5;[2]={["HARVESTMATH_FESTIVAL"]=3;};[1]=1879161710;}; -- 5 Potent Bird Seed
+        [277]={[3]=5;[2]={["HARVESTMATH_FESTIVAL"]=3;};[1]=1879161765;}; -- 5 Candles and Mirrors
+        [278]={[3]=5;[2]={["HARVESTMATH_FESTIVAL"]=3;};[1]=1879161781;}; -- 5 Black Silk Gloves
+        [279]={[3]=5;[2]={["HARVESTMATH_FESTIVAL"]=3;};[1]=1879161779;}; -- 5 Spider Legs
+        [280]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Emotes"; }; };
+        [281]={[2]={["HARVESTMATH_FESTIVAL"]=12;};[1]=1879190618;}; -- BOO!
+        [282]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Instruments"; }; };
+        [283]={[2]={["HARVESTMATH_FESTIVAL"]=4;};[1]=1879097472;}; -- Guide to the Cowbell
+        [284]={[2]={["HARVESTMATH_FESTIVAL"]=20;};[1]=1879378382;}; -- Lonely Mountain Bassoon
+        [285]={[1]="DIVIDER1"; [2]={["ENGLISH"] = "Mogo Bracegirdle, Costumer"; }; };
+        [286]={[1]="DIVIDER2"; [2]={["ENGLISH"] = "Treats and Trickery"; }; };
+        [287]={[2]={["GENERIC_MITHRIL"]=75;};[1]=1879520602;}; -- Guise of Nakási Wave-reaper
+        [288]={[2]={["GENERIC_MITHRIL"]=75;};[1]=1879520611;}; -- Guise of Hármelak Golden-hand
+        [289]={[2]={["GENERIC_MITHRIL"]=50;};[1]=1879494886;}; -- Guise of Galadriel
+        [290]={[2]={["GENERIC_MITHRIL"]=100;};[1]=1879494888;}; -- Guise of Battle-ready Galadriel
+        [291]={[2]={["GENERIC_MITHRIL"]=75;};[1]=1879494887;}; -- Guise of a Goblin Corsair
+        [292]={[2]={["GENERIC_MITHRIL"]=50;};[1]=1879412818;}; -- Guise of Gandalf the Grey
+        [293]={[2]={["GENERIC_MITHRIL"]=75;};[1]=1879412815;}; -- Guise of Gandalf the White
+        [294]={[2]={["GENERIC_MITHRIL"]=50;};[1]=1879412814;}; -- Guise of Goldberry
+        [295]={[2]={["GENERIC_MITHRIL"]=125;};[1]=1879412820;}; -- Guise of Tom Bombadil
+        [296]={[2]={["GENERIC_MITHRIL"]=50;};[1]=1879412821;}; -- Guise of Durin VI
+        [297]={[2]={["GENERIC_MITHRIL"]=50;};[1]=1879412817;}; -- Guise of Karazgar
+        [298]={[2]={["GENERIC_MITHRIL"]=75;};[1]=1879412819;}; -- Guise of Saruman
+        [299]={[2]={["GENERIC_MITHRIL"]=75;};[1]=1879412816;}; -- Guise of Gollum
+        [300]={[3]=3;[2]={["HARVESTMATH_FESTIVAL"]=1;};[1]=1879381655;}; -- Basic Costume Grab-bag
+        [301]={[2]={["HARVESTMATH_FESTIVAL"]=24;};[1]=1879381731;}; -- Doormat in a Box
+        [302]={[2]={["GENERIC_MITHRIL"]=25;};[1]=1879381670;}; -- Guise of Skorgrím Dourhand
+        [303]={[2]={["GENERIC_MITHRIL"]=25;};[1]=1879381671;}; -- Guise of Sara Oakheart
+        [304]={[2]={["GENERIC_MITHRIL"]=50;};[1]=1879381654;}; -- Guise of Amarthiel
+        [305]={[2]={["GENERIC_MITHRIL"]=50;};[1]=1879381672;}; -- Guise of Mordirith
+        [306]={[2]={["GENERIC_MITHRIL"]=100;};[1]=1879381673;}; -- Guise of the Witch-king of Angmar
     };
 
     -- YULE --------------------------------------------------------------------------------------------

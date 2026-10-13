@@ -4,6 +4,9 @@ v2.4.2 changes:
             Added icon and text for Fat Mayor highlighting which item to use.
             Added options to change colors of each section and opacity. Set opacity to 0% to hide the timer.
         Festival Buddy II will now try to select the correct festival based on the date and the festival introduction quest. Manually choosing a festival will override this for a period of time.
+        Harvestmath:
+            Updated barter items for Rosa Hornblower, Fall Festival Trader
+            Added barter items for Mogo Bracegirdle, Costumer
     Quick Guides:
         Farmers Faire:
             Added "All" and "Fastest" buttons to toggle which quests are included in the Quick Guide.
