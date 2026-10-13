@@ -1,33 +1,33 @@
-key:620968308:111477379
-key:620968308:111477392
-key:620968323:111477384
-key:620878654:22075073
-key:620878654:22075074
-key:620878654:22075075
-key:620878654:22075076
-key:620878654:22075077
-key:620968205:111477400
-key:620890679:22075073
-key:620891661:22075073
-key:620891661:22075074
-key:620889727:22075073
-key:620968341:111477383
-key:620968341:111477384
-key:620968341:111477378
-key:620891465:22075073
-key:620891465:22075074
-key:620891465:22075075
-key:620890162:22075073
-key:620890162:22075074
-key:620890162:22075075
-key:620890264:22075073
-key:620890264:22075074
-key:620890264:22075076
-key:620890264:22075078
-key:620890264:22075080
-key:620890264:84765776
-key:620890264:84765778
-key:620890264:84765780
-key:620890264:84765781
-key:620968341:111477427
-key:620890089:22075073
+key:620968308:111477379 -- Collect the jug of cool water
+key:620968308:111477392 -- Cool off overheated patrons (%d/%d)
+key:620968323:111477384 -- Recover crashed kites (%d/%d)
+key:620878654:22075073 -- Find Melilot's missing porridge
+key:620878654:22075074 -- Find Melilot's missing cheeses
+key:620878654:22075075 -- Find Melilot's missing bread
+key:620878654:22075076 -- Find Melilot's missing eggs
+key:620878654:22075077 -- Find Melilot's missing mushrooms
+key:620968205:111477400 -- Defeat heat waves (%d/%d)
+key:620890679:22075073 -- Accuse drunkards of disorderly conduct (%d/%d)
+key:620891661:22075073 -- Drink a beer to commiserate with the poor harangued drunkard
+key:620891661:22075074 -- Throw rotten vegetables at the fun-spoiling Bounders (%d/%d)
+key:620889727:22075073 -- Bring the mayor something to relieve him (%d/%d)
+key:620968341:111477383 -- Collect frozen sweet-cream
+key:620968341:111477384 -- Collect fresh fruit from the market in Bywater
+key:620968341:111477378 -- Get honey from the Green Dragon
+key:620891465:22075073 -- Find Ernwyd Bolger and persuade him to return to work
+key:620891465:22075074 -- Find Opalessa Sandheaver and persuade her to return to work
+key:620891465:22075075 -- Find Alric Hornblower and persuade him to return to work
+key:620890162:22075073 -- Collect green apples (%d/%d)
+key:620890162:22075074 -- Collect red apples (%d/%d)
+key:620890162:22075075 -- Collect golden apples (%d/%d)
+key:620890264:22075073 -- Search for the recipe for Savoury Mushroom Stew
+key:620890264:22075074 -- Collect the recipe for Savoury Mushroom Stew
+key:620890264:22075076 -- Add beef to the stew
+key:620890264:22075078 -- Add the salt to the stew
+key:620890264:22075080 -- Add the water to the stew
+key:620890264:84765776 -- Add the carrots to the stew
+key:620890264:84765778 -- Add the bacon to the stew
+key:620890264:84765780 -- Add mushrooms to the stew (%d/%d)
+key:620890264:84765781 -- Use the stew-pot to cook the Savoury Mushroom Stew
+key:620968341:111477427 -- Mix the dessert
+key:620890089:22075073 -- Collect the basket of cabbages (eat pie for a burst of energy)

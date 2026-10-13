@@ -1,8 +1,8 @@
-key:620968205:177082809
-key:620890679:136263297
-key:620890162:136263297
-key:620890162:136263298
-key:620890162:136263299
-key:620890264:32729284
-key:620889727:136263297
-key:620891661:136263298
+key:620968205:177082809 -- Defeated a heat wave (%d/%d)
+key:620890679:136263297 -- Drunkard accused (%d/%d)
+key:620890162:136263297 -- Collect a green apple (%d/%d)
+key:620890162:136263298 -- Collected a red apple (%d/%d)
+key:620890162:136263299 -- Collected a golden apple (%d/%d)
+key:620890264:32729284 -- Added mushrooms to the stew (%d/%d)
+key:620889727:136263297 -- You have relieved the mayor (%d/%d)
+key:620891661:136263298 -- Threw an unpleasant-smelling vegetable (%d/%d)

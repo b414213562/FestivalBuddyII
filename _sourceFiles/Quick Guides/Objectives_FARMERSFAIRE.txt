@@ -1,72 +1,72 @@
-key:620790755:22075074
-key:620878654:136263297
-key:620878654:136263298
-key:620878654:136263299
-key:620878654:136263300
-key:620878654:136263301
-key:620878654:22075073
-key:620878654:22075074
-key:620878654:22075075
-key:620878654:22075076
-key:620878654:22075077
-key:620889727:136263297
-key:620889727:22075073
-key:620890162:136263297
-key:620890162:136263298
-key:620890162:136263299
-key:620890162:22075073
-key:620890162:22075074
-key:620890162:22075075
-key:620890264:136263297
-key:620890264:136263298
-key:620890264:136263299
-key:620890264:136263300
-key:620890264:136263301
-key:620890264:136263302
-key:620890264:136263303
-key:620890264:136263304
-key:620890264:136263305
-key:620890264:22075073
-key:620890264:22075074
-key:620890264:22075076
-key:620890264:22075078
-key:620890264:22075080
-key:620890264:32729280
-key:620890264:32729281
-key:620890264:32729282
-key:620890264:32729283
-key:620890264:32729284
-key:620890264:32729285
-key:620890264:84765776
-key:620890264:84765778
-key:620890264:84765780
-key:620890264:84765781
-key:620890679:136263297
-key:620890679:22075073
-key:620891465:136263297
-key:620891465:136263298
-key:620891465:136263299
-key:620891465:22075073
-key:620891465:22075074
-key:620891465:22075075
-key:620891661:136263297
-key:620891661:136263298
-key:620891661:22075073
-key:620968203:262725913
-key:620968205:111477400
-key:620968205:177082809
-key:620968231:262725912
-key:620968308:111477379
-key:620968308:111477392
-key:620968308:177082788
-key:620968308:177082801
-key:620968322:177082790
-key:620968323:111477384
-key:620968323:177082793
-key:620968341:111477378
-key:620968341:111477383
-key:620968341:111477384
-key:620968341:177082772
-key:620968341:177082788
-key:620968341:177082793
-key:620890089:136263297
+key:620790755:22075074 -- Found item (%d/%d)
+key:620878654:136263297 -- You have collected the missing porridge
+key:620878654:136263298 -- You have collected the missing cheese basket
+key:620878654:136263299 -- You have collected the missing bread basket
+key:620878654:136263300 -- You have collected the missing egg basket
+key:620878654:136263301 -- You have collected the missing mushrooms
+key:620878654:22075073 -- Find Melilot's missing porridge
+key:620878654:22075074 -- Find Melilot's missing cheeses
+key:620878654:22075075 -- Find Melilot's missing bread
+key:620878654:22075076 -- Find Melilot's missing eggs
+key:620878654:22075077 -- Find Melilot's missing mushrooms
+key:620889727:136263297 -- You have relieved the mayor (%d/%d)
+key:620889727:22075073 -- Bring the mayor something to relieve him (%d/%d)
+key:620890162:136263297 -- Collect a green apple (%d/%d)
+key:620890162:136263298 -- Collected a red apple (%d/%d)
+key:620890162:136263299 -- Collected a golden apple (%d/%d)
+key:620890162:22075073 -- Collect green apples (%d/%d)
+key:620890162:22075074 -- Collect red apples (%d/%d)
+key:620890162:22075075 -- Collect golden apples (%d/%d)
+key:620890264:136263297 -- Ah! There's that recipe.
+key:620890264:136263298 -- Collected the recipe
+key:620890264:136263299 -- Ah! There is the beef for the stew.
+key:620890264:136263300 -- Added beef to the stew
+key:620890264:136263301 -- You spot the salt, which is the next ingredient for the stew
+key:620890264:136263302 -- Added the salt to the stew
+key:620890264:136263303 -- You spot the water, which is the next ingredient for the stew
+key:620890264:136263304 -- Added the water to the stew
+key:620890264:136263305 -- You spot the carrots, which are the next ingredients for the stew
+key:620890264:22075073 -- Search for the recipe for Savoury Mushroom Stew
+key:620890264:22075074 -- Collect the recipe for Savoury Mushroom Stew
+key:620890264:22075076 -- Add beef to the stew
+key:620890264:22075078 -- Add the salt to the stew
+key:620890264:22075080 -- Add the water to the stew
+key:620890264:32729280 -- Added the carrots to the stew
+key:620890264:32729281 -- You spotted bacon, which is next on the list
+key:620890264:32729282 -- Added bacon to the stew
+key:620890264:32729283 -- You spot mushrooms! That's the main ingredient.
+key:620890264:32729284 -- Added mushrooms to the stew (%d/%d)
+key:620890264:32729285 -- Made a delicious stew!
+key:620890264:84765776 -- Add the carrots to the stew
+key:620890264:84765778 -- Add the bacon to the stew
+key:620890264:84765780 -- Add mushrooms to the stew (%d/%d)
+key:620890264:84765781 -- Use the stew-pot to cook the Savoury Mushroom Stew
+key:620890679:136263297 -- Drunkard accused (%d/%d)
+key:620890679:22075073 -- Accuse drunkards of disorderly conduct (%d/%d)
+key:620891465:136263297 -- Convinced Ernwyd Bolger to return to work
+key:620891465:136263298 -- Convinced Opalessa Sandheaver to return to work
+key:620891465:136263299 -- Convinced Alric Hornblower to return to work
+key:620891465:22075073 -- Find Ernwyd Bolger and persuade him to return to work
+key:620891465:22075074 -- Find Opalessa Sandheaver and persuade her to return to work
+key:620891465:22075075 -- Find Alric Hornblower and persuade him to return to work
+key:620891661:136263297 -- You are now somewhat drunk! Hey...when did all those rotten vegetables get in your inventory?
+key:620891661:136263298 -- Threw an unpleasant-smelling vegetable (%d/%d)
+key:620891661:22075073 -- Drink a beer to commiserate with the poor harangued drunkard
+key:620968203:262725913 -- Time to fish for mathoms!
+key:620968205:111477400 -- Defeat heat waves (%d/%d)
+key:620968205:177082809 -- Defeated a heat wave (%d/%d)
+key:620968231:262725912 -- You have delivered the ice to the dessert vendor
+key:620968308:111477379 -- Collect the jug of cool water
+key:620968308:111477392 -- Cool off overheated patrons (%d/%d)
+key:620968308:177082788 -- Collected the jug of cool water
+key:620968308:177082801 -- Created a cooling fountain! (%d/%d)
+key:620968322:177082790 -- Flew a summer kite (%d/%d)
+key:620968323:111477384 -- Recover crashed kites (%d/%d)
+key:620968323:177082793 -- Recovered a crashed kite (%d/%d)
+key:620968341:111477378 -- Get honey from the Green Dragon
+key:620968341:111477383 -- Collect frozen sweet-cream
+key:620968341:111477384 -- Collect fresh fruit from the market in Bywater
+key:620968341:177082772 -- Mixed the dessert
+key:620968341:177082788 -- Collected frozen sweet-cream
+key:620968341:177082793 -- Collected fresh fruit
+key:620890089:136263297 -- Collected the basket of cabbages
