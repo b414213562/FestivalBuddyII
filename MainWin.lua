@@ -38,7 +38,7 @@ function DrawMainWin()
             -- A timer belongs to its current festival; clear it rather than carrying it to another guide.
             QuickGuideTimerReset(wQuickGuideWinParent.timer);
             if (Args.IsAutomatic ~= true) then
-                local currentDate = Turbine.Engine.GetDate();
+                local currentDate = GetTodaysDate();
                 SETTINGS.FESTIVAL_LAST_MANUAL_SELECTION = {
                     Year = currentDate.Year;
                     Month = currentDate.Month;
@@ -781,7 +781,7 @@ end
 
 function RefreshFestival(festival)
     if (festival == SELECTEDFESTIVAL) then return; end
-    if (not CanAutomaticallySelectFestival(Turbine.Engine.GetDate())) then return; end
+    if (not CanAutomaticallySelectFestival(GetTodaysDate())) then return; end
 
     -- Update the text of the dropdown:
     ddFestivals:SetText(GetString(_LANG.FESTIVALS[festival]));
@@ -960,7 +960,7 @@ function RefreshDebuffView()
                 cCURITEMICON:SetPosition(0,2);
 
                 local _END = GetEndTime(_CHARDATA.CHARS[MYCHAR:GetName()][SELECTEDFESTIVAL]["COOLDOWNS"][v.key]);
-                local _CURDATE = Turbine.Engine.GetDate();
+                local _CURDATE = GetTodaysDate();
 
                 local ENDMINUTE = tostring(_END.MINUTE);
                 if string.len(ENDMINUTE) == 1 then ENDMINUTE = "0" .. ENDMINUTE end;

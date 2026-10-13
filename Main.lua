@@ -200,7 +200,7 @@ function LoadSettingsFileCharacter()
         SETTINGS.FESTIVAL = FESTIVALS_UI_ORDER[1];
     end
 
-    local currentDate = Turbine.Engine.GetDate();
+    local currentDate = GetTodaysDate();
     local suggestedFestival = GetFestivalForCalendarMonth(currentDate.Month);
     if (suggestedFestival and CanAutomaticallySelectFestival(currentDate)) then
         SETTINGS.FESTIVAL = suggestedFestival;

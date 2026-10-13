@@ -286,7 +286,7 @@ end
 function DetectTimeZone(serverMonth, serverDay, serverHour, serverMinute, serverAmPm)
     local serverMinuteOfDay = serverHour * 60 + serverMinute;
 
-    local localDate = Turbine.Engine.GetDate();
+    local localDate = GetTodaysDate();
     local localDay, localHour, localMinute = localDate.Day, localDate.Hour, localDate.Minute;
     local localMinuteOfDay = localHour * 60 + localMinute;
 

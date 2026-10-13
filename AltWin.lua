@@ -252,7 +252,7 @@ function RefreshAltDisplay(NAME)
             cCURITEMICON:SetPosition(0,2);
 
             local _END = GetEndTime(v);
-            local _CURDATE = Turbine.Engine.GetDate();
+            local _CURDATE = GetTodaysDate();
 
             local ENDMINUTE = tostring(_END.MINUTE);
             if string.len(ENDMINUTE) == 1 then ENDMINUTE = "0" .. ENDMINUTE end;

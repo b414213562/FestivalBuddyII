@@ -278,7 +278,7 @@ function GetEndTime(EXPIRES)
     local ENDSTRING = "";
 
     local _REMAINING = ConvertTime(EXPIRES - Turbine.Engine.GetGameTime());
-    local _CURDATE = Turbine.Engine.GetDate();
+    local _CURDATE = GetTodaysDate();
 
     local endSECOND = _CURDATE.Second + _REMAINING.SECONDS;
     local endMINUTE = _CURDATE.Minute + _REMAINING.MINUTES;
@@ -407,6 +407,11 @@ function dump(o)
     else
         return ( tostring(o) )
     end
+end
+
+
+function GetTodaysDate()
+    return Turbine.Engine.GetDate();
 end
 
 
