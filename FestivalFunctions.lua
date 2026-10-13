@@ -1,8 +1,82 @@
 
 -- General functions specific to Festival Buddy
 
--- THIS FUNCTION IS CURRENTLY NOT USED.
+function GetFestivalForCalendarMonth(month)
+    local festivalsByMonth = {
+        [1] = YULE;
+        [2] = SPRING;
+        [3] = SPRING;
+        [4] = ANNIVERSARY;
+        [5] = ANNIVERSARY;
+        [6] = MIDSUMMER;
+        [7] = MIDSUMMER;
+        [8] = FARMERSFAIRE;
+        [9] = FARMERSFAIRE;
+        [10] = HARVESTMATH;
+        [11] = HARVESTMATH;
+        [12] = YULE;
+    };
+    return festivalsByMonth[month];
+end
 
+local function IsValidFestivalSelectionDate(date)
+    return type(date) == "table" and
+        type(date.Year) == "number" and
+        type(date.Month) == "number" and
+        type(date.Day) == "number" and
+        type(date.DayOfYear) == "number" and
+        type(date.Hour) == "number" and
+        type(date.Minute) == "number" and
+        type(date.Second) == "number";
+end
+
+local function IsDateBefore(date1, date2)
+    if (date1.Year ~= date2.Year) then return date1.Year < date2.Year; end
+    if (date1.Month ~= date2.Month) then return date1.Month < date2.Month; end
+    if (date1.Day ~= date2.Day) then return date1.Day < date2.Day; end
+    if (date1.Hour ~= date2.Hour) then return date1.Hour < date2.Hour; end
+    if (date1.Minute ~= date2.Minute) then return date1.Minute < date2.Minute; end
+    return date1.Second < date2.Second;
+end
+
+function HasFestivalManualSelectionCooldownElapsed(lastManualSelection, currentDate)
+    if (lastManualSelection == nil) then return true; end
+    if (not IsValidFestivalSelectionDate(lastManualSelection) or
+        not IsValidFestivalSelectionDate(currentDate) or
+        IsDateBefore(currentDate, lastManualSelection)) then
+        return false;
+    end
+
+    local elapsedDays = GetDayDifference(lastManualSelection, currentDate);
+    local lastSelectionTime = lastManualSelection.Hour * 3600 +
+        lastManualSelection.Minute * 60 + lastManualSelection.Second;
+    local currentTime = currentDate.Hour * 3600 +
+        currentDate.Minute * 60 + currentDate.Second;
+    if (currentTime < lastSelectionTime) then
+        elapsedDays = elapsedDays - 1;
+    end
+
+    return elapsedDays >= FESTIVAL_MANUAL_SELECTION_COOLDOWN_DAYS;
+end
+
+function CanAutomaticallySelectFestival(currentDate)
+    return SETTINGS.AUTO_SELECT_FESTIVAL == true and
+        HasFestivalManualSelectionCooldownElapsed(
+            SETTINGS.FESTIVAL_LAST_MANUAL_SELECTION,
+            currentDate);
+end
+
+function GetFestivalFromAutoBestowedQuest(cMessage)
+    for festivalKey, questNames in pairs(_LANG.FESTIVAL_START_QUESTS) do
+        local questName = GetString(questNames);
+        if (questName ~= "" and string.find(cMessage, questName, 1, true)) then
+            return festivalKey;
+        end
+    end
+    return nil;
+end
+
+-- THIS FUNCTION IS CURRENTLY NOT USED.
 function GetDebuffs()
 
     local EFFECTSCOUNT = EFFECTS:GetCount();
@@ -89,6 +163,11 @@ function DoesQuestHaveTargetsWithRequire(questKey)
 end
 
 function FilterNewQuests(cMessage)
+    local autoBestowedFestival = GetFestivalFromAutoBestowedQuest(cMessage);
+    if (autoBestowedFestival) then
+        RefreshFestival(autoBestowedFestival);
+    end
+
     local festivalKey, questKey = GetFestivalKeyAndQuestKeyFromNewQuest(cMessage);
     if (questKey) then
         RefreshFestival(festivalKey);

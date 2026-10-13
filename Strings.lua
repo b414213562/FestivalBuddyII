@@ -73,6 +73,39 @@ _LANG = {
         [ILAA]         = {["ENGLISH"] = "Inn League/Ale Association"; ["GERMAN"] = "Gasthausliga/Biergenossenschaft"};
     };
 
+    ["FESTIVAL_START_QUESTS"] = {
+        [SPRING] = {
+            ["ENGLISH"] = "Celebrate Spring!";
+            ["FRENCH"] = "Fêtez le printemps !";
+            ["GERMAN"] = "Feiert den Frühling!";
+        };
+        [ANNIVERSARY] = {
+            ["ENGLISH"] = "The Anniversary Celebration Has Arrived!";
+            ["FRENCH"] = "L'Événement anniversaire est de retour !";
+            ["GERMAN"] = "Das Jubiläumsfest ist da!";
+        };
+        [MIDSUMMER] = {
+            ["ENGLISH"] = "The Festival of Midsummer Has Arrived!";
+            ["FRENCH"] = "Le Festival du Solstice d'été est arrivé !";
+            ["GERMAN"] = "Das Mittsommerfest steht bevor!";
+        };
+        [FARMERSFAIRE] = {
+            ["ENGLISH"] = "The Farmers Faire Has Arrived!";
+            ["FRENCH"] = "La Foire des fermiers est arrivée !";
+            ["GERMAN"] = "Das Bauernfest ist da!";
+        };
+        [HARVESTMATH] = {
+            ["ENGLISH"] = "Fall Festival is Here!";
+            ["FRENCH"] = "Le Festival d'automne est arrivé !";
+            ["GERMAN"] = "Das Herbstfest ist da!";
+        };
+        [YULE] = {
+            ["ENGLISH"] = "Yule Festival is Here!";
+            ["FRENCH"] = "Le Festival de Yule est arrivé !";
+            ["GERMAN"] = "Das Julfest ist da!";
+        };
+    };
+
     ["OTHER"] = {
         ["BARTER"]      = {["ENGLISH"] = "Barter";          ["FRENCH"] = "Troqueur";            ["GERMAN"] = "Tausch";          };
         ["BARTERITEMS"] = {["ENGLISH"] = "Barter Items";    ["FRENCH"] = "Articles de troc";    ["GERMAN"] = "Tauschobjekte";   };
@@ -1090,6 +1123,12 @@ _LANG = {
         };
 
         ["ESCAPE_KEY_CLOSES_WINDOWS"] = { ["ENGLISH"] = "Escape key closes Festival Buddy windows"; ["GERMAN"] = "ESC-Taste schließt Festival Buddy"; };
+
+        ["AUTO_SELECT_FESTIVAL"] = {
+            ["ENGLISH"] = "Automatically select the likely festival";
+            ["FRENCH"] = "Sélectionner automatiquement le festival probable";
+            ["GERMAN"] = "Wahrscheinliches Fest automatisch auswählen";
+        };
 
         ["USE_NPC_COOLDOWN"] = { ["ENGLISH"] = "Use NPC Cooldown Window"; };
 

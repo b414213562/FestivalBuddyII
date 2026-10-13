@@ -20,6 +20,17 @@ function DrawGenericOptions(options, y)
     end
     y = y + 30;
 
+    local autoSelectFestival = Turbine.UI.Lotro.CheckBox();
+    autoSelectFestival:SetParent(options);
+    autoSelectFestival:SetText(GetString(_LANG.OPTIONS.AUTO_SELECT_FESTIVAL));
+    autoSelectFestival:SetSize(controlWidth, 20);
+    autoSelectFestival:SetPosition(indent, y);
+    autoSelectFestival:SetChecked(SETTINGS.AUTO_SELECT_FESTIVAL);
+    autoSelectFestival.CheckedChanged = function(sender, args)
+        SETTINGS.AUTO_SELECT_FESTIVAL = autoSelectFestival:IsChecked();
+    end
+    y = y + 30;
+
     y = DrawMainWindowScaling(options, y);
     y = DrawToolbarScaling(options, y);
 

@@ -199,6 +199,13 @@ function LoadSettingsFileCharacter()
         -- Default to the first festival in the festival dropdown:
         SETTINGS.FESTIVAL = FESTIVALS_UI_ORDER[1];
     end
+
+    local currentDate = Turbine.Engine.GetDate();
+    local suggestedFestival = GetFestivalForCalendarMonth(currentDate.Month);
+    if (suggestedFestival and CanAutomaticallySelectFestival(currentDate)) then
+        SETTINGS.FESTIVAL = suggestedFestival;
+    end
+
     SELECTEDFESTIVAL = SETTINGS.FESTIVAL;
 
     SELECTED_QUICK_GUIDE = SETTINGS.SELECTED_QUICK_GUIDE[SELECTEDFESTIVAL];

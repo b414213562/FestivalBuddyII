@@ -286,6 +286,56 @@ function TestGetPreviousMazeResetHour_LocalOffsetFractional()
 end
 AddTest("TestGetPreviousMazeResetHour_LocalOffsetFractional");
 
+function TestGetFestivalForCalendarMonth()
+    local expectedFestivals = {
+        [1] = YULE;
+        [2] = SPRING;
+        [3] = SPRING;
+        [4] = ANNIVERSARY;
+        [5] = ANNIVERSARY;
+        [6] = MIDSUMMER;
+        [7] = MIDSUMMER;
+        [8] = FARMERSFAIRE;
+        [9] = FARMERSFAIRE;
+        [10] = HARVESTMATH;
+        [11] = HARVESTMATH;
+        [12] = YULE;
+    };
+
+    for month, festival in pairs(expectedFestivals) do
+        AssertIsEqual(festival, GetFestivalForCalendarMonth(month), "calendar festival for month " .. month);
+    end
+    AssertIsEqual(nil, GetFestivalForCalendarMonth(13), "no festival for an invalid month");
+end
+AddTest("TestGetFestivalForCalendarMonth");
+
+function TestFestivalManualSelectionCooldown()
+    local manualSelection = MakeLocalDate(2024, 3, 1, 18, 0, 0, 61);
+    local beforeCooldown = MakeLocalDate(2024, 3, 15, 17, 59, 59, 75);
+    local cooldownElapsed = MakeLocalDate(2024, 3, 15, 18, 0, 0, 75);
+
+    AssertIsFalse(
+        HasFestivalManualSelectionCooldownElapsed(manualSelection, beforeCooldown),
+        "automatic changes should wait for the full cooldown");
+    AssertIsTrue(
+        HasFestivalManualSelectionCooldownElapsed(manualSelection, cooldownElapsed),
+        "automatic changes are allowed after the full cooldown");
+    AssertIsTrue(
+        HasFestivalManualSelectionCooldownElapsed(nil, cooldownElapsed),
+        "missing manual selection allows automatic changes");
+
+    local yearEndSelection = MakeLocalDate(2024, 12, 20, 10, 0, 0, 355);
+    local beforeYearEndCooldown = MakeLocalDate(2025, 1, 3, 9, 59, 59, 3);
+    local yearEndCooldownElapsed = MakeLocalDate(2025, 1, 3, 10, 0, 0, 3);
+    AssertIsFalse(
+        HasFestivalManualSelectionCooldownElapsed(yearEndSelection, beforeYearEndCooldown),
+        "the cooldown should remain active across a year boundary");
+    AssertIsTrue(
+        HasFestivalManualSelectionCooldownElapsed(yearEndSelection, yearEndCooldownElapsed),
+        "the cooldown should expire across a year boundary");
+end
+AddTest("TestFestivalManualSelectionCooldown");
+
 function TestRunner()
     local testPassedCount = 0;
     local testFailedCount = 0;

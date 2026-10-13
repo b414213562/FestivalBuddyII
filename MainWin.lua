@@ -37,6 +37,18 @@ function DrawMainWin()
         if (selectedFestival ~= SELECTEDFESTIVAL) then
             -- A timer belongs to its current festival; clear it rather than carrying it to another guide.
             QuickGuideTimerReset(wQuickGuideWinParent.timer);
+            if (Args.IsAutomatic ~= true) then
+                local currentDate = Turbine.Engine.GetDate();
+                SETTINGS.FESTIVAL_LAST_MANUAL_SELECTION = {
+                    Year = currentDate.Year;
+                    Month = currentDate.Month;
+                    Day = currentDate.Day;
+                    DayOfYear = currentDate.DayOfYear;
+                    Hour = currentDate.Hour;
+                    Minute = currentDate.Minute;
+                    Second = currentDate.Second;
+                };
+            end
         end
         SELECTEDFESTIVAL = selectedFestival;
         SETTINGS.FESTIVAL = SELECTEDFESTIVAL;
@@ -769,6 +781,7 @@ end
 
 function RefreshFestival(festival)
     if (festival == SELECTEDFESTIVAL) then return; end
+    if (not CanAutomaticallySelectFestival(Turbine.Engine.GetDate())) then return; end
 
     -- Update the text of the dropdown:
     ddFestivals:SetText(GetString(_LANG.FESTIVALS[festival]));
@@ -782,7 +795,7 @@ function RefreshFestival(festival)
         end
     end
 
-    local args = {Index = index};
+    local args = {Index = index; IsAutomatic = true};
     ddFestivals.ItemChanged(nil, args);
 
     MazeMapUpdateFestival(festival);

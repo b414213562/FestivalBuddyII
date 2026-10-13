@@ -121,11 +121,14 @@ MIDSUMMER = "MIDSUMMER";
 ILAA = "ILAA"; -- Inn League / Ale Association
 GENERIC = "GENERIC";
 
+FESTIVAL_MANUAL_SELECTION_COOLDOWN_DAYS = 14;
+
 -- Default Character Settings
 DEFAULT_SETTINGS = {
 
     ["MSGCOLOR"] = "FFFFFF";
     ["FESTIVAL"] = "SPRING";
+    ["AUTO_SELECT_FESTIVAL"] = true;
     ["SELECTED_QUICK_GUIDE"] = {
         [SPRING] = 1;
         [HARVESTMATH] = 1;
