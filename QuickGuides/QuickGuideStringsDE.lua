@@ -327,6 +327,9 @@ _OBJECTIVES[MIDSUMMER] = {
     ["key:621105764:177082785"] = "Hier wäre es wesentlich schöner, wenn das Wasser flacher wäre.";
     ["key:621105764:177082790"] = "Es ist sehr gefährlich hier - das war ein Fehler!";
     ["key:621105764:177082792"] = "Hier gibt es eindeutig zu viel Wasser!";
+    ["key:621034615:262725907"] = "Der Feiernde sagt nichts und verschwindet mit mürrischem Blick.";
+    ["key:621067080:148970436"] = "Ihr habt einen Fisch gefangen!";
+    ["key:621068417:177082774"] = "Das sieht nach einer guten Stelle aus.";
 };
 _PROGRESS[MIDSUMMER] = {
     ["key:621029332:177082785"] = "Anzahl gestriegelter Pferde %((%d+)/(%d+)%)";

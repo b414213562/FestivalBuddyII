@@ -327,6 +327,9 @@ _OBJECTIVES[MIDSUMMER] = {
     ["key:621105764:177082785"] = "Ce serait plus agréable si c'était moins profond";
     ["key:621105764:177082790"] = "C'est un endroit dangereux, c'était une erreur !";
     ["key:621105764:177082792"] = "Il y a trop d'eau ici !";
+    ["key:621034615:262725907"] = "Le convive ne dit rien, mais repart d'un air revêche";
+    ["key:621067080:148970436"] = "Vous avez attrapé un poisson !";
+    ["key:621068417:177082774"] = "Ça a l'air d'être un bon endroit";
 };
 _PROGRESS[MIDSUMMER] = {
     ["key:621029332:177082785"] = "Chevaux pansés %((%d+)/(%d+)%)";

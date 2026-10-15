@@ -328,6 +328,7 @@ _OBJECTIVES[MIDSUMMER] = {
     ["key:621105764:177082790"] = "What a dangerous place - this was a mistake!";
     ["key:621105764:177082792"] = "There is entirely too much water here!";
     ["key:621034615:262725907"] = "The reveller says nothing, but departs with a sour look";
+    ["key:621067080:148970436"] = "Caught a fish!";
     ["key:621068417:177082774"] = "This looks like a good spot";
 };
 _PROGRESS[MIDSUMMER] = {
