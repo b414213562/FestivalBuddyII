@@ -81,8 +81,7 @@ SetQuickGuideDisplay(QG_FARMERSFAIRE, QG_FARMERSFAIRE_INDEX.FROZEN_SWEET_CREAM_C
 SetQuickGuideDisplay(QG_FARMERSFAIRE, QG_FARMERSFAIRE_INDEX.FROZEN_SWEET_CREAM_END, function() return TravelTurnInTo2("The Party Tree", "FROZEN_SWEET_CREAM", "TANSY_TIGHFIELD"); end);
 
 SetQuickGuideDisplay(QG_FARMERSFAIRE, QG_FARMERSFAIRE_INDEX.MANNING_THE_MARKET_PICKUP, function() return TakeFrom2("MANNING_THE_MARKET", "DAISY_SANDYMAN"); end);
-SetQuickGuideDisplay(QG_FARMERSFAIRE, QG_FARMERSFAIRE_INDEX.MANNING_THE_MARKET_END, function() return "Veuillez patienter 15 minutes pour que « S'occuper du marché » se complète automatiquement."; end);
-SetQuickGuideDisplay(QG_FARMERSFAIRE, QG_FARMERSFAIRE_INDEX.MANNING_THE_MARKET_END, nil, 60);
+SetQuickGuideDisplay(QG_FARMERSFAIRE, QG_FARMERSFAIRE_INDEX.MANNING_THE_MARKET_END, function() return "Veuillez patienter 15 minutes pour que « S'occuper du marché » se complète automatiquement."; end, 60);
 
 SetQuickGuideDisplay(QG_FARMERSFAIRE, QG_FARMERSFAIRE_INDEX.A_MARKET_LIST_PICKUP, function() return TakeFrom2("A_MARKET_LIST", "CUSTOMER"); end);
 SetQuickGuideDisplay(QG_FARMERSFAIRE, QG_FARMERSFAIRE_INDEX.A_MARKET_LIST_ONION, function() return "Ramassez le fromage fort les oignons blancs <-"; end);
@@ -140,8 +139,7 @@ SetQuickGuideDisplay(QG_FARMERSFAIRE, QG_FARMERSFAIRE_INDEX.FRESH_SAVOURY_MUSHRO
 
 SetQuickGuideDisplay(QG_FARMERSFAIRE, QG_FARMERSFAIRE_INDEX.THE_GREAT_MATHOM_FISHING_SWAP_PICKUP, function() return TakeFromAt2("THE_GREAT_MATHOM_FISHING_SWAP", "MELIA_POTT", "Hobbiton-Bywater fishing-hole"); end);
 SetQuickGuideDisplay(QG_FARMERSFAIRE, QG_FARMERSFAIRE_INDEX.THE_GREAT_MATHOM_FISHING_SWAP_PROGRESS, function() return "Poursuivez votre quête avec Melia Pott"; end);
-SetQuickGuideDisplay(QG_FARMERSFAIRE, QG_FARMERSFAIRE_INDEX.THE_GREAT_MATHOM_FISHING_SWAP_END, function() return "Attendez 10 minutes pour que « La grande pêche d'échange de mathoms » se complète automatiquement"; end);
-SetQuickGuideDisplay(QG_FARMERSFAIRE, QG_FARMERSFAIRE_INDEX.THE_GREAT_MATHOM_FISHING_SWAP_END, nil, 60);
+SetQuickGuideDisplay(QG_FARMERSFAIRE, QG_FARMERSFAIRE_INDEX.THE_GREAT_MATHOM_FISHING_SWAP_END, function() return "Attendez 10 minutes pour que « La grande pêche d'échange de mathoms » se complète automatiquement"; end, 60);
 
 SetQuickGuideDisplay(QG_FARMERSFAIRE, QG_FARMERSFAIRE_INDEX.RESTOCKING_THE_MARKET_PICKUP, function() return TakeFrom2("RESTOCKING_THE_MARKET", "SPERLING_TOOK"); end);
 SetQuickGuideDisplay(QG_FARMERSFAIRE, QG_FARMERSFAIRE_INDEX.RESTOCKING_CABBAGES_PICKUP, function() return TakeFrom2("RESTOCKING_CABBAGES", "SPERLING_TOOK"); end);
