@@ -1,0 +1,31 @@
+key:620766239:136263297 -- Collected eggs (%d/%d)
+key:620836600:136263297 -- Collected berries (%d/%d)
+key:620872025:136263299 -- Collected mushrooms (%d/%d)
+key:620872025:136263300 -- Baked bread (%d/%d)
+key:620872026:262676277 -- Collected unwilling firewood (%d/%d)
+key:620872028:136263297 -- You have averted the empty keg crisis
+key:620872029:136263297 -- Picked up dirty dishes (%d/%d)
+key:620872029:136263298 -- Cleaned up reeking garbage (%d/%d)
+key:620872029:136263299 -- Cleaned up liquid spills (%d/%d)
+key:620872118:136263297 -- Let the stuffing begin!
+key:620872118:84765777 -- Ate food at the first station (5/5)
+key:620872121:136263297 -- Barrett Nowell reluctantly moves along, unsure of where to go
+key:620872121:136263298 -- Ted Ives gives you a disappointed look, but moves along
+key:620872121:136263299 -- Regina Judson looks very sorrowful as she dashes away
+key:620872121:136263300 -- Jack Judson hurries away, looking most appalled
+key:620872121:136263301 -- Bill Hyde's face is reddened by the cold, but he walks away from the fire sadly
+key:620872286:84765777 -- Ate food at the second station (5/5)
+key:620872322:84765777 -- Ate food at the third station (5/5)
+key:620872323:84765777 -- Ate food at the fourth station (5/5)
+key:620872325:84765777 -- Ate food at the fifth station (5/5)
+key:620872617:136263297 -- Barrett Nowell is moved by your generous gift
+key:620872617:136263298 -- Ted Ives is moved by your gift
+key:620872617:136263299 -- Regina Judson is moved by your generosity
+key:620872617:136263300 -- Jack Judson is moved by your kindness
+key:620872617:136263301 -- Bill Hyde is moved by your good deed
+key:620872989:22075075 -- Looted a distracted patron (%d/%d)
+key:620872989:262676277 -- You have set off some distracting fireworks
+key:620889754:262676277 -- Dispersed Wintry Weather (%d/%d)
+key:620890083:136263300 -- Gathered coal near the servants' oven
+key:620890154:136263297 -- Gathered a stick from a nearby bush
+key:620890253:136263300 -- Brought cheer to the snow-beasts (3/3)

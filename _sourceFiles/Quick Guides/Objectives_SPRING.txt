@@ -1,0 +1,17 @@
+key:621119755:177082804 -- Daffodils planted (%d/%d)
+key:621119755:262725910 -- Daffodils picked (%d/%d)
+key:621119756:177082804 -- Banners placed (%d/%d)
+key:621119758:177082784 -- Lamb meat collected
+key:621119758:177082785 -- Carrots collected
+key:621119758:177082787 -- Potatoes collected
+key:621119758:177082793 -- Leeks collected
+key:621119777:177082784 -- The fiddle has been found
+key:621119777:177082786 -- The bagpipes have been found
+key:621119777:177082788 -- The bodhran has been found
+key:621119777:177082790 -- The flute has been found
+key:621119777:177082808 -- The lute has been found
+key:621119778:177082752 -- Packages delivered (%d/%d)
+key:621119910:177082736 -- Watered!
+key:621119910:177082791 -- Water buckets found!
+key:621119911:177082790 -- Fliers handed out (%d/%d)
+key:621119914:177082757 -- Prized daffodil bulbs collected!

@@ -1,0 +1,22 @@
+key:620803741:136263297 -- You have collected Forsaken Ale
+key:620803809:136263297 -- You have collected Swill....(yech)
+key:620803810:136263297 -- You have collected Limael's Vintage
+key:620803811:136263297 -- You have collected Blagrove's Brown
+key:620803812:136263297 -- You have collected Moor-boar Beer
+key:620803813:136263297 -- You have collected Thistlebelly Brew
+key:620803814:136263297 -- You have collected Beakbreaker Ale
+key:620803815:136263297 -- Collected Bombur's Beard Lager
+key:620803816:136263297 -- You have collected Brandy Wine
+key:620803817:136263297 -- You have collected Dorwinion White
+key:620803818:136263297 -- You have collected Stars of Old Cider
+key:620861127:136263297 -- You have collected the mead. It will be disguised as Swill for you
+key:620861147:136263297 -- You have collected fake Limael's Vintage
+key:620861148:136263297 -- You have collected fake Forsaken Ale
+key:620861176:136263297 -- You have collected fake Dorwinion White
+key:620861177:136263297 -- You have collected fake Blagrove's Brown
+key:620861186:136263297 -- You have collected fake Moor-boar Beer
+key:620861187:136263297 -- You have collected fake Thistlebelly Brew
+key:620861194:136263297 -- You have collected fake Beakbreaker Ale
+key:620861195:136263297 -- You have collected fake Bombur's Beard Lager
+key:620861196:136263297 -- You have collected fake Stars of Old Cider
+key:620861197:136263297 -- You have collected fake Brandy Wine

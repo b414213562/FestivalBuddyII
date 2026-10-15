@@ -1,0 +1,65 @@
+key:621029332:177082785 -- Groomed horse (%d/%d)
+key:621033419:177082808 -- Picked up the proper wine cask
+key:621033539:262725907 -- Tossed a coin to a noisy minstrel (%d/%d)
+key:621034389:262725908 -- Delivered thank you notes (%d/%d)
+key:621034485:262725906 -- Collected wedding supply crates (%d/%d)
+key:621034495:262725909 -- Collected summer blossoms (%d/%d)
+key:621034521:177082770 -- Delivered pastries (%d/%d)
+key:621034539:262725906 -- Collected barrels of ale (%d/%d)
+key:621034557:262725910 -- Caught wayward verses (%d/%d)
+key:621034568:177082803 -- Placed floral arrangements (%d/%d)
+key:621034594:262725905 -- Watered bushes (%d/%d)
+key:621034594:262725908 -- Pulled out weeds (%d/%d)
+key:621034613:225071140 -- Direct the Cloudyheads to meet backstage in the Blue Theatre (%d/%d)
+key:621034615:262725907 -- The reveller says nothing, but departs with a sour look
+key:621034615:262725909 -- Disposed of half-emptied bottles in the High Hall (%d/%d)
+key:621034631:262725906 -- Obtained charcoal
+key:621034631:262725910 -- Obtained clay
+key:621034631:262725913 -- Obtained flowers
+key:621034649:177082807 -- You found the ring!
+key:621034672:177082800 -- Fed horse (%d/%d)
+key:621034672:177082806 -- Found a grooming brush
+key:621034672:177082808 -- Collected apples
+key:621067080:148970436 -- Caught a fish!
+key:621068417:177082774 -- This looks like a good spot
+key:621094443:177082800 -- Collected fresh herbs (%d/%d)
+key:621104769:177082802 -- Cleaned up the flotsam on the beach (%d/%d)
+key:621104770:177082786 -- The skinny cat eyes you suspiciously but purrs as it takes your offering
+key:621104770:177082788 -- The smelly cat swallows the treat whole and rubs on your leg
+key:621104770:177082790 -- The sleepy cat purrs as it takes the treat and goes back to sleep
+key:621104770:177082792 -- The sassy cat snaps up the treat, hisses, and runs away
+key:621104770:177082807 -- The scruffy cat nips your finger as it greedily takes the treat
+key:621104770:177082809 -- The slinky cat takes the treat followed by a quick bath
+key:621104771:177082808 -- Chased off the irksome seagulls (${CURRENT}/8)
+key:621104774:177082786 -- The skinny cat protests before running away
+key:621104774:177082788 -- The smelly cat hisses and scurries off
+key:621104774:177082790 -- The sleepy cat growls at you and dashes away
+key:621104774:177082792 -- The sassy cat hisses at you and slowly walks away, tail held high
+key:621104774:177082807 -- The scruffy cat hisses and scampers away
+key:621104774:177082809 -- The slinky cat complains and slinks away
+key:621104776:177082806 -- Seashells collected (%d/%d)
+key:621104777:177082784 -- Floors scrubbed (%d/%d)
+key:621104777:177082808 -- Beds made (%d/%d)
+key:621104778:177082802 -- Built sand-castles on the beach (%d/%d)
+key:621104779:177082786 -- Collected juicy lemons (%d/%d)
+key:621104779:177082788 -- Collected handfuls of olives (%d/%d)
+key:621104813:177082707 -- He thanks you with a sigh of happiness
+key:621104813:177082708 -- 'More!', the strange man demands
+key:621104813:177082752 -- This cushion will do
+key:621104813:177082768 -- Picked up \qA Memory of Mûmakil\q by J.F. Ugsha-imri
+key:621104813:177082784 -- This looks refreshing!
+key:621104814:177082770 -- Not a bad place to swim, but it is quite public
+key:621104814:177082771 -- The water in the channel is calm and warm
+key:621104814:177082785 -- The water is warm and perfect for swimming
+key:621104814:177082790 -- The water is cold and the waves are a bit much
+key:621104814:177082792 -- This is a nice, quiet place to swim
+key:621104815:177082785 -- People here seem impressed with your kite!
+key:621104815:177082788 -- People here don't seem to notice your kite
+key:621104815:177082790 -- Many people should see you from here!
+key:621104815:177082793 -- Was that kite-envy you just saw?
+key:621104815:177082809 -- Do the people here appreciate your kite?
+key:621105764:177082770 -- The water is deep and people are just watching you possibly drown!
+key:621105764:177082771 -- It's all right here, but way too deep
+key:621105764:177082785 -- This would be a lot nicer if the water was more shallow
+key:621105764:177082790 -- What a dangerous place - this was a mistake!
+key:621105764:177082792 -- There is entirely too much water here!
