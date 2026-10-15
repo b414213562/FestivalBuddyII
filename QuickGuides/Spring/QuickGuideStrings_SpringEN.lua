@@ -10,60 +10,60 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDIT_HEIGHTS[SPRING] = {};
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDIT_HEIGHTS[SPRING][DEFAULT_QUICK_GUIDE] = 140;
 
 QG_SPRING = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[SPRING][DEFAULT_QUICK_GUIDE];
-QG_SPRING[QG_SPRING_INDEX.A_TASTE_OF_SPRING_PICKUP].DISPLAY = function() return TakeFrom("A Taste of Spring", "Rhudamer Hirtul"); end;
-QG_SPRING[QG_SPRING_INDEX.A_TASTE_OF_SPRING_END].DISPLAY = function() return TurnInTo("A Taste of Spring", "Rhudamer Hirtul"); end;
-QG_SPRING[QG_SPRING_INDEX.DAFFODIL_DAYS_DAILY_PICKUP].DISPLAY = function() return TakeFromIn("Daffodil Days (Daily)", "Athra Devister", "Clegur"); end
-QG_SPRING[QG_SPRING_INDEX.DAFFODIL_DAYS_DAILY_END].DISPLAY = function() return TurnInTo("Daffodil Days (Daily)", "Athra Devister"); end
-QG_SPRING[QG_SPRING_INDEX.THE_GIFT_OF_SPRING_PICKUP].DISPLAY = function() return TakeFrom("The Gift of Spring", "Athra Devister"); end;
-QG_SPRING[QG_SPRING_INDEX.THE_GIFT_OF_SPRING_DAFFODILS_PICKED].DISPLAY = function() return "Pick daffodils around Clegur"; end
-QG_SPRING[QG_SPRING_INDEX.THE_GIFT_OF_SPRING_DAFFODILS_PLANTED].DISPLAY = function() return "Plant daffodils in containers"; end
-QG_SPRING[QG_SPRING_INDEX.THE_GIFT_OF_SPRING_END].DISPLAY = function() return TurnInTo("The Gift of Spring", "Athra Devister"); end
-QG_SPRING[QG_SPRING_INDEX.PROMOTING_PIE_PICKUP].DISPLAY = function() return TakeFrom("Promoting Pie", "Maramam Bobbid"); end;
-QG_SPRING[QG_SPRING_INDEX.PROMOTING_PIE_FLIER_1].DISPLAY = function() return "Give flier to visiting hobbit near musicians"; end
-QG_SPRING[QG_SPRING_INDEX.PROMOTING_PIE_FLIER_2].DISPLAY = function() return "Give flier to visiting hobbit near Malmadog Torlan"; end
-QG_SPRING[QG_SPRING_INDEX.PROMOTING_PIE_FLIER_3].DISPLAY = function() return "Give flier to visiting hobbit near butcher"; end
-QG_SPRING[QG_SPRING_INDEX.PROMOTING_PIE_FLIER_4].DISPLAY = function() return "Give flier to visiting hobbit near Leri Grudd"; end
-QG_SPRING[QG_SPRING_INDEX.PROMOTING_PIE_FLIER_5].DISPLAY = function() return "Give flier to visiting hobbit near Delyth Saethur"; end
-QG_SPRING[QG_SPRING_INDEX.PROMOTING_PIE_END].DISPLAY = function() return TurnInTo("Promoting Pie", "Maramam Bobbid"); end
-QG_SPRING[QG_SPRING_INDEX.FLOWER_ENVY_PICKUP].DISPLAY = function() return TakeFrom("Flower Envy", "Naffa Blodven"); end;
-QG_SPRING[QG_SPRING_INDEX.FLOWER_ENVY_TALK_1].DISPLAY = function() return "Talk to Welduth Lhush for Flower Envy"; end
-QG_SPRING[QG_SPRING_INDEX.FLOWER_ENVY_TALK_2].DISPLAY = function() return "Talk to Gloron Magimrud for Flower Envy"; end
-QG_SPRING[QG_SPRING_INDEX.FLOWER_ENVY_TALK_3].DISPLAY = function() return "Place the banner in front of the barn, then talk to Gloron Magimrud for Flower Envy"; end
-QG_SPRING[QG_SPRING_INDEX.FLOWER_ENVY_TALK_4].DISPLAY = function() return "Talk to Welduth Lhush for Flower Envy"; end
-QG_SPRING[QG_SPRING_INDEX.FLOWER_ENVY_BULB_COLLECTED].DISPLAY = function() return "Collect the prized daffodil bulbs"; end
-QG_SPRING[QG_SPRING_INDEX.FLOWER_ENVY_END].DISPLAY = function() return TurnInTo("Flower Envy", "Naffa Blodven"); end
-QG_SPRING[QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_PICKUP].DISPLAY = function() return TakeFrom("The Musicians' Misfortune", "Lutenist"); end;
-QG_SPRING[QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_FIDDLE].DISPLAY = function() return "Find the fiddle"; end
-QG_SPRING[QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_BAGPIPES].DISPLAY = function() return "Find the bagpipes"; end
-QG_SPRING[QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_FLUTE].DISPLAY = function() return "Find the flute"; end
-QG_SPRING[QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_LUTE].DISPLAY = function() return "Find the lute"; end
-QG_SPRING[QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_BODHRAN].DISPLAY = function() return "Find the bodhran"; end
-QG_SPRING[QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_END].DISPLAY = function() return TurnInTo("The Musicians' Misfortune", "Lutenist"); end
-QG_SPRING[QG_SPRING_INDEX.SPRINGTIMES_COLOURS_PICKUP].DISPLAY = function() return TakeFrom("Springtime's Colours", "Malmadog Torlan"); end;
-QG_SPRING[QG_SPRING_INDEX.SPRINGTIMES_COLOURS_BANNERS_PICKED_UP].DISPLAY = function() return "Pick up Daffodil Days banners" end;
-QG_SPRING[QG_SPRING_INDEX.SPRINGTIMES_COLOURS_BANNERS_PLACED].DISPLAY = function() return "Place Daffodil Days banners"; end
-QG_SPRING[QG_SPRING_INDEX.SPRINGTIMES_COLOURS_END].DISPLAY = function() return TurnInTo("Springtime's Colours", "Malmadog Torlan"); end
-QG_SPRING[QG_SPRING_INDEX.STRETCHED_TOO_THIN_PICKUP].DISPLAY = function() return TakeFrom("Stretched Too Thin", "Cunedda Moltgig"); end;
-QG_SPRING[QG_SPRING_INDEX.STRETCHED_TOO_THIN_LAMB].DISPLAY = function() return "Pick up the packaged lamb meat"; end
-QG_SPRING[QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_1].DISPLAY = function() return "Deliver lamb meat to Leri Grudd"; end
-QG_SPRING[QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_2].DISPLAY = function() return "Deliver lamb meat to Delyth Saethur"; end
-QG_SPRING[QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_3].DISPLAY = function() return "Deliver lamb meat to Drudwen"; end
-QG_SPRING[QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_4].DISPLAY = function() return "Deliver lamb meat to Gloron Magimrud"; end
-QG_SPRING[QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_5].DISPLAY = function() return "Deliver lamb meat to Mayor Malmadog Torlan"; end
-QG_SPRING[QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_6].DISPLAY = function() return "Deliver lamb meat to Welduth Lhush"; end
-QG_SPRING[QG_SPRING_INDEX.STRETCHED_TOO_THIN_END].DISPLAY = function() return TurnInTo("Stretched Too Thin", "Cunedda Moltgig"); end
-QG_SPRING[QG_SPRING_INDEX.WELL_WATERED_BLOOMS_PICKUP].DISPLAY = function() return TakeFrom("Well-watered Blooms", "Leri Grudd"); end;
-QG_SPRING[QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_FOUND].DISPLAY = function() return "Find the water buckets near the pond"; end
-QG_SPRING[QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_1].DISPLAY = function() return "Water the daffodils in Leri's yard"; end
-QG_SPRING[QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_2].DISPLAY = function() return "Water the daffodils next to the beehives, near the butcher shop"; end
-QG_SPRING[QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_3].DISPLAY = function() return "Water the daffodils near the stable-master"; end
-QG_SPRING[QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_4].DISPLAY = function() return "Water the daffodils in front of Delyth Saethur's smial"; end
-QG_SPRING[QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_5].DISPLAY = function() return "Water the daffodils by the oven"; end
-QG_SPRING[QG_SPRING_INDEX.WELL_WATERED_BLOOMS_END].DISPLAY = function() return TurnInTo("Well-watered Blooms", "Leri Grudd"); end
-QG_SPRING[QG_SPRING_INDEX.FAMILY_FEAST_PICKUP].DISPLAY = function() return TakeFrom("Family Feast", "Rosentyl Flutch"); end;
-QG_SPRING[QG_SPRING_INDEX.FAMILY_FEAST_LAMB].DISPLAY = function() return "Collect a package of lamb meat"; end
-QG_SPRING[QG_SPRING_INDEX.FAMILY_FEAST_CARROTS].DISPLAY = function() return "Collect carrots"; end
-QG_SPRING[QG_SPRING_INDEX.FAMILY_FEAST_POTATOES].DISPLAY = function() return "Collect potatoes"; end
-QG_SPRING[QG_SPRING_INDEX.FAMILY_FEAST_LEEKS_TALK].DISPLAY = function() return "Talk to Bortho Bishel, the Provisioner's Assistant"; end
-QG_SPRING[QG_SPRING_INDEX.FAMILY_FEAST_LEEKS].DISPLAY = function() return "Collect leeks"; end
-QG_SPRING[QG_SPRING_INDEX.FAMILY_FEAST_END].DISPLAY = function() return TurnInTo("Family Feast", "Rosentyl Flutch"); end
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.A_TASTE_OF_SPRING_PICKUP, function() return TakeFrom("A Taste of Spring", "Rhudamer Hirtul"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.A_TASTE_OF_SPRING_END, function() return TurnInTo("A Taste of Spring", "Rhudamer Hirtul"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.DAFFODIL_DAYS_DAILY_PICKUP, function() return TakeFromIn("Daffodil Days (Daily)", "Athra Devister", "Clegur"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.DAFFODIL_DAYS_DAILY_END, function() return TurnInTo("Daffodil Days (Daily)", "Athra Devister"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.THE_GIFT_OF_SPRING_PICKUP, function() return TakeFrom("The Gift of Spring", "Athra Devister"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.THE_GIFT_OF_SPRING_DAFFODILS_PICKED, function() return "Pick daffodils around Clegur"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.THE_GIFT_OF_SPRING_DAFFODILS_PLANTED, function() return "Plant daffodils in containers"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.THE_GIFT_OF_SPRING_END, function() return TurnInTo("The Gift of Spring", "Athra Devister"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.PROMOTING_PIE_PICKUP, function() return TakeFrom("Promoting Pie", "Maramam Bobbid"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.PROMOTING_PIE_FLIER_1, function() return "Give flier to visiting hobbit near musicians"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.PROMOTING_PIE_FLIER_2, function() return "Give flier to visiting hobbit near Malmadog Torlan"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.PROMOTING_PIE_FLIER_3, function() return "Give flier to visiting hobbit near butcher"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.PROMOTING_PIE_FLIER_4, function() return "Give flier to visiting hobbit near Leri Grudd"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.PROMOTING_PIE_FLIER_5, function() return "Give flier to visiting hobbit near Delyth Saethur"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.PROMOTING_PIE_END, function() return TurnInTo("Promoting Pie", "Maramam Bobbid"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FLOWER_ENVY_PICKUP, function() return TakeFrom("Flower Envy", "Naffa Blodven"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FLOWER_ENVY_TALK_1, function() return "Talk to Welduth Lhush for Flower Envy"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FLOWER_ENVY_TALK_2, function() return "Talk to Gloron Magimrud for Flower Envy"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FLOWER_ENVY_TALK_3, function() return "Place the banner in front of the barn, then talk to Gloron Magimrud for Flower Envy"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FLOWER_ENVY_TALK_4, function() return "Talk to Welduth Lhush for Flower Envy"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FLOWER_ENVY_BULB_COLLECTED, function() return "Collect the prized daffodil bulbs"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FLOWER_ENVY_END, function() return TurnInTo("Flower Envy", "Naffa Blodven"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_PICKUP, function() return TakeFrom("The Musicians' Misfortune", "Lutenist"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_FIDDLE, function() return "Find the fiddle"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_BAGPIPES, function() return "Find the bagpipes"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_FLUTE, function() return "Find the flute"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_LUTE, function() return "Find the lute"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_BODHRAN, function() return "Find the bodhran"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_END, function() return TurnInTo("The Musicians' Misfortune", "Lutenist"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.SPRINGTIMES_COLOURS_PICKUP, function() return TakeFrom("Springtime's Colours", "Malmadog Torlan"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.SPRINGTIMES_COLOURS_BANNERS_PICKED_UP, function() return "Pick up Daffodil Days banners" end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.SPRINGTIMES_COLOURS_BANNERS_PLACED, function() return "Place Daffodil Days banners"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.SPRINGTIMES_COLOURS_END, function() return TurnInTo("Springtime's Colours", "Malmadog Torlan"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.STRETCHED_TOO_THIN_PICKUP, function() return TakeFrom("Stretched Too Thin", "Cunedda Moltgig"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.STRETCHED_TOO_THIN_LAMB, function() return "Pick up the packaged lamb meat"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_1, function() return "Deliver lamb meat to Leri Grudd"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_2, function() return "Deliver lamb meat to Delyth Saethur"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_3, function() return "Deliver lamb meat to Drudwen"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_4, function() return "Deliver lamb meat to Gloron Magimrud"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_5, function() return "Deliver lamb meat to Mayor Malmadog Torlan"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_6, function() return "Deliver lamb meat to Welduth Lhush"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.STRETCHED_TOO_THIN_END, function() return TurnInTo("Stretched Too Thin", "Cunedda Moltgig"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.WELL_WATERED_BLOOMS_PICKUP, function() return TakeFrom("Well-watered Blooms", "Leri Grudd"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_FOUND, function() return "Find the water buckets near the pond"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_1, function() return "Water the daffodils in Leri's yard"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_2, function() return "Water the daffodils next to the beehives, near the butcher shop"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_3, function() return "Water the daffodils near the stable-master"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_4, function() return "Water the daffodils in front of Delyth Saethur's smial"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_5, function() return "Water the daffodils by the oven"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.WELL_WATERED_BLOOMS_END, function() return TurnInTo("Well-watered Blooms", "Leri Grudd"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FAMILY_FEAST_PICKUP, function() return TakeFrom("Family Feast", "Rosentyl Flutch"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FAMILY_FEAST_LAMB, function() return "Collect a package of lamb meat"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FAMILY_FEAST_CARROTS, function() return "Collect carrots"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FAMILY_FEAST_POTATOES, function() return "Collect potatoes"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FAMILY_FEAST_LEEKS_TALK, function() return "Talk to Bortho Bishel, the Provisioner's Assistant"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FAMILY_FEAST_LEEKS, function() return "Collect leeks"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FAMILY_FEAST_END, function() return TurnInTo("Family Feast", "Rosentyl Flutch"); end);

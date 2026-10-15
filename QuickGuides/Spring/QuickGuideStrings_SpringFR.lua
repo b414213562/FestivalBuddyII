@@ -10,60 +10,60 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDIT_HEIGHTS[SPRING] = {};
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDIT_HEIGHTS[SPRING][DEFAULT_QUICK_GUIDE] = 140;
 
 QG_SPRING = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[SPRING][DEFAULT_QUICK_GUIDE];
-QG_SPRING[QG_SPRING_INDEX.A_TASTE_OF_SPRING_PICKUP].DISPLAY = function() return TakeFrom("Un goût de printemps", "Rhudamer Hirtul"); end;
-QG_SPRING[QG_SPRING_INDEX.A_TASTE_OF_SPRING_END].DISPLAY = function() return TurnInTo("Un goût de printemps", "Rhudamer Hirtul"); end;
-QG_SPRING[QG_SPRING_INDEX.DAFFODIL_DAYS_DAILY_PICKUP].DISPLAY = function() return TakeFromIn("Jours de la jonquille (quotidien)", "Avra Devistère", "Clegur"); end
-QG_SPRING[QG_SPRING_INDEX.DAFFODIL_DAYS_DAILY_END].DISPLAY = function() return TurnInTo("Jours de la jonquille (quotidien)", "Avra Devistère"); end
-QG_SPRING[QG_SPRING_INDEX.THE_GIFT_OF_SPRING_PICKUP].DISPLAY = function() return TakeFrom("Le cadeau du printemps", "Avra Devistère"); end;
-QG_SPRING[QG_SPRING_INDEX.THE_GIFT_OF_SPRING_DAFFODILS_PICKED].DISPLAY = function() return "Cueillez des jonquilles autour de Clegur"; end
-QG_SPRING[QG_SPRING_INDEX.THE_GIFT_OF_SPRING_DAFFODILS_PLANTED].DISPLAY = function() return "Plantez des jonquilles dans des pots"; end
-QG_SPRING[QG_SPRING_INDEX.THE_GIFT_OF_SPRING_END].DISPLAY = function() return TurnInTo("Le cadeau du printemps", "Avra Devistère"); end
-QG_SPRING[QG_SPRING_INDEX.PROMOTING_PIE_PICKUP].DISPLAY = function() return TakeFrom("Promotion des tartes", "Maramam Baubide"); end;
-QG_SPRING[QG_SPRING_INDEX.PROMOTING_PIE_FLIER_1].DISPLAY = function() return "Distribuez le prospectus au Hobbit en visite près des musiciens"; end
-QG_SPRING[QG_SPRING_INDEX.PROMOTING_PIE_FLIER_2].DISPLAY = function() return "Distribuez le prospectus au Hobbit en visite près Malmadog Torlan"; end
-QG_SPRING[QG_SPRING_INDEX.PROMOTING_PIE_FLIER_3].DISPLAY = function() return "Distribuez le prospectus au Hobbit en visite près le boucher"; end
-QG_SPRING[QG_SPRING_INDEX.PROMOTING_PIE_FLIER_4].DISPLAY = function() return "Distribuez le prospectus au Hobbit en visite près Leri Grudd"; end
-QG_SPRING[QG_SPRING_INDEX.PROMOTING_PIE_FLIER_5].DISPLAY = function() return "Distribuez le prospectus au Hobbit en visite près Delyth Saethur"; end
-QG_SPRING[QG_SPRING_INDEX.PROMOTING_PIE_END].DISPLAY = function() return TurnInTo("Promotion des tartes", "Maramam Baubide"); end
-QG_SPRING[QG_SPRING_INDEX.FLOWER_ENVY_PICKUP].DISPLAY = function() return TakeFrom("Envie de fleurs", "Naffa Sanvin"); end;
-QG_SPRING[QG_SPRING_INDEX.FLOWER_ENVY_TALK_1].DISPLAY = function() return "Parlez à Velda Luche pour la quête Envie de fleurs"; end
-QG_SPRING[QG_SPRING_INDEX.FLOWER_ENVY_TALK_2].DISPLAY = function() return "Parlez à Gloron Magirouge pour la quête Envie de fleurs"; end
-QG_SPRING[QG_SPRING_INDEX.FLOWER_ENVY_TALK_3].DISPLAY = function() return "Placez la bannière devant la grange, puis parlez à Gloron Magirouge pour la quête Envie de fleurs"; end
-QG_SPRING[QG_SPRING_INDEX.FLOWER_ENVY_TALK_4].DISPLAY = function() return "Parlez à Velda Luche pour la quête Envie de fleurs"; end
-QG_SPRING[QG_SPRING_INDEX.FLOWER_ENVY_BULB_COLLECTED].DISPLAY = function() return "Récoltez les précieux bulbes de jonquilles"; end
-QG_SPRING[QG_SPRING_INDEX.FLOWER_ENVY_END].DISPLAY = function() return TurnInTo("Envie de fleurs", "Naffa Sanvin"); end
-QG_SPRING[QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_PICKUP].DISPLAY = function() return TakeFrom("Les déboires des musiciens", "Luthiste"); end;
-QG_SPRING[QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_FIDDLE].DISPLAY = function() return "Trouvez le violon"; end
-QG_SPRING[QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_BAGPIPES].DISPLAY = function() return "Trouvez la cornemuse"; end
-QG_SPRING[QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_FLUTE].DISPLAY = function() return "Trouvez la flûte"; end
-QG_SPRING[QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_LUTE].DISPLAY = function() return "Trouvez le luth"; end
-QG_SPRING[QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_BODHRAN].DISPLAY = function() return "Trouvez le bodhrán"; end
-QG_SPRING[QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_END].DISPLAY = function() return TurnInTo("Les déboires des musiciens", "Luthiste"); end
-QG_SPRING[QG_SPRING_INDEX.SPRINGTIMES_COLOURS_PICKUP].DISPLAY = function() return TakeFrom("Couleurs du printemps", "Malmadog Torlan"); end;
-QG_SPRING[QG_SPRING_INDEX.SPRINGTIMES_COLOURS_BANNERS_PICKED_UP].DISPLAY = function() return "Ramassez les bannières des Jours de la jonquille" end;
-QG_SPRING[QG_SPRING_INDEX.SPRINGTIMES_COLOURS_BANNERS_PLACED].DISPLAY = function() return "Installez des bannières pour les Jours des jonquilles"; end
-QG_SPRING[QG_SPRING_INDEX.SPRINGTIMES_COLOURS_END].DISPLAY = function() return TurnInTo("Couleurs du printemps", "Malmadog Torlan"); end
-QG_SPRING[QG_SPRING_INDEX.STRETCHED_TOO_THIN_PICKUP].DISPLAY = function() return TakeFrom("Trop d'éparpillement", "Cunedda Muguigue"); end;
-QG_SPRING[QG_SPRING_INDEX.STRETCHED_TOO_THIN_LAMB].DISPLAY = function() return "Ramassez le paquet de viande d'agneau"; end
-QG_SPRING[QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_1].DISPLAY = function() return "Livrez la viande d'agneau à Leri Grudd"; end
-QG_SPRING[QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_2].DISPLAY = function() return "Livrez la viande d'agneau à Delyth Saethur"; end
-QG_SPRING[QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_3].DISPLAY = function() return "Livrez la viande d'agneau à Drudwen"; end
-QG_SPRING[QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_4].DISPLAY = function() return "Livrez la viande d'agneau à Gloron Magirouge"; end
-QG_SPRING[QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_5].DISPLAY = function() return "Livrez la viande d'agneau au maire Malmadog Torlan"; end
-QG_SPRING[QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_6].DISPLAY = function() return "Livrez la viande d'agneau à Velda Luche"; end
-QG_SPRING[QG_SPRING_INDEX.STRETCHED_TOO_THIN_END].DISPLAY = function() return TurnInTo("Trop d'éparpillement", "Cunedda Muguigue"); end
-QG_SPRING[QG_SPRING_INDEX.WELL_WATERED_BLOOMS_PICKUP].DISPLAY = function() return TakeFrom("Fleurs bien arrosées", "Leri Grudd"); end;
-QG_SPRING[QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_FOUND].DISPLAY = function() return "Trouvez les seaux d'eau près de l'étang"; end
-QG_SPRING[QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_1].DISPLAY = function() return "Arroser les jonquilles dans le jardin de Leri"; end
-QG_SPRING[QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_2].DISPLAY = function() return "Arroser les jonquilles situées près des ruches, à côté de la boucherie"; end
-QG_SPRING[QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_3].DISPLAY = function() return "Arroser les jonquilles situées près des écuries"; end
-QG_SPRING[QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_4].DISPLAY = function() return "Arroser les jonquilles situées devant le smial de Delyth Saethur"; end
-QG_SPRING[QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_5].DISPLAY = function() return "Arroser les jonquilles situées derrière le four"; end
-QG_SPRING[QG_SPRING_INDEX.WELL_WATERED_BLOOMS_END].DISPLAY = function() return TurnInTo("Fleurs bien arrosées", "Leri Grudd"); end
-QG_SPRING[QG_SPRING_INDEX.FAMILY_FEAST_PICKUP].DISPLAY = function() return TakeFrom("Festin familial", "Rosentyl Flutch"); end;
-QG_SPRING[QG_SPRING_INDEX.FAMILY_FEAST_LAMB].DISPLAY = function() return "Récupérez un colis de viande d'agneau"; end
-QG_SPRING[QG_SPRING_INDEX.FAMILY_FEAST_CARROTS].DISPLAY = function() return "Récoltez des carottes"; end
-QG_SPRING[QG_SPRING_INDEX.FAMILY_FEAST_POTATOES].DISPLAY = function() return "Récupérer des pommes de terre"; end
-QG_SPRING[QG_SPRING_INDEX.FAMILY_FEAST_LEEKS_TALK].DISPLAY = function() return "Parlez à Bortho Bichelle, l'assistant de l'approvisionneur"; end
-QG_SPRING[QG_SPRING_INDEX.FAMILY_FEAST_LEEKS].DISPLAY = function() return "Récoltez des poireaux"; end
-QG_SPRING[QG_SPRING_INDEX.FAMILY_FEAST_END].DISPLAY = function() return TurnInTo("Festin familial", "Rosentyl Flutch"); end
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.A_TASTE_OF_SPRING_PICKUP, function() return TakeFrom("Un goût de printemps", "Rhudamer Hirtul"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.A_TASTE_OF_SPRING_END, function() return TurnInTo("Un goût de printemps", "Rhudamer Hirtul"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.DAFFODIL_DAYS_DAILY_PICKUP, function() return TakeFromIn("Jours de la jonquille (quotidien)", "Avra Devistère", "Clegur"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.DAFFODIL_DAYS_DAILY_END, function() return TurnInTo("Jours de la jonquille (quotidien)", "Avra Devistère"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.THE_GIFT_OF_SPRING_PICKUP, function() return TakeFrom("Le cadeau du printemps", "Avra Devistère"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.THE_GIFT_OF_SPRING_DAFFODILS_PICKED, function() return "Cueillez des jonquilles autour de Clegur"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.THE_GIFT_OF_SPRING_DAFFODILS_PLANTED, function() return "Plantez des jonquilles dans des pots"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.THE_GIFT_OF_SPRING_END, function() return TurnInTo("Le cadeau du printemps", "Avra Devistère"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.PROMOTING_PIE_PICKUP, function() return TakeFrom("Promotion des tartes", "Maramam Baubide"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.PROMOTING_PIE_FLIER_1, function() return "Distribuez le prospectus au Hobbit en visite près des musiciens"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.PROMOTING_PIE_FLIER_2, function() return "Distribuez le prospectus au Hobbit en visite près Malmadog Torlan"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.PROMOTING_PIE_FLIER_3, function() return "Distribuez le prospectus au Hobbit en visite près le boucher"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.PROMOTING_PIE_FLIER_4, function() return "Distribuez le prospectus au Hobbit en visite près Leri Grudd"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.PROMOTING_PIE_FLIER_5, function() return "Distribuez le prospectus au Hobbit en visite près Delyth Saethur"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.PROMOTING_PIE_END, function() return TurnInTo("Promotion des tartes", "Maramam Baubide"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FLOWER_ENVY_PICKUP, function() return TakeFrom("Envie de fleurs", "Naffa Sanvin"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FLOWER_ENVY_TALK_1, function() return "Parlez à Velda Luche pour la quête Envie de fleurs"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FLOWER_ENVY_TALK_2, function() return "Parlez à Gloron Magirouge pour la quête Envie de fleurs"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FLOWER_ENVY_TALK_3, function() return "Placez la bannière devant la grange, puis parlez à Gloron Magirouge pour la quête Envie de fleurs"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FLOWER_ENVY_TALK_4, function() return "Parlez à Velda Luche pour la quête Envie de fleurs"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FLOWER_ENVY_BULB_COLLECTED, function() return "Récoltez les précieux bulbes de jonquilles"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FLOWER_ENVY_END, function() return TurnInTo("Envie de fleurs", "Naffa Sanvin"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_PICKUP, function() return TakeFrom("Les déboires des musiciens", "Luthiste"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_FIDDLE, function() return "Trouvez le violon"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_BAGPIPES, function() return "Trouvez la cornemuse"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_FLUTE, function() return "Trouvez la flûte"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_LUTE, function() return "Trouvez le luth"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_BODHRAN, function() return "Trouvez le bodhrán"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_END, function() return TurnInTo("Les déboires des musiciens", "Luthiste"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.SPRINGTIMES_COLOURS_PICKUP, function() return TakeFrom("Couleurs du printemps", "Malmadog Torlan"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.SPRINGTIMES_COLOURS_BANNERS_PICKED_UP, function() return "Ramassez les bannières des Jours de la jonquille" end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.SPRINGTIMES_COLOURS_BANNERS_PLACED, function() return "Installez des bannières pour les Jours des jonquilles"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.SPRINGTIMES_COLOURS_END, function() return TurnInTo("Couleurs du printemps", "Malmadog Torlan"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.STRETCHED_TOO_THIN_PICKUP, function() return TakeFrom("Trop d'éparpillement", "Cunedda Muguigue"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.STRETCHED_TOO_THIN_LAMB, function() return "Ramassez le paquet de viande d'agneau"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_1, function() return "Livrez la viande d'agneau à Leri Grudd"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_2, function() return "Livrez la viande d'agneau à Delyth Saethur"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_3, function() return "Livrez la viande d'agneau à Drudwen"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_4, function() return "Livrez la viande d'agneau à Gloron Magirouge"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_5, function() return "Livrez la viande d'agneau au maire Malmadog Torlan"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_6, function() return "Livrez la viande d'agneau à Velda Luche"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.STRETCHED_TOO_THIN_END, function() return TurnInTo("Trop d'éparpillement", "Cunedda Muguigue"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.WELL_WATERED_BLOOMS_PICKUP, function() return TakeFrom("Fleurs bien arrosées", "Leri Grudd"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_FOUND, function() return "Trouvez les seaux d'eau près de l'étang"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_1, function() return "Arroser les jonquilles dans le jardin de Leri"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_2, function() return "Arroser les jonquilles situées près des ruches, à côté de la boucherie"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_3, function() return "Arroser les jonquilles situées près des écuries"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_4, function() return "Arroser les jonquilles situées devant le smial de Delyth Saethur"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_5, function() return "Arroser les jonquilles situées derrière le four"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.WELL_WATERED_BLOOMS_END, function() return TurnInTo("Fleurs bien arrosées", "Leri Grudd"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FAMILY_FEAST_PICKUP, function() return TakeFrom("Festin familial", "Rosentyl Flutch"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FAMILY_FEAST_LAMB, function() return "Récupérez un colis de viande d'agneau"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FAMILY_FEAST_CARROTS, function() return "Récoltez des carottes"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FAMILY_FEAST_POTATOES, function() return "Récupérer des pommes de terre"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FAMILY_FEAST_LEEKS_TALK, function() return "Parlez à Bortho Bichelle, l'assistant de l'approvisionneur"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FAMILY_FEAST_LEEKS, function() return "Récoltez des poireaux"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FAMILY_FEAST_END, function() return TurnInTo("Festin familial", "Rosentyl Flutch"); end);

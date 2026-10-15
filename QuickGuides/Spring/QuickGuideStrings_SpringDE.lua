@@ -10,60 +10,60 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDIT_HEIGHTS[SPRING] = {};
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDIT_HEIGHTS[SPRING][DEFAULT_QUICK_GUIDE] = 140;
 
 QG_SPRING = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[SPRING][DEFAULT_QUICK_GUIDE];
-QG_SPRING[QG_SPRING_INDEX.A_TASTE_OF_SPRING_PICKUP].DISPLAY = function() return TakeFrom("Ein Hauch von Frühling", "Rhudamer Hirtul"); end;
-QG_SPRING[QG_SPRING_INDEX.A_TASTE_OF_SPRING_END].DISPLAY = function() return TurnInTo("Ein Hauch von Frühling", "Rhudamer Hirtul"); end;
-QG_SPRING[QG_SPRING_INDEX.DAFFODIL_DAYS_DAILY_PICKUP].DISPLAY = function() return TakeFromIn("Narzissentage (Täglich)", "Athra Devister", "Clegur"); end
-QG_SPRING[QG_SPRING_INDEX.DAFFODIL_DAYS_DAILY_END].DISPLAY = function() return TurnInTo("Narzissentage (Täglich)", "Athra Devister"); end
-QG_SPRING[QG_SPRING_INDEX.THE_GIFT_OF_SPRING_PICKUP].DISPLAY = function() return TakeFrom("Das Geschenk des Frühlings", "Athra Devister"); end;
-QG_SPRING[QG_SPRING_INDEX.THE_GIFT_OF_SPRING_DAFFODILS_PICKED].DISPLAY = function() return "Pflückt Narzissen in Clegur"; end
-QG_SPRING[QG_SPRING_INDEX.THE_GIFT_OF_SPRING_DAFFODILS_PLANTED].DISPLAY = function() return "Pflanzt Narzissen in Behältern ein"; end
-QG_SPRING[QG_SPRING_INDEX.THE_GIFT_OF_SPRING_END].DISPLAY = function() return TurnInTo("Das Geschenk des Frühlings", "Athra Devister"); end
-QG_SPRING[QG_SPRING_INDEX.PROMOTING_PIE_PICKUP].DISPLAY = function() return TakeFrom("Kuchenwerbung", "Maramam Bobbid"); end;
-QG_SPRING[QG_SPRING_INDEX.PROMOTING_PIE_FLIER_1].DISPLAY = function() return "Verteilt Flugblatt an Hobbit-Gast in der Nähe von Musikern"; end
-QG_SPRING[QG_SPRING_INDEX.PROMOTING_PIE_FLIER_2].DISPLAY = function() return "Verteilt Flugblatt an Hobbit-Gast in der Nähe von Malmadog Torlan"; end
-QG_SPRING[QG_SPRING_INDEX.PROMOTING_PIE_FLIER_3].DISPLAY = function() return "Verteilt Flugblatt an Hobbit-Gast in der Nähe von des Metzgers"; end
-QG_SPRING[QG_SPRING_INDEX.PROMOTING_PIE_FLIER_4].DISPLAY = function() return "Verteilt Flugblatt an Hobbit-Gast in der Nähe von Leri Grudd"; end
-QG_SPRING[QG_SPRING_INDEX.PROMOTING_PIE_FLIER_5].DISPLAY = function() return "Verteilt Flugblatt an Hobbit-Gast in der Nähe von Delyth Saethur"; end
-QG_SPRING[QG_SPRING_INDEX.PROMOTING_PIE_END].DISPLAY = function() return TurnInTo("Kuchenwerbung", "Maramam Bobbid"); end
-QG_SPRING[QG_SPRING_INDEX.FLOWER_ENVY_PICKUP].DISPLAY = function() return TakeFrom("Blumenneid", "Naffa Blodven"); end;
-QG_SPRING[QG_SPRING_INDEX.FLOWER_ENVY_TALK_1].DISPLAY = function() return "Sprich mit Welduth Lhush für Aufgabe Blumenneid"; end
-QG_SPRING[QG_SPRING_INDEX.FLOWER_ENVY_TALK_2].DISPLAY = function() return "Sprich mit Gloron Magimrud für Aufgabe Blumenneid."; end
-QG_SPRING[QG_SPRING_INDEX.FLOWER_ENVY_TALK_3].DISPLAY = function() return "Platziert das Banner vor der Scheune, dann sprich mit Gloron Magimrud für Aufgabe Blumenneid."; end
-QG_SPRING[QG_SPRING_INDEX.FLOWER_ENVY_TALK_4].DISPLAY = function() return "Sprich mit Welduth Lhush für Aufgabe Blumenneid"; end
-QG_SPRING[QG_SPRING_INDEX.FLOWER_ENVY_BULB_COLLECTED].DISPLAY = function() return "Sammelt die begehrten Narzissenzwiebeln ein"; end
-QG_SPRING[QG_SPRING_INDEX.FLOWER_ENVY_END].DISPLAY = function() return TurnInTo("Blumenneid", "Naffa Blodven"); end
-QG_SPRING[QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_PICKUP].DISPLAY = function() return TakeFrom("Das Pech der Musiker", "Lautenspieler"); end;
-QG_SPRING[QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_FIDDLE].DISPLAY = function() return "Findet die Fiedel"; end
-QG_SPRING[QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_BAGPIPES].DISPLAY = function() return "Findet den Dudelsack"; end
-QG_SPRING[QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_FLUTE].DISPLAY = function() return "Findet die Flöte"; end
-QG_SPRING[QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_LUTE].DISPLAY = function() return "Findet die Laute"; end
-QG_SPRING[QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_BODHRAN].DISPLAY = function() return "Findet die Bodhran"; end
-QG_SPRING[QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_END].DISPLAY = function() return TurnInTo("Das Pech der Musiker", "Lautenspieler"); end
-QG_SPRING[QG_SPRING_INDEX.SPRINGTIMES_COLOURS_PICKUP].DISPLAY = function() return TakeFrom("Frühlingsfest-Farben", "Malmadog Torlan"); end;
-QG_SPRING[QG_SPRING_INDEX.SPRINGTIMES_COLOURS_BANNERS_PICKED_UP].DISPLAY = function() return "Nehmt Narzissentage-Banner auf" end;
-QG_SPRING[QG_SPRING_INDEX.SPRINGTIMES_COLOURS_BANNERS_PLACED].DISPLAY = function() return "Platziert Narzissentage-Banner"; end
-QG_SPRING[QG_SPRING_INDEX.SPRINGTIMES_COLOURS_END].DISPLAY = function() return TurnInTo("Frühlingsfest-Farben", "Malmadog Torlan"); end
-QG_SPRING[QG_SPRING_INDEX.STRETCHED_TOO_THIN_PICKUP].DISPLAY = function() return TakeFrom("Zu wenig", "Cunedda Moltgig"); end;
-QG_SPRING[QG_SPRING_INDEX.STRETCHED_TOO_THIN_LAMB].DISPLAY = function() return "Nehmt das eingepackte Lammfleisch"; end
-QG_SPRING[QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_1].DISPLAY = function() return "Bringt Leri Grudd Lammfleisch"; end
-QG_SPRING[QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_2].DISPLAY = function() return "Bringt Delyth Saethur Lammfleisch"; end
-QG_SPRING[QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_3].DISPLAY = function() return "Bringt Drudwen Lammfleisch"; end
-QG_SPRING[QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_4].DISPLAY = function() return "Bringt Gloron Magimrud Lammfleisch"; end
-QG_SPRING[QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_5].DISPLAY = function() return "Bringt Bürgermeister Malmadog Lammfleisch"; end
-QG_SPRING[QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_6].DISPLAY = function() return "Bringt Welduth Lhush Lammfleisch"; end
-QG_SPRING[QG_SPRING_INDEX.STRETCHED_TOO_THIN_END].DISPLAY = function() return TurnInTo("Zu wenig", "Cunedda Moltgig"); end
-QG_SPRING[QG_SPRING_INDEX.WELL_WATERED_BLOOMS_PICKUP].DISPLAY = function() return TakeFrom("Ordentlich gegossene Blumen", "Leri Grudd"); end;
-QG_SPRING[QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_FOUND].DISPLAY = function() return "Findet die Wassereimer in der Nähe des Teichs"; end
-QG_SPRING[QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_1].DISPLAY = function() return "Gießt die Narzissen in Leris Garten"; end
-QG_SPRING[QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_2].DISPLAY = function() return "Gießt die Narzissen neben den Bienenstöcken, in der Nähe des Fleischerladens"; end
-QG_SPRING[QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_3].DISPLAY = function() return "Gießt die Narzissen beim Stallmeister"; end
-QG_SPRING[QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_4].DISPLAY = function() return "Gießt die Narzissen vor Delyth Saethurs Smial"; end
-QG_SPRING[QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_5].DISPLAY = function() return "Gießt die Narzissen hinter dem Ofen"; end
-QG_SPRING[QG_SPRING_INDEX.WELL_WATERED_BLOOMS_END].DISPLAY = function() return TurnInTo("Ordentlich gegossene Blumen", "Leri Grudd"); end
-QG_SPRING[QG_SPRING_INDEX.FAMILY_FEAST_PICKUP].DISPLAY = function() return TakeFrom("Familienfestmahl", "Rosentyl Flutch"); end;
-QG_SPRING[QG_SPRING_INDEX.FAMILY_FEAST_LAMB].DISPLAY = function() return "Sammelt ein Paket Lammfleisch"; end
-QG_SPRING[QG_SPRING_INDEX.FAMILY_FEAST_CARROTS].DISPLAY = function() return "Sammelt Karotten"; end
-QG_SPRING[QG_SPRING_INDEX.FAMILY_FEAST_POTATOES].DISPLAY = function() return "Sammelt Kartoffeln"; end
-QG_SPRING[QG_SPRING_INDEX.FAMILY_FEAST_LEEKS_TALK].DISPLAY = function() return "Sprecht mit Bortho Bishel, dem Gehilfen der Vorratshändlerin"; end
-QG_SPRING[QG_SPRING_INDEX.FAMILY_FEAST_LEEKS].DISPLAY = function() return "Sammelt Lauch"; end
-QG_SPRING[QG_SPRING_INDEX.FAMILY_FEAST_END].DISPLAY = function() return TurnInTo("Familienfestmahl", "Rosentyl Flutch"); end
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.A_TASTE_OF_SPRING_PICKUP, function() return TakeFrom("Ein Hauch von Frühling", "Rhudamer Hirtul"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.A_TASTE_OF_SPRING_END, function() return TurnInTo("Ein Hauch von Frühling", "Rhudamer Hirtul"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.DAFFODIL_DAYS_DAILY_PICKUP, function() return TakeFromIn("Narzissentage (Täglich)", "Athra Devister", "Clegur"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.DAFFODIL_DAYS_DAILY_END, function() return TurnInTo("Narzissentage (Täglich)", "Athra Devister"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.THE_GIFT_OF_SPRING_PICKUP, function() return TakeFrom("Das Geschenk des Frühlings", "Athra Devister"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.THE_GIFT_OF_SPRING_DAFFODILS_PICKED, function() return "Pflückt Narzissen in Clegur"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.THE_GIFT_OF_SPRING_DAFFODILS_PLANTED, function() return "Pflanzt Narzissen in Behältern ein"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.THE_GIFT_OF_SPRING_END, function() return TurnInTo("Das Geschenk des Frühlings", "Athra Devister"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.PROMOTING_PIE_PICKUP, function() return TakeFrom("Kuchenwerbung", "Maramam Bobbid"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.PROMOTING_PIE_FLIER_1, function() return "Verteilt Flugblatt an Hobbit-Gast in der Nähe von Musikern"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.PROMOTING_PIE_FLIER_2, function() return "Verteilt Flugblatt an Hobbit-Gast in der Nähe von Malmadog Torlan"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.PROMOTING_PIE_FLIER_3, function() return "Verteilt Flugblatt an Hobbit-Gast in der Nähe von des Metzgers"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.PROMOTING_PIE_FLIER_4, function() return "Verteilt Flugblatt an Hobbit-Gast in der Nähe von Leri Grudd"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.PROMOTING_PIE_FLIER_5, function() return "Verteilt Flugblatt an Hobbit-Gast in der Nähe von Delyth Saethur"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.PROMOTING_PIE_END, function() return TurnInTo("Kuchenwerbung", "Maramam Bobbid"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FLOWER_ENVY_PICKUP, function() return TakeFrom("Blumenneid", "Naffa Blodven"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FLOWER_ENVY_TALK_1, function() return "Sprich mit Welduth Lhush für Aufgabe Blumenneid"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FLOWER_ENVY_TALK_2, function() return "Sprich mit Gloron Magimrud für Aufgabe Blumenneid."; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FLOWER_ENVY_TALK_3, function() return "Platziert das Banner vor der Scheune, dann sprich mit Gloron Magimrud für Aufgabe Blumenneid."; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FLOWER_ENVY_TALK_4, function() return "Sprich mit Welduth Lhush für Aufgabe Blumenneid"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FLOWER_ENVY_BULB_COLLECTED, function() return "Sammelt die begehrten Narzissenzwiebeln ein"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FLOWER_ENVY_END, function() return TurnInTo("Blumenneid", "Naffa Blodven"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_PICKUP, function() return TakeFrom("Das Pech der Musiker", "Lautenspieler"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_FIDDLE, function() return "Findet die Fiedel"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_BAGPIPES, function() return "Findet den Dudelsack"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_FLUTE, function() return "Findet die Flöte"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_LUTE, function() return "Findet die Laute"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_BODHRAN, function() return "Findet die Bodhran"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_END, function() return TurnInTo("Das Pech der Musiker", "Lautenspieler"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.SPRINGTIMES_COLOURS_PICKUP, function() return TakeFrom("Frühlingsfest-Farben", "Malmadog Torlan"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.SPRINGTIMES_COLOURS_BANNERS_PICKED_UP, function() return "Nehmt Narzissentage-Banner auf" end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.SPRINGTIMES_COLOURS_BANNERS_PLACED, function() return "Platziert Narzissentage-Banner"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.SPRINGTIMES_COLOURS_END, function() return TurnInTo("Frühlingsfest-Farben", "Malmadog Torlan"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.STRETCHED_TOO_THIN_PICKUP, function() return TakeFrom("Zu wenig", "Cunedda Moltgig"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.STRETCHED_TOO_THIN_LAMB, function() return "Nehmt das eingepackte Lammfleisch"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_1, function() return "Bringt Leri Grudd Lammfleisch"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_2, function() return "Bringt Delyth Saethur Lammfleisch"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_3, function() return "Bringt Drudwen Lammfleisch"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_4, function() return "Bringt Gloron Magimrud Lammfleisch"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_5, function() return "Bringt Bürgermeister Malmadog Lammfleisch"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_6, function() return "Bringt Welduth Lhush Lammfleisch"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.STRETCHED_TOO_THIN_END, function() return TurnInTo("Zu wenig", "Cunedda Moltgig"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.WELL_WATERED_BLOOMS_PICKUP, function() return TakeFrom("Ordentlich gegossene Blumen", "Leri Grudd"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_FOUND, function() return "Findet die Wassereimer in der Nähe des Teichs"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_1, function() return "Gießt die Narzissen in Leris Garten"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_2, function() return "Gießt die Narzissen neben den Bienenstöcken, in der Nähe des Fleischerladens"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_3, function() return "Gießt die Narzissen beim Stallmeister"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_4, function() return "Gießt die Narzissen vor Delyth Saethurs Smial"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_5, function() return "Gießt die Narzissen hinter dem Ofen"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.WELL_WATERED_BLOOMS_END, function() return TurnInTo("Ordentlich gegossene Blumen", "Leri Grudd"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FAMILY_FEAST_PICKUP, function() return TakeFrom("Familienfestmahl", "Rosentyl Flutch"); end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FAMILY_FEAST_LAMB, function() return "Sammelt ein Paket Lammfleisch"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FAMILY_FEAST_CARROTS, function() return "Sammelt Karotten"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FAMILY_FEAST_POTATOES, function() return "Sammelt Kartoffeln"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FAMILY_FEAST_LEEKS_TALK, function() return "Sprecht mit Bortho Bishel, dem Gehilfen der Vorratshändlerin"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FAMILY_FEAST_LEEKS, function() return "Sammelt Lauch"; end);
+SetQuickGuideDisplay(QG_SPRING, QG_SPRING_INDEX.FAMILY_FEAST_END, function() return TurnInTo("Familienfestmahl", "Rosentyl Flutch"); end);

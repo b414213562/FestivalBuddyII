@@ -11,6 +11,19 @@ function AddNextQuickguideValue(table, index, value)
     return index + 1;
 end
 
+function _G.SetQuickGuideDisplay(quickGuide, index, display, height)
+    if (quickGuide[index] == nil) then
+        quickGuide[index] = {};
+    end
+
+    if (display ~= nil) then
+        quickGuide[index].DISPLAY = display;
+    end
+    if (height ~= nil) then
+        quickGuide[index].HEIGHT = height;
+    end
+end
+
 ---Check if the color for the given setting is in use.
 ---@param colorSetting string
 ---@return boolean 

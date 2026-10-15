@@ -10,65 +10,65 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDIT_HEIGHTS[YULE] = {};
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDIT_HEIGHTS[YULE][DEFAULT_QUICK_GUIDE] = 40;
 
 QG_YULE = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[YULE][DEFAULT_QUICK_GUIDE];
-QG_YULE[QG_YULE_INDEX.IN_THE_SPIRIT_OF_YULE_PICKUP].DISPLAY = function() return string.format("Take %s from %s in %s", HighlightQuest("In the Spirit of Yule"), HighlightNpc("Mara Sandydowns"), HighlightLocation("Winterhome")); end
-QG_YULE[QG_YULE_INDEX.MOVING_THEM_OFF_PICKUP].DISPLAY = function() return TakeFrom("Moving Them Off", "Guard Kember"); end
-QG_YULE[QG_YULE_INDEX.THE_ABOMINABLE_SNOW_BEASTS_PICKUP].DISPLAY = function() return TakeFrom("The Abominable Snow-beasts", "Guard Kember"); end
-QG_YULE[QG_YULE_INDEX.MOVING_THEM_OFF_BARRETTNOWELL].DISPLAY = function() return ContinueWith("Moving Them Off", "Barrett Nowell (next to Mara Sandydowns)"); end
-QG_YULE[QG_YULE_INDEX.MOVING_THEM_OFF_TEDIVES].DISPLAY = function() return ContinueWith("Moving Them Off", "Ted Ives (midway between Ona Kay and Daley Utteridge)"); end
-QG_YULE[QG_YULE_INDEX.COLD_AS_ICE_PICKUP].DISPLAY = function() return TakeFrom("Cold as Ice", "Daley Utteridge"); end
-QG_YULE[QG_YULE_INDEX.MAKING_MISCHIEF_PICKUP].DISPLAY = function() return TakeFrom("Making Mischief", "Gareth Rust"); end
-QG_YULE[QG_YULE_INDEX.MOVING_THEM_OFF_REGINAJUDSON].DISPLAY = function() return ContinueWith("Moving Them Off", "Regina Judson") .. " (midway between Daley Utteridge and the Theatre)"; end
-QG_YULE[QG_YULE_INDEX.MOVING_THEM_OFF_JACKJUDSON].DISPLAY = function() return ContinueWith("Moving Them Off", "Jack Judson") .. " (next to Theatre entrance)"; end
-QG_YULE[QG_YULE_INDEX.MOVING_THEM_OFF_BILLHYDE].DISPLAY = function() return ContinueWith("Moving Them Off", "Bill Hyde") .. " (next to final Biggest Stomach table)"; end
-QG_YULE[QG_YULE_INDEX.MAKING_MISCHIEF_FIREWORKS].DISPLAY = function() return Continue("Making Mischief", "Set off fireworks"); end
-QG_YULE[QG_YULE_INDEX.MAKING_MISCHIEF_LOOT].DISPLAY = function() return Continue("Making Mischief", "Loot 8 distracted patrons"); end
-QG_YULE[QG_YULE_INDEX.EMPTY_KEG_EMERGENCY_PICKUP].DISPLAY = function() return TakeFrom("Empty Keg Emergency", "Basil Wyndham"); end
-QG_YULE[QG_YULE_INDEX.TIDYING_UP_PICKUP].DISPLAY = function() return TakeFrom("Tidying Up", "Basil Wyndham"); end
-QG_YULE[QG_YULE_INDEX.STUFFING_THE_STUFFED_PICKUP].DISPLAY = function() return TakeFrom("Stuffing the Stuffed", "Mabel Mitford"); end
-QG_YULE[QG_YULE_INDEX.UNWILLING_FIREWOOD_PICKUP].DISPLAY = function() return TakeFrom("Unwilling Firewood", "Mabel Mitford"); end
-QG_YULE[QG_YULE_INDEX.TIDYING_UP_DISHES].DISPLAY = function() return Continue("Tidying Up", "Pick up 10 dirty dishes"); end
-QG_YULE[QG_YULE_INDEX.TIDYING_UP_SPILLS].DISPLAY = function() return Continue("Tidying Up", "Clean up 10 liquid spills"); end
-QG_YULE[QG_YULE_INDEX.TIDYING_UP_GARBAGE].DISPLAY = function() return Continue("Tidying Up", "Clean up 10 reeking garbage"); end
-QG_YULE[QG_YULE_INDEX.MAKING_MISCHIEF_END].DISPLAY = function() return TurnInTo("Making Mischief", "Gareth Rust"); end
-QG_YULE[QG_YULE_INDEX.STUFFING_THE_STUFFED_BREAD].DISPLAY = function() return Continue("Stuffing the Stuffed", "Make 3 fresh breads"); end
-QG_YULE[QG_YULE_INDEX.EMPTY_KEG_EMERGENCY_AVERT].DISPLAY = function() return Continue("Empty Keg Emergency", "Pick up one of the kegs and deliver the replacement keg"); end
-QG_YULE[QG_YULE_INDEX.EMPTY_KEG_EMERGENCY_END].DISPLAY = function() return TurnInTo("Empty Keg Emergency", "Basil Wyndham"); end
-QG_YULE[QG_YULE_INDEX.TIDYING_UP_END].DISPLAY = function() return string.format("Turn in %s to %s (if you already did %s, this can be delayed)", HighlightQuest("Tidying Up"), HighlightNpc("Basil Wyndham"), HighlightQuest("The Biggest Stomach of Them All")); end
-QG_YULE[QG_YULE_INDEX.FILLING_THE_FIELD_PICKUP].DISPLAY = function() return TakeFrom("Filling the Field", "Virgil Greenfield"); end
-QG_YULE[QG_YULE_INDEX.A_BROKEN_SNOWMAN_PICKUP].DISPLAY = function() return TakeFrom("A Broken Snowman?", "Virgil's Broken Snowman"); end
-QG_YULE[QG_YULE_INDEX.A_BROKEN_SNOWMAN_STICK].DISPLAY = function() return Continue("A Broken Snowman?", "Gather a stick"); end
-QG_YULE[QG_YULE_INDEX.STUFFING_THE_STUFFED_EGGS].DISPLAY = function() return Continue("Stuffing the Stuffed", "Collect 5 eggs"); end
-QG_YULE[QG_YULE_INDEX.UNWILLING_FIREWOOD_COLLECT].DISPLAY = function() return Continue("Unwilling Firewood", "Collect 9 firewood"); end
-QG_YULE[QG_YULE_INDEX.COLD_AS_ICE_DISPERSE].DISPLAY = function() return Continue("Cold as Ice", "Disperse 4 Wintry Weather"); end
-QG_YULE[QG_YULE_INDEX.STUFFING_THE_STUFFED_BERRIES].DISPLAY = function() return Continue("Stuffing the Stuffed", "Collect 5 fresh winterberries"); end
-QG_YULE[QG_YULE_INDEX.THE_ABOMINABLE_SNOW_BEASTS_CHEER].DISPLAY = function() return Continue("The Abominable Snow-beasts", "/cheer at snow-beasts 3 times"); end
-QG_YULE[QG_YULE_INDEX.STUFFING_THE_STUFFED_MUSHROOMS].DISPLAY = function() return Continue("Stuffing the Stuffed", "Collect 5 pampered mushrooms"); end
-QG_YULE[QG_YULE_INDEX.YULE_FESTIVAL_DAILY_END].DISPLAY = function() return TurnInTo("Yule Festival (Daily)", "Mara Sandydowns"); end
-QG_YULE[QG_YULE_INDEX.MOVING_THEM_OFF_END].DISPLAY = function() return TurnInTo("Moving Them Off", "Guard Kember"); end
-QG_YULE[QG_YULE_INDEX.THE_ABOMINABLE_SNOW_BEASTS_END].DISPLAY = function() return TurnInTo("The Abominable Snow-beasts", "Guard Kember"); end
-QG_YULE[QG_YULE_INDEX.STUFFING_THE_STUFFED_END].DISPLAY = function() return TurnInTo("Stuffing the Stuffed", "Mabel Mitford"); end
-QG_YULE[QG_YULE_INDEX.UNWILLING_FIREWOOD_END].DISPLAY = function() return TurnInTo("Unwilling Firewood", "Mabel Mitford"); end
-QG_YULE[QG_YULE_INDEX.A_BROKEN_SNOWMAN_COAL].DISPLAY = function() return Continue("A Broken Snowman?", "Gather coal"); end
-QG_YULE[QG_YULE_INDEX.A_BROKEN_SNOWMAN_END].DISPLAY = function() return string.format("Turn in %s to %s. (The giant version is at 12.67N, 95.21W)", HighlightQuest("A Broken Snowman?"), HighlightNpc("Snowpile")); end
-QG_YULE[QG_YULE_INDEX.FILLING_THE_FIELD_END].DISPLAY = function() return TurnInTo("Filling the Field", "Virgil Greenfield"); end
-QG_YULE[QG_YULE_INDEX.COLD_AS_ICE_END].DISPLAY = function() return TurnInTo("Cold as Ice", "Daley Utteridge"); end
-QG_YULE[QG_YULE_INDEX.A_CHARITABLE_SPIRIT_PICKUP].DISPLAY = function() return TakeFrom("A Charitable Spirit", "Daley Utteridge"); end
-QG_YULE[QG_YULE_INDEX.A_CHARITABLE_SPIRIT_REGINAJUDSON].DISPLAY = function() return ContinueWith("A Charitable Spirit", "Regina Judson") .. " (midway between Daley Utteridge and the Theatre)"; end
-QG_YULE[QG_YULE_INDEX.A_CHARITABLE_SPIRIT_JACKJUDSON].DISPLAY = function() return ContinueWith("A Charitable Spirit", "Jack Judson") .. " (next to Theatre entrance)"; end
-QG_YULE[QG_YULE_INDEX.A_CHARITABLE_SPIRIT_BILLHYDE].DISPLAY = function() return ContinueWith("A Charitable Spirit", "Bill Hyde") .. " (next to final Biggest Stomach table)"; end
-QG_YULE[QG_YULE_INDEX.A_CHARITABLE_SPIRIT_BARRETTNOWELL].DISPLAY = function() return ContinueWith("A Charitable Spirit", "Barrett Nowell") .. " (next to Mara Sandydowns)"; end
-QG_YULE[QG_YULE_INDEX.IN_THE_SPIRIT_OF_YULE_END].DISPLAY = function() return TurnInTo("In the Spirit of Yule", "Mara Sandydowns"); end
-QG_YULE[QG_YULE_INDEX.A_CHARITABLE_SPIRIT_TEDIVES].DISPLAY = function() return ContinueWith("A Charitable Spirit", "Ted Ives") .. " (midway between Ona Kay and Daley Utteridge)"; end
-QG_YULE[QG_YULE_INDEX.A_CHARITABLE_SPIRIT_END].DISPLAY = function() return TurnInTo("A Charitable Spirit", "Daley Utteridge"); end
-QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_PICKUP].DISPLAY = function() return TakeFrom("The Biggest Stomach of Them All", "Ona Kay"); end
-QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_WAIT].DISPLAY = function() return "Wait for the eating contest to begin. (Keep questing in Frostbluff)"; end
-QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION1].DISPLAY = function() return Continue("The Biggest Stomach of Them All", "Eat food at the first station"); end
-QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END].DISPLAY = function() return TurnInTo("The Biggest Stomach of Them All", "Ona Kay"); end
-QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION2].DISPLAY = function() return Continue("The Biggest Stomach of Them All (Part II)", "Eat food at the second station"); end
-QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_2].DISPLAY = function() return TurnInTo("The Biggest Stomach of Them All (Part II)", "Freddie Symonds"); end
-QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION3].DISPLAY = function() return Continue("The Biggest Stomach of Them All (Part III)", "Eat food at the third station"); end
-QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_3].DISPLAY = function() return TurnInTo("The Biggest Stomach of Them All (Part III)", "Jack Mitford"); end
-QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION4].DISPLAY = function() return Continue("The Biggest Stomach of Them All (Part IV)", "Eat food at the fourth station"); end
-QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_4].DISPLAY = function() return TurnInTo("The Biggest Stomach of Them All (Part IV)", "Nora Lewison"); end
-QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION5].DISPLAY = function() return Continue("The Biggest Stomach of Them All (Part V)", "Eat food at the fifth station"); end
-QG_YULE[QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_5].DISPLAY = function() return TurnInTo("The Biggest Stomach of Them All (Part V)", "Ian Prudholm"); end
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.IN_THE_SPIRIT_OF_YULE_PICKUP, function() return string.format("Take %s from %s in %s", HighlightQuest("In the Spirit of Yule"), HighlightNpc("Mara Sandydowns"), HighlightLocation("Winterhome")); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.MOVING_THEM_OFF_PICKUP, function() return TakeFrom("Moving Them Off", "Guard Kember"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.THE_ABOMINABLE_SNOW_BEASTS_PICKUP, function() return TakeFrom("The Abominable Snow-beasts", "Guard Kember"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.MOVING_THEM_OFF_BARRETTNOWELL, function() return ContinueWith("Moving Them Off", "Barrett Nowell (next to Mara Sandydowns)"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.MOVING_THEM_OFF_TEDIVES, function() return ContinueWith("Moving Them Off", "Ted Ives (midway between Ona Kay and Daley Utteridge)"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.COLD_AS_ICE_PICKUP, function() return TakeFrom("Cold as Ice", "Daley Utteridge"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.MAKING_MISCHIEF_PICKUP, function() return TakeFrom("Making Mischief", "Gareth Rust"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.MOVING_THEM_OFF_REGINAJUDSON, function() return ContinueWith("Moving Them Off", "Regina Judson") .. " (midway between Daley Utteridge and the Theatre)"; end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.MOVING_THEM_OFF_JACKJUDSON, function() return ContinueWith("Moving Them Off", "Jack Judson") .. " (next to Theatre entrance)"; end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.MOVING_THEM_OFF_BILLHYDE, function() return ContinueWith("Moving Them Off", "Bill Hyde") .. " (next to final Biggest Stomach table)"; end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.MAKING_MISCHIEF_FIREWORKS, function() return Continue("Making Mischief", "Set off fireworks"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.MAKING_MISCHIEF_LOOT, function() return Continue("Making Mischief", "Loot 8 distracted patrons"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.EMPTY_KEG_EMERGENCY_PICKUP, function() return TakeFrom("Empty Keg Emergency", "Basil Wyndham"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.TIDYING_UP_PICKUP, function() return TakeFrom("Tidying Up", "Basil Wyndham"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.STUFFING_THE_STUFFED_PICKUP, function() return TakeFrom("Stuffing the Stuffed", "Mabel Mitford"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.UNWILLING_FIREWOOD_PICKUP, function() return TakeFrom("Unwilling Firewood", "Mabel Mitford"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.TIDYING_UP_DISHES, function() return Continue("Tidying Up", "Pick up 10 dirty dishes"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.TIDYING_UP_SPILLS, function() return Continue("Tidying Up", "Clean up 10 liquid spills"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.TIDYING_UP_GARBAGE, function() return Continue("Tidying Up", "Clean up 10 reeking garbage"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.MAKING_MISCHIEF_END, function() return TurnInTo("Making Mischief", "Gareth Rust"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.STUFFING_THE_STUFFED_BREAD, function() return Continue("Stuffing the Stuffed", "Make 3 fresh breads"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.EMPTY_KEG_EMERGENCY_AVERT, function() return Continue("Empty Keg Emergency", "Pick up one of the kegs and deliver the replacement keg"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.EMPTY_KEG_EMERGENCY_END, function() return TurnInTo("Empty Keg Emergency", "Basil Wyndham"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.TIDYING_UP_END, function() return string.format("Turn in %s to %s (if you already did %s, this can be delayed)", HighlightQuest("Tidying Up"), HighlightNpc("Basil Wyndham"), HighlightQuest("The Biggest Stomach of Them All")); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.FILLING_THE_FIELD_PICKUP, function() return TakeFrom("Filling the Field", "Virgil Greenfield"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.A_BROKEN_SNOWMAN_PICKUP, function() return TakeFrom("A Broken Snowman?", "Virgil's Broken Snowman"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.A_BROKEN_SNOWMAN_STICK, function() return Continue("A Broken Snowman?", "Gather a stick"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.STUFFING_THE_STUFFED_EGGS, function() return Continue("Stuffing the Stuffed", "Collect 5 eggs"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.UNWILLING_FIREWOOD_COLLECT, function() return Continue("Unwilling Firewood", "Collect 9 firewood"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.COLD_AS_ICE_DISPERSE, function() return Continue("Cold as Ice", "Disperse 4 Wintry Weather"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.STUFFING_THE_STUFFED_BERRIES, function() return Continue("Stuffing the Stuffed", "Collect 5 fresh winterberries"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.THE_ABOMINABLE_SNOW_BEASTS_CHEER, function() return Continue("The Abominable Snow-beasts", "/cheer at snow-beasts 3 times"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.STUFFING_THE_STUFFED_MUSHROOMS, function() return Continue("Stuffing the Stuffed", "Collect 5 pampered mushrooms"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.YULE_FESTIVAL_DAILY_END, function() return TurnInTo("Yule Festival (Daily)", "Mara Sandydowns"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.MOVING_THEM_OFF_END, function() return TurnInTo("Moving Them Off", "Guard Kember"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.THE_ABOMINABLE_SNOW_BEASTS_END, function() return TurnInTo("The Abominable Snow-beasts", "Guard Kember"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.STUFFING_THE_STUFFED_END, function() return TurnInTo("Stuffing the Stuffed", "Mabel Mitford"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.UNWILLING_FIREWOOD_END, function() return TurnInTo("Unwilling Firewood", "Mabel Mitford"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.A_BROKEN_SNOWMAN_COAL, function() return Continue("A Broken Snowman?", "Gather coal"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.A_BROKEN_SNOWMAN_END, function() return string.format("Turn in %s to %s. (The giant version is at 12.67N, 95.21W)", HighlightQuest("A Broken Snowman?"), HighlightNpc("Snowpile")); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.FILLING_THE_FIELD_END, function() return TurnInTo("Filling the Field", "Virgil Greenfield"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.COLD_AS_ICE_END, function() return TurnInTo("Cold as Ice", "Daley Utteridge"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.A_CHARITABLE_SPIRIT_PICKUP, function() return TakeFrom("A Charitable Spirit", "Daley Utteridge"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.A_CHARITABLE_SPIRIT_REGINAJUDSON, function() return ContinueWith("A Charitable Spirit", "Regina Judson") .. " (midway between Daley Utteridge and the Theatre)"; end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.A_CHARITABLE_SPIRIT_JACKJUDSON, function() return ContinueWith("A Charitable Spirit", "Jack Judson") .. " (next to Theatre entrance)"; end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.A_CHARITABLE_SPIRIT_BILLHYDE, function() return ContinueWith("A Charitable Spirit", "Bill Hyde") .. " (next to final Biggest Stomach table)"; end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.A_CHARITABLE_SPIRIT_BARRETTNOWELL, function() return ContinueWith("A Charitable Spirit", "Barrett Nowell") .. " (next to Mara Sandydowns)"; end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.IN_THE_SPIRIT_OF_YULE_END, function() return TurnInTo("In the Spirit of Yule", "Mara Sandydowns"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.A_CHARITABLE_SPIRIT_TEDIVES, function() return ContinueWith("A Charitable Spirit", "Ted Ives") .. " (midway between Ona Kay and Daley Utteridge)"; end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.A_CHARITABLE_SPIRIT_END, function() return TurnInTo("A Charitable Spirit", "Daley Utteridge"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_PICKUP, function() return TakeFrom("The Biggest Stomach of Them All", "Ona Kay"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_WAIT, function() return "Wait for the eating contest to begin. (Keep questing in Frostbluff)"; end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION1, function() return Continue("The Biggest Stomach of Them All", "Eat food at the first station"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END, function() return TurnInTo("The Biggest Stomach of Them All", "Ona Kay"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION2, function() return Continue("The Biggest Stomach of Them All (Part II)", "Eat food at the second station"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_2, function() return TurnInTo("The Biggest Stomach of Them All (Part II)", "Freddie Symonds"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION3, function() return Continue("The Biggest Stomach of Them All (Part III)", "Eat food at the third station"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_3, function() return TurnInTo("The Biggest Stomach of Them All (Part III)", "Jack Mitford"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION4, function() return Continue("The Biggest Stomach of Them All (Part IV)", "Eat food at the fourth station"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_4, function() return TurnInTo("The Biggest Stomach of Them All (Part IV)", "Nora Lewison"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_STATION5, function() return Continue("The Biggest Stomach of Them All (Part V)", "Eat food at the fifth station"); end);
+SetQuickGuideDisplay(QG_YULE, QG_YULE_INDEX.THE_BIGGEST_STOMACH_OF_THEM_ALL_END_5, function() return TurnInTo("The Biggest Stomach of Them All (Part V)", "Ian Prudholm"); end);
