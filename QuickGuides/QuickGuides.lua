@@ -134,10 +134,24 @@ function _G.GetObjectiveString(key, festival, min, max)
     return objective;
 end
 
-function _G.GetProgressString(key, festival)
+function _G.GetProgressString(key, festival, max)
     local progress = GetString(_PROGRESS[festival][key]);
     if (not progress) then
         return "FAILED TO LOOK UP PROGRESS: " .. dump(key);
+    end
+
+    if (max) then
+        local placeholderCount = 0;
+        progress = string.gsub(progress, "%(%%d%+%)", function()
+            placeholderCount = placeholderCount + 1;
+            if (placeholderCount == 2) then
+                return tostring(max);
+            end
+            return "(%d+)";
+        end);
+        if (placeholderCount < 2) then
+            error("Progress string does not contain a total placeholder: " .. dump(key));
+        end
     end
 
     return progress;

@@ -1049,6 +1049,8 @@ _LANG = {
             ["EYESORES_DRIFTED_ASHORE"]      = { ["ENGLISH"] = "Eyesores Drifted Ashore";               ["FRENCH"] = "Déchets échoués";                     ["GERMAN"] = "Verschandelte Strände";            };
             ["LETS_GO_FLY_A_KITE"]           = { ["ENGLISH"] = "Let's Go Fly a Kite";                   ["FRENCH"] = "Vol de cerfs-volants";                ["GERMAN"] = "Drachen steigen lassen";           };
 
+            ["CAT_CONUNDRUM_NO_TO_CATS"] = { ["ENGLISH"] = "Cat Conundrum: No to Cats"; ["FRENCH"] = "Casse-tête félin : Non aux chats"; ["GERMAN"] = "Katzenfrage: Nein zu Katzen"; };
+            ["CAT_CONUNDRUM_YES_TO_CATS"] = { ["ENGLISH"] = "Cat Conundrum: Yes to Cats"; ["FRENCH"] = "Casse-tête félin : Oui aux chats"; ["GERMAN"] = "Katzenfrage: Ja zu Katzen"; };
         };
 
         [ILAA] = {

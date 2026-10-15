@@ -5,6 +5,7 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDES[SPRING] = {
 
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[SPRING] = {};
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS[SPRING][DEFAULT_QUICK_GUIDE] = "\nThis guide created by Cube during the 2026 Spring Festival.\n\nNote: Several objectives, especially for Flower Envy, do not produce observable results. Festival Buddy makes use of who you are targetting as a proxy for actually talking to them. If you randomly select various NPCs it may cause objectives to prematurely complete.";
+
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDIT_HEIGHTS[SPRING] = {};
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDIT_HEIGHTS[SPRING][DEFAULT_QUICK_GUIDE] = 140;
 
@@ -66,88 +67,3 @@ QG_SPRING[QG_SPRING_INDEX.FAMILY_FEAST_POTATOES].DISPLAY = function() return "Co
 QG_SPRING[QG_SPRING_INDEX.FAMILY_FEAST_LEEKS_TALK].DISPLAY = function() return "Talk to Bortho Bishel, the Provisioner's Assistant"; end
 QG_SPRING[QG_SPRING_INDEX.FAMILY_FEAST_LEEKS].DISPLAY = function() return "Collect leeks"; end
 QG_SPRING[QG_SPRING_INDEX.FAMILY_FEAST_END].DISPLAY = function() return TurnInTo("Family Feast", "Rosentyl Flutch"); end
-
--- What is the difference between _QUICK_GUIDE_PROGRESS and _QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS?
-
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_PROGRESS[SPRING] = {};
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_PROGRESS[SPRING][DEFAULT_QUICK_GUIDE] = {
-    ["Daffodils picked %((%d+)/(%d+)%)"] = QG_SPRING_INDEX.THE_GIFT_OF_SPRING_DAFFODILS_PICKED;
-    ["Daffodils planted %((%d+)/(%d+)%)"] = QG_SPRING_INDEX.THE_GIFT_OF_SPRING_DAFFODILS_PLANTED;
-    ["Banners placed %((%d+)/(%d+)%)"] = QG_SPRING_INDEX.SPRINGTIMES_COLOURS_BANNERS_PLACED;
-};
-
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[SPRING] = {}
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[SPRING][DEFAULT_QUICK_GUIDE] = {
-    ["New Quest: A Taste of Spring"] = QG_SPRING_INDEX.A_TASTE_OF_SPRING_PICKUP;
-    ["New Quest: Daffodil Days (Daily)"] = QG_SPRING_INDEX.DAFFODIL_DAYS_DAILY_PICKUP;
-    ["New Quest: The Gift of Spring"] = QG_SPRING_INDEX.THE_GIFT_OF_SPRING_PICKUP;
-    ["New Quest: Promoting Pie"] = QG_SPRING_INDEX.PROMOTING_PIE_PICKUP;
-    ["New Quest: Flower Envy"] = QG_SPRING_INDEX.FLOWER_ENVY_PICKUP;
-    ["New Quest: Springtime's Colours"] = QG_SPRING_INDEX.SPRINGTIMES_COLOURS_PICKUP;
-    ["New Quest: The Musicians' Misfortune"] = QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_PICKUP;
-    ["New Quest: Stretched Too Thin"] = QG_SPRING_INDEX.STRETCHED_TOO_THIN_PICKUP;
-    ["New Quest: Family Feast"] = QG_SPRING_INDEX.FAMILY_FEAST_PICKUP;
-    ["New Quest: Well-watered Blooms"] = QG_SPRING_INDEX.WELL_WATERED_BLOOMS_PICKUP;
-};
-
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[SPRING] = {};
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[SPRING][DEFAULT_QUICK_GUIDE] = {
-    ["Completed:\nA Taste of Spring\n"] = QG_SPRING_INDEX.A_TASTE_OF_SPRING_END;
-    ["Completed:\nDaffodil Days (Daily)\n"] = QG_SPRING_INDEX.DAFFODIL_DAYS_DAILY_END;
-    ["Completed:\nThe Gift of Spring\n"] = QG_SPRING_INDEX.THE_GIFT_OF_SPRING_END;
-    ["Completed:\nPromoting Pie\n"] = QG_SPRING_INDEX.PROMOTING_PIE_END;
-    ["Completed:\nFlower Envy\n"] = QG_SPRING_INDEX.FLOWER_ENVY_END;
-    ["Completed:\nSpringtime's Colours\n"] = QG_SPRING_INDEX.SPRINGTIMES_COLOURS_END;
-    ["Completed:\nThe Musicians' Misfortune\n"] = QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_END;
-    ["Completed:\nStretched Too Thin\n"] = QG_SPRING_INDEX.STRETCHED_TOO_THIN_END;
-    ["Completed:\nFamily Feast\n"] = QG_SPRING_INDEX.FAMILY_FEAST_END;
-    ["Completed:\nWell-watered Blooms\n"] = QG_SPRING_INDEX.WELL_WATERED_BLOOMS_END;
-
-};
-
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[SPRING] = {};
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[SPRING][DEFAULT_QUICK_GUIDE] = {
-    ["Daffodils picked (8/8)"] = QG_SPRING_INDEX.THE_GIFT_OF_SPRING_DAFFODILS_PICKED;
-    ["Daffodils planted (8/8)"] = QG_SPRING_INDEX.THE_GIFT_OF_SPRING_DAFFODILS_PLANTED;
-    ["Fliers handed out (1/5)"] = QG_SPRING_INDEX.PROMOTING_PIE_FLIER_1;
-    ["Fliers handed out (2/5)"] = QG_SPRING_INDEX.PROMOTING_PIE_FLIER_2;
-    ["Fliers handed out (3/5)"] = QG_SPRING_INDEX.PROMOTING_PIE_FLIER_3;
-    ["Fliers handed out (4/5)"] = QG_SPRING_INDEX.PROMOTING_PIE_FLIER_4;
-    ["Fliers handed out (5/5)"] = QG_SPRING_INDEX.PROMOTING_PIE_FLIER_5;
-    ["Prized daffodil bulbs collected!"] = QG_SPRING_INDEX.FLOWER_ENVY_BULB_COLLECTED;
-    ["Banners placed (6/6)"] = QG_SPRING_INDEX.SPRINGTIMES_COLOURS_BANNERS_PLACED;
-    ["The fiddle has been found"] = QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_FIDDLE;
-    ["The bagpipes have been found"] = QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_BAGPIPES;
-    ["The flute has been found"] = QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_FLUTE;
-    ["The lute has been found"] = QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_LUTE;
-    ["The bodhran has been found"] = QG_SPRING_INDEX.THE_MUSICIANS_MISFORTUNE_BODHRAN;
-    ["Packages delivered (1/6)"] = QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_1;
-    ["Packages delivered (2/6)"] = QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_2;
-    ["Packages delivered (3/6)"] = QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_3;
-    ["Packages delivered (4/6)"] = QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_4;
-    ["Packages delivered (5/6)"] = QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_5;
-    ["Packages delivered (6/6)"] = QG_SPRING_INDEX.STRETCHED_TOO_THIN_PACKAGE_6;
-    ["Lamb meat collected"] = QG_SPRING_INDEX.FAMILY_FEAST_LAMB;
-    ["Carrots collected"] = QG_SPRING_INDEX.FAMILY_FEAST_CARROTS;
-    ["Potatoes collected"] = QG_SPRING_INDEX.FAMILY_FEAST_POTATOES;
-    ["Leeks collected"] = QG_SPRING_INDEX.FAMILY_FEAST_LEEKS;
-    ["Water buckets found!"] = QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_FOUND;
-    ["Watered!"] = { -- NAME is only used for debugging purposes.
-        [1] = { ["NAME"] = "Watered! 1"; ["INDEX"] = QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_1; };
-        [2] = { ["NAME"] = "Watered! 2"; ["INDEX"] = QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_2; };
-        [3] = { ["NAME"] = "Watered! 3"; ["INDEX"] = QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_3; };
-        [4] = { ["NAME"] = "Watered! 4"; ["INDEX"] = QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_4; };
-        [5] = { ["NAME"] = "Watered! 5"; ["INDEX"] = QG_SPRING_INDEX.WELL_WATERED_BLOOMS_WATER_5; };
-    };
-};
-
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_TARGETS[SPRING] = {};
-_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_TARGETS[SPRING][DEFAULT_QUICK_GUIDE] = {
-    [1] = { ["NAME"] = "Welduth Lhush"; ["INDEX"] = QG_SPRING_INDEX.FLOWER_ENVY_TALK_1; };
-    [2] = { ["NAME"] = "Packaged Lamb"; ["INDEX"] = QG_SPRING_INDEX.STRETCHED_TOO_THIN_LAMB; };
-    [3] = { ["NAME"] = "Gloron Magimrud"; ["INDEX"] = QG_SPRING_INDEX.FLOWER_ENVY_TALK_2; };
-    [4] = { ["NAME"] = "Bortho Bishel"; ["INDEX"] = QG_SPRING_INDEX.FAMILY_FEAST_LEEKS_TALK; };
-    [5] = { ["NAME"] = "Daffodil Days Banners"; ["INDEX"] = QG_SPRING_INDEX.SPRINGTIMES_COLOURS_BANNERS_PICKED_UP; };
-    [6] = { ["NAME"] = "Gloron Magimrud"; ["INDEX"] = QG_SPRING_INDEX.FLOWER_ENVY_TALK_3; };
-    [7] = { ["NAME"] = "Welduth Lhush"; ["INDEX"] = QG_SPRING_INDEX.FLOWER_ENVY_TALK_4; };
-};
