@@ -409,3 +409,25 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAIN_LOOKUP = {};
 
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDITS = {};
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CREDIT_HEIGHTS = {};
+
+function CleanQuickGuideProgress(progressByFestival)
+    for festival, festivalProgress in pairs(progressByFestival) do
+        local guideIndicesById = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_INDICIES[festival];
+        if (not guideIndicesById) then
+            progressByFestival[festival] = nil;
+        else
+            for guideId, guideProgress in pairs(festivalProgress) do
+                local guideIndices = guideIndicesById[guideId];
+                if (not guideIndices) then
+                    festivalProgress[guideId] = nil;
+                else
+                    for entryKey in pairs(guideProgress) do
+                        if (guideIndices[entryKey] == nil) then
+                            guideProgress[entryKey] = nil;
+                        end
+                    end
+                end
+            end
+        end
+    end
+end

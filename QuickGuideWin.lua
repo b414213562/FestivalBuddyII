@@ -459,17 +459,40 @@ function QuickGuideWinMarkComplete(index)
 end
 
 function QuickGuideWinIsCompleted(index)
-    local setting = GetSetting(SETTINGS.QUICK_GUIDE_PROGRESS, SELECTEDFESTIVAL, SELECTED_QUICK_GUIDE, index);
-    local result = setting ~= nil;
+    local entryKey = QuickGuideWinGetEntryKey(index);
+    if (not entryKey) then return false; end
+
+    local progress = GetSetting(SETTINGS.QUICK_GUIDE_PROGRESS, SELECTEDFESTIVAL, SELECTED_QUICK_GUIDE, entryKey);
+    local result = progress ~= nil;
     return result
 end
 
 function QuickGuideWinSetCompleted(index)
-    SetSetting(SETTINGS.QUICK_GUIDE_PROGRESS, SELECTEDFESTIVAL, SELECTED_QUICK_GUIDE, index, true);
+    local entryKey = QuickGuideWinGetEntryKey(index);
+    if (entryKey) then
+        SetSetting(SETTINGS.QUICK_GUIDE_PROGRESS, SELECTEDFESTIVAL, SELECTED_QUICK_GUIDE, entryKey, true);
+    end
 end
 
 function QuickGuideWinUnsetCompleted(index)
-    SetSetting(SETTINGS.QUICK_GUIDE_PROGRESS, SELECTEDFESTIVAL, SELECTED_QUICK_GUIDE, index, nil);
+    local entryKey = QuickGuideWinGetEntryKey(index);
+    if (entryKey) then
+        SetSetting(SETTINGS.QUICK_GUIDE_PROGRESS, SELECTEDFESTIVAL, SELECTED_QUICK_GUIDE, entryKey, nil);
+    end
+end
+
+function QuickGuideWinGetEntryKey(index)
+    local guideIndices = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_INDICIES[SELECTEDFESTIVAL]
+        and _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_INDICIES[SELECTEDFESTIVAL][SELECTED_QUICK_GUIDE];
+    if (guideIndices) then
+        for entryKey, entryIndex in pairs(guideIndices) do
+            if (entryIndex == index) then
+                return entryKey;
+            end
+        end
+    end
+
+    Turbine.Shell.WriteLine("Failed to look up quick guide entry key for index " .. dump(index));
 end
 
 function QuickGuideWinClearCompleted()
