@@ -12,6 +12,8 @@ v2.4.2 changes:
             Added "All" and "Fastest" buttons to toggle which quests are included in the Quick Guide.
         Timer:
             Starts on the first completed objective, stops when no enabled objectives remain incomplete, and resumes after plugin load if started recently. (Reset and credits rows do not count as objectives.)
+        Save file format:
+            Changed how quick guide progress is saved. This bumps the save file format from v2.2 to v2.3.
 
     Bugs:
         Fixed a few places that could produce a "attempt to index field '?' (a nil value)" error.

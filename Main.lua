@@ -198,7 +198,7 @@ function LoadSettingsFileCharacter()
         SETTINGS.SETTINGS_VERSION = "v2.3";
     end
 
-    CleanQuickGuideProgress(SETTINGS.QUICK_GUIDE_PROGRESS);
+    QuickGuides.CleanQuickGuideProgress(SETTINGS.QUICK_GUIDE_PROGRESS);
 
     -- Populate the global SELECTEDFESTIVAL variable:
     local settingIsMissing = not SETTINGS.FESTIVAL;
