@@ -1,4 +1,4 @@
-v2.4.2 changes:
+v2.5.1 changes:
     Festivals:
         Festival Timer (Farmers Faire & Yule):
             Added icon and text for Fat Mayor highlighting which item to use.
@@ -13,7 +13,7 @@ v2.4.2 changes:
         Timer:
             Starts on the first completed objective, stops when no enabled objectives remain incomplete, and resumes after plugin load if started recently. (Reset and credits rows do not count as objectives.)
         Save file format:
-            Changed how quick guide progress is saved. This bumps the save file format from v2.2 to v2.3.
+            Changed how quick guide progress is saved. This bumps the character-specific FestivalBuddy_Settings.plugindata save file format from v2.2 to v2.3.
 
     Bugs:
         Fixed a few places that could produce a "attempt to index field '?' (a nil value)" error.
