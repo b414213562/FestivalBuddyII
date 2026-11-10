@@ -1,3 +1,9 @@
+v2.5.2 changes:
+    Festivals:
+    Quick Guides:
+        Inn League / Ale Association:
+            Incorporated Talyrion's no-prestacking quick guide. (Guides you to pick up all drinks you'll need during the guide.)
+
 v2.5.1 changes:
     Festivals:
         Festival Timer (Farmers Faire & Yule):

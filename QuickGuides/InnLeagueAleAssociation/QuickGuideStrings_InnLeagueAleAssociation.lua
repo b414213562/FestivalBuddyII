@@ -1,6 +1,82 @@
 -- Inn League / Ale Association Quest Indexes:
 
+-- TODO: DEFAULT_QUICK_GUIDE => HUNTER_ASSSIST
+
+DEFAULT_QUICK_GUIDE = 1;
+ALTERNATIVE_NO_PRESTACKING = 2;
+
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_INDICIES[ILAA] = {};
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_INDICIES[ILAA][ALTERNATIVE_NO_PRESTACKING] = {};
+QG_ILAA_ALT_INDEX = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_INDICIES[ILAA][ALTERNATIVE_NO_PRESTACKING];
+
+local index = 1;
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "A_BIT_OF_WHITE_PICKUP");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "A_CONVOLUTED_WINE_PICKUP");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "A_DARK_PRANK_PICKUP");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "A_DIFFERENT_REMINDER_OF_RIVENDELL_PICKUP");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "A_DRINK_OF_THE_BEST_CHARACTER_PICKUP");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "ALL_BUT_THE_GOOD_CIDER_PICKUP");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "BOMBURS_BREATH_PICKUP");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "NEVER_FURTHER_FROM_HOME_PICKUP");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "NOT_ATLIS_FAVOURITE_PICKUP");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "ONE_DRINK_TOO_FEW_PICKUP");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "QUITE_A_TICKLE_PICKUP");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "A_BIT_OF_WHITE_DRINK");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "QUITE_A_PICKLE_DRINK");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "BOMBURS_BREATH_DRINK");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "NOT_ATLIS_FAVOURITE_DRINK");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "A_DARK_PRANK_DRINK");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "A_SIMPLE_WINE_DRINK");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "A_CONVOLUTED_WINE_DRINK");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "A_BIT_OF_BROWN_DRINK");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "ATLIS_FAVOURITE_DRINK");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "QUITE_A_TICKLE_DRINK");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "A_MEMBER_IN_NEED_DRINK");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "NEVER_FURTHER_FROM_HOME_DRINK");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "A_DARK_DAY_DRINK");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "ALL_BUT_THE_CIDER_DRINK");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "ONE_DRINK_TOO_FEW_DRINK");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "A_DIFFERENT_REMINDER_OF_RIVENDELL_DRINK");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "A_REMINDER_OF_RIVENDELL_DRINK");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "NOT_ATLIS_FAVOURITE_END");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "ATLIS_FAVOURITE_PICKUP");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "ATLIS_FAVOURITE_END");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "ALL_BUT_THE_GOOD_CIDER_DRINK");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "A_DRINK_OF_THE_WORST_CHARACTER_DRINK");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "ONE_DRINK_TOO_MANY_DRINK");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "A_CONVOLUTED_WINE_END");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "A_SIMPLE_WINE_PICKUP");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "A_SIMPLE_WINE_END");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "QUITE_A_TICKLE_END");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "QUITE_A_PICKLE_PICKUP");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "QUITE_A_PICKLE_END");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "NEVER_FAR_FROM_HOME_DRINK");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "ONE_DRINK_TOO_FEW_END");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "ONE_DRINK_TOO_MANY_PICKUP");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "ONE_DRINK_TOO_MANY_END");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "A_DIFFERENT_REMINDER_OF_RIVENDELL_END");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "A_REMINDER_OF_RIVENDELL_PICKUP");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "A_REMINDER_OF_RIVENDELL_END");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "NEVER_FURTHER_FROM_HOME_END");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "NEVER_FAR_FROM_HOME_PICKUP");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "NEVER_FAR_FROM_HOME_END");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "ALL_BUT_THE_GOOD_CIDER_END");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "ALL_BUT_THE_CIDER_PICKUP");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "ALL_BUT_THE_CIDER_END");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "A_DRINK_OF_THE_BEST_CHARACTER_DRINK");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "A_BIT_OF_WHITE_END");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "A_BIT_OF_BROWN_PICKUP");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "A_BIT_OF_BROWN_END");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "A_DRINK_OF_THE_BEST_CHARACTER_END");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "A_DRINK_OF_THE_WORST_CHARACTER_PICKUP");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "A_DRINK_OF_THE_WORST_CHARACTER_END");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "BOMBURS_BREATH_END");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "A_MEMBER_IN_NEED_PICKUP");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "A_MEMBER_IN_NEED_END");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "A_DARK_PRANK_END");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "A_DARK_DAY_PICKUP");
+index = AddNextQuickguideValue(QG_ILAA_ALT_INDEX, index, "A_DARK_DAY_END");
+
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_INDICIES[ILAA][DEFAULT_QUICK_GUIDE] = {};
 QG_ILAA_INDEX = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_INDICIES[ILAA][DEFAULT_QUICK_GUIDE];
 
@@ -191,6 +267,7 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAINS[ILAA][DEFAULT_QUICK_GUIDE] = 
         [QG_ILAA_INDEX.ATLIS_FAVOURITE_END] = true;
     };
 };
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAINS[ILAA][ALTERNATIVE_NO_PRESTACKING] = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAINS[ILAA][DEFAULT_QUICK_GUIDE];
 
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAIN_LOOKUP[ILAA] = {};
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAIN_LOOKUP[ILAA][DEFAULT_QUICK_GUIDE] = {
@@ -282,6 +359,7 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAIN_LOOKUP[ILAA][DEFAULT_QUICK_GUI
     [QG_ILAA_INDEX.ATLIS_FAVOURITE_DRINK] = "ATLIS_FAVOURITE";
     [QG_ILAA_INDEX.ATLIS_FAVOURITE_END] = "ATLIS_FAVOURITE";
 };
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAIN_LOOKUP[ILAA][ALTERNATIVE_NO_PRESTACKING] = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_CHAIN_LOOKUP[ILAA][DEFAULT_QUICK_GUIDE];
 
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[ILAA] = {};
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[ILAA][DEFAULT_QUICK_GUIDE] = {
@@ -420,6 +498,7 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[ILAA][DEFAULT_QUICK_GUIDE] = {
         ["CHAIN_END"] = "ATLIS_FAVOURITE";
     };
 }
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[ILAA][ALTERNATIVE_NO_PRESTACKING] = deepcopy(_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE[ILAA][DEFAULT_QUICK_GUIDE]);
 
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[ILAA] = {};
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[ILAA][DEFAULT_QUICK_GUIDE] = {};
@@ -445,7 +524,7 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[ILAA][DEFAULT_QUIC
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[ILAA][DEFAULT_QUICK_GUIDE][MakeNewQuestString(_LANG.QUESTS.ILAA.ONE_DRINK_TOO_MANY)] = QG_ILAA_INDEX.ONE_DRINK_TOO_MANY_PICKUP;
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[ILAA][DEFAULT_QUICK_GUIDE][MakeNewQuestString(_LANG.QUESTS.ILAA.QUITE_A_PICKLE)] = QG_ILAA_INDEX.QUITE_A_PICKLE_PICKUP;
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[ILAA][DEFAULT_QUICK_GUIDE][MakeNewQuestString(_LANG.QUESTS.ILAA.QUITE_A_TICKLE)] = QG_ILAA_INDEX.QUITE_A_TICKLE_PICKUP;
-
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[ILAA][ALTERNATIVE_NO_PRESTACKING] = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_NEW_QUEST_STRINGS[ILAA][ALTERNATIVE_NO_PRESTACKING];
 
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[ILAA] = {};
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[ILAA][DEFAULT_QUICK_GUIDE] = {};
@@ -471,6 +550,7 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[ILAA][DEFAUL
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[ILAA][DEFAULT_QUICK_GUIDE][MakeCompletedQuestString(_LANG.QUESTS.ILAA.ONE_DRINK_TOO_MANY)] = QG_ILAA_INDEX.ONE_DRINK_TOO_MANY_END;
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[ILAA][DEFAULT_QUICK_GUIDE][MakeCompletedQuestString(_LANG.QUESTS.ILAA.QUITE_A_PICKLE)] = QG_ILAA_INDEX.QUITE_A_PICKLE_END;
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[ILAA][DEFAULT_QUICK_GUIDE][MakeCompletedQuestString(_LANG.QUESTS.ILAA.QUITE_A_TICKLE)] = QG_ILAA_INDEX.QUITE_A_TICKLE_END;
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[ILAA][ALTERNATIVE_NO_PRESTACKING] = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_COMPLETED_QUEST_STRINGS[ILAA][ALTERNATIVE_NO_PRESTACKING];
 
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[ILAA] = {};
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[ILAA][DEFAULT_QUICK_GUIDE] = {};
@@ -496,6 +576,7 @@ _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[ILAA][DEFAUL
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[ILAA][DEFAULT_QUICK_GUIDE][GetObjectiveString("key:620803741:136263297", ILAA)] = QG_ILAA_INDEX.ONE_DRINK_TOO_MANY_DRINK;
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[ILAA][DEFAULT_QUICK_GUIDE][GetObjectiveString("key:620803813:136263297", ILAA)] = QG_ILAA_INDEX.QUITE_A_PICKLE_DRINK;
 _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[ILAA][DEFAULT_QUICK_GUIDE][GetObjectiveString("key:620861187:136263297", ILAA)] = QG_ILAA_INDEX.QUITE_A_TICKLE_DRINK;
+_G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[ILAA][ALTERNATIVE_NO_PRESTACKING] = _G.CubePlugins.FestivalBuddyII._QUICK_GUIDE_QUEST_OBJECTIVE_STRINGS[ILAA][ALTERNATIVE_NO_PRESTACKING];
 
 if (CLIENTLANG == "FRENCH") then
     import "CubePlugins.FestivalBuddyII.QuickGuides.InnLeagueAleAssociation.QuickGuideStrings_InnLeagueAleAssociationFR";

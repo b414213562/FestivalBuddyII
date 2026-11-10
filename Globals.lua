@@ -354,6 +354,30 @@ DEFAULT_SETTINGS = {
                 ["A_DARK_PRANK"] = true;
                 ["NOT_ATLIS_FAVOURITE"] = true;
             };
+            [2] = {
+                ["ALL_BUT_THE_CIDER"] = true;
+                ["NEVER_FAR_FROM_HOME"] = true;
+                ["ONE_DRINK_TOO_MANY"] = true;
+                ["QUITE_A_PICKLE"] = true;
+                ["A_BIT_OF_BROWN"] = true;
+                ["A_REMINDER_OF_RIVENDELL"] = true;
+                ["A_MEMBER_IN_NEED"] = true;
+                ["A_DRINK_OF_THE_WORST_CHARACTER"] = true;
+                ["A_SIMPLE_WINE"] = true;
+                ["A_DARK_DAY"] = true;
+                ["ATLIS_FAVOURITE"] = true;
+                ["ALL_BUT_THE_GOOD_CIDER"] = true;
+                ["NEVER_FURTHER_FROM_HOME"] = true;
+                ["ONE_DRINK_TOO_FEW"] = true;
+                ["QUITE_A_TICKLE"] = true;
+                ["A_BIT_OF_WHITE"] = true;
+                ["BOMBURS_BREATH"] = true;
+                ["A_DIFFERENT_REMINDER_OF_RIVENDELL"] = true;
+                ["A_DRINK_OF_THE_BEST_CHARACTER"] = true;
+                ["A_CONVOLUTED_WINE"] = true;
+                ["A_DARK_PRANK"] = true;
+                ["NOT_ATLIS_FAVOURITE"] = true;
+            };
         };
         [SPRING] = {
             [1] = {
