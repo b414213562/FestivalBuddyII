@@ -10,6 +10,7 @@ v2.5.1 changes:
     Quick Guides:
         Farmers Faire:
             Added "All" and "Fastest" buttons to toggle which quests are included in the Quick Guide.
+            Added Restocking the Market and To Cotton's Farm: Restocking Cabbages
         Timer:
             Starts on the first completed objective, stops when no enabled objectives remain incomplete, and resumes after plugin load if started recently. (Reset and credits rows do not count as objectives.)
         Save file format:

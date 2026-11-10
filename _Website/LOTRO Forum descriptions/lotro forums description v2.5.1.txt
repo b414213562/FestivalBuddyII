@@ -1,0 +1,42 @@
+Festival Buddy II version v2.5.1 is now available at [URL='https://www.lotrointerface.com/downloads/info1218-FestivalBuddyII.html']lotrointerface.com[/URL].
+
+Farmers Faire: Various improvements and a bug fix, updated Harvestmath barter items.
+
+Version 2.5.1 release notes:
+
+Festivals:
+[list]
+    [*] Festival Timer (Farmers Faire & Yule):
+    [list]
+        [*] Added icon and text for Fat Mayor highlighting which item to use.
+        [*] Added options to change colors of each section and opacity. Set opacity to 0% to hide the timer.
+    [/list]
+    [*] Festival Buddy II will now try to select the correct festival based on the date and the festival introduction quest. Manually choosing a festival will override this for a period of time.
+    [*] Harvestmath:
+    [list]
+        [*] Updated barter items for Rosa Hornblower, Fall Festival Trader
+        [*] Added barter items for Mogo Bracegirdle, Costumer
+    [/list]
+[/list]
+
+Quick Guides:
+[list]
+    [*] Farmers Faire:
+    [list]
+        [*] Added "All" and "Fastest" buttons to toggle which quests are included in the Quick Guide.
+        [*] Added Restocking the Market and To Cotton's Farm: Restocking Cabbages
+    [/list]
+    [*] Timer:
+    [list]
+        [*] Starts on the first completed objective, stops when no enabled objectives remain incomplete, and resumes after plugin load if started recently. (Reset and credits rows do not count as objectives.)
+    [/list]
+    [*] Save file format:
+    [list]
+        [*] Changed how quick guide progress is saved. This bumps the character-specific FestivalBuddy_Settings.plugindata save file format from v2.2 to v2.3.
+    [/list]
+[/list]
+
+Bugs:
+[list]
+    [*] Fixed a few places that could produce a "attempt to index field '?' (a nil value)" error.
+[/list]
